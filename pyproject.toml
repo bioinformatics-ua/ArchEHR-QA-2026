@@ -1,0 +1,15 @@
+[project]
+name = "my-vllm-project"
+version = "0.1.0"
+requires-python = ">=3.12"
+
+dependencies = [
+    "vllm",
+    "torch",
+    "transformers",
+    "accelerate",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["data*"]
