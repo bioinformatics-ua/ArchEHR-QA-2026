@@ -18,7 +18,6 @@ echo "Job ID: $SLURM_JOB_ID"
 source venv-eval/bin/activate
 
 
-# --- Run the Inference Script ---
+# --- Run the Evaluation Script ---
 
 python eval-script.py outputs/gold.json
-

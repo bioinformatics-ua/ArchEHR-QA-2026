@@ -28,6 +28,7 @@ DATA_DIR = os.path.join(
     PROJECT_ROOT,
     "data",
     "dev"
+    # "test"
 )
 
 KEY_PATH = os.path.join(DATA_DIR, "archehr-qa_key.json")
