@@ -1,53 +1,48 @@
-import argparse
 import json
 import os
 import re
+from pathlib import Path
+from typing import Annotated
+
+import typer
+from transformers import AutoTokenizer
 from vllm import LLM, SamplingParams
-from transformers import AutoTokenizer  # Import the tokenizer
 
 from .dataloader import ArchEHRDataLoader
 
+app = typer.Typer()
 
-def main():
-    # --- 1. The Settings Menu (Arguments) ---
-    parser = argparse.ArgumentParser(description="Batch inference with VLLM")
-    parser.add_argument(
-        "--model", type=str, default="Qwen/Qwen3-8B", help="Hugging Face model to use."
-    )
-    parser.add_argument(
-        "--xml-file",
-        type=str,
-        required=True,
-        help="Path to the XML file with patient narratives.",
-    )
-    parser.add_argument(
-        "--prompt-file",
-        type=str,
-        required=True,
-        help="Path to the prompt template JSONL file.",
-    )
-    parser.add_argument(
-        "--output-file",
-        type=str,
-        required=True,
-        help="Path to the output JSON file for results.",
-    )
-    args = parser.parse_args()
 
+@app.command()
+def main(
+    xml_file: Annotated[
+        Path, typer.Option(help="Path to the XML file with patient narratives.")
+    ],
+    prompt_file: Annotated[
+        Path, typer.Option(help="Path to the prompt template JSONL file.")
+    ],
+    output_file: Annotated[
+        Path, typer.Option(help="Path to the output JSON file for results.")
+    ],
+    model: Annotated[
+        str, typer.Option(help="Hugging Face model to use.")
+    ] = "Qwen/Qwen3-8B",
+) -> None:
+    """Batch inference with VLLM."""
     # --- 1. Load the tokenizer for manual decoding ---
-    print(f"Loading tokenizer for {args.model}...")
-    tokenizer = AutoTokenizer.from_pretrained(args.model)
+    print(f"Loading tokenizer for {model}...")
+    tokenizer = AutoTokenizer.from_pretrained(model)
     print("Tokenizer loaded.")
 
     # --- 2. Load XML Cases ---
-    print(f"Loading XML data from {args.xml_file}...")
-    loader = ArchEHRDataLoader(args.xml_file)
+    print(f"Loading XML data from {xml_file}...")
+    loader = ArchEHRDataLoader(xml_file)
     xml_cases = loader.load()
     print(f"Loaded {len(xml_cases)} cases from XML")
 
     # --- 3. Load Prompt Template ---
-    print(f"Loading prompt template from {args.prompt_file}...")
-    with open(args.prompt_file, "r") as f:
+    print(f"Loading prompt template from {prompt_file}...")
+    with open(prompt_file, "r") as f:
         prompt_template_data = json.loads(f.readline())
         prompt_template = prompt_template_data["text"]
     print("Prompt template loaded.")
@@ -78,7 +73,7 @@ def main():
     # tensor_parallel_size: How many GPUs to use (1 for your current setup)
     # enforce_eager=True: Disables torch.compile to avoid compilation errors
     llm = LLM(
-        model=args.model, tensor_parallel_size=1, max_model_len=8192, enforce_eager=True
+        model=model, tensor_parallel_size=1, max_model_len=8192, enforce_eager=True
     )
 
     # SamplingParams controls "Creativity":
@@ -93,7 +88,7 @@ def main():
     print("Batch generation complete.")
 
     # --- 5. Save Results in gold.json format ---
-    print(f"Saving results to {args.output_file}...")
+    print(f"Saving results to {output_file}...")
     results = []
 
     for i, output in enumerate(outputs):
@@ -123,7 +118,7 @@ def main():
     # Save as JSON array (not JSONL)
     output_dir = "outputs"
 
-    base_name = os.path.basename(args.output_file)
+    base_name = os.path.basename(output_file)
     output_path = os.path.join(output_dir, base_name)
 
     print(f"\n>>> Saving results to {output_path}")
@@ -135,4 +130,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    app()
