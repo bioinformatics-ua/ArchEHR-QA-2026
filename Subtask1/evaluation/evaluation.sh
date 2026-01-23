@@ -14,5 +14,5 @@ echo "Job ID: $SLURM_JOB_ID"
 uv run python evaluation.py \
     --submission_path ../outputs/predictions.json \
     --key_path ../../data/dev/archehr-qa.xml \
-    --quickumls_path quickumls/ \
-    --out_file_path scores.json
+    --quickumls_path ../quickumls/ \
+    --out_file_path ../results/predictions.json
