@@ -31,13 +31,15 @@ python run_inference.py \
 echo "Inference complete. Deactivating inference environment..."
 deactivate
 
-# --- Switch to Eval Environment ---
-echo "Activating eval environment..."
-source venv-eval/bin/activate
-echo "Eval environment activated."
 
 # --- Run Evaluation Script ---
 echo "Starting evaluation script..."
-python eval-script.py outputs/predictions.json
+cd evaluation
+
+uv run python evaluation.py \
+    --submission_path ../outputs/predictions.json \
+    --key_path ../../data/dev/archehr-qa.xml \
+    --quickumls_path quickumls/ \
+    --out_file_path scores.json
 
 echo "Evaluation complete. Job finished."
