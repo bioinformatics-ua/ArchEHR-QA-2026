@@ -18,5 +18,5 @@ singularity exec --nv "$SIF_IMAGE" "$UV_BIN" sync
 singularity exec --nv "$SIF_IMAGE" "$UV_BIN" run python evaluation.py \
     --submission_path ../outputs/predictions.json \
     --key_path ../../data/dev/archehr-qa.xml \
-    --quickumls_path ../quickumls/ \
+    --quickumls_path ../quickumls/final \
     --out_file_path ../results/predictions.json

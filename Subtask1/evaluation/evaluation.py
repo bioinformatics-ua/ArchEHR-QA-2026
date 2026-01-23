@@ -169,8 +169,8 @@ def compute_text_similarity_scores(
         if metric_type in {MetricType.BERTSCORE, MetricType.ALIGNSCORE}:
             scorer = scorer_class(device=device)
         elif metric_type == MetricType.MEDCON:
-            pass
-            # scorer = scorer_class(quickumls_fp=quickumls_path)
+            # pass
+            scorer = scorer_class(quickumls_fp=quickumls_path)
         else:
             scorer = scorer_class()
 
