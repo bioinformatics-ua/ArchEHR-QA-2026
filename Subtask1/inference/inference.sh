@@ -12,22 +12,34 @@ echo "Job started on $(hostname)"
 echo "Job ID: $SLURM_JOB_ID"
 
 
+source .venv/bin/activate
+
 # --- Run the Inference Script ---
 echo "Starting Python inference script..."
-uv run python inference.py \
+python inference.py \
     --xml-file ../../data/dev/archehr-qa.xml \
-    --prompt-file prompt.jsonl \
-    --output-file ../outputs/predictions.json
+    --prompt-file prompt.json \
+    --prompt-index 1 \
+    --output-file ../outputs/predictions.json \
+    # --model "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8" \ 
+    # --mode "train/test"
 
 
-# --- Run Evaluation Script ---
-echo "Starting evaluation script..."
-cd ../evaluation
-uv run python evaluation.py \
-    --submission_path ../outputs/predictions.json \
-    --key_path ../../data/dev/archehr-qa.xml \
-    --quickumls_path ../quickumls/ \
-    --out_file_path ../results/predictions.json
+# {"nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8" : "nemotron3"}
 
 
-echo "Evaluation complete. Job finished."
+# nemotron3_prompt_1.json 
+
+
+
+# # --- Run Evaluation Script ---
+# echo "Starting evaluation script..."
+# cd ../evaluation
+# uv run python evaluation.py \
+#     --submission_path ../outputs/predictions.json \
+#     --key_path ../../data/dev/archehr-qa.xml \
+#     --quickumls_path ../quickumls/ \
+#     --out_file_path ../results/nemotron3_prompt_1_results.json
+
+
+# echo "Evaluation complete. Job finished."

@@ -1,6 +1,10 @@
 # Evaluation
 
+
+!THESE COMMANDS ARE RUN FROM THE EVALUATION DIR!
 This directory contains the scoring scripts for the ArchEHR-QA 2026 Shared Task, running Python 3.8.
+
+
 
 ## Dependency management
 
@@ -9,7 +13,12 @@ Ensure `uv` is installed on your system. You can find installation instructions 
 Then run the following command to set up the environment and install the required dependencies:
 
 ```bash
-uv sync
+srun singularity pull builder.sif docker://python:3.10-bookworm
+```
+
+Run this - if you didnt install already:
+```bash
+curl -L -o ../../models/AlignScore-base.ckpt https://huggingface.co/yzha/AlignScore/resolve/main/AlignScore-base.ckpt
 ```
 
 ## QuickUMLS setup

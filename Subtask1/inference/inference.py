@@ -8,7 +8,7 @@ import typer
 from transformers import AutoTokenizer
 from vllm import LLM, SamplingParams
 
-from .dataloader import ArchEHRDataLoader
+from dataloader import ArchEHRDataLoader
 
 app = typer.Typer()
 
@@ -20,6 +20,9 @@ def main(
     ],
     prompt_file: Annotated[
         Path, typer.Option(help="Path to the prompt template JSONL file.")
+    ],
+    prompt_index: Annotated[
+        str, typer.Option(help="Prompt id.")
     ],
     output_file: Annotated[
         Path, typer.Option(help="Path to the output JSON file for results.")
@@ -43,14 +46,17 @@ def main(
     # --- 3. Load Prompt Template ---
     print(f"Loading prompt template from {prompt_file}...")
     with open(prompt_file, "r") as f:
-        prompt_template = orjson.loads(f.readline())["text"]
+        prompt_dict = orjson.loads(f.read())
     print("Prompt template loaded.")
 
+    prompt_template = prompt_dict[prompt_index]
     # --- 4. Build Prompts ---
     prompts = []
     prompt_data = []
     for case in xml_cases:
         # Replace the placeholder with the actual patient narrative
+        
+        # TODO: Needs to be more flexible to match different prompt formats
         filled_prompt = prompt_template.replace(
             "{PATIENT_NARRATIVE}", case["clinician_question"]
         )
@@ -115,7 +121,7 @@ def main(
         results.append(result)
 
     # Save as JSON array (not JSONL)
-    output_dir = "outputs"
+    output_dir = "../outputs"
 
     base_name = os.path.basename(output_file)
     output_path = os.path.join(output_dir, base_name)

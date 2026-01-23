@@ -1,82 +1,82 @@
 [
   {
     "case_id": "1",
-    "prediction": "Can udiliv effectively flush CBD sludge, making ERCP unnecessary?"
+    "prediction": "Why was ERCP recommended over continuing medication for his biliary condition?"
   },
   {
     "case_id": "2",
-    "prediction": "Why was a high dose of Lasix administered to a patient with severe lower extremity edema despite oxygen flow rate reduction?"
+    "prediction": "Why was Lasix given and oxygen flow reduced in the patient?"
   },
   {
     "case_id": "3",
-    "prediction": "What should be done for a patient with a brain bleed and persistent headaches post-ICU discharge?"
+    "prediction": "What is the expected course of recovery for him?"
   },
   {
     "case_id": "4",
-    "prediction": "Was cardiac catheterization necessary for a 48-year-old with syncope, CKD, anemia, and 25% LVEF?"
+    "prediction": "What is the indication for cardiac catheterization in this patient?"
   },
   {
     "case_id": "5",
-    "prediction": "What could cause persistent left upper quadrant chest pain post-trihexyphenidyl, thorazine, and cocaine overdose with prolonged QT?"
+    "prediction": "Is the patient's pain related to the overdose or another underlying condition?"
   },
   {
     "case_id": "6",
-    "prediction": "Did the doctors fail to diagnose bacterial/fungal pneumonia in time?"
+    "prediction": "Why did they find out later that he had fungal pneumonia?"
   },
   {
     "case_id": "7",
-    "prediction": "<think>\nOkay, let's tackle this. The user wants me to act as a clinician assistant. The task is to take a patient narrative and turn it into a clear clinical question. Let me read the narrative again carefully.\n\nSo the patient's mother-in-law had a vein surgery 10 years ago, replacing all veins from the top of the leg to the foot. She's been on blood thinners since then. Recently, she fell and had a subarachnoid hemorrhage, so they stopped the blood thinner (Coumadin), kept her in ICU for 3 weeks. Now the family is asking what happens to the original vein surgery since she stopped Coumadin. They want specific instructions on stopping Coumadin.\n\nFirst, I need to formulate this into a clinical question. The main concern here is about the management of the vein surgery after stopping Coumadin. The key points are the history of vein surgery, the use of blood thinners, the recent subarachnoid hemorrhage leading to stopping Coumadin, and the current question about the vein surgery's status.\n\nThe user specified to use a question word like What, Why, How, Is, Can, Should, etc. The question needs to be in third person, under 15 words, specific about the condition and concern.\n\nSo the main clinical concern is whether the original vein surgery is affected by stopping Coumadin. The family is asking about the implications of stopping the blood thinner on the vein surgery. So the question should focus on the necessity or impact of continuing or stopping Coumadin after the subarachnoid hemorrhage in relation to the previous vein surgery.\n\nPossible question: \"Should the patient continue anticoagulation after a subarachnoid hemorrhage with a history of vein surgery?\" Wait, but the original surgery was vein replacement. Maybe the question should be about the need to restart Coumadin or manage anticoagulation after the hemorrhage, considering the prior vein surgery. But the family is asking about the original surgery's status now that Coumadin was stopped. However, the vein surgery itself might not be directly affected by stopping Coumadin unless there's a risk of thrombosis. But the main concern is about the management of anticoagulation post-hemorrhage and the impact on the vein surgery.\n\nAlternatively, the question could be: \"What are the guidelines for resuming anticoagulation after a subarachnoid hemorrhage in a patient with a history of vein surgery?\" But the narrative says they stopped Coumadin, and the family is asking what happens to the original surgery now. Maybe the question is about whether stopping Coumadin affects the vein surgery. But vein surgery (like bypass or replacement) might require anticoagulation, but if they stopped it due to hemorrhage, the concern is about the risk of clotting in the veins now that anticoagulation is stopped.\n\nAlternatively, the question could be: \"Is anticoagulation necessary for the patient's vein surgery after a subarachnoid hemorrhage?\" But the vein surgery was done 10 years ago. So maybe the question is about whether the patient should restart anticoagulation after the hemorrhage, considering the prior surgery. The family is asking about the instructions regarding stopping Coumadin, so the question might be about the appropriate management of anticoagulation post-hemorrhage in this patient's context.\n\nWait, the original question from the family is: \"Are there any specific instructions about stopping Coumadin?\" So the focus is on the instructions for stopping Coumadin, considering the history of vein surgery and the recent hemorrhage. So the clinical question should be about whether the patient should continue or stop anticoagulation after a subarachnoid hemorrhage with a history of vein surgery. But the user wants the question to be specific about the condition and concern. So perhaps: \"What are the guidelines for managing anticoagulation after a subarachnoid hemorrhage in a patient with a history of vein surgery?\" That's 15 words. Let me check the word count. \"What are the guidelines for managing anticoagulation after a subarachnoid hemorrhage in a patient with a history of vein surgery?\" That's 16 words. Need to shorten. Maybe \"What are the guidelines for anticoagulation management after subarachnoid hemorrhage in a patient with vein surgery history?\" That's 14 words. Yes. But the original question from the family is about stopping Coumadin, so maybe \"Should the patient resume anticoagulation after subarachnoid hemorrhage with a history of vein surgery?\" That's 12 words. Or \"What are the recommendations for resuming anticoagulation after subarachnoid hemorrhage in a patient with prior vein surgery?\" 13 words. Alternatively, \"Is anticoagulation required for the patient's vein surgery after"
+    "prediction": "What is the appropriate management of blood thinners in subarachnoid brain hemorrhage?"
   },
   {
     "case_id": "8",
-    "prediction": "Does liver failure-related toxin exposure persist and impact writing abilities?"
+    "prediction": "Is the confusion related to the poison's lasting damage?"
   },
   {
     "case_id": "9",
-    "prediction": "What treatment was provided for the patient's jaundice following twin delivery complications, and are there long-term risks?"
+    "prediction": "What treatments were given for delivery complications, and could they cause future problems?"
   },
   {
     "case_id": "10",
-    "prediction": "Can a patient with 13-minute apnea and ICU recovery survive and maintain independent breathing?"
+    "prediction": "Did she sustain any brain damage from the heart attack?"
   },
   {
     "case_id": "11",
-    "prediction": "Is the recent worsening of symptoms in a patient with viral meningitis a sign of relapse or normal recovery?"
+    "prediction": "What is the expected course of her recovery?"
   },
   {
     "case_id": "12",
-    "prediction": "What condition could cause recurrent epigastric pain radiating to chest and back?"
+    "prediction": "What causes persistent abdominal pain in patients with a history of..."
   },
   {
     "case_id": "13",
-    "prediction": "<think>\nOkay, let's tackle this. The user wants me to process the patient's narrative and formulate a clinical question. First, I need to read the narrative carefully. The patient has a tumor in the back, three disc bulges, peripheral neuropathy, and now can't move their legs with severe pain. They were seen in the ER, but their doctor is away. They're asking what they can do.\n\nThe main concerns here are the tumor, disc bulges, neuropathy leading to paralysis and pain. The ER mentioned these findings, but the doctor isn't available. The patient needs immediate help. The task is to create a concise clinical question in third person, under 15 words. \n\nPossible angles: What should the patient do while waiting for their doctor? Or, what urgent interventions are needed for the patient's condition? But the question needs to focus on the main clinical decision. Since the patient can't move legs and in severe pain, maybe the question is about urgent steps. But the user said to focus on the main clinical concern or decision. The ER found the issues, but the patient's doctor is away. The patient is asking for help. So the question should be about what actions the patient can take while waiting. But the example given in the output might be different. Let me check the example. Wait, the example output is \"What urgent interventions should be considered for a patient with a spinal tumor, disc bulges, and paralysis due to peripheral neuropathy?\" That's 17 words. Wait, the user said maximum 15 words. So need to shorten. Maybe \"What urgent interventions should be considered for a patient with spinal tumor, disc bulges, and paralysis?\" That's 15 words. But the original narrative mentions peripheral neuropathy leading to leg movement issues. So perhaps combining the key elements. Let me count: \"What urgent interventions should be considered for a patient with spinal tumor, disc bulges, and paralysis?\" That's 15 words. Alternatively, \"What should the patient do while waiting for their doctor regarding spinal tumor, disc bulges, and paralysis?\" But that's 14 words. But the main concern is the clinical decision. Maybe the question should be about what the patient can do. But the user says to focus on the main clinical concern or decision. The ER found the issues, but the patient can't move legs. So the main concern is the paralysis and pain. The question should be about what actions are needed. So maybe \"What urgent interventions should be considered for a patient with spinal tumor, disc bulges, and paralysis?\" That's 15 words. Let me check the word count. \"What urgent interventions should be considered for a patient with spinal tumor, disc bulges, and paralysis?\" Let's count: 1. What 2. urgent 3. interventions 4. should 5. be 6. considered 7. for 8. a 9. patient 10. with 11. spinal 12. tumor, 13. disc 14. bulges, 15. and 16. paralysis? Wait, that's 16 words. Oops. Need to trim. Maybe \"What urgent interventions should be considered for a patient with spinal tumor, disc bulges, and paralysis?\" Let me count again: 1. What 2. urgent 3. interventions 4. should 5. be 6. considered 7. for 8. a 9. patient 10. with 11. spinal 12. tumor, 13. disc 14. bulges, 15. and 16. paralysis? Hmm, still 16. Maybe replace \"spinal tumor\" with \"tumor\" to save a word. \"What urgent interventions should be considered for a patient with tumor, disc bulges, and paralysis?\" That's 14 words. But maybe the tumor is in the back, so spinal is important. Alternatively, \"What urgent interventions should be considered for a patient with spinal tumor, disc bulges, and paralysis?\" Let me check again. 1. What 2. urgent 3. interventions 4. should 5. be 6. considered 7. for 8. a 9. patient 10. with 11. spinal 12. tumor, 13. disc 14. bulges, 15. and 16. paralysis? No, still 16. Maybe \"What urgent interventions should be considered for a patient with spinal tumor and paralysis due to disc bulges?\" That's 15 words. Let me count: 1. What 2. urgent 3. interventions 4. should 5. be 6. considered 7. for 8. a 9. patient 10. with 11. spinal 12. tumor 1"
+    "prediction": "What should the patient do if she is in pain and cannot move her legs?"
   },
   {
     "case_id": "14",
-    "prediction": "Is gastric cancer a possible cause of the patient's persistent lower left abdominal pain after eating despite negative tests?"
+    "prediction": "Is there evidence of stomach cancer?"
   },
   {
     "case_id": "15",
-    "prediction": "What causes testicular shrinkage, watery ejaculate, and prostate concerns?"
+    "prediction": "Did the infection spread to other anatomies, causing infertility?"
   },
   {
     "case_id": "16",
-    "prediction": "Should the patient's dizziness and new neurological symptoms raise concern for stroke given their spinal stenosis?"
+    "prediction": "Is her back pain and dizziness concerning for a stroke?"
   },
   {
     "case_id": "17",
-    "prediction": "Can adjusting levothyroxine dosage reduce palpitations in a post-thyroidectomy patient?"
+    "prediction": "What should the patient do to relieve palpitations and anxiety?"
   },
   {
     "case_id": "18",
-    "prediction": "Should the patient return to ER for vomiting/diarrhea after a week-old car accident with engine damage and neck pain?"
+    "prediction": "Should the patient return to the ER for diarrhea and vomiting?"
   },
   {
     "case_id": "19",
-    "prediction": "Can the patient's palpitations, chest discomfort, and rapid heartbeats be due to anxiety or a cardiac issue?"
+    "prediction": "Is the patient's symptomatology more consistent with anxiety or a cardiovascular process?"
   },
   {
     "case_id": "20",
-    "prediction": "Why does post-migraine vertigo occur in elderly patients?"
+    "prediction": "How was the patient diagnosed with migraine based on her spinning sensation?"
   }
 ]

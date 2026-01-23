@@ -1,7 +1,7 @@
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
-
+# TODO I would like this to be complete dataloader - the paths can be coded directly... 
 class ArchEHRDataLoader:
     def __init__(self, xml_path: Path):
         self.xml_path = xml_path

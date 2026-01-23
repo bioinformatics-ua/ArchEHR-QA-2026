@@ -8,10 +8,14 @@
 #SBATCH --gres=gpu:1
 
 # --- Environment Setup ---
-echo "Job started on $(hostname)"
-echo "Job ID: $SLURM_JOB_ID"
+SIF_IMAGE="./builder.sif"
+UV_BIN=$(which uv)
 
-uv run python evaluation.py \
+# 1. Build dependencies (Fixes the C++ error)
+singularity exec --nv "$SIF_IMAGE" "$UV_BIN" sync
+
+# 2. Run the code
+singularity exec --nv "$SIF_IMAGE" "$UV_BIN" run python evaluation.py \
     --submission_path ../outputs/predictions.json \
     --key_path ../../data/dev/archehr-qa.xml \
     --quickumls_path ../quickumls/ \

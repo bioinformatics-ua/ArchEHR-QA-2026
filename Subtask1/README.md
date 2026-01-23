@@ -13,7 +13,7 @@ For both inference and evaluation, SLURM scripts are provided to facilitate runn
 Besides `uv`, ensure you have the AlignScore model checkpoint downloaded on the `models/` directory:
 
 ```bash
-curl -L -o ../models/AlignScore-base.ckpt https://huggingface.co/yzha/AlignScore/resolve/main/AlignScore-base.ckpt
+curl -L -o ../../models/AlignScore-base.ckpt https://huggingface.co/yzha/AlignScore/resolve/main/AlignScore-base.ckpt
 ```
 
 ## Inference
