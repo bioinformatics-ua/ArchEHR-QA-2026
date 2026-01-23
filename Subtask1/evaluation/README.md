@@ -19,7 +19,7 @@ Generate the QuickUMLS data files following the directions provided at <https://
 ## Running
 
 ```bash
-uv run python scoring_subtask_1.py \
+uv run python evaluation.py \
     --submission_path submission.json \
     --key_path archehr-qa.xml \
     --quickumls_path quickumls/ \
