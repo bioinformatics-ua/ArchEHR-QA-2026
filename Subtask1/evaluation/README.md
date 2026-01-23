@@ -16,6 +16,8 @@ Then run the following command to set up the environment and install the require
 srun singularity pull builder.sif docker://python:3.10-bookworm
 ```
 
+quickumls file can be found here: /ceph/project/ArchEHR-QA-2026/final.zip (good luck)
+
 Run this - if you didnt install already:
 ```bash
 curl -L -o ../../models/AlignScore-base.ckpt https://huggingface.co/yzha/AlignScore/resolve/main/AlignScore-base.ckpt
