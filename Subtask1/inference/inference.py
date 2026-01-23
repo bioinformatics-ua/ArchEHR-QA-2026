@@ -1,4 +1,4 @@
-import json
+import orjson
 import os
 import re
 from pathlib import Path
@@ -43,8 +43,7 @@ def main(
     # --- 3. Load Prompt Template ---
     print(f"Loading prompt template from {prompt_file}...")
     with open(prompt_file, "r") as f:
-        prompt_template_data = json.loads(f.readline())
-        prompt_template = prompt_template_data["text"]
+        prompt_template = orjson.loads(f.readline())["text"]
     print("Prompt template loaded.")
 
     # --- 4. Build Prompts ---
@@ -103,7 +102,7 @@ def main(
             # Find JSON pattern {"query": "..."} or similar
             json_match = re.search(r'\{[^{}]*"query"[^{}]*\}', generated_text)
             if json_match:
-                query_json = json.loads(json_match.group())
+                query_json = orjson.loads(json_match.group())
                 prediction = query_json.get("query", "")
             else:
                 # Fallback: use the whole generated text
@@ -124,7 +123,7 @@ def main(
     print(f"\n>>> Saving results to {output_path}")
 
     with open(output_path, "w") as f:
-        json.dump(results, f, indent=2)
+        f.write(orjson.dumps(results, option=orjson.OPT_INDENT_2).decode("utf-8"))
 
     print(f"Results saved to {output_path} in gold.json format")
 
