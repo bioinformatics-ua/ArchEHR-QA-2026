@@ -16,5 +16,7 @@ class ArchEHRDataLoader:
                 "clinician_question": text,
             }
             for case in root.findall("case")
-            if (text := case.findtext("clinician_question", "").strip())
+            # Try clinician_question first (dev set), fall back to patient_narrative (test set)
+            if (text := (case.findtext("clinician_question", "").strip() or 
+                        case.findtext("patient_narrative", "").strip()))
         ]
