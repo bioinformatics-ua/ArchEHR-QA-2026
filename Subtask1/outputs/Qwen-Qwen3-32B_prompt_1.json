@@ -1,0 +1,190 @@
+[
+  {
+    "case_id": "121",
+    "prediction": "Is travel to a remote island appropriate for a patient with recent valve surgery, septicemia, and multiple strokes?"
+  },
+  {
+    "case_id": "122",
+    "prediction": "What causes pulmonary edema and elevated troponin post-MI in an 84-year-old man, and how is it treated?"
+  },
+  {
+    "case_id": "123",
+    "prediction": "What is the optimal management for Pneumocystis jirovecii pneumonia in a patient with ankylosing spondylitis, Crohn’s, and recent ICU admission?"
+  },
+  {
+    "case_id": "124",
+    "prediction": "Is the patient's current infection, sepsis, atypical flank pain, and organ enlargement indicative of malignancy?"
+  },
+  {
+    "case_id": "125",
+    "prediction": "Is the breathing tube procedure related to his pneumonia and smoke inhalation?"
+  },
+  {
+    "case_id": "126",
+    "prediction": "What causes persistent cough with dyspnea and treatment resistance in asthmatic patient after imaging and ENT evaluation?"
+  },
+  {
+    "case_id": "127",
+    "prediction": "What is the cause of the brain shadow and seizure in this patient?"
+  },
+  {
+    "case_id": "128",
+    "prediction": "Is the patient's acute confusion and hallucinations post-fall reversible?"
+  },
+  {
+    "case_id": "129",
+    "prediction": "What is causing the patient's rapid weight loss, weakness, and anorexia post-bowel surgery and ICU discharge?"
+  },
+  {
+    "case_id": "130",
+    "prediction": "Is there a risk of improper healing in the patient's fractured leg?"
+  },
+  {
+    "case_id": "131",
+    "prediction": "Is the patient's persistent dysuria after antibiotics due to stent-related infection or antibiotic resistance?"
+  },
+  {
+    "case_id": "132",
+    "prediction": "What is the likely cause of the patient's palatal bleeding considering his history of cancer, smoking, and alcohol use?"
+  },
+  {
+    "case_id": "133",
+    "prediction": "What is the safest way to taper antihypertensives in a patient with a history of medication-induced toxicity and ICU admission?"
+  },
+  {
+    "case_id": "134",
+    "prediction": "What caused wound infection in hip replacement patient with post-op delirium?"
+  },
+  {
+    "case_id": "135",
+    "prediction": "Are persistent post-viral meningitis symptoms (dizziness, brain fog) 3 weeks post-discharge indicative of atypical recovery requiring further investigation?"
+  },
+  {
+    "case_id": "136",
+    "prediction": "Why is the patient experiencing 360-degree instability after spondylolisthesis and coronal imbalance surgery?"
+  },
+  {
+    "case_id": "137",
+    "prediction": "What is the appropriate management for persistent hemoptysis six weeks post-bronchopneumonia with initial improvement?"
+  },
+  {
+    "case_id": "138",
+    "prediction": "Is the patient's lung infection contributing to his kidney dysfunction and multiple organ failure?"
+  },
+  {
+    "case_id": "139",
+    "prediction": "Why is the patient's WBC increasing despite treatment post-acetaminophen overdose and renal failure?"
+  },
+  {
+    "case_id": "140",
+    "prediction": "What is the clinical significance of fluctuating WBC post-kidney transplant with normal kidney function?"
+  },
+  {
+    "case_id": "141",
+    "prediction": "Is postoperative critical care unit transfer standard after bowel perforation repair?"
+  },
+  {
+    "case_id": "142",
+    "prediction": "What is the likelihood of cardiac issues causing the patient's cardiomegaly and dyspnea, necessitating echo and endoscopy?"
+  },
+  {
+    "case_id": "143",
+    "prediction": "Is the patient's delirium, agitation, and hallucinations due to Nardil withdrawal, sepsis, or meningitis?"
+  },
+  {
+    "case_id": "144",
+    "prediction": "<think>\nOkay, let's see. The user wants me to create a clinical question based on the patient narrative. First, I need to read through the narrative carefully.\n\nThe patient is a woman with CAD (coronary artery disease) for two years. Her baseline angina has worsened over the past month, with discomfort after stairs. She's on aspirin 325 mg. Recently, she had chest pain at rest lasting 2 hours. ICU doctors think a mild infection might be the cause. She had a cardiac catheterization in July and started ASA (aspirin) then. Her medical history includes NQWMI (non-Q-wave myocardial infarction?), unstable angina, osteoarthritis, asbestos exposure, asthma, GERD, HTN, and hyperlipidemia. Medications include ASA, bisoprolol, valsartan, amlodipine, fenofibrate, tamsulosin, and nitropatch.\n\nThe main concern here is the recent worsening of angina, including rest chest pain, which could indicate unstable angina or an MI. The ICU doctors mentioned a possible mild infection as a contributing factor. The user is asking if the patient needs to be on ASA (aspirin). But she's already on 325 mg. Wait, maybe there's confusion between ASA (aspirin) and another medication? Or perhaps they're considering a different antiplatelet agent? Or maybe the user is asking if the aspirin dose is adequate or if she needs another medication. Wait, the user wrote \"if mom need to be ASA.\" Since she's already on aspirin, maybe the question is about adjusting the dose or adding another medication. But the narrative says she's been on aspirin since July after the catheterization. The recent change is the rest angina and possible infection. The clinical question should focus on the current concern: whether the patient needs to be on aspirin (ASA) given the new symptoms. But since she's already on it, maybe the question is about whether to increase the dose or add another antiplatelet. However, the user might have a typo, thinking \"ASA\" refers to acetylsalicylic acid (aspirin), but she's already on it. Alternatively, maybe \"ASA\" here refers to another treatment. Wait, the user wrote \"I am just wonder if mom need to be ASA.\" So the user is asking if the patient needs to be on aspirin. But she is already on it. So perhaps the question is whether the current regimen is sufficient, or if she needs a different medication. But the user might be confused. However, the task is to form a proper clinical question based on the narrative. The main issue is the recent rest angina and possible decompensation. The ICU doctors think infection might be a factor. The question should focus on the management of her CAD given the new symptoms. Maybe the question is whether the patient requires an adjustment in her antiplatelet therapy, but since she's already on aspirin, perhaps the concern is about adding another agent like clopidogrel. Alternatively, maybe the question is about whether she needs to be on aspirin now, but she already is. So maybe the user is confused. Alternatively, the user is asking if the patient needs to be started on aspirin, but she's already on it. Wait, the narrative says she's been on aspirin since July. The user's question is \"if mom need to be ASA.\" So perhaps the user is asking if she needs to continue aspirin or if there's a need to adjust. But the main clinical issue is the new rest angina and possible unstable angina or NSTEMI. So the clinician might be considering whether the patient's current antiplatelet regimen is adequate, or if there's a need to escalate therapy. However, the user's question is phrased as \"if mom need to be ASA,\" which is a bit unclear. Given that, the proper clinical question should focus on the main concern: the recent rest angina and whether the patient requires a change in her antiplatelet therapy. So the question would be something like: \"Should the patient continue aspirin therapy given recent rest angina and possible unstable angina?\" But the user's original question was about needing to be on ASA. Since she's already on it, perhaps the question is whether the current dose is appropriate. But the narrative says she's on 325 mg, which is a standard antiplatelet dose. Alternatively, maybe the question is about the need for dual antiplatelet therapy (like adding clopidogrel), but the user didn't mention that. The main concern is the new rest angina, so the clinician might be considering if the patient has unstable angina and needs more aggressive management, which might include adjusting antiplatelet therapy. So the clinical question would be: \"Does the patient require escalation of antiplatelet therapy given new rest"
+  },
+  {
+    "case_id": "145",
+    "prediction": "What is the underlying cause of the patient's persistent abdominal pain despite extensive testing and multiple inconclusive diagnoses?"
+  },
+  {
+    "case_id": "146",
+    "prediction": "Is vomiting in a patient with chronic Hep C genotype 1a and hyponatremia a complication of the disease?"
+  },
+  {
+    "case_id": "147",
+    "prediction": "Is rapid platelet decline in amyloidosis a sign of severe complication requiring urgent intervention?"
+  },
+  {
+    "case_id": "148",
+    "prediction": "What is the cause of high fever with non-itchy rash on cheeks, chest, and abdomen?"
+  },
+  {
+    "case_id": "149",
+    "prediction": "What is causing persistent hypoxia despite chest tube and pneumonia treatment?"
+  },
+  {
+    "case_id": "150",
+    "prediction": "Can the patient's tachycardia and atrial fibrillation be cured after cardiac catheterization despite medication-induced complications?"
+  },
+  {
+    "case_id": "151",
+    "prediction": "<think>\nOkay, let's see. The user provided a patient narrative about an uncle with abdominal pain for two weeks. He was in the hospital, recovering but then developed a fever. His stomach is bloating, and the doctor says symptoms improved but wants a CT scan. The main question is why the CT scan is recommended and if they should consult another doctor.\n\nFirst, I need to form a clinical question. The key points are the persistent abdominal pain, recent fever, bloating, and the doctor's suggestion for a CT scan despite some improvement. The user is asking for the reason behind the CT scan and whether to seek a second opinion.\n\nThe question should be in third person, under 15 words. Using \"What\" and \"Should\" makes sense here. Maybe start with \"What is the indication for CT scan...\" and then \"should a specialist be consulted...\" That covers both parts of the user's query. Let me check the word count. \"What is the indication for CT scan in patient with persistent abdominal pain and recent fever despite clinical improvement? Should a specialist be consulted for further evaluation?\" That's 20 words. Need to shorten. Maybe \"What is the indication for CT scan in a patient with persistent abdominal pain and recent fever despite clinical improvement? Should a specialist be consulted?\" Hmm, still 20. Wait, the original instruction says maximum 15 words. So need to condense.\n\nAlternative: \"What is the indication for CT scan in a patient with persistent abdominal pain and recent fever despite improved symptoms? Should a specialist be consulted?\" That's 19 words. Still too long. Maybe combine the two parts. \"What is the indication for CT scan in a patient with persistent abdominal pain and recent fever despite improvement, and should a specialist be consulted?\" Now it's 17 words. Still over. Let's see. Remove \"despite improvement\" and say \"despite clinical improvement.\" Wait, the original says \"symptoms have improved.\" Maybe \"What is the indication for CT scan in a patient with persistent abdominal pain and recent fever despite symptom improvement? Should a specialist be consulted?\" That's 18 words. Still over. Maybe rephrase to combine both parts into one question. \"What is the indication for CT scan and need for specialist consultation in a patient with persistent abdominal pain and recent fever despite symptom improvement?\" That's 16 words. Closer. Maybe remove \"and need for specialist consultation\" to make it shorter. \"What is the indication for CT scan in a patient with persistent abdominal pain and recent fever despite symptom improvement?\" That's 14 words. Perfect. Then the second part about consulting a specialist can be implied. Alternatively, the user might need two separate questions, but the instruction says one question. Since the user's original question combines both the reason for CT and whether to consult another doctor, maybe combine them into one. Let's try: \"What is the indication for CT scan and whether specialist consultation is needed for a patient with persistent abdominal pain and recent fever despite symptom improvement?\" That's 17 words. Still over. Hmm. Maybe \"What is the indication for CT scan in a patient with persistent abdominal pain and recent fever despite improved symptoms, and should a specialist be consulted?\" 19 words. Still too long. Let's see. The key elements are: CT scan indication, persistent abdominal pain, recent fever, symptoms improved, and whether to consult a specialist. Maybe rephrase to \"What is the indication for CT scan in a patient with persistent abdominal pain and recent fever despite clinical improvement, and should a specialist be consulted?\" That's 18 words. Still over. Maybe remove \"despite clinical improvement\" and say \"with persistent abdominal pain and recent fever following clinical improvement.\" Wait, the user mentioned that the patient was recovering well until one day, then developed fever. So maybe the CT is to check for complications. So the main question is why the CT is needed now. The second part is whether to consult a specialist. Let me try again: \"What is the indication for CT scan in a patient with persistent abdominal pain and recent fever following clinical improvement, and should a specialist be consulted?\" That's 18 words. Still over. Maybe split into two questions, but the user wants one. Let me check the example. The example might have combined them. Let me count the words. \"What is the indication for CT scan in a patient with persistent abdominal pain and recent fever despite clinical improvement? Should a specialist be consulted for further evaluation?\" That's two separate questions, but the instruction says one question. Wait, the user's original instruction says \"Make it a proper question that a clinician would ask\" and \"Focus on the main clinical concern or decision needed.\" The main concern is why the CT is recommended and whether to consult another doctor. So perhaps the main question is the indication for the CT scan, and the second part is about consultation. But the user wants a single question. Maybe the main concern is the CT scan"
+  },
+  {
+    "case_id": "152",
+    "prediction": "How should a patient with opioid dependence and lower left abdominal pain be managed without narcotics?"
+  },
+  {
+    "case_id": "153",
+    "prediction": "What is the next diagnostic step for the patient with a left lobe liver mass suspected cholangiocarcinoma?"
+  },
+  {
+    "case_id": "154",
+    "prediction": "Is the patient's post-operative syncope and cardiac dysrhythmias with hypotension and bradycardia a concern for a serious cardiac complication?"
+  },
+  {
+    "case_id": "155",
+    "prediction": "What treatment is recommended for persistent diarrhea and abdominal pain after hospitalization in a 64-year-old?"
+  },
+  {
+    "case_id": "156",
+    "prediction": "Does fluctuating ammonia and encephalopathy in cirrhosis indicate worsening liver disease and lactulose ineffectiveness?"
+  },
+  {
+    "case_id": "157",
+    "prediction": "What is the severity of the patient's condition with diabetes, cirrhosis, hypothermia, and hypotension?"
+  },
+  {
+    "case_id": "158",
+    "prediction": "What other differential diagnoses should be considered for an 82-year-old with recurrent severe abdominal pain and prior negative evaluation?"
+  },
+  {
+    "case_id": "159",
+    "prediction": "What alternative antipsychotics are recommended for delusions in a dementia patient unresponsive to Haldol?"
+  },
+  {
+    "case_id": "160",
+    "prediction": "What are the long-term effects of persistent low hematocrit after blood transfusion in a patient with severe anemia?"
+  },
+  {
+    "case_id": "161",
+    "prediction": "What is the cause of the patient's new left-sided back pain given her history of ovarian cyst and possible undetected metastatic disease?"
+  },
+  {
+    "case_id": "162",
+    "prediction": "What is the optimal treatment for refractory seizures and behavioral issues in a child with normal neuroimaging?"
+  },
+  {
+    "case_id": "163",
+    "prediction": "Could the patient's worsening pain, shoulder stiffness, and shortness of breath be due to lupus progression?"
+  },
+  {
+    "case_id": "164",
+    "prediction": "What is the risk of thyroid storm during air travel for a hyperthyroid patient with recent hospitalizations?"
+  },
+  {
+    "case_id": "165",
+    "prediction": "How to adjust morphine dosage to reduce sedation while maintaining pain control in a patient with metastatic breast cancer?"
+  },
+  {
+    "case_id": "166",
+    "prediction": "Is cervical nerve compression from C4-5 degenerative disc disease causing her headache and facial pain, and should she be on medication?"
+  },
+  {
+    "case_id": "167",
+    "prediction": "What is the likelihood of brain tumor and its staging given the patient's constipation, hand, and foot weakness?"
+  }
+]

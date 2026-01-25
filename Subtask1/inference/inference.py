@@ -105,14 +105,14 @@ def main(
         # --- Initialize VLLM ---
         print("Initializing VLLM Engine...")
 
-        # max_model_len: The limit of how much text it can remember (8192 words/tokens is usually safe)
-        # tensor_parallel_size: How many GPUs to use (1 for your current setup)
+        # max_model_len: Reduced to 2048 to save GPU memory (patient narratives are short)
+        # tensor_parallel_size: How many GPUs to use (4 to split 27B model across GPUs)
         # enforce_eager=True: Disables torch.compile to avoid compilation errors
         # gpu_memory_utilization: Fraction of GPU memory to use (lower = more memory for weights)
         llm = LLM(
             model=model, 
-            tensor_parallel_size=1, 
-            max_model_len=8192, 
+            tensor_parallel_size=4, 
+            max_model_len=2048, 
             enforce_eager=True,
             gpu_memory_utilization=0.85
         )
