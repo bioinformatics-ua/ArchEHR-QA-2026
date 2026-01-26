@@ -23,9 +23,9 @@ source .venv/bin/activate
 
 # --- Configuration ---
 MODE="local"                         # Change to "local", "openai", or "groq"
-MODEL="Echelon-AI/Med-Qwen2-7B"     # Full model name/path
+MODEL="google/medgemma-27b-text-it"     # Full model name/path
 DATASET="dev"                      # Change to "test" for test set or "dev" for development set
-PROMPT_INDEX=5                      # Prompt template index
+PROMPT_INDEX=8                      # Prompt template index
 
 # Auto-generate output filename: model_prompt_N.json
 MODEL_NAME=$(echo "$MODEL" | tr '/' '-' | tr '.' '-')

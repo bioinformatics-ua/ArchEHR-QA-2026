@@ -12,7 +12,7 @@ class LocalProvider(BaseProvider):
         self.tokenizer = AutoTokenizer.from_pretrained(model_name, token=hf_token)
         self.llm = LLM(
             model=model_name,
-            tensor_parallel_size=1,
+            tensor_parallel_size=4,
             max_model_len=2048,
             enforce_eager=True,
             gpu_memory_utilization=0.85,

@@ -1,0 +1,82 @@
+[
+  {
+    "case_id": "1",
+    "prediction": "Why was ERCP recommended to the patient over continuing a medication-based treatment?"
+  },
+  {
+    "case_id": "2",
+    "prediction": "Why was the patient administered lasix and had reduced oxygen flow rate?"
+  },
+  {
+    "case_id": "3",
+    "prediction": "What is the expected course of recovery for him?"
+  },
+  {
+    "case_id": "4",
+    "prediction": "Why was cardiac catheterization recommended to the patient?"
+  },
+  {
+    "case_id": "5",
+    "prediction": "Is the patient's pain related to the overdose or another cause?"
+  },
+  {
+    "case_id": "6",
+    "prediction": "Why was fungal pneumonia in the patient not detected earlier?"
+  },
+  {
+    "case_id": "7",
+    "prediction": "Are there specific instructions for blood thinners due to a subarachnoid brain hemorrhage?"
+  },
+  {
+    "case_id": "8",
+    "prediction": "Is the confusion related to lasting poison-induced organ damage?"
+  },
+  {
+    "case_id": "9",
+    "prediction": "What treatments did she receive for complications during her delivery?"
+  },
+  {
+    "case_id": "10",
+    "prediction": "Did the patient develop cerebral hypoxia due to myocardial infarction?"
+  },
+  {
+    "case_id": "11",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "12",
+    "prediction": "What can cause her persistent stomach pain?"
+  },
+  {
+    "case_id": "13",
+    "prediction": "<think>\nOkay, let's tackle this. The user wants me to act as a clinician assistant. The task is to read the patient narrative and create a clinical question. The key points are: one clear question, concise, using exact terms from the narrative, and focusing on the main concern.\n\nThe patient narrative is: \"What should the patient do if she is in in pain and cannot move her legs?\" First, I need to identify the main issue here. The patient is in pain and can't move her legs. The question is about what to do in that situation. \n\nI need to make sure to use the exact terms from the narrative. The user mentioned not to standardize or correct any terms, even if they're misspelled. Here, \"in in pain\" has a typo but I should keep it as is. The key elements are \"in in pain\" and \"cannot move her legs\". \n\nNow, formulating the question. The user wants a third-person perspective, using \"she\" instead of \"I\". The question should be in the form of \"What should the patient do...\" which is already part of the narrative. The main concern seems to be the combination of pain and leg immobility. \n\nI need to check the word count. The original question is 12 words. Let me count: \"What should the patient do if she is in in pain and cannot move her legs?\" That's 14 words. Wait, the user says to target 10-12 words, maximum 15. So maybe I can shorten it without losing key info. \n\nBut the user says to include key medical details. The exact phrases are \"in in pain\" and \"cannot move her legs\". If I shorten, I have to keep those exact terms. Let me see if there's a way to condense. For example, \"What should the patient do for leg immobility and pain?\" But that removes the exact phrase \"in in pain\". Also, the original mentions \"cannot move her legs\", which is important. \n\nWait, the user says to use the exact drug names and medical terms from the narrative. Since there are no drug names here, but the phrases \"in in pain\" and \"cannot move her legs\" are part of the narrative. So the question should include those exact phrases. \n\nSo the original question is 14 words. The user allows up to 15, but the target is 10-12. Is there a way to make it shorter without changing the meaning? Let me try. Maybe \"What should the patient do for leg immobility and in in pain?\" That's 11 words. But does that capture the original intent? The original is \"if she is in in pain and cannot move her legs\". The phrase \"cannot move her legs\" is important. \n\nAlternatively, \"What should the patient do if leg immobility and pain occur?\" That's 10 words. But \"leg immobility\" isn't in the narrative. The narrative says \"cannot move her legs\". So using \"leg immobility\" might be standardizing, which the user says not to do. \n\nHmm. The user says to preserve medical terms character-for-character as written. So \"cannot move her legs\" should stay as is. The exact phrase is necessary. So maybe the original is 14 words. Let me count again: \n\n\"What should the patient do if she is in in pain and cannot move her legs?\" \n\nBreaking it down:\n\n1. What\n2. should\n3. the\n4. patient\n5. do\n6. if\n7. she\n8. is\n9. in\n10. in\n11. pain\n12. and\n13. cannot\n14. move\n15. her\n16. legs?\n\nWait, that's 16 words. Oh, the user says \"if the narrative has multiple concerns, choose the primary one\". The primary concern here is the combination of pain and leg immobility. But the word count is over 15. The user says no exceptions for 16+ words. So I need to shorten it to 15 words max. \n\nLet me try to rephrase. The original has \"if she is in in pain and cannot move her legs\". Maybe I can combine the two conditions. \"What should the patient do for leg immobility and in in pain?\" That's 10 words. But \"leg immobility\" is not in the original. The original says \"cannot move her legs\". \n\nAlternatively, \"What should the patient do if she cannot move her legs and is in in pain?\" That's 14 words. Let me check: 1. What, 2. should, 3. the, 4. patient, 5. do, 6. if, 7. she, 8. cannot,"
+  },
+  {
+    "case_id": "14",
+    "prediction": "Is there any evidence of stomach cancer in the patient?"
+  },
+  {
+    "case_id": "15",
+    "prediction": "Has his infection spread to other anatomies, leading to infertility?"
+  },
+  {
+    "case_id": "16",
+    "prediction": "Can her back pain and dizziness be concerning for a stroke?"
+  },
+  {
+    "case_id": "17",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "18",
+    "prediction": "Should the patient return to the ER for diarrhea and vomiting?"
+  },
+  {
+    "case_id": "19",
+    "prediction": "What is the cause of her symptoms: anxiety or a cardiovascular process?"
+  },
+  {
+    "case_id": "20",
+    "prediction": "How was she diagnosed with migraine for spinning sensation?"
+  }
+]
