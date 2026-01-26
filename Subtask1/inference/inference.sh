@@ -5,7 +5,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
-#SBATCH --gres=gpu:1
+#SBATCH --gres=gpu:4
 
 # --- Environment Setup ---
 echo "Job started on $(hostname)"
@@ -23,7 +23,7 @@ source .venv/bin/activate
 
 # --- Configuration ---
 MODE="local"                         # Change to "local", "openai", or "groq"
-MODEL="google/medgemma-4b-it"     # Full model name/path
+MODEL="google/medgemma-27b-text-it"     # Full model name/path
 DATASET="test"                      # Change to "test" for test set or "dev" for development set
 PROMPT_INDEX=1                      # Prompt template index
 
