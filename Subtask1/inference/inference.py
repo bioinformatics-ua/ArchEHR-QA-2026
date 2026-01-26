@@ -36,6 +36,7 @@ def main(
     ] = "Qwen/Qwen3-8B",
 ) -> None:
     # --- 1. Setup based on inference mode ---
+    print(f"Setting up provider for inference mode: {inference_mode}...")
     match inference_mode:
         case "local":
             provider: BaseProvider = LocalProvider(model)
@@ -45,6 +46,7 @@ def main(
             raise ValueError(f"Unknown inference mode: {inference_mode}")
 
     # --- 2. Load XML Cases ---
+    print(f"Loading XML cases from {xml_file}...")
     xml_cases = ArchEHRDataLoader(xml_file).load()
     print(f"Loaded {len(xml_cases)} cases from XML.")
 

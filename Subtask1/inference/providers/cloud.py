@@ -18,6 +18,7 @@ class CloudProvider(BaseProvider):
         self.client = OpenAI(api_key=api_key, base_url=base_url)
 
     def generate(self, prompt: Messages) -> str:
+        print("Generating response from CloudProvider...")
         content = (
             self.client.chat.completions.create(
                 model=self.model_name,
