@@ -122,7 +122,8 @@ def main(
             tensor_parallel_size=4, 
             max_model_len=2048, 
             enforce_eager=True,
-            gpu_memory_utilization=0.85
+            gpu_memory_utilization=0.85,
+            trust_remote_code=True
         )
 
         # SamplingParams controls "Creativity":

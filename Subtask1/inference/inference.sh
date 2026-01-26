@@ -23,9 +23,9 @@ source .venv/bin/activate
 
 # --- Configuration ---
 MODE="local"                         # Change to "local", "openai", or "groq"
-MODEL="google/medgemma-27b-text-it"     # Full model name/path
-DATASET="test"                      # Change to "test" for test set or "dev" for development set
-PROMPT_INDEX=1                      # Prompt template index
+MODEL="google/medgemma-1.5-4b-it"     # Full model name/path
+DATASET="dev"                      # Change to "test" for test set or "dev" for development set
+PROMPT_INDEX=3                      # Prompt template index
 
 # Auto-generate output filename: model_prompt_N.json
 MODEL_NAME=$(echo "$MODEL" | tr '/' '-' | tr '.' '-')
@@ -50,20 +50,18 @@ python inference.py \
     --model "$MODEL"
     # --model "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8" \ 
 
+cd ../evaluation 
+SIF_IMAGE="./builder.sif"
+UV_BIN=$(which uv)
 
-# {"nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8" : "nemotron3"}
-# nemotron3_prompt_1.json 
+# 1. Build dependencies (Fixes the C++ error)
+singularity exec --nv "$SIF_IMAGE" "$UV_BIN" sync
 
-
-
-# # --- Run Evaluation Script ---
-# echo "Starting evaluation script..."
-# cd ../evaluation
-# uv run python evaluation.py \
-#     --submission_path ../outputs/predictions.json \
-#     --key_path ../../data/dev/archehr-qa.xml \
-#     --quickumls_path ../quickumls/ \
-#     --out_file_path ../results/nemotron3_prompt_1_results.json
-
+# 2. Run the code
+singularity exec --nv "$SIF_IMAGE" "$UV_BIN" run python evaluation.py \
+    --submission_path ../outputs/${DATASET}/$OUTPUT_FILE \
+    --key_path ../../data/dev/archehr-qa.xml \
+    --quickumls_path ../quickumls/final \
+    --out_file_path ../results/${DATASET}/$OUTPUT_FILE
 
 # echo "Evaluation complete. Job finished."
