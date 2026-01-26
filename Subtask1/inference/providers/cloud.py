@@ -24,7 +24,7 @@ class CloudProvider(BaseProvider):
                 model=self.model_name,
                 messages=prompt,
                 temperature=0.7,
-                max_tokens=1024,
+                max_tokens=8192,
             )
             .choices[0]
             .message.content
