@@ -23,10 +23,9 @@ source .venv/bin/activate
 
 # --- Configuration ---
 MODE="local"                         # Change to "local", "openai", or "groq"
-# MODEL="google/medgemma-1.5-4b-it"     # Full model name/path
-MODEL="naazimsnh02/medical-ministral-8b"
+MODEL="Echelon-AI/Med-Qwen2-7B"     # Full model name/path
 DATASET="dev"                      # Change to "test" for test set or "dev" for development set
-PROMPT_INDEX=3                      # Prompt template index
+PROMPT_INDEX=5                      # Prompt template index
 
 # Auto-generate output filename: model_prompt_N.json
 MODEL_NAME=$(echo "$MODEL" | tr '/' '-' | tr '.' '-')
@@ -49,6 +48,9 @@ PYTHONUNBUFFERED=1 python inference.py \
     --output-file ../outputs/${DATASET}/$OUTPUT_FILE \
     --inference-mode "$MODE" \
     --model "$MODEL"
+
+# Deactivate inference venv before moving to evaluation
+deactivate
 
 cd ../evaluation 
 SIF_IMAGE="./builder.sif"

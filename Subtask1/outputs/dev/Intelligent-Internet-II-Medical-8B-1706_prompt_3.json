@@ -1,7 +1,7 @@
 [
   {
     "case_id": "1",
-    "prediction": "Why was ERCP preferred over continued medication treatment?"
+    "prediction": "Why was ERCP preferred over medication management for treatment?"
   },
   {
     "case_id": "2",
@@ -9,74 +9,74 @@
   },
   {
     "case_id": "3",
-    "prediction": "What is the expected recovery timeline for his condition?"
+    "prediction": "expected recovery course"
   },
   {
     "case_id": "4",
-    "prediction": "Why was cardiac catheterization recommended to the patient?"
+    "prediction": "Why was cardiac catheterization recommended?"
   },
   {
     "case_id": "5",
-    "prediction": "clinician interpreted question"
+    "prediction": "Is the patient's current pain related to the overdose or an alternative cause?"
   },
   {
     "case_id": "6",
-    "prediction": "Why was the diagnosis of fungal pneumonia delayed?"
+    "prediction": "What caused the delayed diagnosis of fungal pneumonia?"
   },
   {
     "case_id": "7",
-    "prediction": "What are specific blood thinner management guidelines post subarachnoid hemorrhage?"
+    "prediction": "What are the guidelines for blood thinners post subarachnoid hemorrhage?"
   },
   {
     "case_id": "8",
-    "prediction": "Is the confusion related to poison-induced damage?"
+    "prediction": "What are the long-term effects and cause of the patient's confusion related to poison exposure?"
   },
   {
     "case_id": "9",
-    "prediction": "What treatments were given for delivery complications and their potential long-term effects?"
+    "prediction": "What treatments for delivery complications and their potential future complications?"
   },
   {
     "case_id": "10",
-    "prediction": "Did the patient sustain brain damage from the heart attack?"
+    "prediction": "Was there brain damage caused by the heart attack?"
   },
   {
     "case_id": "11",
-    "prediction": "What is the expected recovery timeline and prognosis?"
+    "prediction": "What is the expected recovery course?"
   },
   {
     "case_id": "12",
-    "prediction": "Possible causes of persistent stomach pain"
+    "prediction": "What are the potential causes of her persistent abdominal pain?"
   },
   {
     "case_id": "13",
-    "prediction": "What management steps should be taken for leg pain and immobility?"
+    "prediction": "What should the patient do if experiencing pain and leg immobility?"
   },
   {
     "case_id": "14",
-    "prediction": "Was there any evidence documented for stomach cancer?"
+    "prediction": "Was there evidence of stomach cancer?"
   },
   {
     "case_id": "15",
-    "prediction": "Did the infection spread, leading to infertility?"
+    "prediction": "Did the infection spread leading to infertility?"
   },
   {
     "case_id": "16",
-    "prediction": "Could back pain and dizziness indicate a stroke?"
+    "prediction": "Is back pain and dizziness associated with stroke?"
   },
   {
     "case_id": "17",
-    "prediction": "What are the recommended treatments for palpitations and anxiety?"
+    "prediction": "What interventions or management strategies are appropriate for palpitations and anxiety?"
   },
   {
     "case_id": "18",
-    "prediction": "Should return to ER for diarrhea and vomiting?"
+    "prediction": "Should the patient return to ER due to vomiting and diarrhea?"
   },
   {
     "case_id": "19",
-    "prediction": "Is the patient's presentation due to anxiety versus cardiovascular condition?"
+    "prediction": "What is the likely cause of the patient's symptoms: anxiety or cardiovascular process?"
   },
   {
     "case_id": "20",
-    "prediction": "How was migraine diagnosed in a patient with vertigo?"
+    "prediction": "<think>\nOkay, let me tackle this. The user provided a patient question asking how they diagnosed her with migraine when she had a spinning sensation. My job is to convert this into a clinician-interpreted question following the given rules.\n\nFirst, I need to identify the core of the patient's query. The patient is confused about the diagnosis method for migraine specifically because the symptom mentioned was a spinning sensation, which is more typical of vertigo or something like that. The key point here is understanding the diagnostic process for migraine in the presence of vertigo.\n\nNext, I need to ensure the resulting question is concise and fits within 15 words. The original patient question is asking for the method or rationale behind diagnosing migraine when the main symptom was spinning. The clinician's version needs to capture why they chose migraine over other possible conditions with similar symptoms. So the core need is understanding the diagnostic criteria used here.\n\nAlso, I need to avoid adding any new information not in the original. The original mentions \"spinning sensation,\" which points to vertigo. The answer should relate to how migraine was diagnosed despite or instead of vertigo. So the question could focus on the criteria or tests used.\n\nPossible phrasing: \"What criteria were used to diagnose migraine despite vertigo symptoms?\" That captures the essence, is under 15 words, and sticks to the facts given. Let me check the examples. The first example used \"emergency salvage repair\" directly. So here, \"criteria for migraine diagnosis with vertigo\" might work. Alternatively, \"How was migraine diagnosed when vertigo symptoms were present?\" That's 10 words. Hmm. Wait, let me count: \"How was migraine diagnosed in the presence of spinning sensation (vertigo) symptoms?\" That's 12 words. But \"spinning sensation\" is the key term here. So maybe \"What diagnostic criteria led to a migraine diagnosis with spinning (vertigo) symptoms?\" That's 13 words. Alternatively, \"Why was migraine diagnosed despite vertigo symptoms?\" But maybe the term \"spinning\" is better than \"vertigo\" here unless vertigo is a known term. The patient used \"spinning sensation,\" so perhaps the clinician would note that. Wait, but the instruction says to use terms suitable for EHR. So \"spinning sensation\" might be better. But \"vertigo\" is the medical term. However, the original text uses \"spinning sensation,\" so the answer should use that. Let me check the examples. In the first example, the patient mentioned \"aortic aneurysm\" and \"salvage repair\" which were clinical terms. So in the input here, \"spinning sensation\" is the lay term, but the clinician might note that. Wait, but the instruction says to capture the core clinical info. So spinning sensation could be considered a symptom of vertigo. But the original question is about the diagnosis process. So the clinician's question would likely ask about the diagnostic criteria in the presence of that symptom. So the best way is to phrase it as: \"What diagnostic criteria were used for migraine in a patient with spinning sensation symptoms?\" That's 14 words. But perhaps shorter. Let me think again. The patient's question is: \"How did they diagnose her with migraine for spinning sensation?\" So the core is the process of diagnosing migraine given the spinning. So the clinician's question is asking about the method or rationale. So \"What criteria led to migraine diagnosis in a patient with spinning (vertigo) symptoms?\" That's 13 words. Alternatively: \"How was migraine diagnosed with spinning (vertigo) symptoms?\" But \"with\" might be okay. Wait, \"How was migraine diagnosed when spinning symptoms (vertigo) were present?\" That's 13 words. Or \"What criteria were used to diagnose migraine despite spinning symptoms?\" 12 words. But the exact term is \"spinning sensation,\" so including that. \"What criteria led to migraine diagnosis with spinning (sensations)?\" Maybe. Alternatively, \"How was migraine diagnosed in presence of spinning symptoms?\" That's 9 words. Wait, the original input's example for the first case used \"emergency salvage repair,\" which is clinical. So here, \"spinning sensation\" is the key, but maybe \"vertigo\" is the clinical term. However, the instruction says to not add new clinical facts. So if the original patient says \"spinning sensation,\" the clinician's question should use that term unless the conversion requires a medical term. But the examples show that in the first case, \"aortic aneurysm\" was used, which is a clinical term. So perhaps \"spinning sensation\" can be left as is. Wait, but \"spinning sensation\" is more lay. The medical term would be vertigo. However, the instruction says not to add new facts. So if the patient says \"spinning,\" the clinician's question can use \"spinning sensation\""
   }
 ]
