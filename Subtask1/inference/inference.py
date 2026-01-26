@@ -22,14 +22,15 @@ def main(
     prompt_file: Annotated[
         Path, typer.Option(help="Path to the prompt template JSONL file.")
     ],
-    prompt_index: Annotated[
-        str, typer.Option(help="Prompt id.")
-    ],
+    prompt_index: Annotated[str, typer.Option(help="Prompt id.")],
     output_file: Annotated[
         Path, typer.Option(help="Path to the output JSON file for results.")
     ],
     inference_mode: Annotated[
-        str, typer.Option(help="Inference mode: 'local' for vLLM, 'openai' for OpenAI API, or 'groq' for Groq API.")
+        str,
+        typer.Option(
+            help="Inference mode: 'local' for vLLM, 'openai' for OpenAI API, or 'groq' for Groq API."
+        ),
     ] = "local",
     model: Annotated[
         str, typer.Option(help="Hugging Face model to use.")
@@ -43,20 +44,24 @@ def main(
     if inference_mode == "openai":
         api_key = openai_api_key or os.getenv("OPENAI_API_KEY")
         if not api_key:
-            raise ValueError("OpenAI API key required via --openai-api-key or OPENAI_API_KEY env variable")
+            raise ValueError(
+                "OpenAI API key required via --openai-api-key or OPENAI_API_KEY env variable"
+            )
         client = OpenAI(api_key=api_key)
         print(f"Using OpenAI API with model: {model}")
         tokenizer = None
     elif inference_mode == "groq":
         api_key = openai_api_key or os.getenv("GROQ_API_KEY")
         if not api_key:
-            raise ValueError("Groq API key required via --openai-api-key or GROQ_API_KEY env variable")
+            raise ValueError(
+                "Groq API key required via --openai-api-key or GROQ_API_KEY env variable"
+            )
         client = OpenAI(api_key=api_key, base_url="https://api.groq.com/openai/v1")
         print(f"Using Groq API with model: {model}")
         tokenizer = None
     else:
         print(f"Loading tokenizer for {model}...")
-        hf_token = os.environ.get('HF_TOKEN')
+        hf_token = os.environ.get("HF_TOKEN")
         tokenizer = AutoTokenizer.from_pretrained(model, token=hf_token)
         print("Tokenizer loaded.")
         client = None
@@ -79,7 +84,7 @@ def main(
     prompt_data = []
     for case in xml_cases:
         # Replace the placeholder with the actual patient narrative
-        
+
         # TODO: Needs to be more flexible to match different prompt formats
         filled_prompt = prompt_template.replace(
             "{PATIENT_NARRATIVE}", case["clinician_question"]
@@ -89,13 +94,16 @@ def main(
             # Apply the chat template for local models
             messages = [{"role": "user", "content": filled_prompt}]
             formatted_prompt = tokenizer.apply_chat_template(
-                messages, tokenize=False, add_generation_prompt=True, enable_thinking=True
+                messages,
+                tokenize=False,
+                add_generation_prompt=True,
+                enable_thinking=True,
             )
             prompts.append(formatted_prompt)
         else:
             # For OpenAI and Groq, store as message format
             prompts.append([{"role": "user", "content": filled_prompt}])
-        
+
         prompt_data.append(case)
 
     print(f"Built {len(prompts)} prompts.")
@@ -110,9 +118,9 @@ def main(
         # enforce_eager=True: Disables torch.compile to avoid compilation errors
         # gpu_memory_utilization: Fraction of GPU memory to use (lower = more memory for weights)
         llm = LLM(
-            model=model, 
-            tensor_parallel_size=1, 
-            max_model_len=8192, 
+            model=model,
+            tensor_parallel_size=1,
+            max_model_len=8192,
             enforce_eager=True,
             gpu_memory_utilization=0.85
         )
@@ -153,15 +161,15 @@ def main(
 
             result = {"case_id": original_case["case_id"], "prediction": prediction}
             results.append(result)
-    
+
     else:  # OpenAI or Groq mode
         print(f"Starting {inference_mode.upper()} API inference...")
         results = []
-        
+
         for i, messages in enumerate(prompts):
             original_case = prompt_data[i]
-            print(f"Processing case {i+1}/{len(prompts)}: {original_case['case_id']}")
-            
+            print(f"Processing case {i + 1}/{len(prompts)}: {original_case['case_id']}")
+
             try:
                 response = client.chat.completions.create(
                     model=model,
@@ -169,9 +177,9 @@ def main(
                     temperature=0.7,
                     max_tokens=1024,
                 )
-                
+
                 generated_text = response.choices[0].message.content.strip()
-                
+
                 # Extract the query from the JSON in the generated text
                 try:
                     # Find JSON pattern {"query": "..."} or similar
@@ -185,32 +193,24 @@ def main(
                 except:
                     # If parsing fails, use the generated text as is
                     prediction = generated_text
-                
+
                 result = {"case_id": original_case["case_id"], "prediction": prediction}
                 results.append(result)
-                
+
             except Exception as e:
                 print(f"Error processing case {original_case['case_id']}: {e}")
                 # Add empty prediction on error
                 results.append({"case_id": original_case["case_id"], "prediction": ""})
-        
+
         print(f"{inference_mode.upper()} API inference complete.")
 
     # --- 4. Save Results in gold.json format ---
     print(f"Saving results to {output_file}...")
 
-    # Save as JSON array (not JSONL)
-    output_dir = "../outputs"
-
-    base_name = os.path.basename(output_file)
-    output_path = os.path.join(output_dir, base_name)
-
-    print(f"\n>>> Saving results to {output_path}")
-
-    with open(output_path, "w") as f:
+    with open(output_file, "w") as f:
         f.write(orjson.dumps(results, option=orjson.OPT_INDENT_2).decode("utf-8"))
 
-    print(f"Results saved to {output_path} in gold.json format")
+    print(f"Results saved to {output_file} in gold.json format")
 
 
 if __name__ == "__main__":

@@ -45,7 +45,7 @@ python inference.py \
     --xml-file ../../data/${DATASET}/archehr-qa.xml \
     --prompt-file prompt.json \
     --prompt-index $PROMPT_INDEX \
-    --output-file ../outputs/$OUTPUT_FILE \
+    --output-file ../outputs/${DATASET}/$OUTPUT_FILE \
     --inference-mode $MODE \
     --model "$MODEL"
     # --model "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8" \ 

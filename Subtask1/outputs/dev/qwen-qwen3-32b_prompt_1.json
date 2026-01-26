@@ -1,0 +1,82 @@
+[
+  {
+    "case_id": "1",
+    "prediction": "Why was ERCP recommended instead of medication for the patient's biliary condition?"
+  },
+  {
+    "case_id": "2",
+    "prediction": "Why was the patient given lasix and has his oxygen flow rate reduced?"
+  },
+  {
+    "case_id": "3",
+    "prediction": "<think>\nOkay, let's see. The user provided a patient narrative with the question \"What is the expected course of recovery for him?\" and wants me to formulate a clinical question based on that.\n\nFirst, I need to follow the instructions step by step. The main task is to convert the narrative into a clear, concise clinical question. The user emphasized using third-person, being specific about the condition, and staying under 15 words.\n\nThe original patient question is pretty vague. It mentions \"expected course of recovery,\" but it doesn't specify the condition. So as a clinician, I need to make sure the question includes the specific condition or injury the patient is referring to. The example given in the instructions mentions using question words like What, Why, How, etc., and being specific.\n\nSince the patient's question is about recovery, the clinical question should ask about the expected recovery timeline for a specific condition. But since the original narrative doesn't mention a specific condition, maybe the assistant needs to infer that the clinician is asking about a particular case. Wait, the user's example output might give a hint. For example, if the narrative is about a broken arm, the question would be \"What is the expected recovery timeline for a patient with a humeral fracture?\" \n\nIn this case, the user's narrative is just a general question. But the assistant needs to make it specific. However, in the absence of specific details from the narrative, perhaps the original query is a placeholder. Wait, looking back, the user provided the patient narrative as \"What is the expected course of recovery for him?\" So the user is asking to convert that into a clinical question. But since it's a narrative from a patient, the actual clinical question would need to be more precise. \n\nWait, maybe the user wants to take the patient's statement and turn it into a proper clinical question that a clinician would ask. The patient's question is vague, so the clinician needs to specify the condition. Therefore, the correct approach is to create a question that includes the specific condition. For example, if the patient is asking about recovery after a heart attack, the question would be about the expected recovery for a patient with a myocardial infarction. \n\nBut in the given example, the patient's narrative is just a general question. So perhaps the assistant should recognize that the question is missing specific details and needs to be adjusted. However, the user's example might be testing the ability to handle such a vague input. Since the user's instruction says to make it a proper question that a clinician would ask, focusing on the main clinical concern. \n\nIn this case, the main concern is the recovery course, but without knowing the condition, maybe the question should be phrased in a way that includes the condition. However, the original narrative doesn't provide any details, so perhaps the assistant is supposed to use a placeholder. Wait, maybe the user expects the assistant to realize that the original question is too vague and needs to be rephrased with a specific condition. Since the user's instruction says to \"formulate it as a clear, concise clinical question\" and \"focus on the main clinical concern or decision needed,\" the assistant must infer that the main concern is the recovery course related to a specific condition. \n\nBut how to proceed without knowing the condition? The user might have intended for the assistant to use the example's structure. Looking at the example output in the instructions: the user provided a narrative and the assistant created a query with a specific condition. But in this case, the narrative is just a question about recovery. Maybe the assistant should ask for clarification, but the instructions don't allow that. Wait, the user's example output is \"What is the expected recovery timeline for a patient with a humeral fracture?\" So in this case, the assistant needs to include the specific condition. However, since the current patient narrative is just a general question, perhaps the assistant should make an assumption based on common scenarios. \n\nAlternatively, maybe the user is testing the ability to recognize that the question is missing key details and the correct clinical question would require specifying the condition. However, since the user's instruction says to \"formulate it as a clear, concise clinical question\" and \"focus on the main clinical concern,\" the assistant must create a question that is specific. But without knowing the condition, perhaps the assistant should use a placeholder or ask about the condition. Wait, but the user's instructions don't allow for that. The user wants the assistant to take the given narrative and convert it into a proper question. \n\nWait, the original narrative is the patient's statement: \"What is the expected course of recovery for him?\" The clinician needs to rephrase this into a question that includes the specific condition. Since the patient's question doesn't mention a condition, perhaps the assistant is supposed to infer that the clinician needs to specify the condition. However, without knowing the condition, the assistant can't create a specific question. Therefore, maybe the correct approach is"
+  },
+  {
+    "case_id": "4",
+    "prediction": "What was the indication for recommending cardiac catheterization?"
+  },
+  {
+    "case_id": "5",
+    "prediction": "Is the patient's pain related to the overdose or another underlying condition?"
+  },
+  {
+    "case_id": "6",
+    "prediction": "Why was fungal pneumonia not diagnosed earlier in the patient?"
+  },
+  {
+    "case_id": "7",
+    "prediction": "What are the specific anticoagulant management instructions for a patient with subarachnoid hemorrhage?"
+  },
+  {
+    "case_id": "8",
+    "prediction": "Will the poison's effects be permanent and cause his confusion?"
+  },
+  {
+    "case_id": "9",
+    "prediction": "What treatments did she receive for delivery complications and will they cause future problems?"
+  },
+  {
+    "case_id": "10",
+    "prediction": "Did the patient develop cerebral injury following myocardial infarction?"
+  },
+  {
+    "case_id": "11",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "12",
+    "prediction": "What are the potential causes of her persistent abdominal pain?"
+  },
+  {
+    "case_id": "13",
+    "prediction": "What is the immediate management for a patient with leg immobility and severe pain?"
+  },
+  {
+    "case_id": "14",
+    "prediction": "Is there any evidence for stomach cancer in the patient?"
+  },
+  {
+    "case_id": "15",
+    "prediction": "Did his infection spread to other anatomies causing infertility?"
+  },
+  {
+    "case_id": "16",
+    "prediction": "Is back pain and dizziness concerning for a stroke in this patient?"
+  },
+  {
+    "case_id": "17",
+    "prediction": "What should he do to relieve palpitations and anxiety?"
+  },
+  {
+    "case_id": "18",
+    "prediction": "Should he return to the ER for ongoing diarrhea and vomiting?"
+  },
+  {
+    "case_id": "19",
+    "prediction": "Are the patient's symptoms related to anxiety or a cardiovascular process?"
+  },
+  {
+    "case_id": "20",
+    "prediction": "How was she diagnosed with migraine for a spinning sensation?"
+  }
+]
