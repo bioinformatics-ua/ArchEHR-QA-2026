@@ -23,7 +23,8 @@ source .venv/bin/activate
 
 # --- Configuration ---
 MODE="local"                         # Change to "local", "openai", or "groq"
-MODEL="google/medgemma-1.5-4b-it"     # Full model name/path
+# MODEL="google/medgemma-1.5-4b-it"     # Full model name/path
+MODEL="naazimsnh02/medical-ministral-8b"
 DATASET="dev"                      # Change to "test" for test set or "dev" for development set
 PROMPT_INDEX=3                      # Prompt template index
 
@@ -54,7 +55,7 @@ SIF_IMAGE="./builder.sif"
 UV_BIN=$(which uv)
 
 # 1. Build dependencies (Fixes the C++ error)
-singularity exec --nv "$SIF_IMAGE" "$UV_BIN" sync
+# singularity exec --nv "$SIF_IMAGE" "$UV_BIN" sync
 
 # 2. Run the code
 singularity exec --nv "$SIF_IMAGE" "$UV_BIN" run python evaluation.py \
