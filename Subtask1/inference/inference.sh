@@ -41,14 +41,13 @@ fi
 
 # --- Run the Inference Script ---
 echo "Starting Python inference script..."
-python inference.py \
+PYTHONUNBUFFERED=1 python inference.py \
     --xml-file ../../data/${DATASET}/archehr-qa.xml \
     --prompt-file prompt.json \
     --prompt-index $PROMPT_INDEX \
     --output-file ../outputs/${DATASET}/$OUTPUT_FILE \
-    --inference-mode $MODE \
+    --inference-mode "$MODE" \
     --model "$MODEL"
-    # --model "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8" \ 
 
 cd ../evaluation 
 SIF_IMAGE="./builder.sif"
