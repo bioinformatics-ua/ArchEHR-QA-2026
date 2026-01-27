@@ -1,0 +1,82 @@
+[
+  {
+    "case_id": "1",
+    "prediction": "..."
+  },
+  {
+    "case_id": "2",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "3",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "4",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "5",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "6",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "7",
+    "prediction": "Should blood thinners be managed due to subarachnoid brain hemorrhage in the patient?"
+  },
+  {
+    "case_id": "8",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "9",
+    "prediction": "We are given a patient narrative: \"What treatments did she receive for complications during her delivery? Will the treatments cause any problems later?\"\n\n We need to:\n 1. Read the narrative.\n 2. Formulate a clear, concise clinical question (max 15 words) that a clinician would ask.\n 3. Use the exact drug names and medical terms from the narrative without standardizing or correcting.\n 4. Focus on the main clinical concern or decision.\n 5. Output as a single sentence question in the specified JSON format.\n\n Important constraints:\n - Use question words (What, Why, How, Is, Can, Should, etc.)\n - Third-person perspective (she, he, the patient) - note: the narrative uses \"she\"\n - Under 15 words\n - Preserve medical terms character-for-character (even if misspelled) - but note the narrative doesn't have any specific drug names or medical terms that are misspelled? Actually, the narrative is very generic.\n\n However, note the narrative: \n   \"What treatments did she receive for complications during her delivery? Will the treatments cause any problems later?\"\n\n We are to formulate a clinical question that a clinician would ask, based on the main concern.\n\n The main concern in the narrative is about the treatments for complications during delivery and whether they will cause problems later.\n\n We are to write a question that focuses on the main clinical concern.\n\n Let's break down:\n - The patient had complications during delivery and received some treatments.\n - The concern is about the long-term effects of those treatments.\n\n We must use the exact terms from the narrative. The narrative uses:\n   - \"complications during her delivery\"\n   - \"treatments\"\n\n But note: the narrative does not specify any particular drug or medical term. However, we are to preserve medical terms as written. Since there are no specific medical terms (like drug names) in the narrative, we just use the phrases as they are.\n\n However, the instruction says: \"Use the EXACT drug names and medical terms from the narrative without standardizing or correcting\"\n\n Since the narrative doesn't have any specific drug names or medical terms (it's very generic), we just use the phrases as they appear.\n\n But note: the narrative says \"complications during her delivery\" and \"treatments\". We must not change these.\n\n How to formulate the question?\n\n We are to ask a question that a clinician would ask, so we might rephrase the concern in a standard clinical question format.\n\n However, we must use the exact terms. So we cannot change \"complications during her delivery\" to \"obstetric complications\" if the narrative says \"complications during her delivery\". But note: the narrative does not have a specific medical term that we are required to preserve? Actually, it does have the phrase \"complications during her delivery\".\n\n But note: the instruction says \"medical terms\", and \"complications during her delivery\" is a phrase that appears in the narrative.\n\n However, the problem is that the narrative is a question from the patient or a family member, not a clinical note. We are to extract the main concern and form a clinical question.\n\n The main clinical concern is: the long-term effects of the treatments given for complications during delivery.\n\n We are to write a question that a clinician would ask, so we might say:\n\n   \"Will the treatments for complications during delivery cause long-term problems?\"\n\n But let's count the words: \n   Will (1) the (2) treatments (3) for (4) complications (5) during (6) her (7) delivery (8) cause (9) long-term (10) problems? (11) -> 11 words.\n\n However, note: we must use the exact terms. The narrative says \"complications during her delivery\", so we must keep \"her delivery\". Also, we are to use third-person: \"she\" is used in the narrative, but in the question we are to use third-person perspective. The question we write should not use \"she\" because the question is about the treatments and their effects, not about the patient's identity. But note the instruction: \"Use third-person perspective (he/she/the patient)\".\n\n However, in a clinical question, we don't usually refer to the patient by name or pronoun in the question. But the instruction says to use third-person perspective. So we can say \"the patient\" or \"she\" but note:\n\n   - The instruction says: \"Use third-person perspective (he/she/the patient)\"\n\n   So we can use \"she\" or \"the patient\". But note: the narrative uses \"she\", so we can use \"she\" in the question? However, in a clinical question, it's more common to say \"the patient\" to be neutral. But the instruction says to use third-person perspective, and \"she\" is third-person.\n\n   But note: the example output format is a question. We are to write a question that a clinician would ask."
+  },
+  {
+    "case_id": "10",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "11",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "12",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "13",
+    "prediction": "We need to produce a JSON with key \"query\" and value a single sentence question, max 15 words, using third-person perspective, question word, using exact drug names and medical terms from narrative, preserve misspellings, keep multi-word medical phrases intact. Narrative: \"What should the patient do if she is in in pain and cannot move her legs?\" The narrative includes \"in in pain\" (duplicate) and \"cannot move her legs\". It mentions no drug names. It mentions \"pain\". The instruction: Use exact drug names and medical terms from the narrative without standardizing or correcting. There are no drug names, but there are medical terms: \"pain\", \"move her legs\". The phrase \"cannot move her legs\" is a multi-word medical phrase? It's not exactly a medical term but it's in narrative. We must preserve it character-for-character. So we must include \"cannot move her legs\" exactly as written. Also \"in in pain\" appears twice; but we need to use exact terms. The question should be about what should the patient do if she is in pain and cannot move her legs. So we need to formulate a clinical question, max 15 words, using question words, third-person perspective, not first person. Must be a proper question a clinician would ask. Must be one single sentence question only. Must be under 15 words. Must preserve medical terms character-for-character. So we need to include \"cannot move her legs\" exactly. Also \"in in pain\"? The phrase \"in in pain\" is odd; maybe we need to include \"in in pain\"? The narrative says \"in in pain\". That is repeated word \"in\". The exact phrase is \"in in pain\". Should we include that exact phrase? The instruction: \"Use the EXACT drug names and medical terms from the narrative without standardizing or correcting\". So we must use exact terms as they appear. The phrase \"in in pain\" appears, but it's not a drug name. It's part of narrative. The question should be about \"pain\". But we must use exact terms. If we write \"pain\", that's exact. But \"in in pain\" includes extra \"in\". The phrase \"in in pain\" is three words: \"in\", \"in\", \"pain\". The narrative: \"What should the patient do if she is in in pain and cannot move her legs?\" So the exact phrase \"in in pain\" appears. If we want to preserve it, we might need to include \"in in pain\". But that would be weird: \"if she is in in pain\". The question could be: \"What should the patient do if she is in in pain and cannot move her legs?\" That's exactly the narrative, but we need to formulate as a clinical question. But we need to keep under 15 words. That sentence is 13 words? Let's count: What(1) should2 the3 patient4 do5 if6 she7 is8 in9 in10 pain11 and12 cannot13 move14 her15 legs16? That's 16 words, exceeding 15. Also we need to output as JSON with question ending with ?. Must be one single sentence question. Could we shorten? Must preserve exact terms \"in in pain\" and \"cannot move her legs\". We can maybe drop some words but must keep those exact phrases. The phrase \"cannot move her legs\" must be kept exactly. The phrase \"in in pain\" must be kept exactly? The instruction says \"Use the EXACT drug names and medical terms from the narrative without standardizing or correcting\". It doesn't explicitly say we must include every term, but we must not standardize or correct them. If we use \"pain\" instead of \"in in pain\", that's standardizing? It's not correcting, it's just using \"pain\". But the term \"pain\" appears in narrative, but the phrase \"in in pain\" includes extra \"in\". Using just \"pain\" might be considered standardizing? The instruction says \"preserve medical terms character-for-character as written in the narrative (even if misspelled)\". So we must preserve the exact spelling and phrasing of medical terms. \"pain\" is spelled correctly; it's not misspelled. But the phrase \"in in pain\" includes extra \"in\". The term \"pain\" is part of that phrase. If we use just \"pain\", we are not preserving the exact phrase \"in in pain\". But maybe it's okay because \"pain\" is the medical term; the extra \"in\"s are not part of the medical term. The instruction says \"medical terms\". \"pain\" is a medical term. The extra \"in\"s are not part of the term. So we can use \"pain\". But we must not standardize or correct. Using \"pain\" is fine; it's exactly as written. The extra \"in\"s are"
+  },
+  {
+    "case_id": "14",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "15",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "16",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "17",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "18",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "19",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "20",
+    "prediction": "your clinical question here?"
+  }
+]

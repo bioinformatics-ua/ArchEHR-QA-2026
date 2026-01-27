@@ -1,0 +1,82 @@
+[
+  {
+    "case_id": "1",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "2",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "3",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "4",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "5",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "6",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "7",
+    "prediction": "What are the blood thinners instructions for her subarachnoid brain hemorrhage?"
+  },
+  {
+    "case_id": "8",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "9",
+    "prediction": "What treatments for complications during her delivery may cause problems later?"
+  },
+  {
+    "case_id": "10",
+    "prediction": "Did the patient sustain brain damage from the heart attack?"
+  },
+  {
+    "case_id": "11",
+    "prediction": "What is the expected course of her recovery?"
+  },
+  {
+    "case_id": "12",
+    "prediction": "What can cause her persistent stomach pain?"
+  },
+  {
+    "case_id": "13",
+    "prediction": "We need to produce a JSON with key \"query\" and value a question string. Must be <=15 words, question word, third-person, preserve drug names and medical terms as written. Narrative: \"What should the patient do if she is in in pain and cannot move her legs?\" So main concern: what should patient do if she is in pain and cannot move her legs? Use exact terms: \"in in pain\" (the phrase includes \"in in pain\"? Actually narrative says \"in in pain\". Probably keep that exact phrase. Also \"cannot move her legs\". Should we include \"in in pain\"? The phrase includes duplication \"in in\". We must preserve exactly as written. So question: \"What should the patient do if she is in in pain and cannot move her legs?\" That's exactly the narrative, but it's already a question. However we need to formulate as a clinical question, focusing on main clinical concern. The narrative is already a question, but we need to output a question that a clinician would ask. The instruction: \"Formulate it as a clear, concise clinical question (MAXIMUM 15 words)\". So we can output exactly that question, but maybe we need to phrase differently but preserve terms. Must preserve drug names and medical terms; there are none besides \"pain\" and \"legs\". So we can ask: \"What should the patient do if she is in in pain and cannot move her legs?\" That's 13 words? Let's count: What(1) should2 the3 patient4 do5 if6 she7 is8 in9 in10 pain11 and12 cannot13 move14 her15 legs16? That's 16 words, exceeding 15. Need <=15 words. Let's count again precisely: \"What should the patient do if she is in in pain and cannot move her legs?\" Words: What(1) should2 the3 patient4 do5 if6 she7 is8 in9 in10 pain11 and12 cannot13 move14 her15 legs16? So 16 words. Need to reduce to 15 or fewer. Could drop \"the\"? But must preserve terms exactly; dropping \"the\" might change phrase? The phrase \"the patient\" is not a medical term; we can maybe drop \"the\". But we must keep third-person perspective; we can say \"What should patient do if she is in in pain and cannot move her legs?\" Count: What1 should2 patient3 do4 if5 she6 is7 in8 in9 pain10 and11 cannot12 move13 her14 legs15? That's 15 words exactly. Does it preserve \"the patient\"? We removed \"the\". The original narrative includes \"the patient\". The instruction: \"Use the EXACT drug names and medical terms from the narrative without standardizing or correcting\". It doesn't say we must keep every word; we must preserve medical terms. \"the patient\" is not a medical term; it's just a phrase. We can drop \"the\". But maybe better to keep \"the patient\"? That would be 16 words, too many. Could we rephrase to reduce words while still preserving terms? Maybe \"What should patient do if she is in in pain and cannot move legs?\" Count: What1 should2 patient3 do4 if5 she6 is7 in8 in9 pain10 and11 cannot12 move13 legs14? That's 14 words. But we lost \"her\". \"her legs\" vs \"legs\". The phrase \"her legs\" includes \"her\". \"her\" is not a medical term; it's a pronoun. We can drop \"her\". The instruction: preserve medical terms, not necessarily every word. So we can drop \"her\". But we must keep \"cannot move her legs\"? The phrase includes \"her\". It's not a medical term but part of the narrative. The instruction: \"Use the EXACT drug names and medical terms from the narrative without standardizing or correcting\". It doesn't require preserving every word, just medical terms. \"her\" is not a medical term, so we can drop it. So we can have \"cannot move legs\". That preserves \"legs\". So question: \"What should patient do if she is in in pain and cannot move legs?\" Count: What1 should2 patient3 do4 if5 she6 is7 in8 in9 pain10 and11 cannot12 move13 legs14? That's 14 words, within 15. It uses third-person perspective? \"patient\" is third-person. It doesn't use \"she\"? It does use \"she\". That's okay. It is a question. It uses question word \"What\". It's concise. It preserves \"in in pain\" and \"cannot move legs\". It omitted \"her\". That's okay."
+  },
+  {
+    "case_id": "14",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "15",
+    "prediction": "Did his infection spread to other anatomies causing infertility?"
+  },
+  {
+    "case_id": "16",
+    "prediction": "Is her back pain and dizziness concerning for a stroke?"
+  },
+  {
+    "case_id": "17",
+    "prediction": "What interventions alleviate his palpitations and anxiety?"
+  },
+  {
+    "case_id": "18",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "19",
+    "prediction": "Is her symptom related to anxiety or cardiovascular process?"
+  },
+  {
+    "case_id": "20",
+    "prediction": "How was the patient's migraine diagnosed for spinning sensation?"
+  }
+]
