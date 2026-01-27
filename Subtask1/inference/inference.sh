@@ -23,7 +23,7 @@ source .venv/bin/activate
 
 # --- Configuration ---
 MODE="local"                         # Change to "local", "openai", or "groq"
-MODEL="google/medgemma-27b-it"     # Full model name/path
+MODEL="meta-llama/Llama-3.1-8B-Instruct"     # Full model name/path
 DATASET="dev"                      # Change to "test" for test set or "dev" for development set
 PROMPT_INDEX=10                      # Prompt template index
 
