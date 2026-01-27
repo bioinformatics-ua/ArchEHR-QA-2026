@@ -1,15 +1,15 @@
 [
   {
     "case_id": "1",
-    "prediction": "Why was ERCP recommended over continuing medication-based treatment for the patient?"
+    "prediction": "Why was ERCP recommended to the patient over continuing a medication-based treatment?"
   },
   {
     "case_id": "2",
-    "prediction": "Why was the patient given lasix and his oxygen flow rate reduced?"
+    "prediction": "Why was he given lasix and his oxygen flow rate was reduced?"
   },
   {
     "case_id": "3",
-    "prediction": "What is the expected course of recovery for the patient?"
+    "prediction": "What is the expected course of recovery for him?"
   },
   {
     "case_id": "4",
@@ -17,35 +17,35 @@
   },
   {
     "case_id": "5",
-    "prediction": "Is the patient's pain related to the overdose or an alternative cause?"
+    "prediction": "Is the patient's pain connected to the overdose or something else?"
   },
   {
     "case_id": "6",
-    "prediction": "Why was the patient's fungal pneumonia diagnosed later?"
+    "prediction": "<think>\nOkay, let's tackle this step by step. The patient's narrative is \"Why did they find out later that he had fungal pneumonia?\" \n\nFirst, I need to identify key 2-word and 3-word phrases. The main terms here are \"fungal pneumonia\" and \"find out later.\" The question is about why the diagnosis was delayed. \n\nThe task is to form a clinical question using those phrases. The user wants the exact terms, so I can't change \"fungal pneumonia\" to anything else. The question should be in third person, under 15 words. \n\nPossible question structure: \"Why was fungal pneumonia not diagnosed earlier?\" That's 7 words. Maybe add \"find out later\" as a phrase. Let me see: \"Why did they find out later that he had fungal pneumonia?\" Wait, the original narrative is already a question. The user wants the assistant to rephrase it as a clinical question using the exact terms. But the example shows that the output is a rephrased question. Wait, the instruction says \"Formulate a clear, concise clinical question\" using the exact terms and phrases from the narrative.\n\nThe original question is \"Why did they find out later that he had fungal pneumonia?\" The key phrases are \"find out later\" and \"fungal pneumonia.\" The clinical question needs to be a proper one a clinician would ask. So maybe \"Why was fungal pneumonia not detected earlier in the patient?\" But the exact phrase from the narrative is \"find out later.\" So perhaps \"Why did the patient's fungal pneumonia go undetected until later?\" That's 9 words. But the original uses \"find out later.\" Let me check the exact terms again. The user wants the exact drug names and medical terms without correction. Here, \"fungal pneumonia\" is the term. The consecutive phrases are \"find out later\" and \"fungal pneumonia.\" \n\nThe instruction says to include as many consecutive word phrases as possible. The original question has \"find out later\" and \"fungal pneumonia.\" So the best way is to structure the question using those exact phrases. The user's example output uses the exact terms from the narrative. So maybe the correct answer is \"Why was fungal pneumonia not diagnosed until later in the patient?\" But the original is \"Why did they find out later that he had fungal pneumonia?\" The task is to rephrase that into a clinical question using the exact terms and phrases. \n\nWait, the user's example input is a question, and the output is a similar question. So perhaps the correct approach is to rephrase the original question into a more clinical one using the exact phrases. The original is already a question, but maybe the clinician would phrase it as \"Why was fungal pneumonia not detected earlier in the patient?\" However, the exact phrase from the narrative is \"find out later.\" So maybe \"Why did the patient's fungal pneumonia remain undiagnosed until later?\" But \"find out later\" is the key phrase. \n\nAlternatively, \"Why was the diagnosis of fungal pneumonia delayed in the patient?\" That's 8 words and uses \"fungal pneumonia.\" But does it use \"find out later\"? The original question's structure is \"Why did they find out later...\" So perhaps \"Why did the patient's fungal pneumonia go undetected until later?\" Using \"fungal pneumonia\" and \"until later,\" which is similar to \"find out later.\" But the exact phrase is \"find out later,\" so maybe \"Why was the patient's fungal pneumonia not found out until later?\" That's 9 words. But the user wants to maximize consecutive phrases. The original has \"find out later\" and \"fungal pneumonia.\" \n\nAnother approach: The original question is already a valid clinical question, but the user wants it formatted as a JSON with \"query.\" However, the instruction says to write as one single sentence question. The original is a question, but maybe the assistant is supposed to rephrase it into a more concise clinical question. However, the example given in the instructions shows that when the input is a question, the output is a similar question. For example, if the input is \"Why did they do a heart cath?\" the output might be \"Why was a heart catheterization performed?\" So, perhaps here, the answer is \"Why was fungal pneumonia not diagnosed earlier in the patient?\" But the exact term from the narrative is \"find out later.\" So maybe the correct answer is \"Why was the patient's fungal pneumonia not detected until later?\" \n\nI need to check the exact word count. Let's count: \"Why was the patient's fungal pneumonia not detected until later?\" That's 11 words. Under 15. It uses \"fungal pneumonia\" and \"detected until later,\" which is close to \"find out later.\" The exact phrase from the narrative is \"find out later,\" so maybe \"Why was the patient's fungal pneumonia not found out until later?\" But \"find out\" is a 2"
   },
   {
     "case_id": "7",
-    "prediction": "What are the specific instructions for blood thinners in a patient with subarachnoid brain hemorrhage?"
+    "prediction": "What are the specific instructions regarding blood thinners for a patient with subarachnoid brain hemorrhage?"
   },
   {
     "case_id": "8",
-    "prediction": "Is the confusion related to the poison damage and will the body damage be permanent?"
+    "prediction": "Is the confusion related to poison damage and will the damage last?"
   },
   {
     "case_id": "9",
-    "prediction": "What treatments for complications during her delivery could cause future problems?"
+    "prediction": "What treatments did she receive for complications during delivery and could they cause later problems?"
   },
   {
     "case_id": "10",
-    "prediction": "Did the patient sustain brain damage from the heart attack?"
+    "prediction": "<think>\nOkay, let's tackle this step by step. The user wants me to act as a clinician assistant and process the given patient narrative. The task is to generate a clinical question following specific guidelines.\n\nFirst, I need to read the patient narrative: \"Did she sustain any brain damage from the heart attack?\" The key here is to identify 2-word and 3-word phrases. Let's see. The main phrases here are \"brain damage\" and \"heart attack.\" There's also \"Did she sustain any\" but those aren't medical terms. The medical terms are \"brain damage\" and \"heart attack.\" The user emphasized using exact terms without standardizing, so I must keep them as written.\n\nNext, formulate a clear clinical question under 15 words. The example uses \"sustain any brain damage from the heart attack,\" so maybe rephrase that into a question starting with \"Did\" but the user wants to use question words like What, Why, How, Is, Can, Should, etc. The original question is a yes/no question, so perhaps rephrase it using \"What is the risk...\" or \"Is there evidence...\" but the original is \"Did she sustain...\" which is already a question. The task says to make it a proper question a clinician would ask. Maybe \"What is the likelihood she sustained brain damage from the heart attack?\" But the user wants as many consecutive phrases as possible. The original phrases are \"brain damage\" and \"heart attack.\" The example in the instructions used \"aortic aneurysm,\" \"salvage repair,\" etc., so maybe the user wants the exact phrases included. The user also said to use third-person, which the original does.\n\nWait, the user's example output uses the exact phrase from the narrative. The original question is \"Did she sustain any brain damage from the heart attack?\" But the task says to form a question using as many consecutive phrases as possible. The original question already uses \"brain damage\" and \"heart attack.\" The problem is that the original is phrased as a question. But the user wants the assistant to generate a question based on the narrative. However, the narrative here is itself a question. So maybe the correct approach is to rephrase the narrative into a more formal clinical question. For example, \"What is the risk of brain damage following a heart attack?\" But that changes the wording. However, the user insists on using the exact terms and phrases. So perhaps the best approach is to take the original question and rephrase it slightly to fit the 15-word limit and the question words. The original is already a question, but maybe it's too long? Let's check the word count. \"Did she sustain any brain damage from the heart attack?\" That's 9 words. Under 15, so maybe that's acceptable. However, the user wants the assistant to formulate the question. But the narrative is already a question. Wait, maybe the user wants the assistant to process the narrative into a clinical question even if the narrative is a question. Let me check the instructions again. The task says \"formulate a clear, concise clinical question (MAXIMUM 15 words)\" using the exact terms. The example in the instructions shows that when the narrative is \"Patient with aortic aneurysm...\", the query is \"What is the optimal management strategy for a patient with aortic aneurysm and...\" So the assistant is supposed to take the narrative and rephrase it into a question. In this case, the narrative is a question, so perhaps the answer is to rephrase it as a proper question using the exact terms. The original question is \"Did she sustain any brain damage from the heart attack?\" The user wants the assistant to generate a question using the exact phrases. Since the original is already a question, maybe the answer is just to present that as the query. But the user's example shows that the query is a rephrased version. Let me check the exact instructions again: \"Formulate a clear, concise clinical question (MAXIMUM 15 words) Make it a proper question that a clinician would ask Use the EXACT drug names and medical terms from the narrative without standardizing or correcting Include as many consecutive word phrases from the narrative as possible in your question.\" So the original narrative is a question. The assistant's job is to take that and make a proper question. But the original is already a question. However, the user might want the assistant to rephrase it into a more formal structure. For example, \"Did she sustain any brain damage from the heart attack?\" is already 9 words, under 15. So perhaps the correct answer is to just present that as the query. But the user might expect a different structure. Alternatively, maybe the user wants to use \"What is the risk...\" but that would change the wording. However, the instruction says to use the exact terms. Therefore, the best approach is to take the original question and ensure it meets"
   },
   {
     "case_id": "11",
-    "prediction": "What is the expected course of the patient's recovery?"
+    "prediction": "What is the expected course of her recovery?"
   },
   {
     "case_id": "12",
-    "prediction": "What is the likely cause of her persistent stomach pain?"
+    "prediction": "What can cause her persistent stomach pain?"
   },
   {
     "case_id": "13",
@@ -53,30 +53,30 @@
   },
   {
     "case_id": "14",
-    "prediction": "Is there any evidence of stomach cancer in the patient's findings?"
+    "prediction": "Was there any evidence of stomach cancer in the patient?"
   },
   {
     "case_id": "15",
-    "prediction": "Did his infection spread to other anatomies causing infertility?"
+    "prediction": "Did the patient's infection spread to other anatomies causing infertility?"
   },
   {
     "case_id": "16",
-    "prediction": "your clinical question here?"
+    "prediction": "Is the patient's back pain and dizziness concerning for a stroke?"
   },
   {
     "case_id": "17",
-    "prediction": "What is the recommended management for a patient experiencing palpitations and anxiety?"
+    "prediction": "What should he do to relieve palpitations and anxiety?"
   },
   {
     "case_id": "18",
-    "prediction": "Should the patient return to the ER with diarrhea and vomiting?"
+    "prediction": "Should the patient go back to the ER if he has diarrhea and vomiting?"
   },
   {
     "case_id": "19",
-    "prediction": "Is the patient's chest pain due to..."
+    "prediction": "Are her symptoms related to anxiety or cardiovascular process?"
   },
   {
     "case_id": "20",
-    "prediction": "How was the patient diagnosed with migraine for spinning sensation?"
+    "prediction": "How was she diagnosed with migraine for spinning sensation?"
   }
 ]
