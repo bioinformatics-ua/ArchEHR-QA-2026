@@ -12,8 +12,8 @@ SIF_IMAGE="./builder.sif"
 UV_BIN=$(which uv)
 
 # Define directories
-INPUT_DIR="../outputs/dev"
-RESULTS_DIR="../results/dev"
+INPUT_DIR="../outputs_v2/new"
+RESULTS_DIR="../results_v2/new"
 # singularity exec --nv "$SIF_IMAGE" "$UV_BIN" sync
 
 # Ensure results directory exists
@@ -39,7 +39,7 @@ for submission_path in "$INPUT_DIR"/*.json; do
         # 3. Run the code
         singularity exec --nv "$SIF_IMAGE" "$UV_BIN" run python evaluation.py \
             --submission_path "$submission_path" \
-            --key_path ../../data/dev/archehr-qa.xml \
+            --key_path ../../data/new/archehr-qa.xml \
             --quickumls_path ../quickumls/final \
             --out_file_path "$out_file_path"
             

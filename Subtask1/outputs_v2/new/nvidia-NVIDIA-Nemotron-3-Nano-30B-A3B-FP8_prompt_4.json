@@ -1,0 +1,402 @@
+[
+  {
+    "case_id": "21",
+    "prediction": "Which records help estimate survival for end stage liver disease, alcoholic cirrhosis, hepatic encephalopathy?"
+  },
+  {
+    "case_id": "22",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "23",
+    "prediction": "Was antibiotic therapy necessary for the 88-year-old post-head injury patient?"
+  },
+  {
+    "case_id": "24",
+    "prediction": "Is intubation standard for 55-year-old pneumonia without cardiac history?"
+  },
+  {
+    "case_id": "25",
+    "prediction": "Was CPAP used for positive air flow or to treat sleep apnea?"
+  },
+  {
+    "case_id": "26",
+    "prediction": "Were antibiotics necessary for intermittent intubation in a 62‑year‑old patient?"
+  },
+  {
+    "case_id": "27",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "28",
+    "prediction": "What control measures prevent recurrence of serious pancreatic infection?"
+  },
+  {
+    "case_id": "29",
+    "prediction": "Is daily beer safe for a patient on coumadin after recent blood clots?"
+  },
+  {
+    "case_id": "30",
+    "prediction": "Is one daily beer safe for a patient on coumadin after leg clots?"
+  },
+  {
+    "case_id": "31",
+    "prediction": "Was a urinalysis performed to confirm contagious UTI in post‑appendectomy sepsis patient?"
+  },
+  {
+    "case_id": "32",
+    "prediction": "We need to produce a JSON with key \"query\" and value a clinical question, max 15 words, third-person, using medical phrases intact. Must be a proper question a clinician would ask. Focus on main clinical concern/decision. Use multi-word medical terms exactly as stated: 'salvage repair', 'aortic aneurysm', 'oxygen flow rate'? Actually those are examples but not present in narrative. The narrative includes \"salvage repair\"? Not mentioned. It mentions \"aortic aneurysm\"? Not mentioned. It mentions \"oxygen flow rate\"? Not mentioned. But we must keep medical phrases intact if they appear. The narrative includes \"cat scan\", \"MRI\", \"urinary tract infection\", \"blood thinner\", \"potassium, magnesium and sodium\". It also includes \"stroke\". It mentions \"confusion\". It mentions \"eye injection\". It mentions \"salvage repair\"? Not present. So we must preserve any multi-word medical terms exactly as stated. The instruction: \"Keep medical phrases intact (e.g., 'salvage repair', 'aortic aneurysm', 'oxygen flow rate')\". So we need to keep any such phrases exactly as they appear. In the narrative, there are phrases like \"cat scan\", \"MRI\", \"urinary tract infection\", \"blood thinner\", \"potassium, magnesium and sodium\". Also \"aortic aneurysm\"? Not present. \"salvage repair\"? Not present. \"oxygen flow rate\"? Not present. So we just need to keep the phrases that appear exactly as they are. For example \"urinary tract infection\" must be kept exactly. \"blood thinner\" must be kept exactly. \"potassium, magnesium and sodium\" maybe keep as is. Also \"cat scan\" and \"MRI\". Also \"stroke\". Also \"confusion\". Also \"eye injection\"? Not needed.\n\nWe need to formulate a concise clinical question, max 15 words, third-person, question format, focusing on main concern/decision. Likely: \"What caused the acute confusion and electrolyte abnormalities in this 53-year-old woman?\" That's 13 words? Let's count: What(1) caused2 the3 acute4 confusion5 and6 electrolyte7 abnormalities8 in9 this10 53-year-old11 woman12? That's 12 words. But we need to include medical phrase intact? Maybe include \"blood thinner\" or \"urinary tract infection\"? The main concern: electrolyte disturbances causing confusion? The question could be: \"What electrolyte disturbance precipitated the acute confusion in this patient?\" That's 9 words? Let's count: What1 electrolyte2 disturbance3 precipitated4 the5 acute6 confusion7 in8 this9 patient10? That's 10 words. That's okay. But we need to keep medical phrase intact: \"blood thinner\" is not needed. \"urinary tract infection\" maybe not relevant. The main clinical concern: electrolyte abnormalities causing confusion. The question could be: \"Which electrolyte abnormality explained the acute confusion in this patient?\" Count: Which1 electrolyte2 abnormality3 explained4 the5 acute6 confusion7 in8 this9 patient10? That's 10 words. That's fine. It includes \"electrolyte abnormality\" but not a multi-word medical term exactly as in narrative. The narrative mentions \"potassium, magnesium and sodium were too low\". So maybe we should phrase: \"What electrolyte disturbances caused the acute confusion in this patient?\" That's 11 words? Count: What1 electrolyte2 disturbances3 caused4 the5 acute6 confusion7 in8 this9 patient10? That's 10 words actually. It's okay.\n\nBut we need to keep medical phrases intact. The phrase \"electrolyte disturbances\" is not in the narrative; the narrative says \"potassium, magnesium and sodium were too low\". So maybe we should incorporate that phrase: \"What low potassium, magnesium, and sodium caused the acute confusion?\" That's too many words and not a question? Let's count: What1 low2 potassium,3 magnesium,4 and5 sodium6 caused7 the8 acute9 confusion10? That's 10 words, but includes the phrase \"potassium, magnesium, and sodium\". That's exactly as in narrative? The narrative says \"potassium, magnesium and sodium were too low\". So we could use \"potassium, magnesium and sodium\". Must keep exactly as stated: \"potassium, magnesium and sodium\". So we could phrase: \"What caused the acute confusion due to low potassium, magnesium and sodium?\" Count: What1 caused2 the3 acute4 confusion5 due6 to7 low8 potassium,9 magnesium10 and11 sodium12? That's 12 words, okay under 15. It includes the phrase exactly \"potassium, magnesium and sodium\". That's good.\n\nBut we need to keep it a proper question a clinician would ask, focusing on main"
+  },
+  {
+    "case_id": "33",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "34",
+    "prediction": "What caused acute confusion given potassium, magnesium and sodium were too low?"
+  },
+  {
+    "case_id": "35",
+    "prediction": "What caused acute confusion and AFIB in a 62‑year‑old with low electrolytes?"
+  },
+  {
+    "case_id": "36",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "37",
+    "prediction": "Should neurocognitive therapy be initiated for his memory deficits?"
+  },
+  {
+    "case_id": "38",
+    "prediction": "We need to produce a JSON object with key \"query\" and value a clinical question, max 15 words, proper question, third person, preserve medical phrases exactly as stated: \"salvage repair\", \"aortic aneurysm\", \"oxygen flow rate\". But those terms are not in the narrative. The narrative mentions \"liver cirrhosis\", \"stone in gall bladder\", \"unconcious\", \"ICU\", \"swelling and filling of water in stomuch\" (stomach?), \"liver transplant\". It also mentions \"water pumped from stomuch\" (stomach). The instruction says \"Preserve multi-word medical terms exactly as stated\". The narrative includes multi-word terms like \"liver cirrhosis\", \"gall bladder\", \"ICU\", \"liver transplant\". Also \"oxygen flow rate\"? Not present. But maybe we need to keep any multi-word medical terms exactly as stated from the narrative. The narrative includes \"liver cirrhosis\", \"gall bladder\", \"ICU\", \"liver transplant\". Also \"stomach\"? It's spelled \"stomuch\" but it's a term. \"water pumped from stomach\". It says \"approx 1 and half litre water pumped from stomuch\". That's not a multi-word medical term. The instruction: \"Preserve multi-word medical terms exactly as stated\". So we must keep any such terms unchanged. In our question we can include \"liver cirrhosis\", \"gall bladder\", \"ICU\", \"liver transplant\". Must keep them exactly as in narrative: \"liver cirrhosis\", \"gall bladder\", \"ICU\", \"liver transplant\". Also \"stomach\"? It's misspelled \"stomuch\". Should we preserve that? Probably not needed. The question should be concise, max 15 words, third person, question format.\n\nGoal: formulate clinical question focusing on main concern: \"What is the best and proper way to cure him?\" But we need to phrase as a question, third person, include medical terms. Something like: \"What is the optimal management for liver cirrhosis with gall bladder stone and post‑ICU swelling?\" That's 11 words? Let's count: What(1) is2 the3 optimal4 management5 for6 liver7 cirrhosis8 with9 gall10 bladder11 stone12 and13 post‑ICU14 swelling15? That's 15 words exactly? Let's count again: What(1) is2 the3 optimal4 management5 for6 liver7 cirrhosis8 with9 gall10 bladder11 stone12 and13 post‑ICU14 swelling15? Yes 15 words. But we need to preserve \"liver transplant\" maybe? The narrative suggests doctor suggested liver transplant. The main concern is whether liver transplant is best. So question could be: \"Should liver transplant be considered for cirrhosis with gall bladder stone and post‑ICU swelling?\" Count words: Should1 liver2 transplant3 be4 considered5 for6 cirrhosis7 with8 gall9 bladder10 stone11 and12 post‑ICU13 swelling14? That's 14 words. Good. It includes \"liver transplant\", \"cirrhosis\", \"gall bladder\", \"stone\", \"post‑ICU\". \"post‑ICU\" includes hyphen but it's okay. It preserves \"liver transplant\". Also \"cirrhosis\" is a term, but it's single word. \"gall bladder\" is two words, preserved. \"post‑ICU\" includes ICU. That's okay. Must be a question, third person, under 15 words. This seems fine.\n\nCheck constraints: Use question words, third-person perspective, keep medical phrases intact. We have \"liver transplant\", \"cirrhosis\", \"gall bladder\", \"ICU\". All preserved exactly. \"post‑ICU\" includes ICU but adds prefix; is that okay? Might be considered altering. Better to keep \"ICU\" as separate word maybe: \"Should liver transplant be considered for cirrhosis with gall bladder stone after ICU stay and swelling?\" Count words: Should1 liver2 transplant3 be4 considered5 for6 cirrhosis7 with8 gall9 bladder10 stone11 after12 ICU13 stay14 and15 swelling16? That's 16 words, too many. Need <=15. Could drop \"and\". \"Should liver transplant be considered for cirrhosis with gall bladder stone after ICU stay swelling?\" That's weird grammar. Maybe \"Should liver transplant be considered for cirrhosis with gall bladder stone after ICU and swelling?\" Count: Should1 liver2 transplant3 be4 considered5 for6 cirrhosis7 with8 gall9 bladder10 stone11 after12 ICU13 and14 swelling15? That's 15 words exactly. It includes \"ICU\" and \"swelling\". It preserves \"liver transplant\". It"
+  },
+  {
+    "case_id": "39",
+    "prediction": "What is the best surgical option for liver cirrhosis with gall bladder stone?"
+  },
+  {
+    "case_id": "40",
+    "prediction": "Has bacterial bronchitis treatment failed given worsening cough and dark green and yellow mucus?"
+  },
+  {
+    "case_id": "41",
+    "prediction": "What causes left-sided chest pain with distal upper extremity numbness in this patient?"
+  },
+  {
+    "case_id": "42",
+    "prediction": "Does oral intake exacerbate gallbladder inflammation in a patient on antibiotics?"
+  },
+  {
+    "case_id": "43",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "44",
+    "prediction": "We need to output JSON with \"query\": \"...\" containing a clinical question, max 15 words, third-person perspective, proper question, medical terms intact. The narrative mentions \"bronchitis\", \"pleurisy\", \"pneumonia\", \"aortic aneurysm\"? Actually not. It mentions \"bronchitis\", \"pleurisy\", \"pneumonia\", \"spotted with pneumonia\", \"could not breath deep\", \"coughing fit\", \"kicked in the ribs\", \"one spot on the bottom in the back on the right\". Also mentions \"concreting\". The question likely about evaluating possible pulmonary embolism? Or rib pain? The main concern: persistent pleuritic chest pain after pneumonia, possible pleural effusion, maybe need imaging. The question could be: \"Is pleuritic chest pain after pneumonia indicative of a pulmonary embolism?\" But need to keep medical phrases intact: \"salvage repair\", \"aortic aneurysm\", \"oxygen flow rate\" are examples but not in narrative. The narrative doesn't contain those terms. It contains \"bronchitis\", \"pleurisy\", \"pneumonia\". It also mentions \"rib\". Should keep multi-word medical terms exactly as stated: \"bronchitis\", \"pleurisy\", \"pneumonia\". Also \"oxygen flow rate\"? Not present. So we must preserve any multi-word medical terms exactly as stated. The narrative includes \"bronchitis\", \"pleurisy\", \"pneumonia\". Also \"aortic aneurysm\"? Not present. So we can keep \"bronchitis\", \"pleurisy\", \"pneumonia\". Also maybe \"oxygen flow rate\"? Not present. So we can keep \"bronchitis\", \"pleurisy\", \"pneumonia\". The question must be a proper question, third-person perspective, under 15 words.\n\nPossible question: \"What is the cause of pleuritic chest pain after pneumonia in this patient?\" That's 11 words? Let's count: What(1) is2 the3 cause4 of5 pleuritic6 chest7 pain8 after9 pneumonia10 in11 this12 patient13? That's 13 words, okay under 15. It is a question, third-person, includes medical term \"pleuritic chest pain\" and \"pneumonia\". It preserves \"pneumonia\". It is concise.\n\nBut maybe we need to include \"bronchitis\"? Not necessary. The main concern is chest pain after pneumonia. Could be \"Is pleuritic chest pain after pneumonia indicative of a pulmonary embolism?\" That's longer: Is1 pleuritic2 chest3 pain4 after5 pneumonia6 indicative7 of8 a9 pulmonary10 embolism11? That's 11 words, but includes \"pulmonary embolism\" which is not in narrative but is okay? The instruction: \"Preserve multi-word medical terms exactly as stated\". It doesn't say we cannot introduce new terms, but we must preserve any multi-word medical terms exactly as stated. That likely means if we use a term that appears in narrative, we must keep it exactly. We can add new terms, but must keep any we use that are multi-word medical terms exactly as stated? The instruction: \"Preserve multi-word medical terms exactly as stated (e.g., 'salvage repair', 'aortic aneurysm', 'oxygen flow rate')\". This suggests that if we include multi-word medical terms, we must keep them exactly as they appear in the narrative. The narrative includes \"bronchitis\", \"pleurisy\", \"pneumonia\". It also includes \"aortic aneurysm\"? No. So we can use \"pneumonia\" exactly. \"pleuritic chest pain\" includes \"pleuritic\"? The narrative uses \"pleurisy\". Not \"pleuritic\". So maybe we should use \"pleurisy\" exactly? The narrative says \"pleurisy\". So we could phrase: \"What is the cause of pleurisy-related chest pain after pneumonia?\" That includes \"pleurisy-related\"? That's not exact phrase. Might be okay but maybe we should keep \"pleurisy\" as is. The question could be: \"What causes pleurisy after pneumonia in this patient?\" That's 9 words? Let's count: What1 causes2 pleurisy3 after4 pneumonia5 in6 this7 patient8? That's 8 words. It includes \"pleurisy\" and \"pneumonia\". That's good.\n\nBut the main clinical concern is chest pain localized to right lower back, possibly rib injury. Could be \"What is the cause of right-sided pleuritic chest pain after pneumonia?\" That's 11 words? Let's count: What1 is2 the3 cause4 of5 right-sided6 pleuritic7 chest8 pain9 after10 pneumonia11? That's 11 words, includes \"pleuritic\"? Not"
+  },
+  {
+    "case_id": "45",
+    "prediction": "Can insufficient blood to the heart cause an unnoticed mini stroke?"
+  },
+  {
+    "case_id": "46",
+    "prediction": "Is persistent lower abdominal pain after rear-end collision indicative of aortic aneurysm?"
+  },
+  {
+    "case_id": "47",
+    "prediction": "Why did the patient develop very low RBC count and iron level without internal bleeding?"
+  },
+  {
+    "case_id": "48",
+    "prediction": "What causes recurrent lower right abdominal and back pain with silver dollar-sized lesions?"
+  },
+  {
+    "case_id": "49",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "50",
+    "prediction": "Should the patient start prenatal care hopeful after a positive home pregnancy test?"
+  },
+  {
+    "case_id": "51",
+    "prediction": "How should follow-up be managed for atelectasis and intermittent chest pain?"
+  },
+  {
+    "case_id": "52",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "53",
+    "prediction": "Can TMJ cause high blood pressure in the patient?"
+  },
+  {
+    "case_id": "54",
+    "prediction": "Should the patient return to the ER for worsening symptoms and lower abdominal pain?"
+  },
+  {
+    "case_id": "55",
+    "prediction": "..."
+  },
+  {
+    "case_id": "56",
+    "prediction": "What causes dark/black stool in a patient after bile duct endoscopy with drainage?"
+  },
+  {
+    "case_id": "57",
+    "prediction": "We need to output JSON with \"query\": \"...\". Must be a clinical question, max 15 words, third-person perspective, proper question, preserve medical phrases exactly as stated: 'salvage repair', 'aortic aneurysm', 'oxygen flow rate' etc. But those phrases are not in narrative; they are examples. We need to preserve multi-word medical terms exactly as stated, but there are none in the narrative. However we must keep medical phrases intact if they appear; but we can include them if needed? The instruction: \"Keep medical phrases intact (e.g., 'salvage repair', 'aortic aneurysm', 'oxygen flow rate')\". That suggests that if we include such phrases, we must keep them exactly. But we can also avoid them. The question should focus on main clinical concern or decision needed. The narrative: mother with lupus, monthly infusions, reactions, ER vomiting and pain after infusion, asking if normal, what can we do, misdiagnosed? So clinical question: \"Is post‑infusion vomiting and pain normal after lupus treatment, and what management is indicated?\" Must be <=15 words. Count words.\n\nLet's craft: \"Is post‑infusion vomiting and pain normal after lupus treatment, and what management is indicated?\" Count words:\n\nIs(1) post‑infusion(2) vomiting(3) and(4) pain(5) normal(6) after(7) lupus(8) treatment,(9) and(10) what(11) management(12) is(13) indicated?(14) That's 14 words, okay.\n\nBut need third-person perspective: \"Is post‑infusion vomiting and pain normal after lupus treatment, and what management is indicated?\" That's okay, uses \"Is\". It's third-person? It refers to \"post‑infusion vomiting and pain\" but not a subject. Might need \"the patient\" maybe. Could phrase: \"Is post‑infusion vomiting and pain normal in a lupus patient after treatment, and what management is indicated?\" Count words.\n\nIs(1) post‑infusion(2) vomiting(3) and(4) pain(5) normal(6) in(7) a(8) lupus(9) patient(10) after(11) treatment,(12) and(13) what(14) management(15) is(16) indicated?(17) Too many.\n\nWe need <=15 words. Could drop \"a\". Let's try: \"Is post‑infusion vomiting and pain normal in lupus patient after treatment, and what management is indicated?\" Count:\n\nIs1 post‑infusion2 vomiting3 and4 pain5 normal6 in7 lupus8 patient9 after10 treatment,11 and12 what13 management14 is15 indicated?16 -> 16 words, too many.\n\nWe need <=15. Let's try shorter: \"Is post‑infusion vomiting and pain normal in lupus patient after treatment, and what management?\" Count:\n\nIs1 post‑infusion2 vomiting3 and4 pain5 normal6 in7 lupus8 patient9 after10 treatment,11 and12 what13 management?14 -> 14 words. Good. But does it end with a question? Yes ends with \"management?\" It's a question but maybe ambiguous. Could add \"is indicated\". That adds words. Let's keep as is.\n\nBut maybe better: \"Is post‑infusion vomiting and pain normal in lupus patient after treatment, and what management is needed?\" Count:\n\nIs1 post‑infusion2 vomiting3 and4 pain5 normal6 in7 lupus8 patient9 after10 treatment,11 and12 what13 management14 is15 needed?16 -> 16.\n\nWe need <=15. Let's try: \"Is post‑infusion vomiting and pain normal in lupus patient after treatment, and what management?\" That's 14 words as counted. That's okay.\n\nBut maybe we can phrase: \"Is post‑infusion vomiting and pain normal after lupus treatment, and what management is indicated?\" Count:\n\nIs1 post‑infusion2 vomiting3 and4 pain5 normal6 after7 lupus8 treatment,9 and10 what11 management12 is13 indicated?14 -> 14 words. Good.\n\nThird-person perspective? It doesn't mention \"patient\". But it's okay; the question is about the condition. The instruction: \"Use third-person perspective (he/she/the patient), NOT first person\". The question doesn't use first person, it's fine. It doesn't need to explicitly mention patient; it's about the situation. That should satisfy.\n\nWe must keep medical phrases intact if used; we are not using any multi-word medical terms. That's fine.\n\nNow output JSON: {\"query\": \"Is post‑"
+  },
+  {
+    "case_id": "58",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "59",
+    "prediction": "Is there a possibility of ovarian cancer given high white blood cell count?"
+  },
+  {
+    "case_id": "60",
+    "prediction": "How can patient regain stamina after Lasix i.v. treatment for CHF secondary to A.Fib?"
+  },
+  {
+    "case_id": "61",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "62",
+    "prediction": "What is the next step for recurrent black tarry stools in a 47‑year‑old with cirrhosis?"
+  },
+  {
+    "case_id": "63",
+    "prediction": "What further evaluation is indicated for persistent melena in an 84-year-old woman?"
+  },
+  {
+    "case_id": "64",
+    "prediction": "What factors determine a 3-month life expectancy estimate for an 83-year-old stroke patient?"
+  },
+  {
+    "case_id": "65",
+    "prediction": "Why was aggressive therapy ruled out for the patient with a three-month prognosis?"
+  },
+  {
+    "case_id": "66",
+    "prediction": "How did the ICU physician estimate the 3-month prognosis for pericardial effusion and pulmonary lesions?"
+  },
+  {
+    "case_id": "67",
+    "prediction": "We need to output JSON with key \"query\" and value a clinical question max 15 words, third person, proper question, preserve medical phrases like 'salvage repair', 'aortic aneurysm', 'oxygen flow rate' but here we have cough, heart beat 127 p.m., etc. Need to focus on main clinical concern: persistent cough worsening when lying down causing insomnia, multiple meds, likely heart failure or pulmonary edema? The patient had palpitations, heart rate 127, was in ICU, discharged with meds, now persistent cough, worse lying down, likely orthopnea indicating heart failure. So question: \"What should be done for persistent cough and orthopnea in a patient with recent cardiac event?\" Must keep medical phrases intact: \"cough\", \"lying down\", \"loss of sleep\", maybe \"heart beat 127 p.m.\" but we need to preserve multi-word medical terms exactly as stated: 'salvage repair', 'aortic aneurysm', 'oxygen flow rate' not present. So we can keep 'heart beat 127 p.m.'? The instruction: \"Keep medical phrases intact (e.g., 'salvage repair', 'aortic aneurysm', 'oxygen flow rate')\". So we should preserve any multi-word medical terms exactly as they appear. In the narrative, there is \"heart beat 127 p.m.\" That's a phrase. Should we keep it? Probably we can incorporate it as part of question? But we need to keep it intact if we use it. But we need to keep under 15 words. Let's craft a question: \"What management is indicated for persistent cough exacerbated by lying down in a patient with recent cardiac event and heart beat 127 p.m.?\" Count words: What(1) management2 is3 indicated4 for5 persistent6 cough7 exacerbated8 by9 lying10 down11 in12 a13 patient14 with15 recent16 cardiac17 event18 and19 heart20 beat21 12722 p.m.23 That's too many words, over 15. Need max 15 words.\n\nWe need to be concise, maybe: \"What treatment is needed for persistent cough worsened by lying down after recent cardiac event?\" Count: What1 treatment2 is3 needed4 for5 persistent6 cough7 worsened8 by9 lying10 down11 after12 recent13 cardiac14 event15? That's exactly 15 words. Good. Does it preserve medical phrases? It doesn't include any multi-word medical term that must be kept exactly. The instruction says \"Keep medical phrases intact (e.g., 'salvage repair', 'aortic aneurysm', 'oxygen flow rate')\". It doesn't require us to keep every phrase, just if we use them, keep them intact. We can avoid using them. So it's okay.\n\nBut maybe we should include \"heart beat 127 p.m.\" as a phrase? That would be multi-word. But we can maybe include it but need to keep it intact. However including it would increase word count. Let's see if we can incorporate it within 15 words while preserving phrase exactly: \"What management for persistent cough worsened by lying down after heart beat 127 p.m.?\" Count: What1 management2 for3 persistent4 cough5 worsened6 by7 lying8 down9 after10 heart11 beat12 12713 p.m.14? That's 14 words (including question mark?). Let's count precisely: What(1) management(2) for(3) persistent(4) cough(5) worsened(6) by(7) lying(8) down(9) after(10) heart(11) beat(12) 127(13) p.m.?(14) That's 14 words, within limit. It preserves the phrase \"heart beat 127 p.m.\" exactly as appears (including space and period?). The phrase is \"heart beat 127 p.m.\" The narrative had \"heart beat 127 p.m.\" So we need to keep that exact phrase. In our question we have \"heart beat 127 p.m.?\" with question mark after p.m., but the phrase includes the period? The phrase includes \"p.m.\" with period. We have \"p.m.?\" includes question mark after period, but the phrase itself is \"p.m.\" plus question mark? The phrase is \"heart beat 127 p.m.\" The question mark is punctuation after the phrase, not part of phrase. So it's okay.\n\nBut we need to keep medical phrases intact; we are using \"heart beat 127 p.m.\" exactly as in narrative (including spaces). That seems fine"
+  },
+  {
+    "case_id": "68",
+    "prediction": "Is there a non-surgical alternative to surgery for brain hemorrhage?"
+  },
+  {
+    "case_id": "69",
+    "prediction": "What next step manages Central Pontine Myelinolysis in the patient after home care?"
+  },
+  {
+    "case_id": "70",
+    "prediction": "We need to produce a clinical question max 15 words, proper question, third-person, preserve medical phrases exactly as stated. The narrative mentions \"salvage repair\"? Actually not. It mentions \"solumedrol\", \"aortic aneurysm\"? Not in narrative. It mentions \"oxygen flow rate\"? Not there. But we must preserve multi-word medical terms exactly as stated. The narrative includes \"solumedrol\". Also \"ICU Acute care\"? It says \"ICU to the ICU Acute care\". But the instruction: preserve multi-word medical terms exactly as stated. So we need to keep \"solumedrol\" unchanged. Also maybe \"ICU Acute care\"? That's not a standard term but appears. The phrase \"ICU Acute care\" maybe considered multi-word medical term? It's not typical. The instruction says preserve multi-word medical terms exactly as stated. So we should keep any multi-word medical terms present. The narrative includes \"ICU Acute care\". That's three words. Also \"solumedrol\". Also maybe \"oxygen flow rate\"? Not present. So we must keep \"ICU Acute care\" and \"solumedrol\". Also maybe \"salvage repair\"? Not present. So we need to include those terms exactly as they appear.\n\nWe need to formulate a clear concise clinical question max 15 words, focusing on main clinical concern or decision. The main concern: alternative treatment options for disease not controlled, considering salvage repair? Actually not. The narrative: \"My son has this disease and the Doctors are having a difficult time trying to control the disease, he is going from the ICU to the ICU Acute care back and forth. He was on solumedrol. They are planning nto rest him for a week before continuing the treatment again? Is there something other than those treatments that can be tried ???\"\n\nSo the clinical question: \"What alternative therapies exist besides solumedrol for his disease?\" Must preserve \"solumedrol\". Also maybe \"ICU Acute care\"? Not needed. But we need to preserve multi-word medical terms exactly as stated. The phrase \"ICU Acute care\" is multi-word. Should we include it? The question may need to mention it? The main concern is about treatment plan: they plan to rest him for a week before continuing treatment again. The question: \"What alternative interventions can be tried instead of solumedrol in ICU Acute care?\" That's 13 words? Let's count: What(1) alternative(2) interventions(3) can(4) be(5) tried(6) instead(7) of(8) solumedrol(9) in(10) ICU(11) Acute(12) care(13)? That's 13 words, includes \"ICU Acute care\" as two words? Actually \"ICU Acute care\" is three words: ICU(10) Acute(11) care(12). Wait we counted incorrectly. Let's recount properly:\n\nWords list:\n1 What\n2 alternative\n3 interventions\n4 can\n5 be\n6 tried\n7 instead\n8 of\n9 solumedrol\n10 in\n11 ICU\n12 Acute\n13 care\n\nThat's 13 words, okay under 15. It includes \"solumedrol\" and \"ICU Acute care\". Good.\n\nBut is it a proper question? Yes, starts with \"What\". Third-person perspective? It refers to \"his disease\" but we need third-person perspective (he/she/the patient). The question itself is about \"alternative interventions can be tried instead of solumedrol in ICU Acute care\". That's okay, but we might want to include \"patient\" or \"he\". The instruction: Use third-person perspective (he/she/the patient), NOT first person. The question itself doesn't need to include pronoun; it's about the patient. But maybe we should phrase \"What alternative interventions can be tried instead of solumedrol for his disease in ICU Acute care?\" That adds \"for his disease\". Let's count words: What(1) alternative(2) interventions(3) can(4) be(5) tried(6) instead(7) of(8) solumedrol(9) for(10) his(11) disease(12) in(13) ICU(14) Acute(15) care(16). That's 16 words, exceeds 15. So we need to keep under 15. Maybe we can drop \"his disease\". \"What alternative interventions can be tried instead of solumedrol in ICU Acute care?\" That's 13 words, okay. It doesn't explicitly mention patient, but it's about the patient implicitly. The instruction: Use third-person perspective (he/she/the patient). The question itself doesn't need a pronoun; it's about the patient. That should be fine.\n\nBut we must preserve multi-word medical terms exactly as stated."
+  },
+  {
+    "case_id": "71",
+    "prediction": "What interventions address recurrent CVA and speaking issues?"
+  },
+  {
+    "case_id": "72",
+    "prediction": "What salvage repair is indicated for patch of blood in his belly and speech deficits?"
+  },
+  {
+    "case_id": "73",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "74",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "75",
+    "prediction": "We need to produce a JSON object with key \"query\" and value being a clinical question, max 15 words, third-person, question format, preserve medical phrases exactly: \"salvage repair\", \"aortic aneurysm\", \"oxygen flow rate\"? Actually those terms are not in narrative. The narrative includes \"shattered glass in the lobes\", \"O2 levels\", \"CHF\", \"high blood pressure\", \"sclermoderma\". Also \"salvage repair\"? Not present. The instruction says preserve multi-word medical terms exactly as stated. The narrative includes \"salvage repair\"? No. It includes \"aortic aneurysm\"? No. It includes \"oxygen flow rate\"? No. It includes \"salvage repair\"? Not in narrative. So maybe they want to keep any multi-word medical terms present exactly. The narrative includes \"heart catheterization\", \"white cell count\", \"IV\", \"relapse\", \"x-ray\", \"shattered glass\", \"lobes\", \"high blood pressure\", \"CHF\", \"O2 levels\". Multi-word terms: \"heart catheterization\", \"white cell count\", \"IV\"? That's abbreviation. \"shattered glass\"? Two words. \"high blood pressure\". \"oxygen flow rate\"? Not present. Actually O2 levels is two words but not \"oxygen flow rate\". So we need to preserve any multi-word medical terms exactly as stated. The narrative includes \"heart catheterization\", \"white cell count\", \"shattered glass\", \"high blood pressure\". Also \"CHF\" is abbreviation, not multi-word. \"O2 levels\" is two words but includes number and abbreviation; maybe preserve \"O2 levels\". The instruction: \"Keep medical phrases intact (e.g., 'salvage repair', 'aortic aneurysm', 'oxygen flow rate')\". Those are examples; we need to keep any multi-word medical terms exactly as stated. So we must not alter them. So we can include \"heart catheterization\", \"white cell count\", \"shattered glass\", \"high blood pressure\", \"O2 levels\". Also \"CHF\" is single abbreviation; maybe not needed.\n\nWe need a concise clinical question max 15 words, third-person, question format. Focus on main clinical concern or decision needed. The main concern: possible systemic sclerosis (scleroderma) vs other issues? The narrative: patient had heart catheterization, white cell count 9.5, treated with IV, count dropped, relapse, x-ray showed shattered glass in lobes, high blood pressure and CHF, O2 levels 97, just out of ICU, family afraid it might be scleroderma.\n\nSo clinical question could be: \"What is the likely diagnosis of possible scleroderma in a patient with shattered glass lung infiltrates?\" That's maybe too long. Need <=15 words.\n\nLet's craft: \"What is the likely diagnosis of possible scleroderma in this patient?\" That's 9 words? Count: What(1) is2 the3 likely4 diagnosis5 of6 possible7 scleroderma8 in9 this10 patient11? That's 11 words. Good. But we need to preserve multi-word medical terms? The term \"scleroderma\" is single word. \"possible scleroderma\" is two words but okay. The narrative includes \"shattered glass in the lobes\" but maybe not needed. The question should focus on main clinical concern: possible scleroderma diagnosis. Could also ask: \"Is this likely scleroderma given lung and cardiac findings?\" That's 9 words? Is1 this2 likely3 scleroderma4 given5 lung6 and7 cardiac8 findings9? That's 9 words. But we need to preserve multi-word medical terms exactly; \"lung and cardiac findings\" not in narrative. The narrative mentions \"shattered glass in the lobes\" and \"O2 levels\". Maybe we should include \"shattered glass\" phrase exactly. But we need to keep it under 15 words. Could phrase: \"Is shattered glass lung pattern indicative of scleroderma?\" Count: Is1 shattered2 glass3 lung4 pattern5 indicative6 of7 scleroderma8? That's 8 words. That preserves \"shattered glass\". But does it preserve multi-word medical terms? \"shattered glass\" is two words; it's present in narrative. That's okay. But we also need to preserve any multi-word medical terms exactly as stated; we can include them. The question should be a proper question a clinician would ask. So \"Is shattered glass lung pattern indicative of scleroderma?\" That's okay.\n\nBut maybe better: \"What is the likely diagnosis of scleroderma with shattered glass lung infiltrates?\" Count: What1 is2 the3 likely4 diagnosis5 of6 scleroderma7 with8 shattered9 glass10 lung11 infiltrates12? That's 12 words, okay. It preserves \"shattered glass\". Also includes \""
+  },
+  {
+    "case_id": "76",
+    "prediction": "Is shattered glass pattern indicative of sclermoderma in this patient?"
+  },
+  {
+    "case_id": "77",
+    "prediction": "We need to produce a JSON with key \"query\" and value being the clinical question, max 15 words, question format, third-person perspective, preserve medical phrases exactly as stated. The narrative mentions \"salvage repair\"? Actually not. It mentions \"hematoma\", \"CT scan\", \"abdominal\", \"emergent surgery\", \"groin\", \"ropey hard, painful lump\". Also \"salvage repair\"? Not in narrative. It mentions \"aortic aneurysm\"? Not mentioned. It mentions \"oxygen flow rate\"? Not mentioned. But we must preserve multi-word medical terms exactly as stated. The narrative includes \"heart cath\", \"CT scan\", \"emergent surgery\". Those are multi-word terms. Should we preserve them exactly? The instruction: \"Keep medical phrases intact (e.g., 'salvage repair', 'aortic aneurysm', 'oxygen flow rate')\". So we need to keep any multi-word medical terms exactly as they appear. In the narrative, we have \"heart cath\", \"CT scan\", \"emergent surgery\". Also \"large hematoma\". That's two words but \"large hematoma\" maybe considered phrase. Also \"very large\". But we need to preserve exact phrase. The question should include these terms exactly as they appear. Probably we need to include \"heart cath\", \"CT scan\", \"emergent surgery\", \"large hematoma\". Also \"ropey hard\"? Not exactly phrase. \"ropey hard\" maybe not. The phrase \"very large\" appears but not a medical term. The instruction says preserve multi-word medical terms exactly as stated. So we should keep \"heart cath\", \"CT scan\", \"emergent surgery\", \"large hematoma\". Also maybe \"abdominal\"? That's one word. \"groin\" is one word. \"hematoma\" is one word. But \"large hematoma\" is two words; is that a phrase? It's a description. Might be okay to keep \"large hematoma\". The question must be concise, max 15 words.\n\nWe need to formulate a clear clinical question focusing on main concern: patient had heart cath, bleed, large hematoma in abdomen, emergent surgery, now has pain and large ropey hard lump in groin. Likely question: \"What caused the large hematoma after heart cath requiring emergent surgery?\" But need to include \"heart cath\", \"CT scan\", \"emergent surgery\", \"large hematoma\"? Also \"ropey hard\"? Not required but could be included.\n\nWe need third-person perspective: \"He\" or \"The patient\". Use question words.\n\nLet's craft: \"What caused the large hematoma after heart cath necessitating emergent surgery?\" Count words: What(1) caused2 the3 large4 hematoma5 after6 heart7 cath8 necessitating9 emergent10 surgery11? That's 11 words, under 15. It includes \"large hematoma\", \"heart cath\", \"emergent surgery\". It preserves those phrases exactly. It is a question. Third-person? It uses \"What caused the large hematoma after heart cath necessitating emergent surgery?\" That's fine, no pronoun needed but it's about the patient. It's third-person? It doesn't use \"he/she\". The instruction: \"Use third-person perspective (he/she/the patient), NOT first person (I/my/we)\". So we can use \"the patient\" or \"he\". Using \"What caused the large hematoma after heart cath necessitating emergent surgery?\" is okay, it's about the patient but not using first person. It's okay.\n\nBut maybe we need to explicitly mention \"the patient\". Could be \"What caused the large hematoma after heart cath in the patient requiring emergent surgery?\" That's 12 words? Let's count: What1 caused2 the3 large4 hematoma5 after6 heart7 cath8 in9 the10 patient11 requiring12 emergent13 surgery14? That's 14 words, okay. It includes \"heart cath\", \"large hematoma\", \"emergent surgery\". It uses \"the patient\". That's third-person.\n\nWe must keep medical phrases intact: \"heart cath\", \"large hematoma\", \"emergent surgery\". Those are preserved exactly. Also \"CT scan\" maybe not needed but we could include it? The question could be: \"What caused the large hematoma after heart cath and CT scan requiring emergent surgery?\" Count words: What1 caused2 the3 large4 hematoma5 after6 heart7 cath8 and9 CT10 scan11 requiring12 emergent13 surgery14? That's 14 words, okay. It includes \"CT scan\". That's a multi-word medical term. Should we include it? The narrative mentions \"CT scan\". It might be relevant. The question could incorporate it.\n\nBut we need to keep it under 15 words. Let's try: \"What"
+  },
+  {
+    "case_id": "78",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "79",
+    "prediction": "We need to produce JSON with key \"query\" and value is a clinical question, max 15 words, third-person perspective, proper question, preserve medical phrases exactly. Patient narrative mentions heart cath three weeks ago, bleed post op, large hematoma in groin, emergent procedure, now 7/10 pain, large ropey hard painful lump in groin. Likely question: \"What caused the large hematoma and ropey lump in the patient's groin after cardiac catheterization?\" Must keep medical phrases intact: \"salvage repair\"? Not present. \"aortic aneurysm\"? Not present. \"oxygen flow rate\"? Not present. So we just need to preserve any multi-word medical terms exactly as stated. The narrative includes \"heart cath\", \"hematoma\", \"ropey hard\". Should we keep \"heart cath\"? It's a phrase. The question must preserve multi-word medical terms exactly as stated. So we must include \"heart cath\" exactly? The instruction: \"Preserve multi-word medical terms exactly as stated\". That likely means if a term appears in narrative, we must keep it unchanged in the question. So we should include \"heart cath\". Also \"hematoma\". Also \"ropey hard\"? That's two words but not a standard medical term; but it's used to describe lump. Might need to preserve \"ropey hard\"? Probably not required but could be considered phrase. Safer to include \"ropey hard\" exactly? The instruction says preserve multi-word medical terms exactly as stated. \"ropey hard\" is not a medical term, but it's a phrase describing the lump. Might not be required. But we can include \"ropey hard\" to be safe? The question must be concise and under 15 words. Let's craft: \"What caused the large hematoma and ropey hard lump in the patient's groin after heart cath?\" Count words: What(1) caused2 the3 large4 hematoma5 and6 ropey7 hard8 lump9 in10 the11 patient's12 groin13 after14 heart15 cath? That's 15 words exactly? Let's count: \"What\"1 \"caused\"2 \"the\"3 \"large\"4 \"hematoma\"5 \"and\"6 \"ropey\"7 \"hard\"8 \"lump\"9 \"in\"10 \"the\"11 \"patient's\"12 \"groin\"13 \"after\"14 \"heart\"15 \"cath?\"16 Actually \"cath?\" counts as a word? Yes, \"cath?\" is a word. So that's 16 words, exceeding limit. Need max 15 words. Let's try shorter: \"What caused the large hematoma and ropey hard lump in groin after heart cath?\" Count: What1 caused2 the3 large4 hematoma5 and6 ropey7 hard8 lump9 in10 groin11 after12 heart13 cath?14 That's 14 words, good. It uses third-person? It says \"the patient's\"? We removed \"patient's\". Must be third-person perspective: \"the patient's\"? That's still third-person. But we can say \"the groin\" without \"patient's\". But need third-person perspective: maybe \"the patient's groin\". That adds a word. Let's try: \"What caused the large hematoma and ropey hard lump in the groin after heart cath?\" Count: What1 caused2 the3 large4 hematoma5 and6 ropey7 hard8 lump9 in10 the11 groin12 after13 heart14 cath?15 That's exactly 15 words. Good. It includes \"heart cath\" exactly as stated. It preserves \"hematoma\", \"ropey hard\". It is a question. It's third-person? It doesn't mention \"patient\", but it's implied. Might be okay. Could add \"the patient's\" but that would exceed. The instruction: \"Use third-person perspective (he/she/the patient)\". So we need to refer to the patient explicitly? It says use third-person perspective (he/she/the patient). So we should include \"the patient\". Let's try: \"What caused the large hematoma and ropey hard lump in the patient's groin after heart cath?\" Count: What1 caused2 the3 large4 hematoma5 and6 ropey7 hard8 lump9 in10 the11 patient's12 groin13 after14 heart15 cath?16 That's 16 words, too many. Need max 15. Could drop \"large\"? But need to keep medical terms? \"large\" is not a medical term, but we can drop it. Let's try: \"What caused the hematoma and ropey hard lump in the patient's groin after heart cath"
+  },
+  {
+    "case_id": "80",
+    "prediction": "What caused the large ropey hard groin lump after heart cath and emergent surgery?"
+  },
+  {
+    "case_id": "81",
+    "prediction": "We need to produce a clinical question max 15 words, third-person perspective, includes medical phrases exactly as given. Must be a question. Must preserve multi-word medical terms exactly as stated: e.g., 'salvage repair', 'aortic aneurysm', 'oxygen flow rate' - but not necessarily needed; we need to keep medical phrases intact if used. The narrative mentions \"heart cath\", \"hematoma\", \"emergent surgery\", \"groin\", \"ropey hard, painful lump\". We need to formulate a question focusing on main clinical concern/decision needed. Likely: \"What caused the post‑operative hematoma requiring emergent salvage repair of the groin?\" But need to keep terms intact: \"salvage repair\"? Not mentioned in narrative but could be relevant. The narrative says \"placed something?\" maybe a stent? Not sure. The question should be something a clinician would ask: \"Did emergent salvage repair of the groin vessel occur after catheterization?\" Must be <=15 words.\n\nCount words. Let's craft: \"What caused the post‑operative hematoma necessitating emergent salvage repair of the groin?\" Count words: What(1) caused2 the3 post‑operative4 hematoma5 necessitating6 emergent7 salvage8 repair9 of10 the11 groin12? That's 12 words. It includes \"post‑operative hematoma\", \"salvage repair\". It uses third-person? It is a question but not referencing patient pronoun. It's okay. Must be a question with question word. It's okay.\n\nBut we need to preserve multi-word medical terms exactly as stated: \"salvage repair\" is not in narrative but we can still use it? The instruction says \"Preserve multi-word medical terms exactly as stated\". That implies if we use them, we must keep them exactly as they appear in the narrative. The narrative includes \"salvage repair\"? Actually narrative does not mention \"salvage repair\". It mentions \"heart cath\", \"hematoma\", \"emergent surgery\". It does not mention \"salvage repair\". So we shouldn't introduce new multi-word medical terms not present. We must keep any multi-word medical terms we use exactly as they appear in the narrative. So we can use \"heart cath\"? That's two words but not multi-word? It's two words but maybe considered phrase. Safer to use terms that appear: \"heart cath\", \"hematoma\", \"emergent surgery\". Also \"aortic aneurysm\"? Not present. \"oxygen flow rate\"? Not present. So we can use \"heart cath\" and \"hematoma\". Also \"groin\" is single word. \"ropey hard, painful lump\" not needed.\n\nWe need to formulate a question focusing on main clinical concern: likely \"What caused the post‑operative hematoma after heart cath requiring emergent surgery?\" But \"post‑operative\" not in narrative; but it's okay? The instruction says preserve multi-word medical terms exactly as stated; we can add words but must keep any multi-word medical terms exactly as they appear. If we add \"post‑operative\", that's not in narrative, but it's not a multi-word medical term? It's hyphenated phrase; might be considered multi-word. Safer to avoid adding new multi-word terms not in narrative. Use only terms that appear: \"heart cath\", \"hematoma\", \"emergent surgery\". Also \"groin\" appears. So question could be: \"What caused the hematoma after heart cath requiring emergent surgery?\" Count words: What1 caused2 the3 hematoma4 after5 heart6 cath7 requiring8 emergent9 surgery10? That's 10 words, within 15. It includes \"heart cath\" and \"hematoma\" and \"emergent surgery\" exactly as they appear. It is a question, third-person perspective (no I). It's specific. It asks about cause of hematoma after heart cath requiring emergent surgery. That seems appropriate.\n\nBut maybe we need to mention \"groin\" because the lump is in groin. The main concern is the groin lump. The question could be: \"What caused the groin hematoma after heart cath requiring emergent surgery?\" Count: What1 caused2 the3 groin4 hematoma5 after6 heart7 cath8 requiring9 emergent10 surgery11? That's 11 words. It includes \"groin\", \"hematoma\", \"heart cath\", \"emergent surgery\". All terms appear. \"groin\" is single word, fine. This is good.\n\nWe need to keep medical phrases intact: \"heart cath\" appears as two words; we must keep exactly as \"heart cath\". In our question we have \"heart cath\". Good. \"hematoma\" appears; we have \"hematoma\". \"emergent surgery\" appears; we have \"emergent surgery\". \""
+  },
+  {
+    "case_id": "82",
+    "prediction": "We need to produce a JSON with key \"query\" and value a clinical question max 15 words, third-person perspective, using medical phrases intact. Must be a question, using question words. Must preserve multi-word medical terms exactly as stated: 'salvage repair', 'aortic aneurysm', 'oxygen flow rate' etc. In narrative, terms: 'heart cath', 'bleed post op', 'hematoma', 'emergent surgery', 'salvage repair'? Not present. Actually narrative mentions \"heart cath\", \"bleed post op\", \"hematoma\", \"emergent surgery\". Also \"large hematoma\", \"ropey hard\". We need to formulate a clear concise clinical question focusing on main clinical concern/decision needed. Probably: \"What is the appropriate management for a large post‑operative groin hematoma after emergent salvage repair?\" But must keep medical phrases exactly as stated: 'salvage repair'? Not in narrative but could be relevant. However instruction: \"Preserve multi-word medical terms exactly as stated\". So if we include 'salvage repair', must be exactly that phrase. But it's not in narrative; maybe we shouldn't invent terms not present. Use terms that appear: 'heart cath', 'bleed post op', 'hematoma', 'emergent surgery'. Also 'oxygen flow rate' not present. So we can use 'heart cath', 'bleed post op', 'hematoma', 'emergent surgery'. Must keep them exactly as stated, including capitalization? Probably lower case as in narrative. Use them exactly. So question could be: \"What is the recommended intervention for a large hematoma after emergent surgery following a heart cath bleed post op?\" That's 13 words? Let's count: What(1) is2 the3 recommended4 intervention5 for6 a7 large8 hematoma9 after10 emergent11 surgery12 following13 a14 heart15 cath16 bleed17 post18 op19? That's 19 words, too many. Need max 15 words. Also must be a question, third-person. Let's craft shorter: \"What intervention addresses a large hematoma after emergent surgery post heart cath bleed?\" Count words: What1 intervention2 addresses3 a4 large5 hematoma6 after7 emergent8 surgery9 post10 heart11 cath12 bleed13? That's 13 words, okay. Contains 'heart cath', 'bleed', 'emergent surgery', 'hematoma'. All exact phrases? 'heart cath' appears as two words; we have 'heart cath' exactly. 'bleed' appears as part of 'bleed post op' but we used just 'bleed'. The phrase 'bleed post op' is multi-word; we need to preserve it exactly if we use it. The instruction: \"Preserve multi-word medical terms exactly as stated\". So if we include 'bleed post op', we must keep that exact phrase. But we can avoid using it; we can just use 'bleed' which is not a multi-word term. The multi-word terms in narrative are 'heart cath' (two words), 'bleed post op' (three words), 'salvage repair' (not present), 'aortic aneurysm' (not present), 'oxygen flow rate' (not present). So we must preserve 'bleed post op' if we use it. But we can avoid using it. However the question may need to reference the bleed. Could say \"What is the appropriate management for a large hematoma after emergent surgery following a heart cath bleed post op?\" That's long. Need <=15 words. Let's count: What1 is2 the3 appropriate4 management5 for6 a7 large8 hematoma9 after10 emergent11 surgery12 following13 a14 heart15 cath16 bleed17 post18 op19? Too many.\n\nWe need <=15 words. Let's try: \"What management is needed for a large hematoma after emergent surgery post heart cath bleed?\" Count: What1 management2 is3 needed4 for5 a6 large7 hematoma8 after9 emergent10 surgery11 post12 heart13 cath14 bleed15? That's exactly 15 words, includes 'heart cath', 'bleed' but not 'bleed post op'. The phrase 'bleed' is not multi-word, okay. But we omitted 'post op'. The narrative includes 'bleed post op' as phrase; but we are not required to include every phrase, just preserve any multi-word medical terms we use exactly as stated. So if we don't use 'bleed post op', fine.\n\nBut we need to keep third-person perspective: \"What management is needed for a large hematoma after emergent surgery post heart cath bleed?\" That's"
+  },
+  {
+    "case_id": "83",
+    "prediction": "What caused the large groin hematoma after heart cath?"
+  },
+  {
+    "case_id": "84",
+    "prediction": "Was GBS infection from rat bite responsible for neurologic symptoms?"
+  },
+  {
+    "case_id": "85",
+    "prediction": "Is rat bite likely cause of GBS in this patient?"
+  },
+  {
+    "case_id": "86",
+    "prediction": "Did rat bite cause Gbs in wife?"
+  },
+  {
+    "case_id": "87",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "88",
+    "prediction": "Why does the patient remain febrile despite WBC rising to 5000 after ICU stay?"
+  },
+  {
+    "case_id": "89",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "90",
+    "prediction": "Is prolonged cardiac problem with EEG seizure activity and preserved organ function possible?"
+  },
+  {
+    "case_id": "91",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "92",
+    "prediction": "Is chest and back pain normal after electric paddles, induced coma, and ICU?"
+  },
+  {
+    "case_id": "93",
+    "prediction": "Did toxic shock cause heart failure leading to breathlessness on exertion in this patient?"
+  },
+  {
+    "case_id": "94",
+    "prediction": "Is a glucose level of 434 mg/dL dangerous for a 21‑year‑old post‑ICU diabetes patient?"
+  },
+  {
+    "case_id": "95",
+    "prediction": "What acute problem underlies the patient's hemoglobin and platelet problem?"
+  },
+  {
+    "case_id": "96",
+    "prediction": "What is the prognosis for subdural hematoma patient on Serlift and Admenta with persistent hallucinations?"
+  },
+  {
+    "case_id": "97",
+    "prediction": "What does TCA refer to in this patient's medication regimen?"
+  },
+  {
+    "case_id": "98",
+    "prediction": "What should be done for mass on his heart and chest pain?"
+  },
+  {
+    "case_id": "99",
+    "prediction": "We need to produce a JSON with \"query\": \"question?\" exactly. Must be a clinical question, max 15 words, third person, proper question, medical phrases intact. Let's parse patient narrative: husband identified with tubercular meningitis? Actually \"tuburculos meningitis\" likely tuberculous meningitis. Protein 496 / lymphocytes 90% after lumbar tap. He spent 5 days in ICU and now on AKT 4 treatment. 01 Large Tablet after breakfast / rifamicin after 2 hours of breakfast and rest two after lunch is this the right way to take the medicines as earlier he was taking rifamicin empty stomach but this creates nausea and vomiting so our doc changed to the sequel mentioned. Also he has a fever around 100-101 please advise.\n\nWe need a concise clinical question focusing on main concern: medication administration schedule? Or fever management? Probably about medication timing: \"Is the current rifampicin dosing schedule (large tablet after breakfast, then after 2 hours, rest two after lunch) correct?\" But need to keep medical phrases intact: \"rifamicin\" is spelled incorrectly but must keep as is. Also \"AKT 4 treatment\". Also \"tuburculos meningitis\". Must preserve multi-word medical terms exactly. So we need to include \"tuburculos meningitis\"? The phrase is \"tuburculos meningitis\". Keep exactly. Also \"AKT 4\". Also \"rifamicin\". Also \"lumbar tap\"? Not needed maybe. The question should be about medication timing and nausea. Maybe: \"Is the rifamicin dosing schedule (large tablet after breakfast, then after 2 hours, rest two after lunch) appropriate for tuburculos meningitis?\" That's 15 words? Let's count: Is(1) the2 rifamicin3 dosing4 schedule5 (large6 tablet7 after8 breakfast,9 then10 after11 212 hours,13 rest14 two15 after16 lunch)17 appropriate18 for19 tuburculos20 meningitis? That's too many words, and also parentheses count? Words inside parentheses count as words? Probably yes. Need max 15 words total. Must be a question, third person, proper question, preserve medical phrases exactly. Let's craft a 14-word question.\n\nPossible: \"Is the rifamicin dosing (large tablet after breakfast, then after 2 hours, rest two after lunch) correct for tuburculos meningitis?\" Count words: Is1 the2 rifamicin3 dosing4 (large5 tablet6 after7 breakfast,8 then9 after10 211 hours,12 rest13 two14 after15 lunch)16 correct17 for18 tuburculos19 meningitis? That's 19 words, too many.\n\nWe need to be concise. Maybe: \"Is the rifamicin dosing schedule appropriate for tuburculos meningitis?\" That's 7 words? Let's count: Is1 the2 rifamicin3 dosing4 schedule5 appropriate6 for7 tuburculos8 meningitis? That's 8 words. But we need to preserve \"large tablet after breakfast / rifamicin after 02 hours of breakfast and rest two after lunch\". The question should reflect that schedule. But we can maybe ask: \"Is the rifamicin schedule (large tablet after breakfast, then after 2 hours, rest two after lunch) correct?\" That's maybe 13 words? Let's count: Is1 the2 rifamicin3 schedule4 (large5 tablet6 after7 breakfast,8 then9 after10 210 hours,11 rest12 two13 after14 lunch)15 correct? That's 15 words exactly? Let's recount precisely: Is(1) the(2) rifamicin(3) schedule(4) (large(5) tablet(6) after(7) breakfast,(8) then(9) after(10) 2(10?) Actually \"2\" is a token? Might be considered a word. Let's treat \"2\" as a word. So after 2(10) hours,(11) rest(12) two(13) after(14) lunch)15 correct?16? Hmm.\n\nBetter to avoid parentheses and count words simply. Maybe we can phrase: \"Is the rifamicin schedule large tablet after breakfast then after 2 hours rest two after lunch correct?\" Count: Is1 the2 rifamicin3 schedule4 large5 tablet6 after7 breakfast8 then9 after10 211 hours12 rest13 two14 after15 lunch16 correct? That's 16 words, too many.\n\nWe need max 15 words. Let's try: \"Is the rifamicin schedule large tablet after breakfast then after"
+  },
+  {
+    "case_id": "100",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "101",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "102",
+    "prediction": "Is recurrent vtach after stent placement in a patient a normal finding requiring further evaluation?"
+  },
+  {
+    "case_id": "103",
+    "prediction": "We need to produce a JSON object with key \"query\" and value a question <=15 words, third-person, proper question, preserve medical phrases exactly. Patient narrative: septic, ICU, morphine, vent, sedated with propafol, total organ failure due to infected bladder sphincter, now off trach, step down, mind not right, could be due to meds or brain damage, age 74.\n\nWe need a clear concise clinical question focusing on main concern: Is his altered mental status due to medication effects or permanent brain damage? Use medical phrases: \"organ failure\", \"bladder sphincter infection\"? The phrase \"bladder sphincter\" maybe not standard but keep as is. Also \"salvage repair\"? Not present. \"aortic aneurysm\"? Not present. But we must keep medical phrases intact if they appear. The narrative includes \"organ failure\", \"bladder sphincter\", \"vent\", \"propofol\"? Actually \"propafol\" (typo). Also \"trach\". Should preserve \"bladder sphincter\". Also \"step down\". Also \"organ failure\". Also \"septic\". Also \"morphine\". Also \"propofol\"? They wrote \"propafol\". Keep as is. Also \"ICU\". Also \"vent\". Also \"sedated\". Also \"mind is not right\". We need to keep multi-word medical terms exactly as stated. So we must include \"organ failure\", \"bladder sphincter\", \"propafol\"? Actually \"propafol\" is a misspelling but we keep as written. Also \"trach\". Also \"step down\". Also \"ICU\". Also \"vent\". Also \"sedated\". Also \"morphine\". Also \"septic\". Also \"organ failure\". Also \"bladder sphincter\". Also \"mind is not right\". But we need to keep them intact if used. The question can include them.\n\nWe need max 15 words. Let's craft: \"Is his altered mental status due to medication effects or permanent brain damage?\" That's 11 words? Count: Is(1) his2 altered3 mental4 status5 due6 to7 medication8 effects9 or10 permanent11 brain12 damage13? That's 13 words. Good. But we need to include medical phrase \"organ failure\"? Not necessary but we could incorporate. However we need to keep medical phrases intact if they appear. The instruction: \"Preserve multi-word medical terms exactly as stated\". That means if we include them, we must keep them exactly. We can include \"organ failure\" maybe. But we need to keep under 15 words. Let's try: \"Is his altered mental status due to medication effects or permanent brain damage from organ failure?\" Count words: Is1 his2 altered3 mental4 status5 due6 to7 medication8 effects9 or10 permanent11 brain12 damage13 from14 organ15 failure16? That's 16 words, exceeds 15. Could drop \"permanent\". \"Is his altered mental status due to medication effects or brain damage from organ failure?\" Count: Is1 his2 altered3 mental4 status5 due6 to7 medication8 effects9 or10 brain11 damage12 from13 organ14 failure15? That's exactly 15 words. Good. Does it preserve \"organ failure\"? Yes. Also includes \"medication effects\". Not a medical phrase but okay. It includes \"brain damage\". That's fine. It includes \"organ failure\". Also includes \"medication effects\". Not required to preserve any specific phrase beyond those present. The phrase \"bladder sphincter\" maybe not needed. But we must preserve any multi-word medical terms we include exactly. We are not required to include them, but if we include them we must keep them exact. Safer to not include them to avoid risk of mis-spelling. The question can be generic but must be a proper clinical question. The main concern: altered mental status cause. So question: \"Is his altered mental status due to medication effects or brain damage from organ failure?\" That's 15 words exactly, third-person, question, includes medical phrase \"organ failure\". It also includes \"medication effects\" (not a medical phrase but okay). It doesn't include \"bladder sphincter\" etc. That's fine.\n\nCheck word count: Let's recount precisely:\n\nIs (1)\nhis (2)\naltered (3)\nmental (4)\nstatus (5)\ndue (6)\nto (7)\nmedication (8)\neffects (9)\nor (10)\nbrain (11)\ndamage (12)\nfrom (13)\norgan (14)\nfailure (15)?\n\nYes 15 words. Good.\n\nNow output JSON: {\"query\": \"Is his altered mental status due to medication effects or brain damage"
+  },
+  {
+    "case_id": "104",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "105",
+    "prediction": "We need to produce a JSON with key \"query\" containing a clinical question max 15 words, third-person, proper question, preserve medical phrases exactly. The narrative: sister with colon cancer with liver metastases, 3 lesions, one 6 centimeter large? Actually \"6 centementers large\". The mass in the colon causing blockage only allowing liquids to pass. She was admitted ICU, given 4 units of blood (her gamaglobin was 3.5) and scheduled surgery to do a colostomy in 3 days which she refused since the bioupsy results weren't even back yet. Now they don't know where she should go or what next step. Question: Does she need immediate surgery or just an oncologist visit? They want a question focusing on main clinical concern/decision. Must preserve multi-word medical terms exactly as stated: \"salvage repair\"? Not present. \"aortic aneurysm\"? Not present. \"oxygen flow rate\"? Not present. But we have \"colostomy\", \"biopsy\"? Actually \"bioupsy\" typo but we need to preserve \"biopsy\"? The narrative says \"bioupsy results weren't even back yet\". The instruction: preserve multi-word medical terms exactly as stated. The term \"biopsy\" is not exactly as stated; they wrote \"bioupsy\". Should we preserve that typo? Probably we should preserve the term as appears: \"bioupsy\". Also \"colostomy\". Also \"gamaglobin\"? They wrote \"gamaglobin\". Should preserve that spelling. Also \"centementers\"? They wrote \"centementers\". Should preserve that. Also \"salvage repair\"? Not present. So we need to keep those terms exactly as written. The question must be a proper question, third-person, under 15 words.\n\nPotential question: \"Should she undergo immediate surgery or just an oncologist visit?\" That's 9 words? Let's count: Should(1) she(2) undergo(3) immediate(4) surgery(5) or(6) just(7) an(8) oncologist(9) visit(10)? That's 10 words. It includes \"surgery\" and \"oncologist visit\". It doesn't preserve \"bioupsy\" or \"colostomy\" or \"gamaglobin\" etc. But we need to preserve multi-word medical terms exactly as stated. The instruction: \"Preserve multi-word medical terms exactly as stated (e.g., 'salvage repair', 'aortic aneurysm', 'oxygen flow rate')\". It doesn't say we must include them, just that if they appear we must preserve them exactly. But we should include them if they are part of the question? The question should focus on main clinical concern or decision needed. The main concern: whether immediate surgery (colostomy) is needed or just oncologist visit. The term \"colostomy\" is a multi-word? It's one word but maybe considered a term. It is a medical term. Should we preserve it exactly? Possibly we should include it in the question to preserve it. But the question must be concise and under 15 words. Could we phrase: \"Should she proceed with colostomy or wait for oncologist?\" That's 9 words? Let's count: Should(1) she(2) proceed(3) with(4) colostomy(5) or(6) wait(7) for(8) oncologist(9)? That's 9 words. It includes \"colostomy\". It doesn't include \"bioupsy\" or \"gamaglobin\". Those are not needed. The question should be about main clinical concern: need for immediate surgery vs oncologist visit. The term \"colostomy\" is relevant. Also \"biopsy\"? The narrative says \"bioupsy results weren't even back yet\". The decision may hinge on biopsy results. So maybe the question: \"Should she proceed with colostomy before biopsy results?\" That's 11 words? Let's count: Should(1) she(2) proceed(3) with(4) colostomy(5) before(6) biopsy(7) results(8)? Actually \"biopsy results\" is two words; we need to include exactly as stated? They wrote \"bioupsy\". So we must preserve \"bioupsy\". So maybe \"Should she proceed with colostomy before bioupsy results?\" Count: Should1 she2 proceed3 with4 colostomy5 before6 bioupsy7 results8? That's 8 words. That's under 15. It includes \"colostomy\" and \"bioupsy\". It is a proper question. It focuses on decision: proceed with colostomy before biopsy results. That seems appropriate.\n\nBut the question must be third-person, proper question, preserve multi-word medical terms"
+  },
+  {
+    "case_id": "106",
+    "prediction": "..."
+  },
+  {
+    "case_id": "107",
+    "prediction": "We need to produce a JSON object with key \"query\" and a question string, max 15 words, third-person perspective, proper question, preserve medical phrases. The narrative concerns \"stage 4 colon cancer\", \"salvage repair\"? Not mentioned. It mentions \"drained her lung\", \"phenmonia\" (maybe \"pneumonia\"? but they wrote phenmonia), \"cancer cells\" found in drained lung, \"oxycodone\", \"morphine\". Main concern: Could the cancer have spread that quickly? Why did she die suddenly? The question should focus on the main clinical concern or decision needed. Probably: \"Can stage 4 colon cancer with lung involvement progress to fatal outcome within days after drainage?\" Must be <=15 words. Use third-person. Include medical phrases: \"stage 4 colon cancer\", \"lung drainage\", \"cancer cells\", maybe \"salvage repair\"? Not present. Keep medical phrases intact: \"stage 4 colon cancer\", \"lung drainage\", \"cancer cells\". Must be a question, use question word. Let's craft: \"Can stage 4 colon cancer with lung drainage progress to death within days?\" Count words: Can(1) stage(2) 4(3) colon(4) cancer(5) with(6) lung(7) drainage(8) progress(9) to(10) death(11) within(12) days?(13) That's 13 words, okay. It includes \"lung drainage\" but narrative says \"drained her lung\". Use phrase \"lung drainage\"? The narrative says \"they drained her lung\". So \"lung drainage\" is okay as a medical phrase? It's not exactly same wording but close. They want to preserve multi-word medical terms exactly as stated. The term \"lung drainage\" is not exactly in narrative; they said \"drained her lung\". That's two words \"drained her lung\". But we need to preserve multi-word medical terms exactly as stated. The phrase \"lung drainage\" is not exactly in narrative; but \"lung drainage\" is a medical term, but they said \"drained her lung\". Might need to keep \"drained her lung\". But we need to keep medical phrases intact. The phrase \"drained her lung\" is three words, but it's not a medical term per se. However they said \"they drained her lung\". So maybe we should include \"drained her lung\". Let's try: \"Can stage 4 colon cancer with drained her lung progress to death within days?\" That's weird grammar. Must be proper question, third-person, but \"drained her lung\" is not appropriate as adjective. Could use \"drained lung\". Not exact phrase. Maybe we can use \"lung drainage\" which is close but not exact. The instruction: \"Preserve multi-word medical terms exactly as stated\". The only multi-word medical term in narrative is \"stage 4 colon cancer\"? That's four words. Also \"lung drainage\"? Not exactly. \"pneumonia\"? They wrote \"phenmonia\" but that's a typo. They also wrote \"oxygen flow rate\"? Not present. So we need to keep \"stage 4 colon cancer\" exactly. Also maybe \"lung drainage\"? Not in narrative. The phrase \"cancer cells\" is two words. Should preserve exactly \"cancer cells\". So we can include \"cancer cells\". Let's craft: \"Can stage 4 colon cancer with cancer cells progress to death within days?\" Count words: Can1 stage2 4 3 colon4 cancer5 cells6 with7 cancer8 cells9 progress10 to11 death12 within13 days?14 That's 14 words, okay. But we repeated \"cancer cells\" twice, maybe redundant. Could be: \"Can stage 4 colon cancer with cancer cells cause rapid death?\" Count: Can1 stage2 4 3 colon4 cancer5 cells6 with7 cancer8 cells9 cause10 rapid11 death?12 That's 12 words. But we need to preserve \"cancer cells\" exactly; we have it. The phrase \"stage 4 colon cancer\" is preserved. The question is third-person, proper. It asks about rapid death. That seems okay.\n\nBut maybe we should include \"lung drainage\" or \"drained her lung\"? The narrative's main concern is that after draining her lung they found cancer cells, leading to rapid decline. So the question could be: \"Can stage 4 colon cancer with drained her lung cause rapid death?\" That's not proper grammar. Better: \"Can stage 4 colon cancer with lung drainage cause rapid death?\" That uses \"lung drainage\" which is not exactly in narrative but close. The instruction says preserve multi-word medical terms exactly as stated. \"lung drainage\" is not stated; \"drained her lung\" is. But \"lung drainage\" is a medical term, but not"
+  },
+  {
+    "case_id": "108",
+    "prediction": "Is Coumadin safe for patient with frontal lobe seizures and family history?"
+  },
+  {
+    "case_id": "109",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "110",
+    "prediction": "Was this death timely, or caused by medication errors during hemodialysis?"
+  },
+  {
+    "case_id": "111",
+    "prediction": "What does bleeding from his mouth and nose indicate in a 69‑year‑old with severe CAD?"
+  },
+  {
+    "case_id": "112",
+    "prediction": "Is his low blood pressure and elevated pulse concerning after MI with stents?"
+  },
+  {
+    "case_id": "113",
+    "prediction": "Is postoperative cognitive decline after aortic dissection normal?"
+  },
+  {
+    "case_id": "114",
+    "prediction": "What is the appropriate management of facial seizures after brain surgery in this patient?"
+  },
+  {
+    "case_id": "115",
+    "prediction": "Is Azithromyzin dosing appropriate for pneumonia in a patient with latent TB?"
+  },
+  {
+    "case_id": "116",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "117",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "118",
+    "prediction": "your clinical question here?"
+  },
+  {
+    "case_id": "119",
+    "prediction": "What causes left upper neck pain after total thyroid ectomy and cancer?"
+  },
+  {
+    "case_id": "120",
+    "prediction": "Is gum bleeding in this patient with recent stroke and pneumonia indicative of oral cancer?"
+  }
+]

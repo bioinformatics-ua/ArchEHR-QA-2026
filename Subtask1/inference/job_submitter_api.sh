@@ -1,18 +1,21 @@
 #!/bin/bash
 
 # ================= CONFIGURATION =================
-DATASET="dev" # Change to "test" if needed
+DATASET="new" # Change to "test" if needed
 LOG_DIR="../logs"
-OUTPUT_DIR="../outputs/${DATASET}"
+OUTPUT_DIR="../outputs_v2/${DATASET}"
 
 
 MODELS=(
-#     "moonshotai/kimi-k2.5"
-#     "z-ai/glm-4.7"
-#     "meta-llama/llama-4-maverick"
+    #     "moonshotai/kimi-k2.5"
+    #     "z-ai/glm-4.7"
+    "anthropic/claude-sonnet-4.5"
+    "openai/gpt-5.2"
+    "google/gemini-3-flash-preview"
+    "qwen/qwen3-max"
 #     "openai/gpt-oss-120b"
-#     "qwen/qwen3-235b-a22b-2507"
-    "deepseek/deepseek-r1-0528:free"
+    # "qwen/qwen3-235b-a22b-2507"
+    # "deepseek/deepseek-r1-0528:free"
     # "google/gemini-3-pro-preview"
 )
 
@@ -85,7 +88,7 @@ PYTHONUNBUFFERED=1 python inference.py \\
     --xml-file ../../data/${DATASET}/archehr-qa.xml \\
     --prompt-file prompt.json \\
     --prompt-index \$PROMPT_INDEX \\
-    --output-file ../outputs/${DATASET}/\$OUTPUT_FILE \\
+    --output-file ../outputs_v2/${DATASET}/\$OUTPUT_FILE \\
     --inference-mode "\$MODE" \\
     --model "\$MODEL"
 
@@ -101,7 +104,7 @@ singularity exec --nv "\$SIF_IMAGE" "\$UV_BIN" run python evaluation.py \\
     --submission_path ../outputs/${DATASET}/\$OUTPUT_FILE \\
     --key_path ../../data/${DATASET}/archehr-qa.xml \\
     --quickumls_path ../quickumls/final \\
-    --out_file_path ../results/${DATASET}/\$OUTPUT_FILE
+    --out_file_path ../results_v2/${DATASET}/\$OUTPUT_FILE
 
 EOF
 

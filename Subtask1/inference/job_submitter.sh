@@ -1,20 +1,16 @@
 #!/bin/bash
 
 # ================= CONFIGURATION =================
-DATASET="dev" # Change to "test" if needed
+DATASET="new" # Change to "test" if needed
 LOG_DIR="../logs"
-OUTPUT_DIR="../outputs/${DATASET}"
+OUTPUT_DIR="../outputs_v2/${DATASET}"
 
 # # Define the list of models
 # MODELS=(
-#     "Qwen/Qwen3-32B"
-#     "google/gemma-3-27b-it"
-#     "google/medgemma-1.5-4b-it"
-#     "google/medgemma-27b-text-it"
+
 
 #     "Aikyam-Lab/CURE-MED-14B"
 #     "BioMistral/BioMistral-7B"
-#     "Echelon-AI/Med-Qwen2-7B"
 #     "Intelligent-Internet/II-Medical-8B-1706"
 #     "NotoriousH2/qwen3-1.7b-base-MED-Instruct"
 #     "VesileHan/fine_tuned_qwen1.7B"
@@ -24,8 +20,7 @@ OUTPUT_DIR="../outputs/${DATASET}"
 #     "lingshu-medical-mllm/Lingshu-7B"
 #     "meta-llama/Llama-3.3-70b-versatile"
 #     "meta-llama/Llama-3.1-8B-Instruct"
-#     "mistralai/Ministral-3-14B-Reasoning-2512"
-#     "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8"
+
 #     "openai/gpt-oss-120b"
 #     "pszemraj/medgemma-27b-text-heretic_med"
 #     "suayptalha/Qwen3-0.6B-Medical-Expert"
@@ -34,8 +29,15 @@ OUTPUT_DIR="../outputs/${DATASET}"
   # "meta-llama/Llama-3.3-70B-Instruct"
 # 
 MODELS=(
+    "Echelon-AI/Med-Qwen2-7B"
+    "Qwen/Qwen3-32B"
+    "google/gemma-3-27b-it"
+    "google/medgemma-1.5-4b-it"
+    "google/medgemma-27b-text-it"
+    "mistralai/Ministral-3-14B-Reasoning-2512"
+    "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8"
     # "google/medgemma-4b-it"
-    "meta-llama/Llama-3.3-70B-Instruct"
+    # "meta-llama/Llama-3.3-70B-Instruct"
 )
 
 # Create output directory if it doesn't exist
@@ -73,7 +75,7 @@ for MODEL in "${MODELS[@]}"; do
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
-#SBATCH --gres=gpu:8
+#SBATCH --gres=gpu:4
 
 # --- Environment Setup ---
 echo "Job started on \$(hostname)"
@@ -107,7 +109,7 @@ PYTHONUNBUFFERED=1 python inference.py \\
     --xml-file ../../data/${DATASET}/archehr-qa.xml \\
     --prompt-file prompt.json \\
     --prompt-index \$PROMPT_INDEX \\
-    --output-file ../outputs/${DATASET}/\$OUTPUT_FILE \\
+    --output-file ../outputs_v2/${DATASET}/\$OUTPUT_FILE \\
     --inference-mode "\$MODE" \\
     --model "\$MODEL"
 
@@ -120,10 +122,10 @@ UV_BIN=\$(which uv)
 
 # Run Evaluation
 singularity exec --nv "\$SIF_IMAGE" "\$UV_BIN" run python evaluation.py \\
-    --submission_path ../outputs/${DATASET}/\$OUTPUT_FILE \\
+    --submission_path ../outputs_v2/${DATASET}/\$OUTPUT_FILE \\
     --key_path ../../data/${DATASET}/archehr-qa.xml \\
     --quickumls_path ../quickumls/final \\
-    --out_file_path ../results/${DATASET}/\$OUTPUT_FILE
+    --out_file_path ../results_v2/${DATASET}/\$OUTPUT_FILE
 
 EOF
 

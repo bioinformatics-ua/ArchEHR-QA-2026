@@ -1,0 +1,402 @@
+[
+  {
+    "case_id": "21",
+    "prediction": "What information in medical records predicts prognosis for end-stage alcoholic cirrhosis and advanced hepatic encephalopathy?"
+  },
+  {
+    "case_id": "22",
+    "prediction": "Why was salvage repair performed for the aortic aneurysm in this patient?"
+  },
+  {
+    "case_id": "23",
+    "prediction": "Was antibiotic administration indicated for the 88-year-old patient with head injury and no infection signs?"
+  },
+  {
+    "case_id": "24",
+    "prediction": "Was intubation indicated for a 55-year-old with pneumonia and no cardiac history?"
+  },
+  {
+    "case_id": "25",
+    "prediction": "Was CPAP used to maintain positive airflow or for sleep apnea in a patient with chronic congestive heart failure?"
+  },
+  {
+    "case_id": "26",
+    "prediction": "Were the antibiotics administered during ICU intermittent intubation necessary?"
+  },
+  {
+    "case_id": "27",
+    "prediction": "How should a patient with a serious pancreatic infection post-ICU be managed to control symptoms and prevent recurrence?"
+  },
+  {
+    "case_id": "28",
+    "prediction": "How should post-ICU pancreatic infection in a 61-year-old be managed to prevent recurrence and control pain?"
+  },
+  {
+    "case_id": "29",
+    "prediction": "Should the patient consume alcohol while on Coumadin for two blood clots in one arm?"
+  },
+  {
+    "case_id": "30",
+    "prediction": "Should the patient on Coumadin for unexplained two clots in one leg consume daily alcohol post-ICU discharge?"
+  },
+  {
+    "case_id": "31",
+    "prediction": "Should a urinalysis have been performed to confirm contiguous UTI diagnosis without symptoms?"
+  },
+  {
+    "case_id": "32",
+    "prediction": "What is the likely cause of acute confusion and speech impairment without stroke in a patient with electrolyte abnormalities?"
+  },
+  {
+    "case_id": "33",
+    "prediction": "What caused acute confusion post-fall with normal imaging and electrolyte imbalances?"
+  },
+  {
+    "case_id": "34",
+    "prediction": "What caused acute confusion, eye pain, speech impairment, and electrolyte abnormalities with normal imaging in this patient?"
+  },
+  {
+    "case_id": "35",
+    "prediction": "What caused sudden confusion, speech impairment, and AFib with normal stroke imaging and electrolyte abnormalities?"
+  },
+  {
+    "case_id": "36",
+    "prediction": "What caused the patient's rapid-onset dental discoloration and oral pain following thyroid storm?"
+  },
+  {
+    "case_id": "37",
+    "prediction": "What is the effectiveness of ICU neurology for radiation-induced cognitive impairment?"
+  },
+  {
+    "case_id": "38",
+    "prediction": "Is liver transplant the appropriate curative option for cirrhosis with refractory ascites following ICU admission and ascitic fluid drainage?"
+  },
+  {
+    "case_id": "39",
+    "prediction": "Is liver transplant the appropriate next step for a patient with cirrhosis and recurrent ascites despite paracentesis?"
+  },
+  {
+    "case_id": "40",
+    "prediction": "Is the patient's worsening cough with dark green/yellow mucus, headache, and fever a complication or progression of bacterial bronchitis despite Zpack and steroids?"
+  },
+  {
+    "case_id": "41",
+    "prediction": "What is the cause of severe left chest pain radiating to the collarbone and left arm numbness, excluding heart attack?"
+  },
+  {
+    "case_id": "42",
+    "prediction": "Is recurrent gallbladder pain in a 24-year-old related to antibiotic therapy for strep throat?"
+  },
+  {
+    "case_id": "43",
+    "prediction": "Can thoracic bulging disk cause chest pain with normal cardiac workup and lumbar spine surgery history?"
+  },
+  {
+    "case_id": "44",
+    "prediction": "What caused patient's acute right lower back pain and dyspnea after physical exertion following recent pneumonia?"
+  },
+  {
+    "case_id": "45",
+    "prediction": "Could the patient's dizziness and instability indicate a transient ischemic attack despite normal tests, requiring evaluation before travel?"
+  },
+  {
+    "case_id": "46",
+    "prediction": "Is persistent lower abdominal and rear pressure after negative CT scan from car accident normal?"
+  },
+  {
+    "case_id": "47",
+    "prediction": "What caused the patient's severe microcytic anemia with iron level 2 µg/dL despite no internal bleeding?"
+  },
+  {
+    "case_id": "48",
+    "prediction": "What is causing the patient's recurrent lower right abdominal/back pain and new lower back bumps?"
+  },
+  {
+    "case_id": "49",
+    "prediction": "Should the patient undergo cervical spine MRI for neck stiffness and migraine history?"
+  },
+  {
+    "case_id": "50",
+    "prediction": "Is the positive home pregnancy test and ER urine test indicative of a viable pregnancy requiring prenatal care?"
+  },
+  {
+    "case_id": "51",
+    "prediction": "How should the patient with left lower lobe atelectasis and intermittent chest pain be followed up?"
+  },
+  {
+    "case_id": "52",
+    "prediction": "What is the next diagnostic step for persistent lightheadedness and dizziness with negative initial tests?"
+  },
+  {
+    "case_id": "53",
+    "prediction": "Can TMJ contribute to recent blood pressure elevation in a patient with controlled hypertension?"
+  },
+  {
+    "case_id": "54",
+    "prediction": "Should the patient return to the ER due to worsening symptoms with fever, myalgia, and lower abdominal pain despite current medications?"
+  },
+  {
+    "case_id": "55",
+    "prediction": "What caused the clavicle lump with CT-confirmed tissue and fluctuating swelling, and when will symptoms resolve?"
+  },
+  {
+    "case_id": "56",
+    "prediction": "What is the likely source of gastrointestinal bleeding in a patient with dark/black stool following bile duct drainage and sealant placement?"
+  },
+  {
+    "case_id": "57",
+    "prediction": "Are post-lupus infusion adverse reactions normal, and is misdiagnosis possible?"
+  },
+  {
+    "case_id": "58",
+    "prediction": "<think>\nOkay, let's see. The user wants me to act as a clinician assistant and create a clinical question based on the patient's narrative. The patient is a 65-year-old woman with symptoms like weakness, speech issues, feeling like an outer body experience, shortness of breath after exercising, recent hospital admission with EKG and blood work showing mild anemia, and she has ulcerative proctitis but no current issues.\n\nFirst, I need to identify the main clinical concerns. The key symptoms are the neurological ones (weakness, speech problems, depersonalization) and the new shortness of breath. The hospital admission a week ago found her anemic, which could be related. The question should focus on the most urgent issue. The speech and weakness could indicate a stroke or TIA, especially in someone with possible risk factors. The shortness of breath after exercise might be cardiac or related to anemia. But the acute symptoms are the neurological ones. Since she was recently hospitalized, maybe the anemia is contributing, but the new symptoms are more acute. The main decision would be about evaluating for acute stroke or TIA versus other causes. The question should be specific, using medical terms, third person, and under 15 words. Let me check the requirements again. Use question words, third person, specific condition. The terms to keep are \"outer body experience\" (maybe depersonalization), \"short of breath,\" \"anemic,\" \"ulcerative proctitis.\" But the main concern is the acute neurological symptoms. So the question should ask about the evaluation of her acute neurological symptoms and dyspnea. Maybe: \"What is the appropriate evaluation for the patient's acute neurological symptoms and dyspnea post-exercise, considering recent anemia and ulcerative proctitis?\" Wait, that's 19 words. Need to shorten. Maybe remove \"post-exercise\" or combine. Let me count: \"What is the appropriate evaluation for the patient's acute neurological symptoms and dyspnea, considering recent anemia and ulcerative proctitis?\" That's 16 words. Still over. Maybe \"What acute neurological evaluation is needed for the patient with recent anemia and dyspnea post-exercise?\" Hmm, but dyspnea is after exercise. Alternatively, focus on the main concern: the neurological symptoms. \"What is the appropriate acute neurological evaluation for the patient with recent anemia and dyspnea?\" That's 12 words. But the dyspnea is after exercise. Maybe \"What is the appropriate acute neurological evaluation for the patient with recent anemia and post-exercise dyspnea?\" 13 words. That works. But the original narrative mentions \"inability to make her words come out correctly, like an outer body experience\" which could be aphasia and depersonalization. Maybe \"What is the appropriate acute neurological evaluation for the patient's dysphasia and depersonalization, given recent anemia and post-exercise dyspnea?\" But \"dysphasia\" is a medical term. Let me check the word count. \"What is the appropriate acute neurological evaluation for the patient's dysphasia and depersonalization, considering recent anemia and post-exercise dyspnea?\" That's 17 words. Still too long. Maybe shorten to \"What acute neurological evaluation is needed for the patient's dysphasia and depersonalization with recent anemia and post-exercise dyspnea?\" 14 words. That's better. But the user wants to keep multi-word terms like \"outer body experience\" as stated. The original says \"like an outer body experience,\" which is a lay term. The medical term might be depersonalization. But the instruction says to preserve multi-word terms as stated. So maybe \"outer body experience\" should be kept. So the question would be: \"What acute neurological evaluation is needed for the patient's dysphasia and 'outer body experience' with recent anemia and post-exercise dyspnea?\" Now, word count: 16 words. Still over. Let's see. Maybe remove \"with recent anemia and post-exercise dyspnea\" to make it fit. But the user wants to focus on the main clinical concern. The main concern is the acute neurological symptoms. The anemia and dyspnea might be contributing factors. Maybe the question is: \"What acute neurological evaluation is needed for the patient's dysphasia and 'outer body experience'?\" That's 10 words. But maybe the user wants to include the other factors. Alternatively, perhaps the main question is about the differential diagnosis. But the user said to focus on the main clinical concern or decision needed. The main decision is what to do next for the acute symptoms. So the best approach is to ask about the appropriate evaluation for the acute neurological symptoms, considering the other factors. But keeping within 15 words. Let me try again. \"What is the appropriate acute neurological evaluation"
+  },
+  {
+    "case_id": "59",
+    "prediction": "Is cancer possible despite initial diagnoses of ovarian cyst, gastroenteritis, and resolved elevated white blood cell count?"
+  },
+  {
+    "case_id": "60",
+    "prediction": "How can the patient regain stamina post-CHF with history of IV fluid overload?"
+  },
+  {
+    "case_id": "61",
+    "prediction": "How can the patient regain stamina after CHF following IV fluid overload requiring Lasix and prolonged inactivity?"
+  },
+  {
+    "case_id": "62",
+    "prediction": "What is the cause of persistent melena in cirrhotic patient with normal endoscopy/colonoscopy?"
+  },
+  {
+    "case_id": "63",
+    "prediction": "What is the next step for an 84-year-old woman with persistent melena and normal endoscopy/colonoscopy?"
+  },
+  {
+    "case_id": "64",
+    "prediction": "How did the ICU doctor determine the 3-month prognosis despite ruling out aggressive therapy for the patient with severe stroke?"
+  },
+  {
+    "case_id": "65",
+    "prediction": "How did the ICU doctor determine the 3-month prognosis for a patient with severe ostomy site bleeding and high-risk status for aggressive therapy?"
+  },
+  {
+    "case_id": "66",
+    "prediction": "How did the ICU doctor arrive at a 3-month prognosis for a patient with pericardial effusion and new lung lesions, aggressive therapy ruled out?"
+  },
+  {
+    "case_id": "67",
+    "prediction": "What is the cause of persistent cough exacerbated by recumbency in patient with atrial fibrillation and coronary artery disease?"
+  },
+  {
+    "case_id": "68",
+    "prediction": "<think>\nOkay, let me try to figure out how to approach this. The user provided a patient narrative about a 48-year-old brother who had a brain hemorrhage after a fall. He was in the ICU for seven days, had a CT scan showing brain bleeding, and had surgery. The doctor mentioned another surgery to open the skull and clear the bleeding. The main question is whether there are other options besides surgery.\n\nFirst, I need to turn this into a clinical question. The key points are the patient's condition (brain hemorrhage post-fall, post-op, now considering another surgery), the main concern is alternatives to the proposed surgery. The medical terms to keep are \"brain hemorrhage,\" \"CT scan,\" \"ICU,\" \"skull,\" \"clear the bleeding,\" \"salvage repair\" maybe? Wait, the original narrative doesn't mention \"salvage repair,\" but the user's example had that. Wait, the user's example in the instructions had \"salvage repair\" as a term to keep. In the current case, the user wrote \"Dr hinted toward having another surgery to open up the skull and clear the bleeding.\" So the medical terms here are \"brain hemorrhage,\" \"CT scan,\" \"ICU,\" and \"open up the skull,\" \"clear the bleeding.\" But the exact term should be preserved. The user mentioned to keep multi-word medical terms as stated. The original narrative says \"clear the bleeding,\" but maybe the correct term is \"evacuation of hematoma\" or \"decompressive craniectomy\"? But the user's instruction says to preserve the terms exactly as stated. So the terms are \"brain hemorrhage,\" \"CT scan,\" \"ICU,\" and the proposed surgery is \"open up the skull and clear the bleeding.\"\n\nThe question should be in third person, using question words. The user wants it under 15 words. So possible options: \"What are alternative treatments to salvage repair for post-fall brain hemorrhage with residual bleeding?\" Wait, but the original narrative doesn't mention \"salvage repair.\" The doctor is hinting at another surgery. Maybe the correct term is \"decompressive craniectomy\" or \"craniotomy for hematoma evacuation,\" but the user's instruction says to keep the terms as stated. The patient's narrative says \"open up the skull and clear the bleeding.\" So the exact term here is \"open up the skull and clear the bleeding.\" However, in clinical terms, that's probably a craniotomy or decompressive craniectomy. But the user says to preserve the exact terms as stated. So maybe we can't use the medical term here. Hmm. The user's example had \"salvage repair\" as a preserved term, which wasn't in the narrative but perhaps in the initial example. Wait, in the example given, the user provided a sample where \"salvage repair\" was kept. So perhaps the user wants to keep any medical terms that are in the narrative. In the current case, the narrative mentions \"CT scan,\" \"brain hemorrhage,\" \"ICU,\" \"open up the skull and clear the bleeding.\" So the exact phrase is \"open up the skull and clear the bleeding.\" But in a clinical question, that might be rephrased as \"surgical decompression\" or \"craniotomy.\" However, the user's instruction says to keep the multi-word terms exactly as stated. So if \"open up the skull and clear the bleeding\" is a multi-word term, but it's not a standard term. The user might have intended to keep terms like \"CT scan,\" \"ICU,\" \"brain hemorrhage,\" and \"salvage repair\" if they were mentioned. Since the original narrative says \"another surgery to open up the skull and clear the bleeding,\" maybe we can rephrase that part to a standard term. But the user's instruction says to keep the terms exactly as stated. So perhaps \"open up the skull and clear the bleeding\" is not a standard term, so maybe we can't use that. Alternatively, maybe the user wants to keep the exact terms the patient used, but that's not possible. Wait, the user says: \"Preserve multi-word medical terms exactly as stated.\" So in the narrative, the patient wrote \"CtScan show the bleeding in brain.\" So \"CT scan\" is the term to keep. The surgery is \"open up the skull and clear the bleeding.\" But in medical terms, that's a craniotomy or decompressive craniectomy. However, the user's example in the instructions had \"salvage repair\" as a term, which wasn't in the narrative but in the example. Maybe the user is expecting to use standard medical terms even if the patient didn't use them. Hmm, this is a bit confusing.\n\nAlternatively, perhaps the user wants the assistant to use the correct medical terms when formulating the question. For example, the patient's narrative says \"open up the skull and clear"
+  },
+  {
+    "case_id": "69",
+    "prediction": "What are the next steps and recovery potential for a patient with Central Pontine Myelinolysis and partial neurological improvement?"
+  },
+  {
+    "case_id": "70",
+    "prediction": "What alternative treatments are available for the patient's disease besides solumedrol during the planned rest period?"
+  },
+  {
+    "case_id": "71",
+    "prediction": "<think>\nOkay, let's start by reading the patient narrative carefully. The user's mom had a CVA (cerebrovascular accident, which is a stroke) on the 11th. She was admitted to a local hospital, and doctors found a blood patch in her head. She has serious speaking issues. She was there for two months without improvement and was transferred to a general hospital, but her condition isn't good. Now, the user is asking what to do.\n\nThe main clinical concern here seems to be the persistent speech issues after a stroke. The key points are the CVA, the blood patch (maybe a hemorrhage?), the lack of improvement over two months, and the current poor condition. The user wants to know the next steps or what should be done now.\n\nI need to form a clinical question using third person, under 15 words, using medical terms correctly. The question should focus on the main issue: the patient's speech issues post-CVA that haven't improved. Maybe something like, \"What is the recommended salvage repair for persistent speech issues post-CVA with intracranial hemorrhage?\" Wait, but \"salvage repair\" might not be the right term here. The narrative mentions \"patch of blood in her head,\" which could be an intracranial hemorrhage. The patient isn't improving, so maybe the question is about further management or interventions. Maybe \"What is the optimal management for persistent speech deficits post-CVA with intracranial hemorrhage?\" But I need to check the word count. Let me count: \"What is the optimal management for persistent speech deficits post-CVA with intracranial hemorrhage?\" That's 14 words. It includes the main terms: CVA, intracranial hemorrhage, speech deficits. It's a proper clinical question asking about management. Alternatively, using \"salvage repair\" as in the example, but that term is more for surgical interventions. Since the patient hasn't improved in two months, maybe it's about rehabilitation or other therapies. But the user's example uses \"salvage repair,\" so maybe that's the term they expect. However, I should stick to the medical terms mentioned. The original narrative says \"patch of blood,\" which is a bit vague, but \"intracranial hemorrhage\" is the correct term. The main issue is the speech issues not improving. So the question should be about the next steps in managing her condition. Maybe \"What is the recommended salvage repair for persistent speech deficits after CVA with intracranial hemorrhage?\" Let me check the word count again. \"What is the recommended salvage repair for persistent speech deficits after CVA with intracranial hemorrhage?\" That's 15 words. Perfect. It uses the medical terms as given (CVA, intracranial hemorrhage), the issue (speech deficits), and the action (salvage repair). Alternatively, maybe \"management\" is better than \"salvage repair,\" but the user's example uses \"salvage repair,\" so perhaps that's the intended term here. I need to make sure it's a question a clinician would ask. \"Salvage repair\" is a specific term, often used in surgical contexts. If the patient hasn't improved, maybe they're considering a different intervention. But without more context, \"management\" might be safer. However, the user's instruction says to preserve multi-word medical terms exactly as stated. The narrative doesn't mention \"salvage repair,\" so maybe that's not the right term here. The original user example in the instructions had \"salvage repair\" as part of their question. Wait, the user's example in the prompt says: \"Make it a proper question that a clinician would ask... Keep medical phrases intact (e.g., 'salvage repair', 'aortic aneurysm', 'oxygen flow rate')\". So the example includes \"salvage repair,\" but in the current case, the narrative doesn't mention that term. Therefore, I shouldn't include \"salvage repair\" unless it's in the patient's narrative. The patient's narrative mentions \"patch of blood in her head,\" which is likely intracranial hemorrhage. So the correct medical term here is \"intracranial hemorrhage.\" The main concern is the persistent speech issues post-CVA. The question should be about the appropriate next steps. So maybe \"What is the optimal management for persistent speech deficits post-CVA with intracranial hemorrhage?\" That's 13 words. Alternatively, \"What is the recommended approach for persistent speech deficits after CVA with intracranial hemorrhage?\" 14 words. Both are valid. The key is to use the exact terms from the narrative. The patient says \"patch of blood in her head,\" which is a lay term. The clinician would translate that to \"intracranial hemorrhage.\" So the correct term is there."
+  },
+  {
+    "case_id": "72",
+    "prediction": "What is the cause of the patient's seizures, abdominal 'patch of blood,' and persistent speech deficits?"
+  },
+  {
+    "case_id": "73",
+    "prediction": "What is the recommended management for persistent speech issues following CVA with intracranial hemorrhage?"
+  },
+  {
+    "case_id": "74",
+    "prediction": "What caused post-craniotomy for head mass with persistent headache and new chest cough?"
+  },
+  {
+    "case_id": "75",
+    "prediction": "Could the patient's 'shattered glass in the lobes' indicate scleroderma despite his CHF and recent heart catheterization?"
+  },
+  {
+    "case_id": "76",
+    "prediction": "Given the patient's HIV status and 'shattered glass' lung findings, is scleroderma a likely diagnosis?"
+  },
+  {
+    "case_id": "77",
+    "prediction": "What is the likely cause of the patient's large, painful groin hematoma following heart catheterization and emergent surgery?"
+  },
+  {
+    "case_id": "78",
+    "prediction": "Is salvage repair indicated for the patient's post-heart cath groin hematoma with 7/10 pain and large lump?"
+  },
+  {
+    "case_id": "79",
+    "prediction": "What caused the patient's groin hematoma and severe pain after heart cath with emergent procedure?"
+  },
+  {
+    "case_id": "80",
+    "prediction": "What caused the large, painful groin hematoma after heart cath and emergent surgery?"
+  },
+  {
+    "case_id": "81",
+    "prediction": "What caused the post-heart cath groin hematoma and emergent surgical repair?"
+  },
+  {
+    "case_id": "82",
+    "prediction": "What caused the post-op groin hematoma and painful, ropey lump following heart cath?"
+  },
+  {
+    "case_id": "83",
+    "prediction": "What complication occurred after heart cath requiring groin salvage repair?"
+  },
+  {
+    "case_id": "84",
+    "prediction": "Could rat bite have triggered GBS in patient with ascending tingling?"
+  },
+  {
+    "case_id": "85",
+    "prediction": "Can a rat bite three to four weeks prior cause Guillain-Barré Syndrome (GBS) with ascending tingling and loss of consciousness?"
+  },
+  {
+    "case_id": "86",
+    "prediction": "Could rat bite have triggered GBS in the patient?"
+  },
+  {
+    "case_id": "87",
+    "prediction": "What is causing persistent fever in a patient with post-severe neutropenia and recent ICU admission?"
+  },
+  {
+    "case_id": "88",
+    "prediction": "What is causing persistent fever despite WBC recovery from 500 to 5000 after spinal and knee infection treatment?"
+  },
+  {
+    "case_id": "89",
+    "prediction": "<think>\nOkay, let's see. The user provided a patient narrative and wants me to formulate a clinical question. First, I need to read through the narrative carefully.\n\nThe patient is the grandfather, admitted with high blood pressure (160/90) and treated in the ICU. An echo showed heart disease with a depressed ejection fraction and a prior inferior myocardial event. He's on multiple meds. Then he suddenly became disoriented, started spitting out tablets, and had slurred speech. The family is asking what happened.\n\nSo, the main points here are the sudden neurological symptoms: disorientation, spitting tablets, slurred speech. The prior medical history includes heart disease, depressed ejection fraction, and a past inferior MI. He's in the ICU, so this is a critical situation.\n\nThe clinical concern is the acute change in mental status and possible cause. The key is to link the sudden symptoms with possible underlying causes. Given his cardiac history, maybe a stroke (CVA) due to embolism from the heart, especially with depressed ejection fraction which increases risk. Also, he's spitting out tablets, which might affect his medication adherence, but that's more about compliance. However, the sudden onset suggests something acute like a stroke, TIA, or maybe hypoperfusion leading to encephalopathy.\n\nThe question needs to be concise, third-person, under 15 words. Use medical terms as given. The main question is about the cause of the acute neurological symptoms. So, the clinician would ask, \"What caused the sudden disorientation, spitting tablets, and slurred speech in a patient with heart disease and prior MI?\" That's 17 words. Need to shorten.\n\nMaybe rephrase: \"What is the cause of sudden disorientation, tablet spitting, and slurred speech in a patient with heart disease and prior MI?\" That's 16 words. Still over. Let's see: \"What caused sudden disorientation, spitting tablets, and slurred speech in a patient with heart disease and prior MI?\" 17 words. Hmm. Maybe remove \"prior MI\" and say \"prior myocardial event\" as per the narrative. The original says \"prior inferior myocardial event.\" So, \"What caused sudden disorientation, spitting tablets, and slurred speech in a patient with heart disease and a prior inferior myocardial event?\" That's 18 words. Too long.\n\nAlternative approach: Focus on the main concern. The key terms are sudden neurological symptoms, possible stroke. The question could be about the differential diagnosis. But need to stick to the narrative. Maybe \"What is the cause of acute disorientation and slurred speech in a patient with heart disease and depressed ejection fraction?\" That's 15 words. Spitting tablets might be a detail but maybe not essential if it's complicating the word count. However, the user said to preserve multi-word terms. The original mentions \"spitting tablets,\" so maybe include that. Let me count again: \"What caused sudden disorientation, spitting tablets, and slurred speech in a patient with heart disease and a prior inferior myocardial event?\" That's 18 words. Need to cut two words. Maybe \"prior MI\" instead of \"prior inferior myocardial event.\" The original says \"prior inferior myocardial event,\" so should keep that. Alternatively, replace \"caused\" with \"is the cause.\" Let me see: \"What is the cause of sudden disorientation, spitting tablets, and slurred speech in a patient with heart disease and a prior inferior myocardial event?\" Still 19 words. Hmm. Maybe shorten \"heart disease with depressed ejection fraction\" to \"depressed ejection fraction.\" Original says \"heart disease with depressed ejection fraction and prior inferior myocardial event.\" So perhaps combine: \"heart disease, depressed ejection fraction, and prior inferior myocardial event.\" Let me try: \"What caused sudden disorientation, spitting tablets, and slurred speech in a patient with heart disease, depressed ejection fraction, and a prior inferior myocardial event?\" That's 20 words. Too long. Need to cut down. Maybe remove \"prior inferior myocardial event\" and just say \"prior MI,\" but the narrative specifies \"inferior.\" Alternatively, rephrase the question to focus on the acute event. Maybe the main issue is the acute neurological symptoms, so the question is about the differential diagnosis. The key is to ask why the patient suddenly developed these symptoms. The clinician would want to know the possible cause, considering his cardiac history. So maybe the question is: \"What is the cause of sudden disorientation, spitting tablets, and slurred speech in a patient with heart disease and a prior inferior myocardial event?\" 18 words. Still over. Let's see if we can make it 15. Maybe \"What caused sudden disorientation and slurred speech in a patient with heart disease and prior MI?\" That's"
+  },
+  {
+    "case_id": "90",
+    "prediction": "Is prolonged downtime causing cerebral hypoxia without multi-organ failure possible in this patient?"
+  },
+  {
+    "case_id": "91",
+    "prediction": "<think>\nOkay, let's see. The user provided a patient narrative and wants me to formulate a clinical question. First, I need to read through the narrative carefully.\n\nThe patient is the dad. He was in the ICU for two weeks with an uncontrolled heart rate. He has CHF (congestive heart failure) and renal failure. He got a blood infection, treated with antibiotics. Then he was disoriented, breathing rapidly, couldn't stay awake. Doctors said not much more could be done. He had blood in urine since ICU. Now he's on the kidney floor, seeing things, talking about past events incoherently. Still blood in urine, told it's from a UTI. They don't know if the blood infection (sepsis) is cleared. The user is asking if a UTI can cause a blood infection (sepsis).\n\nImportant points: The main concern is whether the UTI could have led to sepsis. The user is seeking to understand if the current symptoms (like disorientation, blood in urine, etc.) are due to a UTI causing sepsis. Also, there's uncertainty about whether the sepsis has been cleared.\n\nThe task is to make a clinical question that's concise, under 15 words, third-person, using medical terms as given. The question should focus on the main clinical decision or concern. The user's explicit question is about whether a UTI can cause a blood infection (sepsis), but also there's the aspect of whether the sepsis is cleared despite treatment.\n\nSo, the key here is to combine both elements: the possibility of UTI causing sepsis and the uncertainty of whether the infection is resolved. The original question is \"Can a UTI cause a blood infection (sepsis)?\" but the narrative also mentions that they don't know if the blood infection is cleared. However, the user's main question is the first part. But maybe the clinician would want to know if the current symptoms (disorientation, blood in urine, etc.) are due to unresolved sepsis from the UTI.\n\nWait, the user is asking if a UTI can cause a blood infection (sepsis), but the scenario is that they had a blood infection treated with antibiotics. Now they're wondering if the UTI is the source of the sepsis and if it's cleared. The clinical question should address whether the UTI could have led to the sepsis and if the infection is resolved given the current symptoms.\n\nBut the user's direct question is \"Can a UTI cause a blood infection (sepsis)?\" So maybe the answer is to rephrase that as a proper clinical question using third-person. However, the narrative also mentions that the blood infection was treated, but they still have blood in urine and symptoms. So the clinician might want to know if the UTI could have caused the sepsis and if the infection is resolved despite treatment.\n\nPutting it together, the main concern is whether the UTI could have caused the initial sepsis and if the sepsis is now cleared. The question needs to be concise. The medical terms to keep are \"UTI\", \"blood infection (sepsis)\", and possibly \"renal failure\", \"CHF\".\n\nThe user's question is \"Can a UTI cause a blood infection (sepsis)?\" So the clinical question would be phrased as \"Can a UTI cause a blood infection (sepsis) in a patient with CHF and renal failure?\" but maybe more specific. However, the original question is about the causation. But the user also mentions that the infection was treated, but symptoms persist, so maybe the question should be whether the sepsis is resolved given the ongoing symptoms. But the user's direct question is about the causation. Let me check the instructions again.\n\nThe task is to focus on the main clinical concern or decision needed. The main concern here is the link between the UTI and sepsis, and whether the sepsis is resolved. However, the user's explicit question is about causation. The answer needs to be the clinical question that a clinician would ask. So perhaps the best approach is to rephrase the user's question into a third-person question, making it specific.\n\nThe user's question is \"Can a UTI cause a blood infection (sepsis)?\" So in third person and including the patient's conditions: \"Can a UTI cause a blood infection (sepsis) in a patient with CHF and renal failure?\" That's 14 words. It's specific, uses medical terms, and is a proper question. It addresses the main concern. The other part about the infection not being cleared might be a separate question, but the user's main question is about causation. The answer should focus on the main clinical question the user is asking. So the correct query is \"Can a UTI cause a blood infection (seps"
+  },
+  {
+    "case_id": "92",
+    "prediction": "Is persistent chest and back pain 4 weeks post-cardiac arrest and induced coma normal?"
+  },
+  {
+    "case_id": "93",
+    "prediction": "Could heart damage from prior toxic shock account for the patient's heart failure and exertional breathlessness?"
+  },
+  {
+    "case_id": "94",
+    "prediction": "What should be done for a 21-year-old diabetic with rising blood glucose from 200 to 434 mg/dL post-ICU discharge?"
+  },
+  {
+    "case_id": "95",
+    "prediction": "What acute problem caused episodic postprandial symptoms despite hemoglobin and platelet abnormalities?"
+  },
+  {
+    "case_id": "96",
+    "prediction": "What is the prognosis for subdural hematoma with post-injury cognitive decline and medication-induced sedation?"
+  },
+  {
+    "case_id": "97",
+    "prediction": "Why is the patient exhibiting TCA toxicity without exposure, given Serequel and Lyrica use?"
+  },
+  {
+    "case_id": "98",
+    "prediction": "What is the appropriate next step for a patient with persistent chest pain and a cardiac mass?"
+  },
+  {
+    "case_id": "99",
+    "prediction": "Is the modified AKT4 regimen (rifamicin 2 hours post-breakfast) appropriate for the patient with tuberculous meningitis and persistent low-grade fever?"
+  },
+  {
+    "case_id": "100",
+    "prediction": "Is acute kidney injury from severe pneumonia in a diabetic patient with hypertension reversible, or will long-term dialysis be required?"
+  },
+  {
+    "case_id": "101",
+    "prediction": "Will the patient recover fully after infected drains, multiple operations, and bowls just hanging there?"
+  },
+  {
+    "case_id": "102",
+    "prediction": "Is recurrent ventricular tachycardia post-MI and stent placement normal without further evaluation?"
+  },
+  {
+    "case_id": "103",
+    "prediction": "Is the patient's cognitive impairment due to propofol/morphine use or sepsis-induced brain damage?"
+  },
+  {
+    "case_id": "104",
+    "prediction": "..."
+  },
+  {
+    "case_id": "105",
+    "prediction": "Should the patient with colon cancer and bowel obstruction undergo immediate colostomy or oncology management?"
+  },
+  {
+    "case_id": "106",
+    "prediction": "Why isn't the patient's elevated white cell count being evaluated despite recurrent ICU admissions for shortness of breath related to myasthenia gravis?"
+  },
+  {
+    "case_id": "107",
+    "prediction": "<think>\nOkay, let's start by reading the patient's narrative carefully. The user is a family member of a patient with stage 4 colon cancer that had spread to the liver lymph nodes. The mother was on chemo and in 98% remission. Then she had bad pain and trouble urinating, leading to hospitalization. They drained her lung, found an infection from the colon, and she developed pneumonia. She was in ICU, got oxycodone and morphine, and after a night, she was unresponsive and later died. The family is questioning if the cancer spread so quickly and why she declined so rapidly despite seeming okay when they left her.\n\nFirst, the main clinical concern here seems to be the rapid progression of the cancer leading to the patient's sudden decline. The family mentions the cancer spreading quickly, which is a key point. The terms mentioned are \"stage 4 colon cancer,\" \"lymph nodes in her liver,\" \"98% remission,\" \"drained infection from her colon,\" \"pneumonia,\" \"ICU,\" \"oxycodone,\" \"morphine,\" and \"cancer cells found in lung drainage.\"\n\nThe user wants a clinical question that's concise, third-person, under 15 words, using medical terms as given. The focus should be on the main clinical decision or concern. The family is asking why the patient's condition deteriorated so quickly despite being in remission and the interventions done.\n\nPossible key elements to include: stage 4 colon cancer with liver metastasis, 98% remission, rapid progression to lung metastasis and sepsis/pneumonia, leading to ICU admission and rapid decline. The question should ask about the possibility of such rapid metastasis and the factors contributing to the sudden decline.\n\nNeed to make sure to use the exact terms: \"stage 4 colon cancer,\" \"lymph nodes in her liver,\" \"98% remission,\" \"drained infection from her colon,\" \"pneumonia,\" \"ICU,\" \"oxycodone,\" \"morphine,\" \"cancer cells in lung drainage.\"\n\nPutting it together: The main question is about the rapid spread of cancer and the sudden decline. So, the clinical question could be: \"Could stage 4 colon cancer with liver lymph node metastasis rapidly progress to lung metastasis and sepsis despite 98% remission, leading to ICU deterioration and death following drainage and opioid use?\"\n\nCheck word count. Let me count: \"Could stage 4 colon cancer with liver lymph node metastasis rapidly progress to lung metastasis and sepsis despite 98% remission, leading to ICU deterioration and death following drainage and opioid use?\" That's 28 words. Too long. Need to shorten.\n\nMaybe: \"Could stage 4 colon cancer with liver metastasis rapidly progress to lung metastasis and sepsis, leading to ICU deterioration and death despite 98% remission and drainage?\" That's 20 words. Still over. Let's trim further. Remove \"despite 98% remission and drainage\" and focus on the main issue. \"Could stage 4 colon cancer with liver metastasis rapidly progress to lung metastasis and sepsis, leading to ICU deterioration and death?\" That's 17 words. Still a bit over. Maybe: \"Can stage 4 colon cancer with liver metastasis rapidly progress to lung metastasis and sepsis, causing ICU deterioration and death?\" 15 words. Perfect. But the user mentioned the 98% remission, which is important. Maybe include that. Let's see: \"Could stage 4 colon cancer with liver metastasis rapidly progress to lung metastasis and sepsis, causing ICU deterioration despite 98% remission?\" That's 16 words. Close. Alternatively: \"Could stage 4 colon cancer with liver metastasis rapidly progress to lung metastasis and sepsis, leading to ICU deterioration despite 98% remission?\" 17 words. Still over. Maybe replace \"despite 98% remission\" with \"in 98% remission\". Let's try: \"Could stage 4 colon cancer with liver metastasis rapidly progress to lung metastasis and sepsis in 98% remission, causing ICU deterioration?\" 15 words. That works. But \"in 98% remission\" might not be the correct placement. Maybe: \"Could stage 4 colon cancer with liver metastasis rapidly progress to lung metastasis and sepsis despite 98% remission, leading to ICU deterioration?\" 17 words. Hmm. Need to stay under 15. Perhaps the key points are the cancer type, the progression to lung and sepsis, and the rapid decline. Maybe omit the 98% remission part if it's making it too long. Alternatively, use a more concise term. \"Despite remission\" instead of \""
+  },
+  {
+    "case_id": "108",
+    "prediction": "What cardiac risks does the patient on Coumadin face with a family history of sudden cardiac death?"
+  },
+  {
+    "case_id": "109",
+    "prediction": "<think>\nOkay, let's tackle this. The user is asking about their mother's kidney recovery. She's 70, has renal failure with high creatinine levels (3.8-5.8 mg/dL), on dialysis every other day, been in ICU for three weeks. Urine output is normal but filtration isn't restored. The main question is whether her kidneys will recover.\n\nFirst, need to form a clinical question. The user wants to know if there's a chance of kidney recovery. The key points are chronic renal failure, high creatinine, ongoing dialysis, ICU stay duration, and the fact that urine output is normal but filtration isn't working. The medical terms to keep are \"renal failure,\" \"creatinine levels,\" \"dialysis,\" \"intensive care unit,\" and \"filtration capacity.\"\n\nThe question should be in third person, specific, under 15 words. Maybe start with \"Is there potential for kidney recovery...\" or \"Will the patient's kidneys recover...\" Also, need to mention the context: high creatinine, dialysis, ICU stay. But have to keep it concise. Let me check the word count. Let's try: \"Is there potential for kidney recovery in a 70-year-old patient with renal failure and elevated creatinine levels (3.8-5.8 mg/dL) on alternate-day dialysis after a 3-week ICU stay, despite normal urine output?\" That's 24 words. Too long. Need to shorten. Maybe remove \"despite normal urine output\" since the main issue is filtration. Let's try: \"Will the patient's kidneys recover after 3 weeks in ICU with renal failure, elevated creatinine (3.8-5.8 mg/dL), and alternate-day dialysis?\" That's 18 words. Still over. Let's see. \"Will the patient's renal function recover following 3 weeks of ICU care for renal failure with creatinine 3.8-5.8 mg/dL and alternate-day dialysis?\" That's 16 words. Maybe \"following\" can be \"after\". \"After 3 weeks ICU for renal failure, creatinine 3.8-5.8 mg/dL, and alternate-day dialysis, will the patient's kidneys recover?\" 16 words. Hmm. Maybe remove \"ICU care\" to save words. \"After 3 weeks in ICU with renal failure, creatinine 3.8-5.8 mg/dL, and alternate-day dialysis, will the patient's kidneys recover?\" That's 16 words. Still over. Let's see if we can rephrase. \"Is there potential for kidney recovery in a 70-year-old with renal failure, creatinine 3.8-5.8 mg/dL, on alternate-day dialysis after 3-week ICU stay?\" 18 words. Maybe \"after 3-week ICU stay\" to \"after 3 weeks ICU\". \"Is there potential for kidney recovery in a 70-year-old patient with renal failure and creatinine 3.8-5.8 mg/dL on alternate-day dialysis after 3 weeks in ICU?\" 18 words. Still over. Maybe remove \"70-year-old\" if age isn't critical, but the user mentioned it. Let's see. \"Will the patient's kidneys recover after 3 weeks ICU with renal failure, creatinine 3.8-5.8 mg/dL, and alternate-day dialysis?\" 16 words. That's better. Maybe \"ICU stay\" instead of \"ICU\". \"After 3 weeks ICU stay with renal failure, creatinine 3.8-5.8 mg/dL, and alternate-day dialysis, will the patient's kidneys recover?\" 17 words. Still over. Let me count again. \"After 3 weeks ICU stay with renal failure, creatinine 3.8-5.8 mg/dL, and alternate-day dialysis, will the patient's kidneys recover?\" Let's break down the words: After (1), 3 (2), weeks (3), ICU (4), stay (5), with (6), renal (7), failure (8), creatinine (9), 3.8-5.8 (10), mg/dL (11), and (12), alternate-day (13), dialysis (14), will (15), the (16), patient's (17), kidneys (18), recover (19)? That's 19 words. Too long. Need to cut. Maybe remove \"after 3 weeks ICU stay\" and just say \"after 3 weeks in ICU\". \"After 3 weeks in ICU with renal failure, creatinine 3.8-5.8 mg/dL, and alternate-day dialysis, will the patient's kidneys recover?\" Let's count: After (1),"
+  },
+  {
+    "case_id": "110",
+    "prediction": "Was the patient's death due to upper GI tract bleeding complications during hemodialysis or medication errors?"
+  },
+  {
+    "case_id": "111",
+    "prediction": "<think>\nOkay, let's start by reading the patient's narrative carefully. The father has severe CAD (coronary artery disease) and is waiting for heart surgery. He was taken to the ER last night because he couldn't breathe well due to fluid in his lungs, which sounds like pulmonary edema. Then he started bleeding from his mouth and nose, which is epistaxis and hematemesis. The ER doctors thought he might not survive the night, but he did. The question is what the bleeding indicates.\n\nThe main clinical concerns here are the severe CAD, impending heart surgery, acute respiratory distress with pulmonary edema, and the unexpected bleeding from mouth and nose. The bleeding is the key point the user is asking about. The user wants to know what the bleeding indicates in the context of these other issues.\n\nNow, formulating a clinical question. The user is asking what the bleeding indicates. So, the question should be phrased as \"What does the epistaxis and hematemesis indicate...\" but the original mentions \"bleeding from his mouth and nose,\" which in medical terms are epistaxis (nose) and hematemesis (vomiting blood) or possibly hemoptysis (coughing up blood). However, the exact terms from the patient's narrative are \"bleeding from his mouth and nose,\" so maybe using \"epistaxis and oral bleeding\" to be precise. But the user instruction says to preserve multi-word medical terms exactly as stated. Wait, the original says \"bleeding form his mouth and nose\" – the exact terms here are \"bleeding from his mouth and nose,\" but the medical terms are epistaxis (nose) and oral bleeding. However, the instruction says to keep medical phrases intact, like \"salvage repair,\" etc. The patient didn't use medical terms; they used lay terms. So the correct approach is to use the terms as presented but in a medical context. So the question would be about the bleeding from mouth and nose. However, in clinical terms, \"epistaxis and oral bleeding\" might be more precise. But the user says to keep multi-word medical terms exactly as stated. The patient didn't use \"epistaxis,\" so maybe the assistant should use the lay terms as presented. Wait, the instruction says \"Preserve multi-word medical terms exactly as stated.\" The patient narrative doesn't use medical terms for the bleeding; it's \"bleeding from his mouth and nose.\" So the assistant should use that phrasing as in the narrative. However, in a clinical question, it's better to use the correct medical terms. But the instruction says to preserve the exact terms if they are multi-word medical terms. Since \"bleeding from his mouth and nose\" isn't a multi-word medical term, but the user might want to convert to proper terms. Hmm, the example given in the instructions includes \"aortic aneurysm\" and \"oxygen flow rate,\" so those are examples of multi-word terms to keep. The user's narrative uses lay terms, so perhaps the assistant should translate them into medical terms where applicable. For example, \"fluid build up in his lungs\" would be \"pulmonary edema,\" which is a multi-word medical term. Similarly, \"bleeding from his mouth and nose\" can be \"epistaxis and oral bleeding.\" But the user might have intended to keep the exact phrasing if it's a specific term. However, in this case, the correct medical terms are epistaxis (nose) and hematemesis (vomiting) or hemoptysis (coughing). Since the patient says \"bleeding from his mouth,\" it's unclear if it's vomiting blood or coughing. However, in the clinical context of pulmonary edema, it could be pulmonary edema leading to hemoptysis, but bleeding from the mouth could also be from other sources like GI (hematemesis) or upper airway. The question is what does this bleeding indicate in the context of severe CAD, pulmonary edema, and awaiting heart surgery. So the clinical question should be phrased as \"What does the epistaxis and oral bleeding indicate...\" but using the exact terms from the narrative might require \"What does the bleeding from the mouth and nose indicate...\" but that's 10 words. The instruction says to stay under 15 words. Also, the user wants it as a question a clinician would ask. So using medical terms is better. Let me check the word count. \"What does the epistaxis and oral bleeding indicate in a patient with severe CAD and pulmonary edema awaiting heart surgery?\" That's 16 words. Too long. Need to shorten. Maybe \"What does the epistaxis and oral bleeding indicate in a patient with severe CAD and pulmonary edema awaiting surgery?\" That's 15 words. Yes. That's the maximum allowed. So the query would be: {\"query\": \"What does the epistaxis and oral bleeding indicate"
+  },
+  {
+    "case_id": "112",
+    "prediction": "Is the patient's low blood pressure (95/64) and elevated pulse (92) concerning following MI with two stents?"
+  },
+  {
+    "case_id": "113",
+    "prediction": "Is post-operative regression in mental capabilities normal after aortic dissection surgery?"
+  },
+  {
+    "case_id": "114",
+    "prediction": "What is the optimal management plan for post-brain surgery vegetative state with facial seizures, bed sores, and tracheostomy?"
+  },
+  {
+    "case_id": "115",
+    "prediction": "Is the patient receiving appropriate antibiotic therapy for latent TB and pneumonia?"
+  },
+  {
+    "case_id": "116",
+    "prediction": "<think>\nOkay, let's tackle this. The user wants a clinical question based on the patient's narrative. First, I need to parse the key points.\n\nThe patient is 55, on Toprol for hypertension. He had a sudden headache, dizziness, and speech issues, leading to a CT scan showing blood in the brain near the back of the head/neck. He's in ICU, on two BP meds (one being Toprol) and B6. He had a reaction to the second BP med, so it was stopped. The main concerns are: will the blood dry up, speech and cognitive recovery, duration, and what can be done.\n\nThe main clinical concern here is likely a subarachnoid hemorrhage, given the sudden onset and location. The user is asking about resolution of the hematoma, functional recovery (speech, confusion), and treatment options. Need to form a question that addresses prognosis and management.\n\nMedical terms to keep: blood on the brain (maybe specify subarachnoid?), B6 (probably refers to pyridoxine, but in the narrative it's mentioned as B6 for water, which might be diuresis?), but the user wrote \"B6 to get rid of water,\" maybe a typo? But in the output, we should preserve as stated.\n\nThe question needs to be concise, third-person, under 15 words. Let's focus on the main issues: prognosis of the blood in the brain, recovery of speech and confusion, and possible interventions.\n\nPossible question: \"Will the subarachnoid hemorrhage resolve, and what is the prognosis for speech and cognitive recovery?\" But the narrative mentions \"blood on the brain near the neck,\" which could be a posterior fossa bleed. However, the user wrote \"blood on the brain (back of) near the neck,\" which might be a subdural or epidural hematoma? Or maybe a cerebellar bleed. But the exact term used is \"blood on the brain,\" which in clinical terms is \"intra-cranial hemorrhage.\" But the initial presentation with sudden headache, speech issues, and CT findings could be subarachnoid hemorrhage (aneurysm), but the user's phrasing is \"blood on the brain,\" which is more generic. Since the user used \"blood on the brain,\" we should keep that term as per instructions.\n\nAlso, the user is asking about the blood drying up, which is about resolution. The clinical question should ask about the expected resolution of the hematoma, the recovery timeline for speech and confusion, and what can be done to facilitate that.\n\nSo combining all, the question should be something like: \"Will the blood on the brain resolve, and what is the prognosis for speech and cognitive recovery?\" But need to check word count. Let's count: \"Will the blood on the brain resolve, and what is the prognosis for speech and cognitive recovery?\" That's 16 words. Need to cut down.\n\nAlternative: \"Will the cerebral hemorrhage resolve, and what is the prognosis for speech and cognitive recovery?\" \"Cerebral hemorrhage\" is more specific. But the user wrote \"blood on the brain,\" which is a lay term. Since the instructions say to preserve multi-word medical terms as stated, we should use \"blood on the brain.\"\n\nSo maybe: \"Will the blood on the brain resolve, and what is the prognosis for speech and cognitive recovery?\" 16 words. Hmm. Need to make it under 15. Let's see. Maybe remove \"and cognitive\" since the user mentions confusion and dizziness, which are cognitive symptoms. Alternatively, \"Will the cerebral hemorrhage resolve, and what is the prognosis for speech recovery and cognitive function?\" Still 15 words. But \"cerebral hemorrhage\" is more accurate. However, the user's narrative says \"blood on the brain,\" so perhaps better to use that term as per instructions.\n\nWait, the instructions say to preserve multi-word medical terms exactly as stated. The user wrote \"blood on the brain,\" so that's a multi-word term. So we should keep it as \"blood on the brain.\" Therefore, the question could be: \"Will the blood on the brain resolve, and what is the prognosis for speech and cognitive recovery?\" But that's 16 words. Let me check again.\n\n\"Will the blood on the brain resolve, and what is the prognosis for speech and cognitive recovery?\" Let's count:\n\n1. Will\n2. the\n3. blood\n4. on\n5. the\n6. brain\n7. resolve,\n8. and\n9. what\n10. is\n11. the\n12. prognosis\n13. for\n14. speech\n15. and\n16. cognitive\n17. recovery?\n\nNo, 17 words. Too long. Need to shorten.\n\nAlternative: \"Will the cerebral hemorrhage resolve, and what is the prognosis for speech and"
+  },
+  {
+    "case_id": "117",
+    "prediction": "What could be causing the patient's acute kidney injury following heart catheterization and progressive kidney dysfunction despite multiple dialysis sessions?"
+  },
+  {
+    "case_id": "118",
+    "prediction": "What is the prognosis and potential complications following intestinal surgery and septicemia?"
+  },
+  {
+    "case_id": "119",
+    "prediction": "What could cause left upper neck pain post-thyroidectomy with stridor?"
+  },
+  {
+    "case_id": "120",
+    "prediction": "What is the likely cause of patient's prolonged gum bleeding and fatigue with recent stroke and ICU history?"
+  }
+]
