@@ -9,4 +9,7 @@ dependencies = [
     "torch==1.13.1",
     "transformers==4.30.2",
     "tqdm==4.66.2",
+    "openai>=2.2.0",
+    "orjson>=3.10.15",
+    "requests>=2.32.4",
 ]
