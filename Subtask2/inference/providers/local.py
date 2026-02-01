@@ -6,13 +6,13 @@ from .base import BaseProvider, Messages
 
 
 class LocalProvider(BaseProvider):
-    def __init__(self, model_name: str):
+    def __init__(self, model_name: str, tensor_parallel_size: int = 1):
         super().__init__(model_name)
         hf_token = os.environ.get("HF_TOKEN")
         self.tokenizer = AutoTokenizer.from_pretrained(model_name, token=hf_token)
         self.llm = LLM(
             model=model_name,
-            tensor_parallel_size=4,
+            tensor_parallel_size=tensor_parallel_size,
             max_model_len=2048,
             enforce_eager=True,
             gpu_memory_utilization=0.85,
