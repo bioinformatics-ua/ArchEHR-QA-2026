@@ -37,6 +37,9 @@ MODEL_NAME=$(echo "$MODEL" | tr '/' '-' | tr '.' '-')
 OUTPUT_FILE="${MODEL_NAME}_prompt_${PROMPT_INDEX}.json"
 
 # --- Environment Setup ---
+
+export VLLM_GPU_MEMORY_UTILIZATION=0.45
+
 uv run python inference.py \
     --xml-file ${DATA_DIR}/archehr-qa.xml \
     --prompt-file prompt.json \
