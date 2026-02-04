@@ -46,5 +46,18 @@ uv run python inference.py \
     --model "$MODEL" \
     --tensor-parallel-size $TENSOR_PARALLEL_SIZE
 
-
 echo "[DONE] LLM labeling completed"
+
+cd ../evaluation 
+
+# File Directories
+SUBMISSION_PATH="${OUTPUT_DIR}/${OUTPUT_FILE}"
+KEY_PATH="../../data/${DATASET}/archehr-qa_key.json"
+OUT_FILE_PATH="../results/${DATASET}/${OUTPUT_FILE}.json"
+
+uv run python scoring_subtask_2.py \
+    --submission_path "$SUBMISSION_PATH" \
+    --key_path "$KEY_PATH" \
+    --out_file_path "$OUT_FILE_PATH"
+
+echo "[DONE] Subtask 2 scoring complete."
