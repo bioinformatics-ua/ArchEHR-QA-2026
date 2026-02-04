@@ -56,7 +56,7 @@ cd ../evaluation
 # File Directories
 SUBMISSION_PATH="${OUTPUT_DIR}/${OUTPUT_FILE}"
 KEY_PATH="../../data/${DATASET}/archehr-qa_key.json"
-OUT_FILE_PATH="../results/${DATASET}/${OUTPUT_FILE}.json"
+OUT_FILE_PATH="../results/${DATASET}/${OUTPUT_FILE}"
 
 uv run python scoring_subtask_2.py \
     --submission_path "$SUBMISSION_PATH" \
