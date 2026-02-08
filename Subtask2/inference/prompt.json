@@ -1,3 +1,4 @@
 {
-  "0": "You are a clinical expert.\n\nClinician question:\n{CLINICIAN_QUESTION}\n\nSentence:\n{SENTENCE}\n\nClassify the sentence as one of:\n- essential\n- supplementary\n- not-relevant\n\nReturn ONLY the label."
+  "0": "You are a clinical expert.\n\nClinician question:\n{CLINICIAN_QUESTION}\n\nSentence:\n{SENTENCE}\n\nClassify the sentence as one of:\n- essential\n- supplementary\n- not-relevant\n\nReturn ONLY the label.",
+  "1": "You are tasked with identifying the minimal set of clinically relevant sentences needed to answer a patient’s question.\n\nFor every case, return the case ID and the label for each sentence in the following format:\nCaseID: <case_id>, Label: <label>\n\nClinician question:\n{CLINICIAN_QUESTION}\n\nSentence:\n{SENTENCE}\n\nLabel the sentence as:\n- essential (directly supports the answer)\n- supplementary (provides useful context)\n- not-relevant (does not help answer)\n\nReturn ONLY the case ID and label for each sentence."
 }

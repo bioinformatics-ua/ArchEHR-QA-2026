@@ -6,7 +6,7 @@ from .base import BaseProvider, Messages
 
 
 class LocalProvider(BaseProvider):
-    def __init__(self, model_name: str, tensor_parallel_size: int = 1):
+    def __init__(self, model_name: str, tensor_parallel_size: int = 1, gpu_memory_utilization: float = 0.85):
         super().__init__(model_name)
         hf_token = os.environ.get("HF_TOKEN")
         self.tokenizer = AutoTokenizer.from_pretrained(model_name, token=hf_token)
@@ -15,8 +15,9 @@ class LocalProvider(BaseProvider):
             tensor_parallel_size=tensor_parallel_size,
             max_model_len=2048,
             enforce_eager=True,
-            gpu_memory_utilization=0.85,
+            gpu_memory_utilization=gpu_memory_utilization,
             trust_remote_code=True,
+            disable_custom_all_reduce=True,  # Avoid compilation issues
         )
         self.sampling_params = SamplingParams(
             temperature=0.7, top_p=0.95, max_tokens=1024

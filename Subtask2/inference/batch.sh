@@ -4,10 +4,10 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
+#SBATCH --gres=gpu:4
 
-# Set the number of GPUs to use for both SLURM and tensor parallelism
-NUM_GPUS=1
-#SBATCH --gres=gpu:${NUM_GPUS}
+# Set the number of GPUs to use for tensor parallelism
+NUM_GPUS=4
 
 set -e
 
@@ -20,13 +20,23 @@ source .venv/bin/activate
 # Configurable variables
 INFERENCE_MODE="local"  # local / cloud
 MODEL="meta-llama/Llama-3.1-8B-Instruct"
+    # --- Models ---
     # meta-llama/Llama-3.1-8B-Instruct
     # google/medgemma-1.5-4b-it
+    # google/medgemma-4b-it
+    # google/medgemma-27b-text-it
+    # google/medgemma-27b-it
+    # google/gemma-3-27b-it
+    # Qwen/Qwen3-32B
 DATASET="dev"  # dev / test / test-2026
-PROMPT_INDEX=0
+PROMPT_INDEX=1
 
 # Number of GPUs to use for tensor parallelism (should match SBATCH --gres)
 TENSOR_PARALLEL_SIZE=$NUM_GPUS
+
+# GPU Memory Configuration
+# Adjust this value based on GPU availability (0.3-0.4 for shared GPUs, 0.85 for dedicated)
+GPU_MEMORY_UTILIZATION=0.45
 
 # File Directories
 DATA_DIR="../../data/${DATASET}"
@@ -36,9 +46,18 @@ OUTPUT_DIR="../outputs/${DATASET}"
 MODEL_NAME=$(echo "$MODEL" | tr '/' '-' | tr '.' '-')
 OUTPUT_FILE="${MODEL_NAME}_prompt_${PROMPT_INDEX}.json"
 
-# --- Environment Setup ---
+# Load .env file for API keys and HF token
+if [ -f .env ]; then
+    export $(cat .env | xargs)
+    echo "Loaded environment variables from .env file"
+else
+    echo "Warning: .env file not found"
+fi
 
-export VLLM_GPU_MEMORY_UTILIZATION=0.45
+# Disable PyTorch compilation to avoid Triton/Python.h issues
+export VLLM_ATTENTION_BACKEND=XFORMERS
+export VLLM_USE_TRITON_FLASH_ATTN=0
+export TORCH_COMPILE_DISABLE=1
 
 uv run python inference.py \
     --xml-file ${DATA_DIR}/archehr-qa.xml \
@@ -47,7 +66,8 @@ uv run python inference.py \
     --output-file ${OUTPUT_DIR}/$OUTPUT_FILE \
     --inference-mode $INFERENCE_MODE \
     --model "$MODEL" \
-    --tensor-parallel-size $TENSOR_PARALLEL_SIZE
+    --tensor-parallel-size $TENSOR_PARALLEL_SIZE \
+    --gpu-memory-utilization $GPU_MEMORY_UTILIZATION
 
 echo "[DONE] LLM labeling completed"
 

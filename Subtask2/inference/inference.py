@@ -15,6 +15,7 @@ def main():
     parser.add_argument("--inference-mode", choices=["local", "cloud"], default="cloud")
     parser.add_argument("--model", type=str, required=True)
     parser.add_argument("--tensor-parallel-size", type=int, default=1, help="Number of tensor parallel GPUs to use")
+    parser.add_argument("--gpu-memory-utilization", type=float, default=0.85, help="GPU memory utilization (0.0-1.0)")
 
     args = parser.parse_args()
 
@@ -24,7 +25,7 @@ def main():
         provider = CloudProvider(args.model)
     else:
         from providers.local import LocalProvider
-        provider = LocalProvider(args.model, tensor_parallel_size=args.tensor_parallel_size)
+        provider = LocalProvider(args.model, tensor_parallel_size=args.tensor_parallel_size, gpu_memory_utilization=args.gpu_memory_utilization)
 
     # --- Load data ---
     loader = ArchEHRSubtask2DataLoader(args.xml_file)
