@@ -1,7 +1,8 @@
 import os
-from typing import Any
+
 from transformers import AutoTokenizer
 from vllm import LLM, SamplingParams
+
 from .base import BaseProvider, Messages
 
 
@@ -23,10 +24,10 @@ class LocalProvider(BaseProvider):
         )
 
     def build_prompt(
-        self, prompt_template: str, case: dict[str, Any]
+        self, system_prompt: str, case: str, user_prompt: str | None = None
     ) -> Messages:
         return self.tokenizer.apply_chat_template(
-            super().build_prompt(prompt_template, case),
+            super().build_prompt(system_prompt, case, user_prompt),
             tokenize=False,
             add_generation_prompt=True,
             enable_thinking=True,

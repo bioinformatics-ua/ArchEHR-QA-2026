@@ -23,3 +23,11 @@ from common.providers import LocalProvider, CloudProvider
 
 provider = LocalProvider(model_name="qwen/qwen3-8b")
 ```
+
+## Upgrading
+
+In case changes are made to the `common` package, you can upgrade it in your subtask using:
+
+```bash
+uv sync --reinstall-package common
+```

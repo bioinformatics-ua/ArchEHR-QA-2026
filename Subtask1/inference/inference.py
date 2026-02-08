@@ -1,10 +1,9 @@
 from pathlib import Path
-from typing import Annotated, Any, Literal
+from typing import Annotated, Literal
 
 import orjson
 import typer
-from dataloader import ArchEHRDataLoader
-
+from common.dataloader import ArchEHRDataLoader, Case
 from common.providers.base import BaseProvider, Messages
 from common.providers.cloud import CloudProvider
 from common.providers.local import LocalProvider
@@ -56,8 +55,8 @@ def main(
     prompt_template = prompt_dict[str(prompt_index)]
 
     # list[(case, prompt)]
-    p: list[tuple[dict[str, Any], Messages]] = [
-        (case, provider.build_prompt(prompt_template, case["clinician_question"]))
+    p: list[tuple[Case, Messages]] = [
+        (case, provider.build_prompt(prompt_template, case.clinician_question))
         for case in xml_cases
     ]
     print(f"Built {len(p)} prompts.")
@@ -66,10 +65,10 @@ def main(
 
     results = [
         {
-            "case_id": data["case_id"],
+            "case_id": case.case_id,
             "prediction": provider.parse_response(output),
         }
-        for data, output in zip([case for case, _ in p], outputs)
+        for case, output in zip([case for case, _ in p], outputs)
     ]
 
     print(f"Saving results to {output_file}...")
