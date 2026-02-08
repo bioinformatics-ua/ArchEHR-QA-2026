@@ -448,6 +448,11 @@ wheels = [
 ]
 
 [[package]]
+name = "common"
+version = "0.1.0"
+source = { directory = "../../common" }
+
+[[package]]
 name = "compressed-tensors"
 version = "0.13.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1271,6 +1276,7 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "accelerate" },
+    { name = "common" },
     { name = "ipykernel" },
     { name = "matplotlib" },
     { name = "openai" },
@@ -1293,6 +1299,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "accelerate", specifier = ">=1.12.0" },
+    { name = "common", directory = "../../common" },
     { name = "ipykernel", specifier = ">=7.1.0" },
     { name = "matplotlib", specifier = ">=3.10.8" },
     { name = "openai", specifier = ">=1.0.0" },
