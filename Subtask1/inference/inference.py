@@ -1,14 +1,13 @@
-import orjson
 from pathlib import Path
 from typing import Annotated, Any, Literal
 
+import orjson
 import typer
-
 from dataloader import ArchEHRDataLoader
 
-from providers.base import BaseProvider, Messages
-from providers.local import LocalProvider
-from providers.cloud import CloudProvider
+from common.providers.base import BaseProvider, Messages
+from common.providers.cloud import CloudProvider
+from common.providers.local import LocalProvider
 
 app = typer.Typer()
 
@@ -58,7 +57,8 @@ def main(
 
     # list[(case, prompt)]
     p: list[tuple[dict[str, Any], Messages]] = [
-        (case, provider.build_prompt(prompt_template, case)) for case in xml_cases
+        (case, provider.build_prompt(prompt_template, case["clinician_question"]))
+        for case in xml_cases
     ]
     print(f"Built {len(p)} prompts.")
 
