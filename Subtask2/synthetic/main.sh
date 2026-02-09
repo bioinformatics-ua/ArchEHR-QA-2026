@@ -6,23 +6,14 @@
 #SBATCH --ntasks=1
 #SBATCH --partition=gpu
 #SBATCH --cpus-per-task=16
+#SBATCH --gres=gpu:nvidia-rtx-a6000:1
 
 
 # --- Environment Setup ---
 echo "Job started on $(hostname)"
 echo "Job ID: $SLURM_JOB_ID"
 
-# =============================================================================
-# INFERENCE MODES:
-# 1. LOCAL MODE: Uses vLLM with local GPU (default)
-# 2. OPENAI MODE: Uses OpenAI API (requires OPENAI_API_KEY env variable)
-# 3. GROQ MODE: Uses Groq API (requires GROQ_API_KEY env variable)
-# =============================================================================
-
 # --- Configuration ---
-MODE="local"                   # Change to "local", "openai", or "groq"
-DATASET="dev"                  # Change to "test" for test set or "dev" for development set
-
 XML_FILE="../../data/test_2025/archehr-qa.xml"
 OUTPUT_FILE="../../data/test_2025/archehr-qa_synthetic_labels.json"
 INFERENCE_MODE="local"
