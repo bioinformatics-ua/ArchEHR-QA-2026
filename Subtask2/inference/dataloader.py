@@ -26,6 +26,10 @@ class ArchEHRSubtask2DataLoader:
             if not clinician_question:
                 raise ValueError(f"Case {case_id}: missing clinician_question")
 
+            patient_question = (
+                case.findtext("patient_narrative", "").strip()
+            )
+
             sentences_node = case.find("note_excerpt_sentences")
             if sentences_node is None:
                 raise ValueError(f"Case {case_id}: missing note_excerpt_sentences")
@@ -58,6 +62,7 @@ class ArchEHRSubtask2DataLoader:
                 {
                     "case_id": case_id,
                     "clinician_question": clinician_question,
+                    "patient_question": patient_question,
                     "sentences": sentences,
                 }
             )

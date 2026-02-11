@@ -1,3 +1,5 @@
+import re
+import orjson
 import json
 import argparse
 from pathlib import Path
@@ -38,36 +40,97 @@ def main():
 
     results = []
 
-    for case in cases:
-        for sent in case["sentences"]:
+    if args.prompt_index in [2, 3, 4]:
+        # Case-based inference
+        for case in cases:
+            sentences_text = "\n".join([f"ID {s['sentence_id']}: {s['text']}" for s in case["sentences"]])
             payload = {
                 "clinician_question": case["clinician_question"],
-                "sentence": sent["text"],
+                "patient_question": case.get("patient_question", ""),
+                "sentences": sentences_text,
+                "case_id": case["case_id"]
             }
-
             prompt = provider.build_prompt(prompt_template, payload)
             output = provider.generate(prompt)
-            label = provider.parse_response(output)
-
-            results.append(
-                {
-                    "case_id": case["case_id"],
-                    "sentence_id": sent["sentence_id"],
-                    "label": label,
+            
+            # Simple heuristic to extract the prediction list from JSON
+            try:
+                # Look for lists or objects
+                json_match = re.search(r"(\[.*\]|\{.*\})", output, re.DOTALL)
+                if json_match:
+                    try:
+                        data = orjson.loads(json_match.group())
+                        
+                        # Handle if model returns a list of objects instead of one object
+                        if isinstance(data, list):
+                            # Filter to find the object matching CURRENT case_id if possible
+                            matching_objs = [obj for obj in data if isinstance(obj, dict) and str(obj.get("case_id")) == str(case["case_id"])]
+                            if matching_objs:
+                                prediction = matching_objs[0].get("prediction", [])
+                            else:
+                                # Fallback to first object if no ID matches
+                                prediction = data[0].get("prediction", []) if len(data) > 0 and isinstance(data[0], dict) else []
+                        else:
+                            prediction = data.get("prediction", [])
+                            
+                        if not isinstance(prediction, list):
+                            prediction = [prediction]
+                        
+                        for p_id in prediction:
+                            # Sanitize: extract digits only if it's like "ID 2" or "sentence 2"
+                            if isinstance(p_id, (str, int)):
+                                digits = re.findall(r"\d+", str(p_id))
+                                if digits:
+                                    p_id = digits[0]
+                            
+                            results.append({
+                                "case_id": case["case_id"],
+                                "sentence_id": str(p_id),
+                                "label": "essential" 
+                            })
+                    except Exception as json_err:
+                        print(f"JSON load error for case {case['case_id']}: {json_err}. Output snippet: {output[:100]}")
+                else:
+                    print(f"Warning: No JSON structure found in output for case {case['case_id']}")
+            except Exception as e:
+                print(f"Error parsing response for case {case['case_id']}: {e}")
+    else:
+        # Original sentence-based inference
+        for case in cases:
+            for sent in case["sentences"]:
+                payload = {
+                    "clinician_question": case["clinician_question"],
+                    "patient_question": case.get("patient_question", ""),
+                    "sentence": sent["text"],
                 }
-            )
+
+                prompt = provider.build_prompt(prompt_template, payload)
+                output = provider.generate(prompt)
+                label = provider.parse_response(output)
+
+                results.append(
+                    {
+                        "case_id": case["case_id"],
+                        "sentence_id": sent["sentence_id"],
+                        "label": label,
+                    }
+                )
 
     # --- Submission output: grouped by case_id ---
     grouped_results = []
-    case_map = {}
+    case_map = {str(c["case_id"]): [] for c in cases}
     for r in results:
         # Convert sentence_id to string for grouping
         if r["label"] == "essential":
             case_map.setdefault(str(r["case_id"]), []).append(str(r["sentence_id"]))
+    
     for case_id, sentence_ids in case_map.items():
+        # Sort sentence IDs numerically for consistent output format
+        # Filter for duplicates and ensure only valid IDs are included
+        unique_ids = sorted(list(set(sentence_ids)), key=lambda x: int(x) if x.isdigit() else 0)
         grouped_results.append({
             "case_id": str(case_id),
-            "prediction": sentence_ids
+            "prediction": unique_ids
         })
 
 

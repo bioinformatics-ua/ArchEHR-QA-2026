@@ -14,14 +14,23 @@ class BaseProvider(ABC):
         self.model_name = model_name
 
     def build_prompt(self, prompt_template: str, case: Dict[str, Any]) -> Messages:
+        content = prompt_template.replace("{CLINICIAN_QUESTION}", str(case.get("clinician_question", "")))
+        
+        if "{PATIENT_QUESTION}" in content:
+            content = content.replace("{PATIENT_QUESTION}", str(case.get("patient_question", "")))
+        if "{SENTENCES}" in content:
+            content = content.replace("{SENTENCES}", str(case.get("sentences", "")))
+        if "{SENTENCE}" in content:
+            content = content.replace("{SENTENCE}", str(case.get("sentence", "")))
+        if "{CASE_ID}" in content:
+            content = content.replace("{CASE_ID}", str(case.get("case_id", "")))
+            
         return [
-        {
-            "role": "user",
-            "content": prompt_template
-            .replace("{CLINICIAN_QUESTION}", case["clinician_question"])
-            .replace("{SENTENCE}", case["sentence"]),
-        }
-    ]
+            {
+                "role": "user",
+                "content": content,
+            }
+        ]
 
 
     @abstractmethod
