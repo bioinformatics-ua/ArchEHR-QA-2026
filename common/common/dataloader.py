@@ -132,14 +132,14 @@ class ArchEHRDataLoader:
             return None
 
         try:
-            start_char_index = int(start_char)
-            length_int = int(length)
+            start_char_index = int(start_char or 0)
+            length_int = int(length or 0)
         except ValueError:
             return None
 
         return Sentence(
-            id=sentence_id,
-            paragraph_id=paragraph_id,
+            id=sentence_id or "",
+            paragraph_id=paragraph_id or "",
             start_char_index=start_char_index,
             length=length_int,
             text=text,
