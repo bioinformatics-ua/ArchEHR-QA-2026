@@ -40,7 +40,7 @@ def main():
 
     results = []
 
-    if args.prompt_index in [2, 3, 4]:
+    if args.prompt_index in [2, 3, 4, 5, 6]:
         # Case-based inference
         for case in cases:
             sentences_text = "\n".join([f"ID {s['sentence_id']}: {s['text']}" for s in case["sentences"]])
