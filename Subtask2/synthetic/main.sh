@@ -27,7 +27,7 @@ else
     echo "Warning: .env file not found"
 fi
 
-uv run python main.py \
+PYTHONUNBUFFERED=1 uv run python main.py \
     --xml-file "$XML_FILE" \
     --output-file "$OUTPUT_FILE" \
     --inference-mode "$INFERENCE_MODE" \
