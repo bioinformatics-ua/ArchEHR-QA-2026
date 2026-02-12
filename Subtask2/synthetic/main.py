@@ -7,14 +7,13 @@ the clinician's question.
 """
 
 from pathlib import Path
+from pyexpat import model
 from typing import Annotated, Any, Literal
 
 import orjson
 import typer
 from common.dataloader import ArchEHRDataLoader, Case
 from common.providers.base import BaseProvider
-from common.providers.cloud import CloudProvider
-from common.providers.local import LocalProvider
 
 app = typer.Typer()
 
@@ -160,8 +159,12 @@ def main(
     provider: BaseProvider
     match inference_mode:
         case "local":
+            from common.providers.local import LocalProvider
+
             provider = LocalProvider(model)
         case "cloud":
+            from common.providers.cloud import CloudProvider
+
             provider = CloudProvider(model)
         case _:
             raise ValueError(f"Unknown inference mode: {inference_mode}")

@@ -13,8 +13,7 @@ class LocalProvider(BaseProvider):
         self.tokenizer = AutoTokenizer.from_pretrained(model_name, token=hf_token)
         self.llm = LLM(
             model=model_name,
-            tensor_parallel_size=4,
-            max_model_len=2048,
+            max_model_len=16384,
             enforce_eager=True,
             gpu_memory_utilization=0.85,
             trust_remote_code=True,
@@ -24,10 +23,10 @@ class LocalProvider(BaseProvider):
         )
 
     def build_prompt(
-        self, system_prompt: str, case: str, user_prompt: str | None = None
+        self, system_prompt: str, case: str, user_prompt: str | None = None, fallback: bool = True
     ) -> Messages:
         return self.tokenizer.apply_chat_template(
-            super().build_prompt(system_prompt, case, user_prompt),
+            super().build_prompt(system_prompt, case, user_prompt, fallback),
             tokenize=False,
             add_generation_prompt=True,
             enable_thinking=True,

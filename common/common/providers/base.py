@@ -12,8 +12,14 @@ class BaseProvider(ABC):
         self.model_name = model_name
 
     def build_prompt(
-        self, system_prompt: str, case: str, user_prompt: str | None = None
+        self,
+        system_prompt: str,
+        case: str,
+        user_prompt: str | None = None,
+        fallback: bool = False,
     ) -> Messages:
+        user_prompt = user_prompt or "Answer the question based on the above narrative."
+
         return [
             {
                 "role": "system",
@@ -23,7 +29,9 @@ class BaseProvider(ABC):
                         "text": system_prompt,
                         "cache_control": {"type": "ephemeral"},
                     },
-                ],
+                ]
+                if not fallback
+                else system_prompt,
             },  # pyright: ignore[reportReturnType] OpenAI doesn't support `cache_control` key
             {
                 "role": "user",
@@ -34,10 +42,11 @@ class BaseProvider(ABC):
                     },
                     {
                         "type": "text",
-                        "text": user_prompt
-                        or "Answer the question based on the above narrative.",
+                        "text": user_prompt,
                     },
-                ],
+                ]
+                if not fallback
+                else f"{case}\n\n{user_prompt}",
             },
         ]
 
