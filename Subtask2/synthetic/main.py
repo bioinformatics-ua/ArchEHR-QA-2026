@@ -143,7 +143,7 @@ def main(
             help="Inference mode: 'local' for vLLM, 'cloud' for OpenRouter",
         ),
     ] = "cloud",
-    model: Annotated[
+    model: Annotated[  # noqa: F811 it doesn't make any sense
         str, typer.Option(help="Model to use for generation.")
     ] = "anthropic/claude-3.5-sonnet",
 ) -> None:
