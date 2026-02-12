@@ -36,12 +36,7 @@ def build_classification_prompt(case: Case) -> str:
     # Format sentences with their IDs
     sentences_text = "\n".join(f"[Sentence {s.id}]: {s.text}" for s in case.sentences)
 
-    prompt = f"""**Patient Narrative:**
-{case.patient_narrative}
-
-**Clinical Question:**
-{case.clinician_question}
-
+    prompt = f"""
 **Clinical Note Sentences:**
 {sentences_text}
 
@@ -75,6 +70,13 @@ def parse_llm_response(
     Returns:
         List of dicts with sentence_id and relevance keys
     """
+    # Remove thinking from the response if present
+    if "</think>" in response:
+        response = response.split("</think>")[-1].strip()
+
+    response = response.strip("```")
+    response = response.lstrip("json")
+
     try:
         # Try to parse as JSON
         parsed = orjson.loads(response)
@@ -179,7 +181,17 @@ def main(
 
         # Build prompts for batch
         user_prompt = build_classification_prompt(case)
-        messages = provider.build_prompt(SYSTEM_PROMPT, "", user_prompt)
+        messages = provider.build_prompt(
+            SYSTEM_PROMPT,
+            f"""
+**Patient Narrative:**
+{case.patient_narrative}
+
+**Clinical Question:**
+{case.clinician_question}
+""",
+            user_prompt,
+        )
 
         # Generate classifications
         response = provider.generate(messages)
