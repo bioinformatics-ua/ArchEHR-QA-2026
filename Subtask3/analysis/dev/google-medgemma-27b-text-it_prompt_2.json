@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "1",
+    "raw_output": "Medications like Udiliv can help manage bile flow but may not resolve significant biliary obstruction caused by sludge and stones. Your initial ERCP placed a stent for drainage, but it became acutely obstructed by sludge and stones (sentences 2, 7). A subsequent ERCP with sphincterotomy and stone removal was necessary to clear the obstruction and normalize bile flow (sentences 8, 9).",
+    "parsed_answer": "Medications like Udiliv can help manage bile flow but may not resolve significant biliary obstruction caused by sludge and stones. Your initial ERCP placed a stent for drainage, but it became acutely obstructed by sludge and stones . A subsequent ERCP with sphincterotomy and stone removal was necessary to clear the obstruction and normalize bile flow .",
+    "word_count": 57
+  },
+  {
+    "case_id": "2",
+    "raw_output": "Your father received intravenous (IV) lasix due to acute diastolic heart failure presenting as volume overload with shortness of breath and lower extremity edema (sentences 2, 4, 5). Lasix was administered to help manage this fluid retention. His oxygen flow rate was reduced as his respiratory status improved following initial intubation and management of hypoxemic respiratory failure (sentences 6, 8, 10).",
+    "parsed_answer": "Your father received intravenous (IV) lasix due to acute diastolic heart failure presenting as volume overload with shortness of breath and lower extremity edema . Lasix was administered to help manage this fluid retention. His oxygen flow rate was reduced as his respiratory status improved following initial intubation and management of hypoxemic respiratory failure .",
+    "word_count": 55
+  },
+  {
+    "case_id": "3",
+    "raw_output": "Following a traumatic brain injury, symptoms like drowsiness, headaches, dizziness, and irritability are normal and should decrease over several weeks (5). You were discharged with instructions to follow up with a specialist in traumatic brain injuries, Dr. [**First Name8 (NamePattern2) **] [**Last Name (NamePattern1) **] (6, 7). Report any new or worsening symptoms, including fever, cough, difficulty breathing, visual changes, weakness, or speech difficulty (8, 10).",
+    "parsed_answer": "Following a traumatic brain injury, symptoms like drowsiness, headaches, dizziness, and irritability are normal and should decrease over several weeks . You were discharged with instructions to follow up with a specialist in traumatic brain injuries, Dr. [**First Name8 (NamePattern2) **] [**Last Name (NamePattern1) **] . Report any new or worsening symptoms, including fever, cough, difficulty breathing, visual changes, weakness, or speech difficulty .",
+    "word_count": 64
+  },
+  {
+    "case_id": "4",
+    "raw_output": "Cardiac catheterization with a right heart catheterization (RHC) was performed to assess hemodynamics and guide therapy [**5**]. The RHC demonstrated improvement in cardiac index (CI) from 1.72 to 2.79 and pulmonary capillary wedge pressure (PCWP) decreased from 30 to 22 following a milrinone trial [**5**, **6**], indicating benefit from the medication [**19**, **20**]. This supported the continuation of milrinone therapy [**14**, **15**].",
+    "parsed_answer": "Cardiac catheterization with a right heart catheterization (RHC) was performed to assess hemodynamics and guide therapy . The RHC demonstrated improvement in cardiac index (CI) from 1.72 to 2.79 and pulmonary capillary wedge pressure (PCWP) decreased from 30 to 22 following a milrinone trial , indicating benefit from the medication . This supported the continuation of milrinone therapy .",
+    "word_count": 59
+  },
+  {
+    "case_id": "5",
+    "raw_output": "The chest pain experienced during hospitalization appeared musculoskeletal, reproducible with palpation and exacerbated by movement (sentence 9). Cardiac causes were less likely given negative EKG findings for ischemia, flat troponins, and a normal transthoracic echocardiogram (sentences 10, 12, 18, 19). Elevated CK levels were noted but downtrended without intervention (sentence 10). The pain's relation to the overdose is unclear from this note.",
+    "parsed_answer": "The chest pain experienced during hospitalization appeared musculoskeletal, reproducible with palpation and exacerbated by movement . Cardiac causes were less likely given negative EKG findings for ischemia, flat troponins, and a normal transthoracic echocardiogram . Elevated CK levels were noted but downtrended without intervention . The pain's relation to the overdose is unclear from this note.",
+    "word_count": 56
+  },
+  {
+    "case_id": "6",
+    "raw_output": "The patient was admitted on September 30th with shortness of breath. Sputum gram stain revealed Gram-positive cocci, Gram-negative rods, and yeast (sentence 13). Empiric antibiotics including vancomycin and aztreonam were initiated (sentence 14). Blood fungal culture grew *Torulopsis glabrata* (sentence 5). Treatment was adjusted based on worsening chest X-ray and consultation with Infectious Diseases, including adding micafungin, linezolid, and amBisome (sentences 15, 18).",
+    "parsed_answer": "The patient was admitted on September 30th with shortness of breath. Sputum gram stain revealed Gram-positive cocci, Gram-negative rods, and yeast . Empiric antibiotics including vancomycin and aztreonam were initiated . Blood fungal culture grew *Torulopsis glabrata* . Treatment was adjusted based on worsening chest X-ray and consultation with Infectious Diseases, including adding micafungin, linezolid, and amBisome .",
+    "word_count": 58
+  },
+  {
+    "case_id": "7",
+    "raw_output": "The patient's Coumadin (Warfarin) was discontinued after the placement of an IVC filter [15, 20]. The IVC filter helps prevent clots from returning to the heart [19, 21]. Neurosurgery recommended continuing Keppra following the subarachnoid hemorrhage [10]. Follow-up appointments with Dr. [**First Name (STitle) **] and the Traumatic Brain Injury clinic are recommended [24, 29].",
+    "parsed_answer": "The patient's Coumadin (Warfarin) was discontinued after the placement of an IVC filter . The IVC filter helps prevent clots from returning to the heart . Neurosurgery recommended continuing Keppra following the subarachnoid hemorrhage . Follow-up appointments with Dr. [**First Name (STitle) **] and the Traumatic Brain Injury clinic are recommended .",
+    "word_count": 52
+  },
+  {
+    "case_id": "8",
+    "raw_output": "The clinical note indicates the patient experienced acute liver failure, likely secondary to ethanol use (sentences 2, 45), complicated by kidney injury (sentence 14), ascites, edema (sentence 2), and respiratory distress requiring ICU transfer (sentences 20, 24). While the note mentions potential long-term cognitive deficits associated with ethanol abuse (sentence 39), it does not provide information regarding the persistence of toxins or directly link the writing difficulties to the prior illness.",
+    "parsed_answer": "The clinical note indicates the patient experienced acute liver failure, likely secondary to ethanol use , complicated by kidney injury , ascites, edema , and respiratory distress requiring ICU transfer . While the note mentions potential long-term cognitive deficits associated with ethanol abuse , it does not provide information regarding the persistence of toxins or directly link the writing difficulties to the prior illness.",
+    "word_count": 64
+  },
+  {
+    "case_id": "9",
+    "raw_output": "You experienced complications following your C-section, including massive blood loss, coagulopathy, and acute kidney injury requiring continuous venohemovenulation (CVVH). You were treated with blood products, resuscitation, intubation, decompressive laparotomy for abdominal compartment syndrome, and management for fulminant hepatic failure, including listing for liver transplantation. Steroids were administered for suspected adrenal insufficiency. Your abdomen was eventually closed.",
+    "parsed_answer": "You experienced complications following your C-section, including massive blood loss, coagulopathy, and acute kidney injury requiring continuous venohemovenulation (CVVH). You were treated with blood products, resuscitation, intubation, decompressive laparotomy for abdominal compartment syndrome, and management for fulminant hepatic failure, including listing for liver transplantation. Steroids were administered for suspected adrenal insufficiency. Your abdomen was eventually closed.",
+    "word_count": 56
+  },
+  {
+    "case_id": "10",
+    "raw_output": "The patient experienced a pulseless electrical activity (PEA) arrest followed by anoxic brain injury (2). Initial EEG showed no brain activity (6), and prognosis was guarded (7). However, his mental status improved significantly (8, 10), although he remains confused intermittently (23) and requires rehabilitation (16). He experienced seizures post-injury (11, 14), now managed with Topiramate (20).",
+    "parsed_answer": "The patient experienced a pulseless electrical activity (PEA) arrest followed by anoxic brain injury . Initial EEG showed no brain activity , and prognosis was guarded . However, his mental status improved significantly , although he remains confused intermittently and requires rehabilitation . He experienced seizures post-injury , now managed with Topiramate .",
+    "word_count": 53
+  },
+  {
+    "case_id": "11",
+    "raw_output": "Viral meningitis typically resolves gradually, but fluctuations in symptoms can occur during recovery. The patient was diagnosed with aseptic meningitis (sentence 7), likely viral (sentence 20), and discharged after initial broad-spectrum antibiotics and antivirals were discontinued (sentences 3, 7). While improvement was noted, a temporary setback is possible during convalescence. Follow-up is recommended per discharge instructions (sentence 27).",
+    "parsed_answer": "Viral meningitis typically resolves gradually, but fluctuations in symptoms can occur during recovery. The patient was diagnosed with aseptic meningitis , likely viral , and discharged after initial broad-spectrum antibiotics and antivirals were discontinued . While improvement was noted, a temporary setback is possible during convalescence. Follow-up is recommended per discharge instructions .",
+    "word_count": 53
+  },
+  {
+    "case_id": "12",
+    "raw_output": "Based on the provided discharge instructions, your mother presented with abdominal pain and chest pain. Cardiac workup, including EKG and cardiac markers, was negative for heart issues. Her abdominal pain was managed with anti-nausea medication and insulin during the hospital stay. It is recommended she follow up with her doctors for further evaluation of her persistent abdominal pain.",
+    "parsed_answer": "Based on the provided discharge instructions, your mother presented with abdominal pain and chest pain. Cardiac workup, including EKG and cardiac markers, was negative for heart issues. Her abdominal pain was managed with anti-nausea medication and insulin during the hospital stay. It is recommended she follow up with her doctors for further evaluation of her persistent abdominal pain.",
+    "word_count": 58
+  },
+  {
+    "case_id": "13",
+    "raw_output": "Based on the provided clinical note, you were advised to remain hospitalized for physical therapy evaluation due to leg numbness and weakness. Leaving against medical advice was noted to carry a risk of permanent paralysis. The MRI showed stable degenerative disc disease without spinal cord compromise. No changes were made to your current medications.",
+    "parsed_answer": "Based on the provided clinical note, you were advised to remain hospitalized for physical therapy evaluation due to leg numbness and weakness. Leaving against medical advice was noted to carry a risk of permanent paralysis. The MRI showed stable degenerative disc disease without spinal cord compromise. No changes were made to your current medications.",
+    "word_count": 54
+  },
+  {
+    "case_id": "14",
+    "raw_output": "Based on the provided clinical note, there is no mention of stomach cancer. The note indicates a recent admission for partial small bowel obstruction which improved. Follow-up appointments are scheduled with an oncologist regarding bladder cancer and a gastroenterologist. No findings related to stomach cancer are documented in this excerpt.",
+    "parsed_answer": "Based on the provided clinical note, there is no mention of stomach cancer. The note indicates a recent admission for partial small bowel obstruction which improved. Follow-up appointments are scheduled with an oncologist regarding bladder cancer and a gastroenterologist. No findings related to stomach cancer are documented in this excerpt.",
+    "word_count": 50
+  },
+  {
+    "case_id": "15",
+    "raw_output": "Based on the provided discharge instructions, you were treated for a penile skin infection with Bactrim and Levofloxacin. Prophylaxis for possible HIV infection was also initiated. The note does not contain information regarding testicular size, semen characteristics, or potential spread to the prostate or seminal vesicles. Therefore, we cannot determine if the infection spread or if it affects fertility based on this record excerpt.",
+    "parsed_answer": "Based on the provided discharge instructions, you were treated for a penile skin infection with Bactrim and Levofloxacin. Prophylaxis for possible HIV infection was also initiated. The note does not contain information regarding testicular size, semen characteristics, or potential spread to the prostate or seminal vesicles. Therefore, we cannot determine if the infection spread or if it affects fertility based on this record excerpt.",
+    "word_count": 64
+  },
+  {
+    "case_id": "16",
+    "raw_output": "The clinical note details significant back pain, including central canal stenosis, nerve root compromise, and disc protrusion, causing leg weakness and numbness. However, the note does not contain information regarding dizziness or syncope, nor does it mention stroke risk assessment. Therefore, based solely on this record, a determination regarding stroke cannot be made. Further evaluation is needed.",
+    "parsed_answer": "The clinical note details significant back pain, including central canal stenosis, nerve root compromise, and disc protrusion, causing leg weakness and numbness. However, the note does not contain information regarding dizziness or syncope, nor does it mention stroke risk assessment. Therefore, based solely on this record, a determination regarding stroke cannot be made. Further evaluation is needed.",
+    "word_count": 57
+  },
+  {
+    "case_id": "17",
+    "raw_output": "Palpitations may be related to the initiation of levothyroxine therapy [19]. Ensure proper administration by separating levothyroxine from calcium carbonate by at least 4 hours [21, 24]. Additionally, address potential contributing factors such as non-compliance with CPAP for severe obstructive sleep apnea [4, 5] and manage underlying anxiety, potentially exacerbated by the palpitations [Patient Question]. Follow up with endocrinology is recommended [18, 36].",
+    "parsed_answer": "Palpitations may be related to the initiation of levothyroxine therapy . Ensure proper administration by separating levothyroxine from calcium carbonate by at least 4 hours . Additionally, address potential contributing factors such as non-compliance with CPAP for severe obstructive sleep apnea and manage underlying anxiety, potentially exacerbated by the palpitations [Patient Question]. Follow up with endocrinology is recommended .",
+    "word_count": 59
+  },
+  {
+    "case_id": "18",
+    "raw_output": "Based on the provided note, the patient was discharged after observation for a motor vehicle collision. During hospitalization, he tolerated a regular diet without nausea or vomiting (13). However, narcotic pain medication can cause constipation, and stool softeners were recommended (23). The current symptoms of diarrhea and vomiting are new since discharge and warrant evaluation, especially given the recent trauma and underlying Crohn's disease. While the note doesn't explicitly advise returning to the ER, the new onset of GI symptoms warrants medical attention.",
+    "parsed_answer": "Based on the provided note, the patient was discharged after observation for a motor vehicle collision. During hospitalization, he tolerated a regular diet without nausea or vomiting . However, narcotic pain medication can cause constipation, and stool softeners were recommended . The current symptoms of diarrhea and vomiting are new since discharge and warrant evaluation, especially given the recent trauma and underlying Crohn's disease. While the note doesn't explicitly advise returning to the ER, the new onset of GI symptoms warrants medical attention.",
+    "word_count": 83
+  },
+  {
+    "case_id": "19",
+    "raw_output": "Based on the recent hospital evaluation, extensive cardiac workup including EKGs, blood tests, CT scan, stress test, and MIBI scan were all normal (sentences 6, 7, 8, 9). Chest pain improved with Ativan and Tylenol (sentence 10). Sertraline was initiated to address potential anxiety contributing to symptoms (sentence 11). Follow-up with your primary care doctor is recommended (sentence 16).",
+    "parsed_answer": "Based on the recent hospital evaluation, extensive cardiac workup including EKGs, blood tests, CT scan, stress test, and MIBI scan were all normal . Chest pain improved with Ativan and Tylenol . Sertraline was initiated to address potential anxiety contributing to symptoms . Follow-up with your primary care doctor is recommended .",
+    "word_count": 52
+  },
+  {
+    "case_id": "20",
+    "raw_output": "The diagnosis of migraine was made after ruling out other serious intracranial causes of headache, such as pseudotumor cerebri and cerebral venous thrombosis, through CT, MRI, laboratory tests, lumbar puncture, and MR venogram. While the note doesn't explicitly detail how migraine causes dizziness, it confirms extensive testing excluded other conditions that could cause headache and potentially dizziness.",
+    "parsed_answer": "The diagnosis of migraine was made after ruling out other serious intracranial causes of headache, such as pseudotumor cerebri and cerebral venous thrombosis, through CT, MRI, laboratory tests, lumbar puncture, and MR venogram. While the note doesn't explicitly detail how migraine causes dizziness, it confirms extensive testing excluded other conditions that could cause headache and potentially dizziness.",
+    "word_count": 57
+  }
+]
