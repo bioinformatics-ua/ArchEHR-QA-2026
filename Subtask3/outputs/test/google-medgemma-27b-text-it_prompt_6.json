@@ -1,0 +1,402 @@
+[
+  {
+    "case_id": "21",
+    "prediction": "<unused94>thought The user wants me to identify the sentences in the provided medical excerpt that contain information relevant to predicting the patient's lifespan, given his end-stage liver disease and advanced hepatic encephalopathy. Then, I need to synthesize these sentences into a concise answer (max 75 words, approx. 5 sentences) using the original wording and medical terminology. 1. **Identify relevant sentences:** * Sentence 1: Mentions decompensated alcoholic and HCV cirrhosis, history of hepatic encephalopathy, ascites, esophageal"
+  },
+  {
+    "case_id": "22",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question \"Why did they perform the emergency salvage repair on him?\" based on the provided excerpt. 1. **Identify relevant sentences:** * Sentence 1: States the reason for transfer: \"emergent repair of his ruptured thoracoabdominal aortic aneurysm.\" * Sentence 2: Describes the surgery performed: \"emergent salvage repair of ruptured thoracoabdominal aortic aneurysm\". * Sentence 3: Mentions complications during surgery (cardiac arrest) but doesn't explain *why* the surgery"
+  },
+  {
+    "case_id": "23",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical excerpt. **Patient Question:** Why was my mom given antibiotics during her hospital stay? **Clinician Question:** Why was she given antibiotics during her hospital stay? **Relevant Sentences:** - Sentence 5: \"On [**2174-2-11**], it was noted that you were not holding your oxygen levels as high as we would like so a chest x-ray was done,"
+  },
+  {
+    "case_id": "24",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical excerpt. **Patient Question:** Why was the patient intubated? **Clinician Question:** Why was the patient intubated? **Excerpt:** 1: History of Present Illness: Mr. [**Known lastname 52653**] is a 55 yo M with end-stage sarcoid on 3LNC at baseline, transferred from Radius with shortness of breath, tachypnea, hypoxia and fevers. 2: According to reports from Radius"
+  },
+  {
+    "case_id": "25",
+    "prediction": "<unused94>thought The user wants me to answer the question \"Why was he equipped with a CPAP machine?\" based on the provided medical excerpt. 1. **Identify relevant sentences:** * Sentence 2: Mentions admission for shortness of breath and low oxygen levels due to CHF exacerbation. * Sentence 3: States he received supplemental oxygen through a positive-pressure mask in the ICU. 2. **Combine and paraphrase:** The patient was admitted for shortness of breath and low oxygen levels"
+  },
+  {
+    "case_id": "26",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical excerpt. **Patient Question:** Were the antibiotics given to my dad necessary? **Clinician Question:** Why was he given antibiotics during his hospital stay? **Relevant Sentences Identification:** - Sentence 3: \"Your intubation was complicated by a pneumonia and you were transferred to [**Hospital1 18**] for further management of your pneumonia and your mental status changes.\" -"
+  },
+  {
+    "case_id": "27",
+    "prediction": "<unused94>thought The user wants me to answer the question \"How is the patient expected to control the pain after being treated for pancreatitis?\" based on the provided medical excerpt. 1. **Identify relevant sentences:** Look for mentions of pain, pain management, or medications related to pain control. * Sentence 2: Mentions epigastric pain. * Sentence 5: Mentions severe abdominal pain. * Sentence 10: Describes abdomen being very tender. * Sentence 12: Details aggressive pain control with"
+  },
+  {
+    "case_id": "28",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical excerpt. **Patient Question:** How can my mother control her pain after being treated for pancreatitis? **Clinician Question:** How is the patient expected to control the pain after being treated for pancreatitis? **Excerpt:** 1: Brief Hospital Course: 2: # Pancreatitis: Possibly due to gallstones seen on CT and abdominal ultrasound. 3: Patient's lipase was not"
+  },
+  {
+    "case_id": "29",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical record excerpt. **Patient Question:** Can my wife drink a beer a day now that she's started Coumadin for blood clots? **Clinician Question:** Are there any contraindications for the patient to consume alcohol? **Relevant Sentences Identification:** - Sentence 2 mentions anticoagulation (Lovenox and Coumadin) for upper extremity DVT. - Sentence 3 confirms restarting Coumadin with"
+  },
+  {
+    "case_id": "30",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical record excerpt. **Patient Question:** Can my wife drink a beer a day while on Coumadin after having blood clots? **Clinician Question:** Are there any contraindications for the patient to consume alcohol? **Relevant Excerpt Sentences:** - Sentence 6: Mentions the patient has a Right Upper Extremity Deep Vein Thrombosis (RUE DVT). - Sentence 7: States"
+  },
+  {
+    "case_id": "31",
+    "prediction": "<unused94>thought The user wants me to answer the question \"How was my friend diagnosed with a contagious UTI?\" based on the provided medical excerpt. 1. **Identify the core question:** The question asks about the diagnosis method for a UTI. 2. **Scan the excerpt for keywords:** Look for \"UTI\", \"diagnosis\", \"culture\", \"sepsis\", \"E. coli\". 3. **Locate relevant sentences:** * Sentence 2: \"Urinary Tract Infection/Concern for Urosepsis: The final culture results from the outside hosptial suggested that"
+  },
+  {
+    "case_id": "32",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question based on the provided excerpt. The clinician's question is: \"What did they find in the psych evaluation and what may have caused this episode?\" Looking at the excerpt: - Sentence 3 mentions the patient was transferred for language problems and found to have had a stroke. - Sentence 4 states the cause is thought to be a genetic disorder called MELAS, which caused a stroke-like"
+  },
+  {
+    "case_id": "33",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical excerpt. **Patient Question:** The patient's daughter is asking for clarification on her father's sudden confusion, memory loss, and other symptoms following a fall. She notes conflicting diagnoses (mini-stroke, UTI, electrolyte imbalance) and seeks an explanation for the 18-hour episode. **Clinician Question:** What did they find in the psych evaluation and what may have caused"
+  },
+  {
+    "case_id": "34",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a clinician's question based on a provided patient excerpt. **Clinician Question:** What did they find in the psych evaluation and what may have caused this episode? **Excerpt Analysis:** - Sentence 1: Mentions admission for confusion, low magnesium, potassium, and calcium. - Sentence 2: Mentions a seizure in the ED, likely due to low electrolytes and alcohol withdrawal. - Sentence 3: Attributes low"
+  },
+  {
+    "case_id": "35",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question based on the provided excerpt. The clinician's question is: \"What did they find in the psych evaluation and what may have caused this episode?\" Looking at the excerpt, there is no mention of a \"psych evaluation\". The excerpt focuses on electrolyte imbalances, dehydration, potential hormonal issues, and a UTI. Relevant sentences: 2: You were admitted to the hospital because your sodium, potassium, magnesium, and phosphorous"
+  },
+  {
+    "case_id": "36",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question based on the provided excerpt. The clinician's question is: \"Were there any dental problems when he underwent the thyroid storm treatment?\" I need to find sentences in the excerpt that mention dental problems or oral health issues related to the thyroid storm treatment period. Looking through the excerpt: - Sentences 1-5 discuss social history (family, work, alcohol, smoking, marijuana use). Not relevant. - Sentence 6"
+  },
+  {
+    "case_id": "37",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question \"Why was she referred to the ICU neurology department?\" based on the provided excerpt. 1. **Identify relevant sentences:** * Sentence 3: \"She endorses confusion.\" * Sentence 12: \"You presented with problems regarding your thinking...\" * Sentence 13: \"...mild right sided weakness and subtle coordination problems on the right...\" * Sentence 14: \"...MRI of your brain that showed several masses in your [**Last Name (un) **]"
+  },
+  {
+    "case_id": "38",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question \"Is he getting any treatment for the swelling?\" based on the provided excerpt. 1. **Identify the core question:** The question asks about treatment for swelling. 2. **Scan the excerpt for keywords:** Look for \"swelling\", \"fluid\", \"treatment\", \"medication\", \"diuretic\". 3. **Locate relevant sentences:** * Sentence 7: \"In addition, you were noted to have significant swelling in your legs, groin and abdomen.\" (Confirms swelling exists) * Sentence"
+  },
+  {
+    "case_id": "39",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a clinician's question based on a provided patient excerpt. **Clinician Question:** Is she getting any treatment for the swelling? **Patient Context:** Mother has liver cirrhosis, gallstones, was unconscious, ICU stay, 1.5L fluid drained from chest, recurring swelling, doctor suggested liver transplant. **Excerpt Analysis:** - Sentence 1: Mentions admission for abdominal pain and blood clot in portal vein/small bowel. Not directly about swelling"
+  },
+  {
+    "case_id": "40",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question \"What is the expected course of her recovery from bronchitis?\" based on the provided medical excerpt. 1. **Identify relevant sentences:** I need to find sentences that describe the patient's condition, treatment, and follow-up plan related to the bronchitis/small airway infection. * Sentence 1: Mentions bronchitis and small airway infection. * Sentence 4: Mentions a five-day course of azithromycin for bronchitis/small airway infection. * Sentence 8:"
+  },
+  {
+    "case_id": "41",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question based on the provided excerpt. Clinician Question: Can her ongoing severe chest pain be explained by anything found during her hospital visit? Relevant sentences: - Sentence 2: Pt c/o chest pressure on admission. - Sentence 4: She underwent a regadenason stress/perfusion scan on ___ and ___ which showed likely fixed defect seen on prior scans with no e/o acute ischemia. - Sentence 5: Etiology of"
+  },
+  {
+    "case_id": "42",
+    "prediction": "<unused94>thought The user wants me to answer the question \"Was it antibiotics or foods that caused cholecystitis?\" based on the provided medical excerpt. 1. **Identify keywords:** antibiotics, foods, cholecystitis. 2. **Scan the excerpt for keywords or related concepts:** * Sentence 1 mentions admission with RUQ pain, nausea, vomiting. * Sentence 2 mentions RUQ ultrasound showing gallstones/sludge but *no* acute cholecystitis initially. * Sentence 3 mentions CT showing a 4mm gallstone in the cystic duct causing"
+  },
+  {
+    "case_id": "43",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question \"Could her bulging thoracic disc cause chest pain?\" based on the provided medical record excerpt. 1. **Identify relevant sentences:** * Sentence 1 mentions \"thoracic... instrumentation\" and \"uncontrolled back pain\". * Sentence 2 mentions \"Back Pain, acute on chronic\". * Sentence 3 mentions \"chronic back pain\", \"DJD, scoliosis\", and \"fibromyalgia/anxiety\". * Sentence 5 explicitly states \"No CP/SOB\" (Chest Pain/Shortness of Breath). * Sentence 6 mentions \"Longstanding"
+  },
+  {
+    "case_id": "44",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical excerpt. **Patient Question:** What should he do if he is short of breath and coughing? **Clinician Question:** What should he do if he is short of breath and coughing? **Excerpt:** 1: Discharge Instructions: 2: ___ were admitted to ___ with sudden-onset left flank pain in the setting of being treated for bronchitis. 3: ___"
+  },
+  {
+    "case_id": "45",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question \"Are there any contraindications to air travel following his recent admission?\" based on the provided excerpt. 1. **Identify relevant sentences:** I need to find sentences discussing the patient's condition after admission and any advice regarding travel. * Sentence 1: Discharge Instructions - General context. * Sentence 2: Admitted for imbalance, blurry vision, neck discomfort - Reason for admission. * Sentence 3: CT head negative for"
+  },
+  {
+    "case_id": "46",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical record excerpt. **Patient Question:** I\u2019m having a lot of lower abdominal pressure and pressure in my rear that is very uncomfortable. Few days ago, I was involved in car accident. I was rear-ended. I went to the ER and they did a CT Scan. They said everything was ok but I still have that"
+  },
+  {
+    "case_id": "47",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question \"Why were her hemoglobin and iron levels low?\" based on the provided excerpt. 1. **Identify relevant sentences:** * Sentence 2: Mentions admission due to low blood counts. * Sentence 4: States low blood counts prompted investigation for bleeding. * Sentence 5: Mentions testing for conditions causing blood cell breakdown. * Sentence 6: Concludes tests were negative and low counts are consistent with ongoing liver disease."
+  },
+  {
+    "case_id": "48",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a clinician's question based on a provided patient excerpt. **Patient Question:** Pain in lower right abdomen and back, silver dollar size bumps on lower back. **Clinician Question:** What could cause her right lower abdomen pain and back bumps? **Excerpt:** 1: Discharge Instructions: 2: You were admitted to the hospital for right-sided abdominal and back pain. 3: A CT scan done in the"
+  },
+  {
+    "case_id": "49",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical record excerpt. **Patient Question:** Should she get an MRI for her neck stiffness? **Clinician Question:** Does she need an MRI for her neck stiffness? **Excerpt:** 1: Discharge Instructions: 2: WHY WERE YOU ADMITTED? 3: -You were admitted to the hospital due to bad you had head and neck pain. 4: WHAT HAPPENED IN THE"
+  },
+  {
+    "case_id": "50",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical record excerpt. **Patient Question:** Is her pregnancy confirmed? **Goal:** Identify sentences in the excerpt that directly address the confirmation of pregnancy and synthesize them into a concise answer (max 75 words, ~5 sentences). **Relevant Sentences Identification:** - Sentence 8: \"Of note she was also found to have a positive pregnancy test at the OSH"
+  },
+  {
+    "case_id": "51",
+    "prediction": "<unused94>thought The user wants me to answer a patient's question about ongoing chest pain after a car crash, using information from the provided medical record excerpt. 1. **Identify the core question:** The patient's sister has ongoing chest pain after a car crash and hospitalization for multiple fractures. What should she do? 2. **Scan the excerpt for keywords:** \"chest pain\", \"pain\", \"rib fracture\", \"follow up\", \"instructions\". 3. **Locate relevant sentences:** * Sentence 34: Mentions right 1st"
+  },
+  {
+    "case_id": "52",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical excerpt. **Patient Question:** What should he do for persistent lightheadedness? **Clinician Question:** What should he do for persistent lightheadedness? **Excerpt:** 1: Discharge Instructions: 2: You were admitted to the Neurology service because of left hand clumsiness. 3: We think you had inflamation on the surface of part of your brain. 4: We did not"
+  },
+  {
+    "case_id": "53",
+    "prediction": "<unused94>thought The user wants me to answer the question \"Is TMJ causing her high blood pressure?\" based on the provided medical excerpt. 1. **Identify the core question:** The question asks about a causal link between TMJ and high blood pressure. 2. **Scan the excerpt for keywords:** Look for \"TMJ\", \"blood pressure\", \"hypertension\", \"dizziness\", \"headache\", \"migraine\", \"autonomic instability\", etc. 3. **Analyze relevant sentences:** * Sentence 1 mentions history of migraines, strokes, and carotid stenosis. * Sentence"
+  },
+  {
+    "case_id": "54",
+    "prediction": "<unused94>thought The user wants me to answer the question \"Is his fever and lower abdomen pain expected while taking Levaquin, Tamiflu, and prednisone?\" based on the provided medical excerpt. 1. **Identify keywords:** Fever, lower abdomen pain, Levaquin, Tamiflu, prednisone, expected side effects. 2. **Scan the excerpt for mentions of these keywords or related symptoms/conditions.** * Fever: Mentioned in the initial presentation and discharge instructions . * Lower abdomen pain: Not explicitly mentioned in the excerpt."
+  },
+  {
+    "case_id": "55",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical record excerpt. **Patient Question:** Why did he get a lump on his chest after he fell and what is the expected course of his recovery? **Clinician Question:** Why did he get a lump on his chest after he fell and what is the expected course of his recovery? **Relevant Sentences:** - 7: You also"
+  },
+  {
+    "case_id": "56",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical excerpt. **Patient Question:** What is going on with the blockage of the bile duct? **Clinician Question:** What is going on with the blockage of the bile duct? **Excerpt:** 1: Discharge Instructions: 2: It was a pleasure caring for you at ___. 3: You were admitted with nausea and abdominal pain. 4: You were found"
+  },
+  {
+    "case_id": "57",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical record excerpt. **Patient Question:** My mother was diagnosed with lupus and has been receiving monthly infusions as part of her treatment. However the last two times shes had reactions to the infusion and tonight, 1 day after her most recent infusion went to the ER vomiting and in pain from the infusion. Is this"
+  },
+  {
+    "case_id": "58",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question \"What is the reason for her language difficulties?\" based on the provided excerpt. 1. **Identify relevant sentences:** * Sentence 2 states the admission was for \"language difficulties\". * Sentence 3 mentions a CT scan showing \"old right frontal stroke\" and \"two smaller strokes on the left side\". * Sentence 4 suggests one of the left-sided strokes \"may have contributed to your language difficulties\". 2. **Combine"
+  },
+  {
+    "case_id": "59",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question about the possibility of cancer based on a previous ER visit. 1. **Identify the core question:** The patient is asking if cancer was suspected during their ER visit for severe abdominal pain. 2. **Scan the excerpt for keywords:** Look for \"cancer,\" \"suspected,\" \"malignancy,\" or related terms. 3. **Analyze the excerpt:** * Sentence 1: Mentions evaluation for abdominal pain, nausea,"
+  },
+  {
+    "case_id": "60",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question about regaining stamina after a CHF exacerbation and subsequent surgery, based on the provided medical record excerpt. 1. **Identify the core question:** The patient wants to know about the expected course of recovery regarding stamina after experiencing CHF exacerbated by IV fluids, requiring hospitalization, medication, and ultimately valve replacement surgery. 2. **Scan the excerpt for relevant information:** Look for"
+  },
+  {
+    "case_id": "61",
+    "prediction": "<unused94>thought The user wants me to answer the question \"Is the patient expected to experience lower stamina?\" based on the provided medical excerpt. 1. **Identify keywords:** Stamina, low energy, fatigue, weakness, physical activity. 2. **Scan the excerpt for relevant information:** * Sentence 17 mentions \"residual chest wall pain after CPR and rib fractures\". Rib fractures can limit physical activity and contribute to reduced stamina. * Sentence 36 mentions the patient was admitted with \"difficulty breathing\"."
+  },
+  {
+    "case_id": "62",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a clinician's question based on a provided patient excerpt. **Patient Question:** Brother admitted with Hb 10.2, dark black tarry stools, normal endoscopy/colonoscopy. Now home, still having black tarry stools without pain. MD can't figure it out. What should we do? (Brother is 47 with cirrhosis). **Clinician Question:** What is the care plan for the patient's dark stools? **Excerpt:** (Numbered sentences provided) **Goal:**"
+  },
+  {
+    "case_id": "63",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical record excerpt. **Patient Question:** Why was ERCP recommended over a medication-based treatment for CBD sludge? **Clinician Question:** Is it expected for her to have similar dark stools as before? **Excerpt:** (Provided) **Analysis:** 1. **Identify the core question:** The clinician asks if the patient is expected to continue having dark, tarry stools (melena) similar to"
+  },
+  {
+    "case_id": "64",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a clinician's question based on a provided patient excerpt. **Clinician Question:** Why did they rule out aggressive therapies? **Relevant Excerpt Sentences:** - Sentence 4: \"No surgical intervention offered for this severe stroke given the high mortality rate associated within 1 month.\" - Sentence 7: \"Neurology consulted and have been in discussion with family regarding prognosis.\" - Sentence 8: \"Pt had previously signed"
+  },
+  {
+    "case_id": "65",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question about their father's prognosis and why aggressive therapy was ruled out, based on a provided medical excerpt. 1. **Identify the core questions:** * Why did the doctor conclude the patient has months to live? * Why were aggressive therapies ruled out? 2. **Scan the excerpt for relevant information:** Look for mentions of prognosis, complications, failed treatments, patient decisions, and"
+  },
+  {
+    "case_id": "66",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question \"How were the goals of care established?\" based on the provided excerpt. 1. **Identify relevant sentences:** * Sentence 3: \"Goals of care discussion - After it was determined that the patient had signs of cardiac tamponade, family meetings were held with the patient, her husband, daughters, and palliative care.\" - Directly addresses the start of the discussion. * Sentence 4: \"The patient made the decision"
+  },
+  {
+    "case_id": "67",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question \"What is expected course of recovery for him?\" based on the provided excerpt. 1. **Identify relevant sentences:** I need to find sentences describing the patient's condition, treatment, and progress towards recovery. * Sentence 2: Mentions admission for productive cough and SOB. * Sentence 5: Notes hypoxia, likely multifactorial. * Sentence 6: Describes worsening hypoxia during presentation. * Sentence 7: States lobar pneumonia treated with antibiotics"
+  },
+  {
+    "case_id": "68",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical record excerpt. **Patient Question:** My brother who is 48 year old getting brain hemorrhage after falling on stairs. 7 days in ICU, CtScan show the bleeding in brain. Operation was conducted. Dr hinted toward having another surgery to open up the skull and clear the bleeding. Is there any other option other than surgery."
+  },
+  {
+    "case_id": "69",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question based on the provided excerpt. The clinician's question is: \"What is the planned course of treatment? Is complete recovery possible?\" I need to find sentences in the excerpt that address the treatment plan and prognosis for Central Pontine Myelinolysis (CPM). Relevant sentences: - 27: Central Pontine Myelinolysis: Lesion was found on MRI [**2191-4-5**] in the setting of ongoing altered mental status. - 29: Per neurology,"
+  },
+  {
+    "case_id": "70",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical excerpt. **Patient Question:** Why was my son on solumedrol and what is his treatment plan? **Clinician Question:** Why was he on solumedrol and what is his treatment plan? **Relevant Sentences Identification:** - Sentence 6: \"Treatment: Patient was started on solumedrol 1g IV q24 on [**2106-9-14**] for total of 14 day course.\" - Explains why"
+  },
+  {
+    "case_id": "71",
+    "prediction": "<unused94>thought The user wants me to answer the question \"What is expected course of her recovery?\" based on the provided medical excerpt. 1. **Identify relevant sentences:** * Sentence 8: Sedation was weaned off on Hospital Day (HD) 2, but patient was not arousable and demonstrated right shoulder twitching. * Sentence 14: On transfer to the STEP-DOWN unit on [**4-22**], she remained unarousable and unable to open her eyes even to noxious stimuli as well as"
+  },
+  {
+    "case_id": "72",
+    "prediction": "<unused94>thought The user wants me to answer the question \"What is his treatment plan and expected course of recovery?\" based on the provided medical excerpt. 1. **Identify relevant sentences:** * Sentence 2: EEG revealed mild encephalopathy. * Sentence 3: Loaded with Dilantin, later converted to Keppra IV. * Sentence 5: Treated with a total of 11mg of ativan for seizure activity. * Sentence 6: No further seizures on continuous EEG monitoring. * Sentence 7: Extubated"
+  },
+  {
+    "case_id": "73",
+    "prediction": "<unused94>thought The user wants me to answer the question \"What is the expected course of his treatment and recovery after the stroke?\" based on the provided medical excerpt. 1. **Identify relevant sentences:** * Sentence 4: Head CT showed left-sided intraparenchymal and subarachnoid hemorrhage. (Diagnosis) * Sentence 42: You were admitted for seizures and intracranial hemorrhage. (Diagnosis) * Sentence 44: When your bloodthinner was stopped, you had a stroke. (Context of stroke) * Sentence 45: You"
+  },
+  {
+    "case_id": "74",
+    "prediction": "<unused94>thought The user wants me to answer the question \"What is her expected course of recovery after craniotomy?\" based on the provided excerpt. 1. **Identify relevant sentences:** I need to find sentences describing the recovery process, timeline, activities, and potential issues after the craniotomy. * Sentence 2: Transfer to rehab on [**2166-4-11**]. (Indicates rehab is part of recovery) * Sentence 21: The first few weeks after discharge you may feel tired or fatigued. * Sentence"
+  },
+  {
+    "case_id": "75",
+    "prediction": "<unused94>thought The user wants me to answer the question \"What was the underlying cause of the episode? Is it scleroderma?\" based on the provided medical excerpt. 1. **Identify the core question:** The question asks about the cause of the patient's recent hospitalization episode and whether scleroderma is the cause. 2. **Scan the excerpt for keywords:** Look for \"cause\", \"reason\", \"scleroderma\", \"episode\", \"hospitalization\", \"admission\". 3. **Locate relevant sentences:** * Sentence 2: States admission was post right"
+  },
+  {
+    "case_id": "76",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question: \"What was the reason for the admission, and was it due to scleroderma?\" based on the provided excerpt. 1. **Identify relevant sentences:** * Sentence 12: Describes the patient's admission presentation: \"45 year old male with HIV...scleroderma...who initially presented [**2139-5-15**] with high fevers, chills, cough and post-tussive emesis X1 day, transferred to MICU for recurrent fever, hypoxia and tachypnea.\" This directly addresses the reason for admission."
+  },
+  {
+    "case_id": "77",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question based on the provided excerpt. The clinician's question is: \"Why did he undergo an emergent surgery? What specific issues developed in his groin area?\" I need to find the sentences in the excerpt that explain the reason for the emergent surgery and describe the groin issues. Relevant sentences: - 6: In the holding area, after the stent, the patient was noted to have some oozing"
+  },
+  {
+    "case_id": "78",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical record excerpt. **Patient Question:** \"I had a heart cath. It did bleed post op, I became very ill. the day after. I had a very large hematoma in my groin area and then went to emergent procedure. Can you tell me what possibly might have happened. They opened up my groin? I now have"
+  },
+  {
+    "case_id": "79",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question based on the provided excerpt. The clinician's question is: \"Why did the patient went for an emergent procedure? What issues developed in her groin area?\" I need to find the sentences in the excerpt that explain the reason for an emergent procedure and describe the groin issue. Relevant sentences: - 12: Afterward, patient developed rapidly expanding left groin hematoma. - 13: She was given protamine."
+  },
+  {
+    "case_id": "80",
+    "prediction": "<unused94>thought The user wants me to answer the patient's question about their post-heart cath complications based on the provided medical record excerpt. **Patient Question:** \"I had a heart cath three weeks ago. It did bleed post op, I became very ill. the day after. I had hematoma in my groin area. And I went into emergent surgery. Can you tell me what possibly might have happened. Did they open up my groin? I now have"
+  },
+  {
+    "case_id": "81",
+    "prediction": "<unused94>thought The user wants me to answer a patient's question about their post-heart cath complications based on a provided medical excerpt. **Patient Question:** \"I had a heart cath three weeks ago. It did bleed post op, I became very ill. the day after. I had a hematoma in my groin area and went to emergent surgery. Can you tell me what possibly might have happened. Did they opened up my groin and place something? I"
+  },
+  {
+    "case_id": "82",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical excerpt. **Patient Question:** What possibly happened during and after my heart cath that led to bleeding, illness, a large groin hematoma, and emergent surgery? **Clinician Question:** What was the course of her heart cath? What issues were associated with the groin? **Relevant Sentences:** - 6: Here, cardiac catherization showed 80% occlusion of the RCA."
+  },
+  {
+    "case_id": "83",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical excerpt. **Patient Question:** \"I had a heart cath. It did bleed post op, I became very ill. the day after. I had a very large hematoma in my my groin area. Can you tell me what possibly might have happened. They opened up my groin? I now have at least 7/10 pain and have"
+  },
+  {
+    "case_id": "84",
+    "prediction": "<unused94>thought The user wants me to answer the question \"What was she diagnosed with?\" based on the provided medical excerpt. 1. **Identify relevant sentences:** * Sentence 10: \"Given this presentation, her symptoms were concerning for GBS\" - Suggests GBS was considered. * Sentence 15: \"The likelihood of a GBS diagnosis was very low given the normal CSF and EMG.\" - Indicates GBS is unlikely. * Sentence 21: \"still unclear; we could during this admission affirm"
+  },
+  {
+    "case_id": "85",
+    "prediction": "<unused94>thought The user wants me to answer the question \"How was he diagnosed with GBS?\" based on the provided medical excerpt. 1. **Identify relevant sentences:** * Sentence 22: \"Neurology was consulted and made the diagnosis of [**Doctor First Name **]-[**Doctor Last Name **] variant of guillain-[**Location (un) **] syndrome (acute inflammatory demyelinating polyneuropathy) and the patient was transferred to the neurology service and treated with a 5-day course of IVIG.\" - This directly states the"
+  },
+  {
+    "case_id": "86",
+    "prediction": "<unused94>thought The user wants me to answer the question \"What was she diagnosed with?\" based on the provided medical excerpt. 1. **Identify the core question:** The question asks for the final diagnosis. 2. **Scan the excerpt for diagnoses:** Look for explicit mentions of diagnoses. * Sentence 2: \"...question of Gullian-[**Location (un) **] Syndrome.\" (Initial concern) * Sentence 25: \"...concerning for Guillain-[**Location (un) **] syndrome.\" (Initial concern) * Sentence 33: \"GBS was a possible initail diagnosis...\""
+  },
+  {
+    "case_id": "87",
+    "prediction": "<unused94>thought The user wants me to identify the reasons for the patient's persistent fever based on the provided medical record excerpt. 1. **Identify the core question:** Why is the patient still having a fever? 2. **Scan the excerpt for mentions of fever:** Sentences 2, 30, 31, 34, 35, 37, 41, 46, 48, 49 mention fever or related conditions. 3. **Analyze the causes mentioned:** * Sentence 2: Febrile neutropenia, elevated creatinine, right axillary abscess while on"
+  },
+  {
+    "case_id": "88",
+    "prediction": "<unused94>thought The user wants me to answer the question \"What is her expected course of recovery?\" based on the provided medical excerpt. 1. **Identify relevant sentences:** I need to find sentences describing the patient's condition, treatment plan, and future steps related to recovery. * Sentence 2: Mentions bacteremia/abscesses/antibiotic therapy. * Sentence 6: States the plan to treat MSSA bacteremia/abscesses with IV daptomycin for 6-8 weeks. * Sentence 8: Plans repeat imaging (CT abd/pelvis; MRI spine)"
+  },
+  {
+    "case_id": "89",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question based on the provided excerpt. The clinician's question is: \"Did they find any explanations for his abnormal echo and altered mental state?\" I need to identify sentences in the excerpt that address both the abnormal echo findings (heart disease, depressed ejection fraction, prior MI) and the altered mental state (disorientation, spitting tablets, slurred speech). Relevant sentences: - Sentence 2: Mentions systolic and diastolic heart failure,"
+  },
+  {
+    "case_id": "90",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question \"Are there any concerns for lasting effects of brain hypoxia?\" based on the provided patient excerpt. 1. **Identify relevant sentences:** * Sentence 2: Mentions history of seizures, Lupus anticoagulant on coumadin, and hypertensive left CVA in with minimal residual right sided symptoms. (Relevant for baseline neurological status and potential vulnerability). * Sentence 14: MRI showed leukomalacia and post-stroke changes including some contrast blush at the"
+  },
+  {
+    "case_id": "91",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question based on the provided excerpt. The clinician's question is: \"Was the patient's sepsis caused by a uti? How is his sepsis treated?\" I need to find sentences in the excerpt that address: 1. The cause of the sepsis (blood infection). 2. How the sepsis was treated. Relevant sentences: - Sentence 2: \"You were admitted to the hospital and found to have a bacterial infection in"
+  },
+  {
+    "case_id": "92",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question based on the provided excerpt. The clinician's question is: \"Why was he in an induced coma after cardiac arrest? Is his discomfort associated with the treatment?\" I need to find sentences in the excerpt that explain the reason for the induced coma (sedation) and potential causes for the patient's current pain. 1. **Reason for induced coma:** Sentence 6 mentions \"cooling of your body in the"
+  },
+  {
+    "case_id": "93",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question based on the provided excerpt. The clinician's question is: \"Can her breathlessness on exertion be related to the treatment she received for heart failure?\" However, the excerpt *doesn't* mention heart failure. It mentions: - Nausea and vomiting - Dangerously low heart rate from diltiazem - Pneumonia - ICU monitoring, fluids, antibiotics - Fast heart rate (due to pneumonia, deconditioning, diltiazem withdrawal) - High blood pressure"
+  },
+  {
+    "case_id": "94",
+    "prediction": "<unused94>thought The user wants me to answer a patient's question about their nephew's high blood sugar after being discharged from the hospital for newly diagnosed diabetes. 1. **Identify the core questions:** * How was the diabetes managed in the hospital? * What were the discharge instructions for managing diabetes at home? * Is the current blood sugar level dangerous? (This isn't directly addressed by the clinician question but is part of the patient's concern). 2."
+  },
+  {
+    "case_id": "95",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical excerpt. **Patient Question:** Why did I faint/blackout? What was the cause of my hospitalization? What is wrong with me? **Clinician Question:** What was the reason for her blackouts? What was her hemoglobin level? **Relevant Sentences:** - Sentence 3: \"You were admitted after fainting which we think was a \"vagal\" reaction to your nausea/vomiting.\" -"
+  },
+  {
+    "case_id": "96",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question \"What was her expected recovery course after the fall?\" based on the provided excerpt. 1. **Identify relevant sentences:** * Sentence 18: Mentions multiple injuries including broken ribs, brain bruising (subdural hematoma), and abdominal bleeding (ruptured liver cyst). * Sentence 19: States she is slowly getting better but needs to continue eating well and increase mobility. * Sentence 20: Notes blood count stability indicating stabilization of"
+  },
+  {
+    "case_id": "97",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question based on the provided excerpt. The clinician's question is: \"Why was he diagnosed with drug overdose for Barbituates, Meethedone, and TCA? Could his meds be confused for TCA?\" 1. **Identify relevant sentences:** * Sentence 2 mentions a history of medication overdose with clonidine. * Sentence 3 states symptoms consistent with Clonidine overdose. * Sentence 4 links the overdose to Munchausen syndrome. * Sentence 5 describes"
+  },
+  {
+    "case_id": "98",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical excerpt. **Patient Question:** My brother was at work, had pain in chest, went to ER. they admitted him, said he has a mass on his heart. Was in ICU for dew days. They sent him home, still same symtoms, still pain in chest. What should he do. Please answer soon. I know this is"
+  },
+  {
+    "case_id": "99",
+    "prediction": "<unused94>thought The user wants me to answer the question \"Is there a specified order to take the prescribed medications?\" based on the provided medical excerpt. 1. **Identify relevant sentences:** I need to find sentences that mention the timing or order of medication administration. * Sentence 4: \"Isoniazid 300 mg Tablet Sig: One Tablet PO DAILY\" - Specifies daily intake. * Sentence 6: \"Rifampin 300 mg Capsule Sig: Two Capsule PO Q24H (every 24 hours).\" -"
+  },
+  {
+    "case_id": "100",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical excerpt. **Patient Question:** Can the father's kidney failure be due to the recent severe lung infection (pneumonia), and is it curable or will he need regular dialysis? **Clinician Question:** Did the patient develop a kidney injury related to his pneumonia? **Relevant Sentences Identification:** - Sentence 2: Patient presented with severe respiratory distress due to"
+  },
+  {
+    "case_id": "101",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical excerpt. **Patient Question:** \"i had drains put in me and it got infected and i have had 7 opperation and finely had to have it removed i all most died 2 was in a coma for 7 days and in icu for 21 days on a feeding tube for 42 days and i still"
+  },
+  {
+    "case_id": "102",
+    "prediction": "<unused94>thought The user wants me to answer a clinician question based on a provided medical excerpt. **Clinician Question:** Was a stent successfully placed after patient's cardiac arrest? What were the follow-up instructions? **Relevant Sentences:** - 5: At the [**Hospital1 18**], she underwent cardiac catherization that showed a 100% lesion in the proximal right coronary artery. - 6: Two stents were placed to the proximal right coronary with good resultant flow. - 52: You should follow-up"
+  },
+  {
+    "case_id": "103",
+    "prediction": "<unused94>thought The user wants me to identify sentences from the provided medical excerpt that address the possibility of brain damage in a 74-year-old patient following sepsis, organ failure, and treatment involving sedation and ventilation. 1. **Identify keywords:** Brain damage, altered mental status, confusion, anoxic brain injury, neurological status. 2. **Scan the excerpt for keywords:** * Sentence 2: \"Altered Mental Status\" - Relevant. * Sentence 3: Describes baseline confusion, deafness, hemiplegia, limited speech - Relevant context"
+  },
+  {
+    "case_id": "104",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical excerpt. **Patient Question:** Is her pneumonia infection cleared? Could I have been the carrier? **Clinician Question:** Was her pneumonia infection cleared? **Relevant Sentences Identification:** - Sentence 9: \"You were also transfered to the [**Hospital1 18**] with concern for a pneumonia.\" - Confirms pneumonia was a concern. - Sentence 10: \"...upon arrival to [**Hospital1 18**]"
+  },
+  {
+    "case_id": "105",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a clinician's question based on a provided patient excerpt. **Clinician Question:** Was the patient scheduled for emergency surgery or only a follow up with oncology? **Relevant Sentences:** - Sentence 2: Hospitalized for a rectal mass causing partial obstruction. - Sentence 5: A colonic stent was placed by gastroenterology to relieve obstruction. - Sentence 9: Need to discuss with Oncologist... how to continue"
+  },
+  {
+    "case_id": "106",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical record excerpt. **Patient Question:** \"I have been diagnosed with MG for about a year now. I have been in the ICU on the vent 4 times since March of this year for shortness of breath. I am starting to think that the Doctors are missing something. My white cell count continues to go up"
+  },
+  {
+    "case_id": "107",
+    "prediction": "<unused94>thought The user wants me to identify the cause of death based on the provided medical excerpt. 1. **Identify the core question:** What was the cause of death? 2. **Scan the excerpt for keywords:** \"death\", \"died\", \"cause\", \"cardiac arrest\". 3. **Locate relevant sentences:** * Sentence 17: \"Shortly after his arrival Mrs. [**Known lastname **] died of cardiac arrest.\" * Sentence 22: \"Mrs. [**Known lastname **] died Monday [**10-14**] at 9PM of cardiac arrest, thought to"
+  },
+  {
+    "case_id": "108",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question: \"Why is the patient on Coumadin and are there any cardiac problems?\" based on the provided excerpt. 1. **Identify relevant sentences:** * Sentence 2: \"Embolic occlusion of the segmental artery supplying the posterior segment of the left upper lobe.\" (This indicates a clot in the lung.) * Sentence 4: \"...small emboli in the left dorsal segmental arteries can therefore not be excluded.\" (Further supports the"
+  },
+  {
+    "case_id": "109",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical excerpt. **Patient Question:** Will her kidneys recover? (Given 70yo female, renal failure with Cr 3.8-5.8, dialysis 3x/week, normal urine output but poor filtration). **Clinician Question:** Will the patient be in need of dialysis permanently? **Relevant Sentences Identification:** - Sentence 3: \"Acute on chronic renal failure: Patient was noted to have a creat of 5.4,"
+  },
+  {
+    "case_id": "110",
+    "prediction": "<unused94>thought The user wants me to identify the relevant sentences from the provided medical excerpt to answer the patient's question about their father's death related to GI bleeding and hemodialysis. **Patient Question Breakdown:** * Father died due to upper GI bleeding. * Was on hemodialysis. * Had dialysis 3 days before bleeding. * Admitted to CCU after bleeding. * Received medicines and another dialysis 2 days before death. * Developed breathing problems 3 days before"
+  },
+  {
+    "case_id": "111",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question \"What was the cause of bleeding?\" based on the provided excerpt. 1. **Identify relevant sentences:** * Sentence 2: \"# UGIB: variceal bleed, emergent endoscopy with banding in the ICU.\" - Directly states the type of bleeding (UGIB - Upper Gastrointestinal Bleed) and its source (variceal bleed). * Sentence 3: \"pt resuscitated with blood products...to hct goal 28.\" - Describes management of the bleeding. * Sentence"
+  },
+  {
+    "case_id": "112",
+    "prediction": "<unused94>thought The user wants me to answer the clinician's question \"How was tachycardia treated in ICU?\" based on the provided excerpt. 1. **Identify keywords:** Tachycardia, ICU, treatment. 2. **Scan the excerpt for keywords:** * Sentence 19 mentions \"ventricular tachycardia\". * Sentence 20 states the patient is going home with a LifeVest \"which is worn externally and will shock you if you have this dangerous rhythm again.\" 3. **Synthesize the relevant information:** The patient experienced ventricular"
+  },
+  {
+    "case_id": "113",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical excerpt. **Patient Question:** Is mental regression (inability to speak properly or understand) normal post-operatively after aortic dissection surgery? **Clinician Question:** What was the patient's post-operative mental status and prognosis? **Relevant Sentences Identification:** - Sentence 6: \"He awoke neurologically intact but required Precedex for extubation.\" (Initial state) - Sentence 8: \"Postoperative confusion and agitation was"
+  },
+  {
+    "case_id": "114",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical excerpt. **Patient Question:** Understand the patient's condition (vegetative state, tongue issues, facial twitching/seizures, bed sores) and care plan. **Clinician Question:** What is the patient's neuro condition and his plan of care? **Excerpt Analysis:** - **Neuro Condition:** Sentences 7, 22, 23, 24, 25, 28 mention anoxic brain injury following a PEA arrest during VT ablation."
+  },
+  {
+    "case_id": "115",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical excerpt. **Patient Question:** Is my sister being helped with the correct dosage of antibiotics? (Concern about antibiotic effectiveness) **Clinician Question:** What antibiotics are given to the patient? **Relevant Sentences Identification:** - Sentence 10: \"Initially she was treated with levofloxacin and Unasyn to cover for aspiration and community-acquired pneumonia.\" - Lists initial antibiotics. - Sentence"
+  },
+  {
+    "case_id": "116",
+    "prediction": "<unused94>thought The user wants me to answer the question \"How was the patient's hemorrhage treated?\" based on the provided medical excerpt. 1. **Identify keywords:** Hemorrhage, treated, treatment. 2. **Scan the excerpt for keywords:** * Sentence 15 mentions \"Acute intracerebral hemorrhage\". * Sentence 17 mentions \"Factor VII trial\" which the patient refused. * Sentence 18 states \"no other alternative therapies indicated\". * Sentence 20 describes initial BP control with \"labetalol gtt\" and holding anticoagulants. * Sentence"
+  },
+  {
+    "case_id": "117",
+    "prediction": "<unused94>thought The user wants me to identify the sentences in the provided medical excerpt that explain the cause of the patient's Acute Kidney Injury (AKI). Then, I need to synthesize these sentences into a concise answer (max 75 words) using the original wording as much as possible. 1. **Identify relevant sentences:** * Sentence 4 directly addresses the likely cause: \"Acute renal failure: Likely started before presentation... from poor forward flow from initial cardiogenic failure and"
+  },
+  {
+    "case_id": "118",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a patient's question based on a provided medical record excerpt. **Patient Question:** patient has been operated because of intestine, patient had scepticimia and surgery again for cleaning inside, what are the chances of survival and what can be the consequences after all these operations ?? **Clinician Question:** What is the expected course of recovery after surgery and septicemia? **Relevant Sentences Identification:** -"
+  },
+  {
+    "case_id": "119",
+    "prediction": "<unused94>thought The user wants me to act as a clinical expert and answer a specific question based on a provided medical excerpt. **Patient Question:** I had a total thyroid ectomy in sept. I did have cancer. One day surgery turned into a couple of days in intensive care then 6 more days in hospital. I still have stridor and possibly going to have my vocal cords injected. But today I started having pain on my"
+  },
+  {
+    "case_id": "120",
+    "prediction": "Relevant Sentences: 2: Mucosal bleeding: thrombocytopenia, stable. 3: He was noted to have bleeding from his gums/nose on [**2157-2-21**] and ENT was consulted. 6: Aminocaproic acid was used for gum bleeding. 7: Mr. [**Known lastname 88075**] has several reasons to have low platelets; ESLD, splenomegaly (19.3 cm), critical illness, and multiple antibiotics that are reversibly myelosuppressive. 9: His platelet count was as low as 45K (when he was found to be bleeding) and he required"
+  }
+]

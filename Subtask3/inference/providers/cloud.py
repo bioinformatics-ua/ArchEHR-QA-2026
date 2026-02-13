@@ -10,13 +10,20 @@ class CloudProvider(BaseProvider):
         self,
         model_name: str,
         *,
+        temperature: float = 0.3,
+        top_p: float = 0.90,
+        max_tokens: int = 512,
         base_url: str = "https://openrouter.ai/api/v1",
     ):
         super().__init__(model_name)
 
-        api_key = os.environ.get("OPENAI_API_KEY")
+        api_key = os.environ.get("OPENROUTER_API_KEY") or os.environ.get("OPENAI_API_KEY")
         if not api_key:
-            raise ValueError("OPENAI_API_KEY env variable is required")
+            raise ValueError("OPENROUTER_API_KEY or OPENAI_API_KEY env variable is required")
+
+        self.temperature = temperature
+        self.top_p = top_p
+        self.max_tokens = max_tokens
 
         self.client = OpenAI(
             api_key=api_key,
@@ -32,8 +39,9 @@ class CloudProvider(BaseProvider):
         response = self.client.chat.completions.create(
             model=self.model_name,
             messages=prompt,
-            temperature=0.3,
-            max_tokens=512,
+            temperature=self.temperature,
+            top_p=self.top_p,
+            max_tokens=self.max_tokens,
         )
         content = response.choices[0].message.content
         return content.strip() if content else ""

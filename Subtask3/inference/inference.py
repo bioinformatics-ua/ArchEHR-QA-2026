@@ -63,7 +63,12 @@ def main():
     if args.inference_mode == "cloud":
         from providers.cloud import CloudProvider
 
-        provider = CloudProvider(args.model)
+        provider = CloudProvider(
+            args.model,
+            temperature=args.temperature,
+            top_p=args.top_p,
+            max_tokens=args.max_tokens,
+        )
     else:
         from providers.local import LocalProvider
 

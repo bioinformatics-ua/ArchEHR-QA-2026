@@ -4,9 +4,9 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
-#SBATCH --gres=gpu:4
+#SBATCH --gres=gpu:1
 
-NUM_GPUS=4  # Must match SBATCH --gres gpu count
+NUM_GPUS=1  # Must match SBATCH --gres gpu count
 
 set -e
 
@@ -20,15 +20,25 @@ source .venv/bin/activate
 # =============================================================================
 
 # --- Task ---
-INFERENCE_MODE="local"      # local / cloud
+INFERENCE_MODE="cloud"      # local / cloud
 DATASET="test"               # dev / test / test-2026
-PROMPT_INDEX=2              # 1-6 (recommend 5 one-shot or 2 faithfulness)
-MODEL="google/medgemma-27b-text-it"
-    # --- Models ---
+PROMPT_INDEX=9              # 1-6 (recommend 5 one-shot or 2 faithfulness)
+MODEL="openai/gpt-5.2"
+    # --- Local Models ---
     # meta-llama/Llama-3.1-8B-Instruct
     # google/medgemma-27b-text-it
+        # 4 gpu's, 0.95 GPU memory utilization
+    # google/gemma-3-27b-it
+        # 4 gpu's, 0.95 GPU memory utilization
     # Qwen/Qwen3-32B
+        # 4 gpu's, 0.95 GPU memory utilization
     # Qwen/Qwen3-8B
+        # 1 gpu, 0.95 GPU memory utilization
+
+    # --- Cloud Models ---
+    # anthropic/claude-sonnet-4.5
+    # google/gemini-2.5-flash
+    # openai/gpt-5.2
 
 # --- GPU / Engine ---
 TENSOR_PARALLEL_SIZE=$NUM_GPUS  # Must match SBATCH --gres above
