@@ -20,10 +20,10 @@ source .venv/bin/activate
 # =============================================================================
 
 # --- Task ---
-INFERENCE_MODE="cloud"      # local / cloud
+INFERENCE_MODE="local"      # local / cloud
 DATASET="test"               # dev / test / test-2026
-PROMPT_INDEX=9              # 1-6 (recommend 5 one-shot or 2 faithfulness)
-MODEL="openai/gpt-5.2"
+PROMPT_INDEX=10
+MODEL="Echelon-AI/Med-Qwen2-7B"
     # --- Local Models ---
     # meta-llama/Llama-3.1-8B-Instruct
     # google/medgemma-27b-text-it
