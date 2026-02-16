@@ -1,0 +1,284 @@
+[
+  {
+    "case_id": "121",
+    "raw_output": "The patient's care plan requires completion of 6 weeks of ampicillin and ceftriaxone from the day of surgery, with the last day being [**2144-1-1**] (sentence 17). He requires weekly laboratory monitoring including CBC, chem-7, and LFTs (sentence 26), and an Infectious Disease attending visit (sentence 27). He was discharged to rehabilitation (sentence 19) with restrictions including no driving for approximately one month and no lifting more than 10 pounds for 10 weeks (sentence 23).",
+    "parsed_answer": "The patient's care plan requires completion of 6 weeks of ampicillin and ceftriaxone from the day of surgery, with the last day being [**2144-1-1**] . He requires weekly laboratory monitoring including CBC, chem-7, and LFTs , and an Infectious Disease attending visit . He was discharged to rehabilitation with restrictions including no driving for approximately one month and no lifting more than 10 pounds for 10 weeks .",
+    "word_count": 68
+  },
+  {
+    "case_id": "122",
+    "raw_output": "The patient's elevated but non-diagnostic troponin and CK-MB were likely due to increased demand in the setting of left ventricular strain, not a new heart attack (sentence 11). EKG review showed significant old Q waves and repolarization changes but no acute ischemic changes (sentence 12). The fluid in the lungs (flash pulmonary edema) was likely secondary to increased left ventricular strain precipitated by paroxysmal coughing in the setting of an already low ejection fraction (sentences 6, 8).",
+    "parsed_answer": "The patient's elevated but non-diagnostic troponin and CK-MB were likely due to increased demand in the setting of left ventricular strain, not a new heart attack . EKG review showed significant old Q waves and repolarization changes but no acute ischemic changes . The fluid in the lungs (flash pulmonary edema) was likely secondary to increased left ventricular strain precipitated by paroxysmal coughing in the setting of an already low ejection fraction .",
+    "word_count": 73
+  },
+  {
+    "case_id": "123",
+    "raw_output": "The patient was diagnosed with pneumocystis carinii pneumonia based on bronchoscopy findings, specifically identified on bronchoalveolar lavage (BAL). He presented with hemoptysis and shortness of breath, with diffuse ground glass opacities and mediastinal lymphadenopathy on CT scan. He was at risk for PCP given immunosuppression with infliximab and azathioprine used for his Crohn's disease. He was started on bactrim and a steroid taper, and his symptoms improved.",
+    "parsed_answer": "The patient was diagnosed with pneumocystis carinii pneumonia based on bronchoscopy findings, specifically identified on bronchoalveolar lavage (BAL). He presented with hemoptysis and shortness of breath, with diffuse ground glass opacities and mediastinal lymphadenopathy on CT scan. He was at risk for PCP given immunosuppression with infliximab and azathioprine used for his Crohn's disease. He was started on bactrim and a steroid taper, and his symptoms improved.",
+    "word_count": 67
+  },
+  {
+    "case_id": "124",
+    "raw_output": "There is no direct mention of malignancy concerns related to the kidney stones or enlarged spleen. CT imaging showed significant splenomegaly, unchanged between scans (sentences 20, 25), and renal hyperdense and hypodense cysts better assessed on recent MRI (sentence 24). The patient's medical history includes myelodysplastic syndrome (sentence 2), which can cause splenomegaly. The splenomegaly appears stable and is likely related to her known myelodysplastic syndrome rather than a new cancer diagnosis.",
+    "parsed_answer": "There is no direct mention of malignancy concerns related to the kidney stones or enlarged spleen. CT imaging showed significant splenomegaly, unchanged between scans , and renal hyperdense and hypodense cysts better assessed on recent MRI . The patient's medical history includes myelodysplastic syndrome , which can cause splenomegaly. The splenomegaly appears stable and is likely related to her known myelodysplastic syndrome rather than a new cancer diagnosis.",
+    "word_count": 68
+  },
+  {
+    "case_id": "125",
+    "raw_output": "Yes, intubation was indicated for this patient. The etiology of his respiratory failure was due to left lower lobe pneumonia with COPD exacerbation. He was initially started on CPAP with little benefit and required intubation for worsening hypercapnia, respiratory distress, and somnolence. Sedation was accomplished with midazolam and fentanyl drip. An echocardiogram showed evidence of right ventricular failure consistent with cor pulmonale from his COPD.",
+    "parsed_answer": "Yes, intubation was indicated for this patient. The etiology of his respiratory failure was due to left lower lobe pneumonia with COPD exacerbation. He was initially started on CPAP with little benefit and required intubation for worsening hypercapnia, respiratory distress, and somnolence. Sedation was accomplished with midazolam and fentanyl drip. An echocardiogram showed evidence of right ventricular failure consistent with cor pulmonale from his COPD.",
+    "word_count": 65
+  },
+  {
+    "case_id": "126",
+    "raw_output": "The patient's persistent cough was due to a severe asthma exacerbation, likely triggered by poorly controlled baseline asthma and a recent viral bronchitis. Influenza rapid test was negative, and he did not have pneumonia. His symptoms improved with nebulizers and steroids. He was discharged with albuterol nebulizers, prednisone 60 mg for 5 days, and Advair 250/50 twice daily as a controller medication. Pulmonary follow-up was recommended to evaluate for ABPA.",
+    "parsed_answer": "The patient's persistent cough was due to a severe asthma exacerbation, likely triggered by poorly controlled baseline asthma and a recent viral bronchitis. Influenza rapid test was negative, and he did not have pneumonia. His symptoms improved with nebulizers and steroids. He was discharged with albuterol nebulizers, prednisone 60 mg for 5 days, and Advair 250/50 twice daily as a controller medication. Pulmonary follow-up was recommended to evaluate for ABPA.",
+    "word_count": 70
+  },
+  {
+    "case_id": "127",
+    "raw_output": "The patient's confusion and short-term memory loss were likely caused by encephalitis (inflammation of the brain), specifically attacking the temporal lobes. MRI showed hyperintense areas in both hippocampi and progressive severe limbic and rhombencephalitis. This was consistent with limbic encephalitis, presenting with disorientation, amnesia, and seizures following a prodromal febrile illness. The patient continued to have dense anterograde and retrograde amnesia concerning for tissue damage in memory-forming areas.",
+    "parsed_answer": "The patient's confusion and short-term memory loss were likely caused by encephalitis (inflammation of the brain), specifically attacking the temporal lobes. MRI showed hyperintense areas in both hippocampi and progressive severe limbic and rhombencephalitis. This was consistent with limbic encephalitis, presenting with disorientation, amnesia, and seizures following a prodromal febrile illness. The patient continued to have dense anterograde and retrograde amnesia concerning for tissue damage in memory-forming areas.",
+    "word_count": 68
+  },
+  {
+    "case_id": "128",
+    "raw_output": "The patient's mental status on admission was significantly off baseline (sentence 14). Contributing factors included subarachnoid hemorrhage affecting mental status (sentence 15), possible subclinical seizures (sentence 16), and recent Dilantin load and Morphine with renal failure contributing to depressed mental status (sentence 17). Notably, the patient's mental status improved significantly the last 3 days prior to discharge (sentence 21), suggesting some recovery is possible, though she has a history of dementia (sentence 2).",
+    "parsed_answer": "The patient's mental status on admission was significantly off baseline . Contributing factors included subarachnoid hemorrhage affecting mental status , possible subclinical seizures , and recent Dilantin load and Morphine with renal failure contributing to depressed mental status . Notably, the patient's mental status improved significantly the last 3 days prior to discharge , suggesting some recovery is possible, though she has a history of dementia .",
+    "word_count": 67
+  },
+  {
+    "case_id": "129",
+    "raw_output": "The patient's weight loss of 13 pounds over 2-3 weeks was likely caused by metastatic neoplasm of unknown primary, thought to be indicative of non-small cell lung cancer. His chest CT showed lymphadenopathy and lesions suspicious for malignancy in the chest wall, ribs, and lungs. Bone scan showed multiple lytic metastases to the lumbar and thoracic spine and left femur. He also had decreased appetite, night sweats, and generalized weakness.",
+    "parsed_answer": "The patient's weight loss of 13 pounds over 2-3 weeks was likely caused by metastatic neoplasm of unknown primary, thought to be indicative of non-small cell lung cancer. His chest CT showed lymphadenopathy and lesions suspicious for malignancy in the chest wall, ribs, and lungs. Bone scan showed multiple lytic metastases to the lumbar and thoracic spine and left femur. He also had decreased appetite, night sweats, and generalized weakness.",
+    "word_count": 70
+  },
+  {
+    "case_id": "130",
+    "raw_output": "The patient sustained multiple lower extremity fractures including femur and bones in the lower right leg. He underwent an operation to fix the broken bones (ORIF) with VAC placement. Postoperatively, touchdown weightbearing of the right lower extremity and full weightbearing of the left lower extremity were maintained per Ortho recommendations. The incisional VAC was removed at discharge. He will require follow-up in orthopedic clinic in about 2 weeks and was recommended for rehab.",
+    "parsed_answer": "The patient sustained multiple lower extremity fractures including femur and bones in the lower right leg. He underwent an operation to fix the broken bones (ORIF) with VAC placement. Postoperatively, touchdown weightbearing of the right lower extremity and full weightbearing of the left lower extremity were maintained per Ortho recommendations. The incisional VAC was removed at discharge. He will require follow-up in orthopedic clinic in about 2 weeks and was recommended for rehab.",
+    "word_count": 73
+  },
+  {
+    "case_id": "131",
+    "raw_output": "Yes, the patient's dysuria is likely related to her hospitalization. Weeks into the hospitalization, while on the regular medical floor, the patient became acutely lethargic and cultures were taken. Urinalysis was highly suggestive of infection and urine culture grew E. coli. She was started on antibiotics, ultimately changed to Cefpodoxime for a total 7-day course to treat the urinary tract infection. A renal ultrasound was negative for abscess or pyelonephritis.",
+    "parsed_answer": "Yes, the patient's dysuria is likely related to her hospitalization. Weeks into the hospitalization, while on the regular medical floor, the patient became acutely lethargic and cultures were taken. Urinalysis was highly suggestive of infection and urine culture grew E. coli. She was started on antibiotics, ultimately changed to Cefpodoxime for a total 7-day course to treat the urinary tract infection. A renal ultrasound was negative for abscess or pyelonephritis.",
+    "word_count": 70
+  },
+  {
+    "case_id": "132",
+    "raw_output": "The bleeding was likely secondary to known laryngeal SCC versus radiation fibrosis. ENT was consulted and initially packed the nares. His warfarin was held and he was given FFP and vitamin K upon admission. He underwent coiling of his internal maxillary artery by vascular surgery. Regarding malignancy concerns, a biopsy from the neohypopharynx was negative, revealing chronic inflammation and focal basilar atypia consistent with prior radiation. An outpatient PET scan was recommended to evaluate for any other evidence of malignancy.",
+    "parsed_answer": "The bleeding was likely secondary to known laryngeal SCC versus radiation fibrosis. ENT was consulted and initially packed the nares. His warfarin was held and he was given FFP and vitamin K upon admission. He underwent coiling of his internal maxillary artery by vascular surgery. Regarding malignancy concerns, a biopsy from the neohypopharynx was negative, revealing chronic inflammation and focal basilar atypia consistent with prior radiation. An outpatient PET scan was recommended to evaluate for any other evidence of malignancy.",
+    "word_count": 80
+  },
+  {
+    "case_id": "133",
+    "raw_output": "There was no evidence of drug toxicity, as the patient denied any ingestions and had a negative tox screen on admission (sentence 8). The presentation was attributed to viral gastroenteritis and pharmacological over-blockade of the AV node from her home nodal blocking agents labetalol and verapamil (sentences 7, 17). LV hypokinesis on echocardiogram could be attributable to the negative inotropic effect of verapamil (sentence 12). Serial ECGs and cardiac enzymes were not suggestive of myocardial ischemia (sentence 11).",
+    "parsed_answer": "There was no evidence of drug toxicity, as the patient denied any ingestions and had a negative tox screen on admission . The presentation was attributed to viral gastroenteritis and pharmacological over-blockade of the AV node from her home nodal blocking agents labetalol and verapamil . LV hypokinesis on echocardiogram could be attributable to the negative inotropic effect of verapamil . Serial ECGs and cardiac enzymes were not suggestive of myocardial ischemia .",
+    "word_count": 73
+  },
+  {
+    "case_id": "134",
+    "raw_output": "The patient, a 78-year-old female, had a hemi arthroplasty for a right femoral neck fracture. She presented from rehab with low-grade temperatures, increased erythema, induration, and drainage from her incision. Blood cultures were positive for MRSA on admission, and MRSA infection of right hip fluid was discovered during surgical washout. Given the oozing from the previous operative wound, infection seemed most likely as the etiology of her sepsis.",
+    "parsed_answer": "The patient, a 78-year-old female, had a hemi arthroplasty for a right femoral neck fracture. She presented from rehab with low-grade temperatures, increased erythema, induration, and drainage from her incision. Blood cultures were positive for MRSA on admission, and MRSA infection of right hip fluid was discovered during surgical washout. Given the oozing from the previous operative wound, infection seemed most likely as the etiology of her sepsis.",
+    "word_count": 68
+  },
+  {
+    "case_id": "135",
+    "raw_output": "Based on the medical record, the patient's dizziness was thought to be due to post-meningeal infection, with MRI showing no masses causing it (sentence 19). Per neurology, he will likely have a prolonged course of dizziness and should be discharged to vestibular rehabilitation (sentence 21). Meclizine 50mg twice daily and ativan 0.5mg three times daily provided the best relief for his dizziness (sentence 22). The hospital course itself was prolonged, complicated by dizziness (sentence 3).",
+    "parsed_answer": "Based on the medical record, the patient's dizziness was thought to be due to post-meningeal infection, with MRI showing no masses causing it . Per neurology, he will likely have a prolonged course of dizziness and should be discharged to vestibular rehabilitation . Meclizine 50mg twice daily and ativan 0.5mg three times daily provided the best relief for his dizziness . The hospital course itself was prolonged, complicated by dizziness .",
+    "word_count": 71
+  },
+  {
+    "case_id": "136",
+    "raw_output": "Before surgery, alternate treatment options were considered. Initially, a fusion was deferred for constitutional reasons despite the patient's spondylolisthesis, coronal deformity, and suggestion of instability preoperatively. The patient was then treated with aggressive physical therapy for her progressive difficulty with instability. This was unsuccessful, and she presented for definitive fusion. The patient was admitted electively and underwent posterior lumbar fusion, which she tolerated well.",
+    "parsed_answer": "Before surgery, alternate treatment options were considered. Initially, a fusion was deferred for constitutional reasons despite the patient's spondylolisthesis, coronal deformity, and suggestion of instability preoperatively. The patient was then treated with aggressive physical therapy for her progressive difficulty with instability. This was unsuccessful, and she presented for definitive fusion. The patient was admitted electively and underwent posterior lumbar fusion, which she tolerated well.",
+    "word_count": 64
+  },
+  {
+    "case_id": "137",
+    "raw_output": "The patient's hemoptysis was attributed to inflammation of prior eroded tissue from old tuberculosis, with a new pneumonia as the precipitant (sentence 15). He was treated with antibiotics including ceftriaxone/azithromycin for community-acquired pneumonia (sentence 8), later switched to cefpodoxime (sentence 14). After recurrent massive hemoptysis, embolization of the right bronchial artery was performed successfully to stop bleeding (sentences 11, 21). He was discharged on antibiotics and instructed to follow up for a chest exam within three months (sentences 25, 27).",
+    "parsed_answer": "The patient's hemoptysis was attributed to inflammation of prior eroded tissue from old tuberculosis, with a new pneumonia as the precipitant . He was treated with antibiotics including ceftriaxone/azithromycin for community-acquired pneumonia , later switched to cefpodoxime . After recurrent massive hemoptysis, embolization of the right bronchial artery was performed successfully to stop bleeding . He was discharged on antibiotics and instructed to follow up for a chest exam within three months .",
+    "word_count": 73
+  },
+  {
+    "case_id": "138",
+    "raw_output": "Yes, there is a correlation between the lung infection and kidney malfunction. The patient was admitted with a right lower lobe pneumonia that led to sepsis with hypotension requiring vasopressor support with Levophed. His acute on chronic renal failure, with creatinine elevated to 4.9 from a baseline of 2.5, was attributed to acute tubular necrosis secondary to ischemia from hypotension. The hypotension from the sepsis/pneumonia directly caused the kidney injury.",
+    "parsed_answer": "Yes, there is a correlation between the lung infection and kidney malfunction. The patient was admitted with a right lower lobe pneumonia that led to sepsis with hypotension requiring vasopressor support with Levophed. His acute on chronic renal failure, with creatinine elevated to 4.9 from a baseline of 2.5, was attributed to acute tubular necrosis secondary to ischemia from hypotension. The hypotension from the sepsis/pneumonia directly caused the kidney injury.",
+    "word_count": 70
+  },
+  {
+    "case_id": "139",
+    "raw_output": "The patient's persistently high WBC level after diverting colostomy surgery remains without a definitive explanation. Extensive investigation including abdominal/pelvic CT showed no intra-abdominal abscess, bronchoscopy with lavage showed no growth, multiple blood cultures showed no growth, urine cultures were largely negative, C. diff was negative x5, and central line tip culture was negative. Drug fever was suspected given eosinophilia. A full understanding of the fevers remains elusive, but inflammatory causes remain high on the differential.",
+    "parsed_answer": "The patient's persistently high WBC level after diverting colostomy surgery remains without a definitive explanation. Extensive investigation including abdominal/pelvic CT showed no intra-abdominal abscess, bronchoscopy with lavage showed no growth, multiple blood cultures showed no growth, urine cultures were largely negative, C. diff was negative x5, and central line tip culture was negative. Drug fever was suspected given eosinophilia. A full understanding of the fevers remains elusive, but inflammatory causes remain high on the differential.",
+    "word_count": 75
+  },
+  {
+    "case_id": "140",
+    "raw_output": "The patient's elevated WBC likely reflected an infectious or inflammatory process following kidney transplant. He was admitted to the MICU with fever and hypotension concerning for bacterial sepsis (sentence 15). He was placed on broad-spectrum antibiotics including Vancomycin, Meropenem, and Fluconazole to cover bacterial and fungal sources (sentence 16). No bacterial source was ever isolated despite multiple urine, sputum, and blood cultures (sentence 20). CT imaging also showed progression of induration along the transplant kidney collecting system of unclear etiology (sentence 7).",
+    "parsed_answer": "The patient's elevated WBC likely reflected an infectious or inflammatory process following kidney transplant. He was admitted to the MICU with fever and hypotension concerning for bacterial sepsis . He was placed on broad-spectrum antibiotics including Vancomycin, Meropenem, and Fluconazole to cover bacterial and fungal sources . No bacterial source was ever isolated despite multiple urine, sputum, and blood cultures . CT imaging also showed progression of induration along the transplant kidney collecting system of unclear etiology .",
+    "word_count": 78
+  },
+  {
+    "case_id": "141",
+    "raw_output": "The patient was transferred to the critical care unit because her hospital course was complicated by multiple serious conditions following surgery. She had acute diverticulitis with sigmoid perforation requiring sigmoidectomy and Hartmann's pouch, and developed supraventricular tachycardia following the procedure. She also experienced acute on chronic diastolic heart failure and acute on chronic renal failure. Her complex cardiac history included coronary artery disease and prior CABG x 4, necessitating close monitoring.",
+    "parsed_answer": "The patient was transferred to the critical care unit because her hospital course was complicated by multiple serious conditions following surgery. She had acute diverticulitis with sigmoid perforation requiring sigmoidectomy and Hartmann's pouch, and developed supraventricular tachycardia following the procedure. She also experienced acute on chronic diastolic heart failure and acute on chronic renal failure. Her complex cardiac history included coronary artery disease and prior CABG x 4, necessitating close monitoring.",
+    "word_count": 71
+  },
+  {
+    "case_id": "142",
+    "raw_output": "The patient's hypoxia was felt to be likely multifactorial from possible sleep apnea, pulmonary hypertension, COPD, and possible rheumatoid arthritis disease. The echocardiogram showed mild symmetric left ventricular hypertrophy, normal left ventricular systolic function (LVEF 60-70%), right ventricular free wall hypertrophy, dilated right ventricular cavity, and moderate pulmonary artery systolic hypertension. Chest fluoroscopy revealed cardiomegaly with mild congestive heart failure, interstitial edema, and small right pleural effusion, confirming cardiac-related contributions.",
+    "parsed_answer": "The patient's hypoxia was felt to be likely multifactorial from possible sleep apnea, pulmonary hypertension, COPD, and possible rheumatoid arthritis disease. The echocardiogram showed mild symmetric left ventricular hypertrophy, normal left ventricular systolic function (LVEF 60-70%), right ventricular free wall hypertrophy, dilated right ventricular cavity, and moderate pulmonary artery systolic hypertension. Chest fluoroscopy revealed cardiomegaly with mild congestive heart failure, interstitial edema, and small right pleural effusion, confirming cardiac-related contributions.",
+    "word_count": 70
+  },
+  {
+    "case_id": "143",
+    "raw_output": "The patient's delirium was not due to inadequate weaning from Nardil or sepsis/meningitis. Urinalysis was negative, chest x-ray was clear, and MRI of the head was unremarkable. The differential diagnosis included withdrawal from alcohol and benzodiazepines, resolving toxicity of MAOI overdose, and potential contribution from unmasked dementia and/or underlying psychiatric illness. Neurology suggested possibly ongoing seizure activity from Nardil lowering seizure threshold, possibly complicated by benzodiazepine and/or alcohol withdrawal. Her delirium resolved by hospital day eight.",
+    "parsed_answer": "The patient's delirium was not due to inadequate weaning from Nardil or sepsis/meningitis. Urinalysis was negative, chest x-ray was clear, and MRI of the head was unremarkable. The differential diagnosis included withdrawal from alcohol and benzodiazepines, resolving toxicity of MAOI overdose, and potential contribution from unmasked dementia and/or underlying psychiatric illness. Neurology suggested possibly ongoing seizure activity from Nardil lowering seizure threshold, possibly complicated by benzodiazepine and/or alcohol withdrawal. Her delirium resolved by hospital day eight.",
+    "word_count": 76
+  },
+  {
+    "case_id": "144",
+    "raw_output": "The patient is continuing to take ASA because she has a history of CAD with unstable angina and underwent cardiac catheterization that demonstrated 90% occlusion of the ostial RCA, which was stented with two overlapping bare metal stents. She was treated with aspirin, statin, and plavix following the procedure. ASA 325 mg daily was included in her discharge medications to maintain stent patency and manage her CAD.",
+    "parsed_answer": "The patient is continuing to take ASA because she has a history of CAD with unstable angina and underwent cardiac catheterization that demonstrated 90% occlusion of the ostial RCA, which was stented with two overlapping bare metal stents. She was treated with aspirin, statin, and plavix following the procedure. ASA 325 mg daily was included in her discharge medications to maintain stent patency and manage her CAD.",
+    "word_count": 67
+  },
+  {
+    "case_id": "145",
+    "raw_output": "The patient's severe abdominal pain is caused by a bowel obstruction, where a 6-cm segment of terminal ileum with mural edema, mucosal hyperenhancement, and luminal narrowing causes proximal small bowel distension. MR Enterography confirmed small bowel obstruction and cecal obstruction secondary to a focal segment of persistent ascending colitis. This inflamed bowel becomes tangled and does not allow passage of stomach contents, causing nausea, vomiting, and pain.",
+    "parsed_answer": "The patient's severe abdominal pain is caused by a bowel obstruction, where a 6-cm segment of terminal ileum with mural edema, mucosal hyperenhancement, and luminal narrowing causes proximal small bowel distension. MR Enterography confirmed small bowel obstruction and cecal obstruction secondary to a focal segment of persistent ascending colitis. This inflamed bowel becomes tangled and does not allow passage of stomach contents, causing nausea, vomiting, and pain.",
+    "word_count": 67
+  },
+  {
+    "case_id": "146",
+    "raw_output": "The patient's vomiting was not attributed to hepatitis C. She presented with nausea, vomiting, and copious diarrhea causing hypotension. This was felt to be most likely from adrenal insufficiency and/or viral gastroenteritis. Her son also had a recent diarrheal illness, and it is possible that she had adrenal insufficiency with a superimposed viral illness causing her severe presentation. The primary diagnosis was adrenal insufficiency, with chronic hepatitis C listed as a secondary diagnosis.",
+    "parsed_answer": "The patient's vomiting was not attributed to hepatitis C. She presented with nausea, vomiting, and copious diarrhea causing hypotension. This was felt to be most likely from adrenal insufficiency and/or viral gastroenteritis. Her son also had a recent diarrheal illness, and it is possible that she had adrenal insufficiency with a superimposed viral illness causing her severe presentation. The primary diagnosis was adrenal insufficiency, with chronic hepatitis C listed as a secondary diagnosis.",
+    "word_count": 73
+  },
+  {
+    "case_id": "147",
+    "raw_output": "Yes, the changes in platelet counts were a significant concern. The patient experienced a dramatic drop from 173K to 5K over two weeks, leading to admission for a likely diagnosis of ITP. Despite treatment with Decadron, platelets briefly improved to 36K then dropped to 20K, prompting initiation of weekly Rituxan. Platelets continued declining to 14K and then 9K. She was subsequently hospitalized for hypotension and fever during a platelet transfusion.",
+    "parsed_answer": "Yes, the changes in platelet counts were a significant concern. The patient experienced a dramatic drop from 173K to 5K over two weeks, leading to admission for a likely diagnosis of ITP. Despite treatment with Decadron, platelets briefly improved to 36K then dropped to 20K, prompting initiation of weekly Rituxan. Platelets continued declining to 14K and then 9K. She was subsequently hospitalized for hypotension and fever during a platelet transfusion.",
+    "word_count": 70
+  },
+  {
+    "case_id": "148",
+    "raw_output": "The patient's presentation was consistent with a **viral exanthem** associated with high fevers. She had very high fevers >104 compatible with a viral infection, and symptoms were suggestive of viral exanthema with normal WBCs, mild CRP elevation, and high fevers that would not be compatible with a bacterial infection. She was ultimately confirmed positive for **Influenza A** by NP swab, which explained both the rash and the high fever.",
+    "parsed_answer": "The patient's presentation was consistent with a **viral exanthem** associated with high fevers. She had very high fevers >104 compatible with a viral infection, and symptoms were suggestive of viral exanthema with normal WBCs, mild CRP elevation, and high fevers that would not be compatible with a bacterial infection. She was ultimately confirmed positive for **Influenza A** by NP swab, which explained both the rash and the high fever.",
+    "word_count": 69
+  },
+  {
+    "case_id": "149",
+    "raw_output": "The patient underwent VATS and decortication of the right lung with chest tube placement for drainage of loculated, exudative pleural effusions. Following this, her respiratory status improved greatly, and she was discharged from the Medical Intensive Care Unit to the floor on three to four liters of supplemental oxygen with oxygen saturation in the mid 90s. Cardiology recommended further evaluation following discharge, possibly including cardiac catheterization, but not during the current hospitalization.",
+    "parsed_answer": "The patient underwent VATS and decortication of the right lung with chest tube placement for drainage of loculated, exudative pleural effusions. Following this, her respiratory status improved greatly, and she was discharged from the Medical Intensive Care Unit to the floor on three to four liters of supplemental oxygen with oxygen saturation in the mid 90s. Cardiology recommended further evaluation following discharge, possibly including cardiac catheterization, but not during the current hospitalization.",
+    "word_count": 72
+  },
+  {
+    "case_id": "150",
+    "raw_output": "The patient's heart rate intermittently reached 130s to 150s and she developed atrial fibrillation with rapid ventricular response when Lopressor was titrated to 50 mg twice daily. She was treated with 20 mg intravenous Lopressor, and when that did not work, a Diltiazem drip was started. After four to six hours, she converted to sinus rhythm. She was discharged on Lopressor 100 mg twice daily and a tapering course of amiodarone with cardiology follow-up planned.",
+    "parsed_answer": "The patient's heart rate intermittently reached 130s to 150s and she developed atrial fibrillation with rapid ventricular response when Lopressor was titrated to 50 mg twice daily. She was treated with 20 mg intravenous Lopressor, and when that did not work, a Diltiazem drip was started. After four to six hours, she converted to sinus rhythm. She was discharged on Lopressor 100 mg twice daily and a tapering course of amiodarone with cardiology follow-up planned.",
+    "word_count": 75
+  },
+  {
+    "case_id": "151",
+    "raw_output": "The patient's abdominal pain was caused by a 2-week history of intermittent cramping abdominal pain with no bowel movement in 2 weeks and abdominal distension. A CT scan showed innumerable omental masses and caking throughout the abdomen with a large volume of ascites. Diagnostic paracentesis cytology was positive for malignant cells. There was concern for cystadenocarcinoma. Oncology was consulted and felt the patient had a poor prognosis of less than 6 months.",
+    "parsed_answer": "The patient's abdominal pain was caused by a 2-week history of intermittent cramping abdominal pain with no bowel movement in 2 weeks and abdominal distension. A CT scan showed innumerable omental masses and caking throughout the abdomen with a large volume of ascites. Diagnostic paracentesis cytology was positive for malignant cells. There was concern for cystadenocarcinoma. Oncology was consulted and felt the patient had a poor prognosis of less than 6 months.",
+    "word_count": 72
+  },
+  {
+    "case_id": "152",
+    "raw_output": "The patient was maintained on IV morphine initially, then switched to oral oxycodone after she was found to have adjusted her morphine drip infusion rate. She was on oxycodone 5mg every 4 hours as needed for pain, with a taper plan. Due to her abuse of tylenol and narcotics and history of gastritis, she is contraindicated for tylenol, NSAIDs, and all opioids. Chronic pain service recommended gabapentin 300mg TID if pain persists.",
+    "parsed_answer": "The patient was maintained on IV morphine initially, then switched to oral oxycodone after she was found to have adjusted her morphine drip infusion rate. She was on oxycodone 5mg every 4 hours as needed for pain, with a taper plan. Due to her abuse of tylenol and narcotics and history of gastritis, she is contraindicated for tylenol, NSAIDs, and all opioids. Chronic pain service recommended gabapentin 300mg TID if pain persists.",
+    "word_count": 72
+  },
+  {
+    "case_id": "153",
+    "raw_output": "The primary diagnosis was most likely cholangiocarcinoma, a hepatobiliary malignancy presenting as a 3x3.5x2.5cm mass in the left lobe of the liver with contiguous extension into the porta hepatis, portal vein thrombosis, and encasement of the hepatic artery. The management included palliative metal stent placement for obstructive jaundice, ERCP for stent obstruction, and a planned CT-guided biopsy as an outpatient given the high risk of bleeding due to the mass's location near blood vessels.",
+    "parsed_answer": "The primary diagnosis was most likely cholangiocarcinoma, a hepatobiliary malignancy presenting as a 3x3.5x2.5cm mass in the left lobe of the liver with contiguous extension into the porta hepatis, portal vein thrombosis, and encasement of the hepatic artery. The management included palliative metal stent placement for obstructive jaundice, ERCP for stent obstruction, and a planned CT-guided biopsy as an outpatient given the high risk of bleeding due to the mass's location near blood vessels.",
+    "word_count": 74
+  },
+  {
+    "case_id": "154",
+    "raw_output": "The patient developed bradycardic episodes with heart rates in the 30s, hypotension, and syncope following hernia repair. Cardiology and the electrophysiology team were consulted and recommended a pacemaker for probable sick sinus syndrome vs. vasovagal episodes. The first episode was related to the perioperative period and the second related to an abdominal binder. The patient declined pacemaker placement and was discharged with instructions to follow up with electrophysiology/cardiology in 4 weeks.",
+    "parsed_answer": "The patient developed bradycardic episodes with heart rates in the 30s, hypotension, and syncope following hernia repair. Cardiology and the electrophysiology team were consulted and recommended a pacemaker for probable sick sinus syndrome vs. vasovagal episodes. The first episode was related to the perioperative period and the second related to an abdominal binder. The patient declined pacemaker placement and was discharged with instructions to follow up with electrophysiology/cardiology in 4 weeks.",
+    "word_count": 71
+  },
+  {
+    "case_id": "155",
+    "raw_output": "The patient was diagnosed with autoimmune enteritis, potentially Crohn's disease, based on MR enterography and pathology review. He was started on stress-dosed steroids but was not steroid responsive, so Remicade (immunosuppressive therapy) was initiated. He received 2 doses of Remicade during admission. He was discharged on TPN and advised to advance his diet orally as tolerated while continuing to work with his gastroenterologist on treatment and maintaining nutrition.",
+    "parsed_answer": "The patient was diagnosed with autoimmune enteritis, potentially Crohn's disease, based on MR enterography and pathology review. He was started on stress-dosed steroids but was not steroid responsive, so Remicade (immunosuppressive therapy) was initiated. He received 2 doses of Remicade during admission. He was discharged on TPN and advised to advance his diet orally as tolerated while continuing to work with his gastroenterologist on treatment and maintaining nutrition.",
+    "word_count": 68
+  },
+  {
+    "case_id": "156",
+    "raw_output": "The patient's confusion was attributed to hepatic encephalopathy vs. uremia. He was treated with lactulose and rifaximin with improvement in mental status, which was at baseline at time of discharge\u2014clear, coherent, alert, and interactive. The confusion was felt to be due to toxins that his liver was unable to clear. Additionally, his kidneys were not working well, requiring dialysis which he will need to continue. His total bilirubin increased from 2.0 to 5.4.",
+    "parsed_answer": "The patient's confusion was attributed to hepatic encephalopathy vs. uremia. He was treated with lactulose and rifaximin with improvement in mental status, which was at baseline at time of discharge\u2014clear, coherent, alert, and interactive. The confusion was felt to be due to toxins that his liver was unable to clear. Additionally, his kidneys were not working well, requiring dialysis which he will need to continue. His total bilirubin increased from 2.0 to 5.4.",
+    "word_count": 73
+  },
+  {
+    "case_id": "157",
+    "raw_output": "The patient was admitted to the hospital/ICU for dizziness and loss of consciousness with blood pressure of 80/palp and heart rate in the 40s with sinus bradycardia. She was treated with IV fluids and medications to support blood pressure and heart rate, and was intubated to help her breathe. Her condition rapidly improved. The episode may have been due to an interaction between her verapamil and the herbal supplement. Verapamil was discontinued.",
+    "parsed_answer": "The patient was admitted to the hospital/ICU for dizziness and loss of consciousness with blood pressure of 80/palp and heart rate in the 40s with sinus bradycardia. She was treated with IV fluids and medications to support blood pressure and heart rate, and was intubated to help her breathe. Her condition rapidly improved. The episode may have been due to an interaction between her verapamil and the herbal supplement. Verapamil was discontinued.",
+    "word_count": 72
+  },
+  {
+    "case_id": "158",
+    "raw_output": "The patient has a chronic 2-year history of paroxysmal abdominal pain of unclear etiology, worsening in severity and frequency over the past 6 months. She was found to have a small bowel obstruction proximal to a 6 cm narrowed segment of terminal ileum with terminal ileitis and colitis. MR enterography revealed significant inflammation of the cecum. A ventral hernia was also noted as possibly causing paroxysmal attacks of abdominal pain.",
+    "parsed_answer": "The patient has a chronic 2-year history of paroxysmal abdominal pain of unclear etiology, worsening in severity and frequency over the past 6 months. She was found to have a small bowel obstruction proximal to a 6 cm narrowed segment of terminal ileum with terminal ileitis and colitis. MR enterography revealed significant inflammation of the cecum. A ventral hernia was also noted as possibly causing paroxysmal attacks of abdominal pain.",
+    "word_count": 70
+  },
+  {
+    "case_id": "159",
+    "raw_output": "The patient's Alzheimer's dementia treatment plan includes continuation of his home regimen of Exelon 6 mg PO BID. For his hyperactive delirium, which was likely multifactorial from pain, hospitalization, SAH/SDH, intracranial contusions, and Foley catheter, the patient was initially treated with Haldol and required a 1:1 sitter. Haldol was eventually discontinued and replaced with quetiapine, which the patient tolerated well, no longer requiring a 1:1 sitter.",
+    "parsed_answer": "The patient's Alzheimer's dementia treatment plan includes continuation of his home regimen of Exelon 6 mg PO BID. For his hyperactive delirium, which was likely multifactorial from pain, hospitalization, SAH/SDH, intracranial contusions, and Foley catheter, the patient was initially treated with Haldol and required a 1:1 sitter. Haldol was eventually discontinued and replaced with quetiapine, which the patient tolerated well, no longer requiring a 1:1 sitter.",
+    "word_count": 66
+  },
+  {
+    "case_id": "160",
+    "raw_output": "The patient's anemia etiology was unclear, suspected as a mixed picture of loss, poor production, and/or destruction. Plans included GI workup starting with EGD, with colonoscopy as an outpatient when more stable. An endometrial ultrasound was also considered. Hematology workup would be pursued if no obvious etiology was found. The patient was discharged on iron 325 mg three times daily with a bowel regimen and follow-up for further workup of chronic iron deficiency anemia.",
+    "parsed_answer": "The patient's anemia etiology was unclear, suspected as a mixed picture of loss, poor production, and/or destruction. Plans included GI workup starting with EGD, with colonoscopy as an outpatient when more stable. An endometrial ultrasound was also considered. Hematology workup would be pursued if no obvious etiology was found. The patient was discharged on iron 325 mg three times daily with a bowel regimen and follow-up for further workup of chronic iron deficiency anemia.",
+    "word_count": 74
+  },
+  {
+    "case_id": "161",
+    "raw_output": "The patient's lower back pain is caused by a massive aggressive tumor involving the entire left and mid sacrum, right iliac bone, L3, and symphysis pubis, which most likely represents metastatic spread. CT torso also revealed marked liver involvement by large masses and multiple pulmonary metastases, indicating widely metastatic disease of unclear primary. The thoracic spine MRI showed no evidence of disc herniation, bony metastasis, or epidural abscess at that level.",
+    "parsed_answer": "The patient's lower back pain is caused by a massive aggressive tumor involving the entire left and mid sacrum, right iliac bone, L3, and symphysis pubis, which most likely represents metastatic spread. CT torso also revealed marked liver involvement by large masses and multiple pulmonary metastases, indicating widely metastatic disease of unclear primary. The thoracic spine MRI showed no evidence of disc herniation, bony metastasis, or epidural abscess at that level.",
+    "word_count": 71
+  },
+  {
+    "case_id": "162",
+    "raw_output": "The patient's Keppra was weaned off and replaced with Trileptal because Keppra can cause mood lability and psychiatric side effects (sentence 10). He was loaded with Dilantin for status epilepticus and maintained on 100 mg t.i.d. (sentence 12). Lamictal remained the same (sentence 13). He was discharged stable on Trileptal 600 mg t.i.d., Lamictal 150 mg t.i.d., and Dilantin 100 mg, with Dilantin to be tapered as outpatient (sentence 14). Psychiatric follow-up was recommended for suicidal ideation (sentence 31).",
+    "parsed_answer": "The patient's Keppra was weaned off and replaced with Trileptal because Keppra can cause mood lability and psychiatric side effects . He was loaded with Dilantin for status epilepticus and maintained on 100 mg t.i.d. . Lamictal remained the same . He was discharged stable on Trileptal 600 mg t.i.d., Lamictal 150 mg t.i.d., and Dilantin 100 mg, with Dilantin to be tapered as outpatient . Psychiatric follow-up was recommended for suicidal ideation .",
+    "word_count": 74
+  },
+  {
+    "case_id": "163",
+    "raw_output": "Initially there was concern that the worsening pain may represent a lupus flare, as serum C3 and C4 were low and rheumatology was consulted. However, rheumatology evaluated the patient and did not think her pain was related to a lupus flare. An MRI of her left shoulder showed supraspinatus tendonitis. Her shortness of breath was related to possible pneumonia confirmed on CT. Pain management recommended starting Lyrica, and her pain gradually improved.",
+    "parsed_answer": "Initially there was concern that the worsening pain may represent a lupus flare, as serum C3 and C4 were low and rheumatology was consulted. However, rheumatology evaluated the patient and did not think her pain was related to a lupus flare. An MRI of her left shoulder showed supraspinatus tendonitis. Her shortness of breath was related to possible pneumonia confirmed on CT. Pain management recommended starting Lyrica, and her pain gradually improved.",
+    "word_count": 72
+  },
+  {
+    "case_id": "164",
+    "raw_output": "The patient's fatigue and palpitations are related to her hyperthyroid state, likely secondary to thyroiditis from radioactive iodide therapy. In the emergency room, EKG revealed atrial fibrillation with heart rate in the 180s-190s, and she was cardioverted to sinus rhythm. Electrophysiology believed antiarrhythmic was unnecessary since the cause was hyperthyroidism. She was started on Tapazole 30 mg to decrease hormone synthesis, and Digoxin and Diltiazem for rate control, with outpatient endocrinology follow-up.",
+    "parsed_answer": "The patient's fatigue and palpitations are related to her hyperthyroid state, likely secondary to thyroiditis from radioactive iodide therapy. In the emergency room, EKG revealed atrial fibrillation with heart rate in the 180s-190s, and she was cardioverted to sinus rhythm. Electrophysiology believed antiarrhythmic was unnecessary since the cause was hyperthyroidism. She was started on Tapazole 30 mg to decrease hormone synthesis, and Digoxin and Diltiazem for rate control, with outpatient endocrinology follow-up.",
+    "word_count": 72
+  },
+  {
+    "case_id": "165",
+    "raw_output": "Based on the medical record, there is no documented plan to taper or discontinue opioids. At discharge, the patient was prescribed morphine 30 mg sustained release three tablets every 8 hours (sentences 26, 30) and hydromorphone 2 mg intravenously every 3 hours as needed for breakthrough pain (sentence 31). These opioids were prescribed for pain from diffusely metastatic disease involving the liver, lungs, and spine (sentence 9) and post-surgical recovery from spinal stabilization and mass debulking (sentence 14).",
+    "parsed_answer": "Based on the medical record, there is no documented plan to taper or discontinue opioids. At discharge, the patient was prescribed morphine 30 mg sustained release three tablets every 8 hours and hydromorphone 2 mg intravenously every 3 hours as needed for breakthrough pain . These opioids were prescribed for pain from diffusely metastatic disease involving the liver, lungs, and spine and post-surgical recovery from spinal stabilization and mass debulking .",
+    "word_count": 71
+  },
+  {
+    "case_id": "166",
+    "raw_output": "The patient's headache was caused by a dural venous sinus thrombosis in the left sigmoid sinus and left internal jugular, which caused a left temporal intraparenchymal hemorrhage. The etiology may have been her oral contraceptive pill Aviane, creating a hypercoagulable state. She was started on a heparin drip then Coumadin for at least 6 months to treat the clot. She was advised to never restart birth control products using estrogen.",
+    "parsed_answer": "The patient's headache was caused by a dural venous sinus thrombosis in the left sigmoid sinus and left internal jugular, which caused a left temporal intraparenchymal hemorrhage. The etiology may have been her oral contraceptive pill Aviane, creating a hypercoagulable state. She was started on a heparin drip then Coumadin for at least 6 months to treat the clot. She was advised to never restart birth control products using estrogen.",
+    "word_count": 70
+  },
+  {
+    "case_id": "167",
+    "raw_output": "The patient was found to have lung and brain lesions. A lung biopsy showed poorly differentiated squamous cell carcinoma, consistent with a primary lung cancer. He was transferred to the neurosurgery service and underwent a left craniotomy for tumor resection. Postoperative MRI demonstrated good resection of the mass. He was placed on steroids for swelling and inflammation and seizure prophylaxis, and an appointment was arranged with a primary oncologist.",
+    "parsed_answer": "The patient was found to have lung and brain lesions. A lung biopsy showed poorly differentiated squamous cell carcinoma, consistent with a primary lung cancer. He was transferred to the neurosurgery service and underwent a left craniotomy for tumor resection. Postoperative MRI demonstrated good resection of the mass. He was placed on steroids for swelling and inflammation and seizure prophylaxis, and an appointment was arranged with a primary oncologist.",
+    "word_count": 69
+  }
+]

@@ -4,9 +4,9 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
-#SBATCH --gres=gpu:4
-
-NUM_GPUS=4  # Must match SBATCH --gres gpu count
+#SBATCH --gres=gpu:1
+    
+NUM_GPUS=1  # Must match SBATCH --gres gpu count
 
 set -e
 
@@ -21,9 +21,9 @@ source .venv/bin/activate
 
 # --- Task ---
 INFERENCE_MODE="cloud"      # local / cloud
-DATASET="test"               # dev / test / test-2026
-PROMPT_INDEX=2
-MODEL="x-ai/grok-4.1-fast"
+DATASET="test-2026"               # dev / test / test-2026
+PROMPT_INDEX=6
+MODEL="anthropic/claude-opus-4.6"
     # --- Local Models ---
     # meta-llama/Llama-3.1-8B-Instruct
     # google/medgemma-27b-text-it
@@ -40,28 +40,31 @@ MODEL="x-ai/grok-4.1-fast"
     # --- Cloud Models ---
     # anthropic/claude-sonnet-4.5
         # prompt 8, temperature 0.1, top_p 0.95, max_tokens 150, repetition_penalty 1.0
-        # prompt 1, 
+        # prompt 1, temperature 0.1, top_p 0.95, max_tokens 150, repetition_penalty 1.0
         # prompt 2, temperature 0.1, top_p 0.95, max_tokens 150, repetition_penalty 1.0
-    # google/gemini-2.5-flash
-    # openai/gpt-5.2
     # anthropic/claude-opus-4.6
     # deepseek/deepseek-v3.2
     # x-ai/grok-4.1-fast
     # moonshotai/kimi-k2.5
     # minimax/minimax-m2.5
-    # openai/gpt-4.1
     # openai/gpt-5-mini
     # z-ai/glm-4.6v
+    # qwen/qwen3-max-thinking
+    # google/gemini-3-flash-preview
+    # google/gemini-2.5-flash
+    # openai/gpt-4.1
+    # openai/gpt-5.2
+    # z-ai/glm-5
 
 # --- GPU / Engine ---
 TENSOR_PARALLEL_SIZE=$NUM_GPUS  # Must match SBATCH --gres above
 GPU_MEMORY_UTILIZATION=0.95     # VRAM fraction (0.3-0.4 shared, 0.85-0.95 dedicated)
-MAX_MODEL_LEN=4096              # Context window in tokens (increase for long notes)
+MAX_MODEL_LEN=4096              # 150 for non-thinking models. Context window in tokens (increase for long notes)
 
 # --- Sampling ---
 TEMPERATURE=0.0                 # Lower = more faithful/deterministic, higher = more diverse
 TOP_P=0.95                      # Nucleus sampling cutoff (1.0 = disabled)
-MAX_TOKENS=150                  # Max tokens to generate per answer
+MAX_TOKENS=4096                 # 150 for non-thinking models. Max tokens to generate per answer
 REPETITION_PENALTY=1.0         # >1.0 discourages repetitive phrasing
 
 # --- File Directories ---
@@ -116,8 +119,8 @@ deactivate
 
 cd ../evaluation
 
-SIF_IMAGE="./builder.sif"
-UV_BIN=$(which uv)
+#SIF_IMAGE="./builder.sif"
+#UV_BIN=$(which uv)
 
 SUBMISSION_PATH="../outputs/${DATASET}/${OUTPUT_FILE}"
 KEY_PATH="../../data/${DATASET}/archehr-qa_key.json"
