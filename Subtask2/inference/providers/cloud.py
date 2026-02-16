@@ -14,10 +14,10 @@ class CloudProvider(BaseProvider):
     ):
         super().__init__(model_name)
 
-        # OpenRouter key (export OPENAI_API_KEY=$OPENROUTER_API_KEY)
-        api_key = os.environ.get("OPENAI_API_KEY")
+        # OpenRouter key
+        api_key = os.environ.get("OPENROUTER_API_KEY") or os.environ.get("OPENAI_API_KEY")
         if not api_key:
-            raise ValueError("OPENAI_API_KEY env variable is required")
+            raise ValueError("OPENROUTER_API_KEY or OPENAI_API_KEY env variable is required")
 
         # OpenAI SDK + OpenRouter headers (required for POST)
         self.client = OpenAI(

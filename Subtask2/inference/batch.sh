@@ -4,14 +4,14 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
-#SBATCH --gres=gpu:2
+#SBATCH --gres=gpu:4
 
 # Set the number of GPUs to use for tensor parallelism
-NUM_GPUS=2
+NUM_GPUS=4
 
 # GPU Memory Configuration
 # Adjust this value based on GPU availability (0.3-0.4 for shared GPUs, 0.85 for dedicated)
-GPU_MEMORY_UTILIZATION=0.45
+GPU_MEMORY_UTILIZATION=0.95
 
 set -e
 
@@ -22,9 +22,9 @@ source .venv/bin/activate
 
 
 # Configurable variables
-INFERENCE_MODE="local"  # local / cloud
-MODEL="meta-llama/Llama-3.1-8B-Instruct"
-    # --- Models ---
+INFERENCE_MODE="cloud"  # local / cloud
+MODEL="anthropic/claude-sonnet-4.5"
+    # --- Local Models ---
     # meta-llama/Llama-3.1-8B-Instruct
         # Needs 2 gpu's with 0.45 GPU memory utilization
     # google/medgemma-1.5-4b-it
@@ -35,8 +35,14 @@ MODEL="meta-llama/Llama-3.1-8B-Instruct"
     # google/gemma-3-27b-it
     # Qwen/Qwen3-32B
         # Needs 4 gpu's with 0.85-0.95 GPU memory utilization
+    
+    # --- Cloud Models ---
+    # anthropic/claude-sonnet-4.5
+    # google/gemini-2.5-flash
+    # openai/gpt-5.2
+    # anthropic/claude-opus-4.6
 DATASET="dev"  # dev / test / test-2026
-PROMPT_INDEX=6
+PROMPT_INDEX=5
 
 # Number of GPUs to use for tensor parallelism (should match SBATCH --gres)
 TENSOR_PARALLEL_SIZE=$NUM_GPUS
