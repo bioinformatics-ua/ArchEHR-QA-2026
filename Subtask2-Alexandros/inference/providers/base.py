@@ -36,6 +36,10 @@ class BaseProvider(ABC):
             content = content.replace(
                 "{CASE_ID}", str(case.get("case_id", ""))
             )
+        if "{CLINICAL_SPECIALTY}" in content:
+            content = content.replace(
+                "{CLINICAL_SPECIALTY}", str(case.get("clinical_specialty", ""))
+            )
 
         return [{"role": "user", "content": content}]
 

@@ -4,8 +4,9 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
-#SBATCH --gres=gpu:1
 #SBATCH --time=02:00:00
+#SBATCH --gres=gpu:1
+
 
 NUM_GPUS=1  # Must match SBATCH --gres gpu count
 # You need minimum 1 gpu to run evaluation after inference if you use a cloud model
@@ -22,10 +23,10 @@ source .venv/bin/activate
 # =============================================================================
 
 # --- Task ---
-INFERENCE_MODE="cloud"      # local / cloud
+INFERENCE_MODE="local"      # local / cloud
 DATASET="dev"               # dev / test / test-2026
-PROMPT_INDEX=1
-MODEL="qwen/qwen3-max-thinking"
+PROMPT_INDEX=9
+MODEL="BioMistral/BioMistral-7B"
     # --- Local Models ---
     # meta-llama/Llama-3.1-8B-Instruct
     # google/medgemma-27b-text-it
@@ -36,6 +37,11 @@ MODEL="qwen/qwen3-max-thinking"
         # 4 gpu's, 0.95 GPU memory utilization
     # Qwen/Qwen3-8B
         # 1 gpu, 0.95 GPU memory utilization
+    # google/medgemma-1.5-4b-it
+    # microsoft/biogpt
+    # khazarai/Bio-8B-it
+    # BioMistral/BioMistral-7B-GGUF
+    # BioMistral/BioMistral-7B
 
     # --- Cloud Models ---
     # anthropic/claude-sonnet-4.5
@@ -47,6 +53,13 @@ MODEL="qwen/qwen3-max-thinking"
     # openai/gpt-5-mini
     # qwen/qwen3-max-thinking
     # anthropic/claude-sonnet-4.6
+    # qwen/qwen3.5-plus-02-15
+    # z-ai/glm-5
+    # moonshotai/kimi-k2.5
+    # google/gemini-3-flash-preview
+    # mistralai/mistral-7b-instruct
+    # minimax/minimax-m2.5
+    # google/gemini-3-pro-preview
 
 # --- GPU / Engine ---
 TENSOR_PARALLEL_SIZE=$NUM_GPUS  # Must match SBATCH --gres above
@@ -83,7 +96,7 @@ export TORCH_COMPILE_DISABLE=1
 # =============================================================================
 # INFERENCE
 # =============================================================================
-echo "[1/2] Running inference..."
+echo "[1/3] Running inference..."
 
 uv run python inference.py \
     --xml-file "${DATA_DIR}/archehr-qa.xml" \
@@ -100,7 +113,7 @@ uv run python inference.py \
     --max-tokens $MAX_TOKENS \
     --repetition-penalty $REPETITION_PENALTY
 
-echo "[1/2] Inference complete."
+echo "[1/3] Inference complete."
 
 # =============================================================================
 # EVALUATION
@@ -108,13 +121,13 @@ echo "[1/2] Inference complete."
 KEY_PATH="../../data/${DATASET}/archehr-qa_key.json"
 
 if [ ! -f "${KEY_PATH}" ]; then
-    echo "[2/2] No key file found for ${DATASET}, skipping evaluation."
+    echo "[2/3] No key file found for ${DATASET}, skipping evaluation and analysis."
     echo "========================================"
     echo "Output: ${OUTPUT_DIR}/${OUTPUT_FILE}"
     exit 0
 fi
 
-echo "[2/2] Running evaluation..."
+echo "[2/3] Running evaluation..."
 
 deactivate
 
@@ -131,6 +144,23 @@ uv run python scoring_subtask_2.py \
     --key_path "$KEY_PATH" \
     --out_file_path "$OUT_FILE_PATH"
 
-echo "[2/2] Evaluation complete."
+echo "[2/3] Evaluation complete."
+
+# =============================================================================
+# RESULTS ANALYSIS (per-sentence P/R/F1)
+# =============================================================================
+echo "[3/3] Running per-sentence analysis..."
+
+ANALYSIS_OUT_PATH="../results-analysis/${DATASET}/${OUTPUT_FILE}"
+mkdir -p "../results-analysis/${DATASET}"
+
+uv run python results_analysis.py \
+    --submission_path "$SUBMISSION_PATH" \
+    --key_path "$KEY_PATH" \
+    --xml_path "../../data/${DATASET}/archehr-qa.xml" \
+    --out_file_path "$ANALYSIS_OUT_PATH"
+
+echo "[3/3] Analysis complete."
 echo "========================================"
-echo "Results: ${OUT_FILE_PATH}"
+echo "Results         : ${OUT_FILE_PATH}"
+echo "Per-sentence    : ${ANALYSIS_OUT_PATH}"

@@ -1,13 +1,13 @@
 #!/bin/bash
-#SBATCH --job-name=subtask2_ensemble
-#SBATCH --output=../logs/ensemble_%j.out
+#SBATCH --job-name=subtask2_union
+#SBATCH --output=../logs/union_%j.out
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 #SBATCH --time=04:00:00
-#SBATCH --gres=gpu:4
+#SBATCH --gres=gpu:1
 
-NUM_GPUS=4
+NUM_GPUS=1
 
 set -e
 
@@ -23,28 +23,19 @@ source .venv/bin/activate
 # --- Task ---
 INFERENCE_MODE="cloud"
 DATASET="dev"               # dev / test / test-2026
-PROMPT_INDEX=9
 MODEL="google/gemini-2.5-flash"
     # --- Cloud Models ---
+    # google/gemini-2.5-flash
     # anthropic/claude-sonnet-4.5
     # anthropic/claude-sonnet-4.6
     # x-ai/grok-4.1-fast
-    # openai/gpt-4.1
+PROMPT_INDICES_UNION="9 4"
+PROMPT_INDEX_CRITIC="3"
     # deepseek/deepseek-v3.2
     # qwen/qwen3-max-thinking
     # google/gemini-3-flash-preview
-    # google/gemini-2.5-flash
 
-    # --- Local Models ---
-    # meta-llama/Llama-3.1-8B-Instruct
-    # google/medgemma-27b-text-it
-    # google/gemma-3-27b-it
-    # google/medgemma-1.5-4b-it
 
-# --- Ensemble settings ---
-N_RUNS=5                    # Number of independent inference passes
-TEMPERATURE=0.0             # Higher temperature → more diversity between runs
-MIN_VOTES=4                 # Minimum runs a sentence must appear in to be included (1 = union, N_RUNS = intersection)
 
 # --- GPU / Engine ---
 TENSOR_PARALLEL_SIZE=$NUM_GPUS
@@ -52,6 +43,7 @@ GPU_MEMORY_UTILIZATION=0.95
 MAX_MODEL_LEN=4096
 
 # --- Sampling ---
+TEMPERATURE=0.0
 TOP_P=0.95
 MAX_TOKENS=512
 REPETITION_PENALTY=1.0
@@ -60,10 +52,10 @@ REPETITION_PENALTY=1.0
 DATA_DIR="../../data/${DATASET}"
 OUTPUT_DIR="../outputs/${DATASET}"
 
-# Auto-generate output filename  e.g. google-gemini-2-5-flash_prompt_5_ensemble5x_t0-7.json
+# Auto-generate output filename  e.g. google-gemini-2-5-flash_union_p9-p4.json
 MODEL_NAME=$(echo "$MODEL" | tr '/' '-' | tr '.' '-')
-TEMP_TAG=$(echo "$TEMPERATURE" | tr '.' '-')
-OUTPUT_FILE="${MODEL_NAME}_prompt_${PROMPT_INDEX}_ensemble${N_RUNS}x_t${TEMP_TAG}_votes${MIN_VOTES}.json"
+INDICES_TAG=$(echo "$PROMPT_INDICES" | tr ' ' '-' | sed 's/-/p/g' | sed 's/^/p/')
+OUTPUT_FILE="${MODEL_NAME}_union_${INDICES_TAG}.json"
 
 # Load .env
 if [ -f .env ]; then
@@ -78,19 +70,21 @@ export VLLM_USE_TRITON_FLASH_ATTN=0
 export TORCH_COMPILE_DISABLE=1
 
 # =============================================================================
-# ENSEMBLE INFERENCE
+# UNION INFERENCE (Step 1: union 9+4, Step 2: filter with 3)
 # =============================================================================
-echo "[1/3] Running ensemble inference (${N_RUNS} runs × prompt ${PROMPT_INDEX})..."
+echo "[1/4] Running union inference (prompts: ${PROMPT_INDICES_UNION})..."
 
-uv run python ensemble.py \
+MODEL_NAME=$(echo "$MODEL" | tr '/' '-' | tr '.' '-')
+INDICES_TAG_UNION=$(echo "$PROMPT_INDICES_UNION" | tr ' ' '-' | sed 's/-/p/g' | sed 's/^/p/')
+OUTPUT_FILE_UNION="${MODEL_NAME}_union_${INDICES_TAG_UNION}.json"
+
+uv run python union.py \
     --xml-file "${DATA_DIR}/archehr-qa.xml" \
     --prompt-file prompt.json \
-    --prompt-index $PROMPT_INDEX \
-    --output-file "${OUTPUT_DIR}/${OUTPUT_FILE}" \
+    --prompt-indices $PROMPT_INDICES_UNION \
+    --output-file "${OUTPUT_DIR}/${OUTPUT_FILE_UNION}" \
     --inference-mode "$INFERENCE_MODE" \
     --model "$MODEL" \
-    --n-runs $N_RUNS \
-    --min-votes $MIN_VOTES \
     --temperature $TEMPERATURE \
     --top-p $TOP_P \
     --max-tokens $MAX_TOKENS \
@@ -99,29 +93,53 @@ uv run python ensemble.py \
     --gpu-memory-utilization $GPU_MEMORY_UTILIZATION \
     --max-model-len $MAX_MODEL_LEN
 
-echo "[1/3] Ensemble inference complete."
+echo "[2/4] Union inference complete."
+
+echo "[3/4] Running critic/filter (prompt: ${PROMPT_INDEX_CRITIC})..."
+
+INDICES_TAG_FINAL="p9-p4-p3"
+OUTPUT_FILE_FINAL="${MODEL_NAME}_union_${INDICES_TAG_FINAL}.json"
+
+uv run python union.py \
+    --xml-file "${DATA_DIR}/archehr-qa.xml" \
+    --prompt-file prompt.json \
+    --prompt-indices $PROMPT_INDEX_CRITIC \
+    --filter-predictions "${OUTPUT_DIR}/${OUTPUT_FILE_UNION}" \
+    --output-file "${OUTPUT_DIR}/${OUTPUT_FILE_FINAL}" \
+    --inference-mode "$INFERENCE_MODE" \
+    --model "$MODEL" \
+    --temperature $TEMPERATURE \
+    --top-p $TOP_P \
+    --max-tokens $MAX_TOKENS \
+    --repetition-penalty $REPETITION_PENALTY \
+    --tensor-parallel-size $TENSOR_PARALLEL_SIZE \
+    --gpu-memory-utilization $GPU_MEMORY_UTILIZATION \
+    --max-model-len $MAX_MODEL_LEN
+
+echo "[4/4] Critic/filter step complete."
 
 # =============================================================================
 # EVALUATION
 # =============================================================================
+
 KEY_PATH="../../data/${DATASET}/archehr-qa_key.json"
 
 if [ ! -f "${KEY_PATH}" ]; then
-    echo "[2/3] No key file found for ${DATASET}, skipping evaluation."
+    echo "[5/5] No key file found for ${DATASET}, skipping evaluation."
     echo "========================================"
-    echo "Output: ${OUTPUT_DIR}/${OUTPUT_FILE}"
+    echo "Output: ${OUTPUT_DIR}/${OUTPUT_FILE_FINAL}"
     exit 0
 fi
 
-echo "[2/3] Running evaluation..."
+echo "[5/5] Running evaluation..."
 
 deactivate
 
 cd ../evaluation
 source .venv/bin/activate
 
-SUBMISSION_PATH="../outputs/${DATASET}/${OUTPUT_FILE}"
-OUT_FILE_PATH="../results/${DATASET}/${OUTPUT_FILE}"
+SUBMISSION_PATH="../outputs/${DATASET}/${OUTPUT_FILE_FINAL}"
+OUT_FILE_PATH="../results/${DATASET}/${OUTPUT_FILE_FINAL}"
 
 mkdir -p "../results/${DATASET}"
 
@@ -130,14 +148,14 @@ uv run python scoring_subtask_2.py \
     --key_path "$KEY_PATH" \
     --out_file_path "$OUT_FILE_PATH"
 
-echo "[2/3] Evaluation complete."
+echo "[5/5] Evaluation complete."
 
 # =============================================================================
 # RESULTS ANALYSIS (per-sentence P/R/F1)
 # =============================================================================
-echo "[3/3] Running per-sentence analysis..."
+echo "[6/6] Running per-sentence analysis..."
 
-ANALYSIS_OUT_PATH="../results-analysis/${DATASET}/${OUTPUT_FILE}"
+ANALYSIS_OUT_PATH="../results-analysis/${DATASET}/${OUTPUT_FILE_FINAL}"
 mkdir -p "../results-analysis/${DATASET}"
 
 uv run python results_analysis.py \
@@ -146,7 +164,7 @@ uv run python results_analysis.py \
     --xml_path "../../data/${DATASET}/archehr-qa.xml" \
     --out_file_path "$ANALYSIS_OUT_PATH"
 
-echo "[3/3] Analysis complete."
+echo "[6/6] Analysis complete."
 echo "========================================"
 echo "Results      : ${OUT_FILE_PATH}"
 echo "Per-sentence : ${ANALYSIS_OUT_PATH}"

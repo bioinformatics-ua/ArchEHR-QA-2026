@@ -111,6 +111,7 @@ def main():
             "clinician_question": case["clinician_question"],
             "patient_question": case.get("patient_question", ""),
             "patient_narrative": case.get("patient_narrative", ""),
+            "clinical_specialty": case.get("clinical_specialty", ""),
             "numbered_sentences": sentences_text,
             "sentences": sentences_text,
             "case_id": case["case_id"],

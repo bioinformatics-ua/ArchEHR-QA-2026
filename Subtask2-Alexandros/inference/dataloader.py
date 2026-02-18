@@ -29,6 +29,9 @@ class ArchEHRSubtask2DataLoader:
             if case_id is None:
                 raise ValueError("Found <case> without id")
 
+            # --- Clinical specialty ---
+            clinical_specialty = case.findtext("clinical_specialty", "").strip()
+
             # --- Clinician question ---
             clinician_question = case.findtext("clinician_question", "").strip()
             if not clinician_question:
@@ -70,6 +73,7 @@ class ArchEHRSubtask2DataLoader:
             cases.append(
                 {
                     "case_id": case_id,
+                    "clinical_specialty": clinical_specialty,
                     "clinician_question": clinician_question,
                     "patient_question": patient_question,
                     "sentences": sentences,
