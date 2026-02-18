@@ -97,127 +97,84 @@ def main():
     prompt_template = prompt_dict[str(args.prompt_index)]
 
     # ============================================================
-    # SENTENCE-BASED (PROMPTS 0, 1)
+    # INFERENCE
     # ============================================================
     raw_results = []
 
-    if args.prompt_index in [0, 1]:
-        for case in cases:
-            for sent in case["sentences"]:
-                payload = {
-                    "clinician_question": case["clinician_question"],
-                    "patient_question": case.get("patient_question", ""),
-                    "sentence": sent["text"],
-                }
+    for case in cases:
+        sentences_text = "\n".join(
+            f"ID {s['sentence_id']}: {s['text']}"
+            for s in case["sentences"]
+        )
 
-                prompt = provider.build_prompt(prompt_template, payload)
-                output = provider.generate(prompt)
-                label = output.strip().lower()
+        payload = {
+            "clinician_question": case["clinician_question"],
+            "patient_question": case.get("patient_question", ""),
+            "patient_narrative": case.get("patient_narrative", ""),
+            "numbered_sentences": sentences_text,
+            "sentences": sentences_text,
+            "case_id": case["case_id"],
+        }
 
-                raw_results.append({
-                    "case_id": case["case_id"],
-                    "sentence_id": str(sent["sentence_id"]),
-                    "label": label,
-                    "raw_output": output,
-                })
+        prompt = provider.build_prompt(prompt_template, payload)
+        output = provider.generate(prompt)
 
-            print(f"  Finished case {case['case_id']}")
-
-    # ============================================================
-    # CASE-BASED (PROMPTS 2+)
-    # ============================================================
-    else:
-        for case in cases:
-            sentences_text = "\n".join(
-                f"ID {s['sentence_id']}: {s['text']}"
-                for s in case["sentences"]
-            )
-
-            payload = {
-                "clinician_question": case["clinician_question"],
-                "patient_question": case.get("patient_question", ""),
-                "sentences": sentences_text,
-                "case_id": case["case_id"],
-            }
-
-            prompt = provider.build_prompt(prompt_template, payload)
-            output = provider.generate(prompt)
-
-            # Parse JSON response
-            parsed = provider.parse_response(output)
-            if parsed:
-                prediction = parsed.get("prediction", [])
-            else:
-                # Fallback: try to extract any JSON
-                json_match = re.search(r"(\[.*?\]|\{.*?\})", output, re.DOTALL)
-                if json_match:
-                    try:
-                        data = orjson.loads(json_match.group())
-                        if isinstance(data, list):
-                            data = next(
-                                (obj for obj in data
-                                 if isinstance(obj, dict)
-                                 and str(obj.get("case_id")) == str(case["case_id"])),
-                                data[0] if data else {}
-                            )
-                        prediction = data.get("prediction", [])
-                    except Exception:
-                        prediction = []
-                else:
-                    print(f"  Warning: No JSON found for case {case['case_id']}")
+        # Parse JSON response
+        parsed = provider.parse_response(output)
+        if parsed:
+            prediction = parsed.get("prediction", [])
+        else:
+            # Fallback: try to extract any JSON array or object
+            json_match = re.search(r"(\[.*?\]|\{.*?\})", output, re.DOTALL)
+            if json_match:
+                try:
+                    data = orjson.loads(json_match.group())
+                    if isinstance(data, list):
+                        data = next(
+                            (obj for obj in data
+                             if isinstance(obj, dict)
+                             and str(obj.get("case_id")) == str(case["case_id"])),
+                            data[0] if data else {}
+                        )
+                    prediction = data.get("prediction", [])
+                except Exception:
                     prediction = []
+            else:
+                print(f"  Warning: No JSON found for case {case['case_id']}")
+                prediction = []
 
-            if not isinstance(prediction, list):
-                prediction = [prediction]
+        if not isinstance(prediction, list):
+            prediction = [prediction]
 
-            # Validate IDs against actual sentence IDs
-            valid_ids = {str(s["sentence_id"]) for s in case["sentences"]}
-            clean_prediction = []
-            for p_id in prediction:
-                digits = re.findall(r"\d+", str(p_id))
-                if digits and digits[0] in valid_ids:
-                    clean_prediction.append(digits[0])
+        # Validate IDs against actual sentence IDs
+        valid_ids = {str(s["sentence_id"]) for s in case["sentences"]}
+        clean_prediction = []
+        for p_id in prediction:
+            digits = re.findall(r"\d+", str(p_id))
+            if digits and digits[0] in valid_ids:
+                clean_prediction.append(digits[0])
 
-            raw_results.append({
-                "case_id": case["case_id"],
-                "prediction": clean_prediction,
-                "raw_output": output,
-            })
+        raw_results.append({
+            "case_id": case["case_id"],
+            "prediction": clean_prediction,
+            "raw_output": output,
+        })
 
-            print(f"  Finished case {case['case_id']}")
+        print(f"  Finished case {case['case_id']}")
 
     # ============================================================
     # GROUPING FOR SUBMISSION
     # ============================================================
-    if args.prompt_index in [0, 1]:
-        # Group sentence-level labels into case-level predictions
-        case_map: dict[str, list[str]] = {str(c["case_id"]): [] for c in cases}
-        for r in raw_results:
-            if r["label"] in ("essential",):
-                case_map[str(r["case_id"])].append(str(r["sentence_id"]))
-
-        submission = []
-        for case_id, sentence_ids in case_map.items():
-            unique_ids = sorted(
-                list(set(sentence_ids)),
-                key=lambda x: int(x) if x.isdigit() else 0,
-            )
-            submission.append({
-                "case_id": str(case_id),
-                "prediction": unique_ids,
-            })
-    else:
-        # Case-level predictions are already grouped
-        submission = []
-        for r in raw_results:
-            unique_ids = sorted(
-                list(set(r["prediction"])),
-                key=lambda x: int(x) if x.isdigit() else 0,
-            )
-            submission.append({
-                "case_id": str(r["case_id"]),
-                "prediction": unique_ids,
-            })
+    submission = []
+    for r in raw_results:
+        unique_ids = sorted(
+            list(set(r["prediction"])),
+            key=lambda x: int(x) if x.isdigit() else 0,
+        )
+        submission.append({
+            "case_id": str(r["case_id"]),
+            "prediction": unique_ids,
+        })
 
     # ============================================================
     # SAVE OUTPUT
@@ -227,21 +184,7 @@ def main():
     with open(output_path, "w") as f:
         json.dump(submission, f, indent=2)
 
-    # --- Write analysis JSON (full raw outputs for debugging) ---
-    base_dir = Path(__file__).resolve().parent.parent
-    split = output_path.parent.name
-    fname = output_path.name
-    analysis_file = base_dir / "analysis" / split / fname
-    analysis_file.parent.mkdir(parents=True, exist_ok=True)
-
-    with open(analysis_file, "w") as f:
-        json.dump(raw_results, f, indent=2)
-
-    print(
-        f"[DONE] Subtask 2 inference finished.\n"
-        f"Submission: {output_path}\n"
-        f"Analysis:   {analysis_file}"
-    )
+    print(f"[DONE] Subtask 2 inference finished.\nOutput: {output_path}")
 
 
 if __name__ == "__main__":

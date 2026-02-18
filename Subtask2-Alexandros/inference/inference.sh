@@ -24,8 +24,8 @@ source .venv/bin/activate
 # --- Task ---
 INFERENCE_MODE="cloud"      # local / cloud
 DATASET="dev"               # dev / test / test-2026
-PROMPT_INDEX=7
-MODEL="anthropic/claude-sonnet-4.5"
+PROMPT_INDEX=1
+MODEL="qwen/qwen3-max-thinking"
     # --- Local Models ---
     # meta-llama/Llama-3.1-8B-Instruct
     # google/medgemma-27b-text-it
@@ -54,7 +54,7 @@ GPU_MEMORY_UTILIZATION=0.95     # VRAM fraction (0.3-0.4 shared, 0.85-0.95 dedic
 MAX_MODEL_LEN=4096              # Context window in tokens
 
 # --- Sampling ---
-TEMPERATURE=0.5                 # Lower = more faithful/deterministic
+TEMPERATURE=0.0                 # Lower = more faithful/deterministic
 TOP_P=0.95                      # Nucleus sampling cutoff (1.0 = disabled)
 MAX_TOKENS=512                  # Max tokens to generate per case
 REPETITION_PENALTY=1.0          # >1.0 discourages repetitive phrasing
