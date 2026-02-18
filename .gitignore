@@ -221,3 +221,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Ignore data, analysis, and output directories
+**/analysis/
+**/outputs/
+**/outputs_v2/
+**/results/
+**/results_v2/
+**/logs/
+**/final/
+
+# Ignore temporary scripts
+Subtask2/evaluation/missing_models.py
+
+# Ignore common output formats
+*.json
