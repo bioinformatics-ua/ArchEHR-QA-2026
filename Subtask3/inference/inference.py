@@ -121,6 +121,10 @@ def main():
     for (case, _), raw_output in zip(prompts_with_cases, outputs):
         answer = provider.parse_response(raw_output)
 
+        if not answer:
+            print(f"[case {case['case_id']}]: Empty output, inserting fallback.")
+            answer = "Insufficient information provided in the note excerpt."
+
         # Enforce 75-word limit
         words = answer.split()
         if len(words) > MAX_WORDS:

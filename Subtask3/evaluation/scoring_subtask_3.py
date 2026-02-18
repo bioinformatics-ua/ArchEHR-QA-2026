@@ -304,7 +304,7 @@ def score_submission(
     key_path,
     out_file_path,
     data_path,
-    quickumls_path="quickumls/",
+    quickumls_path="quickumls/final/",
     case_ids_to_score=None,
     device="cpu",
 ):
