@@ -1,12 +1,14 @@
 #!/bin/bash
-#SBATCH --job-name=subtask3_inference
+#SBATCH --job-name=subtask2_inference
 #SBATCH --output=../logs/inference_%j.out
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 #SBATCH --gres=gpu:1
-    
+#SBATCH --time=02:00:00
+
 NUM_GPUS=1  # Must match SBATCH --gres gpu count
+# You need minimum 1 gpu to run evaluation after inference if you use a cloud model
 
 set -e
 
@@ -21,51 +23,41 @@ source .venv/bin/activate
 
 # --- Task ---
 INFERENCE_MODE="cloud"      # local / cloud
-DATASET="test-2026"               # dev / test / test-2026
-PROMPT_INDEX=6
-MODEL="anthropic/claude-opus-4.6"
+DATASET="dev"               # dev / test / test-2026
+PROMPT_INDEX=7
+MODEL="anthropic/claude-sonnet-4.5"
     # --- Local Models ---
     # meta-llama/Llama-3.1-8B-Instruct
     # google/medgemma-27b-text-it
-        # prompt 8, 4 gpu's, 0.95 GPU memory utilization
+        # 4 gpu's, 0.95 GPU memory utilization
     # google/gemma-3-27b-it
         # 4 gpu's, 0.95 GPU memory utilization
     # Qwen/Qwen3-32B
         # 4 gpu's, 0.95 GPU memory utilization
     # Qwen/Qwen3-8B
         # 1 gpu, 0.95 GPU memory utilization
-    # zai-org/GLM-4.6V-Flash
-        # 1 gpu, 0.95 GPU memory utilization
 
     # --- Cloud Models ---
     # anthropic/claude-sonnet-4.5
-        # prompt 8, temperature 0.1, top_p 0.95, max_tokens 150, repetition_penalty 1.0
-        # prompt 1, temperature 0.1, top_p 0.95, max_tokens 150, repetition_penalty 1.0
-        # prompt 2, temperature 0.1, top_p 0.95, max_tokens 150, repetition_penalty 1.0
     # anthropic/claude-opus-4.6
     # deepseek/deepseek-v3.2
     # x-ai/grok-4.1-fast
-    # moonshotai/kimi-k2.5
-    # minimax/minimax-m2.5
-    # openai/gpt-5-mini
-    # z-ai/glm-4.6v
-    # qwen/qwen3-max-thinking
-    # google/gemini-3-flash-preview
     # google/gemini-2.5-flash
     # openai/gpt-4.1
-    # openai/gpt-5.2
-    # z-ai/glm-5
+    # openai/gpt-5-mini
+    # qwen/qwen3-max-thinking
+    # anthropic/claude-sonnet-4.6
 
 # --- GPU / Engine ---
 TENSOR_PARALLEL_SIZE=$NUM_GPUS  # Must match SBATCH --gres above
 GPU_MEMORY_UTILIZATION=0.95     # VRAM fraction (0.3-0.4 shared, 0.85-0.95 dedicated)
-MAX_MODEL_LEN=4096              # 150 for non-thinking models. Context window in tokens (increase for long notes)
+MAX_MODEL_LEN=4096              # Context window in tokens
 
 # --- Sampling ---
-TEMPERATURE=0.0                 # Lower = more faithful/deterministic, higher = more diverse
+TEMPERATURE=0.5                 # Lower = more faithful/deterministic
 TOP_P=0.95                      # Nucleus sampling cutoff (1.0 = disabled)
-MAX_TOKENS=4096                 # 150 for non-thinking models. Max tokens to generate per answer
-REPETITION_PENALTY=1.0         # >1.0 discourages repetitive phrasing
+MAX_TOKENS=512                  # Max tokens to generate per case
+REPETITION_PENALTY=1.0          # >1.0 discourages repetitive phrasing
 
 # --- File Directories ---
 DATA_DIR="../../data/${DATASET}"
@@ -113,28 +105,31 @@ echo "[1/2] Inference complete."
 # =============================================================================
 # EVALUATION
 # =============================================================================
+KEY_PATH="../../data/${DATASET}/archehr-qa_key.json"
+
+if [ ! -f "${KEY_PATH}" ]; then
+    echo "[2/2] No key file found for ${DATASET}, skipping evaluation."
+    echo "========================================"
+    echo "Output: ${OUTPUT_DIR}/${OUTPUT_FILE}"
+    exit 0
+fi
+
 echo "[2/2] Running evaluation..."
 
 deactivate
 
 cd ../evaluation
-
-SIF_IMAGE="./builder.sif"
-UV_BIN=$(which uv)
+source .venv/bin/activate
 
 SUBMISSION_PATH="../outputs/${DATASET}/${OUTPUT_FILE}"
-KEY_PATH="../../data/${DATASET}/archehr-qa_key.json"
-DATA_PATH="../../data/${DATASET}/archehr-qa.xml"
 OUT_FILE_PATH="../results/${DATASET}/${OUTPUT_FILE}"
 
 mkdir -p "../results/${DATASET}"
 
-singularity exec --nv "$SIF_IMAGE" "$UV_BIN" run python scoring_subtask_3.py \
-     --submission_path "$SUBMISSION_PATH" \
-     --key_path "$KEY_PATH" \
-     --data_path "$DATA_PATH" \
-     --quickumls_path ./quickumls/final \
-     --out_file_path "$OUT_FILE_PATH"
+uv run python scoring_subtask_2.py \
+    --submission_path "$SUBMISSION_PATH" \
+    --key_path "$KEY_PATH" \
+    --out_file_path "$OUT_FILE_PATH"
 
 echo "[2/2] Evaluation complete."
 echo "========================================"
