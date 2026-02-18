@@ -1,0 +1,33 @@
+[project]
+name = "evaluation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "==3.8.*"
+dependencies = [
+    "alignscore",
+    "bert-score==0.3.12",
+    "en-ner-bc5cdr-md",
+    "evaluate==0.4.0",
+    "huggingface-hub==0.16.4",
+    "lxml==5.3.1",
+    "matplotlib==3.5.3",
+    "nltk==3.8.1",
+    "numpy==1.24.4",
+    "pandas==1.3.5",
+    "pip>=25.0.1",
+    "quickumls==1.4.2",
+    "rouge-score==0.1.2",
+    "sacrebleu==2.5.1",
+    "sacremoses==0.1.1",
+    "scikit-learn==1.3.2",
+    "spacy==3.4.4",
+    "stanza==1.10.1",
+    "torch==1.13.1",
+    "tqdm==4.66.2",
+    "transformers==4.30.2",
+]
+
+[tool.uv.sources]
+alignscore = { git = "https://github.com/yuh-zha/AlignScore", rev = "a0936d5afee642a46b22f6c02a163478447aa493" }
+en-ner-bc5cdr-md = { url = "https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.1/en_ner_bc5cdr_md-0.5.1.tar.gz" }

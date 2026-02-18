@@ -1,0 +1,602 @@
+[
+  {
+    "case_id": "21",
+    "raw_output": "The record documents decompensated alcoholic and HCV cirrhosis with hepatic encephalopathy, ascites, esophageal varices s/p banding, portal gastropathy, and Budd-Chiari syndrome. He was admitted with toxic metabolic encephalopathy and acute renal failure, developed anuric renal failure consistent with hepato-renal syndrome, and GFR continued to decline. Hepatology did not think he was a candidate for transplant; with hepatic encephalopathy refractory to traditional treatment and exceeding limits of medical therapy, goals of care were transitioned to comfort.",
+    "parsed_answer": "The record documents decompensated alcoholic and HCV cirrhosis with hepatic encephalopathy, ascites, esophageal varices s/p banding, portal gastropathy, and Budd-Chiari syndrome. He was admitted with toxic metabolic encephalopathy and acute renal failure, developed anuric renal failure consistent with hepato-renal syndrome, and GFR continued to decline. Hepatology did not think he was a candidate for transplant; with hepatic encephalopathy refractory to traditional treatment and exceeding limits of medical therapy, goals of care were transitioned to comfort.",
+    "word_count": 75
+  },
+  {
+    "case_id": "22",
+    "raw_output": "He was transferred for emergent repair of his ruptured thoracoabdominal aortic aneurysm and underwent emergent salvage repair with a 34-mm Dacron tube graft using deep hypothermic circulatory arrest (1\u20132). The operative note included cardiac arrest x2; postoperatively he went to the intensive care unit with an open chest, intubated, sedated on pressors and inotropes (3\u20135). He returned to the OR for exploration and chest closure on [**2154-1-22**], and on [**1-25**] for abdominal closure, JP/drain placement, and feeding jejunostomy (6\u20137).",
+    "parsed_answer": "He was transferred for emergent repair of his ruptured thoracoabdominal aortic aneurysm and underwent emergent salvage repair with a 34-mm Dacron tube graft using deep hypothermic circulatory arrest (1\u20132). The operative note included cardiac arrest x2; postoperatively he went to the intensive care unit with an open chest, intubated, sedated on pressors and inotropes (3\u20135). He returned to the OR for exploration and chest closure on [**2154-1-22**], and on [**1-25**] for abdominal closure, JP/drain placement, and feeding jejunostomy (6\u20137).",
+    "word_count": 79
+  },
+  {
+    "case_id": "23",
+    "raw_output": "A chest x-ray was done because you were \"not holding your oxygen levels as high as we would like,\" and it indicated that you were developing a pneumonia (5). IV antibiotics were started for this right away, and you improved (6).",
+    "parsed_answer": "A chest x-ray was done because you were \"not holding your oxygen levels as high as we would like,\" and it indicated that you were developing a pneumonia . IV antibiotics were started for this right away, and you improved .",
+    "word_count": 41
+  },
+  {
+    "case_id": "24",
+    "raw_output": "55 yo M with end-stage sarcoid on 3LNC, transferred with shortness of breath, tachypnea, hypoxia, and fevers (1). He had been hypoxic for several days with O2 sats 91-92% on 100% NRB with desaturation to 86% with minimal exertion and was refusing to come to hospital (2). In the ED he was noted to be significantly hypoxic and tachypnic and was intubated due to concern for increasing work of breathing (4).",
+    "parsed_answer": "55 yo M with end-stage sarcoid on 3LNC, transferred with shortness of breath, tachypnea, hypoxia, and fevers . He had been hypoxic for several days with O2 sats 91-92% on 100% NRB with desaturation to 86% with minimal exertion and was refusing to come to hospital . In the ED he was noted to be significantly hypoxic and tachypnic and was intubated due to concern for increasing work of breathing .",
+    "word_count": 71
+  },
+  {
+    "case_id": "25",
+    "raw_output": "You were admitted to the hospital for shortness of breath and low oxygen levels that were believed to be due to an exacerbation of your chronic congestive heart failure (2). You were temporarily admitted to the intensive care unit, so that you could receive supplemental oxygen through a positive-pressure mask (3). You were given medications to help removed excess fluid from your body, and your symptoms subsequently improved (4).",
+    "parsed_answer": "You were admitted to the hospital for shortness of breath and low oxygen levels that were believed to be due to an exacerbation of your chronic congestive heart failure . You were temporarily admitted to the intensive care unit, so that you could receive supplemental oxygen through a positive-pressure mask . You were given medications to help removed excess fluid from your body, and your symptoms subsequently improved .",
+    "word_count": 69
+  },
+  {
+    "case_id": "26",
+    "raw_output": "He required multiple medications for sedation and was eventually intubated. The intubation was complicated by a pneumonia, and he was transferred to [**Hospital1 18**] for further management of his pneumonia and his mental status changes. He was treated with a 7 day course of antibiotics for his pneumonia and he improved.",
+    "parsed_answer": "He required multiple medications for sedation and was eventually intubated. The intubation was complicated by a pneumonia, and he was transferred to [**Hospital1 18**] for further management of his pneumonia and his mental status changes. He was treated with a 7 day course of antibiotics for his pneumonia and he improved.",
+    "word_count": 51
+  },
+  {
+    "case_id": "27",
+    "raw_output": "She was treated with IVF and aggressive pain control with dilaudid 1mg IV q3, and sedated on precedex and an ativan drip at 4mg/h (12). She was transferred to the ICU for closer monitoring and was intubated for airway protection (11,13). Discharge medications include Acetaminophen 325 mg PO Q6H as needed and Lorazepam 0.5 mg PO Q8H PRN and Lorazepam 1 mg PO HS PRN (18,24,25).",
+    "parsed_answer": "She was treated with IVF and aggressive pain control with dilaudid 1mg IV q3, and sedated on precedex and an ativan drip at 4mg/h . She was transferred to the ICU for closer monitoring and was intubated for airway protection . Discharge medications include Acetaminophen 325 mg PO Q6H as needed and Lorazepam 0.5 mg PO Q8H PRN and Lorazepam 1 mg PO HS PRN .",
+    "word_count": 66
+  },
+  {
+    "case_id": "28",
+    "raw_output": "The patient's abdominal pain gradually resolved, initially as NPO with IVF/TPN and then advanced to a regular diet (4). For discharge pain control, the frequency of vicodin was increased from twice a day to every 6 hours as needed for pain, and morphine liquid suspension was stopped (13,14). She should see a gastroenterologist within 2 weeks after discharge for management of pancreatitis/pancreatic hemorrhage (6).",
+    "parsed_answer": "The patient's abdominal pain gradually resolved, initially as NPO with IVF/TPN and then advanced to a regular diet . For discharge pain control, the frequency of vicodin was increased from twice a day to every 6 hours as needed for pain, and morphine liquid suspension was stopped . She should see a gastroenterologist within 2 weeks after discharge for management of pancreatitis/pancreatic hemorrhage .",
+    "word_count": 64
+  },
+  {
+    "case_id": "29",
+    "raw_output": "Anticoagulation for her upper extremity DVT was continued (lovenox) with coumadin being held given plan by IP to exchange out the tracheostomy tube in early [**Month (only) 116**] (2). After IP decided to hold off on this procedure, Lovenox was discontinued and the patient was restarted on coumadin with daily INRs being checked (3). It will be VERY important that your oxygen levels stay in the range of 88-92% (11).",
+    "parsed_answer": "Anticoagulation for her upper extremity DVT was continued (lovenox) with coumadin being held given plan by IP to exchange out the tracheostomy tube in early [**Month (only) 116**] . After IP decided to hold off on this procedure, Lovenox was discontinued and the patient was restarted on coumadin with daily INRs being checked . It will be VERY important that your oxygen levels stay in the range of 88-92% .",
+    "word_count": 70
+  },
+  {
+    "case_id": "30",
+    "raw_output": "The patient was supratherapeutic to 3.4, therefore coumadin was held for two days (6). She was restarted on her home dose of 7 mg of coumadin on [**5-22**] (7). On discharge her INR was 2.1 (8). She will have her INR drawn on [**5-27**] and have the results faxed to Dr. [**Last Name (STitle) 3029**] (9).",
+    "parsed_answer": "The patient was supratherapeutic to 3.4, therefore coumadin was held for two days . She was restarted on her home dose of 7 mg of coumadin on [**5-22**] . On discharge her INR was 2.1 . She will have her INR drawn on [**5-27**] and have the results faxed to Dr. [**Last Name (STitle) 3029**] .",
+    "word_count": 56
+  },
+  {
+    "case_id": "31",
+    "raw_output": "The final culture results from the outside hospital suggested that the patient had urinary tract infection caused by E coli. All cultures taken at our institution were negative for growth at the time of discharge. At [Hospital1] the patient initially received a dose of vancomycin then was continued on pipercillin-tazobactam, and when the urinary pathogen showed sensitivity to quinolones she was transitioned to oral ciprofloxacin therapy.",
+    "parsed_answer": "The final culture results from the outside hospital suggested that the patient had urinary tract infection caused by E coli. All cultures taken at our institution were negative for growth at the time of discharge. At [Hospital1] the patient initially received a dose of vancomycin then was continued on pipercillin-tazobactam, and when the urinary pathogen showed sensitivity to quinolones she was transitioned to oral ciprofloxacin therapy.",
+    "word_count": 66
+  },
+  {
+    "case_id": "32",
+    "raw_output": "You were transferred to our hospital for language problems and were found to have had a stroke. We think you have a genetic disorder called MELAS that caused a stroke-like episode. You were treated for a URINARY TRACT INFECTION, HYPONATREMIA, HYPOMAGNESEMIA, and HYPOPHOSPHATEMIA. We started enzyme supplementation and STOPPED METFORMIN, and STARTED COENZYME Q10, L-CARNITINE, CREATINE MONOPHOSPHATE, L-ARGININE, FISH OIL, and a MULTIVITAMIN.",
+    "parsed_answer": "You were transferred to our hospital for language problems and were found to have had a stroke. We think you have a genetic disorder called MELAS that caused a stroke-like episode. You were treated for a URINARY TRACT INFECTION, HYPONATREMIA, HYPOMAGNESEMIA, and HYPOPHOSPHATEMIA. We started enzyme supplementation and STOPPED METFORMIN, and STARTED COENZYME Q10, L-CARNITINE, CREATINE MONOPHOSPHATE, L-ARGININE, FISH OIL, and a MULTIVITAMIN.",
+    "word_count": 63
+  },
+  {
+    "case_id": "33",
+    "raw_output": "Admitted for confusion called hepatic encephalopathy due to build up of toxins your liver is unable to clear. This was attributed to not taking enough lactulose at home to have three bowel movements per day. In addition you were found to have a persistent UTI from not finishing your course of antibiotics and were started on a second course (START amoxicillin for 9 days).",
+    "parsed_answer": "Admitted for confusion called hepatic encephalopathy due to build up of toxins your liver is unable to clear. This was attributed to not taking enough lactulose at home to have three bowel movements per day. In addition you were found to have a persistent UTI from not finishing your course of antibiotics and were started on a second course (START amoxicillin for 9 days).",
+    "word_count": 64
+  },
+  {
+    "case_id": "34",
+    "raw_output": "You were admitted with confusion and low magnesium, potassium, and calcium. In the ED you had a seizure most likely due to your low electrolytes and alcohol withdrawal, and the low electrolytes were attributed to chronic diarrhea, alcohol use, and poor nutrition. Neurology recommended correction of your electrolytes and abstinence from alcohol; PT/OT/social work were concerned about your ability to care for yourself and you were discharged to a rehab facility.",
+    "parsed_answer": "You were admitted with confusion and low magnesium, potassium, and calcium. In the ED you had a seizure most likely due to your low electrolytes and alcohol withdrawal, and the low electrolytes were attributed to chronic diarrhea, alcohol use, and poor nutrition. Neurology recommended correction of your electrolytes and abstinence from alcohol; PT/OT/social work were concerned about your ability to care for yourself and you were discharged to a rehab facility.",
+    "word_count": 71
+  },
+  {
+    "case_id": "35",
+    "raw_output": "Admitted because your sodium, potassium, magnesium, and phosphorous levels were low, you were given fluids and electrolyte repletion to which you responded well (2\u20133). Your diuretics (lasix and HCTZ) were stopped and spironolactone started; you were likely dehydrated and may have an abnormal level of the hormone aldosterone; the level was sent (4\u20136). You were found to have a urinary tract infection with E.coli sensitive to ciprofloxacin and started on a 7 day course (8\u20139).",
+    "parsed_answer": "Admitted because your sodium, potassium, magnesium, and phosphorous levels were low, you were given fluids and electrolyte repletion to which you responded well (2\u20133). Your diuretics (lasix and HCTZ) were stopped and spironolactone started; you were likely dehydrated and may have an abnormal level of the hormone aldosterone; the level was sent (4\u20136). You were found to have a urinary tract infection with E.coli sensitive to ciprofloxacin and started on a 7 day course (8\u20139).",
+    "word_count": 75
+  },
+  {
+    "case_id": "36",
+    "raw_output": "You were admitted to [**Hospital1 69**] on [**2123-7-6**] for thyrotoxicosis/hyperthyroidism. You were treated here with resolution of your sypmtoms including hypertension, tacchycardia, and diarrhea and are being discharged on [**2123-7-8**] in good condition, with stable vital signs. You are being prescribed: Methimazole 20mg (take one pill twice a day) and Propranolol 20mg (take one pill, four times per day).",
+    "parsed_answer": "You were admitted to [**Hospital1 69**] on [**2123-7-6**] for thyrotoxicosis/hyperthyroidism. You were treated here with resolution of your sypmtoms including hypertension, tacchycardia, and diarrhea and are being discharged on [**2123-7-8**] in good condition, with stable vital signs. You are being prescribed: Methimazole 20mg (take one pill twice a day) and Propranolol 20mg (take one pill, four times per day).",
+    "word_count": 59
+  },
+  {
+    "case_id": "37",
+    "raw_output": "She endorses confusion (3) and presented with problems regarding your thinking, weight loss and latterly problems with [**Location (un) 1131**], writing and walking (12). Neurologic examination found mild right sided weakness, subtle coordination problems on the right, and reduced vision in the right visual field (13). MRI of the brain showed several masses with associated swelling and she was started on dexamethasone and keppra (14). She was assessed by neuro-oncology (18).",
+    "parsed_answer": "She endorses confusion and presented with problems regarding your thinking, weight loss and latterly problems with [**Location (un) 1131**], writing and walking . Neurologic examination found mild right sided weakness, subtle coordination problems on the right, and reduced vision in the right visual field . MRI of the brain showed several masses with associated swelling and she was started on dexamethasone and keppra . She was assessed by neuro-oncology .",
+    "word_count": 70
+  },
+  {
+    "case_id": "38",
+    "raw_output": "You were noted to have significant swelling in your legs, groin and abdomen due to excess fluid that accumulates because of your liver disease. We have made changes to your diuretic regimen: BEGIN TAKING Lasix (furosemide) 40 mg by mouth twice daily and BEGIN TAKING Aldactone (spironolactone) 50 mg by mouth daily. Electrolytes must be checked; if balanced and kidney function stable, your doctor may increase diuretics.",
+    "parsed_answer": "You were noted to have significant swelling in your legs, groin and abdomen due to excess fluid that accumulates because of your liver disease. We have made changes to your diuretic regimen: BEGIN TAKING Lasix (furosemide) 40 mg by mouth twice daily and BEGIN TAKING Aldactone (spironolactone) 50 mg by mouth daily. Electrolytes must be checked; if balanced and kidney function stable, your doctor may increase diuretics.",
+    "word_count": 67
+  },
+  {
+    "case_id": "39",
+    "raw_output": "She was found to have a pleural effusion caused by your liver disease (7) and underwent a thoracentesis to treat this fluid accumulation (8). She is continuing on diuretics, lasix and spironolactone to help prevent a reoccurrence of this effusion (9), with lasix 10mg daily and spironolactone 50mg daily restarted (14). Her urine output and weight will continued to be monitored and adjusted as needed (15), and she will need follow up with Hepatology (16).",
+    "parsed_answer": "She was found to have a pleural effusion caused by your liver disease and underwent a thoracentesis to treat this fluid accumulation . She is continuing on diuretics, lasix and spironolactone to help prevent a reoccurrence of this effusion , with lasix 10mg daily and spironolactone 50mg daily restarted . Her urine output and weight will continued to be monitored and adjusted as needed , and she will need follow up with Hepatology .",
+    "word_count": 74
+  },
+  {
+    "case_id": "40",
+    "raw_output": "You were diagnosed with bronchitis and small airway infection in the setting of COPD and treated with PO prednisone for a COPD exacerbation and a five-day course of azithromycin (1,3,4). You will finish short courses of azithromycin and prednisone at home (31). A repeat chest CT in ___ weeks and outpatient follow-up with Pulmonary Medicine are advised to assess interval change (9,11,16,36,37). If the lungs have not cleared, further evaluation for MAC pulmonary infection and malignancy is advised (10,17,19).",
+    "parsed_answer": "You were diagnosed with bronchitis and small airway infection in the setting of COPD and treated with PO prednisone for a COPD exacerbation and a five-day course of azithromycin . You will finish short courses of azithromycin and prednisone at home . A repeat chest CT in ___ weeks and outpatient follow-up with Pulmonary Medicine are advised to assess interval change . If the lungs have not cleared, further evaluation for MAC pulmonary infection and malignancy is advised .",
+    "word_count": 79
+  },
+  {
+    "case_id": "41",
+    "raw_output": "Cardiology was consulted and recommended a stress test. She underwent a regadenason stress/perfusion scan which showed likely fixed defect seen on prior scans with no e/o acute ischemia. The etiology of chest pressure was thought to be due to either COPD or anxiety.",
+    "parsed_answer": "Cardiology was consulted and recommended a stress test. She underwent a regadenason stress/perfusion scan which showed likely fixed defect seen on prior scans with no e/o acute ischemia. The etiology of chest pressure was thought to be due to either COPD or anxiety.",
+    "word_count": 43
+  },
+  {
+    "case_id": "42",
+    "raw_output": "CT abd/pelvis was notable for a 4mm gallstone within the cystic duct resulting in acute cholecystitis (3). RUQ ultrasound revealed gallstones/sludge (2). Given findings of gangrenous cholecystitis the patient was started on a 4 day course of unasyn, switched to augmentin (8), and her diet was advanced as tolerated without abdominal pain (12).",
+    "parsed_answer": "CT abd/pelvis was notable for a 4mm gallstone within the cystic duct resulting in acute cholecystitis . RUQ ultrasound revealed gallstones/sludge . Given findings of gangrenous cholecystitis the patient was started on a 4 day course of unasyn, switched to augmentin , and her diet was advanced as tolerated without abdominal pain .",
+    "word_count": 53
+  },
+  {
+    "case_id": "43",
+    "raw_output": "The note documents an ___ F with fibromyalgia, depression anxiety recently s/p thoracic and lumbar instrumentation by Dr. ___ ___ and ___ re-presenting with uncontrolled back pain since surgery (1,6). It also notes DJD, scoliosis on background of fibromyalgia/anxiety (3). There is specifically No CP/SOB, HDS documented (5).",
+    "parsed_answer": "The note documents an ___ F with fibromyalgia, depression anxiety recently s/p thoracic and lumbar instrumentation by Dr. ___ ___ and ___ re-presenting with uncontrolled back pain since surgery . It also notes DJD, scoliosis on background of fibromyalgia/anxiety . There is specifically No CP/SOB, HDS documented .",
+    "word_count": 48
+  },
+  {
+    "case_id": "44",
+    "raw_output": "Chest x-ray and rib x-ray did not show pneumonia or rib fractures, and a V/Q scan was indeterminate; you were deemed to be at very low risk for blood clot. Your flank pain is most likely due to inflammation of the tissues near your lungs and ribs from your bronchitis. Continue steroids to treat your bronchitis for 3 more days; prednisone 20mg was re-started, and continue all other medications as prescribed.",
+    "parsed_answer": "Chest x-ray and rib x-ray did not show pneumonia or rib fractures, and a V/Q scan was indeterminate; you were deemed to be at very low risk for blood clot. Your flank pain is most likely due to inflammation of the tissues near your lungs and ribs from your bronchitis. Continue steroids to treat your bronchitis for 3 more days; prednisone 20mg was re-started, and continue all other medications as prescribed.",
+    "word_count": 71
+  },
+  {
+    "case_id": "45",
+    "raw_output": "Your labwork and imaging studies are not suggestive of a stroke or other acute neurological issue (20). The symptoms you were experiencing yesterday may be related to medication use or a transient ischemic attack (TIA) (19). On your flight to ___, get up to walk and stretch several times, remember to take your aspirin, stay well hydrated to avoid symptoms such as lightheadedness or dizziness, and follow up with a cardiologist (24,25,17,18).",
+    "parsed_answer": "Your labwork and imaging studies are not suggestive of a stroke or other acute neurological issue . The symptoms you were experiencing yesterday may be related to medication use or a transient ischemic attack (TIA) . On your flight to ___, get up to walk and stretch several times, remember to take your aspirin, stay well hydrated to avoid symptoms such as lightheadedness or dizziness, and follow up with a cardiologist .",
+    "word_count": 72
+  },
+  {
+    "case_id": "46",
+    "raw_output": "CT imaging did not show any significant intra-thoracoabdominal injury (3). A final read of the CT torso noted an L1 compression fracture of the vertebral body, likely old, and you endorsed low back pain on admission (4,5). You also endorse back pain near L1 lateral to the right along the paraspinous muscles (6). You do not have any new neuro deficits, or trouble moving your bladder or bowels, decreasing suspicion for cord impingement (7).",
+    "parsed_answer": "CT imaging did not show any significant intra-thoracoabdominal injury . A final read of the CT torso noted an L1 compression fracture of the vertebral body, likely old, and you endorsed low back pain on admission . You also endorse back pain near L1 lateral to the right along the paraspinous muscles . You do not have any new neuro deficits, or trouble moving your bladder or bowels, decreasing suspicion for cord impingement .",
+    "word_count": 74
+  },
+  {
+    "case_id": "47",
+    "raw_output": "You were admitted after presenting in liver clinic with worsening belly fluid, chest pain, and low blood counts. You were evaluated with blood work and imaging to look for bleeding and tested for conditions breaking down blood cells; these tests returned negative, suggesting your low blood counts were consistent with your ongoing liver disease. You were given blood transfusions to treat your low blood counts, and you may need iron infusions outside the hospital.",
+    "parsed_answer": "You were admitted after presenting in liver clinic with worsening belly fluid, chest pain, and low blood counts. You were evaluated with blood work and imaging to look for bleeding and tested for conditions breaking down blood cells; these tests returned negative, suggesting your low blood counts were consistent with your ongoing liver disease. You were given blood transfusions to treat your low blood counts, and you may need iron infusions outside the hospital.",
+    "word_count": 74
+  },
+  {
+    "case_id": "48",
+    "raw_output": "You were admitted to the hospital for right-sided abdominal and back pain. A CT scan done in the emergency department showed new masses in your liver and nodules in your lungs. A biopsy was performed and the results were pending at discharge. You should follow-up in clinic to discuss these results with a physician.",
+    "parsed_answer": "You were admitted to the hospital for right-sided abdominal and back pain. A CT scan done in the emergency department showed new masses in your liver and nodules in your lungs. A biopsy was performed and the results were pending at discharge. You should follow-up in clinic to discuss these results with a physician.",
+    "word_count": 54
+  },
+  {
+    "case_id": "49",
+    "raw_output": "You had an MRI of your upper spine which showed significant swelling as well as strained ligaments and muscles. The neurology team believed your head pain was caused by the injuries above. You were given a soft collar to wear around your neck.",
+    "parsed_answer": "You had an MRI of your upper spine which showed significant swelling as well as strained ligaments and muscles. The neurology team believed your head pain was caused by the injuries above. You were given a soft collar to wear around your neck.",
+    "word_count": 43
+  },
+  {
+    "case_id": "50",
+    "raw_output": "She was found to have a positive pregnancy test at the OSH and states her LMP was 4 weeks ago (8). In the ED her HCG was positive (10). OB was consulted for recommendations and OB recommended an outpatient ultrasound as soon as possible (11,17).",
+    "parsed_answer": "She was found to have a positive pregnancy test at the OSH and states her LMP was 4 weeks ago . In the ED her HCG was positive . OB was consulted for recommendations and OB recommended an outpatient ultrasound as soon as possible .",
+    "word_count": 45
+  },
+  {
+    "case_id": "51",
+    "raw_output": "She has a right 1st rib fracture which can cause severe pain and shallow breaths because of the pain. Take her pain medication as directed to stay ahead of the pain so she can take deep breaths; if the pain medication is too sedating take half the dose and notify your physician. Use an incentive spirometer 4 times every hour while awake and a cough pillow when coughing, and Return to the Emergency Room right away for acute shortness of breath, increased pain, crepitus, or new chest pain, pressure, squeezing or tightness.",
+    "parsed_answer": "She has a right 1st rib fracture which can cause severe pain and shallow breaths because of the pain. Take her pain medication as directed to stay ahead of the pain so she can take deep breaths; if the pain medication is too sedating take half the dose and notify your physician. Use an incentive spirometer 4 times every hour while awake and a cough pillow when coughing, and Return to the Emergency Room right away for acute shortness of breath, increased pain, crepitus, or new chest pain, pressure, squeezing or tightness.",
+    "word_count": 92
+  },
+  {
+    "case_id": "52",
+    "raw_output": "You were admitted to the Neurology service because of left hand clumsiness. (1) We think you had inflammation on the surface of part of your brain, but we did not find a specific cause at the time of discharge. (2,3) There are still some tests pending and you should follow-up with neurology clinic as scheduled. (4) If you have any new symptoms or high fever, call the neurology clinic or go to the emergency room. (5)",
+    "parsed_answer": "You were admitted to the Neurology service because of left hand clumsiness. We think you had inflammation on the surface of part of your brain, but we did not find a specific cause at the time of discharge. There are still some tests pending and you should follow-up with neurology clinic as scheduled. If you have any new symptoms or high fever, call the neurology clinic or go to the emergency room.",
+    "word_count": 72
+  },
+  {
+    "case_id": "53",
+    "raw_output": "MRI showed no sign of stroke, and MRA showed preserved posterior circulation (4). It was suspected that her symptoms were related to a combination of her peripheral neuropathy, her autonomic instability, and her prior migraines (7). It is likely that your symptoms were secondary to a migraine (12).",
+    "parsed_answer": "MRI showed no sign of stroke, and MRA showed preserved posterior circulation . It was suspected that her symptoms were related to a combination of her peripheral neuropathy, her autonomic instability, and her prior migraines . It is likely that your symptoms were secondary to a migraine .",
+    "word_count": 48
+  },
+  {
+    "case_id": "54",
+    "raw_output": "The patient was Flu A positive with fever, cough, malaise, myalgias, and diarrhea, and during the admission was started on prednisone 40 mg QD, levofloxacin 750 mg QD, and oseltamivir. Discharge instructions state to finish the prednisone and levofloxacin course and to finish four more days of Tamiflu. They advised staying hydrated while recovering and noted patients are contagious for 48 hours after your last fever.",
+    "parsed_answer": "The patient was Flu A positive with fever, cough, malaise, myalgias, and diarrhea, and during the admission was started on prednisone 40 mg QD, levofloxacin 750 mg QD, and oseltamivir. Discharge instructions state to finish the prednisone and levofloxacin course and to finish four more days of Tamiflu. They advised staying hydrated while recovering and noted patients are contagious for 48 hours after your last fever.",
+    "word_count": 66
+  },
+  {
+    "case_id": "55",
+    "raw_output": "An MRI of your L shoulder showed a benign (not cancerous) lump of fat (7). The bone is normal (8). There is nothing that needs to be done about it today (9). Please discuss with your primary care doctor if you continue to have pain in the area (10).",
+    "parsed_answer": "An MRI of your L shoulder showed a benign (not cancerous) lump of fat . The bone is normal . There is nothing that needs to be done about it today . Please discuss with your primary care doctor if you continue to have pain in the area .",
+    "word_count": 49
+  },
+  {
+    "case_id": "56",
+    "raw_output": "He was admitted with nausea and abdominal pain and was found to have blockage of the biliary ducts. You underwent a special endoscopy (\"ERCP\") to remove the blockages and were started on antibiotics. Due to continued blockage, you were seen by radiologists and they placed external drains to relieve obstruction; follow-up with radiologists and infectious disease doctors will be important.",
+    "parsed_answer": "He was admitted with nausea and abdominal pain and was found to have blockage of the biliary ducts. You underwent a special endoscopy (\"ERCP\") to remove the blockages and were started on antibiotics. Due to continued blockage, you were seen by radiologists and they placed external drains to relieve obstruction; follow-up with radiologists and infectious disease doctors will be important.",
+    "word_count": 60
+  },
+  {
+    "case_id": "57",
+    "raw_output": "You were admitted because you were found to be anemic, you were having fatigue, and you were having leg swelling (3). Many blood tests were done and they revealed positive tests for Lupus (5), and you were started on many new medicines for your Lupus (6). If you have headaches, fevers, or any other new symptoms, please touch base with your PCP's office right away (13).",
+    "parsed_answer": "You were admitted because you were found to be anemic, you were having fatigue, and you were having leg swelling . Many blood tests were done and they revealed positive tests for Lupus , and you were started on many new medicines for your Lupus . If you have headaches, fevers, or any other new symptoms, please touch base with your PCP's office right away .",
+    "word_count": 66
+  },
+  {
+    "case_id": "58",
+    "raw_output": "You were admitted to the neurology service for a chief complaint of language difficulties (2). A CT scan demonstrated your old right frontal stroke as well as two smaller strokes on the left side (3). One of these may have contributed to your language difficulties, and an EEG test did not demonstrate seizures (4,5).",
+    "parsed_answer": "You were admitted to the neurology service for a chief complaint of language difficulties . A CT scan demonstrated your old right frontal stroke as well as two smaller strokes on the left side . One of these may have contributed to your language difficulties, and an EEG test did not demonstrate seizures .",
+    "word_count": 54
+  },
+  {
+    "case_id": "59",
+    "raw_output": "You were evaluated for abdominal pain, nausea, and diarrhea. Your diarrhea improved without intervention and was likely related to a viral gastroenteritis. Your pain was likely due to your hemorrhagic ovarian cyst and has been controlled with your usual pain medications.",
+    "parsed_answer": "You were evaluated for abdominal pain, nausea, and diarrhea. Your diarrhea improved without intervention and was likely related to a viral gastroenteritis. Your pain was likely due to your hemorrhagic ovarian cyst and has been controlled with your usual pain medications.",
+    "word_count": 41
+  },
+  {
+    "case_id": "60",
+    "raw_output": "His dyspnea improved significantly and he was transferred to the cardiology service. Cardiac catheterization and TEE demonstrated severe mitral stenosis, regurgitation, pulmonary hypertension, and moderate aortic stenosis; CT surgery was consulted and he underwent an aortic valve replacement and mitral valve replacement, both tissue valves. Postoperatively he was extubated, had chest tubes removed, was weaned off pressors, transferred to the surgical step down floor by post\u2011operative day four, and symptoms improved but were not eliminated.",
+    "parsed_answer": "His dyspnea improved significantly and he was transferred to the cardiology service. Cardiac catheterization and TEE demonstrated severe mitral stenosis, regurgitation, pulmonary hypertension, and moderate aortic stenosis; CT surgery was consulted and he underwent an aortic valve replacement and mitral valve replacement, both tissue valves. Postoperatively he was extubated, had chest tubes removed, was weaned off pressors, transferred to the surgical step down floor by post\u2011operative day four, and symptoms improved but were not eliminated.",
+    "word_count": 75
+  },
+  {
+    "case_id": "61",
+    "raw_output": "The record documents mild volume overload with left-sided failure, pulmonary edema, pleural effusions, and minimal basilar crackles, likely secondary to the atrial fibrillation. (19) TTE showed severe valvular disease that was most likely the cause of her CHF. (22) Diuretics were held in light of acute kidney injury, and after the patient converted to NSR symptoms of CHF resolved. (23) With lasix she had a creatinine bump so further diuresis was held; however, she converted to sinus rhythm and had self-diuresis with lessening of her CHF symptoms. (33)",
+    "parsed_answer": "The record documents mild volume overload with left-sided failure, pulmonary edema, pleural effusions, and minimal basilar crackles, likely secondary to the atrial fibrillation. TTE showed severe valvular disease that was most likely the cause of her CHF. Diuretics were held in light of acute kidney injury, and after the patient converted to NSR symptoms of CHF resolved. With lasix she had a creatinine bump so further diuresis was held; however, she converted to sinus rhythm and had self-diuresis with lessening of her CHF symptoms.",
+    "word_count": 84
+  },
+  {
+    "case_id": "62",
+    "raw_output": "During hospitalization he continued to pass guaiac positive, dark/tarry stools. The stomach mucosa showed erythema, friability and congestion with contact bleeding compatible with severe portal gastropathy, and the ob+ stools were attributed to portal hypertensive gastropathy thought to be due to old blood. His hematocrit remained stable in the low 30s after transfusion. Colonoscopy as an outpatient and followup with the Liver Center within 10 days were recommended; seek care for black or bloody stools.",
+    "parsed_answer": "During hospitalization he continued to pass guaiac positive, dark/tarry stools. The stomach mucosa showed erythema, friability and congestion with contact bleeding compatible with severe portal gastropathy, and the ob+ stools were attributed to portal hypertensive gastropathy thought to be due to old blood. His hematocrit remained stable in the low 30s after transfusion. Colonoscopy as an outpatient and followup with the Liver Center within 10 days were recommended; seek care for black or bloody stools.",
+    "word_count": 75
+  },
+  {
+    "case_id": "63",
+    "raw_output": "She was admitted with increased fatigue, hematocrit 19, and guaiac-positive stool; on the floor her hematocrit dropped from 32 to 25 and she passed a large melanotic stool (1,4). Esophagogastroduodenoscopy did not show active bleeding from the stomach or proximal duodenum and showed duodenal diverticulosis (6,7). The bleed was thought most likely from a diverticulum in the setting of a high INR, and after reversal with vitamin K and fresh-frozen plasma her hematocrit remained stable (9,10,14,15).",
+    "parsed_answer": "She was admitted with increased fatigue, hematocrit 19, and guaiac-positive stool; on the floor her hematocrit dropped from 32 to 25 and she passed a large melanotic stool . Esophagogastroduodenoscopy did not show active bleeding from the stomach or proximal duodenum and showed duodenal diverticulosis . The bleed was thought most likely from a diverticulum in the setting of a high INR, and after reversal with vitamin K and fresh-frozen plasma her hematocrit remained stable .",
+    "word_count": 76
+  },
+  {
+    "case_id": "64",
+    "raw_output": "Poor Physical exam; PERRL, spontaneous movements of all limbs, but did not follow commands. (3) No surgical intervention offered for this severe stroke given the high mortality rate associated within 1 month. (4) The patient had previously signed a living will and was made CMO for comfort measures only. (8)",
+    "parsed_answer": "Poor Physical exam; PERRL, spontaneous movements of all limbs, but did not follow commands. No surgical intervention offered for this severe stroke given the high mortality rate associated within 1 month. The patient had previously signed a living will and was made CMO for comfort measures only.",
+    "word_count": 47
+  },
+  {
+    "case_id": "65",
+    "raw_output": "His course included hypotension and anemia from persistent stomal variceal bleeding requiring ICU admission (2\u20133), failed/occluded TIPS with shunt occlusion and concern for infected TIPS (5\u20136,24,53). He had SBP, septic physiology, hematemesis with intubation, and persistent bacteremia with vancomycin-resistant Enterococcus, yeast, and Stenotrophomonas despite multiple antibiotics and drainages (10\u201314,18,25\u201328,51). CT showed areas of necrosis and SMA thrombosis; he was re-listed for another liver but refused and elected home hospice (37\u201339,42,30\u201332,54).",
+    "parsed_answer": "His course included hypotension and anemia from persistent stomal variceal bleeding requiring ICU admission (2\u20133), failed/occluded TIPS with shunt occlusion and concern for infected TIPS (5\u20136,24,53). He had SBP, septic physiology, hematemesis with intubation, and persistent bacteremia with vancomycin-resistant Enterococcus, yeast, and Stenotrophomonas despite multiple antibiotics and drainages (10\u201314,18,25\u201328,51). CT showed areas of necrosis and SMA thrombosis; he was re-listed for another liver but refused and elected home hospice (37\u201339,42,30\u201332,54).",
+    "word_count": 70
+  },
+  {
+    "case_id": "66",
+    "raw_output": "CT showed new metastatic lesions in the lungs and a pericardial effusion with tamponade on echocardiography. Family meetings with the patient, her husband, daughters, and palliative care occurred after cardiac tamponade was identified. The patient declined further chemotherapy and invasive therapies such as pericardiocentesis, and the decision was made to move toward hospice care with discharge to a hospice house with focus on comfort care and symptom management.",
+    "parsed_answer": "CT showed new metastatic lesions in the lungs and a pericardial effusion with tamponade on echocardiography. Family meetings with the patient, her husband, daughters, and palliative care occurred after cardiac tamponade was identified. The patient declined further chemotherapy and invasive therapies such as pericardiocentesis, and the decision was made to move toward hospice care with discharge to a hospice house with focus on comfort care and symptom management.",
+    "word_count": 68
+  },
+  {
+    "case_id": "67",
+    "raw_output": "Lobar pneumonia treated with good response with ceftriaxone and azithromycin. After several days of gentle diuresis, antibiotics and nebulizer treatments, patient was saturating 95% on room and breathing comfortably and discharged on continued antibiotics, furosemide, and albuterol with heart rate well-controlled with diltiazem SR 240mg and metoprolol succinate 100mg. Return to the emergency department for difficulty breathing, fever, fast heart rate, confusion, inability to eat, or chest pain or pressure.",
+    "parsed_answer": "Lobar pneumonia treated with good response with ceftriaxone and azithromycin. After several days of gentle diuresis, antibiotics and nebulizer treatments, patient was saturating 95% on room and breathing comfortably and discharged on continued antibiotics, furosemide, and albuterol with heart rate well-controlled with diltiazem SR 240mg and metoprolol succinate 100mg. Return to the emergency department for difficulty breathing, fever, fast heart rate, confusion, inability to eat, or chest pain or pressure.",
+    "word_count": 70
+  },
+  {
+    "case_id": "68",
+    "raw_output": "He was admitted to the ICU for observation and close monitoring after slip and fall resulted in Subarachnoid hemorrhage and subdural hematoma. CT demonstrated a small subdural hematoma along the superior sagittal sinus near the vertex, not appreciably changed, and Angiogram was negative for aneurysm. He was started on Nimodipine; his dilantin and nimodipine were stopped as he has never had a sz and his SAH is not thought to be aneurysmal.",
+    "parsed_answer": "He was admitted to the ICU for observation and close monitoring after slip and fall resulted in Subarachnoid hemorrhage and subdural hematoma. CT demonstrated a small subdural hematoma along the superior sagittal sinus near the vertex, not appreciably changed, and Angiogram was negative for aneurysm. He was started on Nimodipine; his dilantin and nimodipine were stopped as he has never had a sz and his SAH is not thought to be aneurysmal.",
+    "word_count": 72
+  },
+  {
+    "case_id": "69",
+    "raw_output": "A lesion was found on MRI consistent with Central Pontine Myelinolysis, which neurology attributes to rapid correction of hyponatremia (27,29). CPM is an irreversible process, but neurology noted he was quite alert and oriented before discharge, indicating he has not suffered an irreversible insult (30). He will need ongoing follow up with neurology and continue with aggressive physical therapy; he was discharged to rehab and started on nutritional supplements and anti-seizure medications (61,62,26,63).",
+    "parsed_answer": "A lesion was found on MRI consistent with Central Pontine Myelinolysis, which neurology attributes to rapid correction of hyponatremia . CPM is an irreversible process, but neurology noted he was quite alert and oriented before discharge, indicating he has not suffered an irreversible insult . He will need ongoing follow up with neurology and continue with aggressive physical therapy; he was discharged to rehab and started on nutritional supplements and anti-seizure medications .",
+    "word_count": 73
+  },
+  {
+    "case_id": "70",
+    "raw_output": "He was started on solumedrol 1g IV q24 for total of 14 day course (6). He was switched to prednisone then resumed solumedrol when repeat MRI brain showed increased inflammation and a new lesion in L middle cerebellar peduncle (7,8). Final diagnosis was myelitis/rhombencephalitis of unclear etiology, unable to differentiate ADEM versus first presentation of multiple sclerosis, and he will follow longitudinally with an outpatient neurologist who specializes in demyelinating diseases (14,15,16).",
+    "parsed_answer": "He was started on solumedrol 1g IV q24 for total of 14 day course . He was switched to prednisone then resumed solumedrol when repeat MRI brain showed increased inflammation and a new lesion in L middle cerebellar peduncle . Final diagnosis was myelitis/rhombencephalitis of unclear etiology, unable to differentiate ADEM versus first presentation of multiple sclerosis, and he will follow longitudinally with an outpatient neurologist who specializes in demyelinating diseases .",
+    "word_count": 72
+  },
+  {
+    "case_id": "71",
+    "raw_output": "A repeat EEG showed no seizures, so keppra was stopped, and the introduction of amantadine made the patient more alert and awake; she would occasionally whisper a 1-word answer or follow some commands like open your eyes, move your arm (21\u201322). Patient will need to be monitored for alertness and have her amantadine uptitrated as needed (24). Discharge Condition lists Mental Status: Clear and coherent; Level of Consciousness: Alert and interactive; Activity Status: Ambulatory - Independent (27\u201329).",
+    "parsed_answer": "A repeat EEG showed no seizures, so keppra was stopped, and the introduction of amantadine made the patient more alert and awake; she would occasionally whisper a 1-word answer or follow some commands like open your eyes, move your arm (21\u201322). Patient will need to be monitored for alertness and have her amantadine uptitrated as needed . Discharge Condition lists Mental Status: Clear and coherent; Level of Consciousness: Alert and interactive; Activity Status: Ambulatory - Independent (27\u201329).",
+    "word_count": 77
+  },
+  {
+    "case_id": "72",
+    "raw_output": "He was loaded with Dilantin, later converted to Keppra IV, and started on Keppra for seizure prophylaxis; discharge medication includes Levetiracetam. He was treated for pneumonia with antibiotics which were changed to Linezolid PO for a likely 10 day course. He was started on aspirin with plan to transition to coumadin on [**2134-11-28**]; discharge exam: awake, alert, oriented to self/place, follows simple commands, mild dysarthria, motor weakness throughout (R>L) with right pronator drift, unable to ambulate without assistance.",
+    "parsed_answer": "He was loaded with Dilantin, later converted to Keppra IV, and started on Keppra for seizure prophylaxis; discharge medication includes Levetiracetam. He was treated for pneumonia with antibiotics which were changed to Linezolid PO for a likely 10 day course. He was started on aspirin with plan to transition to coumadin on [**2134-11-28**]; discharge exam: awake, alert, oriented to self/place, follows simple commands, mild dysarthria, motor weakness throughout (R>L) with right pronator drift, unable to ambulate without assistance.",
+    "word_count": 78
+  },
+  {
+    "case_id": "73",
+    "raw_output": "",
+    "parsed_answer": "",
+    "word_count": 0
+  },
+  {
+    "case_id": "74",
+    "raw_output": "The first few weeks after you are discharged you may feel tired or fatigued; this is normal, and you should become a little stronger every day (21\u201323). Activity is the most important measure to prevent complications\u2014increase your activity slowly and do not do too much because you are feeling good (24,28). Do your breathing exercises every two hours and use your incentive spirometer 10 times every hour that you are awake (40,42). Call your Physician Immediately if you experience a productive cough with yellow or green sputum (47,65).",
+    "parsed_answer": "The first few weeks after you are discharged you may feel tired or fatigued; this is normal, and you should become a little stronger every day (21\u201323). Activity is the most important measure to prevent complications\u2014increase your activity slowly and do not do too much because you are feeling good . Do your breathing exercises every two hours and use your incentive spirometer 10 times every hour that you are awake . Call your Physician Immediately if you experience a productive cough with yellow or green sputum .",
+    "word_count": 88
+  },
+  {
+    "case_id": "75",
+    "raw_output": "He was status post right heart catheterization and transferred to the Medical Intensive Care Unit for monitoring and titration of his Flolan with the Swan\u2011Ganz catheter in place (2\u20133,6). He has scleroderma with CREST syndrome and associated pulmonary hypertension on Flolan (8\u20139). Repeat chest CT showed persistent ground\u2011glass opacities that may reflect congestive heart failure or possibly alveolitis from scleroderma, requiring further follow\u2011up; he was diuresed for right ventricular congestive heart failure (26\u201329,16\u201317,30).",
+    "parsed_answer": "He was status post right heart catheterization and transferred to the Medical Intensive Care Unit for monitoring and titration of his Flolan with the Swan\u2011Ganz catheter in place (2\u20133,6). He has scleroderma with CREST syndrome and associated pulmonary hypertension on Flolan (8\u20139). Repeat chest CT showed persistent ground\u2011glass opacities that may reflect congestive heart failure or possibly alveolitis from scleroderma, requiring further follow\u2011up; he was diuresed for right ventricular congestive heart failure (26\u201329,16\u201317,30).",
+    "word_count": 73
+  },
+  {
+    "case_id": "76",
+    "raw_output": "He was admitted with high fevers, chills, cough and post-tussive emesis and transferred to MICU for recurrent fever, hypoxia and tachypnea. A CT chest showed basilar-predominant pulmonary fibrosis, most compatible with fibrotic NSIP related to the patient's known diagnosis of scleroderma, with associated esophageal dilatation. However, extensive new ground-glass opacities throughout both lungs are most likely infectious in etiology\u2014CT impression notes pneumonia likely viral and, given the history of HIV, PCP should be considered.",
+    "parsed_answer": "He was admitted with high fevers, chills, cough and post-tussive emesis and transferred to MICU for recurrent fever, hypoxia and tachypnea. A CT chest showed basilar-predominant pulmonary fibrosis, most compatible with fibrotic NSIP related to the patient's known diagnosis of scleroderma, with associated esophageal dilatation. However, extensive new ground-glass opacities throughout both lungs are most likely infectious in etiology\u2014CT impression notes pneumonia likely viral and, given the history of HIV, PCP should be considered.",
+    "word_count": 74
+  },
+  {
+    "case_id": "77",
+    "raw_output": "After the stent he was noted to have oozing from the left groin site and developed hypotension to 67/50 with a heart rate in the 50s (6,8). A hematocrit was 23.5, down from 32, and he was taken emergently to the operating room for exploration of his left groin site for evidence of hematoma (14,15,17). In the operating room it was negative for hematoma, and he received a total of 6 units of packed red blood cells (19,16).",
+    "parsed_answer": "After the stent he was noted to have oozing from the left groin site and developed hypotension to 67/50 with a heart rate in the 50s . A hematocrit was 23.5, down from 32, and he was taken emergently to the operating room for exploration of his left groin site for evidence of hematoma . In the operating room it was negative for hematoma, and he received a total of 6 units of packed red blood cells .",
+    "word_count": 78
+  },
+  {
+    "case_id": "78",
+    "raw_output": "Status post catheterization the patient had serosanguinous blood discharge and ooze from around sheaths and developed a large right groin hematoma that continued to expand. A vascular groin C\u2011clamp was applied and Vascular Surgery was consulted; ultrasound demonstrated a large right groin hematoma with no evidence of pseudo\u2011aneurysm or arteriovenous fistula. He required five units of blood, was on bed rest with leg immobilization, and repeat ultrasound showed no hematoma expansion; size stable at discharge.",
+    "parsed_answer": "Status post catheterization the patient had serosanguinous blood discharge and ooze from around sheaths and developed a large right groin hematoma that continued to expand. A vascular groin C\u2011clamp was applied and Vascular Surgery was consulted; ultrasound demonstrated a large right groin hematoma with no evidence of pseudo\u2011aneurysm or arteriovenous fistula. He required five units of blood, was on bed rest with leg immobilization, and repeat ultrasound showed no hematoma expansion; size stable at discharge.",
+    "word_count": 75
+  },
+  {
+    "case_id": "79",
+    "raw_output": "She was transferred to [**Hospital1 18] for cath. Afterward, the patient developed a rapidly expanding left groin hematoma. She was given protamine, and CT showed left groin hematoma with none on right. There was no pseudoaneurysm/RP bleed, and the patient was hypotensive during the case requiring dopamine gtt temporarily.",
+    "parsed_answer": "She was transferred to [**Hospital1 18] for cath. Afterward, the patient developed a rapidly expanding left groin hematoma. She was given protamine, and CT showed left groin hematoma with none on right. There was no pseudoaneurysm/RP bleed, and the patient was hypotensive during the case requiring dopamine gtt temporarily.",
+    "word_count": 49
+  },
+  {
+    "case_id": "80",
+    "raw_output": "You underwent cardiac cath and BMS was placed to your RCA (2,4). You received integrillin gtt and were started on plavix after the procedure (6). You had a small mild right groin hematoma post procedure, and your anemia with Hct nadir 25 was likely blood loss from the R groin hematoma (11,24\u201326). There were no indications of tense hematoma or active bleed at discharge (25).",
+    "parsed_answer": "You underwent cardiac cath and BMS was placed to your RCA . You received integrillin gtt and were started on plavix after the procedure . You had a small mild right groin hematoma post procedure, and your anemia with Hct nadir 25 was likely blood loss from the R groin hematoma (11,24\u201326). There were no indications of tense hematoma or active bleed at discharge .",
+    "word_count": 65
+  },
+  {
+    "case_id": "81",
+    "raw_output": "The patient underwent an urgent catheterization with stent to the left anterior descending and was transferred in cardiogenic shock with an intra-aortic balloon pump in place (16, 14, 17). An intra-aortic balloon pump was placed, which was complicated by a left groin bleed (13). The patient was given a heparin intravenous bolus (5).",
+    "parsed_answer": "The patient underwent an urgent catheterization with stent to the left anterior descending and was transferred in cardiogenic shock with an intra-aortic balloon pump in place . An intra-aortic balloon pump was placed, which was complicated by a left groin bleed . The patient was given a heparin intravenous bolus .",
+    "word_count": 51
+  },
+  {
+    "case_id": "82",
+    "raw_output": "The patient underwent cardiac catherization and is s/p drug-eluting stent to the RCA (6\u20137,3). The catherization was complicated by hypotension (likely vagal) and a right groin hematoma (8,16,11). CT abdomen/pelvis was negative for retroperitoneal bleeding and ultrasound revealed a possible reversal of flow without obvious pseudoaneurysm; the hematocrit remained stable and the groin bruise had been stable for 48 hours at discharge (12\u201313,15,23).",
+    "parsed_answer": "The patient underwent cardiac catherization and is s/p drug-eluting stent to the RCA (6\u20137,3). The catherization was complicated by hypotension (likely vagal) and a right groin hematoma . CT abdomen/pelvis was negative for retroperitoneal bleeding and ultrasound revealed a possible reversal of flow without obvious pseudoaneurysm; the hematocrit remained stable and the groin bruise had been stable for 48 hours at discharge (12\u201313,15,23).",
+    "word_count": 63
+  },
+  {
+    "case_id": "83",
+    "raw_output": "The patient's RCA had 99% ostial stenosis and was stented with a bare metal stent with good result (2). Her catheterization was complicated by multiple attempts at venous access which yielded arterial blood, and she developed a large right groin hematoma during the case (3\u20134,5). She required three units of blood due to falling hematocrit, and at discharge the groin hematoma was large but stable with no evidence of pseudoaneurysm on exam or ultrasound and hematocrit stable (12,11,25\u201326).",
+    "parsed_answer": "The patient's RCA had 99% ostial stenosis and was stented with a bare metal stent with good result . Her catheterization was complicated by multiple attempts at venous access which yielded arterial blood, and she developed a large right groin hematoma during the case (3\u20134,5). She required three units of blood due to falling hematocrit, and at discharge the groin hematoma was large but stable with no evidence of pseudoaneurysm on exam or ultrasound and hematocrit stable (12,11,25\u201326).",
+    "word_count": 78
+  },
+  {
+    "case_id": "84",
+    "raw_output": "Her symptoms were concerning for GBS. Her CSF was normal (WBC 1, RBC 0, Polys 0, Lymphs 90, Monos 10) and an EMG was normal. The likelihood of a GBS diagnosis was very low, and the discharge note states the diagnosis of Guillain-[**Location (un) **] Syndrome is unlikely; the overall diagnosis remained still unclear.",
+    "parsed_answer": "Her symptoms were concerning for GBS. Her CSF was normal (WBC 1, RBC 0, Polys 0, Lymphs 90, Monos 10) and an EMG was normal. The likelihood of a GBS diagnosis was very low, and the discharge note states the diagnosis of Guillain-[**Location (un) **] Syndrome is unlikely; the overall diagnosis remained still unclear.",
+    "word_count": 54
+  },
+  {
+    "case_id": "85",
+    "raw_output": "Neurology was consulted and made the diagnosis of [**Doctor First Name **]-[**Doctor Last Name **] variant of guillain-[**Location (un) **] syndrome (acute inflammatory demyelinating polyneuropathy); the patient was transferred to the neurology service and treated with a 5-day course of IVIG (22). Bilateral ophthalmoplegia was noted (19). Neuro exam shows slight up and down gaze, reactive pupils, areflexia and slight ataxia on finger-to-nose (28).",
+    "parsed_answer": "Neurology was consulted and made the diagnosis of [**Doctor First Name **]-[**Doctor Last Name **] variant of guillain-[**Location (un) **] syndrome (acute inflammatory demyelinating polyneuropathy); the patient was transferred to the neurology service and treated with a 5-day course of IVIG . Bilateral ophthalmoplegia was noted . Neuro exam shows slight up and down gaze, reactive pupils, areflexia and slight ataxia on finger-to-nose .",
+    "word_count": 64
+  },
+  {
+    "case_id": "86",
+    "raw_output": "She was evaluated for Guillain-[**Location (un) **] syndrome given progressive numbness following a recent infection and was sent for further evaluation and possible plasmapheresis. EMG showed a moderate sensorimotor demyelination process with some axonal features, and because of progressive weakness the patient was started on IVIG with initial improvement of symptoms. Discharge Diagnosis: polyneuropathy; arsenic toxicity, with elevated levels in the 24hr urine collection confirming arsenic exposure.",
+    "parsed_answer": "She was evaluated for Guillain-[**Location (un) **] syndrome given progressive numbness following a recent infection and was sent for further evaluation and possible plasmapheresis. EMG showed a moderate sensorimotor demyelination process with some axonal features, and because of progressive weakness the patient was started on IVIG with initial improvement of symptoms. Discharge Diagnosis: polyneuropathy; arsenic toxicity, with elevated levels in the 24hr urine collection confirming arsenic exposure.",
+    "word_count": 67
+  },
+  {
+    "case_id": "87",
+    "raw_output": "He presented with febrile neutropenia in the setting of an axillary abscess while on Bactrim. It was thought that Bactrim led to his low white blood cell count and possibly his fever, and the infection in his axillary area also may have led to his fever. He was started on Vancomycin and Cefepime for febrile neutropenia, and after leucovorin and G-CSF his neutrophil count improved and the fevers stopped.",
+    "parsed_answer": "He presented with febrile neutropenia in the setting of an axillary abscess while on Bactrim. It was thought that Bactrim led to his low white blood cell count and possibly his fever, and the infection in his axillary area also may have led to his fever. He was started on Vancomycin and Cefepime for febrile neutropenia, and after leucovorin and G-CSF his neutrophil count improved and the fevers stopped.",
+    "word_count": 69
+  },
+  {
+    "case_id": "88",
+    "raw_output": "Antibiotics were adjusted because of side effects; vancomycin was discontinued and IV daptomycin started due to concern for decreasing counts and neutropenia. Per ID the MSSA bacteremia/abscesses will be treated with IV daptomycin for a total 6\u20138 week course (an 8\u2011week course was planned). A PICC was placed for outpatient antibiotics, and repeat CT abdomen/pelvis and MRI spine are planned further into therapy with repeat imaging after completion to evaluate the infection.",
+    "parsed_answer": "Antibiotics were adjusted because of side effects; vancomycin was discontinued and IV daptomycin started due to concern for decreasing counts and neutropenia. Per ID the MSSA bacteremia/abscesses will be treated with IV daptomycin for a total 6\u20138 week course (an 8\u2011week course was planned). A PICC was placed for outpatient antibiotics, and repeat CT abdomen/pelvis and MRI spine are planned further into therapy with repeat imaging after completion to evaluate the infection.",
+    "word_count": 72
+  },
+  {
+    "case_id": "89",
+    "raw_output": "He presented profoundly somnolent and minimally responsive; arterial blood gas showed hypercarbia and metabolic testing showed hypothyroidism. Hypercarbia improved with thyroid hormone and stimuli; overall impression was altered mental status from hypothyroidism with poor reserve due to congestive heart failure/volume overload, with hypercapnia and possible central hypoventilation; neurology did not think this was a primary CNS disorder. Echocardiogram showed severely depressed ejection fraction with a global pattern suggestive of a metabolic process.",
+    "parsed_answer": "He presented profoundly somnolent and minimally responsive; arterial blood gas showed hypercarbia and metabolic testing showed hypothyroidism. Hypercarbia improved with thyroid hormone and stimuli; overall impression was altered mental status from hypothyroidism with poor reserve due to congestive heart failure/volume overload, with hypercapnia and possible central hypoventilation; neurology did not think this was a primary CNS disorder. Echocardiogram showed severely depressed ejection fraction with a global pattern suggestive of a metabolic process.",
+    "word_count": 72
+  },
+  {
+    "case_id": "90",
+    "raw_output": "Answer: You were treated for a generalized seizure that would not stop on its own (status epilepticus). Arousal was impaired initially by sedation then likely by post-ictal state, without evidence of further seizure on EEG, and you were transferred to the floor with normal mental status. MRI showed leukomalacia and post-stroke changes including some contrast blush at the old lesion, with no evidence of gross pathological process underlying seizures or any acute/recent changes.",
+    "parsed_answer": "Answer: You were treated for a generalized seizure that would not stop on its own (status epilepticus). Arousal was impaired initially by sedation then likely by post-ictal state, without evidence of further seizure on EEG, and you were transferred to the floor with normal mental status. MRI showed leukomalacia and post-stroke changes including some contrast blush at the old lesion, with no evidence of gross pathological process underlying seizures or any acute/recent changes.",
+    "word_count": 73
+  },
+  {
+    "case_id": "91",
+    "raw_output": "You were admitted and found to have a bacterial infection in your blood related to your hemodialysis catheter (2). You required aggressive fluid resuscitation in the intensive care unit and intravenous antibiotics (3). Your hemodialysis catheter had to be pulled out and a new one was put in after your cultures were clear for 72 hours and your fevers went down (4). You were also found to have a urinary tract infection which was treated with antibiotics (7).",
+    "parsed_answer": "You were admitted and found to have a bacterial infection in your blood related to your hemodialysis catheter . You required aggressive fluid resuscitation in the intensive care unit and intravenous antibiotics . Your hemodialysis catheter had to be pulled out and a new one was put in after your cultures were clear for 72 hours and your fevers went down . You were also found to have a urinary tract infection which was treated with antibiotics .",
+    "word_count": 78
+  },
+  {
+    "case_id": "92",
+    "raw_output": "You underwent cooling in the ICU to preserve your brain function after your heart stopped (6). You were sedated, had a tube inserted in your lungs, and were ventilated while your lungs recovered (14,8). You had several rib fractures from CPR, developed a pneumothorax with a tube inserted through your chest wall, and were paralyzed during part of recovery with significant weakness and fatigue for several months (9,11,16,17).",
+    "parsed_answer": "You underwent cooling in the ICU to preserve your brain function after your heart stopped . You were sedated, had a tube inserted in your lungs, and were ventilated while your lungs recovered . You had several rib fractures from CPR, developed a pneumothorax with a tube inserted through your chest wall, and were paralyzed during part of recovery with significant weakness and fatigue for several months .",
+    "word_count": 68
+  },
+  {
+    "case_id": "93",
+    "raw_output": "You were found to have a dangerously low heart rate from your diltiazem and pneumonia. Your diltiazem was held, you were monitored in the intensive care unit, given fluids and antibiotics and your condition improved. You later had a fast heart rate (not dangerously fast) which was likely due to pneumonia, deconditioning, and withdrawal from the diltiazem, and this is gradually improving. You are being referred to a cardiologist for medication adjustments.",
+    "parsed_answer": "You were found to have a dangerously low heart rate from your diltiazem and pneumonia. Your diltiazem was held, you were monitored in the intensive care unit, given fluids and antibiotics and your condition improved. You later had a fast heart rate (not dangerously fast) which was likely due to pneumonia, deconditioning, and withdrawal from the diltiazem, and this is gradually improving. You are being referred to a cardiologist for medication adjustments.",
+    "word_count": 72
+  },
+  {
+    "case_id": "94",
+    "raw_output": "He was diagnosed with diabetes in hyperosmolar hyperglycemic state, started on an insulin gtt in the ICU, then transitioned to subcutaneous insulin with regimen uptitrated; he received diabetes and nutrition education (2,9,13,12). Discharge insulin: 50 units 70/30 every morning, 60 units 70/30 every evening, plus humalog per the sliding scale before meals and bedtime (21). Eat three regularly scheduled meals per day; if not eating call [",
+    "parsed_answer": "He was diagnosed with diabetes in hyperosmolar hyperglycemic state, started on an insulin gtt in the ICU, then transitioned to subcutaneous insulin with regimen uptitrated; he received diabetes and nutrition education . Discharge insulin: 50 units 70/30 every morning, 60 units 70/30 every evening, plus humalog per the sliding scale before meals and bedtime . Eat three regularly scheduled meals per day; if not eating call [",
+    "word_count": 67
+  },
+  {
+    "case_id": "95",
+    "raw_output": "You were admitted after fainting which was thought to be a \"vagal\" reaction to your nausea/vomiting (3). You did not have a heart attack, you did not have a serious arrhythmia when we interrogated your pacemaker, and CT of your abdomen, head and neck were normal (4). You also have low iron levels causing anemia (7).",
+    "parsed_answer": "You were admitted after fainting which was thought to be a \"vagal\" reaction to your nausea/vomiting . You did not have a heart attack, you did not have a serious arrhythmia when we interrogated your pacemaker, and CT of your abdomen, head and neck were normal . You also have low iron levels causing anemia .",
+    "word_count": 56
+  },
+  {
+    "case_id": "96",
+    "raw_output": "She was admitted to the TICU overnight and closely monitored. Mental Status: Confused - sometimes; Level of Consciousness: Alert and interactive; Activity Status: Ambulatory - requires assistance or aid (walker or cane). You are slowly getting better but will need to continue to eat well and increase your mobility to stay strong, and your blood count has been stable which tells us that the bleeding in your abdomen and bruising on your brain has also stabilized.",
+    "parsed_answer": "She was admitted to the TICU overnight and closely monitored. Mental Status: Confused - sometimes; Level of Consciousness: Alert and interactive; Activity Status: Ambulatory - requires assistance or aid (walker or cane). You are slowly getting better but will need to continue to eat well and increase your mobility to stay strong, and your blood count has been stable which tells us that the bleeding in your abdomen and bruising on your brain has also stabilized.",
+    "word_count": 76
+  },
+  {
+    "case_id": "97",
+    "raw_output": "He was admitted with toxic ingestion of his outpatient medications and has a past medical history of medication overdose with clonidine (2,15). His hypotension/somnolence were consistent with and likely due to Clonidine overdose (3). The Medications on Admission include Methadone 135 mg, Quetiapine 100 mg, and Clonazepam 2 mg (10). Barbiturates and TCA are not listed among the Medications on Admission in this excerpt (10).",
+    "parsed_answer": "He was admitted with toxic ingestion of his outpatient medications and has a past medical history of medication overdose with clonidine . His hypotension/somnolence were consistent with and likely due to Clonidine overdose . The Medications on Admission include Methadone 135 mg, Quetiapine 100 mg, and Clonazepam 2 mg . Barbiturates and TCA are not listed among the Medications on Admission in this excerpt .",
+    "word_count": 65
+  },
+  {
+    "case_id": "98",
+    "raw_output": "The note documents fluid accumulation around your heart and lungs (3). The fluid around your heart was drained and should not reaccumulate (4). You are on indomethecin and colchicine to treat the pain of irritation from the tubes and drain (5).",
+    "parsed_answer": "The note documents fluid accumulation around your heart and lungs . The fluid around your heart was drained and should not reaccumulate . You are on indomethecin and colchicine to treat the pain of irritation from the tubes and drain .",
+    "word_count": 41
+  },
+  {
+    "case_id": "99",
+    "raw_output": "The discharge medication list gives dosing instructions for each drug: Isoniazid 300 mg Tablet Sig: One (1) Tablet PO DAILY (4); Rifampin 300 mg Capsule Sig: Two (2) Capsule PO Q24H (every 24 hours) (6); Ethambutol 400 mg Tablet Sig: 2.5 Tablets PO DAILY (9); Pyrazinamide 500 mg Tablet Sig: Three (3) Tablet PO DAILY (11); Pyridoxine 100 mg Tablet Sig: One (1) Tablet PO DAILY (12). Pantoprazole Sodium 40 mg Delayed Release PO Q24H is also listed (14). Follow the medication (including dexamethasone taper) per instructions (26).",
+    "parsed_answer": "The discharge medication list gives dosing instructions for each drug: Isoniazid 300 mg Tablet Sig: One Tablet PO DAILY ; Rifampin 300 mg Capsule Sig: Two Capsule PO Q24H (every 24 hours) ; Ethambutol 400 mg Tablet Sig: 2.5 Tablets PO DAILY ; Pyrazinamide 500 mg Tablet Sig: Three Tablet PO DAILY ; Pyridoxine 100 mg Tablet Sig: One Tablet PO DAILY . Pantoprazole Sodium 40 mg Delayed Release PO Q24H is also listed . Follow the medication (including dexamethasone taper) per instructions .",
+    "word_count": 84
+  },
+  {
+    "case_id": "100",
+    "raw_output": "You presented in severe respiratory distress due to pneumonia, and during this time you stopped making urine and required dialysis. Your renal failure requires hemodialysis at this time, and you were continued on dialysis 3x per week. You will need to continue hemodialysis as an outpatient with a renal physician following your care.",
+    "parsed_answer": "You presented in severe respiratory distress due to pneumonia, and during this time you stopped making urine and required dialysis. Your renal failure requires hemodialysis at this time, and you were continued on dialysis 3x per week. You will need to continue hemodialysis as an outpatient with a renal physician following your care.",
+    "word_count": 53
+  },
+  {
+    "case_id": "101",
+    "raw_output": "She is 12 days s/p ex-lap, right colectomy, and end ileostomy for lower GI bleeding localized to the cecum (2). The patient has an end ileostomy and mucous fistula in place (12). Discharge instructions state to continue ostomy teaching and management and to call the Acute Care Clinic if there are any concerns with the appearance or amount of ostomy output (11, 13).",
+    "parsed_answer": "She is 12 days s/p ex-lap, right colectomy, and end ileostomy for lower GI bleeding localized to the cecum . The patient has an end ileostomy and mucous fistula in place . Discharge instructions state to continue ostomy teaching and management and to call the Acute Care Clinic if there are any concerns with the appearance or amount of ostomy output .",
+    "word_count": 62
+  },
+  {
+    "case_id": "102",
+    "raw_output": "Two stents were placed to the proximal right coronary with good resultant flow. She will need 12 months of Plavix for her stents. She was discharged stable with no further chest pain. Discharge instructions: Take all medications as prescribed and seek medical attention for chest pain, shortness of breath, nausea, vomiting, light\u2011headedness, or other worrisome symptoms, and follow up with your primary care physician and cardiologist in [1-26] weeks.",
+    "parsed_answer": "Two stents were placed to the proximal right coronary with good resultant flow. She will need 12 months of Plavix for her stents. She was discharged stable with no further chest pain. Discharge instructions: Take all medications as prescribed and seek medical attention for chest pain, shortness of breath, nausea, vomiting, light\u2011headedness, or other worrisome symptoms, and follow up with your primary care physician and cardiologist in [1-26] weeks.",
+    "word_count": 69
+  },
+  {
+    "case_id": "103",
+    "raw_output": "During a lumbar puncture the patient suffered a PEA arrest, was down for approximately 5 minutes, and was resuscitated with CPR. After the arrest his mental status was essentially unresponsive; repeat CT head and EEG showed no acute process and MRI could not be obtained due to a pacemaker. Neurology said his new [date] may be from some anoxic brain injury; he received 2 weeks of IV ceftriaxone for presumed neurosyphyllis with little improvement.",
+    "parsed_answer": "During a lumbar puncture the patient suffered a PEA arrest, was down for approximately 5 minutes, and was resuscitated with CPR. After the arrest his mental status was essentially unresponsive; repeat CT head and EEG showed no acute process and MRI could not be obtained due to a pacemaker. Neurology said his new [date] may be from some anoxic brain injury; he received 2 weeks of IV ceftriaxone for presumed neurosyphyllis with little improvement.",
+    "word_count": 74
+  },
+  {
+    "case_id": "104",
+    "raw_output": "Bronchoscopy cultures were sent and were negative (13). Lung biopsy showed cryptogenic organizing pneumonia while other parts had acute inflammation from a viral infection (17,18). Both of these processes are treated with steroids and you improved greatly with steroids in the hospital; you were discharged on steroids and will follow up with our pulmonologists to determine the course of treatment (19,20).",
+    "parsed_answer": "Bronchoscopy cultures were sent and were negative . Lung biopsy showed cryptogenic organizing pneumonia while other parts had acute inflammation from a viral infection . Both of these processes are treated with steroids and you improved greatly with steroids in the hospital; you were discharged on steroids and will follow up with our pulmonologists to determine the course of treatment .",
+    "word_count": 61
+  },
+  {
+    "case_id": "105",
+    "raw_output": "You were hospitalized for a rectal mass causing partial obstruction of your colon (2). A colonic stent was placed by the gastroenterology team, and you were able to move your bowels following the procedure (5,6). You have a Hematology/Oncology Appointment scheduled on 12-19 at 3:30pm (15).",
+    "parsed_answer": "You were hospitalized for a rectal mass causing partial obstruction of your colon . A colonic stent was placed by the gastroenterology team, and you were able to move your bowels following the procedure . You have a Hematology/Oncology Appointment scheduled on 12-19 at 3:30pm .",
+    "word_count": 46
+  },
+  {
+    "case_id": "106",
+    "raw_output": "The chart documents WBC-15.2 with NEUTS-86.2 and LYMPHS-10.2 (2). This occurred in the setting of pneumonia complicated by sepsis; a \"code sepsis\" was called based on fever, tachycardia, and a lactate of 4.4 (7,4). Chest x ray demonstrated a right middle lobe pneumonia, and no organism was identified as the etiology of her pneumonia (8,21).",
+    "parsed_answer": "The chart documents WBC-15.2 with NEUTS-86.2 and LYMPHS-10.2 . This occurred in the setting of pneumonia complicated by sepsis; a \"code sepsis\" was called based on fever, tachycardia, and a lactate of 4.4 . Chest x ray demonstrated a right middle lobe pneumonia, and no organism was identified as the etiology of her pneumonia .",
+    "word_count": 55
+  },
+  {
+    "case_id": "107",
+    "raw_output": "She died of cardiac arrest, thought to be secondary to her malignancy (22,17). CT abdomen showed a large mass in the right lobe of her liver, with possible peritoneal and lymph node involvement, and Hematology/oncology felt she had hepatic mucinous adenocarcinoma (13,18). On admission she had ESRD on HD with markedly elevated WBC and hypotension, her blood pressure remained low, and she was made DNR/DNI prior to death (2,14,15).",
+    "parsed_answer": "She died of cardiac arrest, thought to be secondary to her malignancy . CT abdomen showed a large mass in the right lobe of her liver, with possible peritoneal and lymph node involvement, and Hematology/oncology felt she had hepatic mucinous adenocarcinoma . On admission she had ESRD on HD with markedly elevated WBC and hypotension, her blood pressure remained low, and she was made DNR/DNI prior to death .",
+    "word_count": 69
+  },
+  {
+    "case_id": "108",
+    "raw_output": "CT Angiogram showed an embolic occlusion of the segmental artery supplying the posterior segment of the left upper lobe, and the study did show a small blood clot in one of the vessels serving your lungs. No ultrasound evidence of deep venous thrombosis in either lower limb and no evidence of right cardiac abnormalities; \"blood thinners\" lovenox and coumadin were started to address the lung clot. The coumadin should be continued for 3-6 months; INR goal range 2-3.",
+    "parsed_answer": "CT Angiogram showed an embolic occlusion of the segmental artery supplying the posterior segment of the left upper lobe, and the study did show a small blood clot in one of the vessels serving your lungs. No ultrasound evidence of deep venous thrombosis in either lower limb and no evidence of right cardiac abnormalities; \"blood thinners\" lovenox and coumadin were started to address the lung clot. The coumadin should be continued for 3-6 months; INR goal range 2-3.",
+    "word_count": 78
+  },
+  {
+    "case_id": "109",
+    "raw_output": "She has acute on chronic renal failure with a creat of 5.4 (baseline 3.5-4.0) and oliguria x 2-3 days on admission (3). Renal was consulted and felt that the patient would require chronic HD (5). Outpatient dialysis was arranged for mondays, wednesdays and fridays, and you will need to continue going to dialysis three times a week (10,16).",
+    "parsed_answer": "She has acute on chronic renal failure with a creat of 5.4 (baseline 3.5-4.0) and oliguria x 2-3 days on admission . Renal was consulted and felt that the patient would require chronic HD . Outpatient dialysis was arranged for mondays, wednesdays and fridays, and you will need to continue going to dialysis three times a week .",
+    "word_count": 58
+  },
+  {
+    "case_id": "110",
+    "raw_output": "He had Acute Hypoxemic Respiratory Failure requiring ventilator support after tracheostomy (14,25). He had a hypotensive episode likely due to gastrointestinal hemorrhage; NG lavage returned coffee grounds, guaiac was positive, and received packed red blood cells, fresh frozen plasma, and vasopressin (19,29,31,32). Following transfer the GI bleed recurred; rigid scope found ischemic colitis, was felt a poor operative candidate and made CMO; volume overload was managed with continuous [**Last Name (un) **]-venous hemodialysis and hemofiltration during CVVH (35,36,22,42).",
+    "parsed_answer": "He had Acute Hypoxemic Respiratory Failure requiring ventilator support after tracheostomy . He had a hypotensive episode likely due to gastrointestinal hemorrhage; NG lavage returned coffee grounds, guaiac was positive, and received packed red blood cells, fresh frozen plasma, and vasopressin . Following transfer the GI bleed recurred; rigid scope found ischemic colitis, was felt a poor operative candidate and made CMO; volume overload was managed with continuous [**Last Name (un) **]-venous hemodialysis and hemofiltration during CVVH .",
+    "word_count": 78
+  },
+  {
+    "case_id": "111",
+    "raw_output": "Your father had an upper GI bleed \u2014 a variceal bleed \u2014 and underwent emergent endoscopy with banding in the ICU (2, 18, 19). He was resuscitated with blood products (given at [**Hospital1 18**]: 4 prbcs, 2 plt, 1 FFP) to hct goal 28 (3). He also experienced injury to his heart while he was bleeding (21).",
+    "parsed_answer": "Your father had an upper GI bleed \u2014 a variceal bleed \u2014 and underwent emergent endoscopy with banding in the ICU . He was resuscitated with blood products (given at [**Hospital1 18**]: 4 prbcs, 2 plt, 1 FFP) to hct goal 28 . He also experienced injury to his heart while he was bleeding .",
+    "word_count": 55
+  },
+  {
+    "case_id": "112",
+    "raw_output": "Answer: During your hospitalization you had ventricular tachycardia, which can be a life threatening heart rhythm (19). You are going home with a lifevest, worn externally, which will shock you if you have this dangerous rhythm again (20). You are starting a new medication called Metoprolol succinate (13), which will lower your heart rate and blood pressure as well (14).",
+    "parsed_answer": "Answer: During your hospitalization you had ventricular tachycardia, which can be a life threatening heart rhythm . You are going home with a lifevest, worn externally, which will shock you if you have this dangerous rhythm again . You are starting a new medication called Metoprolol succinate , which will lower your heart rate and blood pressure as well .",
+    "word_count": 60
+  },
+  {
+    "case_id": "113",
+    "raw_output": "He awoke neurologically intact but required Precedex for extubation and was extubated on POD#1 (6,7). He developed postoperative confusion and agitation that was treated with Haldol and Zyprexa and had all narcotics discontinued; psychiatry and social work were consulted for postoperative confusion with hallucinations, and he remained in the CVICU until his mental status improved (8,13,9). His mental status returned to baseline and on POD#9 he was cleared for discharge to home with Visiting Nurse services (19,20).",
+    "parsed_answer": "He awoke neurologically intact but required Precedex for extubation and was extubated on POD#1 . He developed postoperative confusion and agitation that was treated with Haldol and Zyprexa and had all narcotics discontinued; psychiatry and social work were consulted for postoperative confusion with hallucinations, and he remained in the CVICU until his mental status improved . His mental status returned to baseline and on POD#9 he was cleared for discharge to home with Visiting Nurse services .",
+    "word_count": 77
+  },
+  {
+    "case_id": "114",
+    "raw_output": "The patient is S/P ANOXIC BRAIN INJURY, s/p PEG & trach, remains trach/vent, and discharge disposition is Extended Care Facility. Sleeping, arousable to voice, non-verbal at baseline per ED notes. CT head with stable reduction in [**Doctor Last Name 352**]-white differentiation; EEG: abnormal portable EEG due to slowing and disorganization of a low voltage background rhythm consistent with a mild to moderate encephalopathy; No epileptiform discharges or electrographic seizures are seen.",
+    "parsed_answer": "The patient is S/P ANOXIC BRAIN INJURY, s/p PEG & trach, remains trach/vent, and discharge disposition is Extended Care Facility. Sleeping, arousable to voice, non-verbal at baseline per ED notes. CT head with stable reduction in [**Doctor Last Name 352**]-white differentiation; EEG: abnormal portable EEG due to slowing and disorganization of a low voltage background rhythm consistent with a mild to moderate encephalopathy; No epileptiform discharges or electrographic seizures are seen.",
+    "word_count": 71
+  },
+  {
+    "case_id": "115",
+    "raw_output": "Initially she was treated with levofloxacin and Unasyn to cover for aspiration and community-acquired pneumonia (10). Coverage was broadened to vanco/Zosyn on hospital day 3 (11). After completing a week of antibiotics she remained persistently febrile, and Antibiotics were held (12,15).",
+    "parsed_answer": "Initially she was treated with levofloxacin and Unasyn to cover for aspiration and community-acquired pneumonia . Coverage was broadened to vanco/Zosyn on hospital day 3 . After completing a week of antibiotics she remained persistently febrile, and Antibiotics were held .",
+    "word_count": 41
+  },
+  {
+    "case_id": "116",
+    "raw_output": "The CT showed acute intracerebral hemorrhage of the right midbrain/pons/cerebral peduncle. He went to the neuro ICU for monitoring, with heparin products held. Blood pressure was initially controlled with a labetalol gtt for a goal SBP < 140, and he was offered a Factor VII trial which he refused. On the floor his antihypertensives were titrated (metoprolol, captopril, HCTZ), later metoprolol 100 mg tid and lisinopril 20 mg daily, and SBP was controlled on discharge.",
+    "parsed_answer": "The CT showed acute intracerebral hemorrhage of the right midbrain/pons/cerebral peduncle. He went to the neuro ICU for monitoring, with heparin products held. Blood pressure was initially controlled with a labetalol gtt for a goal SBP < 140, and he was offered a Factor VII trial which he refused. On the floor his antihypertensives were titrated (metoprolol, captopril, HCTZ), later metoprolol 100 mg tid and lisinopril 20 mg daily, and SBP was controlled on discharge.",
+    "word_count": 75
+  },
+  {
+    "case_id": "117",
+    "raw_output": "The acute renal failure likely started before presentation from poor forward flow from initial cardiogenic failure and was probably exacerbated by 320 ccs of contrast recieved in cath lab ([4]). She developed muddy brown casts on urine analysis ([5]). She had hyperkalemia to 6.8 and anuria immediately post cath and was treated with CVVHD; she failed repeated trials off of CRRT and is likely now dialysis-dependent with oliguria ([6],[7],[9]).",
+    "parsed_answer": "The acute renal failure likely started before presentation from poor forward flow from initial cardiogenic failure and was probably exacerbated by 320 ccs of contrast recieved in cath lab (). She developed muddy brown casts on urine analysis (). She had hyperkalemia to 6.8 and anuria immediately post cath and was treated with CVVHD; she failed repeated trials off of CRRT and is likely now dialysis-dependent with oliguria (,,).",
+    "word_count": 69
+  },
+  {
+    "case_id": "118",
+    "raw_output": "She presented s/p exploratory laparotomy and was found to have perforated diverticulitis with pelvic peritonitis; a section of colon was resected and a colostomy placed. She had polymicrobial sepsis with GNR/GPC bacteremia. At discharge she was doing well\u2014afebrile with stable vital signs, tolerating a regular diet, ambulating with assistance, voiding without assistance, pain well controlled, white blood cell count decreasing, on intravenous antibiotics, and disposition was to rehab with a VAC dressing over the incision.",
+    "parsed_answer": "She presented s/p exploratory laparotomy and was found to have perforated diverticulitis with pelvic peritonitis; a section of colon was resected and a colostomy placed. She had polymicrobial sepsis with GNR/GPC bacteremia. At discharge she was doing well\u2014afebrile with stable vital signs, tolerating a regular diet, ambulating with assistance, voiding without assistance, pain well controlled, white blood cell count decreasing, on intravenous antibiotics, and disposition was to rehab with a VAC dressing over the incision.",
+    "word_count": 75
+  },
+  {
+    "case_id": "119",
+    "raw_output": "Her pain was well controlled with Percocet (11). At discharge she was prescribed Acetaminophen 325 mg: Two (2) Tablet PO Q4-6H (every 4 to 6 hours) as needed (16). She was also prescribed Oxycodone-Acetaminophen 5-325 mg: 1-2 Tablets PO Q4-6H (every 4 to 6 hours) as needed for pain; Take with food DO NOT TAKE WITH ATIVAN (22).",
+    "parsed_answer": "Her pain was well controlled with Percocet . At discharge she was prescribed Acetaminophen 325 mg: Two Tablet PO Q4-6H (every 4 to 6 hours) as needed . She was also prescribed Oxycodone-Acetaminophen 5-325 mg: 1-2 Tablets PO Q4-6H (every 4 to 6 hours) as needed for pain; Take with food DO NOT TAKE WITH ATIVAN .",
+    "word_count": 57
+  },
+  {
+    "case_id": "120",
+    "raw_output": "Mucosal bleeding was due to thrombocytopenia; he had bleeding from his gums/nose and ENT was consulted. He has several reasons for low platelets\u2014ESLD, splenomegaly (19.3 cm), critical illness, and reversibly myelosuppressive antibiotics\u2014and aminocaproic acid was used for gum bleeding. His platelet count was as low as 45K when bleeding (required 6 units pRBCs); platelets later remained in the 80s\u2013100s with no more spontaneous bleeding and CBCs are checked twice-weekly with platelet transfusion if <60.",
+    "parsed_answer": "Mucosal bleeding was due to thrombocytopenia; he had bleeding from his gums/nose and ENT was consulted. He has several reasons for low platelets\u2014ESLD, splenomegaly (19.3 cm), critical illness, and reversibly myelosuppressive antibiotics\u2014and aminocaproic acid was used for gum bleeding. His platelet count was as low as 45K when bleeding (required 6 units pRBCs); platelets later remained in the 80s\u2013100s with no more spontaneous bleeding and CBCs are checked twice-weekly with platelet transfusion if <60.",
+    "word_count": 74
+  }
+]

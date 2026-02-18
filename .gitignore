@@ -1,8 +1,10 @@
 
-Subtask1/evaluation/builder.sif
-
-# Byte-compiled / optimized / DLL files
-__pycache__/
+*.sif
+*.ckpt
+*.model
+*.bin
+**/quickumls/final/
+**/__pycache__/
 *.py[codz]
 *$py.class
 

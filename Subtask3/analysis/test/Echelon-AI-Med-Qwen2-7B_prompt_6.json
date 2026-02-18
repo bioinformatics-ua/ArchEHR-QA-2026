@@ -1,0 +1,602 @@
+[
+  {
+    "case_id": "21",
+    "raw_output": "The patient was admitted due to hepatic encephalopathy, varices, portal gastropathy, and ascites. He was treated with lactulose via NGT which was limited by vomiting, he did not have many bowel movements initially and goals of care were then transitioned to comfort measures and NGT was discontinued. He was treated for preseumed HRS with albumin, octreotide and mitodrine. GFR continued to decline and he became anuric. Goals of care were transitioned to comfort.",
+    "parsed_answer": "The patient was admitted due to hepatic encephalopathy, varices, portal gastropathy, and ascites. He was treated with lactulose via NGT which was limited by vomiting, he did not have many bowel movements initially and goals of care were then transitioned to comfort measures and NGT was discontinued. He was treated for preseumed HRS with albumin, octreotide and mitodrine. GFR continued to decline and he became anuric. Goals of care were transitioned to comfort.",
+    "word_count": 73
+  },
+  {
+    "case_id": "22",
+    "raw_output": "The emergency salvage repair was done to repair the ruptured thoracoabdominal aortic aneurysm with a 34-mm Dacron tube graft using deep hypothermic circulatory arrest.",
+    "parsed_answer": "The emergency salvage repair was done to repair the ruptured thoracoabdominal aortic aneurysm with a 34-mm Dacron tube graft using deep hypothermic circulatory arrest.",
+    "word_count": 24
+  },
+  {
+    "case_id": "23",
+    "raw_output": "1: At first, you were in the ICU, but when you improved, you were transferred to the regular neurology floor for care. 2: All of your scans after the fall were relatively stable, and you made great progress with your level of alertness, memory, and physical activity in the days following the accident. 3: On [**2174-2-11**], it was noted that you were not holding your oxygen levels as high as we would like so a chest x-ray was done, and indicated that you were developing a pneumonia. 4: We started IV antibiotics for this right away, and you improved.",
+    "parsed_answer": "1: At first, you were in the ICU, but when you improved, you were transferred to the regular neurology floor for care. 2: All of your scans after the fall were relatively stable, and you made great progress with your level of alertness, memory, and physical activity in the days following the accident. 3: On [**2174-2-11**], it was noted that you were not holding your oxygen levels as high as we would like so a chest x-ray was done, and indicated that you were developing a pneumonia. 4: We started IV antibiotics for this right away, and you improved.",
+    "word_count": 99
+  },
+  {
+    "case_id": "24",
+    "raw_output": "The patient was intubated because he was significantly hypoxic and tachypneic.",
+    "parsed_answer": "The patient was intubated because he was significantly hypoxic and tachypneic.",
+    "word_count": 11
+  },
+  {
+    "case_id": "25",
+    "raw_output": "The patient was admitted to the hospital for shortness of breath and low oxygen levels that were believed to be due to an exacerbation of his chronic congestive heart failure. He was temporarily admitted to the intensive care unit, so that he could receive supplemental oxygen through a positive-pressure mask.",
+    "parsed_answer": "The patient was admitted to the hospital for shortness of breath and low oxygen levels that were believed to be due to an exacerbation of his chronic congestive heart failure. He was temporarily admitted to the intensive care unit, so that he could receive supplemental oxygen through a positive-pressure mask.",
+    "word_count": 50
+  },
+  {
+    "case_id": "26",
+    "raw_output": "1: Discharge Instructions: 2: You were treated with a 7 day course of antibiotics for your pneumonia and you improved. 3: You were seen by psychiatry and neurology. 4: You again became very agitated and required IV sedation to control your agitation. 5: You then improved without additional medications.",
+    "parsed_answer": "1: Discharge Instructions: 2: You were treated with a 7 day course of antibiotics for your pneumonia and you improved. 3: You were seen by psychiatry and neurology. 4: You again became very agitated and required IV sedation to control your agitation. 5: You then improved without additional medications.",
+    "word_count": 49
+  },
+  {
+    "case_id": "27",
+    "raw_output": "An ERCP was recommended to place a common bile duct stent. This stent was placed to allow drainage of the biliary obstruction which was caused by stones and sludge. Due to no improvement in liver function, the patient needed a repeat ERCP. The repeat ERCP showed that the biliary stent placed in the first ERCP was obstructed by stones and sludge. The stones and stent were successfully removed during this procedure by performing a sphincterotomy.",
+    "parsed_answer": "An ERCP was recommended to place a common bile duct stent. This stent was placed to allow drainage of the biliary obstruction which was caused by stones and sludge. Due to no improvement in liver function, the patient needed a repeat ERCP. The repeat ERCP showed that the biliary stent placed in the first ERCP was obstructed by stones and sludge. The stones and stent were successfully removed during this procedure by performing a sphincterotomy.",
+    "word_count": 75
+  },
+  {
+    "case_id": "28",
+    "raw_output": "The patient will need ongoing monitoring of nutrition intake given her low albumin. She should see a gastroenterologist within 2 weeks after discharge for management of pancreatitis/pancreatic hemorrhage. The patient will need MRCP to look for signs of liver malignancy or infiltrative disease. She should have repeat Contrast CT of the abdomen to evaluate for residual pancreatic pseudoaneurysm.",
+    "parsed_answer": "The patient will need ongoing monitoring of nutrition intake given her low albumin. She should see a gastroenterologist within 2 weeks after discharge for management of pancreatitis/pancreatic hemorrhage. The patient will need MRCP to look for signs of liver malignancy or infiltrative disease. She should have repeat Contrast CT of the abdomen to evaluate for residual pancreatic pseudoaneurysm.",
+    "word_count": 58
+  },
+  {
+    "case_id": "29",
+    "raw_output": "The patient was admitted to the hospital because he was retaining a lot of fluid. While on the medicine floor, his blood pressure remained in a good range. His oxygenation levels were varying, and he required a return to the intensive care unit for one night. It will be very important that his oxygen levels stay in the range of 88-92%.",
+    "parsed_answer": "The patient was admitted to the hospital because he was retaining a lot of fluid. While on the medicine floor, his blood pressure remained in a good range. His oxygenation levels were varying, and he required a return to the intensive care unit for one night. It will be very important that his oxygen levels stay in the range of 88-92%.",
+    "word_count": 61
+  },
+  {
+    "case_id": "30",
+    "raw_output": "The patient was prescribed coumadin after being diagnosed with deep vein thrombosis. The patient was discharged with instructions to continue taking coumadin.",
+    "parsed_answer": "The patient was prescribed coumadin after being diagnosed with deep vein thrombosis. The patient was discharged with instructions to continue taking coumadin.",
+    "word_count": 22
+  },
+  {
+    "case_id": "31",
+    "raw_output": "The patient was diagnosed with urinary tract infection/urosepsis due to E. coli. The patient was prescribed oral ciprofloxacin therapy, which was effective. The patient was discharged home after 5 days of hospitalization.",
+    "parsed_answer": "The patient was diagnosed with urinary tract infection/urosepsis due to E. coli. The patient was prescribed oral ciprofloxacin therapy, which was effective. The patient was discharged home after 5 days of hospitalization.",
+    "word_count": 32
+  },
+  {
+    "case_id": "32",
+    "raw_output": "The patient was diagnosed with MELAS, a genetic disorder that causes stroke-like episodes. She was treated with enzyme supplementation, and her medications were changed. She was also treated for a urinary tract infection, hypokalemia, hypomagnesemia, and hypophosphatemia.",
+    "parsed_answer": "The patient was diagnosed with MELAS, a genetic disorder that causes stroke-like episodes. She was treated with enzyme supplementation, and her medications were changed. She was also treated for a urinary tract infection, hypokalemia, hypomagnesemia, and hypophosphatemia.",
+    "word_count": 37
+  },
+  {
+    "case_id": "33",
+    "raw_output": "The patient was admitted for confusion called hepatic encephalopathy. This is a result of build up of toxins in your body that your liver is unable to clear. This is a result of not taking enough lactulose at home to have three bowel movements per day. In addition, you were found to have a persistent UTI. This is a result of not finishing your course of antibiotics at home. You are being given a new prescription for a second course of antibiotics.",
+    "parsed_answer": "The patient was admitted for confusion called hepatic encephalopathy. This is a result of build up of toxins in your body that your liver is unable to clear. This is a result of not taking enough lactulose at home to have three bowel movements per day. In addition, you were found to have a persistent UTI. This is a result of not finishing your course of antibiotics at home. You are being given a new prescription for a second course of antibiotics.",
+    "word_count": 82
+  },
+  {
+    "case_id": "34",
+    "raw_output": "The patient was admitted to the hospital with confusion, low magnesium, potassium, and calcium. In the ED, she had a seizure that was most likely due to her low electrolytes and also alcohol withdrawal. Her low electrolytes were attributed to her chronic diarrhea, alcohol use, and poor nutrition. A CT scan of her head did not show any acute problems. The neurology colleagues saw her and recommended correction of her electrolytes and abstinence from alcohol.",
+    "parsed_answer": "The patient was admitted to the hospital with confusion, low magnesium, potassium, and calcium. In the ED, she had a seizure that was most likely due to her low electrolytes and also alcohol withdrawal. Her low electrolytes were attributed to her chronic diarrhea, alcohol use, and poor nutrition. A CT scan of her head did not show any acute problems. The neurology colleagues saw her and recommended correction of her electrolytes and abstinence from alcohol.",
+    "word_count": 75
+  },
+  {
+    "case_id": "35",
+    "raw_output": "You were given fluids and electrolyte repletion to which you responded quite well. Your diuretics (lasix and HCTZ) were stopped and you were started on another diuretic named spironolactone which should not affect your electrolytes as much. In addition, it is likely that you were quite dehydrated and may have an abnormal level of the hormone aldosterone. The level of this hormone was sent but results have not returned. You should follow up on this with your primary care doctor who will receive the results.",
+    "parsed_answer": "You were given fluids and electrolyte repletion to which you responded quite well. Your diuretics (lasix and HCTZ) were stopped and you were started on another diuretic named spironolactone which should not affect your electrolytes as much. In addition, it is likely that you were quite dehydrated and may have an abnormal level of the hormone aldosterone. The level of this hormone was sent but results have not returned. You should follow up on this with your primary care doctor who will receive the results.",
+    "word_count": 85
+  },
+  {
+    "case_id": "36",
+    "raw_output": "The patient was admitted to the hospital for thyrotoxicosis/hyperthyroidism. He was treated with resolution of his symptoms and was discharged in good condition.",
+    "parsed_answer": "The patient was admitted to the hospital for thyrotoxicosis/hyperthyroidism. He was treated with resolution of his symptoms and was discharged in good condition.",
+    "word_count": 23
+  },
+  {
+    "case_id": "37",
+    "raw_output": "The patient was referred to the ICU neurology department due to confusion, difficulty with gait, and problems with thinking. She had mild right-sided weakness and subtle coordination problems on the right in addition to reduced vision on the right visual field. She underwent 3 courses of whole brain radiotherapy and had a biopsy of the lung mass.",
+    "parsed_answer": "The patient was referred to the ICU neurology department due to confusion, difficulty with gait, and problems with thinking. She had mild right-sided weakness and subtle coordination problems on the right in addition to reduced vision on the right visual field. She underwent 3 courses of whole brain radiotherapy and had a biopsy of the lung mass.",
+    "word_count": 57
+  },
+  {
+    "case_id": "38",
+    "raw_output": "An ultrasound showed fluid in the abdomen, which is due to excess fluid that accumulates because of liver disease. The patient was given diuretics to decrease the swelling.",
+    "parsed_answer": "An ultrasound showed fluid in the abdomen, which is due to excess fluid that accumulates because of liver disease. The patient was given diuretics to decrease the swelling.",
+    "word_count": 28
+  },
+  {
+    "case_id": "39",
+    "raw_output": "The patient was admitted to the hospital after presenting with abdominal pain and being found to have a blood clot in the portal vein of her liver and small bowel. She was unable to be anticoagulated for this clot because she developed a bleed in her bowel. She was treated with blood transfusions for her bleed. She was treated with antibiotics to treat the inflammation in her GI tract caused by the blood clot. She was treated with a medication called diltiazem to slow her heart rate. She has been discharged on telemetry for further monitoring of her heart rate and adjustment of her medications.",
+    "parsed_answer": "The patient was admitted to the hospital after presenting with abdominal pain and being found to have a blood clot in the portal vein of her liver and small bowel. She was unable to be anticoagulated for this clot because she developed a bleed in her bowel. She was treated with blood transfusions for her bleed. She was treated with antibiotics to treat the inflammation in her GI tract caused by the blood clot. She was treated with a medication called diltiazem to slow her heart rate. She has been discharged on telemetry for further monitoring of her heart rate and adjustment of her medications.",
+    "word_count": 105
+  },
+  {
+    "case_id": "40",
+    "raw_output": "The patient was hospitalized for bacterial bronchitis, and received a zpack and steroids. The patient is still having symptoms, and the doctor thinks that the patient may have a lung infection. The doctor recommends a repeat chest CT in 3 weeks to check for the infection.",
+    "parsed_answer": "The patient was hospitalized for bacterial bronchitis, and received a zpack and steroids. The patient is still having symptoms, and the doctor thinks that the patient may have a lung infection. The doctor recommends a repeat chest CT in 3 weeks to check for the infection.",
+    "word_count": 46
+  },
+  {
+    "case_id": "41",
+    "raw_output": "The chest pain may be due to COPD or anxiety.",
+    "parsed_answer": "The chest pain may be due to COPD or anxiety.",
+    "word_count": 10
+  },
+  {
+    "case_id": "42",
+    "raw_output": "The patient was discharged from the hospital after 4 days of hospitalization. The patient was advised to take pain medication as needed.",
+    "parsed_answer": "The patient was discharged from the hospital after 4 days of hospitalization. The patient was advised to take pain medication as needed.",
+    "word_count": 22
+  },
+  {
+    "case_id": "43",
+    "raw_output": "The bulging thoracic disc may cause chest pain.",
+    "parsed_answer": "The bulging thoracic disc may cause chest pain.",
+    "word_count": 8
+  },
+  {
+    "case_id": "44",
+    "raw_output": "The patient was admitted to the hospital with sudden-onset left flank pain in the setting of being treated for bronchitis. The chest x-ray and rib x-ray did not show any pneumonia or rib fractures. The V/Q scan was indeterminate. The patient was deemed to be at very low risk for blood clot. The flank pain is most likely due to inflammation of the tissues near the lungs and ribs from bronchitis. The patient will need to continue taking steroids to treat bronchitis for 3 more days.",
+    "parsed_answer": "The patient was admitted to the hospital with sudden-onset left flank pain in the setting of being treated for bronchitis. The chest x-ray and rib x-ray did not show any pneumonia or rib fractures. The V/Q scan was indeterminate. The patient was deemed to be at very low risk for blood clot. The flank pain is most likely due to inflammation of the tissues near the lungs and ribs from bronchitis. The patient will need to continue taking steroids to treat bronchitis for 3 more days.",
+    "word_count": 86
+  },
+  {
+    "case_id": "45",
+    "raw_output": "The symptoms you were experiencing yesterday may be related to medication use or a transient ischemic attack (TIA). Your labwork and imaging studies are not suggestive of a stroke or other acute neurological issue. You were started on aspirin 325 mg daily and also simvastatin 20 mg daily. The simvastatin was started to lower your cholesterol (goal <100). You should continue all of your home medications in addition to the new prescriptions. On your flight to ___, you should get up to walk and stretch several times. Also remember to take your aspirin.",
+    "parsed_answer": "The symptoms you were experiencing yesterday may be related to medication use or a transient ischemic attack (TIA). Your labwork and imaging studies are not suggestive of a stroke or other acute neurological issue. You were started on aspirin 325 mg daily and also simvastatin 20 mg daily. The simvastatin was started to lower your cholesterol (goal <100). You should continue all of your home medications in addition to the new prescriptions. On your flight to ___, you should get up to walk and stretch several times. Also remember to take your aspirin.",
+    "word_count": 93
+  },
+  {
+    "case_id": "46",
+    "raw_output": "The patient was involved in a car accident and was admitted to the hospital for evaluation of possible injuries. The patient was found to have a bruise on the right ear, laceration on the finger, and possible L1 vertebral compression fracture. The patient also had an irregular heart rhythm and premature atrial contractions. The patient was transferred to another hospital for further evaluation.",
+    "parsed_answer": "The patient was involved in a car accident and was admitted to the hospital for evaluation of possible injuries. The patient was found to have a bruise on the right ear, laceration on the finger, and possible L1 vertebral compression fracture. The patient also had an irregular heart rhythm and premature atrial contractions. The patient was transferred to another hospital for further evaluation.",
+    "word_count": 63
+  },
+  {
+    "case_id": "47",
+    "raw_output": "The patient was admitted to the hospital due to low blood counts. The blood counts were found to be low due to liver disease. The patient was transfused with blood. The patient was also tested for heart attack, but the tests were negative. The patient was discharged with instructions to follow up with their doctor.",
+    "parsed_answer": "The patient was admitted to the hospital due to low blood counts. The blood counts were found to be low due to liver disease. The patient was transfused with blood. The patient was also tested for heart attack, but the tests were negative. The patient was discharged with instructions to follow up with their doctor.",
+    "word_count": 55
+  },
+  {
+    "case_id": "48",
+    "raw_output": "Discharge Instructions: 1. You were admitted to the hospital for right-sided abdominal and back pain. 2. A CT scan done in the emergency department showed new masses in your liver and nodules in your lungs. 3. A biopsy was performed and the results were pending at discharge. 4. You should follow-up in clinic to discuss these results with a physician. 5. Your primary care doctor let you know what the next steps are based on the results of the biopsy.",
+    "parsed_answer": "Discharge Instructions: 1. You were admitted to the hospital for right-sided abdominal and back pain. 2. A CT scan done in the emergency department showed new masses in your liver and nodules in your lungs. 3. A biopsy was performed and the results were pending at discharge. 4. You should follow-up in clinic to discuss these results with a physician. 5. Your primary care doctor let you know what the next steps are based on the results of the biopsy.",
+    "word_count": 80
+  },
+  {
+    "case_id": "49",
+    "raw_output": "The patient was admitted to the hospital because of neck pain. She was discharged after being evaluated by the neurology team and the physical therapy team. The patient should follow up with her doctor and continue taking her medications at home.",
+    "parsed_answer": "The patient was admitted to the hospital because of neck pain. She was discharged after being evaluated by the neurology team and the physical therapy team. The patient should follow up with her doctor and continue taking her medications at home.",
+    "word_count": 41
+  },
+  {
+    "case_id": "50",
+    "raw_output": "The patient was discharged in stable conditions, all discharge instructions and follow up were given prior to discharge. Discharge Medications:Medications:1. Acetaminophen 325-650 mg PO Q6H:PRN pain2. Amphetamine-Dextroamphetamine XR 30 mg PO DAILY3. FLUoxetine 80 mg PO DAILY4. Prenatal Vitamins 1 TAB PO DAILY5. Gabapentin 800 mg PO QID6. OxycoDONE (Immediate Release)  5 mg PO ONCE pain  Duration: 1 Dose",
+    "parsed_answer": "The patient was discharged in stable conditions, all discharge instructions and follow up were given prior to discharge. Discharge Medications:Medications:1. Acetaminophen 325-650 mg PO Q6H:PRN pain2. Amphetamine-Dextroamphetamine XR 30 mg PO DAILY3. FLUoxetine 80 mg PO DAILY4. Prenatal Vitamins 1 TAB PO DAILY5. Gabapentin 800 mg PO QID6. OxycoDONE (Immediate Release) 5 mg PO ONCE pain Duration: 1 Dose",
+    "word_count": 59
+  },
+  {
+    "case_id": "51",
+    "raw_output": "The patient was admitted to the hospital after being involved in a MVC. She sustained fractures to her cervical and thoracic spine, in addition to a rib fracture and a right clavicle fracture. She was fitted for a special brace for stabilization of her neck and spine. She also sustained a laceration to her scalp which was staples.",
+    "parsed_answer": "The patient was admitted to the hospital after being involved in a MVC. She sustained fractures to her cervical and thoracic spine, in addition to a rib fracture and a right clavicle fracture. She was fitted for a special brace for stabilization of her neck and spine. She also sustained a laceration to her scalp which was staples.",
+    "word_count": 58
+  },
+  {
+    "case_id": "52",
+    "raw_output": "Your husband was admitted to the Neurology service because of left hand clumsiness. We think you had inflammation on the surface of part of your brain. We did not find a specific cause at the time of discharge. There are still some tests pending at discharge and you should follow-up with neurology clinic as scheduled. If you have any new symptoms or high fever, please call the neurology clinic or go to the emergency room.",
+    "parsed_answer": "Your husband was admitted to the Neurology service because of left hand clumsiness. We think you had inflammation on the surface of part of your brain. We did not find a specific cause at the time of discharge. There are still some tests pending at discharge and you should follow-up with neurology clinic as scheduled. If you have any new symptoms or high fever, please call the neurology clinic or go to the emergency room.",
+    "word_count": 75
+  },
+  {
+    "case_id": "53",
+    "raw_output": "The patient was admitted for dizziness. The MRI showed no signs of a new stroke. It is likely that her symptoms were secondary to a migraine. You should continue to take your current medications.",
+    "parsed_answer": "The patient was admitted for dizziness. The MRI showed no signs of a new stroke. It is likely that her symptoms were secondary to a migraine. You should continue to take your current medications.",
+    "word_count": 34
+  },
+  {
+    "case_id": "54",
+    "raw_output": "An endoscopic retrograde cholangiopancreatography, ERCP, was recommended to place a common bile duct stent. This stent was placed to allow drainage of the biliary obstruction which was caused by stones and sludge. Due to no improvement in liver function, the patient needed a repeat ERCP. The repeat ERCP showed that the biliary stent placed in the first ERCP was obstructed by stones and sludge. The stones and stent were successfully removed during this procedure by performing a sphincterotomy.",
+    "parsed_answer": "An endoscopic retrograde cholangiopancreatography, ERCP, was recommended to place a common bile duct stent. This stent was placed to allow drainage of the biliary obstruction which was caused by stones and sludge. Due to no improvement in liver function, the patient needed a repeat ERCP. The repeat ERCP showed that the biliary stent placed in the first ERCP was obstructed by stones and sludge. The stones and stent were successfully removed during this procedure by performing a sphincterotomy.",
+    "word_count": 78
+  },
+  {
+    "case_id": "55",
+    "raw_output": "The lump on the clavicle was a benign fat deposit and did not require any treatment.",
+    "parsed_answer": "The lump on the clavicle was a benign fat deposit and did not require any treatment.",
+    "word_count": 16
+  },
+  {
+    "case_id": "56",
+    "raw_output": "Discharge Instructions: It was a pleasure caring for you at ___ You were admitted with nausea and abdominal pain. You were found to have blockage of the biliary ducts. You underwent a special endoscopy (\"ERCP\") to remove the blockages and were started on antibiotics. Due to continued blockage, you were seen by radiologists and they placed external drains to relieve obstruction. It will be very important to follow up with both the radiologists and infectious disease doctors after leaving the hospital.",
+    "parsed_answer": "Discharge Instructions: It was a pleasure caring for you at ___ You were admitted with nausea and abdominal pain. You were found to have blockage of the biliary ducts. You underwent a special endoscopy (\"ERCP\") to remove the blockages and were started on antibiotics. Due to continued blockage, you were seen by radiologists and they placed external drains to relieve obstruction. It will be very important to follow up with both the radiologists and infectious disease doctors after leaving the hospital.",
+    "word_count": 81
+  },
+  {
+    "case_id": "57",
+    "raw_output": "The vomiting is not expected after the infusions.",
+    "parsed_answer": "The vomiting is not expected after the infusions.",
+    "word_count": 8
+  },
+  {
+    "case_id": "58",
+    "raw_output": "The reason for her language difficulties is the old right frontal stroke as well as two smaller strokes on the left side. The CT scan demonstrated her old right frontal stroke as well as two smaller strokes on the left side. One of these may have contributed to her language difficulties.",
+    "parsed_answer": "The reason for her language difficulties is the old right frontal stroke as well as two smaller strokes on the left side. The CT scan demonstrated her old right frontal stroke as well as two smaller strokes on the left side. One of these may have contributed to her language difficulties.",
+    "word_count": 51
+  },
+  {
+    "case_id": "59",
+    "raw_output": "Your pain is likely due to your hemorrhagic ovarian cyst; your pain has been controlled with your usual pain medications.",
+    "parsed_answer": "Your pain is likely due to your hemorrhagic ovarian cyst; your pain has been controlled with your usual pain medications.",
+    "word_count": 20
+  },
+  {
+    "case_id": "60",
+    "raw_output": "The patient was discharged on a variety of medications including warfarin, simvastatin, lorazepam, aspirin, cephalexin, oxycodone-acetaminophen, fluticasone-salmeterol, albuterol, docusate sodium, lisinopril, metoprolol succinate, and lasix.",
+    "parsed_answer": "The patient was discharged on a variety of medications including warfarin, simvastatin, lorazepam, aspirin, cephalexin, oxycodone-acetaminophen, fluticasone-salmeterol, albuterol, docusate sodium, lisinopril, metoprolol succinate, and lasix.",
+    "word_count": 25
+  },
+  {
+    "case_id": "61",
+    "raw_output": "The patient was discharged with instructions to follow up with the cardiologist for valve repair.",
+    "parsed_answer": "The patient was discharged with instructions to follow up with the cardiologist for valve repair.",
+    "word_count": 15
+  },
+  {
+    "case_id": "62",
+    "raw_output": "The patient was transfused two units of PRBCs. Following transfusion, his hematocrit remained stable in the low 30s. He was started on FeSO4 for iron deficiency anemia. His vitamin B12 and folate levels were normal. The ob+ stools were attributed to his portal hypertensive gastropathy and thought to be due to old blood, as his hct remained stable. He is recommended to receive a colonoscopy as an outpatient.",
+    "parsed_answer": "The patient was transfused two units of PRBCs. Following transfusion, his hematocrit remained stable in the low 30s. He was started on FeSO4 for iron deficiency anemia. His vitamin B12 and folate levels were normal. The ob+ stools were attributed to his portal hypertensive gastropathy and thought to be due to old blood, as his hct remained stable. He is recommended to receive a colonoscopy as an outpatient.",
+    "word_count": 68
+  },
+  {
+    "case_id": "63",
+    "raw_output": "1. Gastrointestinal bleed:  Initially, there was a question of whether or not this patient had a GI bleed with a guaiac positive stool at an outside hospital, but no history of frank melena or hematemesis, and her most recent stool guaiac negative. 2. The patient was transfused again when she got to the floor, two more units to have her hematocrit above 30 with her history of coronary artery disease, the next day it was noted that her hematocrit had dropped from 32 to 25, and that she did pass a large melanotic stool. 3. At this time, she again was transfused above 30 and did maintain at this level throughout the rest of her hospitalization. 4. She had an esophagogastroduodenoscopy done at that time which did not show any active bleeding from her stomach or proximal duodenum. 5. It did show duodenal diverticulosis. 6. The patient did have a past history of a Dieulafoy's lesion in the past as seen by her outside hospital medical records, this was not seen during her esophagogastroduodenoscopy during this visit. 7. It was thought that most likely her bleed was from a diverticulum in the setting of patient having a high INR. 8. Her INR on transfer to the floor from the MICU was 3.2 after having her Coumadin held. 9. Coumadin was held for the next few days with no drop in her INR. 10. In-fact, it increased to 3.9 over the next three days. 11. This was thought secondary to poor nutritional status. 12. In the setting of her hematocrit dropped and melanotic stools seen on the floor, her anticoagulation was reversed with vitamin K and 2 units of fresh-frozen plasma. 13. Her hematocrit remained stable for the remainder of the hospitalization after reversal of her anticoagulation.",
+    "parsed_answer": "1. Gastrointestinal bleed: Initially, there was a question of whether or not this patient had a GI bleed with a guaiac positive stool at an outside hospital, but no history of frank melena or hematemesis, and her most recent stool guaiac negative. 2. The patient was transfused again when she got to the floor, two more units to have her hematocrit above 30 with her history of coronary artery disease, the next day it was noted that her hematocrit had dropped from 32 to 25, and that she did pass a large melanotic stool. 3. At this time, she again was transfused above 30 and did maintain at this level throughout the rest of her hospitalization. 4. She had an esophagogastroduodenoscopy done at that time which did not show any active bleeding from her stomach or proximal duodenum. 5. It did show duodenal diverticulosis. 6. The patient did have a past history of a Dieulafoy's lesion in the past as seen by her outside hospital medical records, this was not seen during her esophagogastroduodenoscopy during this visit. 7. It was thought that most likely her bleed was from a diverticulum in the setting of patient having a high INR. 8. Her INR on transfer to the floor from the MICU was 3.2 after having her Coumadin held. 9. Coumadin was held for the next few days with no drop in her INR. 10. In-fact, it increased to 3.9 over the next three days. 11. This was thought secondary to poor nutritional status. 12. In the setting of her hematocrit dropped and melanotic stools seen on the floor, her anticoagulation was reversed with vitamin K and 2 units of fresh-frozen plasma. 13. Her hematocrit remained stable for the remainder of the hospitalization after reversal of her anticoagulation.",
+    "word_count": 296
+  },
+  {
+    "case_id": "64",
+    "raw_output": "The patient's poor physical exam and history of previous stroke led to the decision against aggressive therapy. The patient had previously signed a living will which the Health Care Proxy brought forth on 9/15/2016 on which date the patient was made CMO for comfort measures only. Palliative care medicine has been following for guidance and assistence with placing pt in outside hospice care or extended care facility.",
+    "parsed_answer": "The patient's poor physical exam and history of previous stroke led to the decision against aggressive therapy. The patient had previously signed a living will which the Health Care Proxy brought forth on 9/15/2016 on which date the patient was made CMO for comfort measures only. Palliative care medicine has been following for guidance and assistence with placing pt in outside hospice care or extended care facility.",
+    "word_count": 67
+  },
+  {
+    "case_id": "65",
+    "raw_output": "The doctor concluded that the patient has months to live because he was suffering from septic physiology. He was also experiencing bacteremia, which was causing persistent infections. The doctor ruled out aggressive therapies for the patient because he was already in poor condition.",
+    "parsed_answer": "The doctor concluded that the patient has months to live because he was suffering from septic physiology. He was also experiencing bacteremia, which was causing persistent infections. The doctor ruled out aggressive therapies for the patient because he was already in poor condition.",
+    "word_count": 43
+  },
+  {
+    "case_id": "66",
+    "raw_output": "The goals of care were established after the patient was diagnosed with cardiac tamponade, metastatic lesions in the lungs, and a pericardial effusion. The patient did not want to undergo chemotherapy again or invasive therapies such as a pericardiocentesis. The decision was made to move towards hospice care and the patient was discharged to a hospice house with a focus on comfort care.",
+    "parsed_answer": "The goals of care were established after the patient was diagnosed with cardiac tamponade, metastatic lesions in the lungs, and a pericardial effusion. The patient did not want to undergo chemotherapy again or invasive therapies such as a pericardiocentesis. The decision was made to move towards hospice care and the patient was discharged to a hospice house with a focus on comfort care.",
+    "word_count": 63
+  },
+  {
+    "case_id": "67",
+    "raw_output": "An endoscopic retrograde cholangiopancreatography, ERCP, was recommended to place a common bile duct stent. This stent was placed to allow drainage of the biliary obstruction which was caused by stones and sludge. Due to no improvement in liver function, the patient needed a repeat ERCP. The repeat ERCP showed that the biliary stent placed in the first ERCP was obstructed by stones and sludge. The stones and stent were successfully removed during this procedure by performing a sphincterotomy.",
+    "parsed_answer": "An endoscopic retrograde cholangiopancreatography, ERCP, was recommended to place a common bile duct stent. This stent was placed to allow drainage of the biliary obstruction which was caused by stones and sludge. Due to no improvement in liver function, the patient needed a repeat ERCP. The repeat ERCP showed that the biliary stent placed in the first ERCP was obstructed by stones and sludge. The stones and stent were successfully removed during this procedure by performing a sphincterotomy.",
+    "word_count": 78
+  },
+  {
+    "case_id": "68",
+    "raw_output": "1: Pt underwent Angiogram which was negative for aneurysm. 2: He was started on Nimodipine. 3: Stroke consult was obtained for intial syncope workup. 4: He was placed on meclizine for continued complaints of vertigo. 5: He was transferred to a regular floor and evaluated by the ENT team for the c/o vertigo. 6: They performed Epley Maneuver from which the pt has relief of symptoms. 7: They diagnosed him with benign positional vertigo. 8: He was seen by PT and deemed safe for discharge with a home safety eval. 9: His dilantin and nimodipine were stopped as he has never had a sz during this stay nor is his SAH thought to be aneurysmal. 10: he was d/c'd to home without pain medication per his request. 11: Follow up and instructions were discussed.",
+    "parsed_answer": "1: Pt underwent Angiogram which was negative for aneurysm. 2: He was started on Nimodipine. 3: Stroke consult was obtained for intial syncope workup. 4: He was placed on meclizine for continued complaints of vertigo. 5: He was transferred to a regular floor and evaluated by the ENT team for the c/o vertigo. 6: They performed Epley Maneuver from which the pt has relief of symptoms. 7: They diagnosed him with benign positional vertigo. 8: He was seen by PT and deemed safe for discharge with a home safety eval. 9: His dilantin and nimodipine were stopped as he has never had a sz during this stay nor is his SAH thought to be aneurysmal. 10: he was d/c'd to home without pain medication per his request. 11: Follow up and instructions were discussed.",
+    "word_count": 134
+  },
+  {
+    "case_id": "69",
+    "raw_output": "The patient was treated with aggressive electrolyte repletion, and he was started on Keppra 1500mg. The patient was also treated with Vanc, Zosyn, and Cipro for possible HAP/Asp PNA. The patient was also started on Acyclovir 700mg IV TID and Keppra 1500mg. The patient was also treated with metoprolol with great improvement in his heart rate to the 90s. The patient was also given tube feeds via gastric dobhoff. On the day prior to discharge he had a PEG placed at the bedside. This PEG can be used for tube feeds starting in the afternoon of [**4-16]. This PEG should not be removed until after [**2191-5-16].",
+    "parsed_answer": "The patient was treated with aggressive electrolyte repletion, and he was started on Keppra 1500mg. The patient was also treated with Vanc, Zosyn, and Cipro for possible HAP/Asp PNA. The patient was also started on Acyclovir 700mg IV TID and Keppra 1500mg. The patient was also treated with metoprolol with great improvement in his heart rate to the 90s. The patient was also given tube feeds via gastric dobhoff. On the day prior to discharge he had a PEG placed at the bedside. This PEG can be used for tube feeds starting in the afternoon of [**4-16]. This PEG should not be removed until after [**2191-5-16].",
+    "word_count": 106
+  },
+  {
+    "case_id": "70",
+    "raw_output": "The patient was admitted to the hospital due to acute myelitis/rhombencephalitis of unclear etiology. He was started on solumedrol 1g IV q24 for a total of 14 day course. He was switched to prednisone and resumed solumedrol when repeat MRI brain showed increased inflammation. The patient was discharged home.",
+    "parsed_answer": "The patient was admitted to the hospital due to acute myelitis/rhombencephalitis of unclear etiology. He was started on solumedrol 1g IV q24 for a total of 14 day course. He was switched to prednisone and resumed solumedrol when repeat MRI brain showed increased inflammation. The patient was discharged home.",
+    "word_count": 49
+  },
+  {
+    "case_id": "71",
+    "raw_output": "The patient was admitted to the NeuroICU with Q1H neuro checks. She remained unarousable and unable to open her eyes even to noxious stimuli as well as demonstrating posturing in the RUE and withdrawal in all other extremities. There was some spontaneous movement noted on the left but not on the right. The patient was transferred out of the Neuro ICU on hyperosmolar therapy with mannitol. Her blood pressure was maintained with an SBP goal < 160. She had a repeat EEG on [**5-21**] that showed no seizures, so keppra was stopped. This medication change and the introduction of amantadine made the patient more alert and awake and she even would occasionally whisper a 1-word answer to a question asked or follow some commands like open your eyes, move your arm etc.",
+    "parsed_answer": "The patient was admitted to the NeuroICU with Q1H neuro checks. She remained unarousable and unable to open her eyes even to noxious stimuli as well as demonstrating posturing in the RUE and withdrawal in all other extremities. There was some spontaneous movement noted on the left but not on the right. The patient was transferred out of the Neuro ICU on hyperosmolar therapy with mannitol. Her blood pressure was maintained with an SBP goal < 160. She had a repeat EEG on [**5-21**] that showed no seizures, so keppra was stopped. This medication change and the introduction of amantadine made the patient more alert and awake and she even would occasionally whisper a 1-word answer to a question asked or follow some commands like open your eyes, move your arm etc.",
+    "word_count": 132
+  },
+  {
+    "case_id": "72",
+    "raw_output": "An endoscopic retrograde cholangiopancreatography, ERCP, was recommended to place a common bile duct stent. This stent was placed to allow drainage of the biliary obstruction which was caused by stones and sludge. Due to no improvement in liver function, the patient needed a repeat ERCP. The repeat ERCP showed that the biliary stent placed in the first ERCP was obstructed by stones and sludge. The stones and stent were successfully removed during this procedure by performing a sphincterotomy.",
+    "parsed_answer": "An endoscopic retrograde cholangiopancreatography, ERCP, was recommended to place a common bile duct stent. This stent was placed to allow drainage of the biliary obstruction which was caused by stones and sludge. Due to no improvement in liver function, the patient needed a repeat ERCP. The repeat ERCP showed that the biliary stent placed in the first ERCP was obstructed by stones and sludge. The stones and stent were successfully removed during this procedure by performing a sphincterotomy.",
+    "word_count": 78
+  },
+  {
+    "case_id": "73",
+    "raw_output": "The patient was admitted for seizures and intracranial hemorrhage. He required intubation to assist his breathing. When his bloodthinner was stopped, he had a stroke. You will go to a rehab facility to help build back your strength and skills. Please continue your medications as prescribed and follow up with Dr. [**Last Name (STitle) **] (neurology) as well as Dr. [**Last Name (STitle) **] (vascular) as directed. Return to the Emergency Department immediately for any new weakness or numbness, difficulty speaking, visual changes, lightheadedness, or shortness of breath.",
+    "parsed_answer": "The patient was admitted for seizures and intracranial hemorrhage. He required intubation to assist his breathing. When his bloodthinner was stopped, he had a stroke. You will go to a rehab facility to help build back your strength and skills. Please continue your medications as prescribed and follow up with Dr. [**Last Name (STitle) **] (neurology) as well as Dr. [**Last Name (STitle) **] (vascular) as directed. Return to the Emergency Department immediately for any new weakness or numbness, difficulty speaking, visual changes, lightheadedness, or shortness of breath.",
+    "word_count": 88
+  },
+  {
+    "case_id": "74",
+    "raw_output": "The patient was admitted to the hospital due to a lump in her head. She underwent a craniotomy. She was discharged from the hospital after 3 weeks. The patient was advised to take all medications as prescribed. She was advised to take pain medication only when needed. She was advised to cough, breathe deeply, and walk. The patient was advised to take anti-inflammatory medications such as Motrin, Aspirin, Advil, and Ibuprofen. The patient was advised to take a medication to protect her stomach (Prilosec, Protonix, or Pepcid) as these medications can cause stomach irritation. The patient was advised to follow the activity instructions given to her by her doctor and therapist. The patient was advised to avoid driving until she spoke with her physician. The patient was advised not to lift objects over 10 pounds until approved by her physician.",
+    "parsed_answer": "The patient was admitted to the hospital due to a lump in her head. She underwent a craniotomy. She was discharged from the hospital after 3 weeks. The patient was advised to take all medications as prescribed. She was advised to take pain medication only when needed. She was advised to cough, breathe deeply, and walk. The patient was advised to take anti-inflammatory medications such as Motrin, Aspirin, Advil, and Ibuprofen. The patient was advised to take a medication to protect her stomach (Prilosec, Protonix, or Pepcid) as these medications can cause stomach irritation. The patient was advised to follow the activity instructions given to her by her doctor and therapist. The patient was advised to avoid driving until she spoke with her physician. The patient was advised not to lift objects over 10 pounds until approved by her physician.",
+    "word_count": 140
+  },
+  {
+    "case_id": "75",
+    "raw_output": "An esophageal balloon study was done to rule out chest wall restriction secondary to scleroderma. The study showed normal elastic recoil of the chest wall and slightly increased recoil of the lung. The patient was diuresed aggressively with Lasix intravenous, bumex, metolazone, spironolactone. The patient was educated on the need to use ice packs with his Flolan in order to enhance his breathing. The patient was tried on Bosentan in the past but did not feel any improvement with it. The patient will likely try this regimen as an outpatient.",
+    "parsed_answer": "An esophageal balloon study was done to rule out chest wall restriction secondary to scleroderma. The study showed normal elastic recoil of the chest wall and slightly increased recoil of the lung. The patient was diuresed aggressively with Lasix intravenous, bumex, metolazone, spironolactone. The patient was educated on the need to use ice packs with his Flolan in order to enhance his breathing. The patient was tried on Bosentan in the past but did not feel any improvement with it. The patient will likely try this regimen as an outpatient.",
+    "word_count": 90
+  },
+  {
+    "case_id": "76",
+    "raw_output": "The reason for the admission was a pneumonia-like illness. The patient had scleroderma, HIV, Raynaud's, hypothyroidism, chronic renal insufficiency interstitial lung disease.",
+    "parsed_answer": "The reason for the admission was a pneumonia-like illness. The patient had scleroderma, HIV, Raynaud's, hypothyroidism, chronic renal insufficiency interstitial lung disease.",
+    "word_count": 22
+  },
+  {
+    "case_id": "77",
+    "raw_output": "The patient was referred to the hospital for cardiac catheterization with intervention. After the stent, the patient was noted to have some oozing from the left groin site. Subsequently, the patient developed a drop in his blood pressure to 67/50 and a decrease in his heart rate to the 50s. The patient was given 2 amps of Atropine and was bolused with 2 liters of saline; however, due to persistent hypotension, the patient was started on dopamine. The patient was taken back to catheterization for a re-look. At that point, the patient was intervened from the right groin, and given his decreased blood pressure and ischemic changes, he went for re-look catheterization which showed no evidence of re-occlusion. The patient was taken to the operating room emergently for exploration of his left groin site for evidence of hematoma. The patient was intubated in the operating room prior to surgery. In the operating room, it was negative for hematoma, and the patient was noted to have a question of hematemesis with pooling of blood in the oropharynx while in the operating room; although, nasogastric tube in place was returning bilious, the patient was transfused to the Coronary Care Unit post groin exploration from the Postanesthesia Care Unit intubated with marginal blood pressures.",
+    "parsed_answer": "The patient was referred to the hospital for cardiac catheterization with intervention. After the stent, the patient was noted to have some oozing from the left groin site. Subsequently, the patient developed a drop in his blood pressure to 67/50 and a decrease in his heart rate to the 50s. The patient was given 2 amps of Atropine and was bolused with 2 liters of saline; however, due to persistent hypotension, the patient was started on dopamine. The patient was taken back to catheterization for a re-look. At that point, the patient was intervened from the right groin, and given his decreased blood pressure and ischemic changes, he went for re-look catheterization which showed no evidence of re-occlusion. The patient was taken to the operating room emergently for exploration of his left groin site for evidence of hematoma. The patient was intubated in the operating room prior to surgery. In the operating room, it was negative for hematoma, and the patient was noted to have a question of hematemesis with pooling of blood in the oropharynx while in the operating room; although, nasogastric tube in place was returning bilious, the patient was transfused to the Coronary Care Unit post groin exploration from the Postanesthesia Care Unit intubated with marginal blood pressures.",
+    "word_count": 211
+  },
+  {
+    "case_id": "78",
+    "raw_output": "The patient had a large hematoma in his groin area due to bleeding post cardiac catheterization. The hematoma resolved after immobilization.",
+    "parsed_answer": "The patient had a large hematoma in his groin area due to bleeding post cardiac catheterization. The hematoma resolved after immobilization.",
+    "word_count": 21
+  },
+  {
+    "case_id": "79",
+    "raw_output": "The patient was transferred to the cardiac intensive care unit because she had a small heart attack. While she was there, she was treated with some intravenous diuretics. Her urine output temporarily dropped, but by the time she was transferred back to the medical floor, her urine production improved.",
+    "parsed_answer": "The patient was transferred to the cardiac intensive care unit because she had a small heart attack. While she was there, she was treated with some intravenous diuretics. Her urine output temporarily dropped, but by the time she was transferred back to the medical floor, her urine production improved.",
+    "word_count": 49
+  },
+  {
+    "case_id": "80",
+    "raw_output": "The patient had a small, mild right groin hematoma post procedure which remained stable with resolving ecchymosis upon discharge. His pulses remained good. He was stable and transferred to the medical floor. He was optimized on his medical regimen. He was started on plavix 75 mg PO daily, increased to 325 mg PO daily aspirin, lipitor 80 mg PO daily. He was titrated up on his metoprolol to 37.5 mg PO TID and his BP remained SBP 100-110s with HR in 60s.",
+    "parsed_answer": "The patient had a small, mild right groin hematoma post procedure which remained stable with resolving ecchymosis upon discharge. His pulses remained good. He was stable and transferred to the medical floor. He was optimized on his medical regimen. He was started on plavix 75 mg PO daily, increased to 325 mg PO daily aspirin, lipitor 80 mg PO daily. He was titrated up on his metoprolol to 37.5 mg PO TID and his BP remained SBP 100-110s with HR in 60s.",
+    "word_count": 82
+  },
+  {
+    "case_id": "81",
+    "raw_output": "The patient was sent to the hospital for urgent catheterization due to anterior septal myocardial infarction. The patient had a large patent foramen ovale with no left to right shunting. He received three ampules of bicarbonate for worsening acidosis.",
+    "parsed_answer": "The patient was sent to the hospital for urgent catheterization due to anterior septal myocardial infarction. The patient had a large patent foramen ovale with no left to right shunting. He received three ampules of bicarbonate for worsening acidosis.",
+    "word_count": 39
+  },
+  {
+    "case_id": "82",
+    "raw_output": "The patient had a groin hematoma after cardiac catheterization. CT abdomen/pelvis was negative for retroperitoneal bleeding. Ultrasound revealed a possible reversal of flow without obvious pseudoaneurysm. Reimimaging was considered, but the patient was improving clinically and hemodynamically, so this was not pursued.",
+    "parsed_answer": "The patient had a groin hematoma after cardiac catheterization. CT abdomen/pelvis was negative for retroperitoneal bleeding. Ultrasound revealed a possible reversal of flow without obvious pseudoaneurysm. Reimimaging was considered, but the patient was improving clinically and hemodynamically, so this was not pursued.",
+    "word_count": 42
+  },
+  {
+    "case_id": "83",
+    "raw_output": "The patient developed a large hematoma during the case. Following her cath, she went to the CCU chest pain free, hemodynamically stable, but with a large right groin hematoma.",
+    "parsed_answer": "The patient developed a large hematoma during the case. Following her cath, she went to the CCU chest pain free, hemodynamically stable, but with a large right groin hematoma.",
+    "word_count": 29
+  },
+  {
+    "case_id": "84",
+    "raw_output": "An MRI of the brain and spine was performed, which was normal. The patient was discharged with the diagnosis of Guillain-Barre syndrome being unlikely.",
+    "parsed_answer": "An MRI of the brain and spine was performed, which was normal. The patient was discharged with the diagnosis of Guillain-Barre syndrome being unlikely.",
+    "word_count": 24
+  },
+  {
+    "case_id": "85",
+    "raw_output": "The patient was diagnosed with GBS. He was admitted to the hospital because of diplopia, weakness, and numbness. He was treated with IVIG.",
+    "parsed_answer": "The patient was diagnosed with GBS. He was admitted to the hospital because of diplopia, weakness, and numbness. He was treated with IVIG.",
+    "word_count": 23
+  },
+  {
+    "case_id": "86",
+    "raw_output": "The patient was diagnosed with polyneuropathy and arsenic toxicity. The patient had a history of HCV and was recently exposed to rats. The patient had numbness in her feet and hands which progressed to her abdomen and back. The patient was initially treated with antibiotics, but her symptoms worsened and she was admitted to the hospital. The patient was diagnosed with polyneuropathy and arsenic toxicity. The patient was treated with IVIG therapy and was discharged from the hospital.",
+    "parsed_answer": "The patient was diagnosed with polyneuropathy and arsenic toxicity. The patient had a history of HCV and was recently exposed to rats. The patient had numbness in her feet and hands which progressed to her abdomen and back. The patient was initially treated with antibiotics, but her symptoms worsened and she was admitted to the hospital. The patient was diagnosed with polyneuropathy and arsenic toxicity. The patient was treated with IVIG therapy and was discharged from the hospital.",
+    "word_count": 78
+  },
+  {
+    "case_id": "87",
+    "raw_output": "The patient was admitted to the ICU due to low white blood cell count and fevers. The infection in his left armpit also led to his fever. He was started on two strong antibiotics, Vancomycin and Cefepime, and was then transferred out of the ICU to the medicine floor. While on the medicine floor, his white blood count began to improve, and his fevers stopped. He was transitioned to an oral antibiotic, doxycycline, which will need to be taken for at least the next 10 days.",
+    "parsed_answer": "The patient was admitted to the ICU due to low white blood cell count and fevers. The infection in his left armpit also led to his fever. He was started on two strong antibiotics, Vancomycin and Cefepime, and was then transferred out of the ICU to the medicine floor. While on the medicine floor, his white blood count began to improve, and his fevers stopped. He was transitioned to an oral antibiotic, doxycycline, which will need to be taken for at least the next 10 days.",
+    "word_count": 86
+  },
+  {
+    "case_id": "88",
+    "raw_output": "An endoscopic retrograde cholangiopancreatography, ERCP, was recommended to place a common bile duct stent. This stent was placed to allow drainage of the biliary obstruction which was caused by stones and sludge. Due to no improvement in liver function, the patient needed a repeat ERCP. The repeat ERCP showed that the biliary stent placed in the first ERCP was obstructed by stones and sludge. The stones and stent were successfully removed during this procedure by performing a sphincterotomy.",
+    "parsed_answer": "An endoscopic retrograde cholangiopancreatography, ERCP, was recommended to place a common bile duct stent. This stent was placed to allow drainage of the biliary obstruction which was caused by stones and sludge. Due to no improvement in liver function, the patient needed a repeat ERCP. The repeat ERCP showed that the biliary stent placed in the first ERCP was obstructed by stones and sludge. The stones and stent were successfully removed during this procedure by performing a sphincterotomy.",
+    "word_count": 78
+  },
+  {
+    "case_id": "89",
+    "raw_output": "An echocardiogram was performed showing a severely depressed ejection fraction when compared to the previous one. The heart failure team consulted in ICU, and confirmed above impression. The heart failure team consulted in ICU, and confirmed above impression. The heart failure team consulted in ICU, and confirmed above impression. The heart failure team consulted in ICU, and confirmed above impression. The heart failure team consulted in ICU, and confirmed above impression.",
+    "parsed_answer": "An echocardiogram was performed showing a severely depressed ejection fraction when compared to the previous one. The heart failure team consulted in ICU, and confirmed above impression. The heart failure team consulted in ICU, and confirmed above impression. The heart failure team consulted in ICU, and confirmed above impression. The heart failure team consulted in ICU, and confirmed above impression. The heart failure team consulted in ICU, and confirmed above impression.",
+    "word_count": 71
+  },
+  {
+    "case_id": "90",
+    "raw_output": "The patient was treated for a generalized seizure that would not stop on its own (a condition called status epilepticus). The patient will continue to take carbamazepine 400mg twice daily, and now will take levetiracetam (Keppra) 1000mg twice daily to prevent seizures. The patient must have his INR monitored and take warfarin or another medication for anticoagulation. It is not safe (clotting risk, can have life-threatening PE or death) for the patient not to take the medication, and it is also not safe for the patient to take the medication without monitoring and dose adjustments (bleeding risk, can have life-threatening GI or brain bleed or death).",
+    "parsed_answer": "The patient was treated for a generalized seizure that would not stop on its own (a condition called status epilepticus). The patient will continue to take carbamazepine 400mg twice daily, and now will take levetiracetam (Keppra) 1000mg twice daily to prevent seizures. The patient must have his INR monitored and take warfarin or another medication for anticoagulation. It is not safe (clotting risk, can have life-threatening PE or death) for the patient not to take the medication, and it is also not safe for the patient to take the medication without monitoring and dose adjustments (bleeding risk, can have life-threatening GI or brain bleed or death).",
+    "word_count": 106
+  },
+  {
+    "case_id": "91",
+    "raw_output": "The patient was admitted to the hospital and found to have a bacterial infection in their blood related to their hemodialysis catheter. They required aggressive fluid resuscitation in the intensive care unit and intravenous antibiotics. Their hemodialysis catheter had to be pulled out and a new one was put in after their cultures were clear for 72 hours and their fevers went down.",
+    "parsed_answer": "The patient was admitted to the hospital and found to have a bacterial infection in their blood related to their hemodialysis catheter. They required aggressive fluid resuscitation in the intensive care unit and intravenous antibiotics. Their hemodialysis catheter had to be pulled out and a new one was put in after their cultures were clear for 72 hours and their fevers went down.",
+    "word_count": 63
+  },
+  {
+    "case_id": "92",
+    "raw_output": "The patient was in an induced coma due to cardiac arrest. He was ventilated and received antibiotics for pneumonia. He was paralyzed during part of the recovery and his body used many of its resources to heal. This resulted in significant weakness and fatigue which can last for several months but will get better as he works with physical therapy.",
+    "parsed_answer": "The patient was in an induced coma due to cardiac arrest. He was ventilated and received antibiotics for pneumonia. He was paralyzed during part of the recovery and his body used many of its resources to heal. This resulted in significant weakness and fatigue which can last for several months but will get better as he works with physical therapy.",
+    "word_count": 60
+  },
+  {
+    "case_id": "93",
+    "raw_output": "The patient was admitted to the ICU for evaluation and treatment of nausea and vomiting and was found to have a dangerously low heart rate from her diltiazem as well as pneumonia. Her diltiazem medication was held, she was monitored in the intensive care unit, given fluids and antibiotics and her condition improved. She still has remaining issues with her blood pressure. The following changes have been made to her medications: STOP diltiazem (do not take this medication unless told to do so by your primary care doctor or cardiologist); decrease her Novolog 70/30 to 15 units in the morning and 7 units at night, please monitor your blood sugars and keep track of these measurements so that your primary care doctor can make adjustments; start Humalog (Insulin Aspart) prior to meals and at bedtime according the the sliding scale provided; start Azithromycin 250mg by mouth once daily for 2 more days; start Chlorthalidone 50mg by mouth once daily; start Tylenol 325-650mg by mouth every 6 hours as needed for pain (do not take more than 3 grams daily); start Dextromethorphan/Guaifenesin sugar free cough syrup 1 dose by mouth every 6 hours as needed for cough; continue taking her other home medications as directed.",
+    "parsed_answer": "The patient was admitted to the ICU for evaluation and treatment of nausea and vomiting and was found to have a dangerously low heart rate from her diltiazem as well as pneumonia. Her diltiazem medication was held, she was monitored in the intensive care unit, given fluids and antibiotics and her condition improved. She still has remaining issues with her blood pressure. The following changes have been made to her medications: STOP diltiazem (do not take this medication unless told to do so by your primary care doctor or cardiologist); decrease her Novolog 70/30 to 15 units in the morning and 7 units at night, please monitor your blood sugars and keep track of these measurements so that your primary care doctor can make adjustments; start Humalog (Insulin Aspart) prior to meals and at bedtime according the the sliding scale provided; start Azithromycin 250mg by mouth once daily for 2 more days; start Chlorthalidone 50mg by mouth once daily; start Tylenol 325-650mg by mouth every 6 hours as needed for pain (do not take more than 3 grams daily); start Dextromethorphan/Guaifenesin sugar free cough syrup 1 dose by mouth every 6 hours as needed for cough; continue taking her other home medications as directed.",
+    "word_count": 204
+  },
+  {
+    "case_id": "94",
+    "raw_output": "The patient was admitted to the hospital due to hyperglycemia, nausea, vomiting, and abdominal pain. His blood sugar was 846, and he was diagnosed with diabetes mellitus. The patient was started on insulin and was discharged with instructions to continue taking insulin. The patient was also instructed to eat three regular meals per day and to contact his primary care physician if he was unable to eat due to illness.",
+    "parsed_answer": "The patient was admitted to the hospital due to hyperglycemia, nausea, vomiting, and abdominal pain. His blood sugar was 846, and he was diagnosed with diabetes mellitus. The patient was started on insulin and was discharged with instructions to continue taking insulin. The patient was also instructed to eat three regular meals per day and to contact his primary care physician if he was unable to eat due to illness.",
+    "word_count": 70
+  },
+  {
+    "case_id": "95",
+    "raw_output": "The patient was discharged from the hospital after being treated for low hemoglobin and platelets. She was told that she had a vagal reaction to her nausea and vomiting. Her echocardiogram was improved from the previous month. She was told to follow up with her primary care physician and cardiologist.",
+    "parsed_answer": "The patient was discharged from the hospital after being treated for low hemoglobin and platelets. She was told that she had a vagal reaction to her nausea and vomiting. Her echocardiogram was improved from the previous month. She was told to follow up with her primary care physician and cardiologist.",
+    "word_count": 50
+  },
+  {
+    "case_id": "96",
+    "raw_output": "1: She was admitted to the TICU overnight and closely monitored. 2: She remained hemodynamically stable and her Hct was stable around 30. 3: You were admitted to the hospital after falling with multiple injuries including broken ribs, bruising in your brain and blood in your abdomen due to a ruptured liver cyst. 4: You are slowly getting better but will need to continue to eat well and increase your mobility to stay strong. 5: You blood count has been stable which tells us that the bleeding in your abdomen and bruising on your brain has also stabilized. 6: In order to decrease your risk you must use your incentive spirometer 4 times every hour while awake. 7: This will help expand the small airways in your lungs and assist in coughing up secretions that pool in the lungs. 8: Do NOT smoke",
+    "parsed_answer": "1: She was admitted to the TICU overnight and closely monitored. 2: She remained hemodynamically stable and her Hct was stable around 30. 3: You were admitted to the hospital after falling with multiple injuries including broken ribs, bruising in your brain and blood in your abdomen due to a ruptured liver cyst. 4: You are slowly getting better but will need to continue to eat well and increase your mobility to stay strong. 5: You blood count has been stable which tells us that the bleeding in your abdomen and bruising on your brain has also stabilized. 6: In order to decrease your risk you must use your incentive spirometer 4 times every hour while awake. 7: This will help expand the small airways in your lungs and assist in coughing up secretions that pool in the lungs. 8: Do NOT smoke",
+    "word_count": 143
+  },
+  {
+    "case_id": "97",
+    "raw_output": "The patient was admitted with toxic ingestion of his outpatient medications. He was monitored and managed supportively with improvement in his symptoms. He was instructed to take medications as directed.",
+    "parsed_answer": "The patient was admitted with toxic ingestion of his outpatient medications. He was monitored and managed supportively with improvement in his symptoms. He was instructed to take medications as directed.",
+    "word_count": 30
+  },
+  {
+    "case_id": "98",
+    "raw_output": "The mass on his heart was addressed and resolved by draining the fluid around the heart and lungs, opening up a blockage in the coronary artery, and prescribing aspirin and Plavix to keep the blockage open.",
+    "parsed_answer": "The mass on his heart was addressed and resolved by draining the fluid around the heart and lungs, opening up a blockage in the coronary artery, and prescribing aspirin and Plavix to keep the blockage open.",
+    "word_count": 36
+  },
+  {
+    "case_id": "99",
+    "raw_output": "ERCP was recommended to place a common bile duct stent to allow drainage of the biliary obstruction caused by stones and sludge.",
+    "parsed_answer": "ERCP was recommended to place a common bile duct stent to allow drainage of the biliary obstruction caused by stones and sludge.",
+    "word_count": 22
+  },
+  {
+    "case_id": "100",
+    "raw_output": "Discharge Instructions: Mr. [**Known lastname **] you presented to the [**Hospital1 18**] on [**2180-3-29**] in severe respiratory distress due to pneumonia illness. This illness required an admission to the medical intensive care unit and for you to be intubated and placed on a respirator. During this time you stopped making urine and required dialysis. Your ICU course was complicated by an arrhythmia called atrial flutter/fibrillation. You were started on warfarin anticoagulation therapy to minimize your risk of stroke. This will require following INR on a regular basis. You also had an episode where your heart stopped (lost pulse) and you required rescusitation, which was successful. You improved on antibiotics and were transfered to the medical floor where your respiratory status improved and you defervesed. You were continued on dialysis 3x per week. You also demonstrated significant weakness likely due to the long admission in the intensive care unit. However your strength improved somewhat during your stay. Your renal failure requires hemodialysis at this time. You will need to copntinue hemodialysis as an outpatient with a renal physician following your care. We have made the following changes to your medication regimen: - STOP TAKING atenolol while using the diltiazem. - STOP TAKING minitran patch while using the diltiazem. - STOP TAKING furosemide until/unless instructed to resume by your doctors. - STOP TAKING sodium bicarbonate until/unless instructed to resume by your doctors. - BEGIN TAKING diltiazem 30 mg PO every 6 hours for heart rate control (your doctor may wish to change you to a once-daily formula once you are stable on this regimen) - BEGIN TAKING warfarin 2.5 mg PO daily (your doctor will need to monitor your INR and may need to adjust your dose) - BEGIN TAKING Phos-Lo to control your phosphate levels (total 4 tablets daily or as directed by your nephrologist) - BEGIN TAKING aspirin 81 mg PO daily - TAKE AS NEEDED acetaminophen for fever or pain - COMPLETE COURSE of levofloxacin (antibiotic) for your pneumonia (3 more doses over 6 days). Please continue to take your medications as prescribed. Followup Instructions: Please have make an appointment with your",
+    "parsed_answer": "Discharge Instructions: Mr. [**Known lastname **] you presented to the [**Hospital1 18**] on [**2180-3-29**] in severe respiratory distress due to pneumonia illness. This illness required an admission to the medical intensive care unit and for you to be intubated and placed on a respirator. During this time you stopped making urine and required dialysis. Your ICU course was complicated by an arrhythmia called atrial flutter/fibrillation. You were started on warfarin anticoagulation therapy to minimize your risk of stroke. This will require following INR on a regular basis. You also had an episode where your heart stopped (lost pulse) and you required rescusitation, which was successful. You improved on antibiotics and were transfered to the medical floor where your respiratory status improved and you defervesed. You were continued on dialysis 3x per week. You also demonstrated significant weakness likely due to the long admission in the intensive care unit. However your strength improved somewhat during your stay. Your renal failure requires hemodialysis at this time. You will need to copntinue hemodialysis as an outpatient with a renal physician following your care. We have made the following changes to your medication regimen: - STOP TAKING atenolol while using the diltiazem. - STOP TAKING minitran patch while using the diltiazem. - STOP TAKING furosemide until/unless instructed to resume by your doctors. - STOP TAKING sodium bicarbonate until/unless instructed to resume by your doctors. - BEGIN TAKING diltiazem 30 mg PO every 6 hours for heart rate control (your doctor may wish to change you to a once-daily formula once you are stable on this regimen) - BEGIN TAKING warfarin 2.5 mg PO daily (your doctor will need to monitor your INR and may need to adjust your dose) - BEGIN TAKING Phos-Lo to control your phosphate levels (total 4 tablets daily or as directed by your nephrologist) - BEGIN TAKING aspirin 81 mg PO daily - TAKE AS NEEDED acetaminophen for fever or pain - COMPLETE COURSE of levofloxacin (antibiotic) for your pneumonia (3 more doses over 6 days). Please continue to take your medications as prescribed. Followup Instructions: Please have make an appointment with your",
+    "word_count": 353
+  },
+  {
+    "case_id": "101",
+    "raw_output": "The patient had an ileostomy placed due to lower GI bleeding. She had two JP drains placed. The drains were removed after five days. The patient was discharged on 20 mg Lasix via the doppler tube. The patient is being monitored for electrolyte imbalances and BUN/creatinine levels.",
+    "parsed_answer": "The patient had an ileostomy placed due to lower GI bleeding. She had two JP drains placed. The drains were removed after five days. The patient was discharged on 20 mg Lasix via the doppler tube. The patient is being monitored for electrolyte imbalances and BUN/creatinine levels.",
+    "word_count": 47
+  },
+  {
+    "case_id": "102",
+    "raw_output": "An endoscopic retrograde cholangiopancreatography, ERCP, was recommended to place a common bile duct stent. This stent was placed to allow drainage of the biliary obstruction which was caused by stones and sludge. Due to no improvement in liver function, the patient needed a repeat ERCP. The repeat ERCP showed that the biliary stent placed in the first ERCP was obstructed by stones and sludge. The stones and stent were successfully removed during this procedure by performing a sphincterotomy.",
+    "parsed_answer": "An endoscopic retrograde cholangiopancreatography, ERCP, was recommended to place a common bile duct stent. This stent was placed to allow drainage of the biliary obstruction which was caused by stones and sludge. Due to no improvement in liver function, the patient needed a repeat ERCP. The repeat ERCP showed that the biliary stent placed in the first ERCP was obstructed by stones and sludge. The stones and stent were successfully removed during this procedure by performing a sphincterotomy.",
+    "word_count": 78
+  },
+  {
+    "case_id": "103",
+    "raw_output": "The patient was initially brought in to be evaluated for possible confusion per his family. However on further questioning, he initially appeared to be at his relative [year (4 digits) 5348] ([name2 (NI) 11345], nearly deaf, left hemiplegia, intermittently saying [1-14] words with signficant stimulation but rarely oriented). An RPR was found to be mildy positive and neurosyphyllis was thought to be possibly contributing to his confusion. He received 2 weeks of IV ceftriaxone, completed in house, with little improvement of his mental status after his arrest. After his arrest, the patients mental status became essentially unresponsive to any stimuli. His ability to protect his airway was significantly decreased. After lengthy discussion with his family, it was decided to place a tracheostomy to attempt to minimize further mucous plugging events and ease suctioning, as he was having significant nasopharyngeal trauma from NT suctioning.",
+    "parsed_answer": "The patient was initially brought in to be evaluated for possible confusion per his family. However on further questioning, he initially appeared to be at his relative [year (4 digits) 5348] ([name2 (NI) 11345], nearly deaf, left hemiplegia, intermittently saying [1-14] words with signficant stimulation but rarely oriented). An RPR was found to be mildy positive and neurosyphyllis was thought to be possibly contributing to his confusion. He received 2 weeks of IV ceftriaxone, completed in house, with little improvement of his mental status after his arrest. After his arrest, the patients mental status became essentially unresponsive to any stimuli. His ability to protect his airway was significantly decreased. After lengthy discussion with his family, it was decided to place a tracheostomy to attempt to minimize further mucous plugging events and ease suctioning, as he was having significant nasopharyngeal trauma from NT suctioning.",
+    "word_count": 143
+  },
+  {
+    "case_id": "104",
+    "raw_output": "The lung biopsy showed that part of the lung was affected by a chronic condition called cryptogenic organizing pneumonia while other parts of the lung were affected by more acute inflammation. Both of these processes are treated with steroids and the patient improved greatly with steroids while in the hospital.",
+    "parsed_answer": "The lung biopsy showed that part of the lung was affected by a chronic condition called cryptogenic organizing pneumonia while other parts of the lung were affected by more acute inflammation. Both of these processes are treated with steroids and the patient improved greatly with steroids while in the hospital.",
+    "word_count": 50
+  },
+  {
+    "case_id": "105",
+    "raw_output": "The patient was hospitalized for a rectal mass causing partial obstruction of her colon. The patient also had an infection of her colon called clostridium difficile. The patient was seen by the GI and Surgery services and was treated with antibiotics with improvement in her colon infection. The patient was also felt to have obstruction from her rectal mass and a colonic stent was placed by the gastroenterology team. The patient was able to move her bowels following the procedure and tolerated the procedure well.",
+    "parsed_answer": "The patient was hospitalized for a rectal mass causing partial obstruction of her colon. The patient also had an infection of her colon called clostridium difficile. The patient was seen by the GI and Surgery services and was treated with antibiotics with improvement in her colon infection. The patient was also felt to have obstruction from her rectal mass and a colonic stent was placed by the gastroenterology team. The patient was able to move her bowels following the procedure and tolerated the procedure well.",
+    "word_count": 85
+  },
+  {
+    "case_id": "106",
+    "raw_output": "1: Pertinent Results: 2: [**2113-5-4**] 04:00PM   WBC-15.2* RBC-4.90 HGB-15.4 HCT-44.6 MCV-91 MCH-31.5 MCHC-34.6 RDW-13.4 [**2113-5-4**] 04:00PM   PLT SMR-NORMAL PLT COUNT-276 [**2113-5-4**] 04:00PM   NEUTS-86.2* BANDS-0 LYMPHS-10.2* MONOS-3.1 EOS-0.2 BASOS-0.2 3: [**2113-5-4**] 04:00PM   CORTISOL-35.0* 4: [**5-8**]: urine sodium 85 5: [**2113-5-4**] 04:08PM   LACTATE-4.4* 6: Brief Hospital Course: 1) pneumonia complicated by sepsis: patient was seen in the ED and a \"code sepsis\" was called based on fever, tachycardia, and a lactate of 4.4. She had a chest x ray demonstrating a right middle lobe pneumonia. She had transient hypotension and was on Levophed. She was admitted to the MICU and placed on ceftriaxone and azithromycin. She had received a dose of levofloxacin in the ED, but this was stopped due to potential reaction with myasthenia. Her Levophed was quickly weaned off and she was quickly hemodynamically stable. Her NIFs and vital capacites were monitored to ensure no myasthenic crisis. These remained stable. She was called out to the floor and did well. Her d/c NIF was -22 and vital capacity was -1100. She was discharged home and will complete a course of cefpodoxime and azithromycin. She will follow her respiratory status as azithromycin can also provoke a myasthenic crisis. She was also given a dose of Pneumovax",
+    "parsed_answer": "1: Pertinent Results: 2: [**2113-5-4**] 04:00PM WBC-15.2* RBC-4.90 HGB-15.4 HCT-44.6 MCV-91 MCH-31.5 MCHC-34.6 RDW-13.4 [**2113-5-4**] 04:00PM PLT SMR-NORMAL PLT COUNT-276 [**2113-5-4**] 04:00PM NEUTS-86.2* BANDS-0 LYMPHS-10.2* MONOS-3.1 EOS-0.2 BASOS-0.2 3: [**2113-5-4**] 04:00PM CORTISOL-35.0* 4: [**5-8**]: urine sodium 85 5: [**2113-5-4**] 04:08PM LACTATE-4.4* 6: Brief Hospital Course: 1) pneumonia complicated by sepsis: patient was seen in the ED and a \"code sepsis\" was called based on fever, tachycardia, and a lactate of 4.4. She had a chest x ray demonstrating a right middle lobe pneumonia. She had transient hypotension and was on Levophed. She was admitted to the MICU and placed on ceftriaxone and azithromycin. She had received a dose of levofloxacin in the ED, but this was stopped due to potential reaction with myasthenia. Her Levophed was quickly weaned off and she was quickly hemodynamically stable. Her NIFs and vital capacites were monitored to ensure no myasthenic crisis. These remained stable. She was called out to the floor and did well. Her d/c NIF was -22 and vital capacity was -1100. She was discharged home and will complete a course of cefpodoxime and azithromycin. She will follow her respiratory status as azithromycin can also provoke a myasthenic crisis. She was also given a dose of Pneumovax",
+    "word_count": 205
+  },
+  {
+    "case_id": "107",
+    "raw_output": "The cause of death was cardiac arrest, thought to be secondary to her malignancy.",
+    "parsed_answer": "The cause of death was cardiac arrest, thought to be secondary to her malignancy.",
+    "word_count": 14
+  },
+  {
+    "case_id": "108",
+    "raw_output": "Coumadin was prescribed to treat a blood clot in the lungs. The clot was discovered during a CT angiogram. The coumadin will need to be monitored closely because it may interact with the anti-epileptic medication. The coumadin will be discontinued once the INR reaches 2.",
+    "parsed_answer": "Coumadin was prescribed to treat a blood clot in the lungs. The clot was discovered during a CT angiogram. The coumadin will need to be monitored closely because it may interact with the anti-epileptic medication. The coumadin will be discontinued once the INR reaches 2.",
+    "word_count": 45
+  },
+  {
+    "case_id": "109",
+    "raw_output": "The patient will need to continue going to dialysis three times a week. You were also started on a medication called nephrocaps that you will need to continue. You were also started on a medication called nephrocaps that you will need to continue.",
+    "parsed_answer": "The patient will need to continue going to dialysis three times a week. You were also started on a medication called nephrocaps that you will need to continue. You were also started on a medication called nephrocaps that you will need to continue.",
+    "word_count": 43
+  },
+  {
+    "case_id": "110",
+    "raw_output": "The cause of death was acute hypoxemic respiratory failure. The patient had been admitted to the ICU after undergoing hemodialysis. He developed respiratory failure and was put on mechanical ventilation support. The patient died after 1 and a half hours.",
+    "parsed_answer": "The cause of death was acute hypoxemic respiratory failure. The patient had been admitted to the ICU after undergoing hemodialysis. He developed respiratory failure and was put on mechanical ventilation support. The patient died after 1 and a half hours.",
+    "word_count": 40
+  },
+  {
+    "case_id": "111",
+    "raw_output": "The cause of bleeding was variceal bleed, which was treated with endoscopy and banding. The patient was stabilized and sent to the floor, where he continued to have melena. The patient was scheduled for rebanding.",
+    "parsed_answer": "The cause of bleeding was variceal bleed, which was treated with endoscopy and banding. The patient was stabilized and sent to the floor, where he continued to have melena. The patient was scheduled for rebanding.",
+    "word_count": 35
+  },
+  {
+    "case_id": "112",
+    "raw_output": "1: Discharge Instructions: You were admitted to the hospital after having a heart attack. You had 2 drug eluting stents placed in your left anterior descending (LAD) artery and an angioplasty of your diagonal artery. You should take Aspirin 325mg daily indefinitely. You should take Plavix 75mg daily for a minimum of one year. These medications have antiplatelet effects, which helps to prevent blood clots from forming inside your stents. Do not stop either of these medications unless instructed to do so by Dr. [**Last Name (STitle) 171**]. Stopping either of these medications early COULD result in a blockage inside your stents and another heart attack.",
+    "parsed_answer": "1: Discharge Instructions: You were admitted to the hospital after having a heart attack. You had 2 drug eluting stents placed in your left anterior descending (LAD) artery and an angioplasty of your diagonal artery. You should take Aspirin 325mg daily indefinitely. You should take Plavix 75mg daily for a minimum of one year. These medications have antiplatelet effects, which helps to prevent blood clots from forming inside your stents. Do not stop either of these medications unless instructed to do so by Dr. [**Last Name (STitle) 171**]. Stopping either of these medications early COULD result in a blockage inside your stents and another heart attack.",
+    "word_count": 106
+  },
+  {
+    "case_id": "113",
+    "raw_output": "The post-operative course was uneventful, except for a brief period of postoperative confusion and agitation. The patient was discharged to home with visiting nurse services.",
+    "parsed_answer": "The post-operative course was uneventful, except for a brief period of postoperative confusion and agitation. The patient was discharged to home with visiting nurse services.",
+    "word_count": 25
+  },
+  {
+    "case_id": "114",
+    "raw_output": "An endoscopic retrograde cholangiopancreatography, ERCP, was recommended to place a common bile duct stent. This stent was placed to allow drainage of the biliary obstruction which was caused by stones and sludge. Due to no improvement in liver function, the patient needed a repeat ERCP. The repeat ERCP showed that the biliary stent placed in the first ERCP was obstructed by stones and sludge. The stones and stent were successfully removed during this procedure by performing a sphincterotomy.",
+    "parsed_answer": "An endoscopic retrograde cholangiopancreatography, ERCP, was recommended to place a common bile duct stent. This stent was placed to allow drainage of the biliary obstruction which was caused by stones and sludge. Due to no improvement in liver function, the patient needed a repeat ERCP. The repeat ERCP showed that the biliary stent placed in the first ERCP was obstructed by stones and sludge. The stones and stent were successfully removed during this procedure by performing a sphincterotomy.",
+    "word_count": 78
+  },
+  {
+    "case_id": "115",
+    "raw_output": "The patient was diagnosed with tuberculosis in her pleural space and was treated with multiple medications. She was also diagnosed with anemia, which is likely due to her ongoing infection. She was transferred to another hospital where she could continue her recovery including getting her pain and tuberculosis medications.",
+    "parsed_answer": "The patient was diagnosed with tuberculosis in her pleural space and was treated with multiple medications. She was also diagnosed with anemia, which is likely due to her ongoing infection. She was transferred to another hospital where she could continue her recovery including getting her pain and tuberculosis medications.",
+    "word_count": 49
+  },
+  {
+    "case_id": "116",
+    "raw_output": "1: Mr. [**Known lastname **] is a 55 yo man with h/o HTN and possible old strokes who presented with acute onset of left-sided weakness of the face, arm, and leg, with no cortical signs such as language comprehension deficits. 2: Acute intracerebral hemorrhage of the right midbrain/pons/cerebral peduncle was seen on CT, without corresponding vascular anomalies on CTA. 3: This is a relatively classic location for hypertensive bleed and the patient came in acutely hypertensive at 240/120. 4: The patient was offered the option of a Factor VII trial, but he refused. 5: There were no other alternative therapies indicated. 6: Mr. [**Known lastname **] went to the neuro ICU for monitoring. 7: His BP was initially controlled with a labetalol gtt for a goal SBP < 140, and [**Known lastname **] and heparin products were held given the hemorrhage. 8: His exam improved, with increase in the strength of his left arm and leg, and improvement in his dysarthria. 9: Repeat imaging showed that the hemorrhage was stable. 10: He was transferred to the floor. 11: On the floor he worked with PT and OT who recommended acute rehab. 12: His BP was initally difficult to control, and required titration of Captopril, Metoprolol, as well as addition of HCTZ. 13: SBP was controlled around 140 after titration to metoprolol 100mg tid, captopril 37.5 mg tid (then changed to lisinopril 20mg daily), and HCTZ 25 mg daily. 14: His blood pressure was controlled on discharge.",
+    "parsed_answer": "1: Mr. [**Known lastname **] is a 55 yo man with h/o HTN and possible old strokes who presented with acute onset of left-sided weakness of the face, arm, and leg, with no cortical signs such as language comprehension deficits. 2: Acute intracerebral hemorrhage of the right midbrain/pons/cerebral peduncle was seen on CT, without corresponding vascular anomalies on CTA. 3: This is a relatively classic location for hypertensive bleed and the patient came in acutely hypertensive at 240/120. 4: The patient was offered the option of a Factor VII trial, but he refused. 5: There were no other alternative therapies indicated. 6: Mr. [**Known lastname **] went to the neuro ICU for monitoring. 7: His BP was initially controlled with a labetalol gtt for a goal SBP < 140, and [**Known lastname **] and heparin products were held given the hemorrhage. 8: His exam improved, with increase in the strength of his left arm and leg, and improvement in his dysarthria. 9: Repeat imaging showed that the hemorrhage was stable. 10: He was transferred to the floor. 11: On the floor he worked with PT and OT who recommended acute rehab. 12: His BP was initally difficult to control, and required titration of Captopril, Metoprolol, as well as addition of HCTZ. 13: SBP was controlled around 140 after titration to metoprolol 100mg tid, captopril 37.5 mg tid (then changed to lisinopril 20mg daily), and HCTZ 25 mg daily. 14: His blood pressure was controlled on discharge.",
+    "word_count": 246
+  },
+  {
+    "case_id": "117",
+    "raw_output": "The causes of AKI in your mother include central venous access placement with Swan-Ganz catheter, PICC placement, intra-aortic balloon pump placement, endotracheal tube intubation, left lower extremity fasciotomy, left lower extremity surgical debridement, IR Guided Tunneled Catheterization, IR Guided Dobhoff feeding tube, tracheotomy, and cardiac catheterization with 2 Bare Metal Stents.",
+    "parsed_answer": "The causes of AKI in your mother include central venous access placement with Swan-Ganz catheter, PICC placement, intra-aortic balloon pump placement, endotracheal tube intubation, left lower extremity fasciotomy, left lower extremity surgical debridement, IR Guided Tunneled Catheterization, IR Guided Dobhoff feeding tube, tracheotomy, and cardiac catheterization with 2 Bare Metal Stents.",
+    "word_count": 51
+  },
+  {
+    "case_id": "118",
+    "raw_output": "The patient was admitted to the hospital after she had an exploratory laparotomy for a ruptured uterus and abscess near the surgery site. She developed an abscess near her surgery site and became very ill. She was transferred to another hospital for further management. She was taken to the operating room where she found to have a perforated diverticulitis with pelvic peritonitis. She had a section of her colon resected and had a colostomy placed. She is slowly getting better. Her vital signs are stable and her white blood cell count is decreasing. She is now on intravenous antibiotics. She had a special dressing called a VAC dressing over the incision to help with wound healing.",
+    "parsed_answer": "The patient was admitted to the hospital after she had an exploratory laparotomy for a ruptured uterus and abscess near the surgery site. She developed an abscess near her surgery site and became very ill. She was transferred to another hospital for further management. She was taken to the operating room where she found to have a perforated diverticulitis with pelvic peritonitis. She had a section of her colon resected and had a colostomy placed. She is slowly getting better. Her vital signs are stable and her white blood cell count is decreasing. She is now on intravenous antibiotics. She had a special dressing called a VAC dressing over the incision to help with wound healing.",
+    "word_count": 116
+  },
+  {
+    "case_id": "119",
+    "raw_output": "The pain management plan for this patient included Percocet, Albuterol, Ipratropium, Acetaminophen, Docusate Sodium, Zolpidem, Oxycodone-Acetaminophen, Oxygen, Stationary suction/portable suction, Cool mist compressor, and Speech and swallow evaluation.",
+    "parsed_answer": "The pain management plan for this patient included Percocet, Albuterol, Ipratropium, Acetaminophen, Docusate Sodium, Zolpidem, Oxycodone-Acetaminophen, Oxygen, Stationary suction/portable suction, Cool mist compressor, and Speech and swallow evaluation.",
+    "word_count": 28
+  },
+  {
+    "case_id": "120",
+    "raw_output": "The patient had bleeding gums due to low platelet counts. The platelet counts were low due to the patient having ESLD, splenomegaly, critical illness, and multiple antibiotics that were reversibly myelosuppressive. The patient had low platelet counts when he was found to be bleeding. His platelet counts remained in the 80s-100s with no more spontaneous bleeding. As part of his twice-weekly labs, CBC should be checked and he should receive platelet transfusion if <60.",
+    "parsed_answer": "The patient had bleeding gums due to low platelet counts. The platelet counts were low due to the patient having ESLD, splenomegaly, critical illness, and multiple antibiotics that were reversibly myelosuppressive. The patient had low platelet counts when he was found to be bleeding. His platelet counts remained in the 80s-100s with no more spontaneous bleeding. As part of his twice-weekly labs, CBC should be checked and he should receive platelet transfusion if <60.",
+    "word_count": 74
+  }
+]
