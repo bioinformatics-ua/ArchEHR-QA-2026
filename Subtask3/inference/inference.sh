@@ -20,28 +20,21 @@ source .venv/bin/activate
 # =============================================================================
 
 # --- Task ---
-INFERENCE_MODE="cloud"      # local / cloud
-DATASET="test-2026"               # dev / test / test-2026
-PROMPT_INDEX=6
-MODEL="anthropic/claude-opus-4.6"
+INFERENCE_MODE="local"      # local / cloud
+DATASET="test"               # dev / test / test-2026
+PROMPT_INDEX=1
+MODEL="Echelon-AI/Med-Qwen2-7B"
     # --- Local Models ---
     # meta-llama/Llama-3.1-8B-Instruct
     # google/medgemma-27b-text-it
-        # prompt 8, 4 gpu's, 0.95 GPU memory utilization
     # google/gemma-3-27b-it
-        # 4 gpu's, 0.95 GPU memory utilization
     # Qwen/Qwen3-32B
-        # 4 gpu's, 0.95 GPU memory utilization
     # Qwen/Qwen3-8B
-        # 1 gpu, 0.95 GPU memory utilization
     # zai-org/GLM-4.6V-Flash
-        # 1 gpu, 0.95 GPU memory utilization
+    # Echelon-AI/Med-Qwen2-7B
 
     # --- Cloud Models ---
     # anthropic/claude-sonnet-4.5
-        # prompt 8, temperature 0.1, top_p 0.95, max_tokens 150, repetition_penalty 1.0
-        # prompt 1, temperature 0.1, top_p 0.95, max_tokens 150, repetition_penalty 1.0
-        # prompt 2, temperature 0.1, top_p 0.95, max_tokens 150, repetition_penalty 1.0
     # anthropic/claude-opus-4.6
     # deepseek/deepseek-v3.2
     # x-ai/grok-4.1-fast

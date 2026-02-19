@@ -1,27 +1,27 @@
 [
   {
     "case_id": "21",
-    "raw_output": "The prognosis for your partner is poor. He has advanced alcoholic cirrhosis with hepatic encephalopathy, which is a serious condition that can lead to complications such as liver failure and even death. The fact that he has had multiple hospitalizations and is currently experiencing altered mental status and hyponatremia suggests that his condition is progressing rapidly. While there is no way to predict exactly how long he may live, the information in his medical records indicates that his condition is severe and that he is unlikely to recover fully. It is important to discuss his care options with his healthcare team and to make decisions about his treatment and end-of-life care.",
-    "parsed_answer": "The prognosis for your partner is poor. He has advanced alcoholic cirrhosis with hepatic encephalopathy, which is a serious condition that can lead to complications such as liver failure and even death. The fact that he has had multiple hospitalizations and is currently experiencing altered mental status and hyponatremia suggests that his condition is progressing rapidly. While there is no way to predict exactly how long he may live, the information in his medical records indicates that his condition is severe and that he is unlikely to recover fully. It is important to discuss his care options with his healthcare team and to make decisions about his treatment and end-of-life care.",
-    "word_count": 111
+    "raw_output": "The prognosis of alcoholic cirrhosis with advanced hepatic encephalopathy is poor.",
+    "parsed_answer": "The prognosis of alcoholic cirrhosis with advanced hepatic encephalopathy is poor.",
+    "word_count": 11
   },
   {
     "case_id": "22",
-    "raw_output": "The reason for the emergency salvage repair was because the patient had a ruptured thoracoabdominal aortic aneurysm.",
-    "parsed_answer": "The reason for the emergency salvage repair was because the patient had a ruptured thoracoabdominal aortic aneurysm.",
-    "word_count": 17
+    "raw_output": "The reason for the emergency salvage repair was to repair the ruptured thoracoabdominal aortic aneurysm with a 34-mm Dacron tube graft using deep hypothermic circulatory arrest.",
+    "parsed_answer": "The reason for the emergency salvage repair was to repair the ruptured thoracoabdominal aortic aneurysm with a 34-mm Dacron tube graft using deep hypothermic circulatory arrest.",
+    "word_count": 26
   },
   {
     "case_id": "23",
-    "raw_output": "The antibiotics were necessary because your mother developed pneumonia.",
-    "parsed_answer": "The antibiotics were necessary because your mother developed pneumonia.",
-    "word_count": 9
+    "raw_output": "The antibiotics were necessary because your mother was developing pneumonia.",
+    "parsed_answer": "The antibiotics were necessary because your mother was developing pneumonia.",
+    "word_count": 10
   },
   {
     "case_id": "24",
-    "raw_output": "The patient was intubated because he had hypoxia and tachypnea.",
-    "parsed_answer": "The patient was intubated because he had hypoxia and tachypnea.",
-    "word_count": 10
+    "raw_output": "The patient was intubated due to concern for increasing work of breathing.",
+    "parsed_answer": "The patient was intubated due to concern for increasing work of breathing.",
+    "word_count": 12
   },
   {
     "case_id": "25",
@@ -31,27 +31,27 @@
   },
   {
     "case_id": "26",
-    "raw_output": "The antibiotics were necessary as your father had pneumonia.",
-    "parsed_answer": "The antibiotics were necessary as your father had pneumonia.",
-    "word_count": 9
+    "raw_output": "The antibiotics were necessary to treat the pneumonia.",
+    "parsed_answer": "The antibiotics were necessary to treat the pneumonia.",
+    "word_count": 8
   },
   {
     "case_id": "27",
-    "raw_output": "The patient should be treated with IV fluids and aggressive pain control with dilaudid 1mg IV q3. Additionally, she should be sedated on precedex and an ativan drip at 4mg/h.",
-    "parsed_answer": "The patient should be treated with IV fluids and aggressive pain control with dilaudid 1mg IV q3. Additionally, she should be sedated on precedex and an ativan drip at 4mg/h.",
-    "word_count": 30
+    "raw_output": "The patient is suffering from severe pancreatitis. The pain can be controlled with dilaudid 1mg IV q3, sedation on precedex and an ativan drip at 4mg/h.",
+    "parsed_answer": "The patient is suffering from severe pancreatitis. The pain can be controlled with dilaudid 1mg IV q3, sedation on precedex and an ativan drip at 4mg/h.",
+    "word_count": 26
   },
   {
     "case_id": "28",
-    "raw_output": "The patient will need ongoing monitoring of nutrition intake given her low albumin. She should see a gastroenterologist within 2 weeks after discharge for management of pancreatitis/pancreatic hemorrhage.",
-    "parsed_answer": "The patient will need ongoing monitoring of nutrition intake given her low albumin. She should see a gastroenterologist within 2 weeks after discharge for management of pancreatitis/pancreatic hemorrhage.",
-    "word_count": 28
+    "raw_output": "The patient will need ongoing monitoring of nutrition intake given her low albumin. She should be reevaluated for G-tube placement in 4-10 weeks. She should have repeat Contrast CT of the abdomen to evaluate for residual pancreatic pseudoaneurysm.",
+    "parsed_answer": "The patient will need ongoing monitoring of nutrition intake given her low albumin. She should be reevaluated for G-tube placement in 4-10 weeks. She should have repeat Contrast CT of the abdomen to evaluate for residual pancreatic pseudoaneurysm.",
+    "word_count": 38
   },
   {
     "case_id": "29",
-    "raw_output": "There are no contraindications for consuming alcohol.",
-    "parsed_answer": "There are no contraindications for consuming alcohol.",
-    "word_count": 7
+    "raw_output": "There are no contraindications for the patient to consume alcohol.",
+    "parsed_answer": "There are no contraindications for the patient to consume alcohol.",
+    "word_count": 10
   },
   {
     "case_id": "30",
@@ -61,39 +61,39 @@
   },
   {
     "case_id": "31",
-    "raw_output": "The patient was diagnosed with a contagious UTI based on the culture results from the outside hospital.",
-    "parsed_answer": "The patient was diagnosed with a contagious UTI based on the culture results from the outside hospital.",
-    "word_count": 17
+    "raw_output": "The patient was diagnosed with a UTI by presumptive positive blood cultures.",
+    "parsed_answer": "The patient was diagnosed with a UTI by presumptive positive blood cultures.",
+    "word_count": 12
   },
   {
     "case_id": "32",
-    "raw_output": "The cause of the confusion may be a genetic disorder called MELAS that caused a stroke-like episode. The symptoms of MELAS include language problems, seizures, and strokes. The patient was treated for urinary tract infection, hypokalemia, hypomagnesemia, and hypophosphatemia. The patient was started on enzyme supplementation, coenzyme Q10, l-carnitine, creatine monophosphate, l-arginine, and fish oil. The patient should stop using valproic acid (and derivatives), metformin, barbiturates, tetracyclines, aminoglycosides, and chloramphenicol.",
-    "parsed_answer": "The cause of the confusion may be a genetic disorder called MELAS that caused a stroke-like episode. The symptoms of MELAS include language problems, seizures, and strokes. The patient was treated for urinary tract infection, hypokalemia, hypomagnesemia, and hypophosphatemia. The patient was started on enzyme supplementation, coenzyme Q10, l-carnitine, creatine monophosphate, l-arginine, and fish oil. The patient should stop using valproic acid (and derivatives), metformin, barbiturates, tetracyclines, aminoglycosides, and chloramphenicol.",
-    "word_count": 70
+    "raw_output": "The patient was transferred to the hospital for language problems and was found to have had a stroke. The cause of the stroke was a genetic disorder called MELAS. The patient was treated for a urinary tract infection, hypokalemia, hypomagnesemia, and hypophosphatemia. The patient was started on enzyme supplementation, coenzyme Q10, L-carnitine, creatine monophosphate, L-arginine, and fish oil. The patient was also started on a multivitamin. The patient was advised to stop using valproic acid (and derivatives), metformin, barbiturates, tetracyclines, aminoglycosides, and chloramphenicol.",
+    "parsed_answer": "The patient was transferred to the hospital for language problems and was found to have had a stroke. The cause of the stroke was a genetic disorder called MELAS. The patient was treated for a urinary tract infection, hypokalemia, hypomagnesemia, and hypophosphatemia. The patient was started on enzyme supplementation, coenzyme Q10, L-carnitine, creatine monophosphate, L-arginine, and fish oil. The patient was also started on a multivitamin. The patient was advised to stop using valproic acid (and derivatives), metformin, barbiturates, tetracyclines, aminoglycosides, and chloramphenicol.",
+    "word_count": 83
   },
   {
     "case_id": "33",
-    "raw_output": "The cause of hepatic encephalopathy was not found. The cause of UTI was not found.",
-    "parsed_answer": "The cause of hepatic encephalopathy was not found. The cause of UTI was not found.",
-    "word_count": 15
+    "raw_output": "The cause of the confusion was hepatic encephalopathy, which is a result of build up of toxins in your body that your liver is unable to clear. This is a result of not taking enough lactulose at home to have three bowel movements per day. In addition, you were found to have a persistent UTI. This is a result of not finishing your course of antibiotics at home.",
+    "parsed_answer": "The cause of the confusion was hepatic encephalopathy, which is a result of build up of toxins in your body that your liver is unable to clear. This is a result of not taking enough lactulose at home to have three bowel movements per day. In addition, you were found to have a persistent UTI. This is a result of not finishing your course of antibiotics at home.",
+    "word_count": 68
   },
   {
     "case_id": "34",
-    "raw_output": "The cause of the confusion is unknown. The low magnesium, potassium, and calcium levels were corrected. The patient should continue to take magnesium oxide and amlodipine.",
-    "parsed_answer": "The cause of the confusion is unknown. The low magnesium, potassium, and calcium levels were corrected. The patient should continue to take magnesium oxide and amlodipine.",
-    "word_count": 26
+    "raw_output": "The cause of the confusion was low magnesium, potassium, and calcium. The low electrolytes were attributed to chronic diarrhea, alcohol use, and poor nutrition. The low electrolytes were corrected, and the patient was discharged to a rehab facility to help her regain her strength and ensure a safe return home.",
+    "parsed_answer": "The cause of the confusion was low magnesium, potassium, and calcium. The low electrolytes were attributed to chronic diarrhea, alcohol use, and poor nutrition. The low electrolytes were corrected, and the patient was discharged to a rehab facility to help her regain her strength and ensure a safe return home.",
+    "word_count": 50
   },
   {
     "case_id": "35",
-    "raw_output": "The cause of your confusion could be electrolyte imbalance.",
-    "parsed_answer": "The cause of your confusion could be electrolyte imbalance.",
-    "word_count": 9
+    "raw_output": "The cause of the confusion was a urinary tract infection with E.coli that was sensitive to ciprofloxacin.",
+    "parsed_answer": "The cause of the confusion was a urinary tract infection with E.coli that was sensitive to ciprofloxacin.",
+    "word_count": 17
   },
   {
     "case_id": "36",
-    "raw_output": "The patient was treated with methimazole and propranolol.",
-    "parsed_answer": "The patient was treated with methimazole and propranolol.",
-    "word_count": 8
+    "raw_output": "The patient was admitted to the hospital for thyrotoxicosis/hyperthyroidism.",
+    "parsed_answer": "The patient was admitted to the hospital for thyrotoxicosis/hyperthyroidism.",
+    "word_count": 9
   },
   {
     "case_id": "37",
@@ -103,75 +103,75 @@
   },
   {
     "case_id": "38",
-    "raw_output": "You should continue taking diuretics to reduce the swelling.",
-    "parsed_answer": "You should continue taking diuretics to reduce the swelling.",
-    "word_count": 9
+    "raw_output": "The best and proper way to cure your father is liver transplant.",
+    "parsed_answer": "The best and proper way to cure your father is liver transplant.",
+    "word_count": 12
   },
   {
     "case_id": "39",
-    "raw_output": "The best and proper way to cure her is liver transplantation.",
-    "parsed_answer": "The best and proper way to cure her is liver transplantation.",
-    "word_count": 11
+    "raw_output": "You were admitted to the hospital after presenting with abdominal pain and being found to have a blood clot in the portal vein of your liver and small bowel. You were unable to be anticoagulated for this clot because you developed a bleed in your bowel. You were treated with blood transfusions for your bleed. You were treated with a medication called diltiazem to slow your heart rate. You are being discharged on telemetry for further monitoring of your heart rate and adjustment of your medications.",
+    "parsed_answer": "You were admitted to the hospital after presenting with abdominal pain and being found to have a blood clot in the portal vein of your liver and small bowel. You were unable to be anticoagulated for this clot because you developed a bleed in your bowel. You were treated with blood transfusions for your bleed. You were treated with a medication called diltiazem to slow your heart rate. You are being discharged on telemetry for further monitoring of your heart rate and adjustment of your medications.",
+    "word_count": 86
   },
   {
     "case_id": "40",
-    "raw_output": "The expected course of recovery from bacterial bronchitis is to complete the prescribed antibiotic treatment and improve with time.",
-    "parsed_answer": "The expected course of recovery from bacterial bronchitis is to complete the prescribed antibiotic treatment and improve with time.",
-    "word_count": 19
-  },
-  {
-    "case_id": "41",
-    "raw_output": "The cause of the chest pain may be COPD or anxiety.",
-    "parsed_answer": "The cause of the chest pain may be COPD or anxiety.",
-    "word_count": 11
-  },
-  {
-    "case_id": "42",
-    "raw_output": "The pain may be caused by both the antibiotics and foods.",
-    "parsed_answer": "The pain may be caused by both the antibiotics and foods.",
-    "word_count": 11
-  },
-  {
-    "case_id": "43",
-    "raw_output": "No, bulging thoracic disc does not cause chest pain.",
-    "parsed_answer": "No, bulging thoracic disc does not cause chest pain.",
+    "raw_output": "The patient is likely to recover from bacterial bronchitis.",
+    "parsed_answer": "The patient is likely to recover from bacterial bronchitis.",
     "word_count": 9
   },
   {
+    "case_id": "41",
+    "raw_output": "The chest pain is likely due to COPD or anxiety.",
+    "parsed_answer": "The chest pain is likely due to COPD or anxiety.",
+    "word_count": 10
+  },
+  {
+    "case_id": "42",
+    "raw_output": "The pain is likely due to the gallbladder inflammation.",
+    "parsed_answer": "The pain is likely due to the gallbladder inflammation.",
+    "word_count": 9
+  },
+  {
+    "case_id": "43",
+    "raw_output": "The bulging thoracic disc can cause chest pain.",
+    "parsed_answer": "The bulging thoracic disc can cause chest pain.",
+    "word_count": 8
+  },
+  {
     "case_id": "44",
-    "raw_output": "The patient has been diagnosed with bronchitis and pleurisy. The symptoms include coughing, shortness of breath, and pain in the ribs. The patient should take medications as prescribed by the doctor.",
-    "parsed_answer": "The patient has been diagnosed with bronchitis and pleurisy. The symptoms include coughing, shortness of breath, and pain in the ribs. The patient should take medications as prescribed by the doctor.",
-    "word_count": 31
+    "raw_output": "The pain is due to inflammation of the tissues near your lungs and ribs from your bronchitis. Please continue taking all other medications as prescribed by your outpatient providers.",
+    "parsed_answer": "The pain is due to inflammation of the tissues near your lungs and ribs from your bronchitis. Please continue taking all other medications as prescribed by your outpatient providers.",
+    "word_count": 29
   },
   {
     "case_id": "45",
-    "raw_output": "You should get up to walk and stretch several times during your flight to ___. Also remember to take your aspirin.",
-    "parsed_answer": "You should get up to walk and stretch several times during your flight to ___. Also remember to take your aspirin.",
+    "raw_output": "You should get up to walk and stretch several times on your flight to ___. Also remember to take your aspirin.",
+    "parsed_answer": "You should get up to walk and stretch several times on your flight to ___. Also remember to take your aspirin.",
     "word_count": 21
   },
   {
     "case_id": "46",
-    "raw_output": "The pain is not expected to be present after the accident.",
-    "parsed_answer": "The pain is not expected to be present after the accident.",
-    "word_count": 11
+    "raw_output": "The pain in the lower abdomen and rear is not expected after the accident.",
+    "parsed_answer": "The pain in the lower abdomen and rear is not expected after the accident.",
+    "word_count": 14
   },
   {
     "case_id": "47",
-    "raw_output": "Your hemoglobin and iron levels were low because of liver disease.",
-    "parsed_answer": "Your hemoglobin and iron levels were low because of liver disease.",
-    "word_count": 11
+    "raw_output": "The low hemoglobin and iron levels were likely due to the liver disease.",
+    "parsed_answer": "The low hemoglobin and iron levels were likely due to the liver disease.",
+    "word_count": 13
   },
   {
     "case_id": "48",
-    "raw_output": "The symptoms of right lower abdomen pain and back bumps may be caused by a new mass in the liver and nodules in the lungs. The diagnosis can be confirmed by performing a biopsy.",
-    "parsed_answer": "The symptoms of right lower abdomen pain and back bumps may be caused by a new mass in the liver and nodules in the lungs. The diagnosis can be confirmed by performing a biopsy.",
-    "word_count": 34
+    "raw_output": "The pain in the right lower abdomen and back may be caused by a new mass in the liver and nodules in the lungs.",
+    "parsed_answer": "The pain in the right lower abdomen and back may be caused by a new mass in the liver and nodules in the lungs.",
+    "word_count": 24
   },
   {
     "case_id": "49",
-    "raw_output": "The patient has cervical problems and spinal problems. She was prescribed Valium and steroids and sent home. She needs an MRI on cervical spine.",
-    "parsed_answer": "The patient has cervical problems and spinal problems. She was prescribed Valium and steroids and sent home. She needs an MRI on cervical spine.",
-    "word_count": 24
+    "raw_output": "The patient should go to the ED to get an MRI on cervical spine.",
+    "parsed_answer": "The patient should go to the ED to get an MRI on cervical spine.",
+    "word_count": 14
   },
   {
     "case_id": "50",
@@ -181,135 +181,135 @@
   },
   {
     "case_id": "51",
-    "raw_output": "She should take her pain medication as directed to stay ahead of the pain otherwise she won't be able to take deep breaths. If the pain medication is too sedating take half the dose and notify her physician.",
-    "parsed_answer": "She should take her pain medication as directed to stay ahead of the pain otherwise she won't be able to take deep breaths. If the pain medication is too sedating take half the dose and notify her physician.",
+    "raw_output": "You should take your pain medication as directed to stay ahead of the pain otherwise you won't be able to take deep breaths. If the pain medication is too sedating take half the dose and notify your physician.",
+    "parsed_answer": "You should take your pain medication as directed to stay ahead of the pain otherwise you won't be able to take deep breaths. If the pain medication is too sedating take half the dose and notify your physician.",
     "word_count": 38
   },
   {
     "case_id": "52",
-    "raw_output": "Your husband had lightheadedness and dizziness. He was admitted to the Neurology service because of left hand clumsiness. The CT scan of head to determine if he had a stroke came back negative. There are still some tests pending at discharge and you should follow-up with neurology clinic as scheduled.",
-    "parsed_answer": "Your husband had lightheadedness and dizziness. He was admitted to the Neurology service because of left hand clumsiness. The CT scan of head to determine if he had a stroke came back negative. There are still some tests pending at discharge and you should follow-up with neurology clinic as scheduled.",
-    "word_count": 50
+    "raw_output": "You were admitted to the Neurology service because of left hand clumsiness. We think you had inflamation on the surface of part of your brain. We did not find a specific cause at the time of discharge. There are still some tests pending at discharge and you should follow-up with neurology clinic as scheduled.",
+    "parsed_answer": "You were admitted to the Neurology service because of left hand clumsiness. We think you had inflamation on the surface of part of your brain. We did not find a specific cause at the time of discharge. There are still some tests pending at discharge and you should follow-up with neurology clinic as scheduled.",
+    "word_count": 54
   },
   {
     "case_id": "53",
-    "raw_output": "TMJ cannot cause high blood pressure.",
-    "parsed_answer": "TMJ cannot cause high blood pressure.",
-    "word_count": 6
+    "raw_output": "TMJ can cause dizziness, but it is unlikely to cause high blood pressure.",
+    "parsed_answer": "TMJ can cause dizziness, but it is unlikely to cause high blood pressure.",
+    "word_count": 13
   },
   {
     "case_id": "54",
-    "raw_output": "The fever and lower abdominal pain are not expected while taking Levaquin, Tamiflu, and prednisone.",
-    "parsed_answer": "The fever and lower abdominal pain are not expected while taking Levaquin, Tamiflu, and prednisone.",
+    "raw_output": "The fever and lower abdomen pain are not expected while taking Levaquin, Tamiflu, and prednisone.",
+    "parsed_answer": "The fever and lower abdomen pain are not expected while taking Levaquin, Tamiflu, and prednisone.",
     "word_count": 15
   },
   {
     "case_id": "55",
-    "raw_output": "The lump on the clavicle is a benign lump of fat. It is not related to the fall.",
-    "parsed_answer": "The lump on the clavicle is a benign lump of fat. It is not related to the fall.",
-    "word_count": 18
+    "raw_output": "The lump on the clavicle is a benign lump of fat. It is not cancerous and does not need to be treated today. Please discuss with your primary care doctor if you continue to have pain in the area.",
+    "parsed_answer": "The lump on the clavicle is a benign lump of fat. It is not cancerous and does not need to be treated today. Please discuss with your primary care doctor if you continue to have pain in the area.",
+    "word_count": 39
   },
   {
     "case_id": "56",
-    "raw_output": "The cause of the blockage of the bile ducts is a large gallstone. The blockage was relieved by placing an external drain.",
-    "parsed_answer": "The cause of the blockage of the bile ducts is a large gallstone. The blockage was relieved by placing an external drain.",
-    "word_count": 22
+    "raw_output": "The blockage of the bile ducts was found to be due to a large gallstone. The stone was too large to be removed, so a drain was placed to relieve the pressure. The patient also had dark/black stool, which was not related to the blockage.",
+    "parsed_answer": "The blockage of the bile ducts was found to be due to a large gallstone. The stone was too large to be removed, so a drain was placed to relieve the pressure. The patient also had dark/black stool, which was not related to the blockage.",
+    "word_count": 45
   },
   {
     "case_id": "57",
-    "raw_output": "The vomiting is not expected after the infusion.",
-    "parsed_answer": "The vomiting is not expected after the infusion.",
-    "word_count": 8
+    "raw_output": "The symptoms of vomiting and pain after infusion are not expected.",
+    "parsed_answer": "The symptoms of vomiting and pain after infusion are not expected.",
+    "word_count": 11
   },
   {
     "case_id": "58",
-    "raw_output": "The cause of her language difficulties is a right frontal stroke.",
-    "parsed_answer": "The cause of her language difficulties is a right frontal stroke.",
+    "raw_output": "The reason for her language difficulties is a right frontal stroke.",
+    "parsed_answer": "The reason for her language difficulties is a right frontal stroke.",
     "word_count": 11
   },
   {
     "case_id": "59",
-    "raw_output": "Your pain is likely due to your hemorrhagic ovarian cyst; your pain has been controlled with your usual pain medications.",
-    "parsed_answer": "Your pain is likely due to your hemorrhagic ovarian cyst; your pain has been controlled with your usual pain medications.",
-    "word_count": 20
+    "raw_output": "The white blood cell count was high, but it went back down.",
+    "parsed_answer": "The white blood cell count was high, but it went back down.",
+    "word_count": 12
   },
   {
     "case_id": "60",
-    "raw_output": "The patient's symptoms will likely improve with time.",
-    "parsed_answer": "The patient's symptoms will likely improve with time.",
-    "word_count": 8
+    "raw_output": "The patient was admitted for evaluation and treatment of shortness of breath. It was felt that his symptoms were due to a combination of worsening heart function and an infection in his lungs. He was treated with oxygen, diuretics, antibiotics and steroids and his symptoms improved however they were not eliminated. He underwent cardiac surgery to correct his valvular dysfunction.",
+    "parsed_answer": "The patient was admitted for evaluation and treatment of shortness of breath. It was felt that his symptoms were due to a combination of worsening heart function and an infection in his lungs. He was treated with oxygen, diuretics, antibiotics and steroids and his symptoms improved however they were not eliminated. He underwent cardiac surgery to correct his valvular dysfunction.",
+    "word_count": 60
   },
   {
     "case_id": "61",
-    "raw_output": "The patient is expected to experience lower stamina due to CHF.",
-    "parsed_answer": "The patient is expected to experience lower stamina due to CHF.",
-    "word_count": 11
+    "raw_output": "The patient was admitted to the hospital with difficulty breathing and an abnormal heart rhythm. She was started on medications to control her heart rate. Unfortunately, a side effect of one of your medications caused a complicated rhythm that required CPR and intubation. Luckily, she recovered from both but did have some rib fractures as a result of the CPR. While she was here she had an ultrasound of her heart that showed a leaky valve. The cardiologists and cardiac surgeons think they you will need this repaired. In preparation for her valve repair she had a cardiac catheterization. This showed no blockages in her coronary arteries.",
+    "parsed_answer": "The patient was admitted to the hospital with difficulty breathing and an abnormal heart rhythm. She was started on medications to control her heart rate. Unfortunately, a side effect of one of your medications caused a complicated rhythm that required CPR and intubation. Luckily, she recovered from both but did have some rib fractures as a result of the CPR. While she was here she had an ultrasound of her heart that showed a leaky valve. The cardiologists and cardiac surgeons think they you will need this repaired. In preparation for her valve repair she had a cardiac catheterization. This showed no blockages in her coronary arteries.",
+    "word_count": 107
   },
   {
     "case_id": "62",
-    "raw_output": "The patient has cirrhosis and portal gastropathy. He has been transfused with PRBCs and banding of his esophageal varices. The patient has two cords of grade II varices in the lower third of the esophagus. The patient has been started on FeSO4 for iron deficiency anemia. The patient has been advised to undergo a colonoscopy as an outpatient.",
-    "parsed_answer": "The patient has cirrhosis and portal gastropathy. He has been transfused with PRBCs and banding of his esophageal varices. The patient has two cords of grade II varices in the lower third of the esophagus. The patient has been started on FeSO4 for iron deficiency anemia. The patient has been advised to undergo a colonoscopy as an outpatient.",
-    "word_count": 58
+    "raw_output": "The patient should be followed up with Dr. [**Last Name (STitle) 497**] or Dr. [**Last Name (STitle) **] at the Liver Center within 10 days after discharge.",
+    "parsed_answer": "The patient should be followed up with Dr. [**Last Name (STitle) 497**] or Dr. [**Last Name (STitle) **] at the Liver Center within 10 days after discharge.",
+    "word_count": 27
   },
   {
     "case_id": "63",
-    "raw_output": "The cause of the dark stools is not clear.",
-    "parsed_answer": "The cause of the dark stools is not clear.",
-    "word_count": 9
+    "raw_output": "The patient had a history of a Dieulafoy's lesion in the past as seen by her outside hospital medical records, this was not seen during her esophagogastroduodenoscopy during this visit. It was thought that most likely her bleed was from a diverticulum in the setting of patient having a high INR. Her INR on transfer to the floor from the MICU was 3.2 after having her Coumadin held. Coumadin was held for the next few days with no drop in her INR. In-fact, it increased to 3.9 over the next three days. This was thought secondary to poor nutritional status. In the setting of her hematocrit dropped and melanotic stools seen on the floor, her anticoagulation was reversed with vitamin K and 2 units of fresh-frozen plasma. Her hematocrit remained stable for the remainder of the hospitalization after reversal of her anticoagulation.",
+    "parsed_answer": "The patient had a history of a Dieulafoy's lesion in the past as seen by her outside hospital medical records, this was not seen during her esophagogastroduodenoscopy during this visit. It was thought that most likely her bleed was from a diverticulum in the setting of patient having a high INR. Her INR on transfer to the floor from the MICU was 3.2 after having her Coumadin held. Coumadin was held for the next few days with no drop in her INR. In-fact, it increased to 3.9 over the next three days. This was thought secondary to poor nutritional status. In the setting of her hematocrit dropped and melanotic stools seen on the floor, her anticoagulation was reversed with vitamin K and 2 units of fresh-frozen plasma. Her hematocrit remained stable for the remainder of the hospitalization after reversal of her anticoagulation.",
+    "word_count": 142
   },
   {
     "case_id": "64",
-    "raw_output": "The doctor ruled out aggressive therapies because they would be associated with high mortality rate within 1 month.",
-    "parsed_answer": "The doctor ruled out aggressive therapies because they would be associated with high mortality rate within 1 month.",
-    "word_count": 18
+    "raw_output": "The doctor ruled out aggressive therapy because it would be associated with a high mortality rate within 1 month.",
+    "parsed_answer": "The doctor ruled out aggressive therapy because it would be associated with a high mortality rate within 1 month.",
+    "word_count": 19
   },
   {
     "case_id": "65",
-    "raw_output": "The doctor concluded that the patient has months to live because he is suffering from septic physiology, which is a serious complication of liver disease. The patient has been hospitalized multiple times for bleeding from his ostomy site, and despite aggressive treatment, his condition has worsened. The doctor ruled out aggressive therapies because they would carry a high risk of harm to the patient.",
-    "parsed_answer": "The doctor concluded that the patient has months to live because he is suffering from septic physiology, which is a serious complication of liver disease. The patient has been hospitalized multiple times for bleeding from his ostomy site, and despite aggressive treatment, his condition has worsened. The doctor ruled out aggressive therapies because they would carry a high risk of harm to the patient.",
-    "word_count": 64
+    "raw_output": "The doctor concluded that the patient has months to live because he was hemodynamically unstable and had a history of liver disease.",
+    "parsed_answer": "The doctor concluded that the patient has months to live because he was hemodynamically unstable and had a history of liver disease.",
+    "word_count": 22
   },
   {
     "case_id": "66",
-    "raw_output": "The goals of care were established after the patient was diagnosed with cardiac tamponade and new pulmonary metastases. The patient decided not to undergo chemotherapy again or invasive therapies such as a pericardiocentesis. As a result, the decision was made to move towards hospice care and the patient will be discharged to a hospice house with a focus on comfort care.",
-    "parsed_answer": "The goals of care were established after the patient was diagnosed with cardiac tamponade and new pulmonary metastases. The patient decided not to undergo chemotherapy again or invasive therapies such as a pericardiocentesis. As a result, the decision was made to move towards hospice care and the patient will be discharged to a hospice house with a focus on comfort care.",
-    "word_count": 61
+    "raw_output": "The goals of care were established after the patient was diagnosed with cardiac tamponade and new pulmonary metastases. The patient decided not to undergo further chemotherapy or invasive therapies, and the decision was made to focus on symptom management and comfort care.",
+    "parsed_answer": "The goals of care were established after the patient was diagnosed with cardiac tamponade and new pulmonary metastases. The patient decided not to undergo further chemotherapy or invasive therapies, and the decision was made to focus on symptom management and comfort care.",
+    "word_count": 42
   },
   {
     "case_id": "67",
-    "raw_output": "Based on the information provided, the patient is expected to recover from the pneumonia and fluid overload. The patient is also expected to continue taking the medications prescribed during the hospital stay.",
-    "parsed_answer": "Based on the information provided, the patient is expected to recover from the pneumonia and fluid overload. The patient is also expected to continue taking the medications prescribed during the hospital stay.",
-    "word_count": 32
+    "raw_output": "The patient was admitted to the hospital because of difficulties breathing and a fast heart rate. He was found to have pneumonia and extra fluid in his lungs which was making it hard to breath. During his hospital stay, he was given antibiotics for his pneumonia and his heart rate was controlled by increasing some of his medications. We also gave him a medication to keep fluid off of his lungs. We also discovered he had a low blood count due to an iron deficiency. This may mean he has another problem in his colon, and it may be necessary to have another colonoscopy in the future. Please discuss this with your doctor.",
+    "parsed_answer": "The patient was admitted to the hospital because of difficulties breathing and a fast heart rate. He was found to have pneumonia and extra fluid in his lungs which was making it hard to breath. During his hospital stay, he was given antibiotics for his pneumonia and his heart rate was controlled by increasing some of his medications. We also gave him a medication to keep fluid off of his lungs. We also discovered he had a low blood count due to an iron deficiency. This may mean he has another problem in his colon, and it may be necessary to have another colonoscopy in the future. Please discuss this with your doctor.",
+    "word_count": 113
   },
   {
     "case_id": "68",
-    "raw_output": "The most common treatment for subdural hematoma is surgical evacuation.",
-    "parsed_answer": "The most common treatment for subdural hematoma is surgical evacuation.",
-    "word_count": 10
+    "raw_output": "There is no other option other than surgery.",
+    "parsed_answer": "There is no other option other than surgery.",
+    "word_count": 8
   },
   {
     "case_id": "69",
-    "raw_output": "The patient has been treated for alcohol withdrawal and mental status changes likely due to aspiration pneumonia. You will need to continue with aggressive physical therapy.",
-    "parsed_answer": "The patient has been treated for alcohol withdrawal and mental status changes likely due to aspiration pneumonia. You will need to continue with aggressive physical therapy.",
-    "word_count": 26
+    "raw_output": "The patient has been treated for alcohol withdrawal and mental status changes likely due to aspiration pneumonia. He has been followed closely by neurology and will need ongoing follow up with them. He will need to continue with aggressive physical therapy.",
+    "parsed_answer": "The patient has been treated for alcohol withdrawal and mental status changes likely due to aspiration pneumonia. He has been followed closely by neurology and will need ongoing follow up with them. He will need to continue with aggressive physical therapy.",
+    "word_count": 41
   },
   {
     "case_id": "70",
-    "raw_output": "The patient was started on solumedrol 1g IV q24 on [2106-9-14] for total of 14 day course. He was switched to prednisone [9-21] then resumed solumedrol [9-22] when repeat MRI brain showed increased inflammation (restricted diffusion in enlarging lesion in L internal capsule measuring ~1 cm. New lesion in L middle cerebellar peduncle. Unchaged T2 hyperintensity in pontomedullary junction and nonenhancing T2 hyperintensity noted in cervical and thoracic cord). Repeat MRI of head, C and T spine were improved on [9-27]; although T2 hyperintense lesions remain within the left internal capsule, left middle cerebellar peduncle, and at the pontomedullary junction, all of the lesions are considerably improved and show no mass effect or enhancement.",
-    "parsed_answer": "The patient was started on solumedrol 1g IV q24 on [2106-9-14] for total of 14 day course. He was switched to prednisone [9-21] then resumed solumedrol [9-22] when repeat MRI brain showed increased inflammation (restricted diffusion in enlarging lesion in L internal capsule measuring ~1 cm. New lesion in L middle cerebellar peduncle. Unchaged T2 hyperintensity in pontomedullary junction and nonenhancing T2 hyperintensity noted in cervical and thoracic cord). Repeat MRI of head, C and T spine were improved on [9-27]; although T2 hyperintense lesions remain within the left internal capsule, left middle cerebellar peduncle, and at the pontomedullary junction, all of the lesions are considerably improved and show no mass effect or enhancement.",
-    "word_count": 114
+    "raw_output": "The patient was started on solumedrol 1g IV q24 on 2106-9-14 for total of 14 day course. He was switched to prednisone 9-21 then resumed solumedrol when repeat MRI brain showed increased inflammation (restricted diffusion in enlarging lesion in L internal capsule measuring ~1 cm. New lesion in L middle cerebellar peduncle. Unchaged T2 hyperintensity in pontomedullary junction and nonenhancing T2 hyperintensity noted in cervical and thoracic cord). Repeat MRI of head, C and T spine were improved on 9-27; although T2 hyperintense lesions remain within the left internal capsule, left middle cerebellar peduncle, and at the pontomedullary junction, all of the lesions are considerably improved and show no mass effect or enhancement.",
+    "parsed_answer": "The patient was started on solumedrol 1g IV q24 on 2106-9-14 for total of 14 day course. He was switched to prednisone 9-21 then resumed solumedrol when repeat MRI brain showed increased inflammation (restricted diffusion in enlarging lesion in L internal capsule measuring ~1 cm. New lesion in L middle cerebellar peduncle. Unchaged T2 hyperintensity in pontomedullary junction and nonenhancing T2 hyperintensity noted in cervical and thoracic cord). Repeat MRI of head, C and T spine were improved on 9-27; although T2 hyperintense lesions remain within the left internal capsule, left middle cerebellar peduncle, and at the pontomedullary junction, all of the lesions are considerably improved and show no mass effect or enhancement.",
+    "word_count": 113
   },
   {
     "case_id": "71",
-    "raw_output": "The expected course of her recovery is as follows: 1) She will need to be monitored for alertness and have her amantadine uptitrated as needed. 2) The discharge condition is as follows: a) Mental Status: Clear and coherent. b) Level of Consciousness: Alert and interactive. c) Activity Status: Ambulatory - Independent. d) Neurologic: Arouses to noxious stimuli and opens eyes, inattentive, no verbalization or command following, PERRL, +VOR bilaterally, R facial droop and right arm decreased withdrawal to noxious stimuli, increased muscle tone.",
-    "parsed_answer": "The expected course of her recovery is as follows: 1) She will need to be monitored for alertness and have her amantadine uptitrated as needed. 2) The discharge condition is as follows: a) Mental Status: Clear and coherent. b) Level of Consciousness: Alert and interactive. c) Activity Status: Ambulatory - Independent. d) Neurologic: Arouses to noxious stimuli and opens eyes, inattentive, no verbalization or command following, PERRL, +VOR bilaterally, R facial droop and right arm decreased withdrawal to noxious stimuli, increased muscle tone.",
+    "raw_output": "The expected course of her recovery is as follows: 1) She will need to be monitored for alertness and have her amantadine uptitrated as needed. 2) The discharge condition is as follows: 2) Mental Status: Clear and coherent. 3) Level of Consciousness: Alert and interactive. 4) Activity Status: Ambulatory - Independent. 5) Neurologic: Arouses to noxious stimuli and opens eyes, inattentive, no verbalization or command following, PERRL, +VOR bilaterally, R facial droop and right arm decreased withdrawal to noxious stimuli, increased muscle tone.",
+    "parsed_answer": "The expected course of her recovery is as follows: 1) She will need to be monitored for alertness and have her amantadine uptitrated as needed. 2) The discharge condition is as follows: 2) Mental Status: Clear and coherent. 3) Level of Consciousness: Alert and interactive. 4) Activity Status: Ambulatory - Independent. 5) Neurologic: Arouses to noxious stimuli and opens eyes, inattentive, no verbalization or command following, PERRL, +VOR bilaterally, R facial droop and right arm decreased withdrawal to noxious stimuli, increased muscle tone.",
     "word_count": 83
   },
   {
     "case_id": "72",
-    "raw_output": "The discharge medications include Metoprolol, Famotidine, Levetiracetam, Clonidine, Lisinopril, Senna, Docusate Sodium, Bisacodyl, Aspirin, Diltiazem HCl, Simethicone, and HydrALAzine. The discharge instructions include being awake and alert, orientated to self, place, and time.",
-    "parsed_answer": "The discharge medications include Metoprolol, Famotidine, Levetiracetam, Clonidine, Lisinopril, Senna, Docusate Sodium, Bisacodyl, Aspirin, Diltiazem HCl, Simethicone, and HydrALAzine. The discharge instructions include being awake and alert, orientated to self, place, and time.",
-    "word_count": 33
+    "raw_output": "You were admitted with seizure-like activity and fever. You were initially treated in the ICU. You were started on Keppra for seizure prophylaxis. You were treated for antibiotics for pneumonia. You had bleeding within your abdomen and you required blood transfusion. Regarding anticoagulation for your atrial fibrillation, you were started on aspirin which will be transitioned to coumadin on 2134-11-28.",
+    "parsed_answer": "You were admitted with seizure-like activity and fever. You were initially treated in the ICU. You were started on Keppra for seizure prophylaxis. You were treated for antibiotics for pneumonia. You had bleeding within your abdomen and you required blood transfusion. Regarding anticoagulation for your atrial fibrillation, you were started on aspirin which will be transitioned to coumadin on 2134-11-28.",
+    "word_count": 60
   },
   {
     "case_id": "73",
@@ -319,57 +319,57 @@
   },
   {
     "case_id": "74",
-    "raw_output": "Call your surgeon immediately if you experience confusion, fainting, blacking out, memory loss, or difficulty speaking. Call your surgeon immediately if you experience double, or blurred vision, loss of vision, either partial or total. Call your surgeon immediately if you experience hallucinations, numbness, tingling, or weakness in your extremities or face. Call your surgeon immediately if you experience stiff neck, and/or a fever of 101.5F or more. Call your surgeon immediately if you experience severe sensitivity to light. Call your surgeon immediately if you experience sudden difficulty in breathing.",
-    "parsed_answer": "Call your surgeon immediately if you experience confusion, fainting, blacking out, memory loss, or difficulty speaking. Call your surgeon immediately if you experience double, or blurred vision, loss of vision, either partial or total. Call your surgeon immediately if you experience hallucinations, numbness, tingling, or weakness in your extremities or face. Call your surgeon immediately if you experience stiff neck, and/or a fever of 101.5F or more. Call your surgeon immediately if you experience severe sensitivity to light. Call your surgeon immediately if you experience sudden difficulty in breathing.",
-    "word_count": 89
+    "raw_output": "The expected course of recovery after craniotomy is to become stronger every day. The patient should be able to cough, breathe deeply, and be comfortable enough to walk. The patient should be able to resume sexual activity as tolerated. The patient should not drive until approved by the physician. The patient should not lift objects over 10 pounds until approved by the physician. The patient should follow the activity instructions given by the doctor and therapist. The patient should increase activity slowly and not do too much because they are feeling good. The patient should take all of their medications as ordered.",
+    "parsed_answer": "The expected course of recovery after craniotomy is to become stronger every day. The patient should be able to cough, breathe deeply, and be comfortable enough to walk. The patient should be able to resume sexual activity as tolerated. The patient should not drive until approved by the physician. The patient should not lift objects over 10 pounds until approved by the physician. The patient should follow the activity instructions given by the doctor and therapist. The patient should increase activity slowly and not do too much because they are feeling good. The patient should take all of their medications as ordered.",
+    "word_count": 102
   },
   {
     "case_id": "75",
-    "raw_output": "The underlying cause of the episode was acute renal failure secondary to prerenal and diuretic-induced causes.",
-    "parsed_answer": "The underlying cause of the episode was acute renal failure secondary to prerenal and diuretic-induced causes.",
-    "word_count": 16
-  },
-  {
-    "case_id": "76",
-    "raw_output": "The reason for the admission was fever, chills, cough, and post-tussive emesis.",
-    "parsed_answer": "The reason for the admission was fever, chills, cough, and post-tussive emesis.",
-    "word_count": 12
-  },
-  {
-    "case_id": "77",
-    "raw_output": "The patient was referred to [**Hospital1 69**] on [**5-18**] for cardiac catheterization with intervention. The patient arrived on [**5-18**] chest pain free, good blood pressure and underwent cardiac catheterization on [**5-19**] through the left groin site. The patient's cardiac catheterization again revealed significant 3-vessel disease. The patient underwent a proximal right coronary artery intervention/stent of 3.5-mm X 15-mm stent was deployed in the proximal right coronary artery. In the holding area, after the stent, the patient was noted to have some oozing from the left groin site. Pressure was held. Subsequently, the patient developed a drop in his blood pressure to 67/50 and a decrease in his heart rate to the 50s. Thought this was secondary to vagal tone after his right coronary artery lesions and pressure on his groin. The patient was given 2 amps of Atropine and was bolused with 2 liters of saline; however, due to persistent hypotension, the patient was started on dopamine. The patient subsequently developed an supraventricular tachycardia with a heart rate into the 160s and rate-related ischemia with ST depressions in V1 to V3, requiring Levophed transiently. The patient was emergently taken back to catheterization for a re-look. At that point, the patient was intervened from the right groin, and given his decreased blood pressure and ischemic changes, he went for re-look catheterization which showed no evidence of re-occlusion.",
-    "parsed_answer": "The patient was referred to [**Hospital1 69**] on [**5-18**] for cardiac catheterization with intervention. The patient arrived on [**5-18**] chest pain free, good blood pressure and underwent cardiac catheterization on [**5-19**] through the left groin site. The patient's cardiac catheterization again revealed significant 3-vessel disease. The patient underwent a proximal right coronary artery intervention/stent of 3.5-mm X 15-mm stent was deployed in the proximal right coronary artery. In the holding area, after the stent, the patient was noted to have some oozing from the left groin site. Pressure was held. Subsequently, the patient developed a drop in his blood pressure to 67/50 and a decrease in his heart rate to the 50s. Thought this was secondary to vagal tone after his right coronary artery lesions and pressure on his groin. The patient was given 2 amps of Atropine and was bolused with 2 liters of saline; however, due to persistent hypotension, the patient was started on dopamine. The patient subsequently developed an supraventricular tachycardia with a heart rate into the 160s and rate-related ischemia with ST depressions in V1 to V3, requiring Levophed transiently. The patient was emergently taken back to catheterization for a re-look. At that point, the patient was intervened from the right groin, and given his decreased blood pressure and ischemic changes, he went for re-look catheterization which showed no evidence of re-occlusion.",
-    "word_count": 226
-  },
-  {
-    "case_id": "78",
-    "raw_output": "The patient had a large right groin hematoma due to bleeding post cardiac catheterization.",
-    "parsed_answer": "The patient had a large right groin hematoma due to bleeding post cardiac catheterization.",
-    "word_count": 14
-  },
-  {
-    "case_id": "79",
-    "raw_output": "The patient was transferred to the cardiac intensive care unit because she had a small heart attack. While she was there, she was treated with some intravenous diuretics. Her urine output temporarily dropped, but by the time she was transferred back to the medical floor, her urine production improved.",
-    "parsed_answer": "The patient was transferred to the cardiac intensive care unit because she had a small heart attack. While she was there, she was treated with some intravenous diuretics. Her urine output temporarily dropped, but by the time she was transferred back to the medical floor, her urine production improved.",
-    "word_count": 49
-  },
-  {
-    "case_id": "80",
-    "raw_output": "The reason for emergent surgery was to treat the STEMI. The patient had a small right groin hematoma post procedure which remained stable with resolving ecchymosis upon discharge.",
-    "parsed_answer": "The reason for emergent surgery was to treat the STEMI. The patient had a small right groin hematoma post procedure which remained stable with resolving ecchymosis upon discharge.",
-    "word_count": 28
-  },
-  {
-    "case_id": "81",
-    "raw_output": "The patient was sent to the [**Hospital1 1444**] for urgent catheterization.",
-    "parsed_answer": "The patient was sent to the [**Hospital1 1444**] for urgent catheterization.",
+    "raw_output": "The underlying cause of the episode was scleroderma with pulmonary hypertension.",
+    "parsed_answer": "The underlying cause of the episode was scleroderma with pulmonary hypertension.",
     "word_count": 11
   },
   {
+    "case_id": "76",
+    "raw_output": "The reason for the admission was fever, chills, cough, and post-tussive emesis. The patient was diagnosed with pulmonary fibrosis, most likely related to scleroderma.",
+    "parsed_answer": "The reason for the admission was fever, chills, cough, and post-tussive emesis. The patient was diagnosed with pulmonary fibrosis, most likely related to scleroderma.",
+    "word_count": 24
+  },
+  {
+    "case_id": "77",
+    "raw_output": "The patient was referred to [**Hospital1 69**] on [**5-18**] for cardiac catheterization with intervention. The patient arrived on [**5-18**] chest pain free, good blood pressure and underwent cardiac catheterization on [**5-19**] through the left groin site. The patient's cardiac catheterization again revealed significant 3-vessel disease. The patient underwent a proximal right coronary artery intervention/stent of 3.5-mm X 15-mm stent was deployed in the proximal right coronary artery. In the holding area, after the stent, the patient was noted to have some oozing from the left groin site. Pressure was held. Subsequently, the patient developed a drop in his blood pressure to 67/50 and a decrease in his heart rate to the 50s. Thought this was secondary to vagal tone after his right coronary artery lesions and pressure on his groin. The patient was given 2 amps of Atropine and was bolused with 2 liters of saline; however, due to persistent hypotension, the patient was started on dopamine. The patient subsequently developed an supraventricular tachycardia with a heart rate into the 160s and rate-related ischemia with ST depressions in V1 to V3, requiring Levophed transiently. The patient was emergently taken back to catheterization for a re-look. At that point, the patient was intervened from the right groin, and given his decreased blood pressure and ischemic changes, he went for re-look catheterization which showed no evidence of re-occlusion. At that point, a hematocrit was drawn which showed a hematocrit of 23.5. The patient's hematocrit was 32 at an outside hospital on [**5-13**]. The patient was given a total of 6 units of packed red blood cells; two in the holding area, two with the re-look catheterization, and two in the operating room.",
+    "parsed_answer": "The patient was referred to [**Hospital1 69**] on [**5-18**] for cardiac catheterization with intervention. The patient arrived on [**5-18**] chest pain free, good blood pressure and underwent cardiac catheterization on [**5-19**] through the left groin site. The patient's cardiac catheterization again revealed significant 3-vessel disease. The patient underwent a proximal right coronary artery intervention/stent of 3.5-mm X 15-mm stent was deployed in the proximal right coronary artery. In the holding area, after the stent, the patient was noted to have some oozing from the left groin site. Pressure was held. Subsequently, the patient developed a drop in his blood pressure to 67/50 and a decrease in his heart rate to the 50s. Thought this was secondary to vagal tone after his right coronary artery lesions and pressure on his groin. The patient was given 2 amps of Atropine and was bolused with 2 liters of saline; however, due to persistent hypotension, the patient was started on dopamine. The patient subsequently developed an supraventricular tachycardia with a heart rate into the 160s and rate-related ischemia with ST depressions in V1 to V3, requiring Levophed transiently. The patient was emergently taken back to catheterization for a re-look. At that point, the patient was intervened from the right groin, and given his decreased blood pressure and ischemic changes, he went for re-look catheterization which showed no evidence of re-occlusion. At that point, a hematocrit was drawn which showed a hematocrit of 23.5. The patient's hematocrit was 32 at an outside hospital on [**5-13**]. The patient was given a total of 6 units of packed red blood cells; two in the holding area, two with the re-look catheterization, and two in the operating room.",
+    "word_count": 280
+  },
+  {
+    "case_id": "78",
+    "raw_output": "The patient had a large right groin hematoma, which was treated with a vascular surgery consultation, blood transfusions, and immobilization.",
+    "parsed_answer": "The patient had a large right groin hematoma, which was treated with a vascular surgery consultation, blood transfusions, and immobilization.",
+    "word_count": 20
+  },
+  {
+    "case_id": "79",
+    "raw_output": "The catheterization was performed in the right groin, and a hematoma developed in the left groin.",
+    "parsed_answer": "The catheterization was performed in the right groin, and a hematoma developed in the left groin.",
+    "word_count": 16
+  },
+  {
+    "case_id": "80",
+    "raw_output": "The patient had a heart cath three weeks ago. It did bleed post op, he became very ill. the day after. He had hematoma in his groin area. And he went into emergent surgery. The reason for his emergent surgery was a small right groin hematoma post procedure which remained stable with resolving ecchymosis upon discharge.",
+    "parsed_answer": "The patient had a heart cath three weeks ago. It did bleed post op, he became very ill. the day after. He had hematoma in his groin area. And he went into emergent surgery. The reason for his emergent surgery was a small right groin hematoma post procedure which remained stable with resolving ecchymosis upon discharge.",
+    "word_count": 56
+  },
+  {
+    "case_id": "81",
+    "raw_output": "The patient had a large patent foramen ovale with no left to right shunting.",
+    "parsed_answer": "The patient had a large patent foramen ovale with no left to right shunting.",
+    "word_count": 14
+  },
+  {
     "case_id": "82",
-    "raw_output": "The patient underwent cardiac catheterization which was complicated by a groin hematoma. The patient was discharged on aspirin, Plavix, pravastatin, metoprolol, diltiazem, lisinopril, and nitroglycerin.",
-    "parsed_answer": "The patient underwent cardiac catheterization which was complicated by a groin hematoma. The patient was discharged on aspirin, Plavix, pravastatin, metoprolol, diltiazem, lisinopril, and nitroglycerin.",
-    "word_count": 25
+    "raw_output": "The patient's cardiac catheterization was complicated by a bruise in her right groin.",
+    "parsed_answer": "The patient's cardiac catheterization was complicated by a bruise in her right groin.",
+    "word_count": 13
   },
   {
     "case_id": "83",
@@ -379,15 +379,15 @@
   },
   {
     "case_id": "84",
-    "raw_output": "The diagnosis of Guillain-Barre syndrome is unlikely because the patient's exams, such as cerebral spinal fluid analysis and electromyography exam, were normal.",
-    "parsed_answer": "The diagnosis of Guillain-Barre syndrome is unlikely because the patient's exams, such as cerebral spinal fluid analysis and electromyography exam, were normal.",
-    "word_count": 22
+    "raw_output": "The patient was admitted with weakness concerning for the diagnosis of Guillain-Barre syndrome. However, her exams, such as cerebral spinal fluid analysis and electromyography exam, were normal, making this diagnosis unlikely.",
+    "parsed_answer": "The patient was admitted with weakness concerning for the diagnosis of Guillain-Barre syndrome. However, her exams, such as cerebral spinal fluid analysis and electromyography exam, were normal, making this diagnosis unlikely.",
+    "word_count": 31
   },
   {
     "case_id": "85",
-    "raw_output": "The diagnosis of Guillain-Barre Syndrome (GBS) was made based on the following findings: 1) the patient had a history of recent respiratory infection; 2) the patient developed progressive weakness, paresthesias, and dysphagia; 3) the patient had a normal MRI scan; 4) the patient had a positive CSF protein finding; 5) the patient had a negative CSF leukocyte count; 6) the patient had a normal CSF opening pressure; 7) the patient had a negative CSF glucose finding; 8) the patient had a negative CSF oligoclonal band finding; 9) the patient had a negative CSF protein/CSF glucose ratio finding; 10) the patient had a negative CSF protein/CSF lactate ratio finding; 11) the patient had a negative CSF protein/CSF IgG index finding; 12) the patient had a negative CSF protein/CSF albumin ratio finding; 13) the patient had a negative CSF protein/CSF immunoglobulin ratio finding; 14) the patient had a negative CSF protein/CSF lactate ratio finding; 15) the patient had a negative CSF protein/CSF albumin ratio finding; 16) the patient had a negative CSF protein/CSF immunoglobulin ratio finding; 17) the patient had a negative CSF protein/CSF lactate ratio finding; 18) the patient had a negative CSF protein/CSF albumin ratio finding; 19) the patient had a negative CSF protein/CSF immunoglobulin ratio finding; 20) the patient had a negative CSF protein/CSF lactate ratio finding; 21) the patient had a negative CSF protein/CSF albumin ratio finding; 22) the patient had a negative CSF protein/CSF immunoglobulin ratio finding; 23) the patient had a negative CSF protein/CSF lactate ratio finding; 24) the patient had a negative CSF protein/CSF albumin ratio finding; 25) the patient had a negative CSF protein/CSF immunoglobulin ratio finding; 26) the patient had a negative CSF protein/CSF lactate ratio finding; 27) the patient had a negative CSF protein/CSF",
-    "parsed_answer": "The diagnosis of Guillain-Barre Syndrome (GBS) was made based on the following findings: 1) the patient had a history of recent respiratory infection; 2) the patient developed progressive weakness, paresthesias, and dysphagia; 3) the patient had a normal MRI scan; 4) the patient had a positive CSF protein finding; 5) the patient had a negative CSF leukocyte count; 6) the patient had a normal CSF opening pressure; 7) the patient had a negative CSF glucose finding; 8) the patient had a negative CSF oligoclonal band finding; 9) the patient had a negative CSF protein/CSF glucose ratio finding; 10) the patient had a negative CSF protein/CSF lactate ratio finding; 11) the patient had a negative CSF protein/CSF IgG index finding; 12) the patient had a negative CSF protein/CSF albumin ratio finding; 13) the patient had a negative CSF protein/CSF immunoglobulin ratio finding; 14) the patient had a negative CSF protein/CSF lactate ratio finding; 15) the patient had a negative CSF protein/CSF albumin ratio finding; 16) the patient had a negative CSF protein/CSF immunoglobulin ratio finding; 17) the patient had a negative CSF protein/CSF lactate ratio finding; 18) the patient had a negative CSF protein/CSF albumin ratio finding; 19) the patient had a negative CSF protein/CSF immunoglobulin ratio finding; 20) the patient had a negative CSF protein/CSF lactate ratio finding; 21) the patient had a negative CSF protein/CSF albumin ratio finding; 22) the patient had a negative CSF protein/CSF immunoglobulin ratio finding; 23) the patient had a negative CSF protein/CSF lactate ratio finding; 24) the patient had a negative CSF protein/CSF albumin ratio finding; 25) the patient had a negative CSF protein/CSF immunoglobulin ratio finding; 26) the patient had a negative CSF protein/CSF lactate ratio finding; 27) the patient had a negative CSF protein/CSF",
-    "word_count": 292
+    "raw_output": "The patient was diagnosed with GBS after he was admitted to the hospital with diplopia, numbness and tingling at fingertips, and weakness in the lower extremities.",
+    "parsed_answer": "The patient was diagnosed with GBS after he was admitted to the hospital with diplopia, numbness and tingling at fingertips, and weakness in the lower extremities.",
+    "word_count": 26
   },
   {
     "case_id": "86",
@@ -403,75 +403,75 @@
   },
   {
     "case_id": "88",
-    "raw_output": "The expected course of recovery is good.",
-    "parsed_answer": "The expected course of recovery is good.",
-    "word_count": 7
+    "raw_output": "The patient was admitted to the hospital due to back pain. She was diagnosed with several abscesses in her spine and right knee. She underwent several surgeries to evacuate the infection and was started on antibiotics. The antibiotic regimen was altered several times due to significant side effects. She was placed on Daptomycin without side effect for a planned 8-week course. She was transitioned to toprol xl 150mg daily at the time of discharge.",
+    "parsed_answer": "The patient was admitted to the hospital due to back pain. She was diagnosed with several abscesses in her spine and right knee. She underwent several surgeries to evacuate the infection and was started on antibiotics. The antibiotic regimen was altered several times due to significant side effects. She was placed on Daptomycin without side effect for a planned 8-week course. She was transitioned to toprol xl 150mg daily at the time of discharge.",
+    "word_count": 74
   },
   {
     "case_id": "89",
-    "raw_output": "The patient was admitted for a blood pressure of 160/90 and got treated in ICU. The echo showed heart disease with depressed ejection fraction and prior inferior myocardial event. He was prescribed multiple medicines. He suddenly became disoriented, spitting tablets, and speech also got slurred. The differential diagnosis in this elderly gentleman included acute systolic and diastolic heart failure exacerbation, coronary artery disease/angina, atrial fibrillation, and hypothyroidism.",
-    "parsed_answer": "The patient was admitted for a blood pressure of 160/90 and got treated in ICU. The echo showed heart disease with depressed ejection fraction and prior inferior myocardial event. He was prescribed multiple medicines. He suddenly became disoriented, spitting tablets, and speech also got slurred. The differential diagnosis in this elderly gentleman included acute systolic and diastolic heart failure exacerbation, coronary artery disease/angina, atrial fibrillation, and hypothyroidism.",
-    "word_count": 67
+    "raw_output": "The patient was admitted for worsening of heart failure and altered mental status. The cause of the altered mental status was hypothyroidism in the setting of congestive heart failure and volume overload.",
+    "parsed_answer": "The patient was admitted for worsening of heart failure and altered mental status. The cause of the altered mental status was hypothyroidism in the setting of congestive heart failure and volume overload.",
+    "word_count": 32
   },
   {
     "case_id": "90",
-    "raw_output": "The patient was treated for a generalized seizure that would not stop on its own (a condition called status epilepticus). He will continue to take carbamazepine 400 mg twice daily, and now he will take levetiracetam (Keppra) 1000 mg twice daily to prevent seizures. He will be following up with Dr. [**Last Name (STitle) 37041**] [**Name (STitle) 766**], who will adjust his medications as needed. It may be good if he could switch you to a different medication so he can take you off the carbamazepine (Tegretol), which has an unfavorable interaction with warfarin (Coumadin).",
-    "parsed_answer": "The patient was treated for a generalized seizure that would not stop on its own (a condition called status epilepticus). He will continue to take carbamazepine 400 mg twice daily, and now he will take levetiracetam (Keppra) 1000 mg twice daily to prevent seizures. He will be following up with Dr. [**Last Name (STitle) 37041**] [**Name (STitle) 766**], who will adjust his medications as needed. It may be good if he could switch you to a different medication so he can take you off the carbamazepine (Tegretol), which has an unfavorable interaction with warfarin (Coumadin).",
-    "word_count": 95
+    "raw_output": "The patient was treated for a generalized seizure that would not stop on its own (a condition called status epilepticus). He will continue to take carbamazepine 400mg twice daily, and now he will take levetiracetam (Keppra) 1000mg twice daily to prevent seizures.",
+    "parsed_answer": "The patient was treated for a generalized seizure that would not stop on its own (a condition called status epilepticus). He will continue to take carbamazepine 400mg twice daily, and now he will take levetiracetam (Keppra) 1000mg twice daily to prevent seizures.",
+    "word_count": 42
   },
   {
     "case_id": "91",
-    "raw_output": "The patient was admitted to the hospital and found to have a bacterial infection in his blood related to his hemodialysis catheter. He required aggressive fluid resuscitation in the intensive care unit and intravenous antibiotics. His hemodialysis catheter had to be pulled out and a new one was put in after his cultures were clear for 72 hours and his fevers went down. He had difficulty breathing due to the large volume of fluid required to keep his blood pressure up. His breathing improved once we were able to restart his dialysis.",
-    "parsed_answer": "The patient was admitted to the hospital and found to have a bacterial infection in his blood related to his hemodialysis catheter. He required aggressive fluid resuscitation in the intensive care unit and intravenous antibiotics. His hemodialysis catheter had to be pulled out and a new one was put in after his cultures were clear for 72 hours and his fevers went down. He had difficulty breathing due to the large volume of fluid required to keep his blood pressure up. His breathing improved once we were able to restart his dialysis.",
-    "word_count": 92
+    "raw_output": "The patient was admitted to the hospital and found to have a bacterial infection in his blood related to his hemodialysis catheter. He required aggressive fluid resuscitation in the intensive care unit and intravenous antibiotics. His hemodialysis catheter had to be pulled out and a new one was put in after his cultures were clear for 72 hours and his fevers went down. His breathing improved once we were able to restart his dialysis. He was also found to have a urinary tract infection which was treated with antibiotics.",
+    "parsed_answer": "The patient was admitted to the hospital and found to have a bacterial infection in his blood related to his hemodialysis catheter. He required aggressive fluid resuscitation in the intensive care unit and intravenous antibiotics. His hemodialysis catheter had to be pulled out and a new one was put in after his cultures were clear for 72 hours and his fevers went down. His breathing improved once we were able to restart his dialysis. He was also found to have a urinary tract infection which was treated with antibiotics.",
+    "word_count": 89
   },
   {
     "case_id": "92",
-    "raw_output": "The pain and discomfort you experience is related to the treatment.",
-    "parsed_answer": "The pain and discomfort you experience is related to the treatment.",
-    "word_count": 11
+    "raw_output": "You were admitted to the hospital because you were found unresponsive, without a pulse and not breathing outside the hospital. The EMS team performed CPR and they were able to get your heart pumping again. Your lab work and EKG showed that you had a large heart attack. You underwent a cardiac cath with placement of a stent in your heart to open the artery and restore blood flow. You underwent cooling of your body in the ICU to perserve your brain function while your heart had stopped pumping blood to the brain. You also were not breathing when the EMS team found you alongside the road. You had a tube inserted in your lungs and you were ventilated by a machine in the ICU. You had several rib fractures from the CPR and developed a pneumothorax. This is when free air enters the chest and pushes the lungs out of the way, collapsing the lungs. You had a tube inserted through your chest wall to let this air out so that the lungs could re-expand. While you were on the ventilator, you aspirated some of your saliva and vomit, resulting in a pneumonia. You recievered antibiotics for this and your respiratory status has improved.",
+    "parsed_answer": "You were admitted to the hospital because you were found unresponsive, without a pulse and not breathing outside the hospital. The EMS team performed CPR and they were able to get your heart pumping again. Your lab work and EKG showed that you had a large heart attack. You underwent a cardiac cath with placement of a stent in your heart to open the artery and restore blood flow. You underwent cooling of your body in the ICU to perserve your brain function while your heart had stopped pumping blood to the brain. You also were not breathing when the EMS team found you alongside the road. You had a tube inserted in your lungs and you were ventilated by a machine in the ICU. You had several rib fractures from the CPR and developed a pneumothorax. This is when free air enters the chest and pushes the lungs out of the way, collapsing the lungs. You had a tube inserted through your chest wall to let this air out so that the lungs could re-expand. While you were on the ventilator, you aspirated some of your saliva and vomit, resulting in a pneumonia. You recievered antibiotics for this and your respiratory status has improved.",
+    "word_count": 205
   },
   {
     "case_id": "93",
-    "raw_output": "Breathlessness on exertion may be related to the treatment she received for heart failure.",
-    "parsed_answer": "Breathlessness on exertion may be related to the treatment she received for heart failure.",
-    "word_count": 14
+    "raw_output": "Breathlessness on exertion can be related to heart failure.",
+    "parsed_answer": "Breathlessness on exertion can be related to heart failure.",
+    "word_count": 9
   },
   {
     "case_id": "94",
-    "raw_output": "The patient was admitted for very high blood sugar and was diagnosed with diabetes mellitus. This will require close follow-up until your blood sugars are under reliable control. Diabetes is a disease that puts you at risk for kidney disease, heart attack, stroke, and eye disease and you will need to take excellent care of yourself to avoid these complications. We made the following changes to your medications: -take 50 units of 70/30 every morning -take 60 units of 70/30 every evening -take humalog per the sliding scale before each meal and before bed time It is important that you eat three regularly scheduled meals per day. If you are not going to eat one day because you are sick, you need to call [Last Name (un)] to ask them how much insulin you should administer. You will need to follow-up with your primary care doctor to discuss possible treatment of your high blood pressure and cholesterol levels.",
-    "parsed_answer": "The patient was admitted for very high blood sugar and was diagnosed with diabetes mellitus. This will require close follow-up until your blood sugars are under reliable control. Diabetes is a disease that puts you at risk for kidney disease, heart attack, stroke, and eye disease and you will need to take excellent care of yourself to avoid these complications. We made the following changes to your medications: -take 50 units of 70/30 every morning -take 60 units of 70/30 every evening -take humalog per the sliding scale before each meal and before bed time It is important that you eat three regularly scheduled meals per day. If you are not going to eat one day because you are sick, you need to call [Last Name (un)] to ask them how much insulin you should administer. You will need to follow-up with your primary care doctor to discuss possible treatment of your high blood pressure and cholesterol levels.",
-    "word_count": 158
+    "raw_output": "The patient was admitted for very high blood sugar and was diagnosed with diabetes mellitus. This will require close follow-up until your blood sugars are under reliable control. It is important that you eat three regularly scheduled meals per day. If you are not going to eat one day because you are sick, you need to call [**Last Name (un) **] to ask them how much insulin you should administer. You will need to follow-up with your primary care doctor to discuss possible treatment of your high blood pressure and cholesterol levels.",
+    "parsed_answer": "The patient was admitted for very high blood sugar and was diagnosed with diabetes mellitus. This will require close follow-up until your blood sugars are under reliable control. It is important that you eat three regularly scheduled meals per day. If you are not going to eat one day because you are sick, you need to call [**Last Name (un) **] to ask them how much insulin you should administer. You will need to follow-up with your primary care doctor to discuss possible treatment of your high blood pressure and cholesterol levels.",
+    "word_count": 92
   },
   {
     "case_id": "95",
-    "raw_output": "The cause of the blackouts was a vagal reaction to nausea/vomiting. The hemoglobin level was low.",
-    "parsed_answer": "The cause of the blackouts was a vagal reaction to nausea/vomiting. The hemoglobin level was low.",
+    "raw_output": "The reason for the blackouts was a vagal reaction to nausea/vomiting. The hemoglobin level was low.",
+    "parsed_answer": "The reason for the blackouts was a vagal reaction to nausea/vomiting. The hemoglobin level was low.",
     "word_count": 16
   },
   {
     "case_id": "96",
-    "raw_output": "The prognosis is good. The patient is slowly getting better but will need to continue to eat well and increase her mobility to stay strong.",
-    "parsed_answer": "The prognosis is good. The patient is slowly getting better but will need to continue to eat well and increase her mobility to stay strong.",
-    "word_count": 25
+    "raw_output": "The prognosis is good. The patient is expected to recover.",
+    "parsed_answer": "The prognosis is good. The patient is expected to recover.",
+    "word_count": 10
   },
   {
     "case_id": "97",
-    "raw_output": "TCAs are tricyclic antidepressants.",
-    "parsed_answer": "TCAs are tricyclic antidepressants.",
-    "word_count": 4
+    "raw_output": "TCA stands for tricyclic antidepressants.",
+    "parsed_answer": "TCA stands for tricyclic antidepressants.",
+    "word_count": 5
   },
   {
     "case_id": "98",
-    "raw_output": "The mass on the heart was addressed and resolved.",
-    "parsed_answer": "The mass on the heart was addressed and resolved.",
-    "word_count": 9
+    "raw_output": "The mass on the heart was addressed by a cardiac catheterization and a blockage in the coronary artery was opened using a balloon.",
+    "parsed_answer": "The mass on the heart was addressed by a cardiac catheterization and a blockage in the coronary artery was opened using a balloon.",
+    "word_count": 23
   },
   {
     "case_id": "99",
-    "raw_output": "The correct order of the medications is as follows: 1. Isoniazid 300 mg Tablet Sig: One (1) Tablet PO DAILY (Daily). 2. Rifampin 300 mg Capsule Sig: Two (2) Capsule PO Q24H (every 24 hours). 3. Acetaminophen 325 mg Tablet Sig: 1-2 Tablets PO Q4-6H (every 4 to 6 hours) as needed. 4. Heparin Sodium (Porcine) 5,000 unit/mL Solution Sig: One (1) Injection TID (3 times a day). 5. Ethambutol 400 mg Tablet Sig: 2.5 Tablets PO DAILY (Daily). 6. Pyrazinamide 500 mg Tablet Sig: Three (3) Tablet PO DAILY (Daily). 7. Pyridoxine 100 mg Tablet Sig: One (1) Tablet PO DAILY (Daily). 8. Ibuprofen 400 mg Tablet Sig: Two (2) Tablet PO Q8H (every 8 hours) as needed. 9. Pantoprazole Sodium 40 mg Tablet, Delayed Release (E.C.) Sig: One (1) Tablet, Delayed Release (E.C.) PO Q24H (every 24 hours). 10. Lorazepam 0.5 mg Tablet Sig: 1-2 Tablets PO Q4H (every 4 hours) as needed for anxiety. 11. Oxycodone-Acetaminophen 5-325 mg Tablet Sig: 1-2 Tablets PO Q4-6H (every 4 to 6 hours) as needed. 12. Docusate Sodium 100 mg Capsule Sig: One (1) Capsule PO BID (2 times a day) as needed. 13. Insulin Regular Human 100 unit/mL Solution Sig: One (1) Injection ASDIR (AS DIRECTED). 14. Morphine 2 mg/mL Syringe Sig: [**1-31**] Injection Q4H (every 4 hours) as needed. 15. Dexamethasone Taper 6 mg IV q6 hours - [**Date range (1) 62",
-    "parsed_answer": "The correct order of the medications is as follows: 1. Isoniazid 300 mg Tablet Sig: One Tablet PO DAILY (Daily). 2. Rifampin 300 mg Capsule Sig: Two Capsule PO Q24H (every 24 hours). 3. Acetaminophen 325 mg Tablet Sig: 1-2 Tablets PO Q4-6H (every 4 to 6 hours) as needed. 4. Heparin Sodium (Porcine) 5,000 unit/mL Solution Sig: One Injection TID (3 times a day). 5. Ethambutol 400 mg Tablet Sig: 2.5 Tablets PO DAILY (Daily). 6. Pyrazinamide 500 mg Tablet Sig: Three Tablet PO DAILY (Daily). 7. Pyridoxine 100 mg Tablet Sig: One Tablet PO DAILY (Daily). 8. Ibuprofen 400 mg Tablet Sig: Two Tablet PO Q8H (every 8 hours) as needed. 9. Pantoprazole Sodium 40 mg Tablet, Delayed Release (E.C.) Sig: One Tablet, Delayed Release (E.C.) PO Q24H (every 24 hours). 10. Lorazepam 0.5 mg Tablet Sig: 1-2 Tablets PO Q4H (every 4 hours) as needed for anxiety. 11. Oxycodone-Acetaminophen 5-325 mg Tablet Sig: 1-2 Tablets PO Q4-6H (every 4 to 6 hours) as needed. 12. Docusate Sodium 100 mg Capsule Sig: One Capsule PO BID (2 times a day) as needed. 13. Insulin Regular Human 100 unit/mL Solution Sig: One Injection ASDIR (AS DIRECTED). 14. Morphine 2 mg/mL Syringe Sig: [**1-31**] Injection Q4H (every 4 hours) as needed. 15. Dexamethasone Taper 6 mg IV q6 hours - [**Date range 62",
-    "word_count": 223
+    "raw_output": "The order of the medications is as follows: 1. Isoniazid 300 mg Tablet Sig: One (1) Tablet PO DAILY (Daily). 2. Rifampin 300 mg Capsule Sig: Two (2) Capsule PO Q24H (every 24 hours). 3. Acetaminophen 325 mg Tablet Sig: 1-2 Tablets PO Q4-6H (every 4 to 6 hours) as needed. 4. Heparin Sodium (Porcine) 5,000 unit/mL Solution Sig: One (1) Injection TID (3 times a day). 5. Ethambutol 400 mg Tablet Sig: 2.5 Tablets PO DAILY (Daily). 6. Pyrazinamide 500 mg Tablet Sig: Three (3) Tablet PO DAILY (Daily). 7. Pyridoxine 100 mg Tablet Sig: One (1) Tablet PO DAILY (Daily). 8. Ibuprofen 400 mg Tablet Sig: Two (2) Tablet PO Q8H (every 8 hours) as needed. 9. Pantoprazole Sodium 40 mg Tablet, Delayed Release (E.C.) Sig: One (1) Tablet, Delayed Release (E.C.) PO Q24H (every 24 hours). 10. Lorazepam 0.5 mg Tablet Sig: 1-2 Tablets PO Q4H (every 4 hours) as needed for anxiety. 11. Oxycodone-Acetaminophen 5-325 mg Tablet Sig: 1-2 Tablets PO Q4-6H (every 4 to 6 hours) as needed. 12. Docusate Sodium 100 mg Capsule Sig: One (1) Capsule PO BID (2 times a day) as needed. 13. Insulin Regular Human 100 unit/mL Solution Sig: One (1) Injection ASDIR (AS DIRECTED). 14. Morphine 2 mg/mL Syringe Sig: [**1-31**] Injection Q4H (every 4 hours) as needed.",
+    "parsed_answer": "The order of the medications is as follows: 1. Isoniazid 300 mg Tablet Sig: One Tablet PO DAILY (Daily). 2. Rifampin 300 mg Capsule Sig: Two Capsule PO Q24H (every 24 hours). 3. Acetaminophen 325 mg Tablet Sig: 1-2 Tablets PO Q4-6H (every 4 to 6 hours) as needed. 4. Heparin Sodium (Porcine) 5,000 unit/mL Solution Sig: One Injection TID (3 times a day). 5. Ethambutol 400 mg Tablet Sig: 2.5 Tablets PO DAILY (Daily). 6. Pyrazinamide 500 mg Tablet Sig: Three Tablet PO DAILY (Daily). 7. Pyridoxine 100 mg Tablet Sig: One Tablet PO DAILY (Daily). 8. Ibuprofen 400 mg Tablet Sig: Two Tablet PO Q8H (every 8 hours) as needed. 9. Pantoprazole Sodium 40 mg Tablet, Delayed Release (E.C.) Sig: One Tablet, Delayed Release (E.C.) PO Q24H (every 24 hours). 10. Lorazepam 0.5 mg Tablet Sig: 1-2 Tablets PO Q4H (every 4 hours) as needed for anxiety. 11. Oxycodone-Acetaminophen 5-325 mg Tablet Sig: 1-2 Tablets PO Q4-6H (every 4 to 6 hours) as needed. 12. Docusate Sodium 100 mg Capsule Sig: One Capsule PO BID (2 times a day) as needed. 13. Insulin Regular Human 100 unit/mL Solution Sig: One Injection ASDIR (AS DIRECTED). 14. Morphine 2 mg/mL Syringe Sig: [**1-31**] Injection Q4H (every 4 hours) as needed.",
+    "word_count": 210
   },
   {
     "case_id": "100",
@@ -493,9 +493,9 @@
   },
   {
     "case_id": "103",
-    "raw_output": "The patient's altered mental status may be a result of some anoxic brain injury.",
-    "parsed_answer": "The patient's altered mental status may be a result of some anoxic brain injury.",
-    "word_count": 14
+    "raw_output": "The patient was initially brought in to be evaluated for possible confusion per his family. However on further questioning, he initially appeared to be at his relative [**Year (4 digits) 5348**] ([**Name2 (NI) 11345**], nearly deaf, left hemiplegia, intermittently saying [**1-14**] words with signficant stimulation but rarely oriented). An RPR was found to be mildy positive and neurosyphyllis was thought to be possibly contributing to his confusion.",
+    "parsed_answer": "The patient was initially brought in to be evaluated for possible confusion per his family. However on further questioning, he initially appeared to be at his relative [**Year (4 digits) 5348**] ([**Name2 (NI) 11345**], nearly deaf, left hemiplegia, intermittently saying [**1-14**] words with signficant stimulation but rarely oriented). An RPR was found to be mildy positive and neurosyphyllis was thought to be possibly contributing to his confusion.",
+    "word_count": 67
   },
   {
     "case_id": "104",
@@ -505,27 +505,27 @@
   },
   {
     "case_id": "105",
-    "raw_output": "The patient should be evaluated by an oncologist.",
-    "parsed_answer": "The patient should be evaluated by an oncologist.",
-    "word_count": 8
+    "raw_output": "The patient was hospitalized for a rectal mass causing partial obstruction of her colon. She also had an infection of her colon called clostridium difficile. The patient was treated with antibiotics with improvement in her colon infection. A colonic stent was placed by the gastroenterology team. The patient was able to move her bowels following the procedure and tolerated the procedure well. It is very important that the patient call her doctor if she experiences any fevers, chills, severe abdominal pain, or experiences an inability to move her bowels or pass gas from below, or if she has severe nausea and vomiting.",
+    "parsed_answer": "The patient was hospitalized for a rectal mass causing partial obstruction of her colon. She also had an infection of her colon called clostridium difficile. The patient was treated with antibiotics with improvement in her colon infection. A colonic stent was placed by the gastroenterology team. The patient was able to move her bowels following the procedure and tolerated the procedure well. It is very important that the patient call her doctor if she experiences any fevers, chills, severe abdominal pain, or experiences an inability to move her bowels or pass gas from below, or if she has severe nausea and vomiting.",
+    "word_count": 102
   },
   {
     "case_id": "106",
-    "raw_output": "The white blood cell count is high, which may indicate infection. The patient was hospitalized twice, once for pneumonia and sepsis, and once for myasthenia gravis.",
-    "parsed_answer": "The white blood cell count is high, which may indicate infection. The patient was hospitalized twice, once for pneumonia and sepsis, and once for myasthenia gravis.",
-    "word_count": 26
+    "raw_output": "The white blood cell count is high, which is likely due to the myasthenia gravis.",
+    "parsed_answer": "The white blood cell count is high, which is likely due to the myasthenia gravis.",
+    "word_count": 15
   },
   {
     "case_id": "107",
-    "raw_output": "The cause of death was cardiac arrest, which was thought to be secondary to her malignancy.",
-    "parsed_answer": "The cause of death was cardiac arrest, which was thought to be secondary to her malignancy.",
-    "word_count": 16
+    "raw_output": "The cause of death was cardiac arrest secondary to malignancy.",
+    "parsed_answer": "The cause of death was cardiac arrest secondary to malignancy.",
+    "word_count": 10
   },
   {
     "case_id": "108",
-    "raw_output": "Coumadin is used to treat pulmonary embolism. It is also used to prevent recurrent pulmonary embolism.",
-    "parsed_answer": "Coumadin is used to treat pulmonary embolism. It is also used to prevent recurrent pulmonary embolism.",
-    "word_count": 16
+    "raw_output": "Coumadin is used to prevent blood clots in the lungs. It is important to have the INR value checked regularly.",
+    "parsed_answer": "Coumadin is used to prevent blood clots in the lungs. It is important to have the INR value checked regularly.",
+    "word_count": 20
   },
   {
     "case_id": "109",
@@ -535,15 +535,15 @@
   },
   {
     "case_id": "110",
-    "raw_output": "The cause of death was GI bleed. The medications administered during dialysis were appropriate.",
-    "parsed_answer": "The cause of death was GI bleed. The medications administered during dialysis were appropriate.",
-    "word_count": 14
+    "raw_output": "The cause of death was GI bleed.",
+    "parsed_answer": "The cause of death was GI bleed.",
+    "word_count": 7
   },
   {
     "case_id": "111",
-    "raw_output": "The bleeding indicates esophageal varices.",
-    "parsed_answer": "The bleeding indicates esophageal varices.",
-    "word_count": 5
+    "raw_output": "The bleeding was due to esophageal varices.",
+    "parsed_answer": "The bleeding was due to esophageal varices.",
+    "word_count": 7
   },
   {
     "case_id": "112",
@@ -553,50 +553,50 @@
   },
   {
     "case_id": "113",
-    "raw_output": "The patient had a brief hospital course. He was extubated on POD#1 and remained in the CVICU until his mental status improved. His postoperative course was essentially uneventful. His mental status returned to baseline.",
-    "parsed_answer": "The patient had a brief hospital course. He was extubated on POD#1 and remained in the CVICU until his mental status improved. His postoperative course was essentially uneventful. His mental status returned to baseline.",
-    "word_count": 34
+    "raw_output": "The postoperative course was uneventful. The patient was discharged to home with visiting nurse services.",
+    "parsed_answer": "The postoperative course was uneventful. The patient was discharged to home with visiting nurse services.",
+    "word_count": 15
   },
   {
     "case_id": "114",
-    "raw_output": "The patient is suffering from anoxic brain injury. His tongue laceration was covered with granulation tissue, no purulence/erythema, and ENT thought no urgent intervention was required. The patient will need an out pt appointment with ENT if family elects to have tongue fixed for cosmetic purposes. The patient will need a 4 week course of Vanc 1g q12h, ending on 12-19, and will need Vanc level, BUN, Cr weekly until then. Additionally, the patient will be treated with possible VAP with Cefepime/Cipro (Day 1 = 11-24, 7 day course will end on 12-12). TEE did not show vegetations or involvement of 11-20; per ID recs, will keep cardiac hardware in place for now. Sputum growing respiratory flora and GNR; however, this is not uncommon in pts with a trach, so will d/c antibiotics given admission CXR did not show infiltrates. On 11-24, concern for aspiration pneumonia given fever, ?infiltrate on CXR. Continued",
-    "parsed_answer": "The patient is suffering from anoxic brain injury. His tongue laceration was covered with granulation tissue, no purulence/erythema, and ENT thought no urgent intervention was required. The patient will need an out pt appointment with ENT if family elects to have tongue fixed for cosmetic purposes. The patient will need a 4 week course of Vanc 1g q12h, ending on 12-19, and will need Vanc level, BUN, Cr weekly until then. Additionally, the patient will be treated with possible VAP with Cefepime/Cipro (Day 1 = 11-24, 7 day course will end on 12-12). TEE did not show vegetations or involvement of 11-20; per ID recs, will keep cardiac hardware in place for now. Sputum growing respiratory flora and GNR; however, this is not uncommon in pts with a trach, so will d/c antibiotics given admission CXR did not show infiltrates. On 11-24, concern for aspiration pneumonia given fever, ?infiltrate on CXR. Continued",
-    "word_count": 152
+    "raw_output": "The patient has anoxic brain injury, which is the cause of his vegetative state. He has bed sores on his foot, which is the cause of his foot bed sores. He has facial seizures, which is the cause of his facial twitching. He has a tracheostomy and is being fed through a feeding tube.",
+    "parsed_answer": "The patient has anoxic brain injury, which is the cause of his vegetative state. He has bed sores on his foot, which is the cause of his foot bed sores. He has facial seizures, which is the cause of his facial twitching. He has a tracheostomy and is being fed through a feeding tube.",
+    "word_count": 54
   },
   {
     "case_id": "115",
-    "raw_output": "The patient was diagnosed with tuberculosis in her pleural space and is being treated with multiple medications.",
-    "parsed_answer": "The patient was diagnosed with tuberculosis in her pleural space and is being treated with multiple medications.",
+    "raw_output": "The patient was diagnosed with tuberculosis in her pleural space. She is being treated with multiple medications.",
+    "parsed_answer": "The patient was diagnosed with tuberculosis in her pleural space. She is being treated with multiple medications.",
     "word_count": 17
   },
   {
     "case_id": "116",
-    "raw_output": "The patient was offered the option of a Factor VII trial, but he refused.",
-    "parsed_answer": "The patient was offered the option of a Factor VII trial, but he refused.",
-    "word_count": 14
+    "raw_output": "The patient was offered the option of a Factor VII trial, but he refused. There were no other alternative therapies indicated.",
+    "parsed_answer": "The patient was offered the option of a Factor VII trial, but he refused. There were no other alternative therapies indicated.",
+    "word_count": 21
   },
   {
     "case_id": "117",
-    "raw_output": "Major Surgical or Invasive Procedure: cardiac catheterization with 2 Bare Metal Stents central venous access placement with Swan-Ganz catheter PICC placement intra-aortic balloon pump placement endotracheal tube intubation left lower extremity fasciotomy left lower extremity surgical debridement IR Guided Tunneled Catheterization IR Guided Dobhoff feeding tube tracheotomy Brief Hospital Course: Acute renal failure: Likely started before presentation to [**Hospital1 18] from poor forward flow from initial cardiogenic failure and probably exacerbated by 320 ccs of contrast recieved in cath lab. She failed repeated trials off of CRRT. Likely now dialysis-dependent with oliguria, however renal consultants believe that urine output should be followed closely as she continues to have potential to regain renal function.",
-    "parsed_answer": "Major Surgical or Invasive Procedure: cardiac catheterization with 2 Bare Metal Stents central venous access placement with Swan-Ganz catheter PICC placement intra-aortic balloon pump placement endotracheal tube intubation left lower extremity fasciotomy left lower extremity surgical debridement IR Guided Tunneled Catheterization IR Guided Dobhoff feeding tube tracheotomy Brief Hospital Course: Acute renal failure: Likely started before presentation to [**Hospital1 18] from poor forward flow from initial cardiogenic failure and probably exacerbated by 320 ccs of contrast recieved in cath lab. She failed repeated trials off of CRRT. Likely now dialysis-dependent with oliguria, however renal consultants believe that urine output should be followed closely as she continues to have potential to regain renal function.",
-    "word_count": 113
-  },
-  {
-    "case_id": "118",
-    "raw_output": "The patient is recovering from surgery and septicemia. The patient is getting better, vital signs are stable, and white blood cell count is decreasing. The patient is now on intravenous antibiotics.",
-    "parsed_answer": "The patient is recovering from surgery and septicemia. The patient is getting better, vital signs are stable, and white blood cell count is decreasing. The patient is now on intravenous antibiotics.",
+    "raw_output": "The causes of AKI in your mother are poor forward flow from initial cardiogenic failure, hyperkalemia to 6.8 and anuria immediately post cath, and failure of repeated trials off of CRRT.",
+    "parsed_answer": "The causes of AKI in your mother are poor forward flow from initial cardiogenic failure, hyperkalemia to 6.8 and anuria immediately post cath, and failure of repeated trials off of CRRT.",
     "word_count": 31
   },
   {
+    "case_id": "118",
+    "raw_output": "The patient is recovering well from surgery and septicemia. She is afebrile, her vital signs are stable, and her white blood cell count is decreasing. She is on intravenous antibiotics and is preparing for discharge.",
+    "parsed_answer": "The patient is recovering well from surgery and septicemia. She is afebrile, her vital signs are stable, and her white blood cell count is decreasing. She is on intravenous antibiotics and is preparing for discharge.",
+    "word_count": 35
+  },
+  {
     "case_id": "119",
-    "raw_output": "The pain management plan for this patient should include the use of acetaminophen 325 mg tablet, which should be taken two tablets per day as needed for pain. This medication can help alleviate the pain experienced by the patient.",
-    "parsed_answer": "The pain management plan for this patient should include the use of acetaminophen 325 mg tablet, which should be taken two tablets per day as needed for pain. This medication can help alleviate the pain experienced by the patient.",
-    "word_count": 39
+    "raw_output": "The pain management plan for this patient is as follows: 1. Albuterol 90 mcg/Actuation Aerosol Sig: 2-4 Puffs Inhalation Q6H (every 6 hours) as needed. 2. Ipratropium Bromide 17 mcg/Actuation Aerosol Sig: Six (6) Puff Inhalation Q4-6H (every 4 to 6 hours) as needed. 3. Acetaminophen 325 mg Tablet Sig: Two (2) Tablet PO Q4-6H (every 4 to 6 hours) as needed. 4. Docusate Sodium 50 mg/5 mL Liquid Sig: Ten (10) mL PO BID (2 times a day) as needed for constipation. 5. Zolpidem 5 mg Tablet Sig: 1-2 Tablets PO HS (at bedtime) as needed for insomnia. 6. Oxycodone-Acetaminophen 5-325 mg Tablet Sig: 1-2 Tablets PO Q4-6H (every 4 to 6 hours) as needed for pain: Take with food DO NOT TAKE WITH ATIVAN.",
+    "parsed_answer": "The pain management plan for this patient is as follows: 1. Albuterol 90 mcg/Actuation Aerosol Sig: 2-4 Puffs Inhalation Q6H (every 6 hours) as needed. 2. Ipratropium Bromide 17 mcg/Actuation Aerosol Sig: Six Puff Inhalation Q4-6H (every 4 to 6 hours) as needed. 3. Acetaminophen 325 mg Tablet Sig: Two Tablet PO Q4-6H (every 4 to 6 hours) as needed. 4. Docusate Sodium 50 mg/5 mL Liquid Sig: Ten mL PO BID (2 times a day) as needed for constipation. 5. Zolpidem 5 mg Tablet Sig: 1-2 Tablets PO HS (at bedtime) as needed for insomnia. 6. Oxycodone-Acetaminophen 5-325 mg Tablet Sig: 1-2 Tablets PO Q4-6H (every 4 to 6 hours) as needed for pain: Take with food DO NOT TAKE WITH ATIVAN.",
+    "word_count": 123
   },
   {
     "case_id": "120",
-    "raw_output": "The causes of bleeding gums in this patient include thrombocytopenia, critical illness, and multiple antibiotics that are reversibly myelosuppressive.",
-    "parsed_answer": "The causes of bleeding gums in this patient include thrombocytopenia, critical illness, and multiple antibiotics that are reversibly myelosuppressive.",
-    "word_count": 19
+    "raw_output": "The causes of bleeding gums in this patient are thrombocytopenia, stable.",
+    "parsed_answer": "The causes of bleeding gums in this patient are thrombocytopenia, stable.",
+    "word_count": 11
   }
 ]
