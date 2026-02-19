@@ -23,10 +23,10 @@ source .venv/bin/activate
 # =============================================================================
 
 # --- Task ---
-INFERENCE_MODE="local"      # local / cloud
+INFERENCE_MODE="cloud"      # local / cloud
 DATASET="dev"               # dev / test / test-2026
 PROMPT_INDEX=9
-MODEL="BioMistral/BioMistral-7B"
+MODEL="openai/gpt-5-nano"
     # --- Local Models ---
     # meta-llama/Llama-3.1-8B-Instruct
     # google/medgemma-27b-text-it
@@ -60,6 +60,13 @@ MODEL="BioMistral/BioMistral-7B"
     # mistralai/mistral-7b-instruct
     # minimax/minimax-m2.5
     # google/gemini-3-pro-preview
+    # tngtech/deepseek-r1t2-chimera
+    # anthropic/claude-sonnet-4
+    # x-ai/grok-4-fast
+    # deepseek/deepseek-chat-v3-0324
+    # google/gemini-2.5-flash-lite
+    # openai/gpt-5-nano
+    # openai/gpt-5.2
 
 # --- GPU / Engine ---
 TENSOR_PARALLEL_SIZE=$NUM_GPUS  # Must match SBATCH --gres above

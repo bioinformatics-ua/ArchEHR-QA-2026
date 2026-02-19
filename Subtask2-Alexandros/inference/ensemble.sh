@@ -5,9 +5,9 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 #SBATCH --time=04:00:00
-#SBATCH --gres=gpu:4
+#SBATCH --gres=gpu:1
 
-NUM_GPUS=4
+NUM_GPUS=1
 
 set -e
 
@@ -23,8 +23,8 @@ source .venv/bin/activate
 # --- Task ---
 INFERENCE_MODE="cloud"
 DATASET="dev"               # dev / test / test-2026
-PROMPT_INDEX=9
-MODEL="google/gemini-2.5-flash"
+PROMPT_INDEX=7
+MODEL="anthropic/claude-sonnet-4.5"
     # --- Cloud Models ---
     # anthropic/claude-sonnet-4.5
     # anthropic/claude-sonnet-4.6
@@ -34,6 +34,8 @@ MODEL="google/gemini-2.5-flash"
     # qwen/qwen3-max-thinking
     # google/gemini-3-flash-preview
     # google/gemini-2.5-flash
+    # anthropic/claude-sonnet-4
+    # x-ai/grok-4-fast
 
     # --- Local Models ---
     # meta-llama/Llama-3.1-8B-Instruct
@@ -42,9 +44,9 @@ MODEL="google/gemini-2.5-flash"
     # google/medgemma-1.5-4b-it
 
 # --- Ensemble settings ---
-N_RUNS=5                    # Number of independent inference passes
-TEMPERATURE=0.0             # Higher temperature → more diversity between runs
-MIN_VOTES=4                 # Minimum runs a sentence must appear in to be included (1 = union, N_RUNS = intersection)
+N_RUNS=15                    # Number of independent inference passes
+TEMPERATURE=0.3             # Higher temperature → more diversity between runs
+MIN_VOTES=2                 # Minimum runs a sentence must appear in to be included (1 = union, N_RUNS = intersection)
 
 # --- GPU / Engine ---
 TENSOR_PARALLEL_SIZE=$NUM_GPUS

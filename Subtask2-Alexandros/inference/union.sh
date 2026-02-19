@@ -23,14 +23,23 @@ source .venv/bin/activate
 # --- Task ---
 INFERENCE_MODE="cloud"
 DATASET="dev"               # dev / test / test-2026
-MODEL="google/gemini-2.5-flash"
+MODEL="google/gemini-3-flash-preview"
     # --- Cloud Models ---
     # google/gemini-2.5-flash
     # anthropic/claude-sonnet-4.5
     # anthropic/claude-sonnet-4.6
     # x-ai/grok-4.1-fast
-PROMPT_INDICES_UNION="9 4"
-PROMPT_INDEX_CRITIC="3"
+    # qwen/qwen3.5-plus-02-15
+    # anthropic/claude-opus-4.5
+    # anthropic/claude-opus-4.6
+    # openai/gpt-4.1
+    # openai/gpt-5-mini
+    # z-ai/glm-5
+    # qwen/qwen3-max-thinking
+    # openrouter/aurora-alpha
+    # minimax/minimax-m2.5
+    # moonshotai/kimi-k2.5
+PROMPT_INDICES="9 7"
     # deepseek/deepseek-v3.2
     # qwen/qwen3-max-thinking
     # google/gemini-3-flash-preview
@@ -43,7 +52,7 @@ GPU_MEMORY_UTILIZATION=0.95
 MAX_MODEL_LEN=4096
 
 # --- Sampling ---
-TEMPERATURE=0.0
+TEMPERATURE=0.3
 TOP_P=0.95
 MAX_TOKENS=512
 REPETITION_PENALTY=1.0
@@ -69,20 +78,17 @@ export VLLM_ATTENTION_BACKEND=XFORMERS
 export VLLM_USE_TRITON_FLASH_ATTN=0
 export TORCH_COMPILE_DISABLE=1
 
-# =============================================================================
-# UNION INFERENCE (Step 1: union 9+4, Step 2: filter with 3)
-# =============================================================================
-echo "[1/4] Running union inference (prompts: ${PROMPT_INDICES_UNION})..."
+echo "[1/1] Running union inference (prompts: ${PROMPT_INDICES})..."
 
 MODEL_NAME=$(echo "$MODEL" | tr '/' '-' | tr '.' '-')
-INDICES_TAG_UNION=$(echo "$PROMPT_INDICES_UNION" | tr ' ' '-' | sed 's/-/p/g' | sed 's/^/p/')
-OUTPUT_FILE_UNION="${MODEL_NAME}_union_${INDICES_TAG_UNION}.json"
+INDICES_TAG=$(echo "$PROMPT_INDICES" | tr ' ' '-' | sed 's/-/p/g' | sed 's/^/p/')
+OUTPUT_FILE="${MODEL_NAME}_union_${INDICES_TAG}.json"
 
 uv run python union.py \
     --xml-file "${DATA_DIR}/archehr-qa.xml" \
     --prompt-file prompt.json \
-    --prompt-indices $PROMPT_INDICES_UNION \
-    --output-file "${OUTPUT_DIR}/${OUTPUT_FILE_UNION}" \
+    --prompt-indices $PROMPT_INDICES \
+    --output-file "${OUTPUT_DIR}/${OUTPUT_FILE}" \
     --inference-mode "$INFERENCE_MODE" \
     --model "$MODEL" \
     --temperature $TEMPERATURE \
@@ -93,30 +99,7 @@ uv run python union.py \
     --gpu-memory-utilization $GPU_MEMORY_UTILIZATION \
     --max-model-len $MAX_MODEL_LEN
 
-echo "[2/4] Union inference complete."
-
-echo "[3/4] Running critic/filter (prompt: ${PROMPT_INDEX_CRITIC})..."
-
-INDICES_TAG_FINAL="p9-p4-p3"
-OUTPUT_FILE_FINAL="${MODEL_NAME}_union_${INDICES_TAG_FINAL}.json"
-
-uv run python union.py \
-    --xml-file "${DATA_DIR}/archehr-qa.xml" \
-    --prompt-file prompt.json \
-    --prompt-indices $PROMPT_INDEX_CRITIC \
-    --filter-predictions "${OUTPUT_DIR}/${OUTPUT_FILE_UNION}" \
-    --output-file "${OUTPUT_DIR}/${OUTPUT_FILE_FINAL}" \
-    --inference-mode "$INFERENCE_MODE" \
-    --model "$MODEL" \
-    --temperature $TEMPERATURE \
-    --top-p $TOP_P \
-    --max-tokens $MAX_TOKENS \
-    --repetition-penalty $REPETITION_PENALTY \
-    --tensor-parallel-size $TENSOR_PARALLEL_SIZE \
-    --gpu-memory-utilization $GPU_MEMORY_UTILIZATION \
-    --max-model-len $MAX_MODEL_LEN
-
-echo "[4/4] Critic/filter step complete."
+echo "[1/1] Union inference complete."
 
 # =============================================================================
 # EVALUATION
@@ -127,7 +110,7 @@ KEY_PATH="../../data/${DATASET}/archehr-qa_key.json"
 if [ ! -f "${KEY_PATH}" ]; then
     echo "[5/5] No key file found for ${DATASET}, skipping evaluation."
     echo "========================================"
-    echo "Output: ${OUTPUT_DIR}/${OUTPUT_FILE_FINAL}"
+    echo "Output: ${OUTPUT_DIR}/${OUTPUT_FILE}"
     exit 0
 fi
 
@@ -138,8 +121,8 @@ deactivate
 cd ../evaluation
 source .venv/bin/activate
 
-SUBMISSION_PATH="../outputs/${DATASET}/${OUTPUT_FILE_FINAL}"
-OUT_FILE_PATH="../results/${DATASET}/${OUTPUT_FILE_FINAL}"
+SUBMISSION_PATH="../outputs/${DATASET}/${OUTPUT_FILE}"
+OUT_FILE_PATH="../results/${DATASET}/${OUTPUT_FILE}"
 
 mkdir -p "../results/${DATASET}"
 
@@ -155,7 +138,7 @@ echo "[5/5] Evaluation complete."
 # =============================================================================
 echo "[6/6] Running per-sentence analysis..."
 
-ANALYSIS_OUT_PATH="../results-analysis/${DATASET}/${OUTPUT_FILE_FINAL}"
+ANALYSIS_OUT_PATH="../results-analysis/${DATASET}/${OUTPUT_FILE}"
 mkdir -p "../results-analysis/${DATASET}"
 
 uv run python results_analysis.py \

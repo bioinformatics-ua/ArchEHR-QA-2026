@@ -118,71 +118,7 @@ def main():
     cases = ArchEHRSubtask2DataLoader(args.xml_file).load()
     print(f"Loaded {len(cases)} cases.")
 
-    # ============================================================
-    # FILTERING MODE: filter-predictions is set
-    # ============================================================
-    if args.filter_predictions is not None:
-        if len(args.prompt_indices) != 1:
-            raise ValueError("In filter mode, --prompt-indices must be a single index (the critic/filter prompt)")
-        prompt_idx = args.prompt_indices[0]
-        if str(prompt_idx) not in prompt_dict:
-            raise KeyError(f"Prompt index {prompt_idx} not found in {args.prompt_file}")
-        prompt_template = prompt_dict[str(prompt_idx)]
-
-        # Load unioned predictions
-        with open(args.filter_predictions) as f:
-            union_preds = {str(d["case_id"]): set(d["prediction"]) for d in json.load(f)}
-
-        filtered_submission = []
-
-        for case in cases:
-            cid = str(case["case_id"])
-            # Only consider sentences in the unioned predictions
-            candidate_ids = union_preds.get(cid, set())
-            if not candidate_ids:
-                filtered_submission.append({"case_id": cid, "prediction": []})
-                continue
-            # Build prompt with only candidate sentences
-            candidate_sentences = "\n".join(
-                f"ID {s['sentence_id']}: {s['text']}"
-                for s in case["sentences"] if str(s["sentence_id"]) in candidate_ids
-            )
-            payload = {
-                "CLINICIAN_QUESTION":  case["clinician_question"],
-                "PATIENT_QUESTION":    case.get("patient_question", ""),
-                "PATIENT_NARRATIVE":   case.get("patient_narrative", ""),
-                "CLINICAL_SPECIALTY":  case.get("clinical_specialty", ""),
-                "CANDIDATE_SENTENCES": candidate_sentences,
-                "CASE_ID":             cid,
-            }
-            prompt = provider.build_prompt(prompt_template, payload)
-            output = provider.generate(prompt)
-            print(f"\n[DEBUG] Case {cid} raw LLM output:\n{output}\n")
-            valid_ids = candidate_ids
-            # Parse for 'filtered_prediction' key for critic
-            parsed = provider.parse_response(output)
-            prediction = []
-            if parsed:
-                prediction = parsed.get("filtered_prediction", [])
-                # fallback: also check for 'prediction' if 'filtered_prediction' missing
-                if not prediction:
-                    prediction = parsed.get("prediction", [])
-            # Fallback: filter only valid IDs
-            clean = []
-            for p_id in prediction:
-                digits = re.findall(r"\d+", str(p_id))
-                if digits and digits[0] in valid_ids:
-                    clean.append(digits[0])
-            filtered_submission.append({"case_id": cid, "prediction": clean})
-            print(f"Case {cid}: filtered = {clean}")
-
-        # Save filtered output
-        output_path = Path(args.output_file)
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-        with open(output_path, "w") as f:
-            json.dump(filtered_submission, f, indent=2)
-        print(f"\n[DONE] Critic/filter step complete. Output: {output_path}")
-        return
+    # ...existing code...
 
     # ============================================================
     # NORMAL UNION MODE (no filter)
