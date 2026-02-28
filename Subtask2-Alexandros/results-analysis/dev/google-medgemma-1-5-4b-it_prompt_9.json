@@ -1,0 +1,3226 @@
+{
+  "summary": {
+    "overall_precision": 0.0092,
+    "overall_recall": 0.05,
+    "overall_f1": 0.0156,
+    "num_cases": 20
+  },
+  "cases": [
+    {
+      "case_id": "1",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4,
+      "sentences": [
+        {
+          "sentence_id": "1",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "2",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "3",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "4",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "5",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "6",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "7",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "8",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "9",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": false,
+          "category": "TN"
+        }
+      ]
+    },
+    {
+      "case_id": "2",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4,
+      "sentences": [
+        {
+          "sentence_id": "1",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "2",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "3",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "4",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "5",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "6",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "7",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "8",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "9",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "10",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "11",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        }
+      ]
+    },
+    {
+      "case_id": "3",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 2,
+      "fn": 3,
+      "sentences": [
+        {
+          "sentence_id": "1",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "2",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "3",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "4",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "5",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "6",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "7",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "8",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "9",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "10",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        }
+      ]
+    },
+    {
+      "case_id": "4",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 7,
+      "sentences": [
+        {
+          "sentence_id": "1",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "2",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "3",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "4",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "5",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "6",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "7",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "8",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "9",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "10",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "11",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "12",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "13",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "14",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "15",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "16",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "17",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "18",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "19",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "20",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "21",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        }
+      ]
+    },
+    {
+      "case_id": "5",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 7,
+      "sentences": [
+        {
+          "sentence_id": "1",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "2",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "3",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "4",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "5",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "6",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "7",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "8",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "9",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "10",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "11",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "12",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "13",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "14",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "15",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "16",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "17",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "18",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "19",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "20",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "21",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "22",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "23",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        }
+      ]
+    },
+    {
+      "case_id": "6",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 2,
+      "fn": 11,
+      "sentences": [
+        {
+          "sentence_id": "1",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "2",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "3",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "4",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "5",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "6",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "7",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "8",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "9",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "10",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "11",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "12",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "13",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "14",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "15",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "16",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "17",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "18",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "19",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "20",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "21",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "22",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "23",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "24",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "25",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        }
+      ]
+    },
+    {
+      "case_id": "7",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 2,
+      "fn": 6,
+      "sentences": [
+        {
+          "sentence_id": "1",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "2",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "3",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "4",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "5",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "6",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "7",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "8",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "9",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "10",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "11",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "12",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "13",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "14",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "15",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "16",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "17",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "18",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "19",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "20",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "21",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "22",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "23",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "24",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "25",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "26",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "27",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "28",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "29",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "30",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        }
+      ]
+    },
+    {
+      "case_id": "8",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 2,
+      "fn": 8,
+      "sentences": [
+        {
+          "sentence_id": "1",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "2",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "3",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "4",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "5",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "6",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "7",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "8",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "9",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "10",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "11",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "12",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "13",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "14",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "15",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "16",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "17",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "18",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "19",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "20",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "21",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "22",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "23",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "24",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "25",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "26",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "27",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "28",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "29",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "30",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "31",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "32",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "33",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "34",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "35",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "36",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "37",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "38",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "39",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "40",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "41",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "42",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "43",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "44",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "45",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "46",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "47",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "48",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "49",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "50",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "51",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "52",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "53",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "54",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        }
+      ]
+    },
+    {
+      "case_id": "9",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 12,
+      "sentences": [
+        {
+          "sentence_id": "1",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "2",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "3",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "4",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "5",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "6",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "7",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "8",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "9",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "10",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "11",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "12",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "13",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "14",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "15",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "16",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "17",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "18",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "19",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "20",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "21",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        }
+      ]
+    },
+    {
+      "case_id": "10",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 9,
+      "sentences": [
+        {
+          "sentence_id": "1",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "2",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "3",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "4",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "5",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "6",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "7",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "8",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "9",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "10",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "11",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "12",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "13",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "14",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "15",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "16",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "17",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "18",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "19",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "20",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "21",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "22",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "23",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "24",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "25",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "26",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "27",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "28",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "29",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "30",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "31",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "32",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        }
+      ]
+    },
+    {
+      "case_id": "11",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 2,
+      "fn": 7,
+      "sentences": [
+        {
+          "sentence_id": "1",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "2",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "3",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "4",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "5",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "6",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "7",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "8",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "9",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "10",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "11",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "12",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "13",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "14",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "15",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "16",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "17",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "18",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "19",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "20",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "21",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "22",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "23",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "24",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "25",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "26",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "27",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        }
+      ]
+    },
+    {
+      "case_id": "12",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4,
+      "sentences": [
+        {
+          "sentence_id": "1",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "2",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "3",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "4",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "5",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "6",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "7",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "8",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "9",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "10",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "11",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "12",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "13",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "14",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        }
+      ]
+    },
+    {
+      "case_id": "13",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 5,
+      "sentences": [
+        {
+          "sentence_id": "1",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "2",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "3",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "4",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "5",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "6",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "7",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "8",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "9",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "10",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "11",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "12",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        }
+      ]
+    },
+    {
+      "case_id": "14",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 5,
+      "sentences": [
+        {
+          "sentence_id": "1",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "2",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "3",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "4",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "5",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "6",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "7",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "8",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "9",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        }
+      ]
+    },
+    {
+      "case_id": "15",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "sentences": [
+        {
+          "sentence_id": "1",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "2",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "3",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "4",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "5",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "6",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "7",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "8",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "9",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "10",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "11",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "12",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        }
+      ]
+    },
+    {
+      "case_id": "16",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 2,
+      "fn": 7,
+      "sentences": [
+        {
+          "sentence_id": "1",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "2",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "3",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "4",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "5",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "6",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "7",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "8",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "9",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "10",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "11",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "12",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "13",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "14",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "15",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "16",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "17",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "18",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "19",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "20",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "21",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "22",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "23",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "24",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "25",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "26",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "27",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "28",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "29",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "30",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        }
+      ]
+    },
+    {
+      "case_id": "17",
+      "precision": 0.1842,
+      "recall": 1.0,
+      "f1": 0.3111,
+      "tp": 7,
+      "fp": 31,
+      "fn": 0,
+      "sentences": [
+        {
+          "sentence_id": "1",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "2",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "3",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "4",
+          "text": "",
+          "relevance": "essential",
+          "predicted": true,
+          "category": "TP"
+        },
+        {
+          "sentence_id": "5",
+          "text": "",
+          "relevance": "essential",
+          "predicted": true,
+          "category": "TP"
+        },
+        {
+          "sentence_id": "6",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "7",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "8",
+          "text": "",
+          "relevance": "essential",
+          "predicted": true,
+          "category": "TP"
+        },
+        {
+          "sentence_id": "9",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "10",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "11",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "12",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "13",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "14",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "15",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "16",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "17",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "18",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "19",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "20",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "21",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "22",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "23",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "24",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "25",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "26",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "27",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "28",
+          "text": "",
+          "relevance": "essential",
+          "predicted": true,
+          "category": "TP"
+        },
+        {
+          "sentence_id": "29",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "30",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "31",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "32",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "33",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "34",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "35",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "36",
+          "text": "",
+          "relevance": "essential",
+          "predicted": true,
+          "category": "TP"
+        },
+        {
+          "sentence_id": "37",
+          "text": "",
+          "relevance": "essential",
+          "predicted": true,
+          "category": "TP"
+        },
+        {
+          "sentence_id": "38",
+          "text": "",
+          "relevance": "essential",
+          "predicted": true,
+          "category": "TP"
+        }
+      ]
+    },
+    {
+      "case_id": "18",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 2,
+      "fn": 2,
+      "sentences": [
+        {
+          "sentence_id": "1",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "2",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": true,
+          "category": "FP"
+        },
+        {
+          "sentence_id": "3",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "4",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "5",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "6",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "7",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "8",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "9",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "10",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "11",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "12",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "13",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "14",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "15",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "16",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "17",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "18",
+          "text": "",
+          "relevance": "supplementary",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "19",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "20",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "21",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "22",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "23",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        }
+      ]
+    },
+    {
+      "case_id": "19",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 5,
+      "sentences": [
+        {
+          "sentence_id": "1",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "2",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "3",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "4",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "5",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "6",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "7",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "8",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "9",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "10",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "11",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "12",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "13",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "14",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "15",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "16",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "17",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "18",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        }
+      ]
+    },
+    {
+      "case_id": "20",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6,
+      "sentences": [
+        {
+          "sentence_id": "1",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "2",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "3",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "4",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "5",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "6",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        },
+        {
+          "sentence_id": "7",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "8",
+          "text": "",
+          "relevance": "not-relevant",
+          "predicted": false,
+          "category": "TN"
+        },
+        {
+          "sentence_id": "9",
+          "text": "",
+          "relevance": "essential",
+          "predicted": false,
+          "category": "FN"
+        }
+      ]
+    }
+  ]
+}

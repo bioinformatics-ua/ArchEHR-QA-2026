@@ -1,0 +1,602 @@
+[
+  {
+    "case_id": "21",
+    "raw_output": "The note documents progressive liver failure with hepatic encephalopathy refractory to treatment, hepatorenal syndrome with anuric renal failure, and a transition to comfort care as he is not a transplant candidate (sentences 4, 5, 6, 11, 12, 15). These are terminal complications, but the note does not provide a specific timeline for life expectancy.",
+    "parsed_answer": "The note documents progressive liver failure with hepatic encephalopathy refractory to treatment, hepatorenal syndrome with anuric renal failure, and a transition to comfort care as he is not a transplant candidate . These are terminal complications, but the note does not provide a specific timeline for life expectancy.",
+    "word_count": 48
+  },
+  {
+    "case_id": "22",
+    "raw_output": "The surgery was an **emergent salvage repair** for a **ruptured thoracoabdominal aortic aneurysm** (sentences 1 & 2). This is a life-threatening condition requiring immediate intervention to prevent fatal bleeding. The procedure used a tube graft and deep hypothermic circulatory arrest (sentence 2).",
+    "parsed_answer": "The surgery was an **emergent salvage repair** for a **ruptured thoracoabdominal aortic aneurysm** (sentences 1 & 2). This is a life-threatening condition requiring immediate intervention to prevent fatal bleeding. The procedure used a tube graft and deep hypothermic circulatory arrest .",
+    "word_count": 41
+  },
+  {
+    "case_id": "23",
+    "raw_output": "Based on the clinical note, antibiotics were necessary. On [**2174-2-11**], a chest x-ray indicated she was developing a pneumonia (sentence 5). IV antibiotics were started for this right away, and she subsequently improved (sentence 6).",
+    "parsed_answer": "Based on the clinical note, antibiotics were necessary. On [**2174-2-11**], a chest x-ray indicated she was developing a pneumonia . IV antibiotics were started for this right away, and she subsequently improved .",
+    "word_count": 33
+  },
+  {
+    "case_id": "24",
+    "raw_output": "Based on the clinical note, intubation was performed due to \"concern for increasing work of breathing\" (Sentence 4). This was in the context of significant hypoxia and tachypnea (Sentence 4), with a history of severe desaturation to 86% on exertion despite maximal oxygen therapy (Sentence 2). His baseline end-stage sarcoidosis (Sentence 1) contributed to his respiratory vulnerability.",
+    "parsed_answer": "Based on the clinical note, intubation was performed due to \"concern for increasing work of breathing\" (Sentence 4). This was in the context of significant hypoxia and tachypnea (Sentence 4), with a history of severe desaturation to 86% on exertion despite maximal oxygen therapy (Sentence 2). His baseline end-stage sarcoidosis (Sentence 1) contributed to his respiratory vulnerability.",
+    "word_count": 57
+  },
+  {
+    "case_id": "25",
+    "raw_output": "Based solely on the discharge note, the CPAP (as a form of positive-pressure mask) was used during his ICU admission for acute respiratory support due to low oxygen levels from his congestive heart failure exacerbation (Sentence 2 & 3). The note does not mention sleep apnea as an indication for its use. It was a temporary treatment that helped improve his symptoms (Sentence 4).",
+    "parsed_answer": "Based solely on the discharge note, the CPAP (as a form of positive-pressure mask) was used during his ICU admission for acute respiratory support due to low oxygen levels from his congestive heart failure exacerbation (Sentence 2 & 3). The note does not mention sleep apnea as an indication for its use. It was a temporary treatment that helped improve his symptoms (Sentence 4).",
+    "word_count": 64
+  },
+  {
+    "case_id": "26",
+    "raw_output": "Based on the clinical note, antibiotics were necessary. The patient developed pneumonia as a complication of intubation (Sentence 3). He was treated with a 7-day antibiotic course for this pneumonia, after which his condition improved (Sentence 4).",
+    "parsed_answer": "Based on the clinical note, antibiotics were necessary. The patient developed pneumonia as a complication of intubation (Sentence 3). He was treated with a 7-day antibiotic course for this pneumonia, after which his condition improved (Sentence 4).",
+    "word_count": 37
+  },
+  {
+    "case_id": "27",
+    "raw_output": "Based on the clinical note, your mother's severe pancreatitis pain was managed in the ICU with aggressive pain control using intravenous dilaudid (hydromorphone) every 3 hours (Sentence 12). The discharge plan includes oral acetaminophen for fever (Sentence 18) and lorazepam for anxiety (Sentences 24, 25), but a specific outpatient pain regimen for pancreatitis is not documented in this excerpt.",
+    "parsed_answer": "Based on the clinical note, your mother's severe pancreatitis pain was managed in the ICU with aggressive pain control using intravenous dilaudid (hydromorphone) every 3 hours (Sentence 12). The discharge plan includes oral acetaminophen for fever (Sentence 18) and lorazepam for anxiety (Sentences 24, 25), but a specific outpatient pain regimen for pancreatitis is not documented in this excerpt.",
+    "word_count": 59
+  },
+  {
+    "case_id": "28",
+    "raw_output": "Based on the discharge instructions, pain control is managed with Vicodin (hydrocodone/acetaminophen), which was increased to every 6 hours as needed (Sentence 13). Her abdominal pain had gradually resolved during hospitalization with bowel rest and nutritional support (Sentence 4). Essential follow-up includes seeing a gastroenterologist within two weeks (Sentence 6) for ongoing management.",
+    "parsed_answer": "Based on the discharge instructions, pain control is managed with Vicodin (hydrocodone/acetaminophen), which was increased to every 6 hours as needed (Sentence 13). Her abdominal pain had gradually resolved during hospitalization with bowel rest and nutritional support (Sentence 4). Essential follow-up includes seeing a gastroenterologist within two weeks (Sentence 6) for ongoing management.",
+    "word_count": 53
+  },
+  {
+    "case_id": "29",
+    "raw_output": "The clinical note does not address alcohol use or contraindications with coumadin. The documented discharge instructions focus on the importance of maintaining oxygenation levels between 88-92%. There is no evidence provided regarding alcohol consumption.",
+    "parsed_answer": "The clinical note does not address alcohol use or contraindications with coumadin. The documented discharge instructions focus on the importance of maintaining oxygenation levels between 88-92%. There is no evidence provided regarding alcohol consumption.",
+    "word_count": 34
+  },
+  {
+    "case_id": "30",
+    "raw_output": "Based solely on this note, no explicit alcohol contraindication is stated. The evidence confirms she was restarted on her home dose of warfarin (Coumadin) for a right upper extremity DVT. Her INR was 2.1 at discharge, which is within a typical therapeutic range. The note does not address alcohol consumption, its risks (like further INR fluctuation), or provide any guidance on this matter.",
+    "parsed_answer": "Based solely on this note, no explicit alcohol contraindication is stated. The evidence confirms she was restarted on her home dose of warfarin (Coumadin) for a right upper extremity DVT. Her INR was 2.1 at discharge, which is within a typical therapeutic range. The note does not address alcohol consumption, its risks (like further INR fluctuation), or provide any guidance on this matter.",
+    "word_count": 63
+  },
+  {
+    "case_id": "31",
+    "raw_output": "The diagnosis was based on final culture results from an outside hospital indicating a urinary tract infection caused by E. coli (Sentence 2). All cultures taken at the discharging institution were negative at discharge (Sentence 5). The pathogen's sensitivity profile guided antibiotic therapy (Sentences 3, 6).",
+    "parsed_answer": "The diagnosis was based on final culture results from an outside hospital indicating a urinary tract infection caused by E. coli (Sentence 2). All cultures taken at the discharging institution were negative at discharge (Sentence 5). The pathogen's sensitivity profile guided antibiotic therapy (Sentences 3, 6).",
+    "word_count": 46
+  },
+  {
+    "case_id": "32",
+    "raw_output": "Based on the discharge summary, the final diagnosis was a stroke-like episode due to MELAS, a mitochondrial disorder (sentences 3-5). She was also treated for a urinary tract infection, hyponatremia, hypomagnesemia, and hypophosphatemia (sentence 6). No psych evaluation is mentioned in this excerpt.",
+    "parsed_answer": "Based on the discharge summary, the final diagnosis was a stroke-like episode due to MELAS, a mitochondrial disorder (sentences 3-5). She was also treated for a urinary tract infection, hyponatremia, hypomagnesemia, and hypophosphatemia . No psych evaluation is mentioned in this excerpt.",
+    "word_count": 42
+  },
+  {
+    "case_id": "33",
+    "raw_output": "Based on the discharge summary, the diagnosis was **hepatic encephalopathy** (confusion from toxin buildup due to liver dysfunction) and a **persistent urinary tract infection (UTI)**. The note states these resulted from not taking enough lactulose and not finishing a prior antibiotic course. There is no mention of a psych evaluation or findings from it in this excerpt.",
+    "parsed_answer": "Based on the discharge summary, the diagnosis was **hepatic encephalopathy** (confusion from toxin buildup due to liver dysfunction) and a **persistent urinary tract infection (UTI)**. The note states these resulted from not taking enough lactulose and not finishing a prior antibiotic course. There is no mention of a psych evaluation or findings from it in this excerpt.",
+    "word_count": 57
+  },
+  {
+    "case_id": "34",
+    "raw_output": "The evaluation attributed her acute confusion to a seizure, most likely caused by severe electrolyte disturbances (low magnesium, potassium, calcium) [2, 1]. These were due to chronic diarrhea, alcohol use, and poor nutrition [3]. No acute intracranial process was found on imaging [4].",
+    "parsed_answer": "The evaluation attributed her acute confusion to a seizure, most likely caused by severe electrolyte disturbances (low magnesium, potassium, calcium) . These were due to chronic diarrhea, alcohol use, and poor nutrition . No acute intracranial process was found on imaging .",
+    "word_count": 42
+  },
+  {
+    "case_id": "35",
+    "raw_output": "Based on the discharge summary, the primary findings were severe hyponatremia, hypokalemia, hypomagnesemia, and hypophosphatemia, with dehydration and a urinary tract infection (Sentence 2, 5, 8). The electrolyte disturbance is attributed to her previous diuretics (Sentence 4). There is no mention of a psych evaluation. The confusion and other symptoms were likely due to this severe electrolyte imbalance and infection.",
+    "parsed_answer": "Based on the discharge summary, the primary findings were severe hyponatremia, hypokalemia, hypomagnesemia, and hypophosphatemia, with dehydration and a urinary tract infection (Sentence 2, 5, 8). The electrolyte disturbance is attributed to her previous diuretics (Sentence 4). There is no mention of a psych evaluation. The confusion and other symptoms were likely due to this severe electrolyte imbalance and infection.",
+    "word_count": 60
+  },
+  {
+    "case_id": "36",
+    "raw_output": "The clinical note documents your admission for thyrotoxicosis/hyperthyroidism (Sentence 6). Treatment resolved the documented symptoms of hypertension, tachycardia, and diarrhea (Sentence 7). There is no mention of dental problems or oral findings in this discharge summary. The note confirms you are a nonsmoker (Sentence 4) and reports minimal past marijuana use, not methamphetamine (Sentence 5).",
+    "parsed_answer": "The clinical note documents your admission for thyrotoxicosis/hyperthyroidism (Sentence 6). Treatment resolved the documented symptoms of hypertension, tachycardia, and diarrhea (Sentence 7). There is no mention of dental problems or oral findings in this discharge summary. The note confirms you are a nonsmoker (Sentence 4) and reports minimal past marijuana use, not methamphetamine (Sentence 5).",
+    "word_count": 55
+  },
+  {
+    "case_id": "37",
+    "raw_output": "You were referred for specialized neurological management due to several brain masses with associated swelling, causing confusion, difficulty with thinking, writing, gait, a subtle right visual field deficit, and prior right-sided weakness (Sentences 12-14, 21). The ICU neurology department manages acute, complex neurological conditions like yours. Your examination improved with dexamethasone treatment for the swelling (Sentence 16).",
+    "parsed_answer": "You were referred for specialized neurological management due to several brain masses with associated swelling, causing confusion, difficulty with thinking, writing, gait, a subtle right visual field deficit, and prior right-sided weakness (Sentences 12-14, 21). The ICU neurology department manages acute, complex neurological conditions like yours. Your examination improved with dexamethasone treatment for the swelling (Sentence 16).",
+    "word_count": 57
+  },
+  {
+    "case_id": "38",
+    "raw_output": "Based on the note, treatment has been initiated for the abdominal swelling, which is due to excess fluid from liver disease (Sentence 7-8). The regimen includes increasing lactulose and starting two diuretics: Lasix (furosemide) 40 mg twice daily and Aldactone (spironolactone) 50 mg daily (Sentence 10). A follow-up is scheduled to check electrolytes, and diuretics may be increased further if kidney function is stable (Sentence 13-14).",
+    "parsed_answer": "Based on the note, treatment has been initiated for the abdominal swelling, which is due to excess fluid from liver disease (Sentence 7-8). The regimen includes increasing lactulose and starting two diuretics: Lasix (furosemide) 40 mg twice daily and Aldactone (spironolactone) 50 mg daily (Sentence 10). A follow-up is scheduled to check electrolytes, and diuretics may be increased further if kidney function is stable (Sentence 13-14).",
+    "word_count": 66
+  },
+  {
+    "case_id": "39",
+    "raw_output": "Based on the note, she is being treated for swelling (pleural effusion) with ongoing diuretics: lasix 10mg daily and spironolactone 50mg daily to prevent recurrence (sentences 7, 9, 14). She previously underwent a thoracentesis to drain the fluid (sentence 8). Her urine output and weight are being monitored for adjustment (sentence 15).",
+    "parsed_answer": "Based on the note, she is being treated for swelling (pleural effusion) with ongoing diuretics: lasix 10mg daily and spironolactone 50mg daily to prevent recurrence . She previously underwent a thoracentesis to drain the fluid . Her urine output and weight are being monitored for adjustment .",
+    "word_count": 47
+  },
+  {
+    "case_id": "40",
+    "raw_output": "Based on the note, your expected recovery includes finishing the azithromycin and prednisone (31). However, the CT scan showed a persistent lung opacity requiring a repeat scan in weeks (9, 16). If the lungs have not cleared, further evaluation for conditions like MAC pulmonary infection (\"Lady ___ syndrome\") or malignancy is advised (10, 17, 21). Outpatient follow-up with Pulmonary Medicine is required (11, 15, 36).",
+    "parsed_answer": "Based on the note, your expected recovery includes finishing the azithromycin and prednisone . However, the CT scan showed a persistent lung opacity requiring a repeat scan in weeks . If the lungs have not cleared, further evaluation for conditions like MAC pulmonary infection (\"Lady ___ syndrome\") or malignancy is advised . Outpatient follow-up with Pulmonary Medicine is required .",
+    "word_count": 60
+  },
+  {
+    "case_id": "41",
+    "raw_output": "Based on the hospital evaluation, your severe chest pain was not due to acute cardiac ischemia (Sentence 4). The documented clinical opinion is that the etiology of your chest pressure was thought to be due to either COPD or anxiety (Sentence 5). The note does not provide an explanation for the numbness in your left arm.",
+    "parsed_answer": "Based on the hospital evaluation, your severe chest pain was not due to acute cardiac ischemia (Sentence 4). The documented clinical opinion is that the etiology of your chest pressure was thought to be due to either COPD or anxiety (Sentence 5). The note does not provide an explanation for the numbness in your left arm.",
+    "word_count": 56
+  },
+  {
+    "case_id": "42",
+    "raw_output": "Based on the clinical note, the cause of your daughter's acute cholecystitis was a gallstone obstructing the cystic duct (sentence 3). The note does not attribute the condition to antibiotics or food. Post-operatively, she tolerated her advanced diet without abdominal pain (sentence 12). The prescribed antibiotics (Unasyn, then Augmentin) were a treatment for the gangrenous cholecystitis found during surgery (sentences 5, 8).",
+    "parsed_answer": "Based on the clinical note, the cause of your daughter's acute cholecystitis was a gallstone obstructing the cystic duct . The note does not attribute the condition to antibiotics or food. Post-operatively, she tolerated her advanced diet without abdominal pain . The prescribed antibiotics (Unasyn, then Augmentin) were a treatment for the gangrenous cholecystitis found during surgery .",
+    "word_count": 58
+  },
+  {
+    "case_id": "43",
+    "raw_output": "The clinical note states \"No CP/SOB\" (sentence 5), indicating chest pain was not documented as a presenting symptom during this hospitalization. The note documents chronic back pain, fibromyalgia, and post-surgical pain (sentences 1-3), but does not provide evidence linking these to thoracic discogenic chest pain.",
+    "parsed_answer": "The clinical note states \"No CP/SOB\" , indicating chest pain was not documented as a presenting symptom during this hospitalization. The note documents chronic back pain, fibromyalgia, and post-surgical pain (sentences 1-3), but does not provide evidence linking these to thoracic discogenic chest pain.",
+    "word_count": 44
+  },
+  {
+    "case_id": "44",
+    "raw_output": "Based on your clinical note, your recent flank pain was most likely due to inflammation from bronchitis (6). Your imaging showed no pneumonia or rib fractures (3). You were instructed to continue taking your prescribed medications, including a 3-day course of prednisone (7, 8, 9). The note states you were deemed at very low risk for a blood clot (5).",
+    "parsed_answer": "Based on your clinical note, your recent flank pain was most likely due to inflammation from bronchitis . Your imaging showed no pneumonia or rib fractures . You were instructed to continue taking your prescribed medications, including a 3-day course of prednisone . The note states you were deemed at very low risk for a blood clot .",
+    "word_count": 58
+  },
+  {
+    "case_id": "45",
+    "raw_output": "Based on your discharge instructions, there are no contraindications to air travel noted. The instructions specifically advise that on your flight you should get up to walk and stretch several times and remember to take your aspirin. Your imaging (CT, MRI) showed no evidence of a stroke or bleed, and your cardiac workup, while noting a new left bundle branch block and echocardiogram findings, was not immediately concerning.",
+    "parsed_answer": "Based on your discharge instructions, there are no contraindications to air travel noted. The instructions specifically advise that on your flight you should get up to walk and stretch several times and remember to take your aspirin. Your imaging (CT, MRI) showed no evidence of a stroke or bleed, and your cardiac workup, while noting a new left bundle branch block and echocardiogram findings, was not immediately concerning.",
+    "word_count": 68
+  },
+  {
+    "case_id": "46",
+    "raw_output": "Based on the note, your CT scan showed no significant acute intra-thoracoabdominal injury (3). A noted L1 vertebral compression fracture is likely old (4, 14). You endorsed low back pain on admission (4, 6) without new neurologic deficits (7). Persistent pain may relate to this finding or musculoskeletal strain, but the acute workup did not reveal a new major injury. Further evaluation is recommended upon transfer (8, 16).",
+    "parsed_answer": "Based on the note, your CT scan showed no significant acute intra-thoracoabdominal injury . A noted L1 vertebral compression fracture is likely old . You endorsed low back pain on admission without new neurologic deficits . Persistent pain may relate to this finding or musculoskeletal strain, but the acute workup did not reveal a new major injury. Further evaluation is recommended upon transfer .",
+    "word_count": 64
+  },
+  {
+    "case_id": "47",
+    "raw_output": "Your low blood counts were consistent with your ongoing liver disease, as tests for bleeding and blood cell breakdown were negative. There was no evidence of internal bleeding. Your management includes follow-up for blood counts, potential future studies if counts drop further, and possible iron infusions.",
+    "parsed_answer": "Your low blood counts were consistent with your ongoing liver disease, as tests for bleeding and blood cell breakdown were negative. There was no evidence of internal bleeding. Your management includes follow-up for blood counts, potential future studies if counts drop further, and possible iron infusions.",
+    "word_count": 46
+  },
+  {
+    "case_id": "48",
+    "raw_output": "Based on your evaluation, the CT scan identified new masses in your liver and nodules in your lungs. A biopsy was performed, but the results were pending at your discharge. The cause of your abdominal pain and the nature of the skin findings are not yet diagnosed. You must follow up in clinic to discuss the biopsy results, which will determine the diagnosis and next steps.",
+    "parsed_answer": "Based on your evaluation, the CT scan identified new masses in your liver and nodules in your lungs. A biopsy was performed, but the results were pending at your discharge. The cause of your abdominal pain and the nature of the skin findings are not yet diagnosed. You must follow up in clinic to discuss the biopsy results, which will determine the diagnosis and next steps.",
+    "word_count": 66
+  },
+  {
+    "case_id": "49",
+    "raw_output": "Based on the clinical note, you already received an MRI of your upper spine during this admission (sentence 8). The MRI showed significant swelling, strained ligaments, and muscles. Therefore, a new MRI at the VA ED is not indicated by this information. You have a scheduled follow-up with Dr. ___ (sentence 16) to manage your ongoing care.",
+    "parsed_answer": "Based on the clinical note, you already received an MRI of your upper spine during this admission . The MRI showed significant swelling, strained ligaments, and muscles. Therefore, a new MRI at the VA ED is not indicated by this information. You have a scheduled follow-up with Dr. ___ to manage your ongoing care.",
+    "word_count": 54
+  },
+  {
+    "case_id": "50",
+    "raw_output": "Yes, your pregnancy has been confirmed. The clinical note documents a positive pregnancy test in the emergency department (sentence 10) and a positive test from the outside hospital (sentence 8). Obstetrics was consulted (sentence 11) and prenatal vitamins were prescribed at discharge (sentence 24).",
+    "parsed_answer": "Yes, your pregnancy has been confirmed. The clinical note documents a positive pregnancy test in the emergency department and a positive test from the outside hospital . Obstetrics was consulted and prenatal vitamins were prescribed at discharge .",
+    "word_count": 38
+  },
+  {
+    "case_id": "51",
+    "raw_output": "The discharge instructions specify that rib fracture pain requires taking prescribed pain medication as directed to enable deep breathing (36). Non-steroidal anti-inflammatory drugs are noted as effective for pain control (46). She must return to the Emergency Department for new chest pain (48) or if pain worsens, changes location, or moves to her chest or back (62).",
+    "parsed_answer": "The discharge instructions specify that rib fracture pain requires taking prescribed pain medication as directed to enable deep breathing . Non-steroidal anti-inflammatory drugs are noted as effective for pain control . She must return to the Emergency Department for new chest pain or if pain worsens, changes location, or moves to her chest or back .",
+    "word_count": 56
+  },
+  {
+    "case_id": "52",
+    "raw_output": "Based on the discharge instructions, he was admitted for left hand clumsiness due to suspected brain surface inflammation. No specific cause was identified at discharge, and some tests are still pending. He should follow up with the neurology clinic as scheduled. For new symptoms, he should contact the neurology clinic or go to the emergency room.",
+    "parsed_answer": "Based on the discharge instructions, he was admitted for left hand clumsiness due to suspected brain surface inflammation. No specific cause was identified at discharge, and some tests are still pending. He should follow up with the neurology clinic as scheduled. For new symptoms, he should contact the neurology clinic or go to the emergency room.",
+    "word_count": 56
+  },
+  {
+    "case_id": "53",
+    "raw_output": "The clinical note does not mention TMJ. Your recent evaluation attributed dizziness to a combination of peripheral neuropathy, autonomic instability, and migraines, with MRI ruling out stroke. There is no documented evidence in this excerpt linking your symptoms or blood pressure changes to TMJ.",
+    "parsed_answer": "The clinical note does not mention TMJ. Your recent evaluation attributed dizziness to a combination of peripheral neuropathy, autonomic instability, and migraines, with MRI ruling out stroke. There is no documented evidence in this excerpt linking your symptoms or blood pressure changes to TMJ.",
+    "word_count": 44
+  },
+  {
+    "case_id": "54",
+    "raw_output": "Based on the note, you were hospitalized for Influenza A and a COPD exacerbation (Sentence 2, 4). Fever and myalgias were part of your initial flu presentation (Sentence 2). However, new or worsening symptoms, including fever and lower abdominal pain, require evaluation. The discharge instructions do not address this specific scenario. Given your recent hospitalization for severe respiratory illness, you should seek prompt medical attention.",
+    "parsed_answer": "Based on the note, you were hospitalized for Influenza A and a COPD exacerbation (Sentence 2, 4). Fever and myalgias were part of your initial flu presentation (Sentence 2). However, new or worsening symptoms, including fever and lower abdominal pain, require evaluation. The discharge instructions do not address this specific scenario. Given your recent hospitalization for severe respiratory illness, you should seek prompt medical attention.",
+    "word_count": 65
+  },
+  {
+    "case_id": "55",
+    "raw_output": "The lump is a benign fatty lump, unrelated to the fall, as the bone is normal (sentences 7-8). The recent swelling is not addressed in this note. For ongoing pain, discuss with your primary care doctor (sentence 10).",
+    "parsed_answer": "The lump is a benign fatty lump, unrelated to the fall, as the bone is normal (sentences 7-8). The recent swelling is not addressed in this note. For ongoing pain, discuss with your primary care doctor .",
+    "word_count": 37
+  },
+  {
+    "case_id": "56",
+    "raw_output": "Based on the clinical note, the patient was admitted with nausea and abdominal pain and was found to have blockage of the biliary ducts. An ERCP was performed to remove the blockages. Due to continued blockage, radiologists placed external drains to relieve the obstruction.",
+    "parsed_answer": "Based on the clinical note, the patient was admitted with nausea and abdominal pain and was found to have blockage of the biliary ducts. An ERCP was performed to remove the blockages. Due to continued blockage, radiologists placed external drains to relieve the obstruction.",
+    "word_count": 44
+  },
+  {
+    "case_id": "57",
+    "raw_output": "Based solely on this discharge note, her positive lupus diagnosis is confirmed (sentence 5). The note does not mention infusion therapy or any associated reactions, vomiting, or pain. It instructs follow-up with her new rheumatologist (sentence 11) and to contact her primary care provider for any new symptoms (sentence 13). The documented information cannot address the normality of her reaction or possible misdiagnosis.",
+    "parsed_answer": "Based solely on this discharge note, her positive lupus diagnosis is confirmed . The note does not mention infusion therapy or any associated reactions, vomiting, or pain. It instructs follow-up with her new rheumatologist and to contact her primary care provider for any new symptoms . The documented information cannot address the normality of her reaction or possible misdiagnosis.",
+    "word_count": 59
+  },
+  {
+    "case_id": "58",
+    "raw_output": "The language difficulties are attributed to acute cerebrovascular events. A CT scan demonstrated two smaller strokes on the left side, and one of these may have contributed to the symptoms. The patient was admitted to neurology for this complaint, and other potential causes like seizures were ruled out by a normal EEG.",
+    "parsed_answer": "The language difficulties are attributed to acute cerebrovascular events. A CT scan demonstrated two smaller strokes on the left side, and one of these may have contributed to the symptoms. The patient was admitted to neurology for this complaint, and other potential causes like seizures were ruled out by a normal EEG.",
+    "word_count": 52
+  },
+  {
+    "case_id": "59",
+    "raw_output": "Based on the clinical note, there is no mention or suspicion of cancer. Your evaluation attributed the abdominal pain to a hemorrhagic ovarian cyst and the gastrointestinal symptoms to viral gastroenteritis. The discharge instructions focus on follow-up for these diagnosed conditions.",
+    "parsed_answer": "Based on the clinical note, there is no mention or suspicion of cancer. Your evaluation attributed the abdominal pain to a hemorrhagic ovarian cyst and the gastrointestinal symptoms to viral gastroenteritis. The discharge instructions focus on follow-up for these diagnosed conditions.",
+    "word_count": 41
+  },
+  {
+    "case_id": "60",
+    "raw_output": "Based on this admission for dyspnea, your baseline shortness of breath persisted and was attributed to underlying valvular heart disease and pulmonary hypertension (sentences 10, 12, 18). You underwent aortic and mitral valve replacement (sentence 30). You received inpatient physical therapy (sentence 38). The expected course involves outpatient titration of your heart failure medications (sentences 53, 54) and evaluation for sleep apnea (sentence 60) to manage contributing factors.",
+    "parsed_answer": "Based on this admission for dyspnea, your baseline shortness of breath persisted and was attributed to underlying valvular heart disease and pulmonary hypertension . You underwent aortic and mitral valve replacement . You received inpatient physical therapy . The expected course involves outpatient titration of your heart failure medications and evaluation for sleep apnea to manage contributing factors.",
+    "word_count": 58
+  },
+  {
+    "case_id": "61",
+    "raw_output": "Based on the note, the patient's reduced stamina is not explicitly addressed. The documented issues are severe mitral regurgitation requiring surgical repair (sentences 24-25), resolved mild volume overload after conversion to sinus rhythm (sentences 19, 23, 33), and residual chest wall pain from CPR (sentences 17-18). There is no mention of a prognosis for stamina.",
+    "parsed_answer": "Based on the note, the patient's reduced stamina is not explicitly addressed. The documented issues are severe mitral regurgitation requiring surgical repair (sentences 24-25), resolved mild volume overload after conversion to sinus rhythm , and residual chest wall pain from CPR (sentences 17-18). There is no mention of a prognosis for stamina.",
+    "word_count": 52
+  },
+  {
+    "case_id": "62",
+    "raw_output": "Based on the clinical note, the dark stools are attributed to severe portal hypertensive gastropathy (sentences 5-6, 17). His hematocrit remained stable, suggesting slow bleeding from this condition. The care plan includes continuing ferrous sulfate for iron deficiency anemia (sentence 12), following up with the Liver Center within 10 days (sentence 24), and completing the recommended outpatient colonoscopy (sentence 19). He must seek medical attention for recurrent symptoms (sentence 23).",
+    "parsed_answer": "Based on the clinical note, the dark stools are attributed to severe portal hypertensive gastropathy (sentences 5-6, 17). His hematocrit remained stable, suggesting slow bleeding from this condition. The care plan includes continuing ferrous sulfate for iron deficiency anemia , following up with the Liver Center within 10 days , and completing the recommended outpatient colonoscopy . He must seek medical attention for recurrent symptoms .",
+    "word_count": 66
+  },
+  {
+    "case_id": "63",
+    "raw_output": "Based on the note, her prior melena was attributed to a likely diverticular bleed in the setting of a supratherapeutic INR (3.2-3.9) on Coumadin (sentences 9, 10, 12). The bleeding resolved after anticoagulation reversal (sentence 14), with subsequent stable hematocrit (sentence 15). The note does not address the cause of her new symptoms at home.",
+    "parsed_answer": "Based on the note, her prior melena was attributed to a likely diverticular bleed in the setting of a supratherapeutic INR (3.2-3.9) on Coumadin . The bleeding resolved after anticoagulation reversal , with subsequent stable hematocrit . The note does not address the cause of her new symptoms at home.",
+    "word_count": 50
+  },
+  {
+    "case_id": "64",
+    "raw_output": "The note states no surgical intervention was offered due to the high mortality rate associated with this severe stroke within one month (Sentence 4). Aggressive therapy was ruled out based on this prognosis. The patient was subsequently made CMO per a pre-existing living will (Sentence 8).",
+    "parsed_answer": "The note states no surgical intervention was offered due to the high mortality rate associated with this severe stroke within one month (Sentence 4). Aggressive therapy was ruled out based on this prognosis. The patient was subsequently made CMO per a pre-existing living will (Sentence 8).",
+    "word_count": 46
+  },
+  {
+    "case_id": "65",
+    "raw_output": "The doctor's conclusion is based on multiple life-threatening complications in a patient with advanced liver disease. These include persistent, uncontrollable stomal variceal bleeding (2, 40), septic shock from an infected TIPS (24), multi-drug resistant bacteremia (25, 27), and spontaneous bacterial peritonitis (10). The patient was re-listed for liver transplant but refused (42), and aggressive therapy (like another transplant to remove the infected TIPS) was deemed high risk and also refused by the patient (53-54).",
+    "parsed_answer": "The doctor's conclusion is based on multiple life-threatening complications in a patient with advanced liver disease. These include persistent, uncontrollable stomal variceal bleeding , septic shock from an infected TIPS , multi-drug resistant bacteremia , and spontaneous bacterial peritonitis . The patient was re-listed for liver transplant but refused , and aggressive therapy (like another transplant to remove the infected TIPS) was deemed high risk and also refused by the patient (53-54).",
+    "word_count": 72
+  },
+  {
+    "case_id": "66",
+    "raw_output": "The goals of care were established through family meetings with palliative care after cardiac tamponade was confirmed (sentences 3, 6). The patient decided against further chemotherapy or invasive procedures like pericardiocentesis (sentences 4, 11). The collective decision was to focus on comfort, leading to discharge to hospice care (sentences 5, 12, 18).",
+    "parsed_answer": "The goals of care were established through family meetings with palliative care after cardiac tamponade was confirmed . The patient decided against further chemotherapy or invasive procedures like pericardiocentesis . The collective decision was to focus on comfort, leading to discharge to hospice care .",
+    "word_count": 45
+  },
+  {
+    "case_id": "67",
+    "raw_output": "Based on your hospitalization for community-acquired pneumonia, atrial fibrillation, and fluid overload, the expected course included symptomatic improvement with a ten-day antibiotic course, diuresis, and bronchodilators (Sentence 7-10). The cough that worsens when lying down can be consistent with residual fluid overload (Sentence 8, 34). Persistent symptoms warrant follow-up, as you have moderate pulmonary hypertension requiring outpatient pulmonary evaluation (Sentence 29, 31).",
+    "parsed_answer": "Based on your hospitalization for community-acquired pneumonia, atrial fibrillation, and fluid overload, the expected course included symptomatic improvement with a ten-day antibiotic course, diuresis, and bronchodilators (Sentence 7-10). The cough that worsens when lying down can be consistent with residual fluid overload (Sentence 8, 34). Persistent symptoms warrant follow-up, as you have moderate pulmonary hypertension requiring outpatient pulmonary evaluation (Sentence 29, 31).",
+    "word_count": 62
+  },
+  {
+    "case_id": "68",
+    "raw_output": "Based on this medical record, the patient was managed non-operatively. The subdural hematoma was small with no midline shift (Sentences 4, 7). Treatment in the ICU included observation, monitoring (16), an angiogram (17), and medications like nimodipine (18). The patient improved, was deemed safe for discharge (24), and did not require further surgical intervention.",
+    "parsed_answer": "Based on this medical record, the patient was managed non-operatively. The subdural hematoma was small with no midline shift (Sentences 4, 7). Treatment in the ICU included observation, monitoring , an angiogram , and medications like nimodipine . The patient improved, was deemed safe for discharge , and did not require further surgical intervention.",
+    "word_count": 54
+  },
+  {
+    "case_id": "69",
+    "raw_output": "The primary treatment plan is aggressive rehabilitation, continuation of prescribed vitamins/thiamine, and management of cardiac and pulmonary issues per discharge medications and instructions (sentences 26, 42-58, 60-63). The prognosis is uncertain. The note states Central Pontine Myelinolysis is an irreversible process, but also observes his alertness prior to discharge indicates he has not suffered an irreversible insult (sentences 29-30).",
+    "parsed_answer": "The primary treatment plan is aggressive rehabilitation, continuation of prescribed vitamins/thiamine, and management of cardiac and pulmonary issues per discharge medications and instructions (sentences 26, 42-58, 60-63). The prognosis is uncertain. The note states Central Pontine Myelinolysis is an irreversible process, but also observes his alertness prior to discharge indicates he has not suffered an irreversible insult (sentences 29-30).",
+    "word_count": 59
+  },
+  {
+    "case_id": "70",
+    "raw_output": "Based on the note, solumedrol was given for suspected inflammatory myelitis/rhombencephalitis, as imaging showed multiple spinal and brain lesions. The treatment course involved IV solumedrol, a switch to oral prednisone, and resumption of solumedrol due to new inflammation. A later MRI showed marked improvement. The final diagnosis is unclear, being either ADEM or multiple sclerosis. The plan is outpatient follow-up with a demyelinating disease specialist.",
+    "parsed_answer": "Based on the note, solumedrol was given for suspected inflammatory myelitis/rhombencephalitis, as imaging showed multiple spinal and brain lesions. The treatment course involved IV solumedrol, a switch to oral prednisone, and resumption of solumedrol due to new inflammation. A later MRI showed marked improvement. The final diagnosis is unclear, being either ADEM or multiple sclerosis. The plan is outpatient follow-up with a demyelinating disease specialist.",
+    "word_count": 65
+  },
+  {
+    "case_id": "71",
+    "raw_output": "Based on the clinical note, her course has been severe but with some improvement. Initially unarousable with right-sided deficits, she became more alert and began whispering single words after starting amantadine. At discharge, she was alert and could open her eyes to stimuli but remained inattentive, without verbalization or command following, and had a right facial droop and arm weakness.",
+    "parsed_answer": "Based on the clinical note, her course has been severe but with some improvement. Initially unarousable with right-sided deficits, she became more alert and began whispering single words after starting amantadine. At discharge, she was alert and could open her eyes to stimuli but remained inattentive, without verbalization or command following, and had a right facial droop and arm weakness.",
+    "word_count": 60
+  },
+  {
+    "case_id": "72",
+    "raw_output": "Based on the note, his treatment plan includes levetiracetam (Keppra) for seizures, antibiotics for pneumonia, and management for atrial fibrillation and hypertension with multiple medications. For speech, the exam notes \"mild dysarthria.\" He is awake, alert, and follows commands. The plan is to transition his anticoagulation to warfarin on a specific date. His condition at discharge includes right-sided weakness and he requires assistance to walk.",
+    "parsed_answer": "Based on the note, his treatment plan includes levetiracetam (Keppra) for seizures, antibiotics for pneumonia, and management for atrial fibrillation and hypertension with multiple medications. For speech, the exam notes \"mild dysarthria.\" He is awake, alert, and follows commands. The plan is to transition his anticoagulation to warfarin on a specific date. His condition at discharge includes right-sided weakness and he requires assistance to walk.",
+    "word_count": 65
+  },
+  {
+    "case_id": "73",
+    "raw_output": "Based on his discharge condition, he has dysarthria (slurred speech) but fluent language and intact comprehension (sentences 36-37). His recovery plan involves admission to a rehabilitation facility to build back his strength and skills (sentence 46). He must continue his seizure prophylaxis (Keppra) and anticoagulation (warfarin) as prescribed (sentences 12, 24, 33) and follow up with neurology (sentence 47).",
+    "parsed_answer": "Based on his discharge condition, he has dysarthria (slurred speech) but fluent language and intact comprehension (sentences 36-37). His recovery plan involves admission to a rehabilitation facility to build back his strength and skills . He must continue his seizure prophylaxis (Keppra) and anticoagulation (warfarin) as prescribed and follow up with neurology .",
+    "word_count": 53
+  },
+  {
+    "case_id": "74",
+    "raw_output": "Based on the discharge instructions, the expected course includes fatigue for the first few weeks, which is normal, with strength improving daily. Activity is crucial but must be increased slowly. Key restrictions include no driving, no lifting over 10 pounds, and avoiding activities that cause straining. You must monitor for complications, including a productive cough with yellow/green sputum, severe headache, fever, or neurological changes, which require immediate physician contact.",
+    "parsed_answer": "Based on the discharge instructions, the expected course includes fatigue for the first few weeks, which is normal, with strength improving daily. Activity is crucial but must be increased slowly. Key restrictions include no driving, no lifting over 10 pounds, and avoiding activities that cause straining. You must monitor for complications, including a productive cough with yellow/green sputum, severe headache, fever, or neurological changes, which require immediate physician contact.",
+    "word_count": 69
+  },
+  {
+    "case_id": "75",
+    "raw_output": "Based on the note, your brother has a known history of scleroderma with CREST syndrome, diagnosed approximately 20 years ago (Sentence 8). His current hospitalization is for managing complications of this condition, including pulmonary hypertension and right ventricular congestive heart failure (Sentences 8, 9, 30, 31). The ground-glass opacities seen on CT are being evaluated but may be due to interstitial edema from heart failure or early inflammatory/fibrotic changes from scleroderma (Sentences 27, 29).",
+    "parsed_answer": "Based on the note, your brother has a known history of scleroderma with CREST syndrome, diagnosed approximately 20 years ago (Sentence 8). His current hospitalization is for managing complications of this condition, including pulmonary hypertension and right ventricular congestive heart failure (Sentences 8, 9, 30, 31). The ground-glass opacities seen on CT are being evaluated but may be due to interstitial edema from heart failure or early inflammatory/fibrotic changes from scleroderma (Sentences 27, 29).",
+    "word_count": 74
+  },
+  {
+    "case_id": "76",
+    "raw_output": "Your brother was admitted with fever, cough, and hypoxia (sentence 12). The CT scan shows his known scleroderma with pulmonary fibrosis (sentence 3). The acute illness was due to new ground-glass opacities, most likely an atypical or viral pneumonia (sentences 5-6, 17), not directly caused by scleroderma.",
+    "parsed_answer": "Your brother was admitted with fever, cough, and hypoxia . The CT scan shows his known scleroderma with pulmonary fibrosis . The acute illness was due to new ground-glass opacities, most likely an atypical or viral pneumonia (sentences 5-6, 17), not directly caused by scleroderma.",
+    "word_count": 45
+  },
+  {
+    "case_id": "77",
+    "raw_output": "Based on the note, you developed oozing from the catheterization site (6), leading to hypotension (8) and a significant drop in hematocrit from 32 to 23.5 (14-15). You required 6 units of blood (16) and were taken emergently for exploration of the left groin for evidence of hematoma (17). The surgical exploration itself was negative for hematoma at that time (19).",
+    "parsed_answer": "Based on the note, you developed oozing from the catheterization site , leading to hypotension and a significant drop in hematocrit from 32 to 23.5 (14-15). You required 6 units of blood and were taken emergently for exploration of the left groin for evidence of hematoma . The surgical exploration itself was negative for hematoma at that time .",
+    "word_count": 59
+  },
+  {
+    "case_id": "78",
+    "raw_output": "Based on the note, you developed a large right groin hematoma after cardiac catheterization, with serosanguinous ooze from the sheath site (17,21). The hematoma expanded despite pressure and a vascular clamp (25,26). Vascular surgery consultation and ultrasound confirmed a large hematoma without pseudo-aneurysm (31,32). This caused blood loss anemia requiring five units of blood (34,35). The emergent procedure was not detailed, but the hematoma was managed with immobilization and monitoring until it stabilized (40,41).",
+    "parsed_answer": "Based on the note, you developed a large right groin hematoma after cardiac catheterization, with serosanguinous ooze from the sheath site . The hematoma expanded despite pressure and a vascular clamp . Vascular surgery consultation and ultrasound confirmed a large hematoma without pseudo-aneurysm . This caused blood loss anemia requiring five units of blood . The emergent procedure was not detailed, but the hematoma was managed with immobilization and monitoring until it stabilized .",
+    "word_count": 74
+  },
+  {
+    "case_id": "79",
+    "raw_output": "Based on the note, you developed a rapidly expanding left groin hematoma after your cardiac catheterization (sentences 12, 22-23). This required treatment with protamine to reverse anticoagulation (sentence 13). The emergent procedure was not a surgical opening; imaging showed no pseudoaneurysm or retroperitoneal bleed (sentences 17, 24). The hematoma remained stable, but the documented hardness and pain are consistent with this diagnosis (sentences 25, 22).",
+    "parsed_answer": "Based on the note, you developed a rapidly expanding left groin hematoma after your cardiac catheterization (sentences 12, 22-23). This required treatment with protamine to reverse anticoagulation . The emergent procedure was not a surgical opening; imaging showed no pseudoaneurysm or retroperitoneal bleed . The hematoma remained stable, but the documented hardness and pain are consistent with this diagnosis .",
+    "word_count": 60
+  },
+  {
+    "case_id": "80",
+    "raw_output": "Based on the provided medical record, you developed a small mild right groin hematoma after your cardiac catheterization (Sentence 11). It remained stable with resolving bruising and you had good pulses (Sentence 12). The record notes no indications of a tense hematoma or active bleed during your hospitalization (Sentence 25). The documented anemia was attributed to blood loss from this hematoma and hematuria (Sentences 24-26). The note does not describe any emergent surgery or a large painful lump.",
+    "parsed_answer": "Based on the provided medical record, you developed a small mild right groin hematoma after your cardiac catheterization (Sentence 11). It remained stable with resolving bruising and you had good pulses (Sentence 12). The record notes no indications of a tense hematoma or active bleed during your hospitalization (Sentence 25). The documented anemia was attributed to blood loss from this hematoma and hematuria (Sentences 24-26). The note does not describe any emergent surgery or a large painful lump.",
+    "word_count": 78
+  },
+  {
+    "case_id": "81",
+    "raw_output": "Based on the note, your emergent surgery was due to a left groin bleed that complicated the placement of an intra-aortic balloon pump during your heart catheterization (Sentence 13). The note does not specify the surgical procedure performed to address this bleed or describe the subsequent painful lump you report.",
+    "parsed_answer": "Based on the note, your emergent surgery was due to a left groin bleed that complicated the placement of an intra-aortic balloon pump during your heart catheterization (Sentence 13). The note does not specify the surgical procedure performed to address this bleed or describe the subsequent painful lump you report.",
+    "word_count": 50
+  },
+  {
+    "case_id": "82",
+    "raw_output": "Based on the note, your catheterization for an RCA blockage (Sentence 6-7) was complicated by a right groin hematoma (Sentence 8, 11). Imaging ruled out retroperitoneal bleeding (Sentence 12). A possible ultrasound finding was noted (Sentence 13). You were discharged after the hematoma was stable for 48 hours (Sentence 23). The note does not describe the emergent surgery or your current symptoms.",
+    "parsed_answer": "Based on the note, your catheterization for an RCA blockage (Sentence 6-7) was complicated by a right groin hematoma (Sentence 8, 11). Imaging ruled out retroperitoneal bleeding (Sentence 12). A possible ultrasound finding was noted (Sentence 13). You were discharged after the hematoma was stable for 48 hours (Sentence 23). The note does not describe the emergent surgery or your current symptoms.",
+    "word_count": 62
+  },
+  {
+    "case_id": "83",
+    "raw_output": "Based on the note, your catheterization was complicated by a large right groin hematoma (sentences 4, 5, 7). This required three units of blood post-procedure (sentence 12). An ultrasound on [**10-22**] showed no pseudoaneurysm (sentence 25). At discharge, the hematoma was large but stable, not impeding movement, and your hematocrit was stable (sentences 11, 24, 26).",
+    "parsed_answer": "Based on the note, your catheterization was complicated by a large right groin hematoma . This required three units of blood post-procedure . An ultrasound on [**10-22**] showed no pseudoaneurysm . At discharge, the hematoma was large but stable, not impeding movement, and your hematocrit was stable .",
+    "word_count": 48
+  },
+  {
+    "case_id": "84",
+    "raw_output": "Based on the clinical evaluation, a diagnosis of Guillain-Barr\u00e9 syndrome (GBS) was considered but deemed very unlikely due to normal cerebrospinal fluid (CSF) and a normal electromyography (EMG) study (sentences 10, 15, 25). The final discharge diagnosis remains unclear, with differential considerations including conversion disorder or reactivation of a prior viral process (sentence 19). The rat bite is not mentioned in this excerpt.",
+    "parsed_answer": "Based on the clinical evaluation, a diagnosis of Guillain-Barr\u00e9 syndrome (GBS) was considered but deemed very unlikely due to normal cerebrospinal fluid (CSF) and a normal electromyography (EMG) study . The final discharge diagnosis remains unclear, with differential considerations including conversion disorder or reactivation of a prior viral process . The rat bite is not mentioned in this excerpt.",
+    "word_count": 59
+  },
+  {
+    "case_id": "85",
+    "raw_output": "Based on the clinical note, a diagnosis of Guillain-Barr\u00e9 syndrome, specifically the Miller Fisher variant, was made by the consulting neurology service. This diagnosis was made during hospitalization after the patient presented with key clinical findings, including progressive generalized weakness, bilateral ophthalmoplegia, areflexia, ataxia, and a nasal voice. The diagnosis was made prior to any treatment with IVIG. The note does not mention a rat bite or address its potential role.",
+    "parsed_answer": "Based on the clinical note, a diagnosis of Guillain-Barr\u00e9 syndrome, specifically the Miller Fisher variant, was made by the consulting neurology service. This diagnosis was made during hospitalization after the patient presented with key clinical findings, including progressive generalized weakness, bilateral ophthalmoplegia, areflexia, ataxia, and a nasal voice. The diagnosis was made prior to any treatment with IVIG. The note does not mention a rat bite or address its potential role.",
+    "word_count": 71
+  },
+  {
+    "case_id": "86",
+    "raw_output": "Based on the clinical note, the final discharge diagnosis was polyneuropathy secondary to arsenic toxicity (sentences 54-55). Guillain-Barr\u00e9 syndrome (GBS) was initially considered (sentences 2, 33), but diagnostic workup revealed elevated arsenic levels in blood and urine (sentences 47-48). The note does not mention a rat bite or confirm it as the cause.",
+    "parsed_answer": "Based on the clinical note, the final discharge diagnosis was polyneuropathy secondary to arsenic toxicity (sentences 54-55). Guillain-Barr\u00e9 syndrome (GBS) was initially considered , but diagnostic workup revealed elevated arsenic levels in blood and urine (sentences 47-48). The note does not mention a rat bite or confirm it as the cause.",
+    "word_count": 51
+  },
+  {
+    "case_id": "87",
+    "raw_output": "Based on the clinical note, the fever is attributed to two possible causes documented during hospitalization: drug-induced agranulocytosis from Bactrim (sentence 34) and the ongoing left axillary abscess infection, possibly related to MRSA (sentences 17, 35). The note does not provide a new cause for fever after discharge.",
+    "parsed_answer": "Based on the clinical note, the fever is attributed to two possible causes documented during hospitalization: drug-induced agranulocytosis from Bactrim and the ongoing left axillary abscess infection, possibly related to MRSA . The note does not provide a new cause for fever after discharge.",
+    "word_count": 44
+  },
+  {
+    "case_id": "88",
+    "raw_output": "The persistent fever may be due to the ongoing treatment for MSSA bacteremia and spinal/knee abscesses, which requires a 6-8 week IV daptomycin course (sentences 6, 30). Her antibiotic regimen was altered due to significant side effects, including prior neutropenia (sentences 28-29). The plan includes repeat imaging further into antibiotic treatment for interval evaluation of the infection (sentences 8, 32).",
+    "parsed_answer": "The persistent fever may be due to the ongoing treatment for MSSA bacteremia and spinal/knee abscesses, which requires a 6-8 week IV daptomycin course . Her antibiotic regimen was altered due to significant side effects, including prior neutropenia (sentences 28-29). The plan includes repeat imaging further into antibiotic treatment for interval evaluation of the infection .",
+    "word_count": 56
+  },
+  {
+    "case_id": "89",
+    "raw_output": "The clinical evaluation determined his altered mental status was primarily due to hypothyroidism and hypercarbia, within the context of his congestive heart failure exacerbation (sentences 5, 8). A comprehensive neurological workup, including brain MRI, did not identify a primary central nervous system disorder as the cause (sentence 9).",
+    "parsed_answer": "The clinical evaluation determined his altered mental status was primarily due to hypothyroidism and hypercarbia, within the context of his congestive heart failure exacerbation . A comprehensive neurological workup, including brain MRI, did not identify a primary central nervous system disorder as the cause .",
+    "word_count": 45
+  },
+  {
+    "case_id": "90",
+    "raw_output": "Based on the note, the patient's brain function recovered. After extubation and sedation cessation, his arousal improved with a post-ictal state noted. At discharge, he had normal mental status with only his known baseline residual deficits: mild speech dysarthria, right-sided proximal weakness, and sensory loss. The MRI showed no acute changes, only old post-stroke findings.",
+    "parsed_answer": "Based on the note, the patient's brain function recovered. After extubation and sedation cessation, his arousal improved with a post-ictal state noted. At discharge, he had normal mental status with only his known baseline residual deficits: mild speech dysarthria, right-sided proximal weakness, and sensory loss. The MRI showed no acute changes, only old post-stroke findings.",
+    "word_count": 55
+  },
+  {
+    "case_id": "91",
+    "raw_output": "Based on the clinical note, the bacterial infection in the blood (sepsis) was related to the hemodialysis catheter (Sentence 2). A urinary tract infection (UTI) was also present and treated (Sentence 7), but the note does not state it caused the sepsis. Treatment included intravenous antibiotics, aggressive fluid resuscitation, and removal/replacement of the infected catheter (Sentences 2-4).",
+    "parsed_answer": "Based on the clinical note, the bacterial infection in the blood (sepsis) was related to the hemodialysis catheter (Sentence 2). A urinary tract infection (UTI) was also present and treated (Sentence 7), but the note does not state it caused the sepsis. Treatment included intravenous antibiotics, aggressive fluid resuscitation, and removal/replacement of the infected catheter (Sentences 2-4).",
+    "word_count": 57
+  },
+  {
+    "case_id": "92",
+    "raw_output": "Yes, your pain is expected per your discharge note. You sustained several rib fractures from CPR and developed a pneumothorax, which required chest tube insertion (sentences 9-11). Significant weakness and fatigue from the prolonged ICU stay, sedation, and paralysis are also documented and can last for months (sentences 14, 16-17).",
+    "parsed_answer": "Yes, your pain is expected per your discharge note. You sustained several rib fractures from CPR and developed a pneumothorax, which required chest tube insertion (sentences 9-11). Significant weakness and fatigue from the prolonged ICU stay, sedation, and paralysis are also documented and can last for months (sentences 14, 16-17).",
+    "word_count": 50
+  },
+  {
+    "case_id": "93",
+    "raw_output": "The note does not mention toxic shock, organ shutdown, or a diagnosis of heart failure. It documents a dangerously low heart rate from diltiazem and pneumonia, with a subsequent fast heart rate. Your breathlessness is not addressed. A cardiology referral was made for medication adjustment due to significant heart rate troubles.",
+    "parsed_answer": "The note does not mention toxic shock, organ shutdown, or a diagnosis of heart failure. It documents a dangerously low heart rate from diltiazem and pneumonia, with a subsequent fast heart rate. Your breathlessness is not addressed. A cardiology referral was made for medication adjustment due to significant heart rate troubles.",
+    "word_count": 51
+  },
+  {
+    "case_id": "94",
+    "raw_output": "A blood glucose of 434 mg/dL is critically elevated, similar to his presentation (sentence 5). He was managed with an insulin infusion and transitioned to subcutaneous insulin (sentence 9). Discharge instructions include a specific insulin regimen (sentence 21) and urgent follow-up for glycemic control (sentence 18). You should contact his outpatient endocrinologist or primary care physician immediately.",
+    "parsed_answer": "A blood glucose of 434 mg/dL is critically elevated, similar to his presentation . He was managed with an insulin infusion and transitioned to subcutaneous insulin . Discharge instructions include a specific insulin regimen and urgent follow-up for glycemic control . You should contact his outpatient endocrinologist or primary care physician immediately.",
+    "word_count": 52
+  },
+  {
+    "case_id": "95",
+    "raw_output": "Based on the discharge instructions, you fainted due to a suspected vagal reaction from nausea/vomiting (Sentence 3). You were also diagnosed with anemia from low iron levels (Sentence 7). Your evaluations ruled out a heart attack, serious arrhythmia, and showed normal CT scans (Sentence 4). The acute cause for the fainting episode was the vagal reaction.",
+    "parsed_answer": "Based on the discharge instructions, you fainted due to a suspected vagal reaction from nausea/vomiting (Sentence 3). You were also diagnosed with anemia from low iron levels (Sentence 7). Your evaluations ruled out a heart attack, serious arrhythmia, and showed normal CT scans (Sentence 4). The acute cause for the fainting episode was the vagal reaction.",
+    "word_count": 56
+  },
+  {
+    "case_id": "96",
+    "raw_output": "Based on the discharge summary, the expected recovery course involves slow improvement (sentence 19). She was discharged ambulatory but requiring assistance (sentence 16), with a confused mental status at times (sentence 14). The brain and abdominal bleeding had stabilized (sentence 20). Recovery requires increased mobility, nutritional support, and vigilant pulmonary care to prevent pneumonia due to her rib fractures (sentences 19, 24-26).",
+    "parsed_answer": "Based on the discharge summary, the expected recovery course involves slow improvement . She was discharged ambulatory but requiring assistance , with a confused mental status at times . The brain and abdominal bleeding had stabilized . Recovery requires increased mobility, nutritional support, and vigilant pulmonary care to prevent pneumonia due to her rib fractures (sentences 19, 24-26).",
+    "word_count": 58
+  },
+  {
+    "case_id": "97",
+    "raw_output": "The note states your admission was for toxic ingestion of your outpatient medications, specifically a clonidine overdose (Sentence 3, 15). It documents a history of Munchausen syndrome (Sentence 4). The medications listed include methadone and quetiapine, but no TCA (Sentences 10-12). The note does not mention barbiturates or confirm a TCA overdose.",
+    "parsed_answer": "The note states your admission was for toxic ingestion of your outpatient medications, specifically a clonidine overdose (Sentence 3, 15). It documents a history of Munchausen syndrome (Sentence 4). The medications listed include methadone and quetiapine, but no TCA (Sentences 10-12). The note does not mention barbiturates or confirm a TCA overdose.",
+    "word_count": 52
+  },
+  {
+    "case_id": "98",
+    "raw_output": "The note does not mention a cardiac mass. It states he was treated for a heart attack, a blocked coronary artery, and pericardial fluid, which was drained. A scheduled CAT scan was missed and must be rescheduled. He should follow up with Dr. [**Last Name (STitle) 3274**] immediately to address ongoing symptoms and complete that imaging.",
+    "parsed_answer": "The note does not mention a cardiac mass. It states he was treated for a heart attack, a blocked coronary artery, and pericardial fluid, which was drained. A scheduled CAT scan was missed and must be rescheduled. He should follow up with Dr. [**Last Name (STitle) 3274**] immediately to address ongoing symptoms and complete that imaging.",
+    "word_count": 56
+  },
+  {
+    "case_id": "99",
+    "raw_output": "The discharge instructions state to continue all treatments as directed, but the specific timing schedule you describe is not detailed in the clinical note. The prescribed regimen includes Isoniazid, Rifampin, Ethambutol, and Pyrazinamide (AKT-4) daily, along with a dexamethasone taper.",
+    "parsed_answer": "The discharge instructions state to continue all treatments as directed, but the specific timing schedule you describe is not detailed in the clinical note. The prescribed regimen includes Isoniazid, Rifampin, Ethambutol, and Pyrazinamide (AKT-4) daily, along with a dexamethasone taper.",
+    "word_count": 40
+  },
+  {
+    "case_id": "100",
+    "raw_output": "Yes. The patient developed acute renal failure requiring dialysis during his ICU admission for severe pneumonia due to Legionella infection (sentences 4-5, 14). At discharge, his renal failure requires ongoing hemodialysis, which he must continue as an outpatient under a nephrologist's care (sentences 11, 14-15, 27).",
+    "parsed_answer": "Yes. The patient developed acute renal failure requiring dialysis during his ICU admission for severe pneumonia due to Legionella infection (sentences 4-5, 14). At discharge, his renal failure requires ongoing hemodialysis, which he must continue as an outpatient under a nephrologist's care (sentences 11, 14-15, 27).",
+    "word_count": 46
+  },
+  {
+    "case_id": "101",
+    "raw_output": "Based on the clinical note, you have an end ileostomy and a mucous fistula (sentence 12). The note documents plans for ostomy teaching and management (sentence 11) but does not state whether this is permanent or if a reversal is planned. The focus of current care is on monitoring the ostomy and managing your post-operative recovery.",
+    "parsed_answer": "Based on the clinical note, you have an end ileostomy and a mucous fistula . The note documents plans for ostomy teaching and management but does not state whether this is permanent or if a reversal is planned. The focus of current care is on monitoring the ostomy and managing your post-operative recovery.",
+    "word_count": 53
+  },
+  {
+    "case_id": "102",
+    "raw_output": "Based on the note (sentences 5-6, 24), two stents were successfully placed in the proximal right coronary artery with good resultant flow. She was discharged stable with instructions (sentences 48-53) to take medications (including 12 months of Plavix), monitor weight, adhere to diet, and follow up with her cardiologist and primary care physician in the specified weeks. She was advised to seek medical attention for specific concerning symptoms.",
+    "parsed_answer": "Based on the note (sentences 5-6, 24), two stents were successfully placed in the proximal right coronary artery with good resultant flow. She was discharged stable with instructions (sentences 48-53) to take medications (including 12 months of Plavix), monitor weight, adhere to diet, and follow up with her cardiologist and primary care physician in the specified weeks. She was advised to seek medical attention for specific concerning symptoms.",
+    "word_count": 68
+  },
+  {
+    "case_id": "103",
+    "raw_output": "The note indicates his altered mental status after a PEA arrest may be due to anoxic brain injury (sentence 12). This occurred following the arrest during a lumbar puncture procedure (sentence 15). His mental status became essentially unresponsive after the arrest (sentence 9), and repeat imaging showed no acute process (sentence 10).",
+    "parsed_answer": "The note indicates his altered mental status after a PEA arrest may be due to anoxic brain injury . This occurred following the arrest during a lumbar puncture procedure . His mental status became essentially unresponsive after the arrest , and repeat imaging showed no acute process .",
+    "word_count": 48
+  },
+  {
+    "case_id": "104",
+    "raw_output": "Based on the clinical note, the lung biopsy showed cryptogenic organizing pneumonia (a chronic condition) and acute inflammation from a viral infection (sentences 17-18). Cultures from the bronchoscopy were negative (sentence 13). She was discharged on steroids for these inflammatory conditions, not antibiotics for an active bacterial infection (sentences 19-20).",
+    "parsed_answer": "Based on the clinical note, the lung biopsy showed cryptogenic organizing pneumonia (a chronic condition) and acute inflammation from a viral infection (sentences 17-18). Cultures from the bronchoscopy were negative . She was discharged on steroids for these inflammatory conditions, not antibiotics for an active bacterial infection (sentences 19-20).",
+    "word_count": 49
+  },
+  {
+    "case_id": "105",
+    "raw_output": "Based solely on the clinical note: A colonic stent was placed to relieve the obstruction, not a colostomy (Sentence 5). She tolerated the procedure well and had bowel movements afterward (Sentence 6). The immediate next step is not emergency surgery, but a scheduled follow-up appointment with Hematology/Oncology (Sentence 15). The instructions emphasize monitoring for symptoms of complications (Sentence 8).",
+    "parsed_answer": "Based solely on the clinical note: A colonic stent was placed to relieve the obstruction, not a colostomy (Sentence 5). She tolerated the procedure well and had bowel movements afterward (Sentence 6). The immediate next step is not emergency surgery, but a scheduled follow-up appointment with Hematology/Oncology (Sentence 15). The instructions emphasize monitoring for symptoms of complications (Sentence 8).",
+    "word_count": 59
+  },
+  {
+    "case_id": "106",
+    "raw_output": "The elevated white cell count (WBC 15.2, neutrophils 86.2) was noted and is consistent with the documented diagnosis of pneumonia and sepsis (sentences 2, 7). The clinical team addressed this infectious cause. There is no documentation in this excerpt of further investigation or concern regarding the persistent leukocytosis beyond this acute episode.",
+    "parsed_answer": "The elevated white cell count (WBC 15.2, neutrophils 86.2) was noted and is consistent with the documented diagnosis of pneumonia and sepsis . The clinical team addressed this infectious cause. There is no documentation in this excerpt of further investigation or concern regarding the persistent leukocytosis beyond this acute episode.",
+    "word_count": 50
+  },
+  {
+    "case_id": "107",
+    "raw_output": "The cause of death was cardiac arrest, which the clinical note concludes was secondary to her underlying hepatic mucinous adenocarcinoma (a cancer involving the liver and peritoneum) and her state of persistent hypotension and presumed sepsis (sentences 17, 22, 13, 10, 5).",
+    "parsed_answer": "The cause of death was cardiac arrest, which the clinical note concludes was secondary to her underlying hepatic mucinous adenocarcinoma (a cancer involving the liver and peritoneum) and her state of persistent hypotension and presumed sepsis .",
+    "word_count": 37
+  },
+  {
+    "case_id": "108",
+    "raw_output": "You are on Coumadin because a CT angiogram showed a small blood clot in a lung vessel (sentence 26). It was started with Lovenox to treat this clot (sentence 28). The note states there is no evidence of right cardiac abnormalities (sentence 5). Anticoagulation is planned for 3-6 months, with INR monitoring (sentences 30, 32, 47).",
+    "parsed_answer": "You are on Coumadin because a CT angiogram showed a small blood clot in a lung vessel . It was started with Lovenox to treat this clot . The note states there is no evidence of right cardiac abnormalities . Anticoagulation is planned for 3-6 months, with INR monitoring .",
+    "word_count": 50
+  },
+  {
+    "case_id": "109",
+    "raw_output": "Based on the clinical note, the renal consult determined the patient would require chronic hemodialysis (sentence 5). Discharge instructions confirm she will need to continue dialysis three times per week (sentences 16, 18). The note documents acute on chronic renal failure, indicating a permanent loss of function from underlying chronic kidney disease (sentence 3).",
+    "parsed_answer": "Based on the clinical note, the renal consult determined the patient would require chronic hemodialysis . Discharge instructions confirm she will need to continue dialysis three times per week . The note documents acute on chronic renal failure, indicating a permanent loss of function from underlying chronic kidney disease .",
+    "word_count": 50
+  },
+  {
+    "case_id": "110",
+    "raw_output": "Based on the clinical note, the immediate cause of death was upper gastrointestinal hemorrhage from ischemic colitis (sentences 27, 35). The dialysis (CVVH/hemofiltration) was used to manage volume overload from heart failure and steroids (sentences 22, 40, 42). There is no evidence in this excerpt that medications during dialysis caused his death. His clinical course was complex with respiratory failure, GI bleed, and kidney injury, leading to a decision for comfort measures (sentences 26, 36).",
+    "parsed_answer": "Based on the clinical note, the immediate cause of death was upper gastrointestinal hemorrhage from ischemic colitis . The dialysis (CVVH/hemofiltration) was used to manage volume overload from heart failure and steroids . There is no evidence in this excerpt that medications during dialysis caused his death. His clinical course was complex with respiratory failure, GI bleed, and kidney injury, leading to a decision for comfort measures .",
+    "word_count": 68
+  },
+  {
+    "case_id": "111",
+    "raw_output": "The bleeding was an upper gastrointestinal bleed (UGIB) from esophageal varices, as documented by emergent endoscopy with banding (sentences 2, 19). This required resuscitation with blood products (sentence 3). The nose and mouth bleeding you describe is consistent with this variceal hemorrhage. His anticoagulants (ASA and heparin) were held due to this bleed (sentence 11).",
+    "parsed_answer": "The bleeding was an upper gastrointestinal bleed (UGIB) from esophageal varices, as documented by emergent endoscopy with banding . This required resuscitation with blood products . The nose and mouth bleeding you describe is consistent with this variceal hemorrhage. His anticoagulants (ASA and heparin) were held due to this bleed .",
+    "word_count": 51
+  },
+  {
+    "case_id": "112",
+    "raw_output": "During hospitalization, you had ventricular tachycardia, a life-threatening rhythm (sentence 19). You were discharged with a wearable LifeVest to treat future episodes by delivering a shock if the rhythm recurs (sentence 20). You were also started on metoprolol succinate, which lowers heart rate (sentences 13-14).",
+    "parsed_answer": "During hospitalization, you had ventricular tachycardia, a life-threatening rhythm . You were discharged with a wearable LifeVest to treat future episodes by delivering a shock if the rhythm recurs . You were also started on metoprolol succinate, which lowers heart rate (sentences 13-14).",
+    "word_count": 43
+  },
+  {
+    "case_id": "113",
+    "raw_output": "Based on the clinical note, postoperative confusion and agitation occurred, requiring treatment with Haldol and Zyprexa (Sentence 8). Psychiatry was consulted for confusion with hallucinations (Sentence 13). The note states his mental status subsequently returned to baseline (Sentence 19) and he was cleared for discharge home (Sentence 20).",
+    "parsed_answer": "Based on the clinical note, postoperative confusion and agitation occurred, requiring treatment with Haldol and Zyprexa (Sentence 8). Psychiatry was consulted for confusion with hallucinations (Sentence 13). The note states his mental status subsequently returned to baseline (Sentence 19) and he was cleared for discharge home (Sentence 20).",
+    "word_count": 48
+  },
+  {
+    "case_id": "114",
+    "raw_output": "The patient has an anoxic brain injury (sentence 7, 22) with a mild to moderate encephalopathy (sentence 25). The plan is discharge to an extended care facility (sentence 29-30). Ongoing care includes a 4-week antibiotic course for MRSA bacteremia (sentence 14-15) and management of his tracheostomy and PEG tube (sentence 3, 4).",
+    "parsed_answer": "The patient has an anoxic brain injury with a mild to moderate encephalopathy . The plan is discharge to an extended care facility (sentence 29-30). Ongoing care includes a 4-week antibiotic course for MRSA bacteremia (sentence 14-15) and management of his tracheostomy and PEG tube .",
+    "word_count": 46
+  },
+  {
+    "case_id": "115",
+    "raw_output": "Based on the note, she is on multi-drug therapy for presumed pleural tuberculosis (sentence 2). For pneumonia, she initially received levofloxacin and Unasyn (sentence 10), then coverage was broadened to vancomycin/Zosyn (sentence 11). Antibiotics were later held per infectious disease consultation (sentences 14-15).",
+    "parsed_answer": "Based on the note, she is on multi-drug therapy for presumed pleural tuberculosis . For pneumonia, she initially received levofloxacin and Unasyn , then coverage was broadened to vancomycin/Zosyn . Antibiotics were later held per infectious disease consultation (sentences 14-15).",
+    "word_count": 40
+  },
+  {
+    "case_id": "116",
+    "raw_output": "The hemorrhage was managed with intensive blood pressure control, initially with a labetalol infusion to keep SBP <140 (20). He was offered but refused a Factor VII trial (17). His regimen was later adjusted to oral medications including metoprolol, an ACE inhibitor (captopril/lisinopril), and HCTZ (25-26). Repeat imaging showed the hemorrhage was stable (22).",
+    "parsed_answer": "The hemorrhage was managed with intensive blood pressure control, initially with a labetalol infusion to keep SBP <140 . He was offered but refused a Factor VII trial . His regimen was later adjusted to oral medications including metoprolol, an ACE inhibitor (captopril/lisinopril), and HCTZ (25-26). Repeat imaging showed the hemorrhage was stable .",
+    "word_count": 54
+  },
+  {
+    "case_id": "117",
+    "raw_output": "The acute renal failure likely began from poor forward flow due to cardiogenic failure and was exacerbated by 320 ccs of contrast received during cardiac catheterization (Sentence 4). This is consistent with muddy brown casts on urinalysis (Sentence 5). The kidney injury resulted in anuria and hyperkalemia, requiring continuous renal replacement therapy (Sentence 6).",
+    "parsed_answer": "The acute renal failure likely began from poor forward flow due to cardiogenic failure and was exacerbated by 320 ccs of contrast received during cardiac catheterization (Sentence 4). This is consistent with muddy brown casts on urinalysis (Sentence 5). The kidney injury resulted in anuria and hyperkalemia, requiring continuous renal replacement therapy (Sentence 6).",
+    "word_count": 54
+  },
+  {
+    "case_id": "118",
+    "raw_output": "Based on this admission, the patient's polymicrobial sepsis (GNR/GPC bacteremia) resolved post-operatively with pressor discontinuation. The hospital course involved an open abdomen with a VAC dressing, colostomy, and broad antibiotics. At discharge to rehab on [**1-9**], she was afebrile, stable, tolerating a diet, ambulating with assistance, and her white blood cell count was decreasing.",
+    "parsed_answer": "Based on this admission, the patient's polymicrobial sepsis (GNR/GPC bacteremia) resolved post-operatively with pressor discontinuation. The hospital course involved an open abdomen with a VAC dressing, colostomy, and broad antibiotics. At discharge to rehab on [**1-9**], she was afebrile, stable, tolerating a diet, ambulating with assistance, and her white blood cell count was decreasing.",
+    "word_count": 54
+  },
+  {
+    "case_id": "119",
+    "raw_output": "Based on the clinical note, your pain was well controlled with Percocet (oxycodone-acetaminophen) at discharge (Sentence 11). The discharge medication list includes oxycodone-acetaminophen 5-325 mg tablets to be taken as needed for pain (Sentence 22). Acetaminophen is also available as a separate medication (Sentence 16).",
+    "parsed_answer": "Based on the clinical note, your pain was well controlled with Percocet (oxycodone-acetaminophen) at discharge (Sentence 11). The discharge medication list includes oxycodone-acetaminophen 5-325 mg tablets to be taken as needed for pain (Sentence 22). Acetaminophen is also available as a separate medication (Sentence 16).",
+    "word_count": 45
+  },
+  {
+    "case_id": "120",
+    "raw_output": "Based on your medical record, your gum bleeding is due to thrombocytopenia (low platelets) from end-stage liver disease, splenomegaly, critical illness, and medications. This was managed with aminocaproic acid. Your platelet count dropped to 45K, requiring transfusions. The note does not mention oral cancer. Your extreme tiredness is likely multifactorial, given your recent stroke, pneumonia, and intensive care stay.",
+    "parsed_answer": "Based on your medical record, your gum bleeding is due to thrombocytopenia (low platelets) from end-stage liver disease, splenomegaly, critical illness, and medications. This was managed with aminocaproic acid. Your platelet count dropped to 45K, requiring transfusions. The note does not mention oral cancer. Your extreme tiredness is likely multifactorial, given your recent stroke, pneumonia, and intensive care stay.",
+    "word_count": 59
+  }
+]
