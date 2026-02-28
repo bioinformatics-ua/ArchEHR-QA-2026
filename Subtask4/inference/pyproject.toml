@@ -1,0 +1,13 @@
+[project]
+name = "archehr-subtask4-inference"
+version = "0.1.0"
+description = "ArchEHR-QA Subtask 4: Answer-Evidence Alignment"
+requires-python = ">=3.10"
+
+dependencies = [
+    "python-dotenv>=1.0.0",
+    "openai>=1.0.0",
+    "orjson>=3.9.0",
+    "vllm>=0.6.0",
+    "transformers>=4.40.0",
+]

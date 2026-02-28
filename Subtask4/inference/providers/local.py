@@ -1,0 +1,64 @@
+import os
+from typing import Any
+
+from transformers import AutoTokenizer
+from vllm import LLM, SamplingParams
+
+from .base import BaseProvider, Messages
+
+
+class LocalProvider(BaseProvider):
+    def __init__(
+        self,
+        model_name: str,
+        tensor_parallel_size: int = 1,
+        gpu_memory_utilization: float = 0.85,
+        max_model_len: int = 4096,
+        temperature: float = 0.3,
+        top_p: float = 0.90,
+        max_tokens: int = 512,
+        repetition_penalty: float = 1.05,
+    ):
+        super().__init__(model_name)
+        hf_token = os.environ.get("HF_TOKEN")
+        self.tokenizer = AutoTokenizer.from_pretrained(
+            model_name, token=hf_token
+        )
+        self.llm = LLM(
+            model=model_name,
+            tensor_parallel_size=tensor_parallel_size,
+            max_model_len=max_model_len,
+            enforce_eager=True,
+            gpu_memory_utilization=gpu_memory_utilization,
+            trust_remote_code=True,
+            disable_custom_all_reduce=True,
+        )
+        self.sampling_params = SamplingParams(
+            temperature=temperature,
+            top_p=top_p,
+            max_tokens=max_tokens,
+            repetition_penalty=repetition_penalty,
+        )
+
+    def build_prompt(
+        self, prompt_template: str, case: dict[str, Any]
+    ) -> Messages:
+        return self.tokenizer.apply_chat_template(
+            super().build_prompt(prompt_template, case),
+            tokenize=False,
+            add_generation_prompt=True,
+            enable_thinking=True,
+        )
+
+    def generate(self, prompt: Messages) -> str:
+        return (
+            self.llm.generate(prompt, self.sampling_params)[0]
+            .outputs[0]
+            .text.strip()  # pyright: ignore[reportArgumentType]
+        )
+
+    def batch_generate(self, prompts: list[Messages]) -> list[str]:
+        return [
+            output.outputs[0].text.strip()
+            for output in self.llm.generate(prompts, self.sampling_params)  # pyright: ignore[reportArgumentType]
+        ]
