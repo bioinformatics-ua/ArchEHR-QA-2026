@@ -22,13 +22,15 @@ source .venv/bin/activate
 # ----------------------------------------
 
 INFERENCE_MODE="cloud"   # local / cloud
-PROMPT_INDEX=5
+PROMPT_INDEX=24
 DATASET="dev"            # dev / test-2026
 MODEL="google/gemini-2.5-flash"
     # Cloud Models:
     # google/gemini-2.5-flash
     # qwen/qwen3.5-flash-02-23
     # qwen/qwen3-max-thinking
+    # anthropic/claude-opus-4.6
+    # openai/gpt-5.2
 
     # Local Models:
     # Qwen/Qwen3.5-35B-A3B
@@ -103,55 +105,64 @@ else
 fi
 
 # ----------------------------------------
-# INFERENCE
-# ----------------------------------------
-echo "[1/2] Running inference with script: ${SCRIPT}..."
-
-#--debug-first-n 3 \
-
-uv run python $SCRIPT \
-    --xml-file "${DATA_DIR}/archehr-qa.xml" \
-    --qa-key-file "${KEY_PATH}" \
-    --prompt-file prompt.json \
-    --prompt-index $PROMPT_INDEX \
-    --output-file "${OUTPUT_DIR}/${OUTPUT_FILE}" \
-    --inference-mode "$INFERENCE_MODE" \
-    --model "$MODEL" \
-    --tensor-parallel-size $TENSOR_PARALLEL_SIZE \
-    --gpu-memory-utilization $GPU_MEMORY_UTILIZATION \
-    --max-model-len $MAX_MODEL_LEN \
-    --temperature $TEMPERATURE \
-    --top-p $TOP_P \
-    --max-tokens $MAX_TOKENS \
-    --repetition-penalty $REPETITION_PENALTY \
-    $TWOSTEP_FLAGS
-
-echo "[DONE] Subtask 4 inference completed"
-
-
-# ----------------------------------------
-# SCORING (DEV ONLY)
+# RUN TEMPERATURES
 # ----------------------------------------
 
-if [ ! -f "${KEY_PATH}" ]; then
-    echo "[2/2] No key file found for ${DATASET}, skipping evaluation and analysis."
+for TEMP in 0.0 0.3 0.8
+do
     echo "========================================"
-    echo "Output: ${OUTPUT_DIR}/${OUTPUT_FILE}"
-    exit 0
-fi
+    echo "Running inference (temperature=${TEMP})"
+    echo "========================================"
 
-echo "[2/2] Running evaluation..."
+    OUTPUT_FILE="${MODEL_NAME}_prompt_${PROMPT_INDEX}_t${TEMP}.json"
+
+    uv run python $SCRIPT \
+        --xml-file "${DATA_DIR}/archehr-qa.xml" \
+        --qa-key-file "${KEY_PATH}" \
+        --prompt-file prompt.json \
+        --prompt-index $PROMPT_INDEX \
+        --output-file "${OUTPUT_DIR}/${OUTPUT_FILE}" \
+        --inference-mode "$INFERENCE_MODE" \
+        --model "$MODEL" \
+        --tensor-parallel-size $TENSOR_PARALLEL_SIZE \
+        --gpu-memory-utilization $GPU_MEMORY_UTILIZATION \
+        --max-model-len $MAX_MODEL_LEN \
+        --temperature $TEMP \
+        --top-p $TOP_P \
+        --max-tokens $MAX_TOKENS \
+        --repetition-penalty $REPETITION_PENALTY \
+        $TWOSTEP_FLAGS
+
+done
+
+echo "========================================"
+echo "Running aggregation"
+echo "========================================"
+
+uv run python ../evaluation/aggregate_majority.py
+
+# ----------------------------------------
+# EVALUATE AGGREGATED
+# ----------------------------------------
+
+AGG_FILE="${MODEL_NAME}_prompt_${PROMPT_INDEX}_aggregated.json"
+
+mv "../outputs/${DATASET}/aggregated_majority.json" \
+   "../outputs/${DATASET}/${AGG_FILE}"
+
+echo "========================================"
+echo "Running evaluation on aggregated file"
+echo "========================================"
 
 deactivate
 cd ../evaluation
 source .venv/bin/activate
 
-SUBMISSION_PATH="../outputs/${DATASET}/${OUTPUT_FILE}"
-OUT_FILE_PATH="../results/${DATASET}/${OUTPUT_FILE}"
-
 uv run python scoring_subtask_4.py \
-    --submission_path "$SUBMISSION_PATH" \
-    --key_path "$KEY_PATH" \
-    --out_file_path "$OUT_FILE_PATH"
+    --submission_path "../outputs/${DATASET}/${AGG_FILE}" \
+    --key_path "${KEY_PATH}" \
+    --out_file_path "../results/${DATASET}/${AGG_FILE}"
 
-echo "[2/2] Evaluation complete."
+echo "========================================"
+echo "DONE"
+echo "========================================"
