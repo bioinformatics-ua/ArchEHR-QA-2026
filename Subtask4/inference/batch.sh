@@ -22,7 +22,7 @@ source .venv/bin/activate
 # ----------------------------------------
 
 INFERENCE_MODE="local"   # local / cloud
-PROMPT_INDEX=3
+PROMPT_INDEX=21
 DATASET="dev"            # dev / test-2026
 MODEL="google/medgemma-27b-text-it"
     # Cloud Models:
@@ -44,7 +44,7 @@ MODEL="google/medgemma-27b-text-it"
 
 # Set to "twostep" to use inference_twostep.py, "standard" for inference.py,
 # "prefixed" for inference_prefixed.py (N/A sentence ID prefixes)
-INFERENCE_SCRIPT="prefixed"  # standard / twostep / prefixed
+INFERENCE_SCRIPT="standard"  # standard / twostep / prefixed
 
 # Two-step flags (only apply when INFERENCE_SCRIPT="twostep"):
 #   --no-second-pass               : skip second-pass verification (clinical knowledge filter only)
@@ -59,7 +59,7 @@ TWOSTEP_FLAGS=""
 # --- GPU / Engine ---
 TENSOR_PARALLEL_SIZE=$NUM_GPUS  # Must match SBATCH --gres above
 GPU_MEMORY_UTILIZATION=0.95     # VRAM fraction (0.3-0.4 shared, 0.85-0.95 dedicated)
-MAX_MODEL_LEN=4096              # Context window in tokens
+MAX_MODEL_LEN=8192              # Context window in tokens
 
 # --- Sampling ---
 TEMPERATURE=0.0                 # Lower = more faithful/deterministic
