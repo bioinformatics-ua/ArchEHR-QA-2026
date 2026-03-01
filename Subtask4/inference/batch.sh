@@ -24,28 +24,56 @@ source .venv/bin/activate
 INFERENCE_MODE="cloud"   # local / cloud
 PROMPT_INDEX=5
 DATASET="dev"            # dev / test-2026
-<<<<<<< HEAD
-MODEL="anthropic/claude-opus-4.6"
-=======
-MODEL="google/gemini-2.5-flash"
->>>>>>> d4005eefcb4355f716a21606f54236c05ad75fa8
+MODEL="openai/gpt-oss-120b:free"
     # Cloud Models:
     # google/gemini-2.5-flash
     # google/gemini-3-flash-preview
+    # google/gemini-2.5-flash-lite
+    # google/gemini-2.5-flash-lite-preview-09-2025
+    # google/gemini-2.0-flash-001
     # google/gemini-2.5-pro
     # google/gemini-3-pro-preview
     # google/gemini-3.1-pro-preview
     # x-ai/grok-4.1-fast
     # x-ai/grok-4-fast
+    # x-ai/grok-4
+    # openai/gpt-5.2
+    # openai/gpt-5.1
+    # openai/gpt-5
+    # openai/gpt-5-mini
+    # openai/gpt-5-nano
+    # openai/text-embedding-3-small
+    # openai/gpt-oss-120b:free
+    # openai/gpt-oss-20b
+    # openai/gpt-4.1
+    # openai/gpt-4.1-mini
+    # deepseek/deepseek-v3.2
+    # deepseek/deepseek-chat-v3-0324
     # anthropic/claude-sonnet-4
     # anthropic/claude-sonnet-4.5
     # anthropic/claude-sonnet-4.6
     # anthropic/claude-opus-4.5
     # anthropic/claude-opus-4.6
+    # anthropic/claude-haiku-4.5
     # moonshotai/kimi-k2-thinking
     # moonshotai/kimi-k2.5
+    # moonshotai/kimi-k2-0905
     # qwen/qwen3.5-flash-02-23
     # qwen/qwen3-max-thinking
+    # qwen/qwen3.5-plus-02-15
+    # qwen/qwen3.5-397b-a17b
+    # qwen/qwen3-30b-a3b-thinking-2507
+    # qwen/qwen3-235b-a22b-2507
+    # qwen/qwen3-32b
+    # z-ai/glm-5
+    # z-ai/glm-4.7-flash
+    # z-ai/glm-4.7
+    # minimax/minimax-m2.5
+    # minimax/minimax-m2.1
+    # xiaomi/mimo-v2-flash
+    # nvidia/nemotron-3-nano-30b-a3b:free
+    # meta-llama/llama-4-scout
+    # meta-llama/llama-3.3-70b-instruct
 
     # Local Models:
     # Qwen/Qwen3.5-35B-A3B
@@ -79,22 +107,34 @@ TWOSTEP_FLAGS=""
 # ----------------------------------------
 
 # Strategy: union / intersection / majority
+# - union: include all unique answers from all models
+# - intersection: include only answers that all models agree on
+# - majority: include answers that meet the majority threshold (e.g. 2 out of 3)
 ENSEMBLE_STRATEGY="majority"
 
 # Filenames of existing output files to ensemble (relative to OUTPUT_DIR)
 ENSEMBLE_INPUTS=(
-    "google-gemini-2-5-flash_prompt_4.json"
-    "google-gemini-3-flash-preview_prompt_4.json"
-    "anthropic-claude-sonnet-4-6_prompt_4.json"
-    "x-ai-grok-4-fast_prompt_4.json"
+    "google-gemini-2-5-flash_prompt_5.json"
+    "anthropic-claude-opus-4-5_prompt_5.json"
+    # "anthropic-claude-opus-4-6_prompt_5.json"
+    "x-ai-grok-4-fast_prompt_5.json"
+    # "anthropic-claude-sonnet-4-5_prompt_5.json"
+    # "google-gemini-3-flash-preview_prompt_5.json"
+    "anthropic-claude-sonnet-4_prompt_5.json"
+    "x-ai-grok-4-1-fast_prompt_5.json"
+    "nvidia-nemotron-3-nano-30b-a3b:free_prompt_5.json"
+    "deepseek-deepseek-v3-2_prompt_5.json"
+    "openai-gpt-5_prompt_5.json"
+    # "google-gemini-2-0-flash-001_prompt_5.json"
+    # "openai-gpt-4-1_prompt_5.json"
 )
 
 # For majority strategy: minimum votes required (leave empty for ceil(n/2))
-ENSEMBLE_MAJORITY_THRESHOLD="3"
+ENSEMBLE_MAJORITY_THRESHOLD="2"
 
 # Output filename for the ensemble result (auto-generated or set manually)
 # ENSEMBLE_OUTPUT_FILE="ensemble_union_p4_p5.json"
-ENSEMBLE_OUTPUT_FILE="ensemble_${ENSEMBLE_STRATEGY}${ENSEMBLE_MAJORITY_THRESHOLD}_gemini25_gemini3_sonnet46_grok4_p4.json"
+ENSEMBLE_OUTPUT_FILE="ensemble_${ENSEMBLE_STRATEGY}${ENSEMBLE_MAJORITY_THRESHOLD}_8_models.json"
 
 
 # --- GPU / Engine ---
@@ -113,7 +153,7 @@ REPETITION_PENALTY=1.0          # >1.0 discourages repetitive phrasing
 # PATHS
 # ----------------------------------------
 DATA_DIR="../../data/${DATASET}"
-KEY_PATH="../../data/${DATASET}/archehr-qa_key.json"
+KEY_PATH="../../data-subtask2&3/${DATASET}/archehr-qa_key.json"
 OUTPUT_DIR="../outputs/${DATASET}"
 RESULTS_DIR="../results/${DATASET}"
 
