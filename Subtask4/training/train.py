@@ -124,7 +124,7 @@ def train():
     print(f"Using device: {DEVICE}")
 
     model = DebertaPairwiseClassifier(MODEL_NAME).to(DEVICE)
-    model.float()  # enforce fp32 stability
+    model.float()
 
     optimizer = AdamW(model.parameters(), lr=LR)
 
@@ -135,7 +135,18 @@ def train():
         num_training_steps=total_steps,
     )
 
-    loss_fn = torch.nn.BCEWithLogitsLoss()
+    # ===== CLASS WEIGHTING =====
+    labels = [p["label"] for p in train_pairs]
+    num_pos = sum(labels)
+    num_neg = len(labels) - num_pos
+    pos_weight = torch.tensor([num_neg / num_pos]).to(DEVICE)
+
+    print(f"Positives: {num_pos} | Negatives: {num_neg}")
+    print(f"pos_weight: {pos_weight.item():.4f}")
+
+    loss_fn = torch.nn.BCEWithLogitsLoss(pos_weight=pos_weight)
+
+    best_f1 = 0.0
 
     for epoch in range(EPOCHS):
 
@@ -151,19 +162,15 @@ def train():
             optimizer.zero_grad()
 
             logits = model(input_ids, attention_mask)
-
-            # safety clamp
             logits = torch.clamp(logits, -50, 50)
 
             loss = loss_fn(logits, labels)
 
             if torch.isnan(loss):
-                print("Loss exploded to NaN. Stopping training.")
+                print("Loss exploded to NaN.")
                 return
 
             loss.backward()
-
-            # gradient clipping prevents explosion
             torch.nn.utils.clip_grad_norm_(model.parameters(), MAX_GRAD_NORM)
 
             optimizer.step()
@@ -172,6 +179,11 @@ def train():
             total_loss += loss.item()
 
         precision, recall, f1 = evaluate(model, val_loader)
+
+        if f1 > best_f1:
+            best_f1 = f1
+            torch.save(model.state_dict(), "best_model.pt")
+            print("✔ Saved new best model")
 
         print(f"\nEpoch {epoch+1}")
         print("Train Loss:", round(total_loss / len(train_loader), 6))

@@ -1,20 +1,9 @@
 from sentence_transformers import CrossEncoder
 from typing import List, Dict
 import torch
-import os
-from dotenv import load_dotenv
 
-load_dotenv()
-
-hf_token = os.getenv("HF_TOKEN")
 
 class CrossEncoderClassifier:
-    """
-    Cross-encoder stage for pairwise classification.
-
-    Given (answer_sentence, note_sentence) pairs,
-    outputs relevance scores and binary decisions.
-    """
 
     def __init__(
         self,
@@ -30,16 +19,6 @@ class CrossEncoderClassifier:
         answer_text: str,
         candidate_notes: List[Dict],
     ) -> List[Dict]:
-        """
-        Classifies candidate notes as SUPPORT / NOT SUPPORT.
-
-        Returns list:
-        {
-            "note_id": str,
-            "score": float,
-            "support": bool
-        }
-        """
 
         pairs = [
             (answer_text, note["note_text"])

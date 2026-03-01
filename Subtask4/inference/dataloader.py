@@ -118,12 +118,19 @@ class ArchEHRSubtask4DataLoader:
                     citations_raw = ans.get("citations")
 
                     if citations_raw:
-                        # citations may be string like "2" or "2,5"
-                        note_ids = [
-                            c.strip()
-                            for c in citations_raw.split(",")
-                            if c.strip()
-                        ]
+                        if isinstance(citations_raw, str):
+                            note_ids = [
+                                c.strip()
+                                for c in citations_raw.split(",")
+                                if c.strip()
+                            ]
+                        elif isinstance(citations_raw, list):
+                            note_ids = [str(c).strip() for c in citations_raw if str(c).strip()]
+                        else:
+                            raise TypeError(
+                                f"Unexpected citations type: {type(citations_raw)}"
+                            )
+
                         gold_alignments[answer_id] = note_ids
                     else:
                         gold_alignments[answer_id] = []

@@ -1,7 +1,5 @@
 from pathlib import Path
-
 import sys
-from pathlib import Path
 
 # Add parent directory (Subtask4) to Python path
 sys.path.append(str(Path(__file__).resolve().parents[1]))
@@ -23,61 +21,117 @@ def run_dev():
     cases = loader.load()
 
     retriever = SBertRetriever()
-    cross_encoder = CrossEncoderClassifier(threshold=0.5)
 
-    total_tp = total_fp = total_fn = 0
+    print("\n========================================")
+    print("THRESHOLD SWEEP START")
+    print("========================================")
 
-    for case in cases:
+    best_f1 = 0
+    best_threshold = 0
 
-        gold = case["gold_alignments"]
-        pred = {}
+    # Sweep thresholds from 0.05 to 0.95
+    thresholds = [x / 100 for x in range(5, 100, 5)]
 
-        for ans in case["answer_sentences"]:
+    for threshold in thresholds:
 
-            answer_id = ans["answer_id"]
+        cross_encoder = CrossEncoderClassifier(threshold=threshold)
 
-            ranked = retriever.rank(
-                answer_text=ans["text"],
-                note_sentences=case["note_sentences"],
-                top_k=len(case["note_sentences"]),
-            )
+        total_tp = 0
+        total_fp = 0
+        total_fn = 0
 
-            # dynamic filtering
-            top_score = ranked[0]["score"]
-            margin = 0.25
+        retriever_hits = 0
+        retriever_total = 0
 
-            filtered = [
-                r for r in ranked
-                if r["score"] >= top_score - margin
-            ]
+        for case in cases:
 
-            results = cross_encoder.classify(
-                answer_text=ans["text"],
-                candidate_notes=filtered,
-            )
+            gold = case["gold_alignments"]
+            pred = {}
 
-            supported_notes = [
-                r["note_id"]
-                for r in results
-                if r["support"]
-            ]
+            for ans in case["answer_sentences"]:
 
-            pred[answer_id] = supported_notes
+                answer_id = ans["answer_id"]
+                gold_notes = gold.get(answer_id, [])
 
-        metrics = compute_metrics(gold, pred)
+                # -------------------------
+                # RETRIEVER (Top-10)
+                # -------------------------
+                ranked = retriever.rank(
+                    answer_text=ans["text"],
+                    note_sentences=case["note_sentences"],
+                    top_k=10,
+                )
 
-        total_tp += metrics["tp"]
-        total_fp += metrics["fp"]
-        total_fn += metrics["fn"]
+                top_ids = [r["note_id"] for r in ranked]
 
-    precision = total_tp / (total_tp + total_fp)
-    recall = total_tp / (total_tp + total_fn)
-    f1 = 2 * precision * recall / (precision + recall)
+                # Retriever Recall@10 diagnostic
+                for g in gold_notes:
+                    retriever_total += 1
+                    if g in top_ids:
+                        retriever_hits += 1
 
-    print("\nDEV RESULTS")
-    print("Precision:", round(precision, 4))
-    print("Recall:", round(recall, 4))
-    print("F1:", round(f1, 4))
+                # -------------------------
+                # CROSS ENCODER
+                # -------------------------
+                results = cross_encoder.classify(
+                    answer_text=ans["text"],
+                    candidate_notes=ranked,
+                )
+
+                supported_notes = [
+                    r["note_id"]
+                    for r in results
+                    if r["support"]
+                ]
+
+                pred[answer_id] = supported_notes
+
+            metrics = compute_metrics(gold, pred)
+
+            total_tp += metrics["tp"]
+            total_fp += metrics["fp"]
+            total_fn += metrics["fn"]
+
+        # -------------------------
+        # GLOBAL METRICS
+        # -------------------------
+        precision = (
+            total_tp / (total_tp + total_fp)
+            if (total_tp + total_fp) > 0 else 0
+        )
+
+        recall = (
+            total_tp / (total_tp + total_fn)
+            if (total_tp + total_fn) > 0 else 0
+        )
+
+        f1 = (
+            2 * precision * recall / (precision + recall)
+            if (precision + recall) > 0 else 0
+        )
+
+        retriever_recall = (
+            retriever_hits / retriever_total
+            if retriever_total > 0 else 0
+        )
+
+        print(
+            f"Threshold {threshold:.2f} | "
+            f"P {precision:.4f} | "
+            f"R {recall:.4f} | "
+            f"F1 {f1:.4f}"
+        )
+
+        if f1 > best_f1:
+            best_f1 = f1
+            best_threshold = threshold
+
+    print("\n========================================")
+    print("BEST RESULT")
+    print("========================================")
+    print(f"Best Threshold: {best_threshold:.2f}")
+    print(f"Best F1: {best_f1:.4f}")
+    print("========================================")
 
 
 if __name__ == "__main__":
