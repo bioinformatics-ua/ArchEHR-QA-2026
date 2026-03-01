@@ -231,5 +231,9 @@ __marimo__/
 # Ignore temporary scripts
 Subtask2/evaluation/missing_models.py
 
-
 *.lock
+
+# Ignore ensemble search temporary files
+**/outputs/**/search_combos/
+**/results/**/search_combos/
+search_results.json

@@ -24,7 +24,7 @@ source .venv/bin/activate
 INFERENCE_MODE="cloud"   # local / cloud
 PROMPT_INDEX=5
 DATASET="dev"            # dev / test-2026
-MODEL="openai/gpt-oss-120b:free"
+MODEL="qwen/qwen3-235b-a22b-2507"
     # Cloud Models:
     # google/gemini-2.5-flash
     # google/gemini-3-flash-preview
@@ -42,9 +42,7 @@ MODEL="openai/gpt-oss-120b:free"
     # openai/gpt-5
     # openai/gpt-5-mini
     # openai/gpt-5-nano
-    # openai/text-embedding-3-small
-    # openai/gpt-oss-120b:free
-    # openai/gpt-oss-20b
+    # openai/gpt-oss-20b                                            # not tried
     # openai/gpt-4.1
     # openai/gpt-4.1-mini
     # deepseek/deepseek-v3.2
@@ -55,19 +53,19 @@ MODEL="openai/gpt-oss-120b:free"
     # anthropic/claude-opus-4.5
     # anthropic/claude-opus-4.6
     # anthropic/claude-haiku-4.5
-    # moonshotai/kimi-k2-thinking
-    # moonshotai/kimi-k2.5
-    # moonshotai/kimi-k2-0905
+    # moonshotai/kimi-k2-thinking                                   # not tried (prompt_5)
+    # moonshotai/kimi-k2.5                                          # not tried (prompt_5)
+    # moonshotai/kimi-k2-0905                                       # not tried
     # qwen/qwen3.5-flash-02-23
     # qwen/qwen3-max-thinking
     # qwen/qwen3.5-plus-02-15
     # qwen/qwen3.5-397b-a17b
-    # qwen/qwen3-30b-a3b-thinking-2507
+    # qwen/qwen3-30b-a3b-thinking-2507                              # not tried
     # qwen/qwen3-235b-a22b-2507
     # qwen/qwen3-32b
-    # z-ai/glm-5
+    # z-ai/glm-5                                                    # not tried
     # z-ai/glm-4.7-flash
-    # z-ai/glm-4.7
+    # z-ai/glm-4.7                                                  # not tried
     # minimax/minimax-m2.5
     # minimax/minimax-m2.1
     # xiaomi/mimo-v2-flash
@@ -127,6 +125,7 @@ ENSEMBLE_INPUTS=(
     "openai-gpt-5_prompt_5.json"
     # "google-gemini-2-0-flash-001_prompt_5.json"
     # "openai-gpt-4-1_prompt_5.json"
+    # "qwen-qwen3-max-thinking_prompt_5.json"
 )
 
 # For majority strategy: minimum votes required (leave empty for ceil(n/2))
@@ -134,7 +133,7 @@ ENSEMBLE_MAJORITY_THRESHOLD="2"
 
 # Output filename for the ensemble result (auto-generated or set manually)
 # ENSEMBLE_OUTPUT_FILE="ensemble_union_p4_p5.json"
-ENSEMBLE_OUTPUT_FILE="ensemble_${ENSEMBLE_STRATEGY}${ENSEMBLE_MAJORITY_THRESHOLD}_8_models.json"
+ENSEMBLE_OUTPUT_FILE="ensemble_${ENSEMBLE_STRATEGY}${ENSEMBLE_MAJORITY_THRESHOLD}_9_models.json"
 
 
 # --- GPU / Engine ---
@@ -145,7 +144,7 @@ MAX_MODEL_LEN=8192              # Context window in tokens
 # --- Sampling ---
 TEMPERATURE=0.0                 # Lower = more faithful/deterministic
 TOP_P=0.95                      # Nucleus sampling cutoff (1.0 = disabled)
-MAX_TOKENS=4096                 # Max tokens to generate per case
+MAX_TOKENS=8192                 # Max tokens to generate per case
 REPETITION_PENALTY=1.0          # >1.0 discourages repetitive phrasing
 
 
