@@ -24,7 +24,11 @@ source .venv/bin/activate
 INFERENCE_MODE="cloud"   # local / cloud
 PROMPT_INDEX=5
 DATASET="dev"            # dev / test-2026
+<<<<<<< HEAD
 MODEL="anthropic/claude-opus-4.6"
+=======
+MODEL="google/gemini-2.5-flash"
+>>>>>>> d4005eefcb4355f716a21606f54236c05ad75fa8
     # Cloud Models:
     # google/gemini-2.5-flash
     # google/gemini-3-flash-preview
@@ -109,7 +113,7 @@ REPETITION_PENALTY=1.0          # >1.0 discourages repetitive phrasing
 # PATHS
 # ----------------------------------------
 DATA_DIR="../../data/${DATASET}"
-KEY_PATH="../../data-subtask2&3/${DATASET}/archehr-qa_key.json"
+KEY_PATH="../../data/${DATASET}/archehr-qa_key.json"
 OUTPUT_DIR="../outputs/${DATASET}"
 RESULTS_DIR="../results/${DATASET}"
 
