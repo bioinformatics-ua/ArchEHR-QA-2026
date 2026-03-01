@@ -21,10 +21,10 @@ source .venv/bin/activate
 # CONFIGURABLE VARIABLES
 # ----------------------------------------
 
-INFERENCE_MODE="local"   # local / cloud
-PROMPT_INDEX=21
+INFERENCE_MODE="cloud"   # local / cloud
+PROMPT_INDEX=5
 DATASET="dev"            # dev / test-2026
-MODEL="google/medgemma-27b-text-it"
+MODEL="google/gemini-2.5-flash"
     # Cloud Models:
     # google/gemini-2.5-flash
     # qwen/qwen3.5-flash-02-23
@@ -72,7 +72,7 @@ REPETITION_PENALTY=1.0          # >1.0 discourages repetitive phrasing
 # PATHS
 # ----------------------------------------
 DATA_DIR="../../data/${DATASET}"
-KEY_PATH="../../data-subtask2&3/${DATASET}/archehr-qa_key.json"
+KEY_PATH="../../data/${DATASET}/archehr-qa_key.json"
 OUTPUT_DIR="../outputs/${DATASET}"
 RESULTS_DIR="../results/${DATASET}"
 
