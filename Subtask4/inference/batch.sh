@@ -7,6 +7,8 @@
 #SBATCH --time=02:00:00
 #SBATCH --gres=gpu:1
 
+# exclude=ailab-l4-01,ailab-l4-02,ailab-l4-05,ailab-l4-06,ailab-l4-08,ailab-l4-09,ailab-l4-10,ailab-l4-11
+
 # Num_GPUS must match --gres above and TENSOR_PARALLEL_SIZE in the script
 NUM_GPUS=1
 
@@ -22,9 +24,9 @@ source .venv/bin/activate
 # ----------------------------------------
 
 INFERENCE_MODE="cloud"   # local / cloud
-PROMPT_INDEX=5
+PROMPT_INDEX=10
 DATASET="dev"            # dev / test-2026
-MODEL="qwen/qwen3-235b-a22b-2507"
+MODEL="google/gemini-2.0-flash-001"
     # Cloud Models:
     # google/gemini-2.5-flash
     # google/gemini-3-flash-preview
@@ -73,6 +75,11 @@ MODEL="qwen/qwen3-235b-a22b-2507"
     # meta-llama/llama-4-scout
     # meta-llama/llama-3.3-70b-instruct
 
+    # Submission 1:
+    # google/gemini-2.5-flash
+    # anthropic/claude-opus-4.6
+    # google/gemini-2.0-flash-001
+
     # Local Models:
     # Qwen/Qwen3.5-35B-A3B
     # google/medgemma-27b-text-it
@@ -110,21 +117,25 @@ TWOSTEP_FLAGS=""
 # - majority: include answers that meet the majority threshold (e.g. 2 out of 3)
 ENSEMBLE_STRATEGY="majority"
 
+# Fallback model file (leave empty for no fallback)
+ENSEMBLE_FALLBACK="google-gemini-2-5-flash_prompt_6.json"
+
 # Filenames of existing output files to ensemble (relative to OUTPUT_DIR)
 ENSEMBLE_INPUTS=(
-    "google-gemini-2-5-flash_prompt_5.json"
-    "anthropic-claude-opus-4-5_prompt_5.json"
+    "google-gemini-2-5-flash_prompt_7.json"
+    # "google-gemini-2-5-flash_prompt_6.json"
+    # "anthropic-claude-opus-4-5_prompt_5.json"
     # "anthropic-claude-opus-4-6_prompt_5.json"
     "x-ai-grok-4-fast_prompt_5.json"
     # "anthropic-claude-sonnet-4-5_prompt_5.json"
     # "google-gemini-3-flash-preview_prompt_5.json"
-    "anthropic-claude-sonnet-4_prompt_5.json"
-    "x-ai-grok-4-1-fast_prompt_5.json"
-    "nvidia-nemotron-3-nano-30b-a3b:free_prompt_5.json"
-    "deepseek-deepseek-v3-2_prompt_5.json"
-    "openai-gpt-5_prompt_5.json"
-    # "google-gemini-2-0-flash-001_prompt_5.json"
-    # "openai-gpt-4-1_prompt_5.json"
+    # "anthropic-claude-sonnet-4_prompt_5.json"
+    # "x-ai-grok-4-1-fast_prompt_5.json"
+    # "nvidia-nemotron-3-nano-30b-a3b:free_prompt_5.json"
+    # "deepseek-deepseek-v3-2_prompt_5.json"
+    "openai-gpt-5_prompt_7.json"
+    "google-gemini-2-0-flash-001_prompt_5.json"
+    # "openai-gpt-4-1_prompt_6.json"
     # "qwen-qwen3-max-thinking_prompt_5.json"
 )
 
@@ -133,7 +144,7 @@ ENSEMBLE_MAJORITY_THRESHOLD="2"
 
 # Output filename for the ensemble result (auto-generated or set manually)
 # ENSEMBLE_OUTPUT_FILE="ensemble_union_p4_p5.json"
-ENSEMBLE_OUTPUT_FILE="ensemble_${ENSEMBLE_STRATEGY}${ENSEMBLE_MAJORITY_THRESHOLD}_9_models.json"
+ENSEMBLE_OUTPUT_FILE="ensemble_${ENSEMBLE_STRATEGY}${ENSEMBLE_MAJORITY_THRESHOLD}_4_models.json"
 
 
 # --- GPU / Engine ---
@@ -207,7 +218,8 @@ if [ "$INFERENCE_SCRIPT" = "ensemble" ]; then
         --inputs "${ENSEMBLE_INPUT_PATHS[@]}" \
         --strategy "$ENSEMBLE_STRATEGY" \
         --output "${OUTPUT_DIR}/${OUTPUT_FILE}" \
-        $MAJORITY_FLAG
+        ${ENSEMBLE_MAJORITY_THRESHOLD:+--majority-threshold "$ENSEMBLE_MAJORITY_THRESHOLD"} \
+        ${ENSEMBLE_FALLBACK:+--fallback "${OUTPUT_DIR}/${ENSEMBLE_FALLBACK}"}
 
 else
     echo "[1/2] Running inference with script: ${SCRIPT}..."

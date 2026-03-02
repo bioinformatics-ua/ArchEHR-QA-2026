@@ -14,6 +14,7 @@ Usage:
         --inputs outputs/dev/p4.json outputs/dev/p5.json outputs/dev/p11.json \
         --strategy majority \
         --majority-threshold 2 \
+        --fallback outputs/dev/google-gemini-2-5-flash_prompt_5.json \
         --output outputs/dev/ensemble_majority.json
 """
 
@@ -38,6 +39,10 @@ def parse_args():
         help="For majority strategy: minimum number of votes required (default: ceil(n/2))"
     )
     parser.add_argument(
+        "--fallback", type=str, default=None,
+        help="Path to a prediction file to use as fallback when majority voting yields empty evidence"
+    )
+    parser.add_argument(
         "--output", type=str, required=True,
         help="Path to save merged output JSON"
     )
@@ -56,11 +61,13 @@ def merge_predictions(
     strategy: str,
     threshold: int,
     case_id: str,
+    fallback_preds: dict = None,
 ) -> list[dict]:
     """
     Merge predictions for a single case across multiple runs.
-    
+
     all_preds: list of prediction lists (one per input file)
+    fallback_preds: indexed predictions from fallback model (optional)
     Returns: merged prediction list
     """
     # Collect all answer_ids across all runs
@@ -105,6 +112,14 @@ def merge_predictions(
                     vote_counts[e] += 1
             final_evidence = {e for e, count in vote_counts.items() if count >= threshold}
 
+            # Fallback: if no evidence passed the threshold, use fallback model
+            if len(final_evidence) == 0 and fallback_preds is not None:
+                fallback_case = fallback_preds.get(case_id, [])
+                for fb in fallback_case:
+                    if str(fb["answer_id"]) == answer_id:
+                        final_evidence = set(str(e) for e in fb.get("evidence_id", []))
+                        break
+
         merged.append({
             "answer_id": answer_id,
             "evidence_id": sorted(final_evidence, key=lambda x: int(x))
@@ -127,6 +142,12 @@ def main():
     else:
         threshold = None
 
+    # Load fallback model if specified
+    fallback_preds = None
+    if args.fallback:
+        print(f"Loading fallback model: {args.fallback}")
+        fallback_preds = load_predictions(args.fallback)
+
     print(f"Loading {n} prediction files...")
     all_loaded = []
     for path in args.inputs:
@@ -142,6 +163,7 @@ def main():
 
     # Merge predictions per case
     results = []
+    fallback_used = 0
     for case_id in sorted(all_case_ids, key=lambda x: int(x)):
         case_preds = []
         for preds in all_loaded:
@@ -151,7 +173,17 @@ def main():
                 print(f"  Warning: case {case_id} missing from one input file — skipping that run")
                 case_preds.append([])
 
-        merged = merge_predictions(case_preds, args.strategy, threshold, case_id)
+        merged = merge_predictions(case_preds, args.strategy, threshold, case_id, fallback_preds)
+
+        # Count how many answers used the fallback
+        if fallback_preds:
+            fallback_case = fallback_preds.get(case_id, [])
+            for pred in merged:
+                for fb in fallback_case:
+                    if str(fb["answer_id"]) == str(pred["answer_id"]):
+                        if pred["evidence_id"] == [str(e) for e in fb.get("evidence_id", [])]:
+                            fallback_used += 1
+
         results.append({"case_id": case_id, "prediction": merged})
 
     # Save output
@@ -161,6 +193,9 @@ def main():
         json.dump(results, f, indent=4)
 
     print(f"\nSaved ensemble output ({args.strategy}) to {output_path}")
+
+    if fallback_preds:
+        print(f"Fallback used for {fallback_used} answer(s) with empty evidence")
 
     # Print citation stats for reference
     total_citations = sum(

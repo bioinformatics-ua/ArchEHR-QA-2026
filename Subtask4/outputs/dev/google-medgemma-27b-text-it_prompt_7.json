@@ -81,10 +81,7 @@
             },
             {
                 "answer_id": "4",
-                "evidence_id": [
-                    "5",
-                    "10"
-                ]
+                "evidence_id": []
             },
             {
                 "answer_id": "5",
@@ -135,7 +132,8 @@
                 "answer_id": "1",
                 "evidence_id": [
                     "9",
-                    "18"
+                    "10",
+                    "12"
                 ]
             },
             {
@@ -266,7 +264,6 @@
             {
                 "answer_id": "3",
                 "evidence_id": [
-                    "43",
                     "9",
                     "19"
                 ]
@@ -274,12 +271,16 @@
             {
                 "answer_id": "4",
                 "evidence_id": [
-                    "39"
+                    "39",
+                    "1"
                 ]
             },
             {
                 "answer_id": "5",
                 "evidence_id": [
+                    "31",
+                    "34",
+                    "35",
                     "52",
                     "53",
                     "54"
@@ -348,7 +349,6 @@
                 "answer_id": "2",
                 "evidence_id": [
                     "8",
-                    "10",
                     "12",
                     "17"
                 ]
@@ -386,29 +386,39 @@
             },
             {
                 "answer_id": "2",
-                "evidence_id": []
+                "evidence_id": [
+                    "9",
+                    "11",
+                    "15",
+                    "17",
+                    "25"
+                ]
             },
             {
                 "answer_id": "3",
                 "evidence_id": [
                     "9",
+                    "11",
                     "15",
-                    "17",
-                    "23",
-                    "25"
+                    "17"
                 ]
             },
             {
                 "answer_id": "4",
                 "evidence_id": [
                     "17",
-                    "24",
-                    "25"
+                    "24"
                 ]
             },
             {
                 "answer_id": "5",
-                "evidence_id": []
+                "evidence_id": [
+                    "9",
+                    "11",
+                    "15",
+                    "17",
+                    "25"
+                ]
             }
         ]
     },
@@ -452,6 +462,7 @@
             {
                 "answer_id": "2",
                 "evidence_id": [
+                    "4",
                     "5",
                     "11"
                 ]
@@ -498,6 +509,7 @@
             {
                 "answer_id": "5",
                 "evidence_id": [
+                    "5",
                     "6",
                     "7"
                 ]
@@ -538,13 +550,15 @@
             {
                 "answer_id": "1",
                 "evidence_id": [
-                    "18"
+                    "18",
+                    "21"
                 ]
             },
             {
                 "answer_id": "2",
                 "evidence_id": [
                     "21",
+                    "24",
                     "28",
                     "29"
                 ]
@@ -552,6 +566,7 @@
             {
                 "answer_id": "3",
                 "evidence_id": [
+                    "5",
                     "9"
                 ]
             },
@@ -566,13 +581,15 @@
         "prediction": [
             {
                 "answer_id": "1",
-                "evidence_id": []
+                "evidence_id": [
+                    "4",
+                    "8"
+                ]
             },
             {
                 "answer_id": "2",
                 "evidence_id": [
-                    "4",
-                    "5",
+                    "6",
                     "8"
                 ]
             },
@@ -582,7 +599,10 @@
             },
             {
                 "answer_id": "4",
-                "evidence_id": []
+                "evidence_id": [
+                    "26",
+                    "37"
+                ]
             }
         ]
     },
@@ -642,7 +662,8 @@
             {
                 "answer_id": "4",
                 "evidence_id": [
-                    "10"
+                    "10",
+                    "11"
                 ]
             }
         ]
@@ -666,8 +687,7 @@
             {
                 "answer_id": "3",
                 "evidence_id": [
-                    "5",
-                    "6"
+                    "5"
                 ]
             },
             {

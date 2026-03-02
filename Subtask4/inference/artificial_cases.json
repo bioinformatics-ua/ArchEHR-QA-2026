@@ -1,0 +1,60 @@
+[
+  {
+    "case_id": "S1",
+    "clinical_specialty": "gastroenterology",
+    "note_excerpt_sentences": [
+      { "sentence_id": "1", "text": "The patient was admitted for abdominal pain and vomiting." },
+      { "sentence_id": "2", "text": "CT scan showed partial small bowel obstruction." },
+      { "sentence_id": "3", "text": "The obstruction improved with conservative management." },
+      { "sentence_id": "4", "text": "She has a history of breast cancer." },
+      { "sentence_id": "5", "text": "She will follow up with her oncologist for breast cancer surveillance." },
+      { "sentence_id": "6", "text": "Fiber supplements were recommended to prevent constipation." }
+    ],
+    "clinician_answer_sentences": [
+      { "id": "1", "text": "There is no evidence of gastric cancer.", "citations": "" },
+      { "id": "2", "text": "The patient had a partial small bowel obstruction.", "citations": "2" },
+      { "id": "3", "text": "Her obstruction improved over time.", "citations": "3" },
+      { "id": "4", "text": "She should take fiber supplements.", "citations": "6" },
+      { "id": "5", "text": "She has a history of breast cancer.", "citations": "4" }
+    ]
+  },
+  {
+    "case_id": "S2",
+    "clinical_specialty": "infectious diseases",
+    "note_excerpt_sentences": [
+      { "sentence_id": "1", "text": "The patient was diagnosed with viral meningitis." },
+      { "sentence_id": "2", "text": "Antibiotics were discontinued prior to discharge." },
+      { "sentence_id": "3", "text": "She received IV morphine during hospitalization." },
+      { "sentence_id": "4", "text": "She was discharged on oral acetaminophen as needed." },
+      { "sentence_id": "5", "text": "Ibuprofen 400 mg every 6 hours as needed." },
+      { "sentence_id": "6", "text": "Ondansetron was prescribed for nausea." },
+      { "sentence_id": "7", "text": "She was instructed to rest at home." }
+    ],
+    "clinician_answer_sentences": [
+      { "id": "1", "text": "The patient was diagnosed with viral meningitis.", "citations": "1" },
+      { "id": "2", "text": "Antibiotics were stopped before discharge.", "citations": "2" },
+      { "id": "3", "text": "She was prescribed acetaminophen and ibuprofen for pain.", "citations": "4,5" },
+      { "id": "4", "text": "She was prescribed ondansetron for nausea.", "citations": "6" },
+      { "id": "5", "text": "She may still experience fatigue during recovery.", "citations": "" }
+    ]
+  },
+  {
+    "case_id": "S3",
+    "clinical_specialty": "neurology",
+    "note_excerpt_sentences": [
+      { "sentence_id": "1", "text": "The patient presented with severe headache." },
+      { "sentence_id": "2", "text": "CT scan was negative for intracranial hemorrhage." },
+      { "sentence_id": "3", "text": "MRI showed no mass lesion." },
+      { "sentence_id": "4", "text": "MRV ruled out venous thrombosis." },
+      { "sentence_id": "5", "text": "She was started on topiramate." },
+      { "sentence_id": "6", "text": "She was advised to avoid caffeine." }
+    ],
+    "clinician_answer_sentences": [
+      { "id": "1", "text": "Imaging ruled out intracranial hemorrhage and mass lesion.", "citations": "2,3" },
+      { "id": "2", "text": "Venous thrombosis was excluded.", "citations": "4" },
+      { "id": "3", "text": "She was started on topiramate.", "citations": "5" },
+      { "id": "4", "text": "Her dizziness is caused by migraine aura.", "citations": "" },
+      { "id": "5", "text": "She was advised to avoid caffeine.", "citations": "6" }
+    ]
+  }
+]
