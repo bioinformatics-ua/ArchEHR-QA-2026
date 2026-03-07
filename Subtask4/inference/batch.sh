@@ -23,11 +23,24 @@ source .venv/bin/activate
 # CONFIGURABLE VARIABLES
 # ----------------------------------------
 
-INFERENCE_MODE="cloud"   # local / cloud
+INFERENCE_MODE="local"   # local / cloud
 PROMPT_INDEX=10
 DATASET="dev"            # dev / test-2026
-MODEL="google/gemini-2.0-flash-001"
-    # Cloud Models:
+MODEL="meta-llama/Llama-3.1-8B-Instruct"
+
+    # --- Local Models ---
+    # google/medgemma-27b-text-it           # DONE
+    # google/medgemma-4b-it                 # DONE
+    # google/gemma-3-27b-it                 # DONE
+    # google/medgemma-1.5-4b-it             # DONE
+    # khazarai/Bio-8B-it                    # DONE
+    # Qwen/Qwen3-8B                         # DONE
+    # Qwen/Qwen3-32b                        # DONE
+    # BioMistral/BioMistral-7B              # DONE
+    # Echelon-AI/Med-Qwen2-7B               # DONE
+    # meta-llama/Llama-3.1-8B-Instruct      # DONE
+
+    # --- Cloud Models ---
     # google/gemini-2.5-flash
     # google/gemini-3-flash-preview
     # google/gemini-2.5-flash-lite
@@ -80,14 +93,6 @@ MODEL="google/gemini-2.0-flash-001"
     # anthropic/claude-opus-4.6
     # google/gemini-2.0-flash-001
 
-    # Local Models:
-    # Qwen/Qwen3.5-35B-A3B
-    # google/medgemma-27b-text-it
-    # google/medgemma-27b-it
-    # google/medgemma-4b-it
-    # khazarai/Bio-8B-it
-    # Qwen/Qwen3-8B
-
 # ----------------------------------------
 # INFERENCE SCRIPT OPTIONS
 # ----------------------------------------
@@ -118,24 +123,25 @@ TWOSTEP_FLAGS=""
 ENSEMBLE_STRATEGY="majority"
 
 # Fallback model file (leave empty for no fallback)
-ENSEMBLE_FALLBACK="google-gemini-2-5-flash_prompt_6.json"
+ENSEMBLE_FALLBACK="openai-gpt-4-1_prompt_5.json"
 
 # Filenames of existing output files to ensemble (relative to OUTPUT_DIR)
 ENSEMBLE_INPUTS=(
-    "google-gemini-2-5-flash_prompt_7.json"
+    "google-gemini-2-5-flash_prompt_5.json"
+    "google-gemini-2-5-flash_prompt_6.json"
+    "openai-gpt-4-1_prompt_6.json"
+    # "x-ai-grok-4-fast_prompt_5.json"
+    # "openai-gpt-5_prompt_7.json"
+    # "google-gemini-2-0-flash-001_prompt_5.json"
     # "google-gemini-2-5-flash_prompt_6.json"
     # "anthropic-claude-opus-4-5_prompt_5.json"
     # "anthropic-claude-opus-4-6_prompt_5.json"
-    "x-ai-grok-4-fast_prompt_5.json"
     # "anthropic-claude-sonnet-4-5_prompt_5.json"
     # "google-gemini-3-flash-preview_prompt_5.json"
     # "anthropic-claude-sonnet-4_prompt_5.json"
     # "x-ai-grok-4-1-fast_prompt_5.json"
     # "nvidia-nemotron-3-nano-30b-a3b:free_prompt_5.json"
     # "deepseek-deepseek-v3-2_prompt_5.json"
-    "openai-gpt-5_prompt_7.json"
-    "google-gemini-2-0-flash-001_prompt_5.json"
-    # "openai-gpt-4-1_prompt_6.json"
     # "qwen-qwen3-max-thinking_prompt_5.json"
 )
 
@@ -226,6 +232,7 @@ else
 
     #--debug-first-n 3 \
 
+    # uv run --no-sync python $SCRIPT \
     uv run python $SCRIPT \
         --xml-file "${DATA_DIR}/archehr-qa.xml" \
         --qa-key-file "${KEY_PATH}" \
