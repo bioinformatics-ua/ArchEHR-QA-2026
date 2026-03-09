@@ -15,11 +15,12 @@ class LocalProvider(BaseProvider):
             model=model_name,
             max_model_len=16384,
             enforce_eager=True,
-            gpu_memory_utilization=0.85,
+            gpu_memory_utilization=0.95,
             trust_remote_code=True,
+            tensor_parallel_size=4,
         )
         self.sampling_params = SamplingParams(
-            temperature=0.7, top_p=0.95, max_tokens=1024
+            temperature=0.0, top_p=0.95, max_tokens=1024
         )
 
     def build_prompt(

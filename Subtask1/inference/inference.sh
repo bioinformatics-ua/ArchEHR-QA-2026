@@ -14,6 +14,9 @@ echo "Job ID: $SLURM_JOB_ID"
 
 source .venv/bin/activate
 
+# Make the shared 'common' package importable
+export PYTHONPATH="$(realpath ../../common):${PYTHONPATH}"
+
 # =============================================================================
 # INFERENCE MODES:
 # 1. LOCAL MODE: Uses vLLM with local GPU (default)
@@ -23,9 +26,11 @@ source .venv/bin/activate
 
 # --- Configuration ---
 MODE="local"                         # Change to "local", "openai", or "groq"
-MODEL="meta-llama/Llama-3.1-8B-Instruct"     # Full model name/path
-DATASET="dev"                      # Change to "test" for test set or "dev" for development set
-PROMPT_INDEX=10                      # Prompt template index
+MODEL="google/gemma-3-27b-it"     # Full model name/path
+    # google/gemma-3-27b-it
+    # 
+DATASET="test"                      # Change to "test" for test set or "dev" for development set
+PROMPT_INDEX=2
 
 # Auto-generate output filename: model_prompt_N.json
 MODEL_NAME=$(echo "$MODEL" | tr '/' '-' | tr '.' '-')
@@ -42,10 +47,10 @@ fi
 # --- Run the Inference Script ---
 echo "Starting Python inference script..."
 PYTHONUNBUFFERED=1 python inference.py \
-    --xml-file ../../data/${DATASET}/archehr-qa.xml \
+    --xml-file ../../data-subtask1/${DATASET}/archehr-qa.xml \
     --prompt-file prompt.json \
     --prompt-index $PROMPT_INDEX \
-    --output-file ../outputs/${DATASET}/$OUTPUT_FILE \
+    --output-file ../outputs_v2/new/$OUTPUT_FILE \
     --inference-mode "$MODE" \
     --model "$MODEL"
 
@@ -61,9 +66,9 @@ UV_BIN=$(which uv)
 
 # 2. Run the code
 singularity exec --nv "$SIF_IMAGE" "$UV_BIN" run python evaluation.py \
-    --submission_path ../outputs/${DATASET}/$OUTPUT_FILE \
-    --key_path ../../data/dev/archehr-qa.xml \
+    --submission_path ../outputs_v2/new/$OUTPUT_FILE \
+    --key_path ../../data-subtask1/${DATASET}/archehr-qa.xml \
     --quickumls_path ../quickumls/final \
-    --out_file_path ../results/${DATASET}/$OUTPUT_FILE
+    --out_file_path ../results_v2/new/$OUTPUT_FILE
 
-# echo "Evaluation complete. Job finished."
+echo "Evaluation complete. Job finished."
