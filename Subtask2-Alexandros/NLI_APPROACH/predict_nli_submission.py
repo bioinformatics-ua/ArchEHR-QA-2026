@@ -4,8 +4,7 @@ import torch
 import torch.nn.functional as F
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
-from load_archehr import load_all_cases  # you already built this
-
+from load_archehr import load_all_cases
 # -----------------------
 # CONFIG
 # -----------------------
@@ -14,7 +13,7 @@ MODEL_NAME = "sharraks97/biorecall-PubMedBERT-NLI"
 TOKENIZER_NAME = "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext"
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-ENTAILMENT_THRESHOLD = 0.1   # we will sweep this later
+ENTAILMENT_THRESHOLD = 0.1  
 
 XML_PATH = "/ceph/home/student.aau.dk/lj02sb/ArchEHR/atificial_data/archehr-qa/dev/archehr-qa.xml"
 KEY_PATH = "/ceph/home/student.aau.dk/lj02sb/ArchEHR/atificial_data/archehr-qa/dev/archehr-qa_key.json"
