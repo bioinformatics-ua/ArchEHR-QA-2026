@@ -32,3 +32,4 @@ It uses Python 3.8 and the official ArchEHR-QA-2026 evaluation script. Please re
 | `outputs/`   | Directory to store model predictions.    |
 | `quickumls/` | Directory to store QuickUMLS data files. |
 | `results/`   | Directory to store evaluation results.   |
+| `data/`      | Directory to store task data files.      |
