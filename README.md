@@ -17,8 +17,8 @@ This repo uses `uv` for Python environment management in the subtask folders.
 - `Subtask1/` uses separate inference and evaluation environments
   - inference: Python 3.13
   - evaluation: Python 3.8
-- `Subtask2/` uses Python 3.10+ for both inference and evaluation
-- `Subtask3/` and `Subtask4/` follow the same per-subtask structure, with SLURM wrappers present
+- `Subtask2/` uses Python 3.10+ for both inference and evaluation.
+- `Subtask3/` and `Subtask4/` follow the same per-subtask structure, with SLURM wrappers present.
 
 ## Quickstart
 
