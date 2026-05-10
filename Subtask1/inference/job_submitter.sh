@@ -1,34 +1,44 @@
 #!/bin/bash
 
-# ================= CONFIGURATION =================
-DATASET="new" # Change to "test" if needed
-LOG_DIR="../logs"
-OUTPUT_DIR="../outputs_v2/${DATASET}"
+set -euo pipefail
 
-# # Define the list of models
-# MODELS=(
+# =============================================================================
+# STABLE SCRIPT LOCATION
+# =============================================================================
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$SCRIPT_DIR"
 
+ROOT_DIR="$(git rev-parse --show-toplevel)"
 
-#     "Aikyam-Lab/CURE-MED-14B"
-#     "BioMistral/BioMistral-7B"
-#     "Intelligent-Internet/II-Medical-8B-1706"
-#     "NotoriousH2/qwen3-1.7b-base-MED-Instruct"
-#     "VesileHan/fine_tuned_qwen1.7B"
-#     "google/medgemma-27b-it"
-#     "google/medgemma-4b-it"
-#     "lingshu-medical-mllm/Lingshu-32B"
-#     "lingshu-medical-mllm/Lingshu-7B"
-#     "meta-llama/Llama-3.3-70b-versatile"
-#     "meta-llama/Llama-3.1-8B-Instruct"
+# =============================================================================
+# CONFIGURATION
+# =============================================================================
+# Example:
+# MODE=cloud DATASET=test PROMPT_START=1 PROMPT_END=10 bash job_submitter.sh
 
-#     "openai/gpt-oss-120b"
-#     "pszemraj/medgemma-27b-text-heretic_med"
-#     "suayptalha/Qwen3-0.6B-Medical-Expert"
-# )
-  
-  # "meta-llama/Llama-3.3-70B-Instruct"
-# 
-MODELS=(
+MODE="${MODE:-local}"                 # local or cloud
+DATASET="${DATASET:-dev}"             # dev or test
+PROMPT_START="${PROMPT_START:-1}"
+PROMPT_END="${PROMPT_END:-10}"
+
+DATA_ROOT="${DATA_ROOT:-${ROOT_DIR}/Subtask1/data}"
+OUTPUT_ROOT="${OUTPUT_ROOT:-${ROOT_DIR}/Subtask1/outputs}"
+RESULT_ROOT="${RESULT_ROOT:-${ROOT_DIR}/Subtask1/results}"
+LOG_DIR="${LOG_DIR:-${ROOT_DIR}/Subtask1/logs}"
+
+RUN_EVAL="${RUN_EVAL:-true}"
+
+CPUS_PER_TASK="${CPUS_PER_TASK:-8}"
+SUBMIT_DELAY_SECONDS="${SUBMIT_DELAY_SECONDS:-0.5}"
+
+TEMP_JOB_DIR="./temp_jobs"
+
+mkdir -p "$TEMP_JOB_DIR"
+
+# =============================================================================
+# MODEL CONFIGURATION
+# =============================================================================
+LOCAL_MODELS=(
     "Echelon-AI/Med-Qwen2-7B"
     "Qwen/Qwen3-32B"
     "google/gemma-3-27b-it"
@@ -36,108 +46,160 @@ MODELS=(
     "google/medgemma-27b-text-it"
     "mistralai/Ministral-3-14B-Reasoning-2512"
     "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8"
-    # "google/medgemma-4b-it"
-    # "meta-llama/Llama-3.3-70B-Instruct"
 )
 
-# Create output directory if it doesn't exist
+CLOUD_MODELS=(
+    "anthropic/claude-sonnet-4.5"
+    "openai/gpt-5.2"
+    "google/gemini-3-flash-preview"
+    "qwen/qwen3-max"
+)
+
+case "$MODE" in
+    local)
+        MODELS=("${LOCAL_MODELS[@]}")
+        GPU_COUNT="${GPU_COUNT:-4}"
+        ;;
+    cloud)
+        MODELS=("${CLOUD_MODELS[@]}")
+        GPU_COUNT="${GPU_COUNT:-1}"
+        ;;
+    *)
+        echo "Error: MODE must be 'local' or 'cloud'."
+        exit 1
+        ;;
+esac
+
+# =============================================================================
+# OUTPUT DIRECTORIES
+# =============================================================================
+OUTPUT_DIR="${OUTPUT_ROOT}/${DATASET}"
+RESULT_DIR="${RESULT_ROOT}/${DATASET}"
+
 mkdir -p "$OUTPUT_DIR"
+mkdir -p "$RESULT_DIR"
 mkdir -p "$LOG_DIR"
 
-# ================= MAIN LOOP =================
+# =============================================================================
+# INFO
+# =============================================================================
+echo "========================================"
+echo "Batch submitter configuration"
+echo "  mode:         $MODE"
+echo "  dataset:      $DATASET"
+echo "  prompts:      ${PROMPT_START}-${PROMPT_END}"
+echo "  gpu count:    $GPU_COUNT"
+echo "  output dir:   $(realpath -m "$OUTPUT_DIR")"
+echo "========================================"
 
+# =============================================================================
+# SUBMIT JOBS
+# =============================================================================
 for MODEL in "${MODELS[@]}"; do
-    for PROMPT_INDEX in {1..10}; do
+    for PROMPT_INDEX in $(seq "$PROMPT_START" "$PROMPT_END"); do
 
-        # 1. Calculate the expected filename
-        # Logic: Replace / and . with - 
-        MODEL_NAME_CLEAN=$(echo "$MODEL" | tr '/' '-' | tr '.' '-')
+        MODEL_NAME_CLEAN="$(echo "$MODEL" | tr '/' '-' | tr '.' '-')"
+
         OUTPUT_FILE="${MODEL_NAME_CLEAN}_prompt_${PROMPT_INDEX}.json"
-        FULL_PATH="${OUTPUT_DIR}/${OUTPUT_FILE}"
 
-        # 2. Check if file exists
-        if [ -f "$FULL_PATH" ]; then
-            echo "✅ [SKIP] Exists: $OUTPUT_FILE"
-        else
-            echo "🚀 [SUBMIT] Missing: $OUTPUT_FILE (Model: $MODEL | Prompt: $PROMPT_INDEX)"
+        OUTPUT_PATH="$(realpath -m "${OUTPUT_DIR}/${OUTPUT_FILE}")"
 
-            # 3. Create a temporary SLURM script for this specific job
-            # We use 'EOF' to allow variable expansion for $MODEL and $PROMPT_INDEX,
-            # but we escape internal bash variables (like \$SLURM_JOB_ID) so they evaluate later.
-            
-            JOB_SCRIPT="temp_job_${MODEL_NAME_CLEAN}_${PROMPT_INDEX}.slurm"
+        RESULT_PATH="$(realpath -m "${RESULT_DIR}/${OUTPUT_FILE}")"
 
-            cat <<EOF > "$JOB_SCRIPT"
+        XML_PATH="$(realpath -m "${DATA_ROOT}/${DATASET}/archehr-qa.xml")"
+
+        if [ -f "$OUTPUT_PATH" ]; then
+            echo "[SKIP] Exists: $OUTPUT_FILE"
+            continue
+        fi
+
+        echo "[SUBMIT] $OUTPUT_FILE"
+
+        JOB_SCRIPT="${TEMP_JOB_DIR}/temp_job_${MODEL_NAME_CLEAN}_${PROMPT_INDEX}.slurm"
+
+        cat <<EOF > "$JOB_SCRIPT"
 #!/bin/bash
 
 #SBATCH --job-name=inf_${MODEL_NAME_CLEAN:0:10}_${PROMPT_INDEX}
 #SBATCH --output=${LOG_DIR}/inference_%j.out
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=8
-#SBATCH --gres=gpu:4
+#SBATCH --cpus-per-task=${CPUS_PER_TASK}
+#SBATCH --gres=gpu:${GPU_COUNT}
 
-# --- Environment Setup ---
+set -euo pipefail
+
 echo "Job started on \$(hostname)"
-echo "Job ID: \$SLURM_JOB_ID"
+echo "Job ID: \${SLURM_JOB_ID:-manual}"
 
-source .venv/bin/activate
+cd "$SCRIPT_DIR"
 
-# =============================================================================
-# INJECTED VARIABLES FROM SUBMITTER SCRIPT
-# =============================================================================
-MODE="local"
-MODEL="${MODEL}"
-DATASET="${DATASET}"
-PROMPT_INDEX=${PROMPT_INDEX}
+if [ -f .venv/bin/activate ]; then
+    source .venv/bin/activate
+fi
 
-# Auto-generate output filename inside the job (keeping consistency)
-MODEL_NAME=\$(echo "\$MODEL" | tr '/' '-' | tr '.' '-')
-OUTPUT_FILE="\${MODEL_NAME}_prompt_\${PROMPT_INDEX}.json"
+export PYTHONPATH="${ROOT_DIR}/common:\${PYTHONPATH:-}"
 
-# Load .env file
+MODE="$MODE"
+MODEL="$MODEL"
+PROMPT_INDEX="$PROMPT_INDEX"
+
+OUTPUT_PATH="$OUTPUT_PATH"
+RESULT_PATH="$RESULT_PATH"
+XML_PATH="$XML_PATH"
+KEY_PATH="$(realpath -m "${DATA_ROOT}/${DATASET}/archehr-qa_key.json")"
+
+RUN_EVAL="$RUN_EVAL"
+
 if [ -f .env ]; then
-    export \$(cat .env | xargs)
-    echo "Loaded environment variables from .env file"
+    set -a
+    source .env
+    set +a
+    echo "Loaded environment variables from .env"
 else
     echo "Warning: .env file not found"
 fi
 
-# --- Run the Inference Script ---
-echo "Starting Python inference script for ${MODEL}..."
+echo "Running inference"
+echo "  model:  \$MODEL"
+echo "  prompt: \$PROMPT_INDEX"
+
 PYTHONUNBUFFERED=1 python inference.py \\
-    --xml-file ../../data/${DATASET}/archehr-qa.xml \\
+    --xml-file "\$XML_PATH" \\
     --prompt-file prompt.json \\
-    --prompt-index \$PROMPT_INDEX \\
-    --output-file ../outputs_v2/${DATASET}/\$OUTPUT_FILE \\
-    --inference-mode "\$MODE" \\
+    --prompt-index "\$PROMPT_INDEX" \\
+    --output-file "\$OUTPUT_PATH" \\
+    --inference-mode "$MODE" \\
     --model "\$MODEL"
 
-# Deactivate inference venv
-deactivate
+if [ "\$RUN_EVAL" = "true" ]; then
 
-cd ../evaluation 
-SIF_IMAGE="./builder.sif"
-UV_BIN=\$(which uv)
+    echo "Running evaluation"
 
-# Run Evaluation
-singularity exec --nv "\$SIF_IMAGE" "\$UV_BIN" run python evaluation.py \\
-    --submission_path ../outputs_v2/${DATASET}/\$OUTPUT_FILE \\
-    --key_path ../../data/${DATASET}/archehr-qa.xml \\
-    --quickumls_path ../quickumls/final \\
-    --out_file_path ../results_v2/${DATASET}/\$OUTPUT_FILE
+    cd ../evaluation
+
+    SIF_IMAGE="./builder.sif"
+    UV_BIN="\$(which uv)"
+
+    singularity exec --nv "\$SIF_IMAGE" "\$UV_BIN" run python evaluation.py \\
+        --submission_path "\$OUTPUT_PATH" \\
+        --key_path "\$KEY_PATH" \\
+        --quickumls_path ../quickumls/final \\
+        --out_file_path "\$RESULT_PATH"
+fi
+
+echo "Job complete."
 
 EOF
 
-            # 4. Submit the generated script and then delete it
-            sbatch "$JOB_SCRIPT"
-            rm "$JOB_SCRIPT"
-            
-            # Optional: Sleep briefly to prevent overloading the scheduler
-            sleep 0.5
-        fi
+        sbatch "$JOB_SCRIPT"
+
+        rm "$JOB_SCRIPT"
+
+        sleep "$SUBMIT_DELAY_SECONDS"
+
     done
 done
 
 echo "========================================"
-echo "All checks complete."
+echo "All jobs submitted."

@@ -3,8 +3,6 @@ import argparse
 from pathlib import Path
 import pandas as pd
 import plotly.express as px
-from plotly.subplots import make_subplots
-import plotly.graph_objects as go
 
 
 ALL_METRICS = [
@@ -35,8 +33,8 @@ def parse_model_prompt(filename: str):
 def load_results(results_dir: Path):
     rows = []
 
-    for file in results_dir.glob("*.json"):
-        if file.name == "scores.json":
+    for file in sorted(results_dir.glob("*.json")):
+        if file.name in ("scores.json", "summary.json"):
             continue
 
         with open(file) as f:
@@ -61,7 +59,6 @@ def load_results(results_dir: Path):
 def build_dashboard(df, sort_by):
     df = df.sort_values(sort_by, ascending=False)
 
-    # Bar chart with colors by model
     fig = px.bar(
         df,
         x="prompt",
@@ -95,13 +92,10 @@ def main():
         print("No result files found.")
         return
 
-    # Format floats
     df = df.round(4)
 
-    # Build chart
     fig = build_dashboard(df, args.sort_by)
 
-    # Create interactive table
     table_html = df.to_html(
         index=False,
         classes="display",
@@ -109,17 +103,15 @@ def main():
         justify="center",
     )
 
-    # Save CSV
     csv_path = results_dir / "summary.csv"
     df.to_csv(csv_path, index=False)
 
-    # Combine everything into one HTML
     html_content = f"""
     <html>
     <head>
         <title>Subtask2 Results Dashboard</title>
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-        <link rel="stylesheet" 
+        <link rel="stylesheet"
               href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"/>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
@@ -149,8 +141,12 @@ def main():
     with open(html_path, "w") as f:
         f.write(html_content)
 
-    print(f"\nDashboard saved → {html_path}")
-    print(f"CSV saved → {csv_path}")
+    # Print top results to terminal
+    top = df.sort_values("overall_score", ascending=False).head(10)
+    print("\nTop 10 by overall_score:")
+    print(top[["model", "prompt", "overall_score", "strict_micro_f1", "lenient_micro_f1"]].to_string(index=False))
+    print(f"\nDashboard saved -> {html_path}")
+    print(f"CSV saved -> {csv_path}")
 
 
 if __name__ == "__main__":

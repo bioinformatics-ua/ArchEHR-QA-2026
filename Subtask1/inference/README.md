@@ -24,7 +24,7 @@ uv run python inference.py \
 
 | Argument        | Description                                         | Example Path                                  |
 | --------------- | --------------------------------------------------- | --------------------------------------------- |
-| `--xml_file`    | Path to the input XML file containing the questions | `../../data/dev/archehr-qa.xml` (for dev set) |
+| `--xml_file`    | Path to the input XML file containing the questions | `../data/dev/archehr-qa.xml` (for dev set)   |
 | `--prompt_file` | Path to the prompt template JSONL file              | `prompt.jsonl`                                |
 | `--output_file` | Path to save the output predictions file            | `../outputs/predictions.json`                 |
 | `--model`       | Model name or path for inference                    | `Qwen/Qwen3-8B`                               |

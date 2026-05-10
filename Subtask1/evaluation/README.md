@@ -40,6 +40,6 @@ uv run python evaluation.py \
 | Argument            | Description                          | Example Path                                  |
 | ------------------- | ------------------------------------ | --------------------------------------------- |
 | `--submission_path` | Path to your output predictions file | `../outputs/predictions.json`                 |
-| `--key_path`        | Path to the ground truth XML file    | `../../data/dev/archehr-qa.xml` (for dev set) |
+| `--key_path`        | Path to the ground truth XML file    | `../data/dev/archehr-qa.xml` (for dev set)   |
 | `--quickumls_path`  | Path to the QuickUMLS data directory | `../quickumls/`                               |
 | `--out_file_path`   | Path to save the evaluation scores   | `../scores/scores.json`                       |

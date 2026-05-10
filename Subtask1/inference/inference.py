@@ -3,10 +3,11 @@ from typing import Annotated, Literal
 
 import orjson
 import typer
-from common.dataloader import ArchEHRDataLoader, Case
-from common.providers.base import BaseProvider, Messages
-from common.providers.cloud import CloudProvider
-from common.providers.local import LocalProvider
+
+from dataloader import ArchEHRDataLoader, Case
+from providers.base import BaseProvider, Messages
+from providers.cloud import CloudProvider
+from providers.local import LocalProvider
 
 app = typer.Typer()
 
@@ -14,68 +15,135 @@ app = typer.Typer()
 @app.command()
 def main(
     xml_file: Annotated[
-        Path, typer.Option(help="Path to the XML file with patient narratives.")
+        Path,
+        typer.Option(help="Path to the XML file with patient narratives."),
     ],
     prompt_file: Annotated[
-        Path, typer.Option(help="Path to the prompt template JSONL file.")
+        Path,
+        typer.Option(help="Path to the prompt template JSON file."),
     ],
-    prompt_index: Annotated[int, typer.Option(help="Prompt id.")],
+    prompt_index: Annotated[
+        int,
+        typer.Option(help="Prompt index to use."),
+    ],
     output_file: Annotated[
-        Path, typer.Option(help="Path to the output JSON file for results.")
+        Path,
+        typer.Option(help="Path to the output JSON file."),
     ],
     inference_mode: Annotated[
         Literal["local", "cloud"],
         typer.Option(
-            help="Inference mode: 'local' for vLLM, 'cloud' for OpenRouter",
+            help="Inference mode: 'local' for vLLM, 'cloud' for OpenRouter.",
         ),
     ] = "local",
     model: Annotated[
-        str, typer.Option(help="Hugging Face model to use.")
+        str,
+        typer.Option(help="Model to use for inference."),
     ] = "Qwen/Qwen3-8B",
 ) -> None:
-    # --- 1. Setup based on inference mode ---
-    print(f"Setting up provider for inference mode: {inference_mode}...")
+
+    # =========================================================================
+    # PROVIDER SETUP
+    # =========================================================================
+
+    print(f"Setting up provider for inference mode: {inference_mode}")
+
     match inference_mode:
         case "local":
             provider: BaseProvider = LocalProvider(model)
+
         case "cloud":
-            provider: BaseProvider = CloudProvider(model)
+            provider = CloudProvider(model)
+
         case _:
             raise ValueError(f"Unknown inference mode: {inference_mode}")
 
-    # --- 2. Load XML Cases ---
-    print(f"Loading XML cases from {xml_file}...")
-    xml_cases = ArchEHRDataLoader(xml_file).load()
-    print(f"Loaded {len(xml_cases)} cases from XML.")
+    # =========================================================================
+    # LOAD XML CASES
+    # =========================================================================
 
-    # --- 3. Load Prompt Template ---
-    print(f"Loading prompt template from {prompt_file}...")
+    print(f"Loading XML cases from: {xml_file}")
+
+    xml_cases = ArchEHRDataLoader(xml_file).load()
+
+    print(f"Loaded {len(xml_cases)} cases.")
+
+    # =========================================================================
+    # LOAD PROMPT TEMPLATE
+    # =========================================================================
+
+    print(f"Loading prompt template from: {prompt_file}")
+
     with open(prompt_file, "r") as f:
         prompt_dict = orjson.loads(f.read())
+
+    if str(prompt_index) not in prompt_dict:
+        raise ValueError(
+            f"Prompt index {prompt_index} not found in {prompt_file}"
+        )
+
     prompt_template = prompt_dict[str(prompt_index)]
 
-    # list[(case, prompt)]
-    p: list[tuple[Case, Messages]] = [
-        (case, provider.build_prompt(prompt_template, case.clinician_question))
+    # =========================================================================
+    # BUILD PROMPTS
+    # =========================================================================
+
+    case_prompts: list[tuple[Case, Messages]] = [
+        (
+            case,
+            provider.build_prompt(
+                prompt_template,
+                case.clinician_question,
+            ),
+        )
         for case in xml_cases
     ]
-    print(f"Built {len(p)} prompts.")
 
-    outputs = provider.batch_generate([prompt for _, prompt in p])
+    print(f"Built {len(case_prompts)} prompts.")
+
+    # =========================================================================
+    # GENERATE OUTPUTS
+    # =========================================================================
+
+    print(f"Generating outputs using model: {model}")
+
+    outputs = provider.batch_generate(
+        [prompt for _, prompt in case_prompts]
+    )
+
+    # =========================================================================
+    # PARSE RESULTS
+    # =========================================================================
 
     results = [
         {
             "case_id": case.case_id,
             "prediction": provider.parse_response(output),
         }
-        for case, output in zip([case for case, _ in p], outputs)
+        for case, output in zip(
+            [case for case, _ in case_prompts],
+            outputs,
+        )
     ]
 
-    print(f"Saving results to {output_file}...")
-    with open(output_file, "w") as f:
-        f.write(orjson.dumps(results, option=orjson.OPT_INDENT_2).decode("utf-8"))
+    # =========================================================================
+    # SAVE OUTPUT
+    # =========================================================================
 
-    print(f"Results saved to {output_file}. Finished.")
+    print(f"Saving results to: {output_file}")
+
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+
+    with open(output_file, "w") as f:
+        f.write(
+            orjson.dumps(
+                results,
+                option=orjson.OPT_INDENT_2,
+            ).decode("utf-8")
+        )
+
+    print(f"Results saved to: {output_file}")
+    print("Finished.")
 
 
 if __name__ == "__main__":

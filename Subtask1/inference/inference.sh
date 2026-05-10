@@ -1,74 +1,185 @@
 #!/bin/bash
 
 #SBATCH --job-name=subtask1_inference
-#SBATCH --output=../logs/inference%j.out
+#SBATCH --output=../logs/inference_%j.out
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
-#SBATCH --gres=gpu:4
+#SBATCH --gres=gpu:1
 
-# --- Environment Setup ---
+set -euo pipefail
+
+echo "========================================"
 echo "Job started on $(hostname)"
-echo "Job ID: $SLURM_JOB_ID"
+echo "Job ID: ${SLURM_JOB_ID:-manual}"
+echo "========================================"
 
+# ============================================================================
+# DIRECTORY SETUP
+# ============================================================================
 
-source .venv/bin/activate
+# Run script from its own directory
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$SCRIPT_DIR"
 
-# Make the shared 'common' package importable
-export PYTHONPATH="$(realpath ../../common):${PYTHONPATH}"
+# Repository root
+ROOT_DIR="$(git rev-parse --show-toplevel)"
 
-# =============================================================================
-# INFERENCE MODES:
-# 1. LOCAL MODE: Uses vLLM with local GPU (default)
-# 2. OPENAI MODE: Uses OpenAI API (requires OPENAI_API_KEY env variable)
-# 3. GROQ MODE: Uses Groq API (requires GROQ_API_KEY env variable)
-# =============================================================================
+# Activate repository-wide virtual environment
+source "${ROOT_DIR}/.venv/bin/activate"
 
-# --- Configuration ---
-MODE="local"                         # Change to "local", "openai", or "groq"
-MODEL="google/gemma-3-27b-it"     # Full model name/path
-    # google/gemma-3-27b-it
-    # 
-DATASET="test"                      # Change to "test" for test set or "dev" for development set
-PROMPT_INDEX=2
+# Make shared common package importable
+export PYTHONPATH="${ROOT_DIR}:${PYTHONPATH:-}"
 
-# Auto-generate output filename: model_prompt_N.json
-MODEL_NAME=$(echo "$MODEL" | tr '/' '-' | tr '.' '-')
+# ============================================================================
+# CONFIGURATION
+# ============================================================================
+
+# Override at submission:
+# sbatch --export=ALL,MODEL=google/medgemma-27b-it,PROMPT_INDEX=10 inference.sh
+
+MODE="${MODE:-local}"                 # local / cloud
+MODEL="${MODEL:-google/gemma-3-27b-it}"
+DATASET="${DATASET:-dev}"             # dev / test
+PROMPT_INDEX="${PROMPT_INDEX:-2}"
+
+NUM_GPUS="${NUM_GPUS:-1}"
+
+DATA_ROOT="${DATA_ROOT:-${ROOT_DIR}/Subtask1/data}"
+
+OUTPUT_ROOT="${OUTPUT_ROOT:-${ROOT_DIR}/Subtask1/outputs}"
+RESULT_ROOT="${RESULT_ROOT:-${ROOT_DIR}/Subtask1/results}"
+
+RUN_EVAL="${RUN_EVAL:-true}"
+
+# ============================================================================
+# PATHS
+# ============================================================================
+
+XML_FILE="${DATA_ROOT}/${DATASET}/archehr-qa.xml"
+KEY_FILE="${DATA_ROOT}/${DATASET}/archehr-qa_key.json"
+
+OUTPUT_DIR="${OUTPUT_ROOT}/${DATASET}"
+RESULT_DIR="${RESULT_ROOT}/${DATASET}"
+
+MODEL_NAME="$(echo "$MODEL" | tr '/' '-' | tr '.' '-')"
+
 OUTPUT_FILE="${MODEL_NAME}_prompt_${PROMPT_INDEX}.json"
 
-# Load .env file for API keys and HF token
+XML_PATH="$(realpath -m "$XML_FILE")"
+KEY_PATH="$(realpath -m "$KEY_FILE")"
+
+OUTPUT_PATH="$(realpath -m "${OUTPUT_DIR}/${OUTPUT_FILE}")"
+RESULT_PATH="$(realpath -m "${RESULT_DIR}/${OUTPUT_FILE}")"
+
+mkdir -p "$OUTPUT_DIR"
+mkdir -p "$RESULT_DIR"
+mkdir -p ../logs
+
+# ============================================================================
+# VALIDATION
+# ============================================================================
+
+if [ ! -f "$XML_PATH" ]; then
+    echo "ERROR: XML file not found:"
+    echo "$XML_PATH"
+    exit 1
+fi
+
+if [ ! -f "prompt.json" ]; then
+    echo "ERROR: prompt.json not found"
+    exit 1
+fi
+
+# ============================================================================
+# ENVIRONMENT VARIABLES
+# ============================================================================
+
 if [ -f .env ]; then
-    export $(cat .env | xargs)
-    echo "Loaded environment variables from .env file"
+    set -a
+    source .env
+    set +a
+    echo "Loaded environment variables from .env"
 else
     echo "Warning: .env file not found"
 fi
 
-# --- Run the Inference Script ---
-echo "Starting Python inference script..."
+# ============================================================================
+# VLLM / TORCH SETTINGS
+# ============================================================================
+
+export VLLM_ATTENTION_BACKEND=XFORMERS
+export VLLM_USE_TRITON_FLASH_ATTN=0
+export TORCH_COMPILE_DISABLE=1
+
+# ============================================================================
+# RUN INFO
+# ============================================================================
+
+echo "Running inference"
+echo "----------------------------------------"
+echo "Mode          : $MODE"
+echo "Model         : $MODEL"
+echo "Dataset       : $DATASET"
+echo "Prompt Index  : $PROMPT_INDEX"
+echo "XML Path      : $XML_PATH"
+echo "Output Path   : $OUTPUT_PATH"
+echo "========================================"
+
+# ============================================================================
+# INFERENCE
+# ============================================================================
+
 PYTHONUNBUFFERED=1 python inference.py \
-    --xml-file ../../data-subtask1/${DATASET}/archehr-qa.xml \
+    --xml-file "$XML_PATH" \
     --prompt-file prompt.json \
-    --prompt-index $PROMPT_INDEX \
-    --output-file ../outputs_v2/new/$OUTPUT_FILE \
+    --prompt-index "$PROMPT_INDEX" \
+    --output-file "$OUTPUT_PATH" \
     --inference-mode "$MODE" \
     --model "$MODEL"
 
-# Deactivate inference venv before moving to evaluation
-deactivate
+echo "========================================"
+echo "Inference complete."
+echo "========================================"
 
-cd ../evaluation 
-SIF_IMAGE="./builder.sif"
-UV_BIN=$(which uv)
+# ============================================================================
+# EVALUATION
+# ============================================================================
 
-# 1. Build dependencies (Fixes the C++ error)
-# singularity exec --nv "$SIF_IMAGE" "$UV_BIN" sync
+if [ "$RUN_EVAL" = "true" ]; then
 
-# 2. Run the code
-singularity exec --nv "$SIF_IMAGE" "$UV_BIN" run python evaluation.py \
-    --submission_path ../outputs_v2/new/$OUTPUT_FILE \
-    --key_path ../../data-subtask1/${DATASET}/archehr-qa.xml \
-    --quickumls_path ../quickumls/final \
-    --out_file_path ../results_v2/new/$OUTPUT_FILE
+    if [ ! -f "$KEY_PATH" ]; then
+        echo "Warning: Key file not found."
+        echo "Skipping evaluation."
+        exit 0
+    fi
 
-echo "Evaluation complete. Job finished."
+    echo "Running evaluation..."
+    echo "========================================"
+
+    cd ../evaluation
+
+    SIF_IMAGE="./builder.sif"
+    UV_BIN="$(which uv)"
+
+    singularity exec --nv "$SIF_IMAGE" "$UV_BIN" run python evaluation.py \
+        --submission_path "$OUTPUT_PATH" \
+        --key_path "$KEY_PATH" \
+        --quickumls_path ../quickumls/final \
+        --out_file_path "$RESULT_PATH"
+
+    echo "========================================"
+    echo "Evaluation complete."
+    echo "========================================"
+    echo "Results saved to:"
+    echo "$RESULT_PATH"
+
+else
+
+    echo "Evaluation skipped."
+
+fi
+
+echo "========================================"
+echo "Job finished."
+echo "========================================"
