@@ -22,7 +22,12 @@ echo "  meta-llama/Llama-3.1-8B-Instruct"
 echo "========================================"
 
 # Activate environment
-source .venv/bin/activate
+RUN_DIR="${SLURM_SUBMIT_DIR:-$PWD}"
+ROOT_DIR="$(cd "${RUN_DIR}/../.." && pwd)"
+SUBTASK_DIR="${ROOT_DIR}/Subtask4"
+
+source "${ROOT_DIR}/.venv/bin/activate"
+mkdir -p "${SUBTASK_DIR}/logs"
 
 # Run the missing evaluations script
 uv run python run_missing_evaluations.py

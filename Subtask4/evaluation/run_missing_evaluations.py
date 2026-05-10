@@ -48,9 +48,10 @@ DATASET = "dev"
 
 # Paths relative to the evaluation/ directory
 EVAL_DIR = Path(__file__).parent
-OUTPUTS_DIR = EVAL_DIR / f"../outputs/{DATASET}"
-RESULTS_DIR = EVAL_DIR / f"../results/{DATASET}"
-KEY_PATH = EVAL_DIR / f"../../data-subtask2&3/{DATASET}/archehr-qa_key.json"
+SUBTASK_DIR = EVAL_DIR.parent
+OUTPUTS_DIR = SUBTASK_DIR / f"outputs/{DATASET}"
+RESULTS_DIR = SUBTASK_DIR / f"results/{DATASET}"
+KEY_PATH = SUBTASK_DIR / f"data/{DATASET}/archehr-qa_key.json"
 
 
 def sanitize_submission(submission, key_map):

@@ -13,11 +13,13 @@ echo "Run ID: $RUN_ID"
 echo "Started at: $(date)"
 echo "========================================"
 
-source .venv/bin/activate
+RUN_DIR="${SLURM_SUBMIT_DIR:-$PWD}"
+ROOT_DIR="$(cd "${RUN_DIR}/../.." && pwd)"
+SUBTASK_DIR="${ROOT_DIR}/Subtask4"
 
-cd /ceph/home/student.aau.dk/ge48ab/ArchEHR-QA-2026/Subtask4/inference
+source "${ROOT_DIR}/.venv/bin/activate"
 
-uv run python find_best_ensemble.py $RUN_ID
+uv run python "${SUBTASK_DIR}/inference/find_best_ensemble.py" "$RUN_ID"
 
 echo "========================================"
 echo "Finished at: $(date)"

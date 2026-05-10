@@ -7,6 +7,12 @@
 #SBATCH --gres=gpu:1
 
 # --- Environment Setup ---
+RUN_DIR="${SLURM_SUBMIT_DIR:-$PWD}"
+ROOT_DIR="$(cd "${RUN_DIR}/../.." && pwd)"
+SUBTASK_DIR="${ROOT_DIR}/Subtask3"
+
+source "${ROOT_DIR}/.venv/bin/activate"
+
 SIF_IMAGE="./builder.sif"
 UV_BIN=$(which uv)
 
@@ -22,13 +28,16 @@ closed_source_models=(
 
 # Directories
 DATASET="test"
-INPUT_DIR="../outputs/${DATASET}"
-RESULTS_DIR="../results/${DATASET}"
-KEY_PATH="../../data/${DATASET}/archehr-qa_key.json"
-DATA_PATH="../../data/${DATASET}/archehr-qa.xml"
+DATA_DIR="${SUBTASK_DIR}/data/${DATASET}"
+INPUT_DIR="${SUBTASK_DIR}/outputs/${DATASET}"
+RESULTS_DIR="${SUBTASK_DIR}/results/${DATASET}"
+ANALYSIS_DIR="${SUBTASK_DIR}/analysis/${DATASET}"
+LOGS_DIR="${SUBTASK_DIR}/logs"
+KEY_PATH="${DATA_DIR}/archehr-qa_key.json"
+DATA_PATH="${DATA_DIR}/archehr-qa.xml"
 QUICKUMLS_PATH="./quickumls/final"
 
-mkdir -p "$RESULTS_DIR"
+mkdir -p "$RESULTS_DIR" "$ANALYSIS_DIR" "$LOGS_DIR"
 
 echo "Starting Evaluation for Missing Results..."
 

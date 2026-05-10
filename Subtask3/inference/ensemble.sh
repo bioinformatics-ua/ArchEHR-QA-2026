@@ -11,7 +11,11 @@ set -e
 echo "Job ID: $SLURM_JOB_ID"
 echo "========================================"
 
-source .venv/bin/activate
+RUN_DIR="${SLURM_SUBMIT_DIR:-$PWD}"
+ROOT_DIR="$(cd "${RUN_DIR}/../.." && pwd)"
+SUBTASK_DIR="${ROOT_DIR}/Subtask3"
+
+source "${ROOT_DIR}/.venv/bin/activate"
 
 # =============================================================================
 # CONFIGURATION
@@ -26,8 +30,13 @@ FALLBACK=0                   # 0-based index of fallback candidate file
 
 # --- Candidate files to ensemble (best runs, ranked by overall_score) ---
 # Adjust these to your top-performing runs.
-DATA_DIR="../../data/${DATASET}"
-OUTPUT_DIR="../outputs/${DATASET}"
+DATA_DIR="${SUBTASK_DIR}/data/${DATASET}"
+OUTPUT_DIR="${SUBTASK_DIR}/outputs/${DATASET}"
+RESULTS_DIR="${SUBTASK_DIR}/results/${DATASET}"
+ANALYSIS_DIR="${SUBTASK_DIR}/analysis/${DATASET}"
+LOGS_DIR="${SUBTASK_DIR}/logs"
+
+mkdir -p "${OUTPUT_DIR}" "${RESULTS_DIR}" "${ANALYSIS_DIR}" "${LOGS_DIR}"
 
 CANDIDATES=(
     "${OUTPUT_DIR}/anthropic-claude-sonnet-4-5_prompt_6.json"
@@ -42,8 +51,8 @@ CANDIDATES=(
 OUTPUT_FILE="ensemble_${MODE}_$(echo $JUDGE_MODEL | tr '/' '-' | tr '.' '-')_top${#CANDIDATES[@]}.json"
 
 # Load .env for API keys
-if [ -f .env ]; then
-    export $(cat .env | xargs)
+if [ -f "${SUBTASK_DIR}/inference/.env" ]; then
+    export $(cat "${SUBTASK_DIR}/inference/.env" | xargs)
     echo "Loaded environment variables from .env"
 else
     echo "Warning: .env file not found"
@@ -57,7 +66,7 @@ echo "  Judge:      ${JUDGE_MODEL}"
 echo "  Candidates: ${#CANDIDATES[@]} files"
 echo "  Dataset:    ${DATASET}"
 
-uv run python ensemble.py \
+uv run python "${SUBTASK_DIR}/inference/ensemble.py" \
     --xml-file "${DATA_DIR}/archehr-qa.xml" \
     --candidate-files "${CANDIDATES[@]}" \
     --judge-model "$JUDGE_MODEL" \
@@ -81,12 +90,10 @@ cd ../evaluation
 #SIF_IMAGE="./builder.sif"
 #UV_BIN=$(which uv)
 
-SUBMISSION_PATH="../outputs/${DATASET}/${OUTPUT_FILE}"
-KEY_PATH="../../data/${DATASET}/archehr-qa_key.json"
-DATA_PATH="../../data/${DATASET}/archehr-qa.xml"
-OUT_FILE_PATH="../results/${DATASET}/${OUTPUT_FILE}"
-
-mkdir -p "../results/${DATASET}"
+SUBMISSION_PATH="${OUTPUT_DIR}/${OUTPUT_FILE}"
+KEY_PATH="${DATA_DIR}/archehr-qa_key.json"
+DATA_PATH="${DATA_DIR}/archehr-qa.xml"
+OUT_FILE_PATH="${RESULTS_DIR}/${OUTPUT_FILE}"
 
 #singularity exec --nv "$SIF_IMAGE" "$UV_BIN" run python scoring_subtask_3.py \
 #     --submission_path "$SUBMISSION_PATH" \

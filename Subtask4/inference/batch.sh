@@ -17,7 +17,11 @@ set -e
 echo "Job ID: $SLURM_JOB_ID"
 echo "========================================"
 
-source .venv/bin/activate
+RUN_DIR="${SLURM_SUBMIT_DIR:-$PWD}"
+ROOT_DIR="$(cd "${RUN_DIR}/../.." && pwd)"
+SUBTASK_DIR="${ROOT_DIR}/Subtask4"
+
+source "${ROOT_DIR}/.venv/bin/activate"
 
 # ----------------------------------------
 # CONFIGURABLE VARIABLES
@@ -168,10 +172,14 @@ REPETITION_PENALTY=1.0          # >1.0 discourages repetitive phrasing
 # ----------------------------------------
 # PATHS
 # ----------------------------------------
-DATA_DIR="../../data/${DATASET}"
-KEY_PATH="../../data-subtask2&3/${DATASET}/archehr-qa_key.json"
-OUTPUT_DIR="../outputs/${DATASET}"
-RESULTS_DIR="../results/${DATASET}"
+DATA_DIR="${SUBTASK_DIR}/data/${DATASET}"
+KEY_PATH="${DATA_DIR}/archehr-qa_key.json"
+OUTPUT_DIR="${SUBTASK_DIR}/outputs/${DATASET}"
+RESULTS_DIR="${SUBTASK_DIR}/results/${DATASET}"
+LOGS_DIR="${SUBTASK_DIR}/logs"
+PROMPT_FILE="${SUBTASK_DIR}/inference/prompt.json"
+
+mkdir -p "${OUTPUT_DIR}" "${RESULTS_DIR}" "${LOGS_DIR}"
 
 # Model name for output file naming
 MODEL_NAME=$(echo "$MODEL" | tr '/' '-' | tr '.' '-')
@@ -236,7 +244,7 @@ else
     uv run python $SCRIPT \
         --xml-file "${DATA_DIR}/archehr-qa.xml" \
         --qa-key-file "${KEY_PATH}" \
-        --prompt-file prompt.json \
+        --prompt-file "${PROMPT_FILE}" \
         --prompt-index $PROMPT_INDEX \
         --output-file "${OUTPUT_DIR}/${OUTPUT_FILE}" \
         --inference-mode "$INFERENCE_MODE" \
@@ -271,8 +279,8 @@ deactivate
 cd ../evaluation
 source .venv/bin/activate
 
-SUBMISSION_PATH="../outputs/${DATASET}/${OUTPUT_FILE}"
-OUT_FILE_PATH="../results/${DATASET}/${OUTPUT_FILE}"
+SUBMISSION_PATH="${OUTPUT_DIR}/${OUTPUT_FILE}"
+OUT_FILE_PATH="${RESULTS_DIR}/${OUTPUT_FILE}"
 
 uv run python scoring_subtask_4.py \
     --submission_path "$SUBMISSION_PATH" \

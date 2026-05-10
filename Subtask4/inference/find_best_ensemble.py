@@ -9,12 +9,15 @@ from pathlib import Path
 # ----------------------------------------
 RUN_ID = sys.argv[1] if len(sys.argv) > 1 else "default"
 
-OUTPUT_DIR = Path("../outputs/dev")
-RESULTS_DIR = Path("../results/dev")
-SEARCH_OUTPUT_DIR = Path(f"../outputs/dev/search_combos/{RUN_ID}")
-SEARCH_RESULTS_DIR = Path(f"../results/dev/search_combos/{RUN_ID}")
-KEY_PATH = Path("../../data-subtask2&3/dev/archehr-qa_key.json")
-SCORING_SCRIPT = Path("../evaluation/scoring_subtask_4.py")
+SCRIPT_DIR = Path(__file__).resolve().parent
+SUBTASK_DIR = SCRIPT_DIR.parent
+
+OUTPUT_DIR = SUBTASK_DIR / "outputs/dev"
+RESULTS_DIR = SUBTASK_DIR / "results/dev"
+SEARCH_OUTPUT_DIR = SUBTASK_DIR / f"outputs/dev/search_combos/{RUN_ID}"
+SEARCH_RESULTS_DIR = SUBTASK_DIR / f"results/dev/search_combos/{RUN_ID}"
+KEY_PATH = SUBTASK_DIR / "data/dev/archehr-qa_key.json"
+SCORING_SCRIPT = SUBTASK_DIR / "evaluation/scoring_subtask_4.py"
 
 CANDIDATE_FILES = [
 

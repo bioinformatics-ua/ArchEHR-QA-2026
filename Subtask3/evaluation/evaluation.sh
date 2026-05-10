@@ -7,16 +7,26 @@
 #SBATCH --gres=gpu:1
 
 # --- Environment Setup ---
+RUN_DIR="${SLURM_SUBMIT_DIR:-$PWD}"
+ROOT_DIR="$(cd "${RUN_DIR}/../.." && pwd)"
+SUBTASK_DIR="${ROOT_DIR}/Subtask3"
+
+source "${ROOT_DIR}/.venv/bin/activate"
+
 SIF_IMAGE="./builder.sif"
 UV_BIN=$(which uv)
 
 # Define directories
-INPUT_DIR="../outputs/dev"
-RESULTS_DIR="../results/dev"
+DATASET="dev"
+DATA_DIR="${SUBTASK_DIR}/data/${DATASET}"
+INPUT_DIR="${SUBTASK_DIR}/outputs/${DATASET}"
+RESULTS_DIR="${SUBTASK_DIR}/results/${DATASET}"
+ANALYSIS_DIR="${SUBTASK_DIR}/analysis/${DATASET}"
+LOGS_DIR="${SUBTASK_DIR}/logs"
 # singularity exec --nv "$SIF_IMAGE" "$UV_BIN" sync
 
 # Ensure results directory exists
-mkdir -p "$RESULTS_DIR"
+mkdir -p "$RESULTS_DIR" "$ANALYSIS_DIR" "$LOGS_DIR"
 
 echo "Starting Batch Evaluation..."
 
@@ -39,8 +49,8 @@ for submission_path in "$INPUT_DIR"/*.json; do
         # 3. Run the code
         singularity exec --nv "$SIF_IMAGE" "$UV_BIN" run python scoring_subtask_3.py \
         --submission_path "$submission_path" \
-        --key_path ../../data/dev/archehr-qa_key.json \
-        --data_path ../../data/dev/archehr-qa.xml \
+        --key_path "${DATA_DIR}/archehr-qa_key.json" \
+        --data_path "${DATA_DIR}/archehr-qa.xml" \
         --quickumls_path ./quickumls/final \
         --out_file_path "$out_file_path" \
         --case_ids_to_score 1-3

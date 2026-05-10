@@ -13,12 +13,23 @@ echo "Job ID: $SLURM_JOB_ID"
 echo "========================================"
 
 # Activate environment
-source .venv/bin/activate
+RUN_DIR="${SLURM_SUBMIT_DIR:-$PWD}"
+ROOT_DIR="$(cd "${RUN_DIR}/../.." && pwd)"
+SUBTASK_DIR="${ROOT_DIR}/Subtask4"
+
+source "${ROOT_DIR}/.venv/bin/activate"
 
 # Paths
-KEY_PATH="../../data/${DATASET}/archehr-qa_key.json"
-SUBMISSION_PATH="../outputs/${DATASET}/${MODEL}.json"
-OUT_FILE_PATH="../results/${DATASET}/${MODEL}.json"
+DATA_DIR="${SUBTASK_DIR}/data/${DATASET}"
+OUTPUT_DIR="${SUBTASK_DIR}/outputs/${DATASET}"
+RESULTS_DIR="${SUBTASK_DIR}/results/${DATASET}"
+LOGS_DIR="${SUBTASK_DIR}/logs"
+
+mkdir -p "${RESULTS_DIR}" "${LOGS_DIR}"
+
+KEY_PATH="${DATA_DIR}/archehr-qa_key.json"
+SUBMISSION_PATH="${OUTPUT_DIR}/${MODEL}.json"
+OUT_FILE_PATH="${RESULTS_DIR}/${MODEL}.json"
 
 # Run scoring script
 uv run python scoring_subtask_4.py \
